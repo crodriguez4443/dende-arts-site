@@ -96,7 +96,7 @@ img {
 
 /* === typography styles === */
 
-h1,h2,h3,strong {
+h1,h2,h3 {
 	font-family: "DM Sans";
 	font-weight: 700;
     color: var(--title-color);
@@ -144,7 +144,8 @@ a:hover, a:focus {
 }
 
 .btn-dark,
-.btn-light {
+.btn-light,
+.btn-blue {
     color: white;
     font-weight: 500;
     font-size: 1.25rem;
@@ -165,6 +166,15 @@ a:hover, a:focus {
 .btn-light {
     border: 2px solid white;
     color: white;
+}
+
+.btn-blue {
+    border: 2px solid var(--action-primary);
+    color: var(--action-primary);
+}
+
+strong {
+    font-weight: 700;
 }
 
 /* more button styles */
@@ -200,7 +210,44 @@ a:hover, a:focus {
 
 @media (min-width: 725px) {
     .main-grid {
-        grid-template-columns: minmax(1em, 1fr) minmax(150px, 550px) minmax(150px, 550px) minmax(1em, 1fr);
+        grid-template-columns: minmax(1em, 1fr) minmax(150px, 600px) minmax(150px, 600px) minmax(1em, 1fr);
+    }
+    
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(150px, 250px) minmax(150px, 250px) minmax(1em, 1fr);
+    row-gap: 1rem;
+    align-items: center;
+}
+
+@media (min-width: 850px) {
+    .product-grid {
+        grid-template-columns: 
+            minmax(1rem, 1fr)
+            minmax(170px, 1.5fr)
+            minmax(450px, 2.5fr)
+            minmax(170px, 1.5fr)
+            minmax(1rem, 1fr);
+        grid-template-areas: 
+            ". title title title ."
+            ". feature1 image feature3 ."
+            ". feature2 image feature4 ."
+            ". . button . .";
+    }
+}
+
+.featured-guide-grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(150px, 250px) minmax(150px, 250px) minmax(1em, 1fr);
+    row-gap: 1rem;
+    align-items: center;    
+}
+
+@media (min-width: 7250px) {
+    .main-grid {
+        grid-template-columns: minmax(1em, 1fr) minmax(150px, 600px) minmax(150px, 600px) minmax(1em, 1fr);
     }
     
 }
@@ -340,9 +387,10 @@ a:hover, a:focus {
     grid-column: 2/4;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 0px;
+    align-items: top;
     position: relative;
+    padding-top: 3rem;
+    margin-top:3rem;
     }
 
     .nav-container {
@@ -365,12 +413,13 @@ a:hover, a:focus {
       height: auto;
       flex-direction: row;
       background: none;
+      gap: 3rem;
     }
 
     .nav-menu a {
       color: #333;
       font-size: 16px;
-      margin: 0 0 0 30px;
+      margin: 0 0 0 0px;
       opacity: 1;
       transform: none;
     }
@@ -398,6 +447,12 @@ a:hover, a:focus {
     .logo-link {
       display: none;
     }
+  }
+
+  @media (min-width: 1200px) {
+    .nav-menu {
+      gap: 3.5rem;
+      }
   }
 
 
@@ -451,14 +506,334 @@ a:hover, a:focus {
 
     .hero-content {
 
-        grid-column: 2;
+        grid-column: 2/4;
+        width: 70%;
+    }
+
+    .duo-button-container {
+        flex-direction: row;
+        justify-content: flex-start;
     }
 }
 
-/* ============= 
-    Next section 
-=============== */
+@media (min-width: 1100px){
+
+    .hero-content {
+        grid-column: 2/4;
+        width: 60%;
+    }
+}
+
+/* ================= 
+   Featured Product 
+=================== */
+
+.product-info-section {
+    background-color: var(--background-light);
+    padding: 10rem 0 12rem;
+}
+
+.product-grid > * {
+    grid-column: 2/4;
+}
+
+.product-title-content {
+    text-align: center;
+}
+
+.section-subtitle {
+    margin-bottom: 8rem;
+}
+
+.product-image {
+    justify-self: center;
+    aspect-ratio: 586/690;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.product-image img {
+    aspect-ratio: 586/690;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.feature-image-container {
+    width: 50x;
+    height: 50px;
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.product-feature p {
+    margin-bottom: 4rem;
+}
+
+.feature-image-container img {
+    /* max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; */
+
+    align-self: flex-start;
+    max-width: 50px;
+    height: auto;
+}
+
+@media (min-width: 850px) {
+
+.product-grid {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+    
+.product-title-content {
+    grid-area: title;
+    text-align: center;
+    object-fit: contain;
+}
+
+.feature-image-container {
+    width: 55x;
+    height: 55px;
+}
+
+.product-image {
+    grid-area: image;
+    justify-self: center;
+    aspect-ratio: 586/690;
+    width: 100%;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    aspect-ratio: 586/690;
+    padding: 0 1rem;
+}
+
+.product-feature:nth-child(2) {
+    grid-area: feature1;
+}
+
+.product-feature:nth-child(3) {
+    grid-area: feature2;
+}
+
+.product-feature:nth-child(5) {
+    grid-area: feature3;
+}
+
+.product-feature:nth-child(6) {
+    grid-area: feature4;
+}
+
+.featured-product-button {
+    grid-area: button;
+    justify-self: center;
+    padding: 1rem 0rem;
+    margin-top: 6rem;
+}
+
+}
 
 
+/* ================= 
+     Guide Section 
+=================== */
+
+.featured-guide {
+    padding: 6.75rem 0 4rem;
+}
+
+.featured-guide > * {
+    grid-column: 2/4;
+}
+
+.guide-title-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin:  0 auto;
+}
+
+.guide-title-content h2 {
+    text-align: center;
+    color: var(--action-primary);
+}
+
+.half-pg-img-container {
+    grid-column: 2/4;
+    margin-bottom: 3rem;
+    aspect-ratio: 399/373;
+}
+
+.half-pg-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.guide-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    margin-bottom: 5.25rem;
+}
+
+.guide-card {
+    grid-column: 2/4;
+    margin-bottom: 2rem;
+    border: 0px solid;
+    border-radius: 20px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); 
+    padding: 2rem 1rem;
+}
+
+.guide-card-content {
+    display: flex;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+.guide-card-content h3 {
+    margin-bottom: 0;
+}
+
+.guide-icon {
+    margin-top: .3rem;
+}
+
+.guide-card p {
+    margin-left: 2.5rem;
+}
+
+.guide-product-button {
+    justify-self: center;
+    padding: 1rem 2.5rem;
+}
+
+@media (min-width: 725px) {
+    .guide-title-content h2 {
+        font-size: 2.8rem;
+    }
+
+    .guide-title-content {
+        max-width: 75%;
+    }
+}
+
+@media (min-width: 850px) {
+
+    .guide-title-content h2 {
+        font-size: 3.625rem;
+    }
+
+    .half-pg-img-container {
+        grid-column: 2;
+    }
+
+    .guide-card-container {
+        grid-column: 3;
+    }
+
+    .guide-product-button {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+
+/* ================= 
+     About Section 
+=================== */
+
+.home-about {
+    padding: 6.5rem 0 6.5rem;
+    display: grid;
+    background-color: var(--background-light);
+}
+
+.home-about > * {
+    grid-column: 2/4;
+}
+
+.home-about h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.home-about-image {
+    padding-bottom: 2rem;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+}
+
+.home-about-content {
+    color: var(--title-color);
+}
+
+.home-about-calado-name {
+    font-size: 1.75rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.home-about-calado-title {
+    font-size: 1.25rem;
+    padding-bottom: 0;
+    margin-top: 0;
+}
+
+.home-about-social {
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+    margin-bottom: 1rem;
+    width: 200px;
+}
+
+.social-icon:nth-child(1) {
+    border-right: 2px solid var(--title-color);
+}
+
+.social-icon:nth-child(2) {
+    margin-left: auto;
+}
+
+
+.social-icon img { 
+    font-size: 1rem;
+    height: 2rem;
+}
+
+.home-about-content p {
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 725px) {
+
+    .home-about h2 {
+        margin-bottom: 6rem;
+    }
+
+    .home-about-image {
+        grid-column: 2;
+    }
+
+    .home-about-content {
+        grid-column: 3;
+    }
+
+    
+
+}
 /* (section) */
 /* footer */
