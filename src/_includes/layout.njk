@@ -5,16 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
 </head>
 <body>
     <main>
         {{ content | safe }}
     </main>
-    <footer>
-	    <p> This is my footer </p>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                {# {% image "src/img/dende-arts-logo.png", "dende arts logo", "logo-link", undefined, undefined, undefined, "eager" %} #}
+                {% image "src/img/dende-arts-logo2.png", "dende arts logo", "footer-logo-link-lg", undefined, undefined, undefined, "eager" %}
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    {% image "src/img/homepage/instagram-icon.svg", "instagram logo", "instagram-logo", undefined, undefined, undefined %}
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    {% image "src/img/homepage/youtube-icon.svg", "youtube logo", "youtube-logo", undefined, undefined, undefined %}
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Gear</a>
+                <a href="/">Learn</a>
+                <a href="/">Blog</a>
+                <a href="/">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    {% image "src/img/homepage/instagram-icon.svg", "instagram logo", "instagram-logo", undefined, undefined, undefined %}
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    {% image "src/img/homepage/youtube-icon.svg", "youtube logo", "youtube-logo", undefined, undefined, undefined %}
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © 2025 Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
     </footer>
 
     <script src="/js/nav.js"></script>
-
+    <script src="/js/testimonials-carousel.js"></script>
 </body>
+
+
 </html>

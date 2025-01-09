@@ -135,3 +135,39 @@ title: Welcome to My Web Development Agency
         </div>
     </div>
 </section>
+
+<!--
+<section class="home-blog-section main-grid">
+    <div class="home-blog-title-container">
+        <h2 class="section-title">Latest from the blog</h2>
+        <p>Don’t miss the number one capoeira blog on the internet. Articles touch on movement, music, culture, community, education and more.</p>
+    </div>
+    <div class="featured-blog-container">
+    
+    </div>
+    <a href="/" class="btn btn-dark">View all posts</a>
+
+</section>
+-->
+
+<section class="home-testimonials main-grid">
+    <h2 class="section-title">What people are saying</h2>
+    <div class="testimonial-container">
+        <div class="testimonial-track">
+            {% for review in review.reviews %} 
+                {% include "components//testimonial-card.njk" %}
+            {% endfor %}
+        </div>
+        <div class="carousel-nav">
+            {% for review in reviews.reviews %}
+                <button class="carousel-dot" data-index="{{ loop.index0 }}"></button>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="home-contact main-grid">
+    <h2 class="section-title">Get in touch!</h2>
+    <p>Buy pants, partner with us, grab the guide, or ask about Capoeira. Fill out the form below, and we’ll get back to you soon!</p>
+    {% include "contact-form.njk" %} 
+</section>

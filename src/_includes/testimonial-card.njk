@@ -1,0 +1,14 @@
+
+<div class="home-testimonial-card">
+    <div class="testimonial-rating">
+        {% for i in range(0, review.rating) %}
+            <span class="star">*</span>
+        {% endfor %}
+        {% for i in range(review.rating, 5) %}
+            <span class="star star-empty">☆</span>
+        {% endfor %}
+    </div>
+    <p class="testimonial-text">{{ review.text }}</p>
+    <p class="testimonial-author">{{ review.author }}</p>
+    <p class="testimonial-relation">{{ review.relationship }}</p>
+</div>

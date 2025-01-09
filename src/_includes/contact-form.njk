@@ -1,0 +1,42 @@
+{# src/_includes/contact-form.njk #}
+<div class="contact-page-form">
+    <form class="contact-form" 
+        name="contact" 
+        method="POST" 
+        data-netlify="true" 
+        netlify-honeypot="bot-field"
+        action="/Thank-you/"
+    >
+        {# Hidden fields #}
+        <input type="hidden" name="form-name" value="contact">
+        <input type="hidden" name="subject" value="Nuevo mensaje de contacto">
+
+        {# Honeypot field #}
+        <p hidden>
+            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+        </p>
+
+        {# Form fields #}
+        <div class="form-grid">
+            <div class="form-group">
+                <input type="text" name="test" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" placeholder="Telephone number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="businessname" placeholder="Business Name" required>
+            </div>
+            <div class="form-group full-width">
+                <textarea name="message" placeholder="Write your message here..." required></textarea>
+            </div>
+
+        {# Submit button #}
+        <button type="submit" class="btn-dark btn-form full-width">
+            {{ submitText | default('Get in touch') }}
+        </button>
+    </form>
+</div>
