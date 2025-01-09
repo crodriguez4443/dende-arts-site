@@ -1088,11 +1088,11 @@ strong {
         justify-content: space-between;
         gap: .5rem;
         margin-bottom: 1rem;
-        width: 200px;
+        width: 80px;
     }
     
     .footer-social-large:nth-child(1) {
-            border-right: 2px solid var(--title-color);
+            border-right: 2px solid #fff;
         }
 
     .footer-copyright {
