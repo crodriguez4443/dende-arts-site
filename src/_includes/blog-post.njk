@@ -1,0 +1,26 @@
+---
+layout: layout.njk
+---
+<article class="blog-post">
+    <h1>{{ title }}</h1>
+    
+    {% if featured %}
+        <div class="blog-post-featured-image">
+            {% image 
+                featured, 
+                title, 
+                "blog-featured-image" 
+            %}
+        </div>
+    {% endif %}
+    
+    <div class="blog-post-meta">
+        <time datetime="{{ date | htmlDateString }}">
+            {{ date | readableDate }}
+        </time>
+    </div>
+    
+    <div class="blog-post-content">
+        {{ content | safe }}
+    </div>
+</article>

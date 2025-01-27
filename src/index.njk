@@ -5,30 +5,7 @@ title: Welcome to My Web Development Agency
 
 <section class="hero">
     <div class="main-grid">
-        <div class="nav-content">
-            <!-- use shortcode for these image -->
-            <div class="logo-link-container">
-                {% image "src/img/dende-arts-logo.png", "dende arts logo", "logo-link", undefined, undefined, undefined, "eager" %}
-                {% image "src/img/dende-arts-logo2.png", "dende arts logo", "logo-link-lg", undefined, undefined, undefined, "eager" %}
-            </div>
-            <!-- use shortcode for these image -->
-            <div class="nav-container">
-                <button class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="overlay"></div>
-                <nav class="nav-menu">
-                    <a href="/">Home</a>
-                    <a href="/">About</a>
-                    <a href="/">Gear</a>
-                    <a href="/">Learn</a>
-                    <a href="/">Blog</a>
-                    <a href="/">Contact</a>
-                </nav>
-            </div>
-        </div>
+        {% include "nav.njk" %}
         <div class="hero-content">
             <h1>Elevate your Capoeira journey</h1>
             <p class="hero-subtitle">Ever felt lost without proper guidance? Tired of uniforms that hinder your performance? Unlock your potential with premium gear and expert guidance. </p>

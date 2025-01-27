@@ -1,0 +1,32 @@
+
+<div class="blog-grid" id="blog-grid">
+    {% for post in collections.posts %}
+        <article class="blog-card">
+            {% if post.data.featured %}
+                {% image 
+                    "./src/blog/post-1/featured.png", 
+                    post.data.title, 
+                    "blog-featured-image" 
+                %}
+            {% endif %}
+            
+            <div class="blog-card-content">
+                <h2 class="blog-card-title">
+                    <a href="{{ post.url }}">{{ post.data.title }}</a>
+                </h2>
+                
+                <div class="blog-card-meta">
+                    <time datetime="{{ post.date | htmlDateString }}">
+                        {{ post.date | readableDate }}
+                    </time>
+                </div>
+                
+                {% if post.data.excerpt %}
+                    <p class="blog-card-excerpt">{{ post.data.excerpt }}</p>
+                {% endif %}
+                
+                <a href="{{ post.url }}" class="read-more">Read More</a>
+            </div>
+        </article>
+    {% endfor %}
+</div>

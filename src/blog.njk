@@ -1,0 +1,56 @@
+---
+layout: layout.njk
+title: The number 1 Capoeira blog online
+---
+<!-- src/_includes/layouts/blog.njk -->
+<div class="blog-page-container main-grid">
+    <h1>Blog Posts</h1>
+    {% include "nav.njk" %}
+    <div class="blog-container">
+        {# Blog Grid #}
+        {% include "blog-grid.njk" %}
+
+        {# Load More Button #}
+        <div class="load-more-container">
+            <button id="load-more" class="load-more-btn">Load More Posts</button>
+        </div>
+    </div>
+</div>
+
+{# 
+<script>
+    // Initial post count to display
+    const postsPerPage = 12;
+    let currentlyShown = postsPerPage;
+
+    // Get all blog cards
+    const blogCards = document.querySelectorAll('.blog-card');
+    const loadMoreBtn = document.getElementById('load-more');
+
+    // Load More functionality
+    loadMoreBtn.addEventListener('click', () => {
+        // Show next batch of posts
+        blogCards.forEach((card, index) => {
+            if (index < currentlyShown + postsPerPage) {
+                card.style.display = 'block';
+            }
+        });
+        
+        currentlyShown += postsPerPage;
+        
+        // Hide button if all posts are shown
+        if (currentlyShown >= blogCards.length) {
+            loadMoreBtn.style.display = 'none';
+        }
+    });
+
+    // Initial setup
+    blogCards.forEach((card, index) => {
+        card.style.display = index < postsPerPage ? 'block' : 'none';
+    });
+
+    // Hide button if not enough posts
+    if (blogCards.length <= postsPerPage) {
+        loadMoreBtn.style.display = 'none';
+    }
+</script> #}

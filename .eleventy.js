@@ -71,9 +71,32 @@ module.exports = function(eleventyConfig) {
         </picture>`;
 
         return outdent`${picture}`;
+    })
+     // Date formatting filters
+     eleventyConfig.addFilter('readableDate', (dateObj) => {
+        return new Date(dateObj).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    });
+
+    eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+        return new Date(dateObj).toISOString().split('T')[0];
+    });
+
+    // Blog posts collection
+    eleventyConfig.addCollection('posts', function(collection) {
+        // Collect all markdown files in the blog directory
+        return collection.getFilteredByGlob('src/blog/*/index.md')
+            // Sort by date, most recent first
+            .sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
     });
 
     // Existing configuration
+
+
+
     return {
         dir: {
             input: "src",

@@ -15,6 +15,7 @@
     "outdent": "^0.8.0"
   },
   "dependencies": {
-    "@11ty/eleventy-img": "^5.0.0"
+    "@11ty/eleventy-img": "^5.0.0",
+    "swell-js": "^4.2.5"
   }
 }
