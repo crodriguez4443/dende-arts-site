@@ -11,7 +11,8 @@
 </head>
 <body>
     <main>
-        <div class="nav-content">
+        
+<div class="nav-content">
             <!-- use shortcode for these image -->
             <div class="logo-link-container">
                 <picture class="logo-link">
@@ -47,14 +48,161 @@
         </div>
 
 
+
 <div class="product-card">
-  <h2>Abada Joggers</h2>
-  
-    <img src="https://cdn.swell.store/dendearts/67977eaf9720f60012137aef/3d2cb406d2a3d551c0052ea603799a13/7.png" alt="Abada Joggers">
-  
-  <p>These are the abadas I wish I had when I first started.&amp;nbsp;</p>
-  <p>Price: $69.5</p>
+    
+        <h1>Abada Joggers</h1>
+        
+        
+            <img src="https://cdn.swell.store/dendearts/67977eaf9720f60012137aef/3d2cb406d2a3d551c0052ea603799a13/7.png" 
+                 alt="Abada Joggers"
+                 width="400"
+                 height="400">
+        
+        
+        
+            <div class="description">
+                These are the abadas I wish I had when I first started.&nbsp;
+            </div>
+        
+        
+        <div class="price">
+            Price: $69.5
+        </div>
+
+        
+            <div class="options">
+                
+                    <div class="option-group">
+                        <label for="Size">Size:</label>
+                        <select id="Size" name="Size">
+                            
+                                <option value="Extra-Small">Extra-Small</option>
+                            
+                                <option value="Small">Small</option>
+                            
+                                <option value="Medium">Medium</option>
+                            
+                                <option value="Large">Large</option>
+                            
+                                <option value="Extra-Large">Extra-Large</option>
+                            
+                        </select>
+                    </div>
+                
+            </div>
+        
+
+        <div class="quantity">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1">
+        </div>
+
+        <button id="addToCart" 
+                onclick="addToCart('6796e8f527aea3001290a682')"
+                class="add-to-cart-button">
+            Add to Cart
+        </button>
+
+        <button id="buyNow" 
+                onclick="buyNow('6796e8f527aea3001290a682')"
+                class="buy-now-button">
+            Buy Now
+        </button>
+    
 </div>
+
+<script>
+async function addToCart(productId) {
+    const quantity = document.getElementById('quantity').value;
+    const options = {};
+    
+    // Gather selected options if they exist
+    document.querySelectorAll('.option-group select').forEach(select => {
+        options[select.name] = select.value;
+    });
+
+    try {
+        const cart = await swell.cart.addItem({
+            product_id: productId,
+            quantity: parseInt(quantity),
+            options: options
+        });
+        
+        // Show a success message
+        alert('Added to cart successfully!');
+        
+        // Optional: Update cart count in navigation if you have one
+        updateCartCount(cart.item_quantity);
+    } catch (error) {
+        console.error('Error adding to cart:', error);
+        alert('Error adding to cart. Please try again.');
+    }
+}
+
+async function buyNow(productId) {
+    try {
+        // First add to cart
+        await addToCart(productId);
+        
+        // Then redirect to Swell's hosted checkout
+        const checkout = await swell.cart.redirect({
+            success_url: window.location.origin + '/thank-you'
+        });
+    } catch (error) {
+        console.error('Error during checkout:', error);
+        alert('Error starting checkout. Please try again.');
+    }
+}
+
+function updateCartCount(count) {
+    // If you have a cart count element in your navigation
+    const cartCount = document.getElementById('cart-count');
+    if (cartCount) {
+        cartCount.textContent = count;
+    }
+}
+</script>
+
+<style>
+.add-to-cart-button,
+.buy-now-button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cart-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.buy-now-button {
+    background-color: #2196F3;
+    color: white;
+}
+
+.quantity {
+    margin: 20px 0;
+}
+
+.quantity input {
+    width: 60px;
+    padding: 5px;
+}
+
+.option-group {
+    margin: 10px 0;
+}
+
+.option-group select {
+    padding: 5px;
+    margin-left: 10px;
+}
+</style>
 
     </main>
     <footer class="footer main-grid">

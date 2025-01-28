@@ -7,15 +7,155 @@ pagination:
 permalink: "/{{ product.slug | slugify }}/"
 layout: layout.njk
 ---
+
 {% include "nav.njk" %}
+
 
 {% block content %}
 <div class="product-card">
-  <h2>{{ product.name }}</h2>
-  {% if product.images and product.images[0] %}
-    <img src="{{ product.images[0].file.url }}" alt="{{ product.name }}">
-  {% endif %}
-  <p>{{ product.description }}</p>
-  <p>Price: ${{ product.price }}</p>
+    {% if product %}
+        <h1>{{ product.name }}</h1>
+        
+        {% if product.images and product.images[0] %}
+            <img src="{{ product.images[0].file.url }}" 
+                 alt="{{ product.name }}"
+                 width="400"
+                 height="400">
+        {% endif %}
+        
+        {% if product.description %}
+            <div class="description">
+                {{ product.description | safe }}
+            </div>
+        {% endif %}
+        
+        <div class="price">
+            Price: ${{ product.price }}
+        </div>
+
+        {% if product.options %}
+            <div class="options">
+                {% for option in product.options %}
+                    <div class="option-group">
+                        <label for="{{ option.name }}">{{ option.name }}:</label>
+                        <select id="{{ option.name }}" name="{{ option.name }}">
+                            {% for value in option.values %}
+                                <option value="{{ value.name }}">{{ value.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <div class="quantity">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1">
+        </div>
+
+        <button id="addToCart" 
+                onclick="addToCart('{{ product.id }}')"
+                class="add-to-cart-button">
+            Add to Cart
+        </button>
+
+        <button id="buyNow" 
+                onclick="buyNow('{{ product.id }}')"
+                class="buy-now-button">
+            Buy Now
+        </button>
+    {% endif %}
 </div>
+
+<script>
+async function addToCart(productId) {
+    const quantity = document.getElementById('quantity').value;
+    const options = {};
+    
+    // Gather selected options if they exist
+    document.querySelectorAll('.option-group select').forEach(select => {
+        options[select.name] = select.value;
+    });
+
+    try {
+        const cart = await swell.cart.addItem({
+            product_id: productId,
+            quantity: parseInt(quantity),
+            options: options
+        });
+        
+        // Show a success message
+        alert('Added to cart successfully!');
+        
+        // Optional: Update cart count in navigation if you have one
+        updateCartCount(cart.item_quantity);
+    } catch (error) {
+        console.error('Error adding to cart:', error);
+        alert('Error adding to cart. Please try again.');
+    }
+}
+
+async function buyNow(productId) {
+    try {
+        // First add to cart
+        await addToCart(productId);
+        
+        // Then redirect to Swell's hosted checkout
+        const checkout = await swell.cart.redirect({
+            success_url: window.location.origin + '/thank-you'
+        });
+    } catch (error) {
+        console.error('Error during checkout:', error);
+        alert('Error starting checkout. Please try again.');
+    }
+}
+
+function updateCartCount(count) {
+    // If you have a cart count element in your navigation
+    const cartCount = document.getElementById('cart-count');
+    if (cartCount) {
+        cartCount.textContent = count;
+    }
+}
+</script>
+
+<style>
+.add-to-cart-button,
+.buy-now-button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cart-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.buy-now-button {
+    background-color: #2196F3;
+    color: white;
+}
+
+.quantity {
+    margin: 20px 0;
+}
+
+.quantity input {
+    width: 60px;
+    padding: 5px;
+}
+
+.option-group {
+    margin: 10px 0;
+}
+
+.option-group select {
+    padding: 5px;
+    margin-left: 10px;
+}
+</style>
 {% endblock %}
