@@ -113,11 +113,10 @@ title: Welcome to My Web Development Agency
     </div>
 </section>
 
-<!--
 <section class="home-blog-section main-grid">
     <div class="home-blog-title-container">
         <h2 class="section-title">Latest from the blog</h2>
-        <p>Don’t miss the number one capoeira blog on the internet. Articles touch on movement, music, culture, community, education and more.</p>
+        <p>Don’t miss the number one capoeira blog on the internet. Articles touch on</br> movement, music, culture, community, education and more.</p>
     </div>
     <div class="featured-blog-container">
     
@@ -125,21 +124,15 @@ title: Welcome to My Web Development Agency
     <a href="/" class="btn btn-dark">View all posts</a>
 
 </section>
--->
 
 <section class="home-testimonials main-grid">
     <h2 class="section-title">What people are saying</h2>
-    <div class="testimonial-container">
-        <div class="testimonial-track">
-            {% for review in review.reviews %} 
-                {% include "components//testimonial-card.njk" %}
-            {% endfor %}
-        </div>
-        <div class="carousel-nav">
-            {% for review in reviews.reviews %}
-                <button class="carousel-dot" data-index="{{ loop.index0 }}"></button>
-            {% endfor %}
-        </div>
+    <div class="testimonial-grid">
+        {% for review in reviews.reviews %}
+            {% if loop.index0 < 4 %}
+                {% include "testimonial-card.njk" %}
+            {% endif %}
+        {% endfor %}
     </div>
 </section>
 
