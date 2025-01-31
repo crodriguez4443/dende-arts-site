@@ -1,17 +1,31 @@
 
 /* === product landing page === */
 
-.product-hero {
-    display: grid;
-    background-color: var(--background-light);
+.abada-jogger-landing-page-img {
+    aspect-ratio: 250/350;
+    max-height: 650px;
+    margin: 0 auto;
+    padding-top: 2rem;
 }
 
-.product-hero > * {
-    grid-column: 2/4;
+.product-hero {
+    display: grid;
+    background-color: var(--background-variant);
+    padding-bottom: 5rem;
+}
+
+.rating-container-hero {
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
 .product-title {
-    margin-bottom: 0rem
+    margin-bottom: 1.2rem
+}
+
+.product-title p {
+    padding-bottom: 1.2rem;
 }
 
 .product-subtitle {
@@ -27,10 +41,16 @@
 
 .features-container {
     display: grid;
+    padding-top:2.5rem;
+    padding-bottom: 3rem;
     gap: 2rem; /* Consistent spacing */
     
     /* Desktop: 4 columns */
     grid-template-columns: repeat(4, 1fr);
+}
+
+.align-content-top {
+    align-self: flex-start;
 }
 
 /* Mobile breakpoint */
@@ -38,6 +58,7 @@
     .features-container {
         /* Mobile: 2 columns */
         grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
     }
 
     .product-image-half {
@@ -46,58 +67,150 @@
 }
 
 
+/* ===================
+ product review - short 
+==================== */
+
+.product-reviews {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--title-color);
+    color: white;
+    padding: 4rem;
+    gap: 3rem;
+}
+
+.review-container,
+.rating-container {
+    margin: 0 auto;
+    min-width: 150px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 725px) {
+    .product-reviews {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 /* ================ 
-     Components
+   customer issue
 ================== */
 
-.left-half-content,
-.right-half-content {
-    grid-column: 2/4;
+.product-pain-point {
+    padding: 3rem 0 0 0;
+}
+.product-paint-point .dissapointed-woman-text {
+    order:1;
+    grid-row: 1;
 }
 
-.left-half-img-container,
-.right-half-img-container {
-    grid-column: 2/4;
-    margin-bottom: 3rem;
-    aspect-ratio: 1/1;
+/* Container maintains aspect ratio */
+.dissapointed-woman {
+    order: 2;
+    display: flex;
+    align-self: end;
+    max-width: 300px;
+    justify-self: center;
 }
 
-.left-half-img-container img,
-.right-half-img-container img {
+/* Picture element styling */
+.dissapointed-woman picture {
+    display: block;
     width: 100%;
     height: 100%;
+}
+
+/* Image styling */
+.dissapointed-woman img {
+    width: 100%;
+    height: auto;
     object-fit: cover;
-}
-
-.hide-mobile {
-    display: none;
-}
-
-.hide-desktop {
-    display: block;
+    /* Use original aspect ratio */
+    aspect-ratio: 200/330;
 }
 
 @media (min-width: 768px) {
-    .hide-desktop {
-        display: none;
-    }
-    .hide-mobile {
-        display: block;
-    }
-    .left-half-img-container {
+    .dissapointed-woman {
+        order: 1;
         grid-column: 2;
+        max-width: 787px;
     }
 
-    .right-half-img-container {
-        grid-column: 3;
+    .dissapointed-woman-text {
+        grid-row: 1;
     }
+    
+    /* Maintain aspect ratio on desktop */
+    .dissapointed-woman img {
+        aspect-ratio: 400/630;
 
-    .left-half-content {
-        grid-column: 2;
     }
+}
 
-    .right-half-content {
-        grid-column: 3;
+/* ===================
+   abada alternative
+==================== */
+
+.product-abada-alternative {
+    padding-top: 2rem;
+    background-color: var(--background-light);
+}
+
+.product-abada-alternative-img {
+    display: flex;
+    margin-bottom: 0rem;
+    padding-left: 2rem;
+    max-width: 400px;
+    justify-self:center;
+}
+
+@media (min-width: 725px) {
+    .product-abada-alternative-img {
+        align-self: start;
     }
+}
 
+/* ===================
+     product info
+==================== */
+
+.white-bg {
+    background-color: white;
+}
+
+/* =======================
+   product testimonials
+======================= */    
+
+.product-testimonials {
+    background-color: var(--background-variant);
+    padding: 10rem 0rem 6rem;
+}
+
+.product-last-cta {
+    background-color: var(--background-light);
+}
+
+.abada-product-last-cta {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    margin: 0 auto;
+}
+
+.abada-product-last-cta h2 {
+    margin-right: 3rem;
+}
+
+.abada-product-last-cta a {
+    padding: 1rem 2rem;
+    align-self: center;
 }

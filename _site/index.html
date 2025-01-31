@@ -479,12 +479,16 @@
     
             <!-- Copyright -->
             <div class="footer-copyright">
-                <p>Copyright © 2025 Solstice Web Studio LLC | All Rights Reserved</p>
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
             </div>
         </div>
     </footer>
 
     <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
     
 </body>
 
