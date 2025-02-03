@@ -1,0 +1,25 @@
+---
+layout: layout.njk
+---
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+    if (!window.swell) {
+        console.error('Swell not initialized');
+        return;
+    }
+
+    try {
+        await swell.cart.redirect({
+            success_url: window.location.origin + '/thank-you'
+        });
+    } catch (error) {
+        console.error('Error redirecting to checkout:', error);
+        alert('Error starting checkout. Please try again.');
+        window.location.href = '/';
+    }
+});
+</script>
+
+<div class="checkout-loading">
+    Redirecting to checkout...
+</div>

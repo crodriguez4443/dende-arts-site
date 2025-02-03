@@ -9,11 +9,74 @@
     <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/blog.css">
     <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- load swell.js first -->
+
+        <script src="https://cdn.swell.store/js/swell.js"></script>
+
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
 </head>
 <body>
     <main>
         
-<div class="nav-content">
+<section class="main-grid product-sale-page">
+    <div class="nav-content">
             <!-- use shortcode for these image -->
             <div class="logo-link-container">
                 <picture class="logo-link">
@@ -40,78 +103,181 @@
                 <nav class="nav-menu">
                     <a href="/">Home</a>
                     <a href="/">About</a>
-                    <a href="/">Gear</a>
+                    <a href="/abada-joggers-landing/">Gear</a>
                     <a href="/">Learn</a>
-                    <a href="/">Blog</a>
+                    <a href="/blog/">Blog</a>
                     <a href="/">Contact</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
                 </nav>
             </div>
         </div>
-
-
-
-<div class="product-card">
-    
-        <h1>Abada Joggers</h1>
-        
-        
-            <img src="https://cdn.swell.store/dendearts/67977eaf9720f60012137aef/3d2cb406d2a3d551c0052ea603799a13/7.png" 
-                 alt="Abada Joggers"
-                 width="400"
-                 height="400">
-        
-        
-        
-            <div class="description">
-                These are the abadas I wish I had when I first started.&nbsp;
-            </div>
-        
-        
-        <div class="price">
-            Price: $69.5
+    <div class="product-image-wrapper">
+        <!-- Container for additional product photos -->
+        <div class="additional-photos-container" id="thumbnailContainer">
+            
+                
+                      
+                        <img src="https://cdn.swell.store/dendearts/67977eaf9720f60012137aef/3d2cb406d2a3d551c0052ea603799a13/7.png" 
+                            alt="Abada Joggers - Featured Image 1"
+                            class="thumbnail-image active"
+                            loading="lazy"
+                            width="80"
+                            height="80"
+                            data-index="0"
+                            onclick="swapImages(this)">
+                    
+                
+                      
+                        <img src="https://cdn.swell.store/dendearts/67977eafff0ff4001200d6c9/9937040028c24e9ac58805e9cd6e3b71/8.png" 
+                            alt="Abada Joggers - Additional Image 2"
+                            class="thumbnail-image "
+                            loading="lazy"
+                            width="80"
+                            height="80"
+                            data-index="1"
+                            onclick="swapImages(this)">
+                    
+                
+                      
+                        <img src="https://cdn.swell.store/dendearts/67977eaf1fa761001209ceae/a0fb1179c63359febea9dc2d9761c5f5/9.png" 
+                            alt="Abada Joggers - Additional Image 3"
+                            class="thumbnail-image "
+                            loading="lazy"
+                            width="80"
+                            height="80"
+                            data-index="2"
+                            onclick="swapImages(this)">
+                    
+                
+            
         </div>
 
+        <!-- Primary image container -->
+        <div class="left-half-img-container product-feature-image">
+            
+                <img src="https://cdn.swell.store/dendearts/67977eaf9720f60012137aef/3d2cb406d2a3d551c0052ea603799a13/7.png" 
+                    alt="Abada Joggers"
+                    class="main-product-image"
+                    id="mainImage"
+                    data-index="0"
+                    width="400"
+                    height="400">
+            
+        </div>
+    </div>
+
+    <div class="right-half-content product-sale-content">
         
-            <div class="options">
+        <div class="product-card">
+            
+                <h1>Abada Joggers</h1>
                 
-                    <div class="option-group">
-                        <label for="Size">Size:</label>
-                        <select id="Size" name="Size">
-                            
-                                <option value="Extra-Small">Extra-Small</option>
-                            
-                                <option value="Small">Small</option>
-                            
-                                <option value="Medium">Medium</option>
-                            
-                                <option value="Large">Large</option>
-                            
-                                <option value="Extra-Large">Extra-Large</option>
-                            
-                        </select>
+                <div class="price">
+                    Price: $ 69.5
+                </div>
+
+                
+                    <div class="description">
+                        <span style="white-space:pre-wrap;"><strong>Elevate your capoeira performance with the best capoeira abadas</strong></span><br><strong><br></strong><span style="white-space:pre-wrap;">Abada Jogger is here to offer you an alternative to the mob of unflattering capoeira uniforms out there.&nbsp;<br>Made with the most luxurious 4-way stretch polyester, Abada Jogger is mid-rise and tapered fit that bring comfort and style to your capoeira journey.</span>
                     </div>
                 
-            </div>
-        
 
-        <div class="quantity">
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" value="1" min="1">
+                
+                    <div class="features-container">
+                        <div class="feature">
+                            <div class="feature-image-container">
+                                <picture class="feature-icon">
+            <source type="image/svg+xml" srcset="/img/optimized/MhM95fMTX4-50.svg 50w" sizes="100vw">
+<source type="image/webp" srcset="/img/optimized/MhM95fMTX4-50.webp 50w, /img/optimized/MhM95fMTX4-400.webp 400w, /img/optimized/MhM95fMTX4-800.webp 800w, /img/optimized/MhM95fMTX4-1280.webp 1280w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/MhM95fMTX4-50.jpeg 50w, /img/optimized/MhM95fMTX4-400.jpeg 400w, /img/optimized/MhM95fMTX4-800.jpeg 800w, /img/optimized/MhM95fMTX4-1280.jpeg 1280w" sizes="100vw">
+            <img src="/img/optimized/MhM95fMTX4-1280.webp" width="1280" height="1280" alt="4-way stretch material" loading="lazy" decoding="async">
+        </picture>
+                            </div>
+                            <p>4-WAY STRETCH</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-image-container">
+                                <picture class="feature-icon">
+            <source type="image/svg+xml" srcset="/img/optimized/EXSSdFJe0y-46.svg 46w" sizes="100vw">
+<source type="image/webp" srcset="/img/optimized/EXSSdFJe0y-46.webp 46w, /img/optimized/EXSSdFJe0y-400.webp 400w, /img/optimized/EXSSdFJe0y-800.webp 800w, /img/optimized/EXSSdFJe0y-1280.webp 1280w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/EXSSdFJe0y-46.jpeg 46w, /img/optimized/EXSSdFJe0y-400.jpeg 400w, /img/optimized/EXSSdFJe0y-800.jpeg 800w, /img/optimized/EXSSdFJe0y-1280.jpeg 1280w" sizes="100vw">
+            <img src="/img/optimized/EXSSdFJe0y-1280.webp" width="1280" height="1307" alt="abadas with elastic waistband" loading="[object Object]" decoding="async">
+        </picture>
+                            </div>
+                            <p>4-WAY STRETCH</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-image-container">
+                                <picture class="feature-icon">
+            <source type="image/svg+xml" srcset="/img/optimized/AZZxf_LMnM-50.svg 50w" sizes="100vw">
+<source type="image/webp" srcset="/img/optimized/AZZxf_LMnM-50.webp 50w, /img/optimized/AZZxf_LMnM-400.webp 400w, /img/optimized/AZZxf_LMnM-800.webp 800w, /img/optimized/AZZxf_LMnM-1280.webp 1280w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/AZZxf_LMnM-50.jpeg 50w, /img/optimized/AZZxf_LMnM-400.jpeg 400w, /img/optimized/AZZxf_LMnM-800.jpeg 800w, /img/optimized/AZZxf_LMnM-1280.jpeg 1280w" sizes="100vw">
+            <img src="/img/optimized/AZZxf_LMnM-1280.webp" width="1280" height="1280" alt="abadas with tapered fit" loading="[object Object]" decoding="async">
+        </picture>
+                            </div>
+                            <p>4-WAY STRETCH</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-image-container">
+                                <picture class="feature-icon">
+            <source type="image/svg+xml" srcset="/img/optimized/72GbiEoTWp-50.svg 50w" sizes="100vw">
+<source type="image/webp" srcset="/img/optimized/72GbiEoTWp-50.webp 50w, /img/optimized/72GbiEoTWp-400.webp 400w, /img/optimized/72GbiEoTWp-800.webp 800w, /img/optimized/72GbiEoTWp-1280.webp 1280w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/72GbiEoTWp-50.jpeg 50w, /img/optimized/72GbiEoTWp-400.jpeg 400w, /img/optimized/72GbiEoTWp-800.jpeg 800w, /img/optimized/72GbiEoTWp-1280.jpeg 1280w" sizes="100vw">
+            <img src="/img/optimized/72GbiEoTWp-1280.webp" width="1280" height="1280" alt="abadas with zipper pocket" loading="[object Object]" decoding="async">
+        </picture>
+                            </div>
+                            <p>4-WAY STRETCH</p>
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="options">
+                        
+                            <div class="option-group">
+                                <label for="Size">Size:</label>
+                                <select id="Size" name="Size">
+                                    
+                                        <option value="Extra-Small">Extra-Small</option>
+                                    
+                                        <option value="Small">Small</option>
+                                    
+                                        <option value="Medium">Medium</option>
+                                    
+                                        <option value="Large">Large</option>
+                                    
+                                        <option value="Extra-Large">Extra-Large</option>
+                                    
+                                </select>
+                            </div>
+                        
+                    </div>
+                
+                
+                <div class="quantity">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                </div>
+                <div class="flex-container-justify">
+                    <button id="addToCart" 
+                            onclick="addToCart('6796e8f527aea3001290a682')"
+                            class="add-to-cart-button">
+                        Add to Cart
+                    </button>
+
+                    <button id="buyNow" 
+                            onclick="buyNow('6796e8f527aea3001290a682')"
+                            class="buy-now-button">
+                        Buy Now
+                    </button>
+                </div>
+            
         </div>
-
-        <button id="addToCart" 
-                onclick="addToCart('6796e8f527aea3001290a682')"
-                class="add-to-cart-button">
-            Add to Cart
-        </button>
-
-        <button id="buyNow" 
-                onclick="buyNow('6796e8f527aea3001290a682')"
-                class="buy-now-button">
-            Buy Now
-        </button>
-    
-</div>
+    </div>
+</section>
 
 <script>
 async function addToCart(productId) {
@@ -123,87 +289,134 @@ async function addToCart(productId) {
         options[select.name] = select.value;
     });
 
+    const button = document.getElementById('addToCart');
+    button.disabled = true;
+    button.textContent = 'Adding...';
+
     try {
-        const cart = await swell.cart.addItem({
+        // First, make sure swell is initialized
+        if (!window.swell) {
+            throw new Error('Swell is not initialized');
+        }
+
+        const result = await swell.cart.addItem({
             product_id: productId,
-            quantity: parseInt(quantity),
+            quantity: quantity,
             options: options
         });
-        
-        // Show a success message
-        alert('Added to cart successfully!');
-        
-        // Optional: Update cart count in navigation if you have one
-        updateCartCount(cart.item_quantity);
+
+        console.log('Add to cart result:', result);
+
+        button.textContent = 'Added to Cart!';
+        setTimeout(() => {
+            button.disabled = false;
+            button.textContent = 'Add to Cart';
+        }, 2000);
+
+        // Update cart count
+        if (result?.item_count) {
+            updateCartCount(result.item_count);
+        }
+
     } catch (error) {
-        console.error('Error adding to cart:', error);
-        alert('Error adding to cart. Please try again.');
+        console.error('Add to cart error:', error);
+        button.disabled = false;
+        button.textContent = 'Add to Cart';
+        alert('Error adding to cart: ' + error.message);
     }
 }
 
 async function buyNow(productId) {
+    const button = document.getElementById('buyNow');
+    button.disabled = true;
+    button.textContent = 'Processing...';
+
     try {
-        // First add to cart
+        // First, add to cart
         await addToCart(productId);
-        
-        // Then redirect to Swell's hosted checkout
+
+        // Then redirect to checkout
         const checkout = await swell.cart.redirect({
-            success_url: window.location.origin + '/thank-you'
+            checkout: {
+                redirect: window.location.origin + '/thank-you'
+            }
         });
+
+        if (checkout?.url) {
+            window.location = checkout.url;
+        } else {
+            throw new Error('No checkout URL received');
+        }
+
     } catch (error) {
-        console.error('Error during checkout:', error);
-        alert('Error starting checkout. Please try again.');
+        console.error('Buy now error:', error);
+        button.disabled = false;
+        button.textContent = 'Buy Now';
+        alert('Error processing checkout: ' + error.message);
     }
 }
 
+// MODIFIED: Update cart count function to work with Swell's cart data
 function updateCartCount(count) {
-    // If you have a cart count element in your navigation
     const cartCount = document.getElementById('cart-count');
     if (cartCount) {
-        cartCount.textContent = count;
+        cartCount.textContent = count.toString();
+        cartCount.style.display = count > 0 ? 'block' : 'none';
     }
 }
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const cart = await swell.cart.get();
+        console.log('Current cart:', cart);
+        if (cart?.item_count) {
+            updateCartCount(cart.item_count);
+        }
+    } catch (error) {
+        console.error('Error fetching cart:', error);
+    }
+});
+
+
+
+    // Store all product images data
+const productImages = JSON.parse('[{"id":"67977f16d47a330012afab26","file":{"height":1080,"md5":"3d2cb406d2a3d551c0052ea603799a13","url":"https://cdn.swell.store/dendearts/67977eaf9720f60012137aef/3d2cb406d2a3d551c0052ea603799a13/7.png","width":1080}},{"id":"67977f16d47a330012afab27","file":{"height":1080,"md5":"9937040028c24e9ac58805e9cd6e3b71","url":"https://cdn.swell.store/dendearts/67977eafff0ff4001200d6c9/9937040028c24e9ac58805e9cd6e3b71/8.png","width":1080}},{"id":"67977f16d47a330012afab28","file":{"height":1080,"md5":"a0fb1179c63359febea9dc2d9761c5f5","url":"https://cdn.swell.store/dendearts/67977eaf1fa761001209ceae/a0fb1179c63359febea9dc2d9761c5f5/9.png","width":1080}}]');
+
+function swapImages(thumbnailElement) {
+    const mainImage = document.getElementById('mainImage');
+    const thumbnails = document.querySelectorAll('.thumbnail-image');
+    
+    // Remove active class from all thumbnails
+    thumbnails.forEach(thumb => thumb.classList.remove('active'));
+    
+    // Add active class to clicked thumbnail
+    thumbnailElement.classList.add('active');
+
+    // Get the index of clicked thumbnail
+    const thumbnailIndex = parseInt(thumbnailElement.dataset.index);
+    
+    // Add fade out effect
+    mainImage.style.opacity = '0';
+    
+    // Update main image after a brief delay (for transition effect)
+    setTimeout(() => {
+        mainImage.src = productImages[thumbnailIndex].file.url;
+        mainImage.alt = productImages[thumbnailIndex].alt;
+        mainImage.dataset.index = thumbnailIndex;
+        mainImage.style.opacity = '1';
+    }, 300);
+}
+
+// Initialize the first thumbnail as active
+document.addEventListener('DOMContentLoaded', () => {
+    const firstThumbnail = document.querySelector('.thumbnail-image');
+    if (firstThumbnail) {
+        firstThumbnail.classList.add('active');
+    }
+});
+
 </script>
-
-<style>
-.add-to-cart-button,
-.buy-now-button {
-    padding: 10px 20px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.add-to-cart-button {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.buy-now-button {
-    background-color: #2196F3;
-    color: white;
-}
-
-.quantity {
-    margin: 20px 0;
-}
-
-.quantity input {
-    width: 60px;
-    padding: 5px;
-}
-
-.option-group {
-    margin: 10px 0;
-}
-
-.option-group select {
-    padding: 5px;
-    margin-left: 10px;
-}
-</style>
 
     </main>
     <footer class="footer main-grid">
@@ -284,6 +497,7 @@ function updateCartCount(count) {
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
+    
     
 </body>
 

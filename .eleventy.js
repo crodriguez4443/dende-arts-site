@@ -9,12 +9,13 @@ function stringifyAttributes(attributesObj) {
 }
 
 module.exports = function(eleventyConfig) {
+
     // Existing passthrough copy configurations
     eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addPassthroughCopy("src/img");
     eleventyConfig.addPassthroughCopy("src/js");
     eleventyConfig.addPassthroughCopy("src/fonts");
-
+    
     // Add the image shortcode
     eleventyConfig.addAsyncShortcode('image', async (
         src,
@@ -92,9 +93,6 @@ module.exports = function(eleventyConfig) {
             // Sort by date, most recent first
             .sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
     });
-
-    // Existing configuration
-
 
 
     return {

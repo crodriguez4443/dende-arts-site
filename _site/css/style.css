@@ -48,51 +48,9 @@ img {
 
 @font-face {
     font-family: 'DM Sans';
-    src: url('/fonts/DMSans-Regular.ttf') format('truetype');
-    font-weight: 400; /* Regular */
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'DM Sans';
-    src: url('/fonts/DMSans-Medium.ttf') format('truetype');
-    font-weight: 500; /* Medium */
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'DM Sans';
-    src: url('/fonts/DMSans-Bold.ttf') format('truetype');
-    font-weight: 700; /* Bold */
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'DM Sans';
-    src: url('/fonts/DMSans-extra-bold.ttf') format('truetype');
-    font-weight: 900; /* Extra Bold */
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'DM Sans';
-    src: url('/fonts/DMSans-Italic.ttf') format('truetype');
-    font-weight: 400; /* Regular Italic */
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'DM Sans';
-    src: url('/fonts/DMSans-MediumItalic.ttf') format('truetype');
-    font-weight: 500; /* Medium Italic */
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'DM Sans';
-    src: url('/fonts/DMSans-BoldItalic.ttf') format('truetype');
-    font-weight: 700; /* Bold Italic */
-    font-style: italic;
+    src: url('/fonts/DMSans-Variable.woff2') format('woff2-variations');
+    font-weight: 100 1000;  /* This covers the entire weight range */
+    font-display: swap;
 }
 
 /* === typography styles === */
@@ -124,12 +82,16 @@ p {
 }
 	
 a {
-	color: red;
+	color: black;
+    text-decoration: none;
 	}
 	
-a:hover, a:focus {
-	color: orange;
-	}
+a:hover, 
+a:focus,
+button:focus,
+button:hover {
+	color: var(--alt-action);
+}
 
 /* add other typography based styles below */
 	
@@ -161,6 +123,7 @@ a:hover, a:focus {
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: 500;
+    transform: all 0.3s ease-in-out;
 }
 
 .btn-form {
@@ -214,6 +177,20 @@ strong {
     h3 {
         font-size: 1.375rem;
         line-height: 2rem;
+    }
+}
+
+@media (min-width: 725px) {
+    .btn-dark,
+    .btn-light,
+    .btn-blue,
+    .btn-very-dark {
+        width: auto;
+        min-width: 300px;
+    }
+
+    .btn-full-width {
+        width: 100%;
     }
 }
 
@@ -386,21 +363,22 @@ strong {
 }
 
   .hamburger {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     background: none;
     border: none;
     cursor: pointer;
     position: relative;
     z-index: 10;
+    margin-right: 20px;
   }
 
   .hamburger span {
     display: block;
     width: 30px;
     height: 3.5px;
-    margin: 8px;
-    background-color: white;
+    margin: 5px;
+    background-color: var(--title-color);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
   }
@@ -411,7 +389,7 @@ strong {
     right: 35px;
     width: 0;
     height: 0;
-    background-color: #333;
+    background-color: var(--title-color);
     border-radius: 50%;
     transition: all 0.6s ease;
     transform: translate(50%, -50%);
@@ -1316,6 +1294,11 @@ strong {
     padding-right: 1rem;
 }
 
+.flex-container-justify {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media (min-width: 768px) {
     .hide-desktop {
         display: none;
@@ -1345,4 +1328,94 @@ strong {
         
     }
 
+}
+
+
+/* ================ 
+    Blog componentes
+================== */
+
+.blog-page-title {
+    color: #434343;
+        /* font-family: "DM Sans"; */
+        font-size: 1.75rem;
+        font-weight: 400;
+        line-height: 2.375rem; /* 135.714% */
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 375px));
+    justify-content: center; /* Centers the grid if total width is less than container */
+    gap: 22px; /* Space between grid items */
+    width: 100%; /* Full width of container */
+}
+
+.blog-featured-image,
+.blog-featured-image img {
+    width: 375px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: .625rem .625rem 0 0;
+}
+
+
+.blog-card {
+    height: 500px;
+    width: 375px;
+    border-radius: .625rem;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
+}
+
+.blog-card-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-between;
+}
+
+.blog-card-title {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-weight: 700;
+    color: var(--title-color);
+    padding-top: 2rem;
+}
+
+.blog-card-excerpt {
+    margin: 0;
+    padding-bottom: 1.5rem;
+}
+
+.read-more {
+    color: var(--action-primary);
+    justify-self: end;
+    font-size: 1.375rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.load-more-container {
+    text-align: center;
+}
+
+.load-more-btn {
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .blog-page-title {
+        font-size: 3.625rem;
+        line-height: 4.375rem; 
+    }
+
+    .load-more-btn {
+        padding: 1rem 2.5rem;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border-color: none;
+    }
 }

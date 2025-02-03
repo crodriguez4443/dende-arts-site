@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title></title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/testimonials.css">
     <link rel="stylesheet" href="/css/contact.css">
@@ -74,22 +74,59 @@
 </head>
 <body>
     <main>
-        {{ content | safe }}
+        <script>
+document.addEventListener('DOMContentLoaded', async () => {
+    if (!window.swell) {
+        console.error('Swell not initialized');
+        return;
+    }
+
+    try {
+        await swell.cart.redirect({
+            success_url: window.location.origin + '/thank-you'
+        });
+    } catch (error) {
+        console.error('Error redirecting to checkout:', error);
+        alert('Error starting checkout. Please try again.');
+        window.location.href = '/';
+    }
+});
+</script>
+
+<div class="checkout-loading">
+    Redirecting to checkout...
+</div>
+
     </main>
     <footer class="footer main-grid">
         <div class="footer-top-content">
         <!-- Logo/Title Section -->
             <div class="footer-logo-link-container">
-                {# {% image "src/img/dende-arts-logo.png", "dende arts logo", "logo-link", undefined, undefined, undefined, "eager" %} #}
-                {% image "src/img/dende-logo-white.png", "dende arts logo", "footer-logo-link-lg", undefined, undefined, undefined, "eager" %}
+                
+                <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
             </div>
             <!-- Social Media Icons -->
             <div class="footer-social-large"> 
                 <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
-                    {% image "src/img/homepage/instagram-icon-white.png", "instagram logo", "instagram-logo", undefined, undefined, undefined %}
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
                 </a>
                 <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
-                    {% image "src/img/homepage/youtube-icon-white.png", "youtube logo", "youtube-logo", undefined, undefined, undefined %}
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
                 </a>
                 
             </div>
@@ -109,10 +146,20 @@
             <!-- Social Media Icons -->
             <div class="footer-social-small">
                 <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
-                    {% image "src/img/homepage/instagram-icon-white.png", "instagram logo", "instagram-logo", undefined, undefined, undefined %}
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
                 </a>
                 <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
-                    {% image "src/img/homepage/youtube-icon-white.png", "youtube logo", "youtube-logo", undefined, undefined, undefined %}
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
                 </a>
                 
             </div>
@@ -129,8 +176,8 @@
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
-    {# <script src="/js/testimonials-carousel.js"></script> #}
-    {# <script src="js/ecommerce.js" defer></script> #}
+    
+    
 </body>
 
 

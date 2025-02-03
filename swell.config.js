@@ -7,8 +7,8 @@ const options = {
   cache: false
 }
 
-const store = 'dendearts'  // e.g., 'dende-arts'
-const key = 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK'   // e.g., 'pk_test_xxxxxx'
+const store = 'dendearts'  
+const key = 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK'  
 
 try {
   swell.init(store, key, options)

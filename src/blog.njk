@@ -1,18 +1,20 @@
 ---
 layout: layout.njk
 title: The number 1 Capoeira blog online
+permalink: /blog/
 ---
 <!-- src/_includes/layouts/blog.njk -->
 <div class="blog-page-container main-grid">
-    <h1></h1>
     {% include "nav.njk" %}
+    <h1 class="blog-page-title"><strong>We are the biggest online capoeira community!</strong> Find thoughts, resources and recommendations.</h1>
+
     <div class="blog-container">
         {# Blog Grid #}
         {% include "blog-grid.njk" %}
 
         {# Load More Button #}
         <div class="load-more-container">
-            <button id="load-more" class="load-more-btn">Load More Posts</button>
+            <button id="load-more" class="load-more-btn btn-dark">Load More Posts</button>
         </div>
     </div>
 </div>

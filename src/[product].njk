@@ -8,64 +8,122 @@ permalink: "/{{ product.slug | slugify }}/"
 layout: layout.njk
 ---
 
-{% include "nav.njk" %}
-
-
-{% block content %}
-<div class="product-card">
-    {% if product %}
-        <h1>{{ product.name }}</h1>
-        
-        {% if product.images and product.images[0] %}
-            <img src="{{ product.images[0].file.url }}" 
-                 alt="{{ product.name }}"
-                 width="400"
-                 height="400">
-        {% endif %}
-        
-        {% if product.description %}
-            <div class="description">
-                {{ product.description | safe }}
-            </div>
-        {% endif %}
-        
-        <div class="price">
-            Price: ${{ product.price }}
-        </div>
-
-        {% if product.options %}
-            <div class="options">
-                {% for option in product.options %}
-                    <div class="option-group">
-                        <label for="{{ option.name }}">{{ option.name }}:</label>
-                        <select id="{{ option.name }}" name="{{ option.name }}">
-                            {% for value in option.values %}
-                                <option value="{{ value.name }}">{{ value.name }}</option>
-                            {% endfor %}
-                        </select>
-                    </div>
+<section class="main-grid product-sale-page">
+    {% include "nav.njk" %}
+    <div class="product-image-wrapper">
+        <!-- Container for additional product photos -->
+        <div class="additional-photos-container" id="thumbnailContainer">
+            {% if product.images.length > 0 %}
+                {% for image in product.images %}
+                    {% if loop.index0 < 4 %}  {# Show first 4 images including featured image #}
+                        <img src="{{ image.file.url }}" 
+                            alt="{{ product.name }} - {% if loop.index0 === 0 %}Featured{% else %}Additional{% endif %} Image {{ loop.index }}"
+                            class="thumbnail-image {% if loop.index0 === 0 %}active{% endif %}"
+                            loading="lazy"
+                            width="80"
+                            height="80"
+                            data-index="{{ loop.index0 }}"
+                            onclick="swapImages(this)">
+                    {% endif %}
                 {% endfor %}
-            </div>
-        {% endif %}
-
-        <div class="quantity">
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" value="1" min="1">
+            {% endif %}
         </div>
 
-        <button id="addToCart" 
-                onclick="addToCart('{{ product.id }}')"
-                class="add-to-cart-button">
-            Add to Cart
-        </button>
+        <!-- Primary image container -->
+        <div class="left-half-img-container product-feature-image">
+            {% if product.images and product.images[0] %}
+                <img src="{{ product.images[0].file.url }}" 
+                    alt="{{ product.name }}"
+                    class="main-product-image"
+                    id="mainImage"
+                    data-index="0"
+                    width="400"
+                    height="400">
+            {% endif %}
+        </div>
+    </div>
 
-        <button id="buyNow" 
-                onclick="buyNow('{{ product.id }}')"
-                class="buy-now-button">
-            Buy Now
-        </button>
-    {% endif %}
-</div>
+    <div class="right-half-content product-sale-content">
+        {% block content %}
+        <div class="product-card">
+            {% if product %}
+                <h1>{{ product.name }}</h1>
+                
+                <div class="price">
+                    Price: $ {{ product.price }}
+                </div>
+
+                {% if product.description %}
+                    <div class="description">
+                        {{ product.description | safe }}
+                    </div>
+                {% endif %}
+
+                {% if product.name=='Abada Joggers' %}
+                    <div class="features-container">
+                        <div class="feature">
+                            <div class="feature-image-container">
+                                {% image "src/img/homepage/fabric-icon.svg", "4-way stretch material", "feature-icon", undefined, undefined, undefined, eager %}
+                            </div>
+                            <p>4-WAY STRETCH</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-image-container">
+                                {% image "src/img/homepage/waistband.svg", "abadas with elastic waistband", "feature-icon", undefined, undefined, undefined, loading="eager"  %}
+                            </div>
+                            <p>4-WAY STRETCH</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-image-container">
+                                {% image "src/img/homepage/taper.svg", "abadas with tapered fit", "feature-icon", undefined, undefined, undefined, loading="eager" %}
+                            </div>
+                            <p>4-WAY STRETCH</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-image-container">
+                                {% image "src/img/homepage/zipper.svg", "abadas with zipper pocket", "feature-icon", undefined, undefined, undefined, loading="eager" %}
+                            </div>
+                            <p>4-WAY STRETCH</p>
+                        </div>
+                    </div>
+                {% endif %}
+                
+                {% if product.options %}
+                    <div class="options">
+                        {% for option in product.options %}
+                            <div class="option-group">
+                                <label for="{{ option.name }}">{{ option.name }}:</label>
+                                <select id="{{ option.name }}" name="{{ option.name }}">
+                                    {% for value in option.values %}
+                                        <option value="{{ value.name }}">{{ value.name }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                
+                <div class="quantity">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                </div>
+                <div class="flex-container-justify">
+                    <button id="addToCart" 
+                            onclick="addToCart('{{ product.id }}')"
+                            class="add-to-cart-button">
+                        Add to Cart
+                    </button>
+
+                    <button id="buyNow" 
+                            onclick="buyNow('{{ product.id }}')"
+                            class="buy-now-button">
+                        Buy Now
+                    </button>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
 
 <script>
 async function addToCart(productId) {
@@ -77,85 +135,132 @@ async function addToCart(productId) {
         options[select.name] = select.value;
     });
 
+    const button = document.getElementById('addToCart');
+    button.disabled = true;
+    button.textContent = 'Adding...';
+
     try {
-        const cart = await swell.cart.addItem({
+        // First, make sure swell is initialized
+        if (!window.swell) {
+            throw new Error('Swell is not initialized');
+        }
+
+        const result = await swell.cart.addItem({
             product_id: productId,
-            quantity: parseInt(quantity),
+            quantity: quantity,
             options: options
         });
-        
-        // Show a success message
-        alert('Added to cart successfully!');
-        
-        // Optional: Update cart count in navigation if you have one
-        updateCartCount(cart.item_quantity);
+
+        console.log('Add to cart result:', result);
+
+        button.textContent = 'Added to Cart!';
+        setTimeout(() => {
+            button.disabled = false;
+            button.textContent = 'Add to Cart';
+        }, 2000);
+
+        // Update cart count
+        if (result?.item_count) {
+            updateCartCount(result.item_count);
+        }
+
     } catch (error) {
-        console.error('Error adding to cart:', error);
-        alert('Error adding to cart. Please try again.');
+        console.error('Add to cart error:', error);
+        button.disabled = false;
+        button.textContent = 'Add to Cart';
+        alert('Error adding to cart: ' + error.message);
     }
 }
 
 async function buyNow(productId) {
+    const button = document.getElementById('buyNow');
+    button.disabled = true;
+    button.textContent = 'Processing...';
+
     try {
-        // First add to cart
+        // First, add to cart
         await addToCart(productId);
-        
-        // Then redirect to Swell's hosted checkout
+
+        // Then redirect to checkout
         const checkout = await swell.cart.redirect({
-            success_url: window.location.origin + '/thank-you'
+            checkout: {
+                redirect: window.location.origin + '/thank-you'
+            }
         });
+
+        if (checkout?.url) {
+            window.location = checkout.url;
+        } else {
+            throw new Error('No checkout URL received');
+        }
+
     } catch (error) {
-        console.error('Error during checkout:', error);
-        alert('Error starting checkout. Please try again.');
+        console.error('Buy now error:', error);
+        button.disabled = false;
+        button.textContent = 'Buy Now';
+        alert('Error processing checkout: ' + error.message);
     }
 }
 
+// MODIFIED: Update cart count function to work with Swell's cart data
 function updateCartCount(count) {
-    // If you have a cart count element in your navigation
     const cartCount = document.getElementById('cart-count');
     if (cartCount) {
-        cartCount.textContent = count;
+        cartCount.textContent = count.toString();
+        cartCount.style.display = count > 0 ? 'block' : 'none';
     }
 }
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const cart = await swell.cart.get();
+        console.log('Current cart:', cart);
+        if (cart?.item_count) {
+            updateCartCount(cart.item_count);
+        }
+    } catch (error) {
+        console.error('Error fetching cart:', error);
+    }
+});
+
+
+
+    // Store all product images data
+const productImages = JSON.parse('{{ product.images | dump | safe }}');
+
+function swapImages(thumbnailElement) {
+    const mainImage = document.getElementById('mainImage');
+    const thumbnails = document.querySelectorAll('.thumbnail-image');
+    
+    // Remove active class from all thumbnails
+    thumbnails.forEach(thumb => thumb.classList.remove('active'));
+    
+    // Add active class to clicked thumbnail
+    thumbnailElement.classList.add('active');
+
+    // Get the index of clicked thumbnail
+    const thumbnailIndex = parseInt(thumbnailElement.dataset.index);
+    
+    // Add fade out effect
+    mainImage.style.opacity = '0';
+    
+    // Update main image after a brief delay (for transition effect)
+    setTimeout(() => {
+        mainImage.src = productImages[thumbnailIndex].file.url;
+        mainImage.alt = productImages[thumbnailIndex].alt;
+        mainImage.dataset.index = thumbnailIndex;
+        mainImage.style.opacity = '1';
+    }, 300);
+}
+
+// Initialize the first thumbnail as active
+document.addEventListener('DOMContentLoaded', () => {
+    const firstThumbnail = document.querySelector('.thumbnail-image');
+    if (firstThumbnail) {
+        firstThumbnail.classList.add('active');
+    }
+});
+
 </script>
-
-<style>
-.add-to-cart-button,
-.buy-now-button {
-    padding: 10px 20px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.add-to-cart-button {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.buy-now-button {
-    background-color: #2196F3;
-    color: white;
-}
-
-.quantity {
-    margin: 20px 0;
-}
-
-.quantity input {
-    width: 60px;
-    padding: 5px;
-}
-
-.option-group {
-    margin: 10px 0;
-}
-
-.option-group select {
-    padding: 5px;
-    margin-left: 10px;
-}
-</style>
 {% endblock %}
