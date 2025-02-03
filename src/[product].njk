@@ -164,13 +164,18 @@ async function addToCart(productId) {
             updateCartCount(result.item_count);
         }
 
+        return true; // Indicate success
+
     } catch (error) {
         console.error('Add to cart error:', error);
         button.disabled = false;
         button.textContent = 'Add to Cart';
         alert('Error adding to cart: ' + error.message);
+        
+        return false; // Indicate failure
     }
 }
+
 
 async function buyNow(productId) {
     const button = document.getElementById('buyNow');
@@ -179,19 +184,19 @@ async function buyNow(productId) {
 
     try {
         // First, add to cart
-        await addToCart(productId);
+        const result = await addToCart(productId);
 
-        // Then redirect to checkout
-        const checkout = await swell.cart.redirect({
-            checkout: {
-                redirect: window.location.origin + '/thank-you'
+        // Check if the item was added successfully
+        if (result) {
+            // Redirect to checkout
+            const checkout = await swell.cart.checkout(); // This method initiates checkout
+            if (checkout?.url) {
+                window.location = checkout.url; // Redirect to the checkout URL
+            } else {
+                throw new Error('No checkout URL received');
             }
-        });
-
-        if (checkout?.url) {
-            window.location = checkout.url;
         } else {
-            throw new Error('No checkout URL received');
+            throw new Error('Failed to add item to cart');
         }
 
     } catch (error) {
