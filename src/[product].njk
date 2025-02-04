@@ -185,7 +185,7 @@ async function validateCart() {
             hasCart: !!cart,
             cartId: cart?.id,
             checkoutId: cart?.checkout_id,
-            checkoutUrl: cart?.checkout_url,
+            checkoutUrl: cart?.checkoutUrl,
             itemCount: cart?.items?.length || 0,
             total: cart?.grand_total || 0
         });
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 
-// Buy Now fuction
+// Buy Now
 
 async function buyNow(productId) {
     const button = document.getElementById('buyNow');
@@ -235,7 +235,7 @@ async function buyNow(productId) {
         console.log('Cart currency:', currentCart?.currency);
         console.log('Checkout ID:', currentCart?.checkout_id);
         console.log('Items in cart:', currentCart?.items?.length || 0);
-        console.log('Checkout URL:', currentCart?.checkout_url);
+        console.log('Checkout URL:', currentCart?.checkoutUrl);
 
         // Check if cart is empty
         if (!currentCart?.items || currentCart.items.length === 0) {
@@ -246,7 +246,7 @@ async function buyNow(productId) {
         }
 
         // Double check we have a checkout URL
-        if (!currentCart?.checkout_url) {
+        if (!currentCart?.checkoutUrl) {
             // Try to construct the checkout URL if we have a checkout_id
             if (currentCart?.checkout_id) {
                 const checkoutUrl = `https://dendearts.swell.store/checkout/${currentCart.checkout_id}`;
@@ -257,9 +257,9 @@ async function buyNow(productId) {
             throw new Error('Unable to generate checkout URL');
         }
 
-        // If we have a direct checkout_url, use it
-        console.log('Redirecting to checkout:', currentCart.checkout_url);
-        window.location.href = currentCart.checkout_url;
+        // If we have a direct checkoutUrl, use it
+        console.log('Redirecting to checkout:', currentCart.checkoutUrl);
+        window.location.href = currentCart.checkoutUrl;
 
     } catch (error) {
         console.error('Buy now error:', error);
