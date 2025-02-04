@@ -336,24 +336,19 @@ async function buyNow(productId) {
     button.textContent = 'Processing...';
 
     try {
-        // 1. Add to cart
+        // First, add to cart
         await addToCart(productId);
 
-        // 2. Get the cart and make sure it exists
+        // Get the cart
         const cart = await swell.cart.get();
-        if (!cart) {
-            throw new Error('Unable to retrieve cart');
-        }
+        console.log('Cart response:', cart); // Debug log
 
-        // 3. Check for checkout URL
         if (!cart.checkout_url) {
-            throw new Error('Checkout URL not available');
+            throw new Error('No checkout URL available');
         }
 
-        // 4. Log for debugging (optional)
-        console.log('Redirecting to checkout:', cart.checkout_url);
-
-        // 5. Redirect to checkout
+        // Use the checkout_url directly from the cart response
+        console.log('Redirecting to:', cart.checkout_url); // Debug log
         window.location.href = cart.checkout_url;
 
     } catch (error) {
@@ -363,6 +358,7 @@ async function buyNow(productId) {
         alert('Error processing checkout: ' + error.message);
     }
 }
+
 
 
 // MODIFIED: Update cart count function to work with Swell's cart data
