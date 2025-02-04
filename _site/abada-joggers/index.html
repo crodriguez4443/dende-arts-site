@@ -329,6 +329,49 @@ async function addToCart(productId) {
     }
 }
 
+//validate the cart state function
+
+async function validateCart() {
+    try {
+        const cart = await swell.cart.get();
+        console.log('Validating cart state:', {
+            hasCart: !!cart,
+            cartId: cart?.id,
+            checkoutId: cart?.checkout_id,
+            checkoutUrl: cart?.checkout_url,
+            itemCount: cart?.items?.length || 0,
+            total: cart?.grand_total || 0
+        });
+        return cart;
+    } catch (error) {
+        console.error('Cart validation error:', error);
+        return null;
+    }
+}
+
+// Add this to your DOMContentLoaded event
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        // Validate Swell initialization
+        if (!window.swell) {
+            console.error('Swell is not initialized');
+            return;
+        }
+        
+        // Validate cart state
+        const initialCart = await validateCart();
+        console.log('Initial cart state:', initialCart);
+        
+        if (initialCart?.item_count) {
+            updateCartCount(initialCart.item_count);
+        }
+    } catch (error) {
+        console.error('Initialization error:', error);
+    }
+});
+
+
+// Buy Now fuction
 
 async function buyNow(productId) {
     const button = document.getElementById('buyNow');
@@ -336,30 +379,38 @@ async function buyNow(productId) {
     button.textContent = 'Processing...';
 
     try {
-        // First, check if cart exists and has items
+        // Get current cart state
         const currentCart = await swell.cart.get();
-        console.log('Current Cart:', currentCart);
         
-        // Log specific IDs
-        if (currentCart) {
-            console.log('Cart ID:', currentCart.id);
-            console.log('Cart currency: ', currentCart.currency);
-            console.log('Checkout ID:', currentCart.checkout_id);
-        }
+        // Detailed cart logging
+        console.log('Full cart object:', currentCart);
+        console.log('Cart ID:', currentCart?.id);
+        console.log('Cart currency:', currentCart?.currency);
+        console.log('Checkout ID:', currentCart?.checkout_id);
+        console.log('Items in cart:', currentCart?.items?.length || 0);
+        console.log('Checkout URL:', currentCart?.checkout_url);
 
         // Check if cart is empty
-        if (!currentCart || !currentCart.items || currentCart.items.length === 0) {
+        if (!currentCart?.items || currentCart.items.length === 0) {
             button.disabled = false;
             button.textContent = 'Buy Now';
             alert('Your cart is empty. Please add items before checkout.');
             return;
         }
 
-        // If we have items, proceed to checkout
-        if (!currentCart.checkout_url) {
-            throw new Error('Checkout URL not available');
+        // Double check we have a checkout URL
+        if (!currentCart?.checkout_url) {
+            // Try to construct the checkout URL if we have a checkout_id
+            if (currentCart?.checkout_id) {
+                const checkoutUrl = `https://dendearts.swell.store/checkout/${currentCart.checkout_id}`;
+                console.log('Constructed checkout URL:', checkoutUrl);
+                window.location.href = checkoutUrl;
+                return;
+            }
+            throw new Error('Unable to generate checkout URL');
         }
 
+        // If we have a direct checkout_url, use it
         console.log('Redirecting to checkout:', currentCart.checkout_url);
         window.location.href = currentCart.checkout_url;
 
@@ -370,7 +421,6 @@ async function buyNow(productId) {
         alert('Error processing checkout: ' + error.message);
     }
 }
-
 
 
 
