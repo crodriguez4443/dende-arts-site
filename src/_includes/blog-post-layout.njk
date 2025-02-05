@@ -1,0 +1,65 @@
+---
+layout: layout.njk
+---
+
+<div class="main-grid">
+    {% include "nav.njk" %}
+</div>
+<div class="blog-post-container blog-layout">
+    <article class="blog-post">
+        <div class="breadcrumb-container">
+            <a href="/">Home/</a>
+            <a href="/blog">Blog/</a>
+            <a href="/blog/{{ slug }}">{{ title }}</a>
+        </div>
+        <h1>{{ title }}</h1>
+
+        <div class="blog-info">
+            <p>Author: {{ author }} | Category: {{ category }}</p>
+        </div>
+        
+        {% if featured %}
+            <div class="blog-post-featured-image">
+                {% image 
+                    featured, 
+                    title, 
+                    "blog-featured-image" 
+                %}
+            </div>
+        {% endif %}
+        
+        <div class="blog-post-meta">
+            <time datetime="{{ date | htmlDateString }}">
+                {{ date | readableDate }}
+            </time>
+        </div>
+        
+        <div class="blog-post-content">
+            {{ content | safe }}
+        </div>
+    </article>
+    <aside class="blog-post-sidebar">
+        <div class="search-form">
+            <p>Search articles and songs form</p>
+        </div>
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+        <div class="related-posts">
+            <p>Related posts</p>
+        </div>
+        <div class="popular-posts">
+            <p>Popular posts</p>
+        </div>
+        <div class="popular songs">
+            <p>Popular songs</p>
+        </div>
+        <div class="ads space">
+            <p>Ad space</p>
+            <p>Ad space</p>
+        </div>
+    </aside>
+</div>      

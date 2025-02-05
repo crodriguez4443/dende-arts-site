@@ -23,7 +23,7 @@
 	in the width of an element. 
 	so if you make a box 200px wide,
 	the set padding and border are included */
-	
+    overflow-x: clip;
 }
 
 body {
@@ -1405,6 +1405,41 @@ strong {
     margin-top: 4rem;
 }
 
+/* === blog template page === */
+
+.blog-layout {
+    display: grid;
+    grid-template-columns: 1fr minmax(200px, 900px) minmax(100px, 300px);
+    column-gap: 1.5rem; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.breadcrumb-container {
+    color: var(--action-primary);
+    padding-bottom: 1.5rem;
+}
+
+.blog-post h1 {
+    margin-bottom: 0rem;
+}
+
+.blog-info {
+    font-size: 1.125rem;
+}
+
+.blog-post-container > * {
+    display: grid;
+    grid-column: 2/4;
+    column-gap: 2rem;
+}
+
+.blog-post .blog-post-featured-image {
+    padding-bottom: 2rem;
+}
+
+
+
 @media (min-width: 768px) {
     .blog-page-title {
         font-size: 3.625rem;
@@ -1417,5 +1452,16 @@ strong {
         margin-left: auto;
         margin-right: auto;
         border-color: none;
+    }
+
+    .blog-post {
+        grid-column: 2;
+
+    }
+
+    .blog-post-sidebar {
+        padding-top: 2rem;
+        grid-column: 3;
+
     }
 }
