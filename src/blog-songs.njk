@@ -2,11 +2,10 @@
 layout: layout.njk
 title: The number 1 Capoeira blog online
 pagination:
-  data: collections.filteredPosts
-  size: 30
-  alias: paginatedPosts
-  addAllPagesToCollections: true
-permalink: "blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+  data: collections.songbookPosts
+  size: 50
+  alias: songbookPosts
+permalink: "songbook/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 ---
 
 <!-- src/_includes/layouts/blog.njk -->
@@ -19,7 +18,7 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber
         {# Blog Grid #}
         <!-- blog-grid.njk -->
         <div class="blog-grid" id="blog-grid">
-            {% for post in paginatedPosts %}
+            {% for post in songbookPosts %}
                 <article class="blog-card">
                     {% if post.data.coverImage %}
                         {% image 
@@ -55,7 +54,7 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber
                 {% if pageNumber === pagination.pageNumber + 1 %}
                     <span class="pagination-link current">{{ pageNumber }}</span>
                 {% else %}
-                    <a href="{% if loop.index0 == 0 %}/blog/{% else %}/blog/page-{{ pageNumber }}/{% endif %}" 
+                    <a href="{% if loop.index0 == 0 %}/songbook/{% else %}/songbook/page-{{ pageNumber }}/{% endif %}" 
                     class="pagination-link">
                         {{ pageNumber }}
                     </a>

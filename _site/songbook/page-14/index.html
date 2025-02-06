@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The number 1 Capoeira blog online</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<!-- src/_includes/layouts/blog.njk -->
+<div class="blog-page-container main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/abada-joggers-landing/">Gear</a>
+                    <a href="/">Learn</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/">Contact</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <h1 class="blog-page-title"><strong>We are the biggest online capoeira community!</strong> Find thoughts, resources and recommendations.</h1>
+
+    <div class="blog-container">
+
+        
+        <!-- blog-grid.njk -->
+        
+        <div class="blog-grid" id="blog-grid">
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/bate-palmas-pra-ele/">Bate Palmas Pra Ele (menino é bom)</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/bate-palmas-pra-ele/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/o-balanco-de-corpo/">O Balanço de Corpo</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/o-balanco-de-corpo/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/bate-no-batuque-bate/">Bate no batuque, bate</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/bate-no-batuque-bate/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/beira-mar-ioio-beira-mar-iaia/">Beira mar ioiô, beira mar iaiá</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/beira-mar-ioio-beira-mar-iaia/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/bem-te-vi-tambem-te-viu/">Bem-te-vi também te viu</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/bem-te-vi-tambem-te-viu/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/berimbau-anunciou/">Berimbau anunciou</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/berimbau-anunciou/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/berimbau-chamou/">Berimbau chamou</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/berimbau-chamou/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/berimbau-tocou/">Berimbau tocou</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/berimbau-tocou/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/besouro-besourinho/">Besouro besourinho</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/besouro-besourinho/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/bom-vaqueiro/">Bom vaqueiro</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/bom-vaqueiro/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/amanha-e-dia-santa-um-dois-tres/">Amanhã é dia Santo (Um, dois, três)</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/amanha-e-dia-santa-um-dois-tres/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/angola-e-e-angola-e-angola/">Angola é é, angola é Angola</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/angola-e-e-angola-e-angola/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/angola-e-que-tem-dende/">Angola é que tem dendê</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/angola-e-que-tem-dende/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/apanha-laranja-no-chao-tico-tico/">Apanha laranja no chão tico-tico</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/apanha-laranja-no-chao-tico-tico/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/aqui-do-lado-veja-veja/">Aqui do lado (veja veja)</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/aqui-do-lado-veja-veja/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/aqui-na-minha-casa-nao-falta-dende/">Aqui na minha casa nao falta dendê</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/aqui-na-minha-casa-nao-falta-dende/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/areia-o-areia-do-mar/">Areia O areia do mar</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/areia-o-areia-do-mar/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/arrodeia-o-mar-tres-vezes/">Arrodeia o mar três vezes</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/arrodeia-o-mar-tres-vezes/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/aruanda-e-camara/">Aruanda ê camará</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/aruanda-e-camara/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/aue-aue-aue-amaralinha/">Aué aué, aué Amaralinha</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/aue-aue-aue-amaralinha/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/ave-maria-meu-deus/">Ave Maria meu Deus</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/ave-maria-meu-deus/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/avisa-la-meu-mano-avisa-meu-mano-la/">Avisa Lá meu mano, Avisa meu mano lá</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/avisa-la-meu-mano-avisa-meu-mano-la/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/avisa-meu-mano/">Avisa meu mano</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/avisa-meu-mano/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/besouro-preto-santo-amaro/">Besouro Preto (Santo Amaro)</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/besouro-preto-santo-amaro/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/bimba-ensina-eu/">Bimba ensina eu</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/bimba-ensina-eu/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/bota-dende/">Bota dendê</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/bota-dende/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/zumbi-zumbi-olha-zumbi/">Zumbi, Zumbi, Olha Zumbi</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/zumbi-zumbi-olha-zumbi/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/berimbau-falou/">Berimbau Falou</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/berimbau-falou/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/berimbau-me-leva-e/">Berimbau me leva ê</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/berimbau-me-leva-e/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="blog-card">
+                    
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="/blog/berimbau-me-leva/">Berimbau me leva</a>
+                        </h3>
+                        
+                        
+                        <a href="/blog/berimbau-me-leva/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+        </div>
+
+
+        
+        <nav class="pagination" aria-label="Pagination">
+            
+                <a href="/songbook/page-13/" class="pagination-link">Previous</a>
+            
+
+            
+                
+                    <a href="" class="pagination-link">NaN</a>
+                
+            
+                
+                    <a href="" class="pagination-link">NaN</a>
+                
+            
+                
+                    <a href="" class="pagination-link">NaN</a>
+                
+            
+                
+                    <a href="" class="pagination-link">NaN</a>
+                
+            
+                
+                    <a href="" class="pagination-link">NaN</a>
+                
+            
+                
+                    <a href="" class="pagination-link">NaN</a>
+                
+            
+                
+                    <a href="" class="pagination-link">NaN</a>
+                
+            
+                
+                    <a href="" class="pagination-link">NaN</a>
+                
+            
+                
+                    <a href="" class="pagination-link">NaN</a>
+                
+            
+                
+                    <a href="" class="pagination-link">NaN</a>
+                
+            
+                
+                    <a href="" class="pagination-link">NaN</a>
+                
+            
+                
+                    <a href="" class="pagination-link">NaN</a>
+                
+            
+                
+                    <a href="" class="pagination-link">NaN</a>
+                
+            
+                
+                    <a href="" class="pagination-link">NaN</a>
+                
+            
+                
+                    <a href="" class="pagination-link">NaN</a>
+                
+            
+                
+                    <a href="" class="pagination-link">NaN</a>
+                
+            
+
+            
+                <a href="/songbook/page-15/" class="pagination-link">Next</a>
+            
+        </nav>
+
+        
+        
+    </div>
+</div>
+
+
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                
+                <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Gear</a>
+                <a href="/">Learn</a>
+                <a href="/">Blog</a>
+                <a href="/">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    
+</body>
+
+
+</html>

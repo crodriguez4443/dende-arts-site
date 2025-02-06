@@ -15,7 +15,7 @@ tags:
   - "martial-art"
   - "paranaue"
   - "red-bull"
-coverImage: "confira-os-melhores-momentos-do-red-bull-paranauê-e1493732228509.jpg"
+coverImage: "capoeira-red-bull-gugu-bebinha.webp"
 layout: "blog-post-layout.njk"
 ---
 

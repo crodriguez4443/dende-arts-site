@@ -1,5 +1,12 @@
 const Image = require('@11ty/eleventy-img');
 const { outdent } = require('outdent'); // Make sure to install this if not already present
+const BLOG_CATEGORIES = {
+    history: ["History, Culture, Travel"],
+    capoeira: ["Capoeira Music"],
+    movement: ["Movement Guides"],
+    equipment: ["Equipment Reviews"],
+    beginners: ["Beginners Capoeira"]
+};
 
 // Utility function to stringify attributes
 function stringifyAttributes(attributesObj) {
@@ -87,13 +94,43 @@ module.exports = function(eleventyConfig) {
     });
 
     // Blog posts collection
-    eleventyConfig.addCollection('posts', function(collection) {
-        // Collect all markdown files in the blog directory
-        return collection.getFilteredByGlob('src/blog/*/index.md')
-            // Sort by date, most recent first
+    // eleventyConfig.addCollection('posts', function(collection) {
+    //     // Collect all markdown files in the blog directory
+    //     return collection.getFilteredByGlob('src/blog/*/index.md')
+    //         // Sort by date, most recent first
+    //         .sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+    // });
+
+    // module.exports = function(eleventyConfig) {
+    //     eleventyConfig.addFilter("resolvePageUrl", function(url) {
+    //         return url.replace(/\/index\.html$/, "/");
+    //     });
+    // };
+
+    eleventyConfig.addCollection('filteredPosts', function(collection) {
+        const posts = collection.getFilteredByGlob('src/blog/*/index.md')
+            .filter(post => {
+                const categories = post.data.categories || [];
+                return !categories.includes('capoeira-songbook');
+            })
             .sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+        
+        console.log(`Found ${posts.length} filtered posts`);
+        return posts;
     });
 
+    // Collection specifically for songbook posts
+    eleventyConfig.addCollection('songbookPosts', function(collection) {
+        const posts = collection.getFilteredByGlob('src/blog/*/index.md')
+            .filter(post => {
+                const categories = post.data.categories || [];
+                return categories.includes('capoeira-songbook');
+            })
+            .sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+        
+        console.log(`Found ${posts.length} songbook posts`);
+        return posts;
+    });
 
     return {
         dir: {
