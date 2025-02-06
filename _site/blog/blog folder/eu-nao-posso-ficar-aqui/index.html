@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu Não Posso Ficar Aqui</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/abada-joggers-landing/">Gear</a>
+                    <a href="/">Learn</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/">Contact</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</div>
+<div class="blog-post-container blog-layout">
+    <article class="blog-post">
+        <div class="breadcrumb-container">
+            <a href="/">Home/</a>
+            <a href="/blog">Blog/</a>
+            <a href="/blog/">Eu Não Posso Ficar Aqui</a>
+        </div>
+        <h1>Eu Não Posso Ficar Aqui</h1>
+
+        <div class="blog-info">
+            <p>Author:  | Category: </p>
+        </div>
+        
+        
+        
+        <div class="blog-post-meta">
+            <time datetime="2020-12-27">
+                December 26, 2020
+            </time>
+        </div>
+        
+        <div class="blog-post-content">
+            <figure>
+<table>
+<thead>
+<tr>
+<th>Portuguese</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Eu não posso ficar aqui</td>
+<td></td>
+</tr>
+<tr>
+<td>Lá pra senzala eu não quero ir</td>
+<td></td>
+</tr>
+<tr>
+<td>Hoje eu vou me libertar</td>
+<td></td>
+</tr>
+<tr>
+<td>Vou lá pra Capoeira</td>
+<td></td>
+</tr>
+<tr>
+<td>Vou encontrar Zumbi</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Eu não posso ficar aqui<br>
+Lá pra senzala eu não quero ir<br>
+Hoje eu vou me libertar<br>
+Vou lá pra Capoeira<br>
+Vou encontrar Zumbi</strong></p>
+<p>Ainda dentro de um navio negreiro<br>
+Quem eu amava foi embora<br>
+Eu vi filho e mulher sendo amarrado no pé<br>
+E ainda jogado no mar de Angola</p>
+<p><strong>Eu não posso ficar aqui<br>
+Lá pra senzala eu não quero ir<br>
+Hoje eu vou me libertar<br>
+Vou lá pra Capoeira<br>
+Vou encontrar Zumbi</strong></p>
+<p>Deus me apareceu de olhos fechados<br>
+Perguntei, Oh Deus, por que tanto sofrimento?<br>
+Deus me disse que o homem é assim<br>
+Pare e pense um pouquinho<br>
+Jesus morreu na cruz sem ter pecados</p>
+<p><strong>Eu não posso ficar aqui<br>
+Lá pra senzala eu não quero ir<br>
+Hoje eu vou me libertar<br>
+Vou lá pra Capoeira<br>
+Vou encontrar Zumbi</strong></p>
+<p>Eu vou me embrenhar na mata<br>
+Vou atrás da minha liberdade<br>
+O feitor não vai me pegar<br>
+Hoje vai comer poeira<br>
+Vou encontrar Palmares</p>
+<p><strong>Eu não posso ficar aqui<br>
+Lá pra senzala eu não quero ir<br>
+Hoje eu vou me libertar<br>
+Vou lá pra Capoeira<br>
+Vou encontrar Zumbi</strong></p>
+<p>Posso até não me libertar, mas eu tento<br>
+Isso é pra você que só vive no lamento<br>
+Vai atrás do que você quer<br>
+Seja homem ou mulher<br>
+Você é maior do que todos pensam</p>
+<p><strong>Eu não posso ficar aqui<br>
+Lá pra senzala eu não quero ir<br>
+Hoje eu vou me libertar<br>
+Vou lá pra Capoeira<br>
+Vou encontrar Zumbi</strong> | I can't stay here<br>
+I don't want to go to the slave quarters<br>
+Today I will break free<br>
+I'm going over to Capoeira<br>
+I will find Zumbi</p>
+<p>I can't stay here<br>
+I don't want to go to the slave quarters<br>
+Today I will break free<br>
+I'm going over to Capoeira<br>
+I will find Zumbi</p>
+<p>Still inside a slave ship<br>
+Those I loved were gone<br>
+I saw son and woman being tied by the foot<br>
+And thrown into the sea of ​​Angola</p>
+<p>I can't stay here<br>
+I don't want to go to the slave quarters<br>
+Today I will break free<br>
+I'm going over to Capoeira<br>
+I will find Zumbi</p>
+<p>God appeared to me with his eyes closed<br>
+I asked, Oh God, why so much suffering?<br>
+God told me that man is like that<br>
+Stop and think a little<br>
+Jesus died on the cross without sin</p>
+<p>I can't stay here<br>
+I don't want to go to the slave quarters<br>
+Today I will break free<br>
+I'm going over to Capoeira<br>
+I will find Zumbi</p>
+<p>I'll go into the woods<br>
+I'm going after my freedom<br>
+The overseer won't catch me<br>
+Today he'll eat dust<br>
+I will find Palmares</p>
+<p>I can't stay here<br>
+I don't want to go to the slave quarters<br>
+Today I will break free<br>
+I'm going over to Capoeira<br>
+I will find Zumbi</p>
+<p>I may not even break free, but I try<br>
+This is for you who only live in regret<br>
+Go after what you want<br>
+Whether you're man or woman<br>
+You are bigger than everyone thinks</p>
+<p>I can't stay here<br>
+I don't want to go to the slave quarters<br>
+Today I will break free<br>
+I'm going over to Capoeira<br>
+I will find Zumbi |</p>
+<figcaption>
+<p>Author: Pretinho</p>
+</figcaption>
+</figure>
+
+        </div>
+    </article>
+    <aside class="blog-post-sidebar">
+        <div class="search-form">
+            <p>Search articles and songs form</p>
+        </div>
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+        <div class="related-posts">
+            <p>Related posts</p>
+        </div>
+        <div class="popular-posts">
+            <p>Popular posts</p>
+        </div>
+        <div class="popular songs">
+            <p>Popular songs</p>
+        </div>
+        <div class="ads space">
+            <p>Ad space</p>
+            <p>Ad space</p>
+        </div>
+    </aside>
+</div>      
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                
+                <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Gear</a>
+                <a href="/">Learn</a>
+                <a href="/">Blog</a>
+                <a href="/">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    
+</body>
+
+
+</html>

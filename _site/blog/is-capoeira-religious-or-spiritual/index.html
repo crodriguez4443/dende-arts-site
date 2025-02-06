@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is Capoeira Religious or Spiritual</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/abada-joggers-landing/">Gear</a>
+                    <a href="/">Learn</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/">Contact</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</div>
+<div class="blog-post-container blog-layout">
+    <article class="blog-post">
+        <div class="breadcrumb-container">
+            <a href="/">Home/</a>
+            <a href="/blog">Blog/</a>
+            <a href="/blog/">Is Capoeira Religious or Spiritual</a>
+        </div>
+        <h1>Is Capoeira Religious or Spiritual</h1>
+
+        <div class="blog-info">
+            <p>Author:  | Category: </p>
+        </div>
+        
+        
+        
+        <div class="blog-post-meta">
+            <time datetime="2019-07-13">
+                July 12, 2019
+            </time>
+        </div>
+        
+        <div class="blog-post-content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FCWCc0PiwRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Sometimes people wonder if Capoeira has a religious or spiritual aspect to it and you most likely started asking this question because of a song you heard. Many Capoeira songs have Christian or Candomblé (an African religion) references. Not only that, but when you feel the music, the vibrations from the bateria (the band), and hear the clapping of everyone in the roda, you might feel like there is an energy that is taking hold. So you ask yourself! Does Capoeira have a religious or spiritual component?</p>
+<p>Yes and No, Capoeira does not affiliate with any religion, but there is a spiritual aspect that has less to do with gods and more to do with how we the practitioners relate to one another. There are some practitioners who are themselves religious. Brazil is a very catholic country, however there is a clear line between anything religious and the practice of Capoeira.</p>
+<h2>Lyrics to the above song</h2>
+<p><img src="images/Screen-Shot-2019-07-13-at-12.18.57-PM.png" alt=""></p>
+<p>The song above is a classic example of a Capoeira song. This song has a story. Like many Capoeira songs, it ties together the art of Capoeira with the history of the Africans who were enslaved and brought over to the Americas. Many of the slaves brought over by the Atlantic Slave Trade went to Brazil. From the 1750’s to the Early 1800’s Over half a million Africans from the Angola region were brought over to Brazil. Angola therefore is seen by many descendants of slaves, as the homeland they were taken from and is a major influence on Afro-Brazilian culture of which Capoeira is a part of.</p>
+<p>The song is a story of a black person probably in Brazil who goes up a hill to play Capoeira. While he is there he makes sure to go by the see and make an offering to the God Iemanjá, the Goddess of the sea. There, the song goes on to talk about how this person was an African, or a descendant of Africans. The significance of this story is that you have this person is recalling the Africans who were brought over to Brazil and at the same time, keeping alive the traditions of those enslaved Africans.</p>
+<h2>Candomblé References in Capoeira</h2>
+<p>To explain, In the song above, Iemanjá is the god of the sea from the religion of Candomblé. Candomblé is an African religion that can be seen in several places such as Cuba, Colombia, and Brazil. All of these places saw a massive influx of slaves from Africa, and those Africans brought with them their religious beliefs. In the religion of Candomblé, the gods are called Orixás. The orixás are represented by different looking individuals and are remeniscent of the ancient Greek Gods. There are gods of nature, such as the god of thunder, the sea, and the wind. In addition, there are other gods that handle things like metal works, hunting, and war.</p>
+<p>Hold on! The song clearly references a African goddess, so how does this not make capoeira religious or spiritual? Despite this cultural connection to the Orixás, Capoeira itself has no connection to Candomblé or any other african religion. There may be practicioners of the art who also see themselves as practicioners of Candomblé, however these are few, even in Brazil. Mestre Bimba, who is the founder of our modern style of playing Capoeira (Capoeira Regional), was a practitioner of Candomblé, but did not impose his religion on anyone. In fact he chose the symbol below to be his logo of sorts, to show that any religion was welcome at his school. It didn’t matter to him if you were jewish, christian, etc. What mattered to him was that you trained hard.</p>
+<p><img src="images/Screen-Shot-2019-07-13-at-1.14.12-PM-1.png" alt=""></p>
+<p>Today, Capoeiristas continue singing the songs about Candomblé and the orixa, but they do not hold this as part of a religious practice. The songs do not revere the Orixás, but rather, pay homage to the Africans who were brought over here and their traditions.</p>
+<h2>Christian References in Capoeira</h2>
+<p>Another religion that seemed to sneak its way into Capoeira songs is christianity. This one you hear a lot in the form of songs like the following one…</p>
+<p><img src="images/Screen-Shot-2019-07-13-at-12.19.13-PM.png" alt=""></p>
+<p>Saint Benedict is a Catholic saint and in this case the person singing is saying that Saint Benedict is calling him, loves him, and protects, because he does Capoeira. Wow, seems like a glowing enforcement for Christianity by Capoeira, but like many things in Capoeira, this is deceiving.</p>
+<p>Catholicism was a religion imposed onto the slaves brought over from Africa. Whatever religion they had was considered paganism by their masters and many were forced to convert to Christianity. In response to this, many Africans decided to hide their religion within Christianity. Catholicism has many saints, which works perfectly for the Africans, who have many gods. St. Benedict and other saints were used as code for some orixá or another god that the African slaves had spiritual beliefs about.</p>
+<p>Again, someone might look at this and think that Capoeira has a strong connection to organized religion. The truth is that my Capoeira practitioners care deeply about the roots of their practice. Remembering the Africans who lowers enslaved by by the Portuguese is very important to the history of the art. On top of that, like many African traditions, Capoeira uses an oral tradition to talk about its roots. this song is meant to pay homage to the enslaved Africans who practiced Capoeira and hoped that one day they would be free.</p>
+<h2>Axé and the spiritual part of Capoeira</h2>
+<p>If there is a spiritual aspect to Capoeira, it takes place on the Roda. The Roda is where Capoeira is done and it is an awesome experience. In the Roda you can have 50+ people clapping, singing, playing capoeira, and you start to feel like there is an energy. Think about when your favorite sports team is about to score at the last minute to win the game.  There is a feeling of anticipation, heightened energy, and excitement you feel in the roda. Capoeiristas call this axé.</p>
+<p>In Capoeira we talk a lot about Axé [ah-shae]. Axé is difficult to explain, but you can think about it as the vibes you get when participating in a Roda. Sometimes the energy’s good and sometimes the energy’s poor. This depends a lot on the people playing music, the capoeiristas playing, and how into it the crowd is. The cool this is that you as a participant in the Roda, contributes to the energy of the crowd. Some people might call this experience spiritual but I think the important thing to note is that capoeira is inherently communal. Unlike yoga or other movement practices, you can’t do it alone. So the experiences that you have are the kind that you can only have when people gather together, which I think is the reason people get confused and think Capoeira has a religious element.</p>
+
+        </div>
+    </article>
+    <aside class="blog-post-sidebar">
+        <div class="search-form">
+            <p>Search articles and songs form</p>
+        </div>
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+        <div class="related-posts">
+            <p>Related posts</p>
+        </div>
+        <div class="popular-posts">
+            <p>Popular posts</p>
+        </div>
+        <div class="popular songs">
+            <p>Popular songs</p>
+        </div>
+        <div class="ads space">
+            <p>Ad space</p>
+            <p>Ad space</p>
+        </div>
+    </aside>
+</div>      
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                
+                <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Gear</a>
+                <a href="/">Learn</a>
+                <a href="/">Blog</a>
+                <a href="/">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    
+</body>
+
+
+</html>

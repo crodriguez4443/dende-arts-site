@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How often you should train Martial Arts - for amateurs and professionals</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/abada-joggers-landing/">Gear</a>
+                    <a href="/">Learn</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/">Contact</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</div>
+<div class="blog-post-container blog-layout">
+    <article class="blog-post">
+        <div class="breadcrumb-container">
+            <a href="/">Home/</a>
+            <a href="/blog">Blog/</a>
+            <a href="/blog/">How often you should train Martial Arts - for amateurs and professionals</a>
+        </div>
+        <h1>How often you should train Martial Arts - for amateurs and professionals</h1>
+
+        <div class="blog-info">
+            <p>Author:  | Category: </p>
+        </div>
+        
+        
+        
+        <div class="blog-post-meta">
+            <time datetime="2021-07-26">
+                July 25, 2021
+            </time>
+        </div>
+        
+        <div class="blog-post-content">
+            <p>For someone starting a martial art, it might not be clear how much practice is required to achieve their goals. Amateurs and people training as a hobby will train differently from others looking to compete. Here is a rough guide to how much practice you will need, depending on your goals.</p>
+<p><strong>For amateurs who practice martial arts as a hobby, you should practice at least 2-3 times a week. For people looking to learn their martial art in depth (maybe looking to teaching), you should start training about 3 times a week and work your way up to 4 or 5 times a week. Practice sessions should be at least 20 minutes, but can go for much longer. 80% of this training should mostly be specific to the martial art you are doing. The last 20% includes mobility work, conditioning, and other ancillary activities. Martial artists looking to compete should practice 5-6 times a week and may need to workout multiple time a day. These training will likely include some form of strength and conditioning, along with competition specific practice.</strong></p>
+<h2>Start slow and ramp up as you go</h2>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/07/felipe-simo-4Ls_AHROkAA-unsplash-1.jpg"><img src="images/felipe-simo-4Ls_AHROkAA-unsplash-1-1024x576.jpg" alt=""></a></p>
+<p><strong>One of the biggest misconceptions is that you need to train 6 hours a day every single day.</strong> This is NOT true for beginners! Everyone who starts training martial arts should start slow. Start with two to three classes per week spread out across the week. Over the course of a few weeks or months, you can increase that amount to 4 or even 6 times a week.</p>
+<h3>Starting slow gives you time to heal</h3>
+<p>Why start slow? Starting slow gives your body the time it needs to recover from the soreness of doing something completely new. For people with little to no martial arts experience, you'll be challenging your nervous system in a way that is completely different from what you are used to. This leads to lots of fatigue in the muscles, nervous system, and joints!</p>
+<h3>Starting slow keeps you consistent</h3>
+<p>Another reason to start small is because it will be easier to stay consistent. Intensity does not make you better, consistency does! A 5 to 15 minute workout every day is great for beginners because it builds the habit. Once you have the habit, then you can increase it to whatever duration and intensity you're feeling that day. Some days, a 10 minutes practice session will be all you can do. Other times you'll feel inspired to do an hour and a half. Building a habit is POWERFUL and consistency is how you do it.</p>
+<h2>Working on your cardio</h2>
+<p>One of the biggest concerns people have is gassing out as they practice their martial art. It doesn't matter how good you are, if you quickly gas out during a sparring session.</p>
+<p>There are three ways to improve your cardio. They are ranked from the best way to improve cardio, to the worst. This information is sourced from Trainer Firas Zahabi, trainer of MMA legend, George St. Pierre.</p>
+<p>https://www.youtube.com/watch?v=LJ17RCPFeRo</p>
+<h3>Improve your technique</h3>
+<p><strong>The efficiency of your technique is the most important factor when trying to increase your cardio for a martial art.</strong> Even if you have incredible cardio, being inefficient in your technique means that you could be spending 2 or 3 times more energy as someone who has mediocre cardio, but incredible technique.</p>
+<p>As you drill movements specific to your martial art, the movements will become easier to perform. As you continue to drill, the techniques will eventually become second nature and the energy you expend doing them becomes minimal.</p>
+<p>Ask yourself what techniques tire you out. Is it the kicks? Some movement? etc. Find out and drill that technique until it becomes easier to do.</p>
+<h3>Running and other Aerobic activities</h3>
+<p>After improving the efficiency of your movement, you should improve your cardio vascular system. <strong>The cardio vascular system feeds all other systems, so increasing your gas tank is going to make it easier to continue without getting tired.</strong></p>
+<p>This can be done by running, but if you're not a fan of running, there are plenty of alternatives. Jump rope, swimming, biking, and interval training are all way to improve cardio vascular health.</p>
+<h3>Get strong, but not too strong</h3>
+<p>Getting strong is the last ingredient we need. <strong>Increasing your strength means you will not need to go 100% against an opponent. The less of your max output you use, the less fatigue you will feel during sparring or during a match.</strong></p>
+<p>You need some baseline strength to do your martial art effectively. Grappling against someone who is 40lbs lighter than you is undeniably harder than with someone 40lbs lighter than you.</p>
+<p>Firas does mention that there is a level of strength that is no longer beneficial to your sport. If you spend too much time getting strong in your squat, that's time you're not training your martial art.</p>
+<p>https://www.bjjee.com/articles/firas-zahabi-on-how-to-drastically-improve-your-cardio-for-bjj/</p>
+<h2>Getting &quot;in shape&quot; before training</h2>
+<p>A common excuse or insecurity people have is that they are not currently in shape enough to do a particular activity. The truth is that only by doing tat activity will you get in shape for that activity. If you want to train martial arts, don't go to the gym and start lifting weights. Instead, start going consistently to a martial arts academy.</p>
+<h2>Training for more advanced practitioners</h2>
+<p>If you are a more experienced martial artist, then you need to ask yourself two things.</p>
+<ol>
+<li>Have I built a habit of training consistently throughout the week? If not, set up a time where you will train consistently, and stick to it.</li>
+<li>What ancillary training can I do? If you have injuries, then it's time to address them with training that will make you durable and even more technical than before. Increasing your range of motion is one of the best things you can do to decrease your risk of injury and increase your technical abilities.</li>
+</ol>
+<p>Once you've addressed these two questions the next step is to figure out the duration of your training and what that training will look like. In the beginning, you just train your martial art. Once you're more advanced, you'll need to dedicate about 20% of your time to addressing weaknesses and building your strengths. What these are will depend on you. Everyone is different. If you don't have a good understanding on what you need to improve, then try asking your instructor for advice.</p>
+<h2>Find a school with the same goals as you</h2>
+<p><strong>Some martial arts schools are interested in competition, others are interested in fun, and other in self defense</strong>. Every school is a mix of these three components and you as a student need to decide which one you want to focus more on. As the teacher if they participate in competitions and how you can get involved. If you're not in it for the competition then no need to worry about this. No teacher can force you to compete, though they may want to encourage you to try.</p>
+<h3>Talk with your instructor</h3>
+<p>Tell your martial arts instructor if you're worried about self defense. If you have an immediate need to defend yourself, then TELL YOUR TEACHER.</p>
+<p>Transparency and honesty go a long way not only for your learning, but to develop a relationship with your teacher. Ask them what you should focus on and if they have an extra advice. Most teachers are trying give their students as much information as they can, and when they see someone has a real need, most will jump in to give whatever information they can.</p>
+<h3>Commit to training consistently for a few months</h3>
+<p>You don't have to go to a McDojo or &quot;Booty Blast HIIT Muay Thai&quot; class to have fun or motivating experience.</p>
+<p>Fun is relative to what you enjoy, so go to any martial arts class in your area and see if you enjoy the instruction of the teacher. Once you tried a few places it's time to dive in. Commit to at least 6-12 months of hard work and dedication to your new craft before even considering to call it quits. Making this agreement with yourself will help when you lack motivation and start getting lazy. It happens to everyone, but if you can push past these initial feeling, you'll be unstoppable.</p>
+<h2>Get ready to eat Humble Pie, and like it</h2>
+<p>Everyone who trains martial arts will eat a full serving of humble pie every time they come to class. Sparring will likely feel frustrating and wildly humbling. I would go as far as to say that, if you don't feel this way from sparring with someone with a year or two of experience, then you may need to question the instruction of the school.</p>
+<h3>Model yourself after more advanced students</h3>
+<p>Your goal as a new person should be to aspire to your classmates, not necessarily to beat that at the beginning as that might be out of your reach for a few months.</p>
+<p>Liking humble pie means enjoying the journey. As cliché as this advice is, it is genuine. Enjoying the ride, and not worrying too much about the &quot;end goal&quot; whatever that is, is how you improve.</p>
+<h3>Enjoy the journey and don't let your ego get in the way</h3>
+<p>Enjoying humble pie also means letting your ego go. Your ego will make you feel embarrassed, self-conscious, or humiliated for not living up to what you believe yourself capable of. These are normal feelings, but letting them go is part of enjoying humble pie.</p>
+
+        </div>
+    </article>
+    <aside class="blog-post-sidebar">
+        <div class="search-form">
+            <p>Search articles and songs form</p>
+        </div>
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+        <div class="related-posts">
+            <p>Related posts</p>
+        </div>
+        <div class="popular-posts">
+            <p>Popular posts</p>
+        </div>
+        <div class="popular songs">
+            <p>Popular songs</p>
+        </div>
+        <div class="ads space">
+            <p>Ad space</p>
+            <p>Ad space</p>
+        </div>
+    </aside>
+</div>      
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                
+                <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Gear</a>
+                <a href="/">Learn</a>
+                <a href="/">Blog</a>
+                <a href="/">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    
+</body>
+
+
+</html>

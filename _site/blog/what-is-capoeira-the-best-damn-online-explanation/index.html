@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is Capoeira: the best damn online explanation</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/abada-joggers-landing/">Gear</a>
+                    <a href="/">Learn</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/">Contact</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</div>
+<div class="blog-post-container blog-layout">
+    <article class="blog-post">
+        <div class="breadcrumb-container">
+            <a href="/">Home/</a>
+            <a href="/blog">Blog/</a>
+            <a href="/blog/">What is Capoeira: the best damn online explanation</a>
+        </div>
+        <h1>What is Capoeira: the best damn online explanation</h1>
+
+        <div class="blog-info">
+            <p>Author:  | Category: </p>
+        </div>
+        
+        
+        
+        <div class="blog-post-meta">
+            <time datetime="2021-04-27">
+                April 26, 2021
+            </time>
+        </div>
+        
+        <div class="blog-post-content">
+            <p>If you're thinking about trying Capoeira, or are just interested in learning more. This article will give you the broad overview you need to understand this Afro-Brazilian martial art.</p>
+<h2>What is Capoeira</h2>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/what-is-capoeira.png"><img src="images/what-is-capoeira-1024x576.png" alt=""></a></p>
+<p>To someone looking at Capoeira for the first time in a performance or demonstration, the art will look like some sort of choreographed dance. However, this is far from the truth.</p>
+<p><strong>Capoeira is an Afro-Brazilian martial art characterized by powerful kicks, fluid movements, music, and dodges called esquivas. Capoeira strikes involve the use of the shins, feet, knees, elbows, head butts, open-palms, and various sweeps. In 2014, Unesco designated Capoeira as an &quot;intangible cultural heritage&quot;, and today the art is practiced all over the world.</strong></p>
+<p>Capoeira was created somewhere between 1500-1700. The date is unclear because the Portuguese burned almost all records of slavery after slavery was declared illegal in 1888. For this reason, there are very few sources that date back to this time.</p>
+<p>What we know is that enslaved africans played a major part in the creation of Capoeira. In the early 1900s, Capoeira schools began to sprout in Salvador, Bahia. During this time, Mestre Bimba was the most popular Capoeira teacher in Brazil, and his students traveled around the country to teach the art. Within 100 years the art spread across the globe and can now be seen in every major city in the world.</p>
+<h2>Is Capoeira an effective martial art or a dance?</h2>
+<p>The acrobatics and movements in Capoeira are awesome, but have many questioning whether Capoeira is an effective as a martial art.</p>
+<p><strong>The primary tool for anyone using Capoeira for self-defense are it's powerful kicks. Capoeira has some of the most powerful kicks in all of martial arts. The kicks draw from superior coordination of body-mass to generate power into the strikes. Many strikes, such as meia-lua de compasso have been tried and tested in mixed martial arts competition with many instant KOs. This and other techniques make Capoeira an excellent compliment to any mixed martials arsenal.</strong></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O6hAm0LC7dA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Capoeira can be difficult to use as a form of self defense because there is a great deal of kicking involved. Kicks are more difficult to learn and apply than punches because they require much more flexibility and coordination. In addition, the art itself values the continuity and flow, which can be seen in the roda (Capoeira version of sparring). This stares in contrast to other martial arts like Jiujitsu or Muay Thai where the goal is to subdue the opponent. Capoeiristas train to spar and play, as opposed to other martial arts that train for competition, which make the training difficult to apply.</p>
+<p>That being said, it's clear that Capoeira has incredible potential to add several techniques to mixed martial arts. Many MMA fighters at the top of the food chain have shared this sentiment including Anderson Silva and Connor McGreggor. It seems like a matter of time before someone does for Capoeira, what Wonderboy did for Karate, and take Capoeira to the highest levels of combat sports.</p>
+<h2>How to win in Capoeira</h2>
+<p>There are several ways to win in Capoeira, with some being less obvious than others to observe.</p>
+<p><strong>The most common way for someone to win in Capoeira, is to dominate the space in the roda, stifling the opponents movement. This can be compared to backing someone into a corner in Boxing. Strikes, takedowns, and executing acrobatics called &quot;floreios&quot; are other ways to score &quot;points&quot;. When someone marks a strike or performs a take down, the two Capoeiristas can do a &quot;Volta do munto&quot;, circling the roda in acknowledgment of the &quot;point&quot;. They then come back to the entrance of the roda to reset the game. Otherwise the game will continue until the two players agree to stop, someone else buys the game from them, or the leader of the berimbau ends the game.</strong></p>
+<p>It should be noted that there are no official &quot;points&quot; to be gained in a Capoeira roda. Games in the roda can be compared to sparring sessions in other martial arts. Practitioners will acknowledge when they've been &quot;gotten&quot; by a well marked strike or take down. Most strikes or takedowns are marked and not fully carried out, which is typical for sparring in many martial arts. The reason for this is to not seriously injure your opponent and continue the game. Although knockouts do happen in Capoeira, they are rare due to this general agreement to pull back kicks that would otherwise land.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wdmQKCzd6cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>How to play in the roda</h2>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/Screen-Shot-2021-04-27-at-9.46.52-AM.png"><img src="images/Screen-Shot-2021-04-27-at-9.46.52-AM-1024x578.png" alt=""></a></p>
+<p>The roda has several rituals attached to it include respect payed to those playing the instruments and leading the roda.</p>
+<p><strong>Once you get to the foot of the instruments, you can &quot;buy the game&quot; by outstretching a hand between the two people currently playing. This signals that you are &quot;buying the game&quot; from the person who was in there the longest. Traditionally, students can not buy out teachers, and no one buys out <em>mestres (masters)</em> - they end their games on their own accord.</strong></p>
+<p>When playing keep in mind that each person is unique both physically and mentally. You can see this in the way they play. Does this person prefer straight kicks? use head butts? like to maintain distance? etc. You can learn about your opponent by observing them in the roda. When they play with someone else, you should observe their habits. Then you can think about ways to counter their movements with your own techniques.</p>
+<p>For example if you know that your opponent likes to go for a particular sweep, then you might be able to bait the sweep, and counter with one of your own. As you do this, your opponent will be trying to do the same. This is where a fast paced game of chess with the body occurs, involving feints, mind-games, and gambles.</p>
+<h2>Is Capoeira non-contact</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/urJStLKpQ1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C-mb1CCw7kM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Seeing a demonstration of Capoeira, you could be forgiven for thinking that there is no contact in Capoeira.</p>
+<p><strong>Yes, Capoeira does include contact. Contact is most often made via kicks and sweeps. There is some very light grappling, such as catching a kick or double leg take downs, but these are rare. Most games in the Capoeira involve marking strikes and takedowns, similar to how other striking martial arts spar. If these games get particularly fast or aggressive, it is possible to see a fair bit of contact.</strong></p>
+<p>Mestre Acordeon, one of the first mestres to teach in the United States says that if you hit someone with a kick...</p>
+<ol>
+<li>It's that person's fault for not defending themselves properly, and</li>
+<li>It's your fault for not having enough control of your kick to stop</li>
+</ol>
+<p>Capoeira games with beginners have very little contact. As you progress in up the chord system (Capoeira belt system) be ready because there is more chance and risk of contact when playing in the roda.</p>
+<h2>What kind of music is used in Capoeira</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YRe9t2OFaXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Music is a very important aspect to the art of Capoeira.</p>
+<p><strong>The music in Capoeira is heavily influenced by musical traditions that stem from West Africa. This can be seen with the percussion instruments used, such as the Berimbau, Atabaque, Pandeiro, Reco-reco, and Agogô. The use of a call and response is common in many African musical tradition. Capoeira music also shares similarities with other musical traditions like Samba and Candomblé. In the Capoeira Roda, the leader is the person holding the Gunga - this is the deepest sounding of the three berimbaus. The Gunga player dictates the musical rhythms, speed, and songs sung.</strong></p>
+<p>The most important instrument in the bateria (orchestra) of Capoeira is the Berimbau. It is most common to have a trio of berimbaus. The highest pitched Berimbau is the viola or violinha. The middle Berimbau is the medio. And the deepest sounding Berimbau is the Gunga. As mentioned, the leader normally of the bateria plays the gunga.</p>
+<p>The second most important instrument in the bateria and one of the easiest to learn is the pandeiro (tambourine). This instrument is very common in Brazil and is often seen in Samba bands. This is a great instrument for beginners to to begin learning about Capoeira music.</p>
+<p>https://dendearts.com/how-to-play-the-pandeiro-for-capoeira/</p>
+<h2>Is Capoeira hard to learn</h2>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/Capoeira-06-27-19-WB-190-scaled.jpg"><img src="images/Capoeira-06-27-19-WB-190-1024x683.jpg" alt=""></a></p>
+<p>Seeing Capoeira for the first time can be intimidating, and trick you into thinking that you can't do it.</p>
+<p><strong>The art of Capoeira can be learned by anyone of any skill or ability. Beginners will start by learning basic movements before anything else. More challenging movements can be regressed to fit your abilities, making the learning processes a steady stream of obstacles to overcome. This is why young children and older adults can still practice Capoeira in a way that is engaging and safe.</strong></p>
+<p>Some of the more difficult movements to learn are the floreios. These include things like ponte (bridge), bananeira (handstands), and Queda de Rins. These are not movements most people can do on their first class of Capoeira. This is why there are several progressions that lead you up to doing these movements.</p>
+<p>Bananeira for example can regress to handstands with the feet on a chair, crow pose (taken from yoga), and handstands on the wall. These are some of the protocols used to progress you from zero handstand ability to proficiency. Some skills do take longer to learn than others, so one of the biggest factors to success and improvement will be showing up and practicing often.</p>
+<h2>How to learn Capoeira from home</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kuJRuqcS_LA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Mastering Capoeira movements can be challenging, and this is why practicing at home is so important.</p>
+<p><strong>Generally speaking, you can learn many Capoeira techniques at home, and you should do so if you want to improve quickly. The best way to practice at home for beginners is to warm up and drill your kicks, esquivas, and a few basic movements. Leave some time at the end of your practice for some improvised movements. Set a timer for 2 to 5 minutes and practice stringing together the movements you drilled into different sequences of movements.</strong></p>
+<p>For more clarity, you can follow the table below as a guide. Feel free to change the number of sets and reps to match your needs. The movements included are 10 basic Capoeira movements for beginners.</p>
+<p>https://dendearts.com/10-basic-capoeira-movements-for-beginners/</p>
+<p>Another tip to practicing at home is to ask your teachers what to work on. Many of them have lots of experience and can provide some feedback regarding what to practice at home.</p>
+<h2>Is Capoeira a good workout?</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3miio1kz3gc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Not everyone who does Capoeira does so because they want to learn all these exciting movements. Some people just want to get a good workout, and this is one area where Capoeira really shines.</p>
+<p><strong>There are several reasons why Capoeira is an excellent way to workout. The constant movement in the class will burn calories and work up a sweat. In general, Capoeira is an excellent way to improve strength, endurance, flexibility, and coordination. The unique movements will challenge your body as well as your mind. And there is always music playing to keep you motivated as you move.</strong></p>
+<p>One of the most underrated aspects of a workout is the community behind it. In this aspect, Capoeira is second to none. The Capoeira community spans the entire globe. There are countless friends I've made by traveling to another country and visiting their Capoeira schools.</p>
+<p>Now... some people enjoy their solitary workouts, but the majority of us enjoy learning something new as we bond with new people.</p>
+<p>If you've done Capoeira for a few months, I encourage you to visit a school the next time you travel. 100% of the time, I'm sure you'll meet great people who will help you find exciting things to do!</p>
+<h2>How a beginner can start training Capoeira</h2>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/Screen-Shot-2021-04-27-at-9.10.29-AM-1.png"><img src="images/Screen-Shot-2021-04-27-at-9.10.29-AM-1-1024x317.png" alt=""></a></p>
+<p>If you're interested in starting Capoeira, then you should follow these steps.</p>
+<ol>
+<li>Download our beginners Capoeira guide to help you get started.</li>
+<li>Google search the nearest 3 Capoeira school near you and pay them a visit</li>
+<li>Decide on who you want to train with and stick with it!</li>
+</ol>
+<p><a href="https://dendearts.com/intropack/">Free Beginners Capoeira Guide</a></p>
+<p>There's nothing fancy about trying Capoeira. Attend the class and keep an open mind. Even if you're the only beginner in a class, but don't let that get you down. In a few weeks, you'll be moving and grooving along with the rest of the class.</p>
+<p>Many people who don't have a fitness background of any kind believe that they need to get fit before they can attend a Capoeira class. This is untrue! The best way to improve in an activity, is to do that activity. It doesn't matter if that activity is weight lifting, running, sports, or Capoeira. Doing other activities to supplement your Capoeira practice like running or rock climbing are great, and you should continue to do them. But don't run into the trap of thinking that you're unable to do Capoeira.</p>
+
+        </div>
+    </article>
+    <aside class="blog-post-sidebar">
+        <div class="search-form">
+            <p>Search articles and songs form</p>
+        </div>
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+        <div class="related-posts">
+            <p>Related posts</p>
+        </div>
+        <div class="popular-posts">
+            <p>Popular posts</p>
+        </div>
+        <div class="popular songs">
+            <p>Popular songs</p>
+        </div>
+        <div class="ads space">
+            <p>Ad space</p>
+            <p>Ad space</p>
+        </div>
+    </aside>
+</div>      
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                
+                <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Gear</a>
+                <a href="/">Learn</a>
+                <a href="/">Blog</a>
+                <a href="/">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    
+</body>
+
+
+</html>

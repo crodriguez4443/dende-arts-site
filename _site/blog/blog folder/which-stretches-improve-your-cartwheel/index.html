@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which stretches improve your cartwheel</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/abada-joggers-landing/">Gear</a>
+                    <a href="/">Learn</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/">Contact</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</div>
+<div class="blog-post-container blog-layout">
+    <article class="blog-post">
+        <div class="breadcrumb-container">
+            <a href="/">Home/</a>
+            <a href="/blog">Blog/</a>
+            <a href="/blog/">Which stretches improve your cartwheel</a>
+        </div>
+        <h1>Which stretches improve your cartwheel</h1>
+
+        <div class="blog-info">
+            <p>Author:  | Category: </p>
+        </div>
+        
+        
+        
+        <div class="blog-post-meta">
+            <time datetime="2021-09-08">
+                September 7, 2021
+            </time>
+        </div>
+        
+        <div class="blog-post-content">
+            <p>One of the most effective ways to make your cartwheel look better is to improve the range of motion in your shoulders and hips. The two biggest areas to work on include bringing your arms directly over your shoulders, and your ability to do a split. You do not need to be able to do a full split, however greater flexibility will help immensely.</p>
+<h2>Shoulder flexibility for cartwheels</h2>
+<p>The majority of people are unable to bring their arms directly over their shoulders. Improving your overhead flexion can be done in several ways. Here are a few of those exercises.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/05/4BA3A12A-4DC9-4B3B-AA66-B284E76B32EC.png"><img src="images/4BA3A12A-4DC9-4B3B-AA66-B284E76B32EC-1024x1024.png" alt=""></a></p>
+<h3>Wall slides</h3>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/09/IMG_6438.jpg"><img src="images/IMG_6438-1024x584.jpg" alt=""></a></p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/09/IMG_6439-2.jpg"><img src="images/IMG_6439-2-1024x582.jpg" alt=""></a></p>
+<p>Wall slides are a very common exercise often seen in physical therapy clinics. One of the reasons they are so effective is that they are very safe to do, and you can work at your own level. Start with the lumbar, hands, and elbows pressed against the wall. both arms should make a &quot;W&quot; shape.</p>
+<p>Perform the wall slide by sliding your arms up until it is as vertical as you can go. It will be very difficult for most people to bring their arms 180° above their shoulders without a very good amount of shoulder flexibility. If you record yourself doing the movement, you will see your arms make a &quot;Y&quot; shape while at the top of the movement. Pause at the top for a second before coming back down.</p>
+<p>Try to get your arms as vertical as possible without bringing your hands or your elbows off of the wall. Another tip is to make sure your lower back is in contact with the wall at all times. Repeat this exercise 6 - 8 times.</p>
+<h3>Press to handstand (feet on the floor)</h3>
+<p>https://youtu.be/NJAPGP9MtAo?t=3</p>
+<p>Imagine this person had their feet on the floor instead. That is what the movement would look like.</p>
+<p>Start in a squat and place the hands on the floor in front of you. From you, straighten the legs and align the upper body as best you can into a straight line, imitating a handstand. Stay for a second and come back to a squat. This simple exercise is an awesome warm-up for the shoulder that helps teach proper alignment and shoulder position.</p>
+<p>Tip: At the top of the movement, keep the shoulders shrugged as high as possible.</p>
+<p>Repeat this movement 8 times.</p>
+<h3>PAILS and RAILS for shoulder flexion</h3>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/09/IMG_6443.png"><img src="images/IMG_6443-1024x506.png" alt=""></a></p>
+<p>PAILS and RAILS is a system developed by Andreo Spina, who founded FRC. This system is used to improve people's mobility.</p>
+<p>We start our PAILS and RAILS by laying thrown on the floor. Raise your hand above your body and point your thumb up. How many people this will be already a stretch for them. If not, you can add to the stretch by elevating your hand on a few books or a yoga block. From here, you want to start by pressing down with your fist for about 10 seconds. The second part of this exercise is trying to lift off the fist from the floor for about 10 seconds. This can be very strenuous and you should do this exercise about 3 to 5 times for best results.</p>
+<h2>Middle split flexibility for cartwheels</h2>
+<p>Many people think that in order to learn the middle split they have to sit in the middle split position for hours at a time. Although this is one way to learn the movement, it is not the only or the most effective method.</p>
+<h3>Frog pose</h3>
+<figure>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/09/Mandukasana-%E2%80%94-Frog-Pose-1.jpeg"><img src="images/Mandukasana-%E2%80%94-Frog-Pose-1.jpeg" alt=""></a></p>
+<figcaption>
+<p>image from yogapractice.com</p>
+</figcaption>
+</figure>
+<p>The first exercise is the most simple, and that is the frog pose. And the frog close you simply bring your legs out to 90° can you sit on your knees trying to open up your hips as much as possible. You’re going to feel a very strong stretch in the groin area. This is the area that we are targeting.</p>
+<p>You can sit in this position for about 30 seconds. After 30 seconds, squeeze the glute muscles and try to pull the knees up off the floor. Of course, your knees will not move, however, doing so will pull you deeper into the stretch.</p>
+<h3>Horse stance to split</h3>
+<figure>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/09/IMG_6444.jpg"><img src="images/IMG_6444.jpg" alt=""></a></p>
+<figcaption>
+<p>step 1</p>
+</figcaption>
+</figure>
+<figure>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/09/IMG_6445.jpg"><img src="images/IMG_6445.jpg" alt=""></a></p>
+<figcaption>
+<p>step 2</p>
+</figcaption>
+</figure>
+<p>This active exercise is one of the simplest and most effective for training middle splits. The motion starts from a horse stance in front of a chair. Lean your weight onto the chair. Leaning more weight on the chair more will help regress the movement to a level you feel comfortable with. From here, slide your legs out into a middle split until you are at about 80% of your maximum split. To ensure your feet slide, you have something under your feet that can slide on the surface.</p>
+<p>Once at your max, hold the split for a bout 2 seconds before sliding your legs back into a horse stance. Repeat this motion for about 6 - 8 times. If you are able to do much more than this, consider using the chair less for support.</p>
+<h3>The peeing dog</h3>
+<p>There are two variations to the peeing dog. Starting from the quadruped position, I want to raise our leg up as if we were a dog being on a fire hydrant. The first way that we do this is by bending our leg at 90° and lifting it up to the side. The higher we can lift up our leg the more we will be engaging our glutes which will help us during our middle splits. Make sure to keep the hips parallel with the ground as you raise the leg. Hold this position for about 10 seconds before going to the next side.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/09/IMG_6440.jpg"><img src="images/IMG_6440-1024x548.jpg" alt=""></a></p>
+<p>The second variation is more difficult. We can also do the peeing dog is by keeping our raised leg straight and lifting it up to the side. This is a more difficult variation however it is very effective for training your abductor muscles. Your abductor muscles are very important as they are the primary muscle group that will help pull you into the middle split stretch. The stronger you can get these muscles the easier it will be to enter the middle split.</p>
+<p>As with the first variation of the peeing do, hold the position for about 10 seconds before letting the leg down. Repeat for at least 3 sets.</p>
+<h2>Why is flexibility important for cartwheels?</h2>
+<p>People are unable to bring their arms directly above their shoulders. Whether you're doing gymnastics, Capoeira, or any other movement art, doing cartwheels in a straight line is a fundamental part of the technique.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/09/2.png"><img src="images/2-768x1024.png" alt=""></a></p>
+<p>For range of motion in the hips can be seen by cartwheels that are done with the legs are very close together. If you are unable to separate the legs sufficiently the movement starts looking very clunky and uncoordinated.</p>
+<figure>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/09/bad-cartwheel-1.jpeg"><img src="images/bad-cartwheel-1-1024x682.jpeg" alt=""></a></p>
+<figcaption>
+<p>cartwheel with legs glued together (poor hip mobility)</p>
+</figcaption>
+</figure>
+<p>The best example of high-level cartwheel technique is with gymnasts on a balance beam. Not only do they move in a straight line, however, when they reach the top of their cartwheel, they are nearly in a full split.</p>
+<figure>
+<p><img src="images/how-to-do-a-cartwheel.png" alt="How to do a Cartwheel"></p>
+<figcaption>
+<p>Credit: Gymastic HQ - example of very good hip mobility at the top of the cartwheel</p>
+</figcaption>
+</figure>
+<h2>How much stretching should I do prior to doing my cartwheels?</h2>
+<p>2 to 3 sets of each exercise is the minimum you should do prior to practicing your cartwheels. How much you need depends greatly on the individual. Some people may need a more extensive warm-up than others.</p>
+<p>You do not need to do all the exercises on this list, just the ones that you feel work best for your body. Try different exercises and test which ones work best for you. All of the exercises given are very effective, but finding the ones that work best for you is key.</p>
+<h2>How should I feel after doing these stretches?</h2>
+<p>The stretches provided are meant to be done actively. This is in contrast with passive stretches where the goal is to relax into the stretch. Active stretching means tensing the muscles opposite the muscles being stretched. In the frog stretch, we stretch the adductors in part by flexing the glutes. This intensifies the stretch and also trains us to be stronger in this stretched range of motion.</p>
+<p>At the end of the exercise, you should feel warm in the joint being stretched and a bit of tiredness in the muscles used. This is how you know you are &quot;warmed up&quot;. The fatigue is not bad, so long as you are not completely exhausted from doing the exercise. This is why it is important to regulate how much of each stretch you are doing.</p>
+
+        </div>
+    </article>
+    <aside class="blog-post-sidebar">
+        <div class="search-form">
+            <p>Search articles and songs form</p>
+        </div>
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+        <div class="related-posts">
+            <p>Related posts</p>
+        </div>
+        <div class="popular-posts">
+            <p>Popular posts</p>
+        </div>
+        <div class="popular songs">
+            <p>Popular songs</p>
+        </div>
+        <div class="ads space">
+            <p>Ad space</p>
+            <p>Ad space</p>
+        </div>
+    </aside>
+</div>      
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                
+                <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Gear</a>
+                <a href="/">Learn</a>
+                <a href="/">Blog</a>
+                <a href="/">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    
+</body>
+
+
+</html>

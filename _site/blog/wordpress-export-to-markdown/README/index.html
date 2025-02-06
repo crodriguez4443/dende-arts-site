@@ -1,0 +1,87 @@
+<h1>wordpress-export-to-markdown</h1>
+<p>Converts a WordPress export file into Markdown files that are compatible with static site generators (<a href="https://www.11ty.dev/">Eleventy</a>, <a href="https://www.gatsbyjs.com/">Gatsby</a>, <a href="https://gohugo.io/">Hugo</a>, etc.).</p>
+<p>Each post is saved as a separate Markdown file with frontmatter. Images are downloaded and saved.</p>
+<p><img src="https://user-images.githubusercontent.com/1245573/72686026-3aa04280-3abe-11ea-92c1-d756a24657dd.gif" alt="wordpress-export-to-markdown running in a terminal"></p>
+<h2>Quick Start</h2>
+<p>You'll need:</p>
+<ul>
+<li><a href="https://nodejs.org/">Node.js</a> installed</li>
+<li>Your <a href="https://wordpress.org/support/article/tools-export-screen/">WordPress export file</a> (be sure to export &quot;All content&quot;).</li>
+</ul>
+<p>To make things easier, you can rename your WordPress export file to <code>export.xml</code> and drop it into the same directory that you run this script from.</p>
+<p>You can run this script immediately in your terminal with <code>npx</code>:</p>
+<pre><code>npx wordpress-export-to-markdown
+</code></pre>
+<p>Or you can clone this repo, then from within the repo's directory, install and run:</p>
+<pre><code>npm install &amp;&amp; node index.js
+</code></pre>
+<p>Either way, the script will start a wizard to configure your options. Answer the questions and off you go!</p>
+<h2>Command Line</h2>
+<p>Options can also be configured via the command line. The wizard will skip asking about any such options. For example, the following will give you <a href="https://jekyllrb.com/">Jekyll</a>-style output in terms of folder structure and filenames.</p>
+<p>Using <code>npx</code>:</p>
+<pre><code>npx wordpress-export-to-markdown --post-folders=false --prefix-date=true
+</code></pre>
+<p>Using a locally cloned repo:</p>
+<pre><code>node index.js --post-folders=false --prefix-date=true
+</code></pre>
+<p>The wizard will still ask you about any options not specified on the command line. To skip the wizard entirely and use default values for unspecified options, add <code>--wizard=false</code>.</p>
+<h2>Options</h2>
+<p>These are the questions asked by the wizard. Command line arguments, along with their default values, are also being provided here if you want to use them.</p>
+<h3>Path to WordPress export file?</h3>
+<p><strong>Command line:</strong> <code>--input=export.xml</code></p>
+<p>The path to your WordPress export file. To make things easier, you can rename your WordPress export file to <code>export.xml</code> and drop it into the same directory that you run this script from.</p>
+<h3>Path to output folder?</h3>
+<p><strong>Command line:</strong> <code>--output=output</code></p>
+<p>The path to the output directory where Markdown and image files will be saved. If it does not exist, it will be created.</p>
+<h3>Create year folders?</h3>
+<p><strong>Command line:</strong> <code>--year-folders=false</code></p>
+<p>Whether or not to organize output files into folders by year.</p>
+<h3>Create month folders?</h3>
+<p><strong>Command line:</strong> <code>--month-folders=false</code></p>
+<p>Whether or not to organize output files into folders by month. You'll probably want to combine this with <code>--year-folders</code> to organize files by year then month.</p>
+<h3>Create a folder for each post?</h3>
+<p><strong>Command line:</strong> <code>--post-folders=true</code></p>
+<p>Whether or not to save files and images into post folders.</p>
+<p>If <code>true</code>, the post slug is used for the folder name and the post's Markdown file is named <code>index.md</code>. Each post folder will have its own <code>/images</code> folder.</p>
+<p>/first-post
+/images
+potato.png
+index.md
+/second-post
+/images
+carrot.jpg
+celery.jpg
+index.md</p>
+<p>If <code>false</code>, the post slug is used to name the post's Markdown file. These files will be side-by-side and images will go into a shared <code>/images</code> folder.</p>
+<p>/images
+carrot.jpg
+celery.jpg
+potato.png
+first-post.md
+second-post.md</p>
+<p>Either way, this can be combined with with <code>--year-folders</code> and <code>--month-folders</code>, in which case the above output will be organized under the appropriate year and month folders.</p>
+<h3>Prefix post folders/files with date?</h3>
+<p><strong>Command line:</strong> <code>--prefix-date=false</code></p>
+<p>Whether or not to prepend the post date to the post slug when naming a post's folder or file.</p>
+<p>If <code>--post-folders</code> is <code>true</code>, this affects the folder.</p>
+<p>/2019-10-14-first-post
+index.md
+/2019-10-23-second-post
+index.md</p>
+<p>If <code>--post-folders</code> is <code>false</code>, this affects the file.</p>
+<p>2019-10-14-first-post.md
+2019-10-23-second-post.md</p>
+<h3>Save images attached to posts?</h3>
+<p><strong>Command line:</strong> <code>--save-attached-images=true</code></p>
+<p>Whether or not to download and save images attached to posts. Generally speaking, these are images that were uploaded by using <strong>Add Media</strong> or <strong>Set Featured Image</strong> in WordPress. Images are saved into <code>/images</code>.</p>
+<h3>Save images scraped from post body content?</h3>
+<p><strong>Command line:</strong> <code>--save-scraped-images=true</code></p>
+<p>Whether or not to download and save images scraped from <code>&lt;img&gt;</code> tags in post body content. Images are saved into <code>/images</code>. The <code>&lt;img&gt;</code> tags are updated to point to where the images are saved.</p>
+<h3>Include custom post types and pages?</h3>
+<p><strong>Command line:</strong> <code>--include-other-types=false</code></p>
+<p>Some WordPress sites make use of a <code>&quot;page&quot;</code> post type and/or custom post types. Set this to <code>true</code> to include these post types in the output. Posts will be organized into post type folders.</p>
+<h2>Customizing Frontmatter and Other Advanced Settings</h2>
+<p>You can edit <a href="https://github.com/lonekorean/wordpress-export-to-markdown/blob/master/src/settings.js">settings.js</a> to configure advanced settings beyond the options above. This includes things like customizing frontmatter, date formatting, throttling image downloads, and more.</p>
+<p>You'll need to run the script locally (not using <code>npx</code>) to edit these advanced settings.</p>
+<h2>Contributing</h2>
+<p>Please read the <a href="https://github.com/lonekorean/wordpress-export-to-markdown/blob/master/CONTRIBUTING.md">contribution guidelines</a>.</p>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overcome Your Fear of Getting Hit in Martial Arts</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/abada-joggers-landing/">Gear</a>
+                    <a href="/">Learn</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/">Contact</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</div>
+<div class="blog-post-container blog-layout">
+    <article class="blog-post">
+        <div class="breadcrumb-container">
+            <a href="/">Home/</a>
+            <a href="/blog">Blog/</a>
+            <a href="/blog/">Overcome Your Fear of Getting Hit in Martial Arts</a>
+        </div>
+        <h1>Overcome Your Fear of Getting Hit in Martial Arts</h1>
+
+        <div class="blog-info">
+            <p>Author:  | Category: </p>
+        </div>
+        
+        
+        
+        <div class="blog-post-meta">
+            <time datetime="2020-09-16">
+                September 15, 2020
+            </time>
+        </div>
+        
+        <div class="blog-post-content">
+            <p><strong>The best ways to eliminate your fear of getting hit is to drill responses to strikes, practice getting hit in a safe and controlled setting, and simulate your blocks and dodges.</strong></p>
+<p>Fear of getting hit makes us freeze up, feel less confident, and stops us from performing to our potential. It's very easy to spot someone who is afraid. Their movements become small, their body closes off, and their fight intelligence goes down several IQ points. Someone who isn't afraid looks confident, moves big, and is spontaneous. This can apply to a sparring session, a fight, a performance, or a Capoeira game. The more we are able to get over our fear of getting hurt (be that the body or the ego), the better we will be able to perform when the heat is on.</p>
+<h2>Drill dodges and blocks</h2>
+<p>The first and most fundamental step to losing our fear is to work on the basics. We want to drill our basic dodges and blocks as much as we can. You want to train until these movements become natural. But if you're very new, this is not something that will happen overnight. Drilling these movements until you can do them without thinking will take months and years.</p>
+<p><strong>In order to speed up the learning curve, take 1 or 2 dodges and apply them as much as possible.</strong> Be a troll and just do the same dodge and block in every scenario you can find. Yes, the way you play Capoeira is going to be weird, and the dodges won't always work the way you want, but <strong>this is a powerful learning tool.</strong> By laser focusing your attention onto 1 or 2 options, you start to learn the limits of what works and what doesn't really fast. Much faster than if you try to learn 20 movements at the same time.</p>
+<p>https://dendearts.com/esquivas-dodges/</p>
+<h2>Simulating sparring/games</h2>
+<p>Here is a video of Connor Mcgreggor doing this with one of his couches</p>
+<p>https://youtu.be/Kg4LxbLPec8?t=32</p>
+<p><strong>Simulate getting hit as often as you can in as many different ways as possible.</strong> This might sound strange or even dangerous, but don't worry, <strong>safety is the primary concern</strong>. A very common way of getting over a fear is by controlled exposure. We use the same method to get over our fear of getting hit. If you own a pool noodle, use this as the &quot;strike&quot; and practice dodging and blocking these &quot;strikes&quot;. You're partner should be working hard to make sure they are pushing you enough that it is just outside of your abilities. <strong>If you're partner is to slow or obvious with their strikes, you won't learn anything. On the other hand, if your partner is just whacking you non stop, you won't learn a thing.</strong> Part of this drill will be to get hit, and to get hit often. It's a way to let you know that you were too slow, or you dodged in the wrong manner, or that you weren't paying attention to a potential strike. .</p>
+<p>As you get more comfortable, getting &quot;hit&quot; doesn't feel like the end of the world. Not only that, after a while you will begin to understand your abilities, and what you are capable of responding to.</p>
+<p><strong>When should I train using real strikes?</strong> When I say &quot;real&quot; I mean aiming to hit, knowing your partner has the capability to dodge correctly... But! also having the control as the attacker to stop when I need. A new person can not do this. A noobie needs a choreography that they can recognize and respond accordingly. An intermediate level student should have some ability to respond to strikes that are not &quot;choreographed&quot;. The strikes do not need to be full power or full speed, but they should present sense of urgency to the person on the receiving end. The advanced students have a bit more freedom here.</p>
+<h2>Get hit in a controlled setting (pads, shoulder, behind bag)</h2>
+<p>Here is an example.</p>
+<p>https://www.youtube.com/watch?v=upTfg7-DpYg</p>
+<p><strong>Practice getting hit by your partners.</strong> Again safety is the most important factor here, so I suggest you do this with strikes that can be controlled. jabs, side kicks, push kicks, hook kicks, or roundhouse kicks are all good candidates.</p>
+<p><strong>The first way to do this is to stand behind a heavy back or large hit pad and let your partner strike.</strong> Their strikes should be controlled at first and slowly work their way up in speed and power. Standing behnd the pad or heavy bag will give you an idea of the force behind a strike. Sometimes the fear of not knowing what happens when we get hit is scarier than actually getting hit. <strong>This is why we want to feel the force of a strike, so we can make the unknown, familiar.</strong></p>
+<p>Another more advanced way to train this concept is to stand in front of your partner and strike very lightly. The point is not to hurt them, but instead to feel what a foot feels like on their chest, or a shin will feel on their ribs. I'll stress again, the strike should not be hard at all. Only in more advanced cases will strike have any force behind them. This exercise really has two benefits. The first is to become more comfortable receiving strikes, and the other is control strikes enough to not hurt our partner.</p>
+<p>push kicks, and side kicks can be received on the forearms (raised in front of your body), while roundhouse kick is received on the shoulder and lat muscles (latissimus dorsi). Even though this is a training exercise, take your safety into consideration and cover your face. Never leave your face exposed, even while training. If your partner is struggling to reach your forearms or shoulder, lower yourself so they are not striking at your stomach or legs.</p>
+<h2>Practical Tips!</h2>
+<h3>Play at your level!</h3>
+<p>When playing or sparring with someone who is of a much higher level, you might think it's cute to &quot;expose&quot; them or to &quot;prove&quot; yourself by doing some jerky kick or sweep. The truth is that you saying to the other person that you are fine with throwing down. And if that other person is at a much higher level, then you're going to be on the receiving end of tougher and faster strikes than you can handle.</p>
+<p>Beginners should definitely challenge themselves, but a practical way to do so is to learn to move without fear. Attacks should flow without hesitation, and movements should come out without thinking. Of course, this will take time, but getting better is all about the long game.</p>
+<h3>Lower your stance as you get close to your opponent</h3>
+<p>If you want to avoid getting hit in the first place, then remember to get low whenever you come close to your opponent. When you're out of reach, you can't be touched. Feel free to stand upright and move freely. However when you're within range of your opponent, make sure to squat low and get ready for anything.</p>
+<blockquote>
+<p><em>The game is way to fast for me!</em></p>
+</blockquote>
+<p>I've hear this said many times. It's a common concern for many new people. Waiting for the capoeira games to get slower is a bad strategy. Unless you like waiting. The next two tips are my favorites regarding getting comfortable with fast games.</p>
+<h3>Practice at Different Speeds.</h3>
+<p>Time yourself for 30 seconds playing an imaginary game at a slow, medium, and fast pace. Sometimes the game heats up and it's good to be prepared. Practice fundamental movements (In Capoeira, this means: au, role, esquiva, etc.) and strikes at fast speeds. <strong>See how many kicks can you do in 10 seconds as a measure of your &quot;speed&quot;</strong>. After a few rounds of this, you should feel more confident moving at a faster pace. Continue this training until you feel a sense of control, even when you're kicking as hard and as fast as you're able.</p>
+<h3>Simplify your moves as things get faster</h3>
+<p>https://dendearts.com/list-of-fundamental-capoeira-movements/</p>
+<p>When the game gets fast, you want to simplify your movement options. Forget about that complicated move that you can barely do. When the sparring or game gets fast, this is the time for &quot;arroz e feijão&quot;. &quot;Arroz e feijão&quot; means rice and beans in Portuguese. This saying means &quot;the basics&quot;. When things get fast and tough, remember the moves you learned during your first week in class.</p>
+
+        </div>
+    </article>
+    <aside class="blog-post-sidebar">
+        <div class="search-form">
+            <p>Search articles and songs form</p>
+        </div>
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+        <div class="related-posts">
+            <p>Related posts</p>
+        </div>
+        <div class="popular-posts">
+            <p>Popular posts</p>
+        </div>
+        <div class="popular songs">
+            <p>Popular songs</p>
+        </div>
+        <div class="ads space">
+            <p>Ad space</p>
+            <p>Ad space</p>
+        </div>
+    </aside>
+</div>      
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                
+                <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Gear</a>
+                <a href="/">Learn</a>
+                <a href="/">Blog</a>
+                <a href="/">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    
+</body>
+
+
+</html>

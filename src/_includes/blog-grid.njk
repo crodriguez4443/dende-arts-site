@@ -2,9 +2,10 @@
 <div class="blog-grid" id="blog-grid">
     {% for post in collections.posts %}
         <article class="blog-card">
-            {% if post.data.featured %}
+            {% if post.data.coverImage %}
+                {% image "src/img/homepage/waistband.svg", "4-way stretch", "feature-icon", undefined, undefined, undefined %}
                 {% image 
-                    "./src/blog/post-1/featured.png", 
+                    "src/blog/5-coolest-martial-arts-2017/images/andre-hunter-359191.jpg",
                     post.data.title, 
                     "blog-featured-image" 
                 %}

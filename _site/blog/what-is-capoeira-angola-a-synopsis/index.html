@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is Capoeira Angola: A synopsis</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/abada-joggers-landing/">Gear</a>
+                    <a href="/">Learn</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/">Contact</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</div>
+<div class="blog-post-container blog-layout">
+    <article class="blog-post">
+        <div class="breadcrumb-container">
+            <a href="/">Home/</a>
+            <a href="/blog">Blog/</a>
+            <a href="/blog/">What is Capoeira Angola: A synopsis</a>
+        </div>
+        <h1>What is Capoeira Angola: A synopsis</h1>
+
+        <div class="blog-info">
+            <p>Author:  | Category: </p>
+        </div>
+        
+        
+        
+        <div class="blog-post-meta">
+            <time datetime="2022-02-10">
+                February 9, 2022
+            </time>
+        </div>
+        
+        <div class="blog-post-content">
+            <p>Capoeira Angola is a branch of Capoeira. The style of Angola is highly influenced by the old guard of Capoeiristas from the early 20th century. Their movements are low to the ground and focus on trickery. Angola emphasizes the importance of music and the African roots of Capoeira.</p>
+<h2>The History of Capoeira Angola</h2>
+<p>The history of Capoeira Angola begins in the early 20th century. The rituals, rules, and movements of Capoeira were laid out by mestres like Pastinha, Waldemar de Paixão, Cobrinha Verde, and others in Salvador, Bahia. They did this as a response to Capoeira Regional, which was created a style created by Mestre Bimba in the 1920's, and began to swallow up the Capoeira scene in Salvador.</p>
+<p>Over the course of many decades, these mestres passed down their knowledge, ways of teaching, rituals for the roda, and etiquette for the game of Capoeira. Today Capoeira Angola is very conscious of the roots of Capoeira and tries the best it can to preserve the history from which it came.</p>
+<p><em><strong>Interested in the origins of Capoeira? Check out a whole telling of the history from Africa to the slums of Rio de Janeiro, here!</strong></em> 🌍. <a href="https://dendearts.com/what-is-the-origin-of-capoeira/"></a><a href="https://dendearts.com/what-is-the-origin-of-capoeira/">https://dendearts.com/what-is-the-origin-of-capoeira/</a></p>
+<h3>Prior to Capoeira Angola - Capoeira Antiga</h3>
+<p><strong>Prior to Capoeira Angola, Capoeiristas simply played &quot;Capoeira&quot;. This Capoeira is sometimes called Capoeira &quot;Antiga&quot;</strong> (Antiga means old or ancient), though this naming convention is by no means universally accepted. Angola derives much from what they saw as the &quot;original&quot; Capoeira (Capoeira Antiga) and the &quot;Brincadeira de Angola&quot;, which according to many mestres of the time, preceded Capoeira.</p>
+<p>There are no video recordings that date back into the 1800's, so we do not know what Capoeira of this time looks like. Mestre Bimba stated how the Capoeira he saw growing up was a docile and toothless game (to paraphrase). Implying it was once an effective fighting system that lost its power. They may be some truth to this as the severe repression by the Brazilian state that may have forced many Capoeirsitas to showcase Capoeira more as a dance than a fight. This contrasted greatly with the Capoeira from Rio de Janeiro in the 18th and 19th centuries, which was markedly violent!</p>
+<h3>Angola as the original Capoeira</h3>
+<p>Some Angoleiros take the position that Angola IS the Capoeira found in Brazil in the 1800's and that the further you go in history, the more the game of Capoeira will look similar to the African martial arts and dances brought over by enslaved Africans.</p>
+<p><strong>The few sources available do point to a violent Capoeira that likely looked very different from the one we see today.</strong> The most famous account from the 1870's describes two men listening to a drum and colliding with each other head-first. The game sounds extremely violent and very different from the Angola we see from video recordings dating back to the 1940s (some of the earliest source videos).</p>
+<h3>Capoeira as a &quot;catch-all phrase&quot;</h3>
+<p>One thing to consider regarding the origins of Angola and Capoeira is that “Capoeira” may have been used as a catch-all phrase to describe African rituals and martial arts in colonial Brazil. There is some evidence to this from M. Thomas J. Desch-Obi's book &quot;Fighting for Honor&quot;. There were several martial arts attributed to the enslaved Africans in Brazil, and it's possible that the Portuguese used &quot;Capoeira&quot; as a general term for many of these activities.</p>
+<p>Personally, this makes sense as there are many martial arts seen throughout the African Diaspora into the Americas that resemble Capoeira. Landja is an excellent example, however, there are many others that can be found around the Americas.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rl4CEEse_fI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>Mestre Pastinha</h2>
+<p>You might ask, &quot;where did this modern style of Capoeira Angola come from?&quot;</p>
+<p>Mestre Pastinha is understood to be the father of Capoeira Angola. Mestre Pastinha learned Capoeira as a youth from an &quot;African&quot; (as he puts it), called Benedito. Benedito taught Pastinha enough Capoeira to defend himself from a local bully.</p>
+<p>Mestre Pastinha is considered the father of Capoeira Angola in part because of his amazing game, but also because of his leadership in CECA (Centro Esportivo de Capoeira Angola).</p>
+<p>The story of Mestre Pastinha is tragic, as he died old, alone, and blind. The sad end of his life is a warning to any Capoeira talent who thinks they can manage on their skills alone.</p>
+<p>Here is a video of Mestre Pastinha from the 1950’s</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FCtq7C2_7fU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>How to play Capoeira Angola</h2>
+<p>One of the leading authorities on Capoeira Angola, Mestre Cabelo, student of Mestre João Grande mentioned the best advice when it comes to playing Capoeira Angola. When playing Capoeira Angola, your goal is to aim for the head of your opponent - specifically the face.</p>
+<h3>Aim for the face</h3>
+<p>This might sound obvious, but in Angola the game is played close to the ground, so the face is often in reach of your feet. You can directly aim for the face or anticipate the movements of your opponent to target the face when it appears in reach.</p>
+<p>Attacks can, and often do, happen with the forehead (a headbutt). The shoehorn of the head is a very hard part of the head that is a great weapon if you aim at someone's face. In Angola, headbutts are very common and very effective.</p>
+<h3>No flipping</h3>
+<p>Unlike in Contemporânea, Angola does not allow for large acrobatic movements like backflips. Although in modern Angola this is changing a bit, with more athletic movements becoming more prevalent in the game of Angola. The biggest &quot;acrobatic&quot; you may see in Angola is a Macaco or other acrobatic that maintains some points of contact with the ground.</p>
+<h3>Play close to the bateria</h3>
+<p>Angola should be played close to the bateria. Advanced players will stay close to the instruments and seldom show the instruments their backs. Showing your back to the bateria is a sign of disrespect.</p>
+<h3>Angola is not only played &quot;slow&quot;</h3>
+<p>Last, is the misconception that Angola is slow. Angola can be played slow or fast. This is determined by the speed the person leading the bateria - and by extension, the roda. Angoleiros will play at the speed of the berimbau, so be prepared to play a game of any speed.</p>
+<h3>Bateria set up in Capoeira Angola</h3>
+<p>Angola is rich with rules and rituals. These rules will depending based on the group you train with. One example is the setup of the bateria. Schools generally have different ways that they set up their bateria. Here are two common examples.</p>
+<p>From Left to Right facing the bateria:</p>
+<ol>
+<li>Pandeiro, Gunga, Medio, Viola, Pandeiro, Reco-reco, Agôgô, Atabaque.</li>
+<li>Agôgô, Reco-reco, Pandeiro, Medio, Gunga, Viola, Pandeiro, Atabaque.</li>
+</ol>
+<p>Although few Capoeriistas would claim that their way of setting up the bateria is the &quot;correct&quot; way, within their house any visitor should respect the way that group sets up their bateria and any other house rules they may have.</p>
+<h3>No butts on the floor</h3>
+<p>An interesting rule you will see if you visit Mestre João Grande's academy is that nobody sits with their butts on the floor. Angoleiros dress in regular pants, wear shoes, and tuck in their shirts. Dirtying your clothing or the clothing of your opponent (with a shoe mark for example) is a sign of disrespect, and shame for the recipient.</p>
+<p>Some people contend that the reason for this type of dress is that during the times of slavery, having such nice clothing was considered a privilege. Wearing this more &quot;proper&quot; attire is an homage to those times.</p>
+<h2>Capoeira rules by Mestre Pastinha</h2>
+<p>There are many rules in Capoeira Angola, and the rules differ depending on the group you are training or playing with. Mestre pastinha describes many rules that he believes should be followed when playing Capoeira.</p>
+<ul>
+<li>No hitting with the hands. This is seen as disrespectful</li>
+<li>Do not turn your back to the bateria</li>
+<li>Listen to the commands of the bateria</li>
+<li>Play according to the rhythm of the bateria and specifically the berimbau</li>
+</ul>
+<h2>Differences between Angola and Regional, and Contemporanea</h2>
+<p>Angola is the branch of Capoeira most concerned with maintaining the traditions of the mestres of the early 20th century, excluding Mestre Bimba.</p>
+<p>While Capoeira Contemporanea is a force for the continued growth and expansion of Capoeira, Angola is concerned with maintaining tradition and preserving knowledge. Angola still evolves, however, the pace is very moderate as compared to Contemporanea.</p>
+<p>For an in-depth look at the differences between different Capoeira schools, you can check out our in-depth guide on the subject.</p>
+<p><em><strong>The different styles of Capoeira [A full explanation]</strong></em></p>
+<p>🤸🏽  <a href="https://dendearts.com/the-different-styles-of-capoeira-full-explaination/"></a><a href="https://dendearts.com/the-different-styles-of-capoeira-full-explaination/">https://dendearts.com/the-different-styles-of-capoeira-full-explaination/</a></p>
+<p>https://dendearts.com/the-different-styles-of-capoeira-full-explaination/</p>
+<h2>What to wear to your Angola class</h2>
+<p>Within Angola schools, the rules differ. Mestre Nô, a very prolific Capoeira mestre uses a chord system and abadas popularized by Capoeira Regional schools. This style of dress is less common.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2022/02/Mestre-No-1.jpeg"><img src="images/Mestre-No-1-1024x588.jpeg" alt=""></a></p>
+<p>Mestre Nô - [credit](http://Mestre Nô - credit: https://www.ufba.br/ufba_em_pauta/t%C3%ADtulo-de-not%C3%B3rio-saber-ser%C3%A1-entregue-mestre-n%C3%B4-nesta-quinta)</p>
+<p>The majority of schools require pants, usually khakis. They also require a belt, shoes, and a shirt (usually white) that you can tuck into your pants. Exposed shoulders and shorts are not allowed. Neither are tight-fitting pants.</p>
+<p>Mestre Pastinha helped define the rules surrounding what you could wear for Capoeira Angola. The uniform he chose for his school was: A yellow shirt with black pants and shoes. This comes from his favorite soccer team, which at the time had the same color combination.</p>
+<h2>Angola classes - very different compared to the early 1900s</h2>
+<p>After the creation of Capoeira Regional, and its explosive popularity in the 1930s and 40s, the Angola mestres began using some of the methods employed in Regional schools to teach larger groups of students at a time. This often includes: a warm up at the beginning of class, sequences of movements to practice, and repeated kicks to improve technique.</p>
+<p>Prior to this, mestres spent little time giving any formal instruction to their students. Lessons were intuitive and most students learned by watching and by doing. Classes were rarely paid for. Instead, students would pay for their teacher's food or drinks in exchange for their time and knowledge.</p>
+<p>Here is an example of Mestre João giving a workshop to a group of Capoeirsitas in New York City. This form of instruction is very common today, however this is not how Mestre João Grande learned.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UpEn2F9zuAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>For a more in depth look into the methods of Capoeira instruction in the early 1900’s check out the link below.</p>
+<p>👨🏿‍🏫  <a href="https://dendearts.com/how-capoeira-classes-have-changed-1900-2020/">How Capoeira classes has changed over the years - 1900 - today</a></p>
+<p>https://dendearts.com/how-capoeira-classes-have-changed-1900-2020/</p>
+<h2>The Angola graduation system</h2>
+<p>Like any other Capoeira school, graduation systems can differ greatly depending on the teacher and school of that teacher. In Mestre Joao Grande's school, the only graduations given by a mestre are Treinel, Professor, and Contra-Mestre. The title of &quot;Mestre&quot; is not present for good reason. In the old days of Mestre Pastinha, a mestre was only granted the title when the community collectively acknowledged a person as mestre. As with many things during this time, the process was very organic, with more and more people referring to a Capoerista as &quot;Mestre&quot;.</p>
+<p>Today this method is rare, and most mestres will graduate their students to &quot;Mestre&quot; once they decide the student is ready.</p>
+<h3>Student and Treinel</h3>
+<p>Titles like Treinel often refer to a graduated (or advanced) student, though this may differ a bit depending on the school. Before this, a student is an &quot;aluno&quot;, which translates to “student”.</p>
+<h3>Professor</h3>
+<p>A professor is someone who teaches Capoeira classes. A professor usually has many years of experience before they can be considered a Professor.</p>
+<h3>Contra-Mestre</h3>
+<p>A &quot;Contra-Mestre&quot; was traditionally a title given to the &quot;right-hand&quot; of the mestre. Traditionally, they helped the mestre teach class and might help with other things outside of class. Today, Contra-Mestre is a level between professor and mestre.</p>
+<h3>Mestre and Grao Mestre</h3>
+<p>As mentioned, not every group &quot;gives&quot; the title of mestre. To a degree, most Capoeira groups do require that their student be recognized in some way as a mestre before receiving their chord. This may sound strange, but after 20 or 30 years, it is common to see community members refer to a person with so much experience as &quot;mestre&quot;, despite officially having a lower.</p>
+<p>A Grão Mestre is an honerific. There is no graduation for this rank. There are mestres that have made such significant impacts on the world of Capoeira that they are considered to be &quot;Grao Mestres&quot;. Today, Mestre João Grande is one such example.</p>
+<p>For more on the Capoeira graduation system, check out our summary on the Regional and Contemporanea graduation systems below.</p>
+<p>🥋  <a href="https://dendearts.com/the-capoeira-belt-system-explained-by-a-capoeira-teacher/">The Capoeira belt system explained by a Capoeira teacher</a></p>
+<p>https://dendearts.com/the-capoeira-belt-system-explained-by-a-capoeira-teacher/</p>
+
+        </div>
+    </article>
+    <aside class="blog-post-sidebar">
+        <div class="search-form">
+            <p>Search articles and songs form</p>
+        </div>
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+        <div class="related-posts">
+            <p>Related posts</p>
+        </div>
+        <div class="popular-posts">
+            <p>Popular posts</p>
+        </div>
+        <div class="popular songs">
+            <p>Popular songs</p>
+        </div>
+        <div class="ads space">
+            <p>Ad space</p>
+            <p>Ad space</p>
+        </div>
+    </aside>
+</div>      
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                
+                <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Gear</a>
+                <a href="/">Learn</a>
+                <a href="/">Blog</a>
+                <a href="/">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    
+</body>
+
+
+</html>

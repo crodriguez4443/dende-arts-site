@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Meu Mestre Falou</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/abada-joggers-landing/">Gear</a>
+                    <a href="/">Learn</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/">Contact</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</div>
+<div class="blog-post-container blog-layout">
+    <article class="blog-post">
+        <div class="breadcrumb-container">
+            <a href="/">Home/</a>
+            <a href="/blog">Blog/</a>
+            <a href="/blog/">O Meu Mestre Falou</a>
+        </div>
+        <h1>O Meu Mestre Falou</h1>
+
+        <div class="blog-info">
+            <p>Author:  | Category: </p>
+        </div>
+        
+        
+        
+        <div class="blog-post-meta">
+            <time datetime="2021-02-25">
+                February 24, 2021
+            </time>
+        </div>
+        
+        <div class="blog-post-content">
+            <figure>
+<table>
+<thead>
+<tr>
+<th>Portuguese</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>É, meu mestre falou assim</td>
+<td></td>
+</tr>
+<tr>
+<td>Menino não precisa preocupar</td>
+<td></td>
+</tr>
+<tr>
+<td>Que a vida que se leva é essa mesma</td>
+<td></td>
+</tr>
+<tr>
+<td>E a capoeira não deixa nada faltar</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>É, meu mestre falou assim<br>
+Menino não precisa preocupar<br>
+Que a vida que se leva é essa mesma<br>
+E a capoeira não deixa nada faltar</p>
+<p>Até naquilo que mais te incomoda<br>
+Às vezes você tem que relevar<br>
+Conversa com teu mestre e vai pra roda<br>
+Que a capoeira bota tudo no lugar</p>
+<p>É, meu mestre falou assim<br>
+Menino não precisa preocupar<br>
+Que a vida que se leva é essa mesma<br>
+E a capoeira não deixa nada faltar</p>
+<p>E se o que você quer é amizade<br>
+Que é ainda mais difícil verdadeira<br>
+Junte a humildade ao bom caráter<br>
+E só então você vai pra capoeira</p>
+<p>É, meu mestre falou assim<br>
+Menino não precisa preocupar<br>
+Que a vida que se leva é essa mesma<br>
+E a capoeira não deixa nada faltar</p>
+<p>E aquele com marra de valentão<br>
+E que faz mais barulho que ação<br>
+Cuidado, camarada, a capoeira<br>
+Não é o que tu tá pensando não</p>
+<p>É, meu mestre falou assim<br>
+Menino não precisa preocupar<br>
+Que a vida que se leva é essa mesma<br>
+E a capoeira não deixa nada faltar</p>
+<p>Perguntei: “Caveira quem te matou?”<br>
+Respondo que o calado é vencedor<br>
+Porque o veneno que sai pela boca<br>
+É mais mortal que aquele que entrou</p>
+<p>É, meu mestre falou assim<br>
+Menino não precisa preocupar<br>
+Que a vida que se leva é essa mesma<br>
+E a capoeira não deixa nada faltar</p>
+<p>Em tudo o que se passa pela vida<br>
+O que é mais difícil de entender<br>
+É que pra conseguir felicidade<br>
+É preciso viver e conviver</p>
+<p>É, meu mestre falou assim<br>
+Menino não precisa preocupar<br>
+Que a vida que se leva é essa mesma<br>
+E a capoeira não deixa nada faltar | Yes, my master said so<br>
+Boy, you need not worry<br>
+'Cause the life you lead is this one<br>
+And capoeira doesn't miss anything</p>
+<p>Yes, my master said so<br>
+Boy, you need not worry<br>
+'Cause the life you lead is this one<br>
+And capoeira doesn't miss anything</p>
+<p>Even in what bothers you most<br>
+Sometimes you have to let go<br>
+Talk to your master and go to the roda<br>
+'Cause capoeira puts everything in place</p>
+<p>Yes, my master said so<br>
+Boy, you need not worry<br>
+'Cause the life you lead is this one<br>
+And capoeira doesn't miss anything</p>
+<p>And if what you want is friendship<br>
+A true one if even more difficult<br>
+Add humility to good character<br>
+And only then do you go to capoeira</p>
+<p>Yes, my master said so<br>
+Boy, you need not worry<br>
+'Cause the life you lead is this one<br>
+And capoeira doesn't miss anything</p>
+<p>And the one with the tough guy attitude<br>
+Who makes more noise than takes action<br>
+Watch out, buddy, capoeira<br>
+Is not what you're thinking</p>
+<p>Yes, my master said so<br>
+Boy, you need not worry<br>
+'Cause the life you lead is this one<br>
+And capoeira doesn't miss anything</p>
+<p>I asked, &quot;Skull who killed you?&quot;<br>
+I reply that the silent one is the winner<br>
+Because the poison coming out of the mouth<br>
+Is deadlier than the one that entered</p>
+<p>Yes, my master said so<br>
+Boy, you need not worry<br>
+'Cause the life you lead is this one<br>
+And capoeira doesn't miss anything</p>
+<p>In everything that you go through in life<br>
+What is most difficult to understand<br>
+Is that to achieve happiness<br>
+It is necessary to live and live together</p>
+<p>Yes, my master said so<br>
+Boy, you need not worry<br>
+'Cause the life you lead is this one<br>
+And capoeira doesn't miss anything |</p>
+<figcaption>
+<p>Author: Mestre Boa Voz</p>
+</figcaption>
+</figure>
+<p>https://www.youtube.com/watch?v=KIz1uMaHSaI</p>
+
+        </div>
+    </article>
+    <aside class="blog-post-sidebar">
+        <div class="search-form">
+            <p>Search articles and songs form</p>
+        </div>
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+        <div class="related-posts">
+            <p>Related posts</p>
+        </div>
+        <div class="popular-posts">
+            <p>Popular posts</p>
+        </div>
+        <div class="popular songs">
+            <p>Popular songs</p>
+        </div>
+        <div class="ads space">
+            <p>Ad space</p>
+            <p>Ad space</p>
+        </div>
+    </aside>
+</div>      
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                
+                <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Gear</a>
+                <a href="/">Learn</a>
+                <a href="/">Blog</a>
+                <a href="/">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    
+</body>
+
+
+</html>

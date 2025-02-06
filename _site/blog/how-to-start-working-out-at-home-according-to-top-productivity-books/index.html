@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to start working out at home: According to top productivity books</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/abada-joggers-landing/">Gear</a>
+                    <a href="/">Learn</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/">Contact</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</div>
+<div class="blog-post-container blog-layout">
+    <article class="blog-post">
+        <div class="breadcrumb-container">
+            <a href="/">Home/</a>
+            <a href="/blog">Blog/</a>
+            <a href="/blog/">How to start working out at home: According to top productivity books</a>
+        </div>
+        <h1>How to start working out at home: According to top productivity books</h1>
+
+        <div class="blog-info">
+            <p>Author:  | Category: </p>
+        </div>
+        
+        
+        
+        <div class="blog-post-meta">
+            <time datetime="2020-11-29">
+                November 28, 2020
+            </time>
+        </div>
+        
+        <div class="blog-post-content">
+            <p>The trend of working out at home is something growing in the past years and today has reached a fever-pitch. There are more (free!) workout programs and systems available now than ever before. <strong>Tons of companies are pushing for people to workout at home, which presents a huge challenge of motivation!</strong> Motivation is overrated and isn't what gets people out of bed to do their workout. <strong>The most vital thing to consistently working out at home is to have a system. This system has four components: Cue, Craving, Response, and Reward.</strong></p>
+<p><img src="images/virtuous_cycle-1024x770.jpg" alt=""></p>
+<p>This is an example of a virtuous loop, that reinforces itself and helps promote good habits.</p>
+<p>Many productivity books have been written on how to stay consistent with a habit, but few have talked directly about it in terms of your workout. <strong>The hard part about working out is staying consistent.</strong> There is no great secret to it, and it does not involve &quot;motivation&quot;. I personally DO NOT ENJOY WORKING OUT, and most people I know who are absolute studs and religious about their workouts are not either. But they do it because they have generated strong habits that carry them through those tough days.</p>
+<h2>Step 1: Cue your workout</h2>
+<p><img src="images/karsten-winegeart-5PVXkqt2s9k-unsplash-1-1024x684.jpg" alt=""></p>
+<p>For you to have a good habit, you need something to cue the behavior. <strong>Just like Pavlov's dog, you need a signal that your brain understands as &quot;it's time to workout&quot;</strong>.</p>
+<h3>Example list of Cues</h3>
+<ul>
+<li>Auditory cue: Playing &quot;workout&quot; music</li>
+<li>Tactile cue: Changing to workout clothes</li>
+<li>Verbal cue: Say something your yourself (like an affirmation)</li>
+<li>Spatial cue: Move to another room meant for working out</li>
+</ul>
+<p>The traditional way of beginning your workout is to by sheer force of will out of your bed, put on your clothes, and start doing pushups. This is terrible. We want to ween ourselves off of &quot;Sheer willpower&quot; as much as possible. A habit is much stronger than willpower. Cueing your brain will mold your behavior over time, but this cue needs to be followed up with a strong enough promise of reward to make it attractive. This is discussed in the next section.</p>
+<h3>Workout Applications: Get your gym clothes on after work</h3>
+<p><img src="images/heather-ford-hthsAhksQ5M-unsplash-1-1-990x1024.jpg" alt=""></p>
+<p>Imagine it's the end of the work day. You arrive home and the first thing you see are your workout clothes. <strong>Your first step and first major victory is going to be to put on your workout clothes.</strong> If you can get yourself to do a very little thing, then it's going to be a lot easier when you ask it to do something bigger, like 20 squat jumps.</p>
+<p>Traditional Thinking:</p>
+<ul>
+<li>I'm feeling motivated today, I'll do an 8 mile run. (motivation dependent. Good motivation, poor system)</li>
+<li>My phone is dead and I can't run without my playlist; I'll run tomorrow. (no cue to promote habit)</li>
+<li>I'll go to the gym when it's a little warmer outside (externally dependent cues like weather can fail)</li>
+</ul>
+<p>Habit Forming Thinking:</p>
+<ul>
+<li>When I get home, I'll put on my gym clothes (cue is putting on gym clothes)</li>
+<li>This playlist is for working out only. Every I come home from work I'll put it on (cue is music)</li>
+<li>As soon as I get up, I'll move to the living room (cue is getting to livingroom)</li>
+</ul>
+<p>👆🏼 the second list of tasks are easier to do, and much more likely to get done.</p>
+<p><strong>As a rule, this initial cue or habit should take no more than 2 minutes to do.</strong> We want to build a strong connection between getting changed after work and putting on your workout clothes. This connection might work a little differently depending on when you have time to workout. This might be in the morning, afternoon as mentioned, or prior to going to bed.</p>
+<p>The time doesn't matter. <strong>What matters is the consistency of the cue.</strong> This means prepping clothing the night before so you don't have to rummage through your clothing and &quot;figure out&quot; what you will wear for your workout.</p>
+<p>Our willpower is not something you want to use in a situation like this. It's WAAAAAAAAYYYY too easy to start bickering with yourself about what you will wear, and then avoid working out all together. Don't give yourself a chance to make excuses. <strong>The best thing you can do is to make it SOOOOOoooooo easy, that you almost feel compelled to comply with the cue.</strong></p>
+<h2>Step 2: Feed the positive craving</h2>
+<p><img src="images/chris-liverani-MJX7-BAdkt0-unsplash-1.jpg" alt=""></p>
+<p>Motivation is in part creating a craving for something positive. <strong>It is the expectation of a reward that motivates us, not necessarily the reward itself</strong>. If we know that doing a task will reward us with a lot of money, that task becomes way more attractive to us. This is how gambling works. The brain gets a rush of dopamine when I gamble, not so much when receiving the reward.</p>
+<p>The same thing happens to people who watch &quot;just one more&quot; YouTube video or &quot;one more&quot; episode of their favorite Netflix show. The rush comes as you give in to the idea of watching another show, not when you're actually watching the show, thinking, &quot;How did I end up laying on my couch for another 45 minutes!?&quot;.</p>
+<p><strong>Linking rewards to your habits make the habits you are building more enticing.</strong></p>
+<p>List of rewards</p>
+<ul>
+<li>Social: Praise from peers</li>
+<li>Personal: Reward is the action itself</li>
+<li>Satisfy craving: Satisfy a craving like checking social media, Youtube, Netflix, etc.</li>
+</ul>
+<p>We can use these sources of reward as the positive feedback loop we need to build the habit.</p>
+<h3>Workout Applications: Join a community online</h3>
+<p>There are literally hundreds of apps and online communities that track their progress and encourage each other. <strong>What you want in a community are the following:</strong></p>
+<ul>
+<li>The ability for people can track their progress in some way.</li>
+<li>The behavior you want is widely accepted or expected by the community.</li>
+</ul>
+<p>Many writing groups do this. They say &quot;We are going to write 50,000 words in 6 months&quot;, for example. This is a way to hold each other accountable. And it set a standard for an amount of work that everyone is encouraged to meet. This doesn't mean you have to do it, but the friendly competition might push you to do more than you would do otherwise.</p>
+<p>Posting on social media is another tool, but this is most effective when it's directed towards a community that you can interact with. For example, the feedback I get from my Capoeira training partners is more beneficial than that of my friends who don't do Capoeira.</p>
+<h2>Step 3: Make it Simple &amp; EASY</h2>
+<p><img src="images/anchor-lee-GYaMC-_RPNY-unsplash-1.jpg" alt=""></p>
+<p><strong>The &quot;Best&quot; workout is not the one that meets your goal the fastest, it's the workout that you can commit to the best.</strong> A workout is useless if you don't do it on a consistent basis. Going on countless YouTube fitness binges do not result in getting you a 6 pack or reaching &quot;black belt&quot; in a martial art.</p>
+<p>The truth is you already know how to get 80% of the way there. You know what to do, but you're letting the &quot;Best&quot; be an excuse for not working out. Don't put yourself into paralysis thinking about what the best thing you could be doing is. <strong>Instead, keep it simple.</strong></p>
+<p><strong>An easy habit that you can improve 1% every day is the one that will get the most results.</strong> One of the biggest mistakes people do when forming habits is to put the bar way too high. When creating a habit, you want to aim as low as possible. Why? Big lifestyle changes are scary, and they are the leading reason why habits fail.</p>
+<p>Traditional Thinking:</p>
+<ul>
+<li>I'll go on youtube to see if I should run 5Km daily or 3Km. (not simple)</li>
+<li>I'm going to start running for 5 miles every day as my warm up, then I'll do circuit training for 45 minutes, doing X, Y, and Z. (not simple)</li>
+<li>I'm going to the gym every day. (not easy)</li>
+<li>I'm not eating sugar or bread ever again. (not easy)</li>
+</ul>
+<p>1% improvement every day thinking:</p>
+<ul>
+<li>I'll run for 5 minutes every day, then end my workout. Anything else will be a &quot;bonus&quot;. (Easy)</li>
+<li>I'll go the gym for 15 minutes and do as 2 exercises. (simple)</li>
+<li>Soda on the weekends only. (simple)</li>
+</ul>
+<p><strong>You want to make the habit so easy to do, that it would seem insane not to do it. The wins early on need to be easy.</strong> Just like lifting weights, you don't start out heavy. You work your way up. 1% over time compounds to incredible gains in the future. Lower the bar, and improve 1% at a time.</p>
+<h3>Workout Applications: Start with a single pushup</h3>
+<p>There are countless days that I don't want to workout. I flail in bed telling myself off. I tell myself it would be so much easier to sit at my desk and start playing video games. Before I cave into temptation, I make a deal with myself. I'll do just one single pushup.</p>
+<p>Set your bar LOW and reduce your &quot;workout&quot; to something you can do in under 5 minutes. If you prove to yourself that you can do a 5 or even 1 minute workout every day, congratulations, you've built a habit. Now, let's improve that habit 1% over the course of several months. Anyone who knows how compound interest works will tell you that 1% every day is a winning strategy.</p>
+<p>This might not be a habit that will get your abs tomorrow, but the point is to strengthen the habit, and then increase the intensity over a period of time. The traditional way of binging your diet and workout routine quickly sputters into the ground (The blue line).</p>
+<p><img src="images/1_percent_improvement-1024x683.jpg" alt=""></p>
+<p>Don't fall into the trap of creating a monster workout that you do on day one. That's a common mistake beginners make, and leads to disillusionment.</p>
+<h2>Step 4: Set up the reward</h2>
+<p><img src="images/alex-shaw-8Naac6Zpy28-unsplash.jpg" alt=""></p>
+<p><strong>What is awarded is repeated, and what is punished is avoided.</strong></p>
+<p>The more you reward a habit, the more likely that habit will stick. We might understand this, but how do we hack this biological response to improve our habits?</p>
+<p>There are two sides to hacking the reward system.</p>
+<ul>
+<li>Make the good habit rewarding to do</li>
+<li>Make the bad habits difficult and unsatisfying</li>
+</ul>
+<p>The way to make a habit rewarding depends on the person, however <strong>a tried and proven method is to track your habit.</strong> How many days in a row are you doing your workouts? Just being able to check off the box at the end of the day is a victory and should be treated as such, no matter how small.</p>
+<p>The second side of this is to identify what keeps you from doing the good habits you want to do. Do you default to looking at your phone? Do you watch TV? etc. <strong>Minimize the effects of bad habits by making them harder to do.</strong> Leaving your phone in another room overnight is an effective way to keep you off the phone first thing in the morning. Disconnecting the TV after using it, makes watching TV inconvenient.</p>
+<h3>Workout Application: Track habits and minimize distractions</h3>
+<p>A great way to kill two birds with one stone is to change your environment. <strong>Keep your weights easily accessible and in plain sight. Keep the remote, laptop, and/or phone in a drawer where you can't see it.</strong> Need room to do your exercises? Keep your furniture in a configuration that it takes 1 or 2 minutes to get your &quot;workout room&quot; ready.</p>
+<p><strong>After your Easy and Simple workout, make sure to track your progress</strong>. Every workout you do is a mighty victory and that is how you need to see it, no matter how small that victory is.</p>
+<p>Going back to the importance of community, when you don't do your workouts there need to be repercussions. <strong>Having a community is in part there to keep you accountable</strong>. This is all the more important when you have zero motivation. These are the days your workout are the most important. Reinforcing habits when it's hardest is the way we pressurize our habit from a piece of coal to, a diamond.</p>
+
+        </div>
+    </article>
+    <aside class="blog-post-sidebar">
+        <div class="search-form">
+            <p>Search articles and songs form</p>
+        </div>
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+        <div class="related-posts">
+            <p>Related posts</p>
+        </div>
+        <div class="popular-posts">
+            <p>Popular posts</p>
+        </div>
+        <div class="popular songs">
+            <p>Popular songs</p>
+        </div>
+        <div class="ads space">
+            <p>Ad space</p>
+            <p>Ad space</p>
+        </div>
+    </aside>
+</div>      
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                
+                <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Gear</a>
+                <a href="/">Learn</a>
+                <a href="/">Blog</a>
+                <a href="/">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    
+</body>
+
+
+</html>

@@ -1,0 +1,49 @@
+---
+title: "Becoming a Mestre, the highest rank in Capoeira"
+date: "2019-07-22"
+categories: 
+  - "capoeira101"
+  - "history-culture-travel"
+coverImage: "Mestres.jpg"
+layout: "blog-post-layout.njk"
+---
+
+Reaching the pinnacle of any sport is everyone’s ambition when they start out. Capoeira is no different and everyone who starts wants to one day reach the very last chord in graduation system. Most people however don’t know what that last chord is, how to get it, or what it means.
+
+The last belt in the Capoeira graduation system is the Mestre chord. Being a Mestre is a big responsibility because you represent the world of capoeira. Being one of the most senior people in any room means people will be looking to you for guidance and knowledge. This journey can take about 25+ years and requires an immense amount of dedication to the art. Students must learn all aspects of the art of Capoeria before they can even think of becoming a Mestre. This is why many people practice the art of Capoeira, but not everyone reaches the rank of Mestre.
+
+## Grão mestre - the Mestre of Mestres
+
+In actuality, “Mestre” is not really the last chord in some systems of Capoeira. Some chord systems have levels to their Mestre chords until they reach the last one in line. In most of these systems, everyone has the same label of “Mestre” but their chord offer a hierarchical structure. In some cases, capoeira groups will use the term Grão Mestre to represent the last stage in the hierarchy of Mestres. In other cases Grão Mestre is the leader of the group. And in other systems there is no "official" Grão Mestre chord. Everyone's journey to reach the title is different, but one of the prerequisites is a lot of responsibility to the Capoeira community.
+
+A good example of a Grão Mestre is Mestre João Grande. He is a student of Mestre Pastinha, the person who preserved the style of Capoeira Angola. Mestre João Grande is 80+ years old and still teaches at his academy in Harlem, New York City. His title of “Grão Mestre” is universally respected because of his immense experience and work to promote the art of Capoeira. He’s appeared on Sesame Street, many documentaries, and is a recipient of the National Heritage Fellowship, one of the most prestigious awards for practitioners of traditional arts. There are countless examples of Mestres who have learned from him over the years or were inspired by him in some way. A simple example is spinning on the head and doing a ponte (bridge) in the roda, which was unheard of until he did it. Mestre João Grade is a fountain of knowledge for many people, and he has been able to do this through many years of practice.
+
+## How to become a Mestre
+
+Writing about how to become a legend like Mestre João Grande is like trying to write about how to become Bruce Lee. It’s not clear exactly what the path to mastery is. Clearly, anyone who want to be a master needs to do two things. First they must train with their teachers like there’s no tomorrow, and then they have to teach. You can’t be a master without any students. The responsibility of a student is to train, but a teacher’s responsibility increases 10X. Every student you have, you are now responsible for. You are responsible for their development as Capoeiristas and as people. A master has an influence on the culture of the group. The group dynamic is founded on the teachings of the Mestre and so they have the capacity to build up strong, morally correct people. Or, they can do the opposite...
+
+Mestre João Grande did not receive the rank of Mestre by Mestre Pastinha until he had about 25 years of training Capoeira! Of course the amount of years you need to reach the rank of Mestre differs depending on the person. I’ve seen some Mestres in their early 20’s and even though this is extremely rare, it does happen. It’s much more common that a “young” Mestre be in their early to mid 30’s.
+
+Traditionally speaking, the rank of Mestre was not given based on age or numbers of years of experience. These reference points have come along mostly because of the academic-ization of Capoeira. Before there were Capoeira academies, people would become a Mestre once the existing Mestres accepted them as one of them. Going back 100 years, there were no belts, but if the group of Mestres in the region believed you did enough to receive that rank, it would be bestowed onto you. Today, Mestres can be graduated by their Mestres who wish to graduate them, however there is still a communal aspect to this ritual. During a batizado, a new student will receive their first chord. Family and friends come to watch and to celebrate this event. When someone receives their Mestre chord, it is likewise a communal event that the Capoeira community celebrates.
+
+## Not everyone reaches the rank of Mestre
+
+A teacher may have hundreds or thousands of students, and from that number only a small handful will every become Mestres. Spending 25 years of your life dedicated to practicing an Afro-Brazilian art is not everyone’s idea of a good time. Some people just want to work out, sweat, meet friends, and have fun. This is plenty reason to do Capoeira. You don’t need to want to become a Mestre to practice Capoeira. When I first started, I was enamored by the movements and the cool things people were able to do. That was my reason for doing Capoeira. I thought it was cool. That might not seem like the mentality of someone who may one day become  Mestre, but the point is that you never know where life will take you.
+
+You know that kid who always knew he wanted to be president? That kid is driven and that kind of drive is very rare. Not everyone has it when they start out and there are plenty of famous Mestres who did not have this drive when they started training. Mestre Suassuna famously said that he did not even like Capoeira in the beginning. He simply did it because his doctor told him that he needed to do some kind of physical activity. After some time, he gained the inspiration to train hard and before long he began teaching and had a school of his own. I think this is much more common. Many people don’t ever think they’ll reach the rank of Mestre until something happens or they feel a calling to do it. It might be one year into training or it might be fifteen. It depends on the person. No two people’s path is the same.
+
+## First steps to Becoming a Mestre: Train, Play music, speak portugues, and spend time with teachers
+
+What are some things that a student can do to put themselves on the path to becoming a Mestre? The first thing that a student can do is to train as much as they can. Training is one of the most important things you will need to do on the path to mastery. Train with your Mestre as much as you can and train at home as much as you can. Play as many people as you can and improve your abilities in the game of Capoeira.
+
+Training doesn’t only consist of your physical abilities. You’ll also need to learn the musical aspects of  capoeira. this means learning how to play the berimbau, atabaque, pandeiro, and all other instruments in the bateria. Spend time with these instruments, listen to CDs from old Mestres and learn how they played. This can be very difficult for some people, but persistence is key. Ask you teacher how you can practice instruments. It’s likely that they also had limited resources to learn music and had to be creative by playing the atabaque rhythms on a table, etc. Don't fall into the trap of making excuses for yourself. You might not own an atabaque, but you probably have a table.
+
+Read all the books that you can get your hands on. Some people will bring books to events, so if you see a book that looks interesting, grab it! There is a high chance you won't be able to buy it on Amazon. Unfortunately Capoeira is behind on using technology to disseminate information. Most teachers still record their music and put them on CDs instead of online MP3 files. Books are published instead of E-books. And this blog is one of the few blogs on the topic of Capoeira. That is why it’s so important to learn directly from a Mestre and to read whatever books they produce.
+
+Learn Portuguese. If you enjoy Capoeira, you’ll learn some Portuguese. You might not even know how much Portuguese you learn while in class until you go to Brazl and realize that you can understand a bit of what’s said. Portuguese is a requirement if you’re going to be a Mestre. Take a class if you’re in college, download duo-lingo, learn Capoeira songs, and ask people how to say stuff. Figure out how to say what you want to say and then practice it. You’ll feel silly at first, but that’s totally normal. Everyone feels silly when they first learn a language. Once you feel more comfortable putting yourself out there, you’re Portuguese will improve much more rapidly.
+
+Portuguese is so important because you need to spend time with Capoeiristas - especially teachers. Most of these teachers don't speak english! The more time you can spend listening to the conversations of teacher, the better it will be for you. Listen for what they’re concerned about, what they value, and you never know when someone will drop a gold nugget of information for you. And this isn’t a weird thing either. Teachers know that students are hungry to learn and they like seeing that enthusiasm.
+
+Being a Mestre is not something that happens over night. It happens over the course of many years and I think one of the most important things is to enjoy the journey. Make friends and have fun because there’s no point in being on this long ride if you’re not having a good time.
+
+Information for this post was gathered from “Capoeira, a cultura que educa” by Mestre Marcos Henrique, [https://velhosmestres.com/en/featured-22](https://velhosmestres.com/en/featured-22), and Mestre João grande’s [Wiki page](https://en.wikipedia.org/wiki/Jo%C3%A3o_Grande).

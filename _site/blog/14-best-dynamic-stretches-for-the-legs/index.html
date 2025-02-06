@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14 Best Dynamic stretches for the legs</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/abada-joggers-landing/">Gear</a>
+                    <a href="/">Learn</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/">Contact</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</div>
+<div class="blog-post-container blog-layout">
+    <article class="blog-post">
+        <div class="breadcrumb-container">
+            <a href="/">Home/</a>
+            <a href="/blog">Blog/</a>
+            <a href="/blog/">14 Best Dynamic stretches for the legs</a>
+        </div>
+        <h1>14 Best Dynamic stretches for the legs</h1>
+
+        <div class="blog-info">
+            <p>Author:  | Category: </p>
+        </div>
+        
+        
+        
+        <div class="blog-post-meta">
+            <time datetime="2021-02-11">
+                February 10, 2021
+            </time>
+        </div>
+        
+        <div class="blog-post-content">
+            <p>Dynamic stretches are proven to be the most effective form of stretching prior to a workout or athletic performance. This stands in contrast to static stretching which has been proven to decrease muscle output immediately after the stretch. Here are 10 dynamic stretches you can do for your legs that target the many different areas in your legs: including hamstrings, hip-flexors, calfs, adductors, Glutes, abductors, and feet.</p>
+<h2>Main Muscle Groups Stretched</h2>
+<p>Before reading through this section, understand that muscles like the hamstring are actually comprised of several different muscles separated by facia. Facia is a kind of lining that separates different muscle groups. However, these muscles all work in conjunction to perform certain functions, which is why we give them a group name.</p>
+<p>Each of these exercises performs a slightly different function. Although the name of the muscles stretched might be the same, the manner that they are stretched will be different. These small distinctions matter and will go a long way in benefiting whatever physical practice you do.</p>
+<p><strong>Take time to try these different stretches and see which ones are most beneficial to you! Experiment and try out different stretches in different order and intensities.</strong> This is the best way to learn what works for your body.</p>
+<h3>Hamstrings</h3>
+<p>The hamstring is a group of muscles that includes...</p>
+<ul>
+<li>Biceps femoris</li>
+<li>Semitendiosus</li>
+<li>and the Semimembranosus</li>
+</ul>
+<p>These three muscles help flex the knee joint and extend the thigh. The hamstring muscles originate in the ischial tuberosity (the hip) and end at either flanks behind the knee.</p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b2ed37f0-b6f2-47f2-98cf-b93e57d8edf1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210417%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20210417T124028Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=d64af761dc48e6d56389a58bfe9720503faff8c209f887ca506c376cebe200ce&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22" alt=""></p>
+<h3>Hip-flexors</h3>
+<p>A group of muscles that include the following...</p>
+<ul>
+<li>Psoas Major</li>
+<li>Iliacus</li>
+<li>Rectus Femoris (middle quad muscle not in diagram)</li>
+<li>Pectineus</li>
+<li>Sartorius</li>
+</ul>
+<p>This collection of muscles is what allows you to raise up the leg towards your torso. If these muscles are weak, the lower back muscles such as the QL (Quadratus Lomburom) take up the slack, which can cause lower back pain.</p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/bf8dca5c-79d3-4cfa-8da0-55e69081d7e2/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210417%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20210417T124051Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=d384da81e06c979d58c5193db4d79632f43b5c834bcded780c87cb4ac62419f1&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22" alt=""></p>
+<h3>Adductors</h3>
+<p>This group of muscles includes the...</p>
+<ul>
+<li>Obturator Externus</li>
+<li>Adductor Brevis</li>
+<li>Adductor Longus</li>
+<li>Adductor Magnus</li>
+</ul>
+<p>These muscles can be found in the medial aspect of the thigh (inside thigh). This group of muscles originate very close together near the pubis and connect at the other end at several locations along the femur. The adductor muscles are in charge of adducting the muscles. That is, moving the leg inwards toward the other leg.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/Adductors.png"><img src="images/Adductors.png" alt=""></a></p>
+<h3>Abductors</h3>
+<p>The Abductors include...</p>
+<ul>
+<li>Gluteus Maximus</li>
+<li>Tensor Facia Lata</li>
+<li>Iliotibial Band</li>
+</ul>
+<p>The abductor muscles are in charge of abducting the leg. This means that they bring the leg away from the other leg. One example of a movement that includes abduction is stepping out of a car. In addition to moving the leg away from the body, the abductor muscles help to rotate the leg at the hip.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/Quads-1.png"><img src="images/Quads-1.png" alt=""></a></p>
+<h3>Quads</h3>
+<p>This large group of muscles includes ...</p>
+<ul>
+<li>Rectus Femoris</li>
+<li>Vastus Lateralis</li>
+<li>Vastus Medialis</li>
+<li>Vastus Intermedius</li>
+</ul>
+<p>The quad is the extensor of the knee. Without this muscle group, you would not be able to extend your leg straight. This group of muscles is one of the strongest in the body and surrounds the femur bone.</p>
+<p><img src="images/the-muscles-of-the-thigh-87394652-5becaa51c9e77c00263c91d3.jpg" alt="The muscles of the thigh"></p>
+<h3>Glutes</h3>
+<p>The glute is a group of three muscles...</p>
+<ul>
+<li>Gluteus Maximus</li>
+<li>Gluteus Medius</li>
+<li>Gluteus Minimus</li>
+</ul>
+<p>The glute is responsible for many different functions. It is the powerhouse of the lower body and is responsible for moving the hip and knee. The glutes allow for extension, abduction, and external rotation of the hip joint. Sitting has been known to atrophy the glute due to constant pressure and disuse.</p>
+<p><img src="images/muscles-of-gluteal-region-4-638.jpg" alt=""></p>
+<h3>Calfs</h3>
+<p>The muscle is made up of two muscles..</p>
+<ul>
+<li>Gastrocnemius and</li>
+<li>Soleus</li>
+</ul>
+<p>The calf muscle can be found at the back of the lower leg. The two muscles that make up the calf merge together at the base of the calf, called the achilles tendon. The calf is in use almost any time you use your legs. The calf muscle governs the extension of the feet, which is part of what makes walking, jumping, and running possible.</p>
+<p><img src="images/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F35%2F2020%2F07%2F07%2Fcalf-muscles-diagram.jpg" alt=""></p>
+<h2>Carioca (abductors and adductors)</h2>
+<p>Carioca is a lateral moving dynamic stretch for the abductors and the adductors. The movement can be tricky at first, as you need to correctly coordinate your hands and your feet to move efficiently.</p>
+<ul>
+<li>Start by moving slowly, making sure to do the movement pattern correctly.</li>
+<li>The key to the movement is moving the hips, twisting them left and right</li>
+<li>Stay on the balls of your feet</li>
+<li>Avoid looking down</li>
+<li>Swing your arms at shoulder height and parallel to the floor</li>
+<li>As the movement becomes easier take larger steps and add more force to your step</li>
+</ul>
+<p>Carioca is a great beginner movement because it provides a light stretch and works on your agility. The adductors and abductors are the muscles that bring your legs together and bring your legs apart, respectively. If Cariocas are too easy, consider taking bigger steps and moving at a faster pace. Make sure not to overdo it during your warmup.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ViOHs1b6jGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>Straight leg kicks (hip-flexors and hamstrings)</h2>
+<p>Keep the leg straight and swing it up as high as you can without moving your neck or back. This very simple drill is great at targeting the hip-flexors and the hamstrings. You do not need to kick your leg high. But make sure that your leg is straight throughout the duration of the kick.</p>
+<ul>
+<li>Kick your leg up as high as you can</li>
+<li>Make sure you do not compensate by bending at the back, knees, or neck (keep them straight)</li>
+<li>Keep the kicking leg straight</li>
+<li>Keep the foot flexed as you kick for a greater stretch</li>
+<li>Optional is to touch your kicking toes with your opposite hand</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t86pc6Rx4kw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>B Skip (hip-flexors and hamstrings)</h2>
+<p>Similar to the straight leg kick. This kick is very effective for the hip-flexors and hamstrings. It is also an excellent warmup tool and will easily get your heart rate up. This kick starts with the knee up, then kicks out, before returning quickly to the floor.</p>
+<ul>
+<li>First, bring the knee up as high as you can</li>
+<li>Once your knee s as high as it will go, straighten the kicking leg</li>
+<li>Keep the foot flexed</li>
+<li>Bring the foot down to the floor as quickly as you can</li>
+<li>Build up the speed of this movement slowly over time</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JeMBzS2ctK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>Jogging backwards (regression walk backwards) (hipflexors and knees)</h2>
+<p>Jogging backwards is very beneficial for the health of your knees. Outside of the United States, the method is used as a therapeutic exercise for knee pain. For example, it's common to see older Chinese people walking backwards in the park.</p>
+<ul>
+<li>Start by walking backwards slowly</li>
+<li>The benefits of the exercise come from the step back, where your hip-flexor is fully extended</li>
+<li>Increase intensity by taking longer steps or jogging</li>
+<li>Dragging a weight is another way to increase intensity (walking not jogging)</li>
+<li>Younger athletes can jog or run backwards</li>
+<li>Older populations should favor walking or pulling heavy weights</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OdrFm-8WXaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>Squat to hamstring stretch (hamstrings)</h2>
+<p>This dynamic stretch starts in a squat position with the hands (or at least, finger tips) touching the floor. If you are unable to perform a full squat, then bend your legs until your hands touch the floor. From here, you will straighten out your legs as much as you can to intensify the stretch and then come back to your starting position. This is a great way to dynamically warm up the hamstrings and is a fantastic stretch for the early morning.</p>
+<ul>
+<li>Avoid bending your back as you reach down. Keep your back straight!</li>
+<li>Repeat straightening and bending your legs at least 10 times</li>
+<li>On the last rep, hold for at least 10 seconds</li>
+<li>Engage the quads especially at the top of the movement</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S8DoYcfJQ2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>Lateral leg swings (abductors)</h2>
+<p>These kicks can be done leaning on a wall or holding onto a chair for support. Kick to the side, making sure to start slow and gradually work your way up to higher and more intense kicks. Make sure to warm up before attempting these kicks, because they can be too intense if you are cold.</p>
+<ul>
+<li>Your upper body should lower as your leg raises up higher</li>
+<li>Keep the leg straight throughout the duration of the movement</li>
+<li>Point the heel of your base leg in the direction of your kick (not facing forward as shown in video)</li>
+<li>Your arms can either cross over your body (as you would do with a normal side kick) or you can keep them holding onto the wall or a chair for support.</li>
+<li>Keep your backs straight throughout the movement</li>
+<li>Avoid moving your head towards your kick. This is a common compensation</li>
+</ul>
+<p>Although, the hip-flexors and the hamstrings are commonly tight muscles groups in an adult body, you shouldn't forget the abductors. These muscles help raise the leg up laterally. These muscles are important for jumping over hurdles, acrobatics, kicks, and many other movements that require agility.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ajLaXML8YLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>Crescent kicks (in and out) (adductors, abductors, hipflexors, and hamstrings)</h2>
+<p>This exercises is very similar to straight leg kicks. This movement is a great way to work the entire hip along a large range of motion. Not only do your legs kick up, but they move from the outside to the inside. This will work the abductors and the adductors at the same time. Once you do a set of these, make sure to do them in the opposite direction (in to out). Similar to the lateral kicks and the straight leg kicks - make sure to warm up prior to doing them as they can be very intense.</p>
+<ul>
+<li>Start slow by kicking the leg up as high ...</li>
+<li>Avoid bending the back or throwing the neck forward (common compensations)</li>
+<li>Keep the base leg with only a slight bend</li>
+<li>The opposite arm should cross over the body at slightly below shoulder height</li>
+<li>Optional is to tap the kicking foot with the opposite hand as it reaches its apex</li>
+<li>Keep the kicking foot flexed for added difficulty</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t86pc6Rx4kw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>lunge walks (hipflexors)</h2>
+<p>Lunge walks are a low intensity way to dynamically stretch the hip flexors. start slow with small steps and gradually increase them over time. If you still early in your workouts, avoid letting your knees go past your feet. Although there is nothing inherently wrong with this motion, doing so when you are &quot;cold&quot; may be harmful to the knees.</p>
+<ul>
+<li>Keep the chest upright as you take your steps</li>
+<li>As you step sink into the step for a better stretch in the hip-flexors</li>
+<li>Keep the arms at shoulders height and swing them as you would when walking</li>
+<li>Start slow with smaller steps, and increase them over time</li>
+<li>keep your core tight for added stability as you do your lunges</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L8fvypPrzzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>Lateral Lunge/Cossack Squat (adductors)</h2>
+<p>Take a large lateral step and squat down on the stepping leg. This exercise will not only challenge the muscles in the squatting leg, but it will also stretch the adductor muscles in the other leg. As you lower your body down into the squat, the other leg receives a deeper and deeper stretch.</p>
+<ul>
+<li>Take this stretch slow, as it may be difficult for you to maintain balance</li>
+<li>The intensity of the stretch will be determined by the length of your lunge and the depth of your squat</li>
+<li>Optional is to hold your hands in front of you to keep yourself from falling back</li>
+<li>Keep your back straight</li>
+<li>Optional is to keep a chair behind you so if you do lose balance, you will land on the chair and avoid falling backwards</li>
+</ul>
+<p>Lateral lunges can be done in two ways. You can either take a lateral step prior to performing your squat, squatting, and then returning to neutral. Or you can stay in the wide legged stance and squat on either leg from there. Lateral lunges require a high amount of hip mobility, ankle mobility, and strong stabilizer muscles.</p>
+<p>The more advanced variation requires you to skink your butt down towards the floor as much as possible. If you have more limited range, it is suggested you only take your squat down to the point that your knees are bent approximately 90 degrees.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tpczTeSkHz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>Straight leg bear crawl (calf, hamstrings, hipflexors)</h2>
+<p>The bear crawl is a great warmup. Simply come down to all fours and keep your arms and your legs straight. Your goal will be to move around the space without bending any of your limbs. At the same time, as you walk, try to swing your feet as close to your hands as possible. This may be a very frustrating exercise for people unfamiliar with moving around on the floor. regardless, it is a terrific dynamic stretch for the hamstrings and overall warmup.</p>
+<ul>
+<li>Keep your legs straight at all times</li>
+<li>Keep the feet flexed for a better stretch at the calf</li>
+<li>Decrease the intensity of the stretch by increasing the distance between your hands and your feet</li>
+<li>Increase the difficulty for the exercise by decreasing the distance between your hands and your feet</li>
+<li>Remember to move contralaterally (for example: As the right leg moves forwards, the left hand will also move forwards</li>
+</ul>
+<p>This dynamic stretch does not in fact &quot;stretch&quot; the hip-flexors, but you will notice that they will be thoroughly worked out by the end of a minute.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-qJDkVT-mvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>Butt Kicks (Quads)</h2>
+<p>This drill is something you can easily do on the track, outside, or inside in your living room. Perform this drill by jogging (or jogging in place) while you kick your heel back high enough so that it touches or almost touches your glute. Repeat this for about 1 minute to get a dynamic stretch in the quads.</p>
+<ul>
+<li>Pump your arms as you would during a normal run</li>
+<li>Keep your upper body upright (avoid hunching over)</li>
+<li>If you do not have space, run in place</li>
+<li>Start slow at a steady pace</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TLh4LA5oLDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>Calf raises (calf)</h2>
+<p>Start with both feet on a stair. Step one foot half way off the step and start the stretch by lowering the heel towards the next step down. As you lower the heel you will get a stretch through your calf. Go as far as you can control and come back up so that your foot is back to about 90 degrees of bend. although it is not terribly important how you position your arms during this exercise, it is recommended to keep one hand grabbing onto something in case you lose your balance.</p>
+<ul>
+<li>Keep the stretching leg straight throughout the movement</li>
+<li>Lessen the intensity of the stretch by placing less weight on the stretching leg</li>
+<li>Intensify the stretch by placing more weight on the stretching leg</li>
+<li>Intensify the stretch further by contracting the shin muscles at the bottom of the stretch</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1G4nhQ3VEX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>Kneeling toe stretch (feet muscles)</h2>
+<p>Starting from a kneeling position, lean back onto your toes and hold that position for a second or two. Then rock forwards to your starting position. There are many small muscles in our feet that also need to be stretched! Your feet are your foundation and as such, the many muscles that reside in your foot should not be ignored. Try to include stretching your feet into any other lower body stretching routine you may currently practice.</p>
+<ul>
+<li>This may feel uncomfortable on your knees. If so, place a small mat or a rolled up sweater below your knees to make the stretch more comfortable</li>
+<li>You may feel cramping in the foot. If so, breathe through the cramp until it lessens</li>
+<li>Make sure that you are stretching all the toes on your foot</li>
+<li>Rock back and forth, making sure to pause for a second or two at the deepest part of the stretch</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o7TAZZ-aUds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>90/90 Dynamic stretch (glute)</h2>
+<p>Sit in a 90/90 position to get started. This 90/90 refers to the fact that both your knees are bent at 90 degrees. With one shin in front of you and the other to the side, you can begin the stretch by bringing your chest to the shin in front of you. Hold for a second or two and then come back up for one repetition. The glute is the largest muscle in our bodies and the main powerhouse for any lower body activities.</p>
+<ul>
+<li>If you can not sit on the floor without falling over, place a block (or stack of books) under your butt until you are able to sit up comfortably.</li>
+<li>Try lowering down towards your knee, shin, and foot for slight variations on the same stretch</li>
+<li>Regress the stretch by placing your knees at less than 90 degrees</li>
+<li>Keep the back straight as you lower down towards your shin</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w_TwXnJGdM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+    </article>
+    <aside class="blog-post-sidebar">
+        <div class="search-form">
+            <p>Search articles and songs form</p>
+        </div>
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+        <div class="related-posts">
+            <p>Related posts</p>
+        </div>
+        <div class="popular-posts">
+            <p>Popular posts</p>
+        </div>
+        <div class="popular songs">
+            <p>Popular songs</p>
+        </div>
+        <div class="ads space">
+            <p>Ad space</p>
+            <p>Ad space</p>
+        </div>
+    </aside>
+</div>      
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                
+                <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Gear</a>
+                <a href="/">Learn</a>
+                <a href="/">Blog</a>
+                <a href="/">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    
+</body>
+
+
+</html>

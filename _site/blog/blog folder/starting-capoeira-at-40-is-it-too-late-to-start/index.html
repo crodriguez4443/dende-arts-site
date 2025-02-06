@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting Capoeira at 40: Is it Too Late to Start?</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/abada-joggers-landing/">Gear</a>
+                    <a href="/">Learn</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/">Contact</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</div>
+<div class="blog-post-container blog-layout">
+    <article class="blog-post">
+        <div class="breadcrumb-container">
+            <a href="/">Home/</a>
+            <a href="/blog">Blog/</a>
+            <a href="/blog/">Starting Capoeira at 40: Is it Too Late to Start?</a>
+        </div>
+        <h1>Starting Capoeira at 40: Is it Too Late to Start?</h1>
+
+        <div class="blog-info">
+            <p>Author:  | Category: </p>
+        </div>
+        
+        
+        
+        <div class="blog-post-meta">
+            <time datetime="2019-07-11">
+                July 10, 2019
+            </time>
+        </div>
+        
+        <div class="blog-post-content">
+            <p>Capoeira such a cool martial art to learn. There are incredible moves, you make a ton of friends through travel, and you get an amazing workout. It seems like there’s no downside, but for people over 40, the question often looms, “Am I too old to start training Capoeira?”</p>
+<p>So, is 40 too old to start training Capoeira? No. You can start learning Capoeira at 40+ years old.  And older. What you learn, how you learn, and your mentality as a student will be different from someone in their 20’s or 30’s, but there is plenty t hat you can learn in a way that is safe and will serve to strengthen your body as opposed to breaking it down. Your training will need to be at a slower pace, the progressions you start at may be lower than some other students, and your mentality should not work around comparing yourself to others in the class. If you’re ok with that, then you can not only practice Capoeira, but you can thrive.</p>
+<h2>Where is your body now?</h2>
+<p>Many people by the time they’re in their 40’s have some injury that they need to deal with. For some people it can be their knees, for others it’s the back. With any physical activity, it's important to understand these injuries and what aggravates them. If you have knee pain when you squat down, remember that as you go through you practices and avoid movements that will aggravate the injury. This is half the battle because almost everyone who does physical activity has an injury that they will need to deal with. Having an injury should not dissuade you, most adults have some joint that bugs them. Even some of the best Capoeiristas in the world have injuries of some kind. And even though you can’t always notice or it can be hard to tell while they’re flipping everywhere, believe me that you’re not alone.</p>
+<p>Make sure that the teacher knows about any injuries you might have so they can give you different exercises that do not aggravate them any further. Negativa is a good example. This movement can aggravate your knees, but there are regressions that you can do to reduce the impact to your knees. Doing the movement with a flat foot is one example, doing the movement higher up is another. The regression will depend on the kind of injury you have and how to avoid making it worse.</p>
+<figure>
+<p><img src="images/IMG_4425.png" alt=""></p>
+<figcaption>
+<p>Capoeira Movement: Negativa</p>
+</figcaption>
+</figure>
+<h2>Playing at your very best</h2>
+<p>I won’t lie to you. There are kids who are doing Capoeira right now, and can do things the best capoeirista in the world will never be able to do. That statement is true for every single Capoeira practitioner alive today regardless of age. Just because you have a high belt or have been training since you were a teenager doesn’t mean that there isn’t some new talent doing some amazing things that you may never be able to do. Training Capoeira doesn’t mean you need to do all the movements you see on instagram, Facebook, or youtube. Firstly, if you can’t do the movement now doesn’t mean you never will. It may take time, but hard work and a passion for improvement can take you far. At the same time, be humble with you abilities and congratulate those who are able to improve. Doing so puts you in a positive mindset and mentally prepared you for the next challenge.</p>
+<p>So, if you think you’re going to be doing Backflips starting from zero, you are probably expecting too much. However, if you think that you need to be doing backflips to do Capoeira, you’re also very wrong. The fundamentals of Capoeira are the Ginga, basic kicks like Meia Lua de Frente, and esquivas like Esquiva Lateral. Working with progressions is one of the most important parts of learning Capoeira later in life. Kill the ego and ask for a simplified version of what you are doing in class. If a movement is too difficult for you, let the teacher know so they can give you an alternative, or a regression that you can try. Try asking the teacher something like, “this movement is a little difficult, is there another that I can do which will help me build up to that movement?”.</p>
+<p>Here, the ego is our number one enemy, It’s hard to swallow our ego and do something “easier” than what everyone else is doing. In some cases you may not be sure if you can do a movement. If you try and the teacher comes by to tell you to do something easier, don’t feel disappointed. The challenge presented to you is to do the movement recommended to you and slowly work your way up to the next movement. This is the stage where people get frustrated. They think they’re not good enough, they make excuses, etc. It’s not everyone who has the self assurance to deal with this, but If you can get over this feeling, you have the chance to feel free and enjoy yourself.</p>
+<h2>Changing your lifestyle</h2>
+<p>Unlike those kids eating pizza after every class, being 40+ means taking care of yourself. Eat your share of fruits, vegetables, and high quality protein. Stay away from junk food, soda, fast food, or anything else processed. You’re body will thank you and keep working hard for you. Diet makes a huge difference in a person’s ability to develop their physical abilities. If you have a garbage diet, you’ll get garbage results. I don’t recommend any kind of diet because diets depend greatly on the inner workings of each person. I do however believe in eliminating junk as much as humanly possible. For many people this can take a lot of willpower, but if you can make it a routine, then you’ll reap the reweards.</p>
+<p>The other thing to do right away to maximize your results is to train at home. Start by doing something small, but be consistent, and train every day. As we grow older, our body needs a lot more work before it can change in the way we want it to. At the same time, healing takes a longer time. Having a diligent work ethic is the most important aspect of improving. Instead of waiting for the next capoeira class, take some time at home to stretch, or do a light workout that incorporates the movements you’ve learned. You can start with 15-20 minutes a day and slowly work yourself up to a full workout. Again, the key is to be consistent and build those habits and you’ll have no problems taking class with people half your age.</p>
+<h2>Have fun!</h2>
+<p>Ages in a Capoeira class vary greatly, but even if you’re double the age of the youngest student, that doesn’t mean you should have half as much fun. Capoeira is a martial art practiced with a smile, and unlike other martial arts where the plan is to destroy your opponent, Capoeira allows you to challenge the people you play with as well as make friends with them. So, train hard, but don’t forget to have a good time. People ask why I do Capoeira and the reason is always the same. I have fun doing it. The fitness, the friends, the music, and challenges are great, but if you’re not having fun it wouldn’t be worth it.</p>
+<h2>Dealing with Injuries</h2>
+<p>I’ll leave you with one last bit of advice regarding injuries. Most people over 40 have the same concern - getting injured. There’s a lot of ways to recover from injuries depending on what your injury is. Many teachers are not educated about how to deal with injuries. Some might not have insurance to go to a physical therapist and so resort to oils and all kinds of alternative medicine to treat whatever’s hurting them.</p>
+<p>So, how should you deal with your injuries? Go to a physical therapist! Don’t let injuries wait. If you have the chance to nip something in the bud, go ahead and do it. Many times, we have injuries because we’re weak in certain positions, we don’t have control over our bodies, there is an overuse injury, or there is a compensation that creates its own complications. When it comes to injuries, physical therapists are your best friends. Let them know that  you’re physically active and they will hopefully be able to help you. I don’t personally recommend practices that border on voodoo I’m no doctor. If something helps you deal with pain, then good luck to you. Whatever you use to deal with pain, make sure that it deals with the root cause of the issue. This is something that might be difficult to identify without the help of a professional.</p>
+
+        </div>
+    </article>
+    <aside class="blog-post-sidebar">
+        <div class="search-form">
+            <p>Search articles and songs form</p>
+        </div>
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+        <div class="related-posts">
+            <p>Related posts</p>
+        </div>
+        <div class="popular-posts">
+            <p>Popular posts</p>
+        </div>
+        <div class="popular songs">
+            <p>Popular songs</p>
+        </div>
+        <div class="ads space">
+            <p>Ad space</p>
+            <p>Ad space</p>
+        </div>
+    </aside>
+</div>      
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                
+                <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Gear</a>
+                <a href="/">Learn</a>
+                <a href="/">Blog</a>
+                <a href="/">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    
+</body>
+
+
+</html>

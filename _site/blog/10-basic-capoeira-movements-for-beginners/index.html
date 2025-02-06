@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Basic Capoeira movements for beginners</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/abada-joggers-landing/">Gear</a>
+                    <a href="/">Learn</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/">Contact</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</div>
+<div class="blog-post-container blog-layout">
+    <article class="blog-post">
+        <div class="breadcrumb-container">
+            <a href="/">Home/</a>
+            <a href="/blog">Blog/</a>
+            <a href="/blog/">10 Basic Capoeira movements for beginners</a>
+        </div>
+        <h1>10 Basic Capoeira movements for beginners</h1>
+
+        <div class="blog-info">
+            <p>Author:  | Category: </p>
+        </div>
+        
+        
+        
+        <div class="blog-post-meta">
+            <time datetime="2021-04-27">
+                April 26, 2021
+            </time>
+        </div>
+        
+        <div class="blog-post-content">
+            <p>Most Capoeira schools have a list of movements that they would consider basic to the art.</p>
+<h2>Ginga</h2>
+<p>[<em>jin-ga</em>] Swing</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fY7HjL7GWCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Every martial art uses stances. The Ginga is a moving base that allows the practitioners to strike and evade In Capoeira the stance is fluid and moves between two main positions. These are the base and parallel. In general, Capoeira schools teach the ginga as constant transition between these two positions. As the students progresses, they will learn variations to the ginga that they can use. During the first few months of practicing Capoeira, you want to get comfortable doing the Ginga.</p>
+<h3>How to Ginga</h3>
+<p>The Ginga is broken up into two parts. The Base and Parallel. To enter the base, step back with one leg and raise the forearm on the same side to protect your face. Lean forward slightly. This is the base.</p>
+<p>From the base, step laterally with the back leg. Here, you should be squatting slightly with your feet slightly more than shoulder width apart. This is the parallel position.</p>
+<p>If you step back with the opposite leg and switch your arms, you'll be in the base on the opposite side. At its most basic, the Ginga is the movement between these two positions. There are many variations to the Ginga, however when you're getting started, this basic pattern is important to master.</p>
+<h2>Esquiva</h2>
+<p>[<em>es-ki-va</em>] Dodge</p>
+<p><em>Esquivar</em> in Portuguese means &quot;to dodge&quot;. In many martial arts, blocking is the primary defensive option. Blocks are also used in Capoeira, however the most common response to a strike is to dodge. Dodges avoid grappling and give excellent opportunities to counter with a strike of your own. They also make the game of Capoeira much more fluid, encouraging fluid and continuous movement.</p>
+<h3>How to Esquiva</h3>
+<p>There are three esquivas that are most fundamental to Capoeira.</p>
+<ol>
+<li>Esquiva lateral - Starting from the parallel position, squat as if into a chair. Lean your chest into your knee. Cover your face with your hand and forearm. Keep your elbow parallel to the ground.</li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vZRHFWFKlKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<ol start="2">
+<li>Esquiva Baixa - From the base position, take a small step back with your back leg. Squat down with your weight on the front leg. Optionally, place the hand not covering you face onto the floor. Make sure to use your entire palm.</li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zfeBEi03LCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<ol start="3">
+<li>Esquiva Atras - From the base, twist 90 degrees towards your raised hand. Squat as if into a chair and lean towards your back leg. Extend the arm to parry any incoming attacks and gauge distance.</li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Jg5RLZb-l04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>Meia Lua de Frente</h2>
+<p>[<em>May-ah loo-ah jee french</em>] Half moon from the front</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s9WZDY3PCIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Meia lua de frente is genally the first round kick you will learn in Capoeira. It is the simplest round kick to perform. In other martial arts, this kick is called a crescent kick because of its movements from the outside to the inside making a crescent moon shape.</p>
+<h3>How to do Meia lua de frente</h3>
+<p>Meia lua de frente starts from the parallel position. Externally rotate the base foot (not the one kicking) to the side to prevent excessive rotation in the knee. Gather momentum by swinging the arms in the direction of the kick first. Start the kick by following the path of your hands. As the kick reaches its apex, throw the hands in the opposite direction. This provides a counter-balance to the kick. Finish the kick, by bringing the kicking leg back to its starting position. You should finish back in parallel.</p>
+<h2>Queixada</h2>
+<p>[<em>Kay-sha-da</em>] Jawbone</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jssZQfRHufI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>The second easiest round kick to learn in Capoeira is called Queixada. In Taekwondo, this kick is called an outside crescent kick. The set-up is different, however the use is similar. This kick aims for the head and moves from the inside, out.</p>
+<h3>How to do Queixada</h3>
+<p>From esquiva atras, step the back leg forward and just behind your front leg. Swing your arms up and over your shoulder to gather momentum. Follow the path of your arms with your front leg to kick. The leg should move up and around, landing behind you. Land your kicking leg into your Ginga base. As the leg returns to the Ginga, make sure your hands also return to their Ginga position.</p>
+<h2>Armada</h2>
+<p>[Ar-mah-dah] Armada</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AXlS9uQ2QFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Armada is a difficult kick to learn. It is a very technical kick, but beautiful when done correctly. Armada is most closely related to spinning heel kicks found in martial arts, such as in Karate. However, Armada is performed with the toes pointed up in the air, which is why it is most often seen in cooperative games and demonstrations.</p>
+<h3>How to do Armada</h3>
+<p>Starting from parallel, externally rotate the base foot to prevent excessive rotation in the knee. Outstretch your arms so they are parallel with the ground. Step diagonally and point the heel towards the target. Spin your body in the direction of the step until you can't anymore. Use the force of your arms to spin with power. Throw the kick with the front leg up and around to the back. Land your kicking leg in the Ginga base.</p>
+<p>When landing the kick, bring your arms back into the Ginga position with force. This will keep you from losing balance from the force of the kick. One thing to keep in mind is to keep your eyes on your target at all times!</p>
+<h2>Meia lua de Compasso</h2>
+<p>[<em>May-ah loo-ah jee com-pa-soo] Compact Half moon</em></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o_AbTs-M5Zk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>The last of the four round kicks in this list of beginner movements. Meia lua de Compasso is a staple of any Capoeirista's arsenal, so make sure to practice it often. Meia lua de Compasso is also similar to a wide array of hook kicks that can be found in Karate and Kung Fu.</p>
+<h3>How to do Meia lua de Compasso</h3>
+<p>Start form the parallel position. Externally rotate the base foot to the side to prevent excessive rotation in the knee. Step diagonally, pointing the heel towards your target. Squat half-way down and shift your weight onto the stepping leg. Take the opposite hand and place it on the floor between your legs. Reaching further behind you will give more torque and therefore more power to the kick. Place the second hand on the floor. Keep the back leg (the kicking leg) straight.</p>
+<p>Kick the back leg around 360 degrees so that you land back into your Ginga base. Keep your kicking foot parallel to the ground. When landing the kick, bring your arms back into the Ginga position with force. This will keep you from losing balance from the force of the kick.</p>
+<h2>Rolê</h2>
+<p>[<em>Hole-ay</em>] Roll</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/shnRdvI3bGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Role can be compared to a cartwheel with the feet hovering above the floor. Rolê is a very flexible movement that can be used to set up attacks, dodge, or reposition yourself around the roda.</p>
+<h3>How to Rolê</h3>
+<p>Start from the parallel position. Externally rotate the foot of the side you are moving in. Lean laterally and place one hand on the floor. The leg near the hand on the floor stays planted while the second leg swings around to the other side of the body 180 degrees. As the leg swings around, place the second hand down to the floor, shoulder width apart from the first hand. Look between your legs to maintain sight of your opponent. With the planted leg, follow the movement of the second leg around your body 180 degrees. End the movement in parallel facing in the same direction.</p>
+<h2>Aú</h2>
+<p>[<em>Ah-oo</em>] cartwheel</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KFpGbWHE6OE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Au is a cartwheel, like the kind you did as a kid. In Capoeira, different cartwheels perform different functions. Smaller cartwheels protect your torso better than big beautiful cartwheels, for example. At the same time, there are a ton of au variations used in Capoeira, along with many regressions to start learning.</p>
+<p>Here is a list of cartwheel progressions you can start learning.</p>
+<p>https://dendearts.com/list-of-cartwheel-progressions-from-beginner-to-hardcore/</p>
+<h3>How to Aú</h3>
+<p>In gymnastics, your chest will face forwards and your arms will be outstretched up and in front of you. In Capoeira, we keep our chest and face facing towards your opponent.</p>
+<p>Start in the parallel position. Externally rotate the foot of the side you are moving in. The other foot is facing forwards towards your opponent. Start by kicking the back leg up and reach for the floor with your hands. The farther you reach with your hands, the easier the movement will be. Land back in parallel.</p>
+<h2>Cocorinha</h2>
+<p>[<em>co-co-ree-nya</em>] Squat</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kGgzDVqrHlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Cocorinha is a squat with an arm covering your face. Cocorinha is the last esquiva on this list and the most simple to do.</p>
+<h3>How to Cocorinha</h3>
+<p>To do Cocorinha, squat with your feet flat on the floor. Raise an arm to cover your face. This may prove difficult depending on your ankle and hip mobility. The arm covering your face should be on the same side as the attack your are dodging to properly protect your face.</p>
+<p>You can also do Cocorinha on the ball of your feet. This can be more demanding than doing it with flat feet, but requires less lower body mobility. You can decrease the difficulty of this movement by squatting with your butt higher off the floor.</p>
+<h2>Negativa</h2>
+<p>[<em>ne-guh-chi-va</em>] Negative</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zFp1NtaYCfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Negativa is a foundational position for moving on the ground. Negativa allows for easy movements and transitions low to the ground.</p>
+<h3>How to Negativa</h3>
+<p>Starting from Cocorinha, place one hand flat on the floor next to your hip. Stretch forward the leg on the same side as you hand. For beginners, keep you sitting foot flat on the floor. This eliminates pressure on your knee that you might not be ready for.</p>
+<p>The more advanced way to do Negativa is to lower onto the heel of your supporting foot, instead of keeping it flat on the floor. The outstretched leg should be bent slightly. The hand will be placed down between your knee and hip. This will shift your weight more forward. This position puts more load on your knee and is unadvised if you have knee pain. Building knee strength is something you will build over time.</p>
+<h2>How to train your basic movements</h2>
+<p>Now that we know all 10 basic movements, we can put them together into a neat little sequence of movements. Follow the sequence below and articulate each movement before moving onto the next one.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8Nofh0u2l3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Start by doing the sequence slowly until the movements feel comfortable to perform. Continue by slowly building up the speed of the sequence. Make sure to do a couple rounds fast to build strength and explosively.</p>
+<p>As a challenge, see how long it takes you to do the full sequence. The last cartwheel is just me having some fun, which you're encouraged to do.</p>
+<h3>Train your Arroz e Feijão</h3>
+<p>Arroz e feijão is a common expression that means &quot;rice and beans&quot;. This is a reference to a staple food in brazil that is eaten at least once every day in Brazil. the basic movements are the things you want to maka a part of every single training session. Below is a training regiment you can use that take 15 to 20 minutes to do. You can increase the intensity of the workout by increasing the number of repetitions, sets, or quickening the pace.</p>
+<p>The idea is not to have this be the only thing you train, but to make it part of your greater Capoeira workout. For beginners, this is a perfect place to start.</p>
+<table>
+<thead>
+<tr>
+<th>Exercise</th>
+<th>Set</th>
+<th>Reps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ginga</td>
+<td>1</td>
+<td>2 minutes</td>
+</tr>
+<tr>
+<td>Esquivas (all 3)</td>
+<td>1</td>
+<td>2 minutes</td>
+</tr>
+<tr>
+<td>Meia lua de Frente</td>
+<td>2</td>
+<td>5 each side</td>
+</tr>
+<tr>
+<td>Queixada</td>
+<td>2</td>
+<td>5 each side</td>
+</tr>
+<tr>
+<td>Armada</td>
+<td>2</td>
+<td>5 each side</td>
+</tr>
+<tr>
+<td>Meia Lua de Compasso</td>
+<td>2</td>
+<td>5 each side</td>
+</tr>
+<tr>
+<td>Au</td>
+<td>2</td>
+<td>5 each side</td>
+</tr>
+<tr>
+<td>Cocorinha</td>
+<td>1</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Negativa + rolê</td>
+<td>1</td>
+<td>8 each side</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+    </article>
+    <aside class="blog-post-sidebar">
+        <div class="search-form">
+            <p>Search articles and songs form</p>
+        </div>
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+        <div class="related-posts">
+            <p>Related posts</p>
+        </div>
+        <div class="popular-posts">
+            <p>Popular posts</p>
+        </div>
+        <div class="popular songs">
+            <p>Popular songs</p>
+        </div>
+        <div class="ads space">
+            <p>Ad space</p>
+            <p>Ad space</p>
+        </div>
+    </aside>
+</div>      
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                
+                <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Gear</a>
+                <a href="/">Learn</a>
+                <a href="/">Blog</a>
+                <a href="/">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    
+</body>
+
+
+</html>

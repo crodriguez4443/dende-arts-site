@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOW TO DO A CARTWHEEL for absolute beginners with progressions</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/abada-joggers-landing/">Gear</a>
+                    <a href="/">Learn</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/">Contact</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</div>
+<div class="blog-post-container blog-layout">
+    <article class="blog-post">
+        <div class="breadcrumb-container">
+            <a href="/">Home/</a>
+            <a href="/blog">Blog/</a>
+            <a href="/blog/">HOW TO DO A CARTWHEEL for absolute beginners with progressions</a>
+        </div>
+        <h1>HOW TO DO A CARTWHEEL for absolute beginners with progressions</h1>
+
+        <div class="blog-info">
+            <p>Author:  | Category: </p>
+        </div>
+        
+        
+        
+        <div class="blog-post-meta">
+            <time datetime="2020-06-02">
+                June 1, 2020
+            </time>
+        </div>
+        
+        <div class="blog-post-content">
+            <p><strong>Anyone can do a cartwheel!</strong> <strong>Cartwheels are a beginner friendly skill that almost anyone can do with some quick instruction.</strong> If you’re a beginner, take a look at the 5 minute warmup below, then try to do the five cartwheel progressions to see where you stand. Look at the tips I provide, and see if you can’t jump up one or two levels by the time you finish looking at this blog post!</p>
+<h2>Simple and fast! 5 minute cartwheel warmup</h2>
+<h3><strong>Shoulders</strong></h3>
+<p>Before starting your cartwheel, you want to make sure that you start with a good warmup. Your bodyweight is going to be placed on your shoulders, so you want to start with that.  Bring your arms straight above your head, letting your biceps come close to or touch your ears. Shrug your shoulders up as high as you possibly can. Push High into the sky as hard as you can for about 5 to 10 seconds and then relax. Repeat this process about two to three times to get a nice warm feeling in your traps and shoulder. If you feel you need additional work with the shoulder, you can do shoulder rotations. Do this by rotating your shoulders as big as you can clockwise and counterclockwise. Do this about 15 to 20 per direction.</p>
+<h3><strong>Spine side to sides</strong></h3>
+<p>While still on your feet bring, your hands down to your sides. Lean over left as far as you can trying to bend strictly from your torso. Then over to the other side, trying to reach down as far as you can. Keep your core engaged as you do this rocking motion about 10 times on each side.</p>
+<h3><strong>Lateral leg raises</strong></h3>
+<p>Due to the kind of cartwheel we are going to be practicing, we’re going to want to do some lateral leg raises. Again from the standing position, you want to kick your leg up straight to the side. Raise the leg up as high as you can while minimizing bending at the Torso. Do this about 15 times with each leg.</p>
+<h3><strong>Wrist warm up</strong></h3>
+<p>The last warm-up is probably the most important one. The wrists are very small joints and before you do any sort of hand-balancing, including cartwheels, you want to make sure that they are well prepared. Extend your arms out in front of you and make a fist. Bring your palm up so they face in front of you. Extend out your fingers - this should fire up the muscles in your upper forearm. Hold this position for about 5 to 10 seconds. Next, bring your outstretched hands down so that your palms face you and your fingers face down. Curl your fingers into a fist and hold this position for about 5 to 10 seconds. Repeat this process two to three times and you’ll be all set. If you do want a more in depth wrist warmup, you can check this video a deep look into warming up our wrists.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U916zmI9IyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>Forward moving vs Lateral moving cartwheels</h2>
+<h3><strong>Gymnastic forward cartwheel guide</strong></h3>
+<p><img src="https://lh5.googleusercontent.com/3RbsAaKT-Xgx6NFsNX9zVoKQcLYzKUVET_zkRZ8tJ1TWS04MRQASeZm8_F09AQRCPPuMVZP2pYDWV_gFwsYLE5XLNhrEofdvTdmn_WooycOlU3DUYrQNuzJu_8qeBZXlTOiAGO4f" alt=""></p>
+<h3><strong>Capoeira lateral cartwheel guide</strong></h3>
+<p><img src="https://lh3.googleusercontent.com/eKWGINYReIkqw6SuHJco6wPRKN_qZyVXS_GRFM3UdGmRIRqj1YsEjm-Sy4EJDU8DHJQok5UTssXfinmm2zHub-bSu94TRGTeSTSnuliJsvFj-kh9vH3AJi-6hE57pEjkG2VOE_ab" alt=""></p>
+<p>In gymnastics, most techniques are done in a very particular way. Regarding cartwheels, the technique to do it is set in stone. However the gymnastics way of doing a cartwheel is not the only way to do a cartwheel. There are many variations, and here I will be emphasizing technique for the laterally moving cartwheels that is used in many different movement arts, like Capoeira.</p>
+<h3><strong>Starting position</strong></h3>
+<p>The starting position for a forward gymnastic style cartwheel begins from a lunge position. Imagine standing straight and taking a large step as if to lunge forward and bring your arms up to your ears, that would be the starting position for a gymnastics style cartwheel.</p>
+<p>Doing a lateral cartwheel is a little bit different. From a standing position, take a large step to the side. Shift your weight over to the leg that took the step. The hand position remains the same as a gymnastic style cartwheel. The hands will be overhead, near the ears.</p>
+<h3><strong>Kicking into the cartwheel</strong></h3>
+<p>For lateral moving cartwheels, the step you take, and the kick with the back leg is how you generate enough force to do the movement. As you take a step to the side and reach towards the ground, your opposite leg will naturally start to lift off of the ground. As this happens you want to kick it up to your side as hard as you can. This is going to give you a lot of momentum. Something that a lot of beginners have difficulty with is kicking hard enough. Most of the time this is not because the person is too weak, but because being new to cartwheels can be a little bit scary. If this is the case for you, I would work my way down the different car wheels progressions, to see which one fits my abilities and Comfort level.</p>
+<p>In a gymnastics style cartwheel you will also be kicking, however you will be kicking back. Once in the starting lunge position, you will lunge forward and kick your back leg backwards.</p>
+<h3><strong>Arm position</strong></h3>
+<p>It’s very important in a cartwheel to keep your arms about shoulder width and close to your ears. Another important point is to keep your arm straight throughout the cartwheel. This will engage shoulder muscles that will provide stability throughout the movement - as opposed to just using your arm muscles. Regardless of whether you do with a lateral cartwheel or a gymnastics doll cartwheel, these two points are very helpful.</p>
+<p>That being said, while you’re doing a lateral style cartwheel, there is a little bit more flexibility in your hand positioning. You can have your arms bent in some cases or you can have them straight. For beginners, I highly recommend keeping your arms completely straight for any cartwheel progression or variation.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QgCY-YhdUCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>Steps to complete the cartwheel for beginners</h2>
+<p>The vast majority of people can do cartwheels with minimal training. The focus of these progressions are to build coordination and confidence. The first few progressions minimize perceived risk and limit complicated motions to encourage motor skill learning. As the vast majority of people can do cartwheels with their current physical condition, no supplementary exercises are required. Feel free to start from the first progression and work your way up as each variation starts to feel easy.</p>
+<h3><strong>Progression 1: Cartwheel forwards start with hand on floor</strong></h3>
+<p>The first thing we want to work on for absolute beginners is getting comfortable touching the floor. If you are scared of falling, or are uncomfortable with bringing your hand to the floor, then I recommend starting here to build confidence.</p>
+<p><strong>The floor is not your enemy! The floor is a friend.</strong> We want to build this relationship by placing 1 hand on the floor, and having our feet in a staggered stance. Lean into the hand as you kick backwards with the opposite foot. The momentum will help bring your second leg up as you kick it up next. Then place the second hand down next to the first hand and land with the first leg that kicked back.</p>
+<p>The goal here is to get used to putting our hand down on the floor without fear that our hand will give out or that we’ll land on our face.</p>
+<p><img src="https://lh6.googleusercontent.com/ZgmLcAV4XT4A83si9entzOJT97YZJAQjPEIYMwxL-iNJQB7VrVRwH5j3f5fbgJUp1QQ1331FbYXSbnCZZ3CWdTW7WmoMdU5KMaK4Q6iAcOG_Ku-OfXPMT9GJfXn6FmHhmxQ3TLYr" alt=""></p>
+<h3><strong>Progression 2: Cartwheel forwards 1 pata touches the floor at a time</strong></h3>
+<p>This second variation is very similar to the first variation. The difference is that we’ll be simulating the cartwheel hand position more closely. Only after you kick up the back leg will you place down the first hand (step2). From here, the second leg will kick back and the second hand will plant onto the ground. The first leg that kicked is the first to land. Do this progressions until it feels comfortable to place the hand down as you kick the leg up. And remember to try both sides!</p>
+<p>Some tips as you work on this variation. Make sure to keep your shoulders shrugged and stiff as they reach the floor.</p>
+<p><img src="https://lh4.googleusercontent.com/Fp8PHfZuVD00KFDBTx8VMz8smJK9AQ4kFE6QR3HjbFd3amENE2NfVMPVzkKz51DkEtlTlbDBNatczBtmTn3jhxh8nGG_9URqjxxyigb8KWqpLmcOSPAeda8mY104EOrcEfw-fhd-" alt=""></p>
+<h3><strong>Progression 3: Cartwheel with legs hovering on the ground (rolê)</strong></h3>
+<p>In the next progression, we want to imitate the lateral movement of the lateral cartwheel. From a standing position: Lean over to one side and place down one hand by your foot. Once the hand is planted on the ground, lean your weight onto that hand, making sure to keep your hips lifted high. If you have trouble keeping your whole palm on the floor, that’s ok for now, just remember that our goal is to do a cartwheel with our whole palm on the floor.</p>
+<p>Next reach over with the second hand and place it on the floor. Swing the leg furthest from your hands over to the other side. You should be able to look between your legs at this point. From here, finish up by swinging the other leg over, bringing you either to a standing position or to a crouch. Avoid falling back or letting your butt touch the floor, this is a challenge for many people.</p>
+<p>A quick tip for this variation is to give yourself a straight line to follow. The straight line can be a string, a piece of tape, or a crack in the floor. It doesn’t need to be completely straight, but this will give you some guidance about where to place your hands and feet.</p>
+<p><img src="https://lh3.googleusercontent.com/NTKONNfL3jFrdctAMI3j9qzaoIjz9H42j1ve9CqUtMCLiT20DRLuHwn2Aqj1-TIYgNmpB-wvivYEuYUL-SvJRDdCRs6LCqRpcOyTUjq6OsfCP6k5vxjDGL2Y7D0s_hNqQAM1hzl7" alt=""></p>
+<h3><strong>Progression 4: Cartwheel with legs not going completely over the body</strong></h3>
+<p>The next progression is where we start really doing cartwheels. Hopefully by now, we’re not so scared of the floor as when we started in the previous progressions. If you were able to do the last progression without falling at the end, then you’re ready for this next step.</p>
+<p>From a standing position lean to the side you will do your cartwheel. Bend down as you lean to put the first hand down. Note that we are not working on a straight line for now. For beginners this is a much “safer” feeling cartwheel progression because our legs will be at an angle and not completely over our bodies. Use this progression to get comfortable with the kicking and the sensation of bringing your legs up and over.</p>
+<p>Note the angle. We want to work at an angle to make the cartwheel a little easier. As you lean to place the hands down, kick the back leg up and out towards the side. The force will bring your two legs over to the other side of your body without bringing your legs completely over you.</p>
+<p><img src="https://lh5.googleusercontent.com/qjJwaVuqet3UfnMoz8EkoStWGJDKXhrRD9Rr_V9DL7Qfa-lf14Vguod5GFYTHmTdpN7ZUTnggi3IuQac4mLO_9dj4txZbKZelY5XXqkwh_4RXVSZmnDAUlgosmJM7ZDl3QjUio3I" alt=""></p>
+<h3><strong>Progression 5: Full cartwheel</strong></h3>
+<p>Take a deep breath. Although most people would be satisfied with the last progression, this is the last step to doing a full lateral cartwheel. As mentioned, the only difference between this cartwheel and the last progression is that the legs will be going over your body. This may feel daunting or scary, but take a breath and gather your courage because it can be done!</p>
+<p>The main things to focus are the following: Keep the arms straight and push hard against the floor using the muscles in your shoulders. As you kick your back leg to the side, make sure you put a lot of power into the kick. This will make sure you have enough momentum to get your legs over your body. As you go over your body, remember to keep your legs straight and your core braised. If you loosen your core, your technique will suffer. The last bit is a small tip. The longer your cartwheel is, the easier it will be. Meaning, the longer you lunge into the cartwheel, the easier it will be to move your legs over your body.</p>
+<p><img src="https://lh6.googleusercontent.com/9YFFhcB6gx1YzO76GtfmQJTH0Xw5WPcSkGXfiW2NMAtnp7tLUbEmVC7nHKSjk30o8VNmBOHyLoK9LLhesqr_eFg-jeH5KMpgy8878jBOgGtzzQm7wcuXMZD80u7Y4o__Fn1C5Ba7" alt=""></p>
+<h2>Common mistakes when doing cartwheels</h2>
+<p>Here are some common mistakes people make when trying progression #5. If you find yourself running into any of these issues, I suggest warming up if you haven’t already and trying out an appropriate progression.</p>
+<h3><strong>Planting hands perpendicular to feet</strong></h3>
+<p>A very common mistake for beginners is to have incorrect hand placement. While lunging into the cartwheel, some people make the mistake to place their hands in front of them as if they were falling to the ground. This is the same hand positioning as in the second progression. The hands and feet in this example are perpendicular to each other, meaning that you will not be able to go over… unless you want to do some sort of somersault. This is an understandable reaction if cartwheels are something you’re unfamiliar with, however if this is a problem you have, I recommend doing one of the first progressions.</p>
+<p><img src="https://lh6.googleusercontent.com/fkcQOlghY0rY3Sxbn0Gthlpw6qypI2WWwyOZV6i2IvefbE8jgzaNAF3d_1vIlHeIIzk0nAOQdKNjQKcgkshcNVEbS20oEg-_KF_d5EIa0krMd1vHdF7XQevolq0ZvhUH5OQDn7zD" alt=""></p>
+<h3><strong>Landing on butt (momentum overtakes you)</strong></h3>
+<p>While doing any of the cartwheel rotations, it's very common to see people fall backwards at the tail end of the cartwheel. In this scenario, the person is about to land the cartwheel, lands both feet on the ground, but then falls back onto their back. This stems from a very common mistake, which is to not keep the body engaged throughout the movement. If you’re too loose, then the momentum of the cartwheel will continue to push you sideways even after you finished the movement. Brace your core and your glutes to make sure you can stick your landing.</p>
+<h3><strong>Not enough space between hands and legs</strong></h3>
+<p>The bigger your cartwheel is, the more power and stability you will have going over your body. But if you are at one of the first progressions, and are afraid of reaching for the floor, it’s common to try to keep your cartwheel small as a way to stay “safe”. Unfortunately, trying to keep your cartwheel small is actually a pretty advanced skill and not something you want to try in the beginning. As tempting as it might be to make your movements small, spreading out your arms and legs will make your cartwheel much easier to do.</p>
+<h3><strong>Moving hands off center</strong></h3>
+<p>If you’re very inflexible, it’s common to move your hands “off-center”, meaning that your hands and feet will not fall along the same line. This happens particularly when people have inflexible hamstrings, usually resulting in a slanted cartwheel as I mentioned in progression #4. One way to avoid getting stuck at this progression, is to increase your flexibility of your posterior chain. The posterior side prominently includes the hamstrings, lower back, and calf muscles.</p>
+<p><img src="https://lh5.googleusercontent.com/qjJwaVuqet3UfnMoz8EkoStWGJDKXhrRD9Rr_V9DL7Qfa-lf14Vguod5GFYTHmTdpN7ZUTnggi3IuQac4mLO_9dj4txZbKZelY5XXqkwh_4RXVSZmnDAUlgosmJM7ZDl3QjUio3I" alt=""></p>
+<h2>Cartwheel challenges: Intermediate and advanced variations</h2>
+<p>There are tons of ways to make your cartwheels more interesting. Below are a few variations that I enjoy teaching my students, which are beginner and intermediate friendly. If you’re feeling really brave, I saved one variation for the end that I enjoy and would advise for more advanced practitioners.</p>
+<h3><strong>Cartwheel with legs tucked</strong></h3>
+<p>Keeping your legs out during a cartwheel is a way to provide your body with added support and stability. If you take that away, you will be challenging your upper body to stabilize your legs as they float over you. Control your ascent and descent for a really good looking tucked cartwheel.</p>
+<p><img src="https://lh6.googleusercontent.com/haSKjTlo-iu8Qpu8SQO36Db9tMZSI40uVFGmm0qqgcRZ0qDXe9vLCeI5T13ap-CQ1vnvvVd1lPmt75kGE0c4eOOnQHRc5AMisHHRxiAUtwLZuTL58yas_RuAMKBUHCRQVXsCH-_f" alt=""></p>
+<h3><strong>Cartwheel into handstand</strong></h3>
+<p>Another common hand balancing skill that a lot of people practice is the handstand. You can combine these two skills by using the cartwheel as the entrance for your handstand. Start as you would any other handstand and stop at the middle to begin your handstand. This is a great test of your technique and stability.</p>
+<h3><strong>Cartwheel with one hand</strong></h3>
+<p>The one-handed cartwheel is a way to test your comfort with supporting your body on your hands. Once you build that confidence, you can try to do your cartwheel with either the first hand (only) or the second hand (only). This a simple variation that anyone can do, and a nice starting point for those interested in the world of acrobatics.</p>
+<h3><strong>Cartwheel with no hands</strong></h3>
+<p>Although technically a very different skill than a standard cartwheel, doing a cartwheel with no hands is a beginner level tumbling skill that you can add to your repertoire of moves.</p>
+<p><img src="https://lh5.googleusercontent.com/ihC_M6sXsGxi5scEYS9OdVxvf_TkNMLMdkCFgl4KcPFqGSMSnJyTKvNe9KQm7wPQ1RYg0v2nm0vyJAc4SPjlXZVvKqAjw3tbnYy1I6cSgWCGxfCtTn_rdM2iN7oiIkMVUq7-VpNu" alt=""></p>
+<h3><strong>Capoeira cartwheel: Au Trançado</strong></h3>
+<p>This is one of my favorite cartwheel variations.It breaks all the rules about doing a cartwheel, but by doing so, you create an awesome variation that challenges your entire body. Mobility, coordination, proprioception, etc. These are some of the broad categories you challenge doing this cartwheel and I wish you the best of luck! Subscribe to our emailing list or directly reach out if you’re interested in improving your cartwheel game.</p>
+<p>dende.arts@gmail.com</p>
+<p><img src="https://lh3.googleusercontent.com/hXbMMAHNEREGe9w_QHracrNIM-yZbJK7MuGKqq0SqA1bCqCPkpv5QA7kcT9vqIKgrOhfSyBuLPHJ11gbf8w7me4KnCm_dRp_iO3joHylauL8PqqxFoyDvV6gzO0fy3Dj_Pw2oLp5" alt=""></p>
+
+        </div>
+    </article>
+    <aside class="blog-post-sidebar">
+        <div class="search-form">
+            <p>Search articles and songs form</p>
+        </div>
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+        <div class="related-posts">
+            <p>Related posts</p>
+        </div>
+        <div class="popular-posts">
+            <p>Popular posts</p>
+        </div>
+        <div class="popular songs">
+            <p>Popular songs</p>
+        </div>
+        <div class="ads space">
+            <p>Ad space</p>
+            <p>Ad space</p>
+        </div>
+    </aside>
+</div>      
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                
+                <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Gear</a>
+                <a href="/">Learn</a>
+                <a href="/">Blog</a>
+                <a href="/">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    
+</body>
+
+
+</html>
