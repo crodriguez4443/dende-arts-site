@@ -1,9 +1,2 @@
 
 
-.blog-page-container {
-    display: grid;
-}
-
-.blog-page-container > * {
-    grid-column: 2/4;
-}

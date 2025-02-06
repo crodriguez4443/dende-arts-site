@@ -3,7 +3,7 @@ layout: layout.njk
 title: The number 1 Capoeira blog online
 pagination:
   data: collections.songbookPosts
-  size: 50
+  size: 75
   alias: songbookPosts
 permalink: "songbook/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 ---
@@ -19,7 +19,7 @@ permalink: "songbook/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNu
         <!-- blog-grid.njk -->
         <div class="blog-grid" id="blog-grid">
             {% for post in songbookPosts %}
-                <article class="blog-card">
+                <article class="songbook-card">
                     {% if post.data.coverImage %}
                         {% image 
                             "src/blog/" + post.fileSlug + "/images/" + post.data.coverImage,
