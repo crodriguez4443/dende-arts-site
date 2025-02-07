@@ -8,51 +8,16 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Passando pela praça ouvi o berimbau tocar  
-Uma roda de capoeira  
-Estava tão cheia mal dava pra olhar  
-Olhei lá para o berimbau  
-  
-**Eu vi Mestre Bimba tocar Regional**  
-  
-A roda era fenomenal  
-**Eu vi Mestre Bimba tocar Regional**  
-  
-Vi Bimba dar salto mortal  
-**Eu vi Mestre Bimba tocar Regional**  
-  
-Mestre Bimba jogou  
-Mestre Bimba cantou  
-E o toque da Regional, eu vi  
-Mestre Bimba tocou  
-  
-**Mestre Bimba jogou  
-Mestre Bimba cantou  
-E o toque da Regional, eu vi  
-Mestre Bimba tocou** | Passing through the square I heard the berimbau play  
-A capoeira roda  
-It was so full I could barely see  
-I looked over at the berimbau  
-  
-I saw Mestre Bimba play Regional  
-  
-The roda was phenomenal  
-I saw Mestre Bimba play Regional  
-  
-I saw Bimba somersault  
-I saw Mestre Bimba play Regional  
-  
-Mestre Bimba played  
-Mestre Bimba sang  
-And the rhythm of the Regional, I saw  
-Mestre Bimba play  
-  
-Mestre Bimba played  
-Mestre Bimba sang  
-And the rhythm of the Regional, I saw  
-Mestre Bimba play |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Passando pela praça ouvi o berimbau tocar<br>Uma roda de capoeira<br>Estava tão cheia mal dava pra olhar<br>Olhei lá para o berimbau<br><br><strong>Eu vi Mestre Bimba tocar Regional</strong><br><br>A roda era fenomenal<br><strong>Eu vi Mestre Bimba tocar Regional</strong><br><br>Vi Bimba dar salto mortal<br><strong>Eu vi Mestre Bimba tocar Regional</strong><br><br>Mestre Bimba jogou<br>Mestre Bimba cantou<br>E o toque da Regional, eu vi<br>Mestre Bimba tocou<br><br><strong>Mestre Bimba jogou<br>Mestre Bimba cantou<br>E o toque da Regional, eu vi<br>Mestre Bimba tocou</strong></td>
+        <td>Passing through the square I heard the berimbau play<br>A capoeira roda<br>It was so full I could barely see<br>I looked over at the berimbau<br><br>I saw Mestre Bimba play Regional<br><br>The roda was phenomenal<br>I saw Mestre Bimba play Regional<br><br>I saw Bimba somersault<br>I saw Mestre Bimba play Regional<br><br>Mestre Bimba played<br>Mestre Bimba sang<br>And the rhythm of the Regional, I saw<br>Mestre Bimba play<br><br>Mestre Bimba played<br>Mestre Bimba sang<br>And the rhythm of the Regional, I saw<br>Mestre Bimba play</td>
+    </tr>
+</table>
 
 <figcaption>
 

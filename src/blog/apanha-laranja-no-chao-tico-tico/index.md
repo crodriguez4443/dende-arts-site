@@ -9,28 +9,25 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Apanha laranja no chão tico-tico  
-  
-Se meu amor foi embora eu não fico  
-  
-**Apanha laranja no chão tico-tico  
-**  
-Não é com mão nem com pe é com bico  
-  
-**Apanha laranja no chão tico-tico** | Catch the orange on the tico-tico floor  
-  
-If my love is gone I won't stay  
-  
-Catch the orange on the tico-tico floor  
-  
-It is not with hand or foot, it's with beak  
-  
-Catch the orange on the tico-tico floor |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Apanha laranja no chão tico-tico<br><br>
+Se meu amor foi embora eu não fico<br><br>
+<strong>Apanha laranja no chão tico-tico</strong><br><br>
+Não é com mão nem com pe é com bico<br><br>
+<strong>Apanha laranja no chão tico-tico</strong></td>
+        <td>Catch the orange on the tico-tico floor<br><br>
+If my love is gone I won't stay<br><br>
+Catch the orange on the tico-tico floor<br><br>
+It is not with hand or foot, it's with beak<br><br>
+Catch the orange on the tico-tico floor</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unknown
-
 </figcaption>

@@ -9,49 +9,56 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Sai, sai, Catarina  
-Saia do mar  
-Venha ver Idalina  
-  
-**Sai, sai, Catarina**  
-  
-Saia do mar venha ver, venha ver  
-  
-**Sai, sai, Catarina**  
-  
-Oi Catarina, venha ver  
-  
-**Sai, sai, Catarina**  
-  
-Sai do mar, venha ver, venha ver  
-  
-**Sai, sai, Catarina**  
-  
-Saia do mar, Idalina vem ver  
-  
-**Sai, sai, Catarina** | Come out, come out, Catarina  
-Get out of the sea of the sea  
-Come see Idalina  
-  
-Come out, come out, Catarina  
-  
-Get out of the sea come see, come see  
-  
-Come out, come out, Catarina  
-  
-Hey Catarina, come see  
-  
-Come out, come out, Catarina  
-  
-Get out of the sea, come see, come see  
-  
-Come out, come out, Catarina  
-  
-Get out of the sea, Idalina come and see  
-  
-Come out, come out, Catarina |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Sai, sai, Catarina<br>
+        Saia do mar<br>
+        Venha ver Idalina<br>
+        <br>
+        <strong>Sai, sai, Catarina</strong><br>
+        <br>
+        Saia do mar venha ver, venha ver<br>
+        <br>
+        <strong>Sai, sai, Catarina</strong><br>
+        <br>
+        Oi Catarina, venha ver<br>
+        <br>
+        <strong>Sai, sai, Catarina</strong><br>
+        <br>
+        Sai do mar, venha ver, venha ver<br>
+        <br>
+        <strong>Sai, sai, Catarina</strong><br>
+        <br>
+        Saia do mar, Idalina vem ver<br>
+        <br>
+        <strong>Sai, sai, Catarina</strong></td>
+        <td>Come out, come out, Catarina<br>
+        Get out of the sea of the sea<br>
+        Come see Idalina<br>
+        <br>
+        Come out, come out, Catarina<br>
+        <br>
+        Get out of the sea come see, come see<br>
+        <br>
+        Come out, come out, Catarina<br>
+        <br>
+        Hey Catarina, come see<br>
+        <br>
+        Come out, come out, Catarina<br>
+        <br>
+        Get out of the sea, come see, come see<br>
+        <br>
+        Come out, come out, Catarina<br>
+        <br>
+        Get out of the sea, Idalina come and see<br>
+        <br>
+        Come out, come out, Catarina</td>
+    </tr>
+</table>
 
 <figcaption>
 

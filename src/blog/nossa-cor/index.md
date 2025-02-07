@@ -8,55 +8,62 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Auê auê auê  
-Le le le le le le le le ô  
-  
-Auê auê auê  
-Le le le le le le le le ô  
-  
-Tá no sangue da raça brasilera  
-Capoeira  
-É da nossa cor  
-  
-Berimbau  
-É da nossa cor  
-  
-Atabaque  
-É da nossa cor  
-  
-E pandeiro  
-É da nossa cor  
-  
-Auê auê auê  
-Le le le le le le le le ô  
-  
-Auê auê auê  
-Le le le le le le le le ô | Auê auê auê  
-Le le le le le le le le ô  
-  
-Auê auê auê  
-Le le le le le le le le ô  
-  
-It's in the blood on the Brazilian race  
-Capoeira  
-It's our colour  
-  
-Berimbau  
-It's our colour  
-  
-Atabaque  
-It's our colour  
-  
-And the pandeiro  
-It's our colour  
-  
-Auê auê auê  
-Le le le le le le le le ô  
-  
-Auê auê auê  
-Le le le le le le le le ô |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Auê auê auê<br>
+Le le le le le le le le ô<br>
+<br>
+Auê auê auê<br>
+Le le le le le le le le ô<br>
+<br>
+Tá no sangue da raça brasilera<br>
+Capoeira<br>
+É da nossa cor<br>
+<br>
+Berimbau<br>
+É da nossa cor<br>
+<br>
+Atabaque<br>
+É da nossa cor<br>
+<br>
+E pandeiro<br>
+É da nossa cor<br>
+<br>
+Auê auê auê<br>
+Le le le le le le le le ô<br>
+<br>
+Auê auê auê<br>
+Le le le le le le le le ô</td>
+        <td>Auê auê auê<br>
+Le le le le le le le le ô<br>
+<br>
+Auê auê auê<br>
+Le le le le le le le le ô<br>
+<br>
+It's in the blood on the Brazilian race<br>
+Capoeira<br>
+It's our colour<br>
+<br>
+Berimbau<br>
+It's our colour<br>
+<br>
+Atabaque<br>
+It's our colour<br>
+<br>
+And the pandeiro<br>
+It's our colour<br>
+<br>
+Auê auê auê<br>
+Le le le le le le le le ô<br>
+<br>
+Auê auê auê<br>
+Le le le le le le le le ô</td>
+    </tr>
+</table>
 
 <figcaption>
 

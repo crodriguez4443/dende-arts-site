@@ -1,3 +1,5 @@
+Here's the formatted document:
+
 ---
 title: "Que Barulho É Esse"
 date: "2021-03-22"
@@ -8,29 +10,36 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Que barulho é esse é um tal de zum zum zum  
-**Que barulho é esse é um tal de zum zum zum**  
-  
-Foi o Manduca da Praia que acabou de matar um  
-**Foi o Manduca da Praia que acabou de matar um**  
-  
-Quando a polícia chegou foi um tal de auê auê  
-**Quando a polícia chegou foi um tal de auê auê**  
-  
-Vamos embora seu moço que essa briga é pra valer  
-**Vamos embora seu moço que essa briga é pra vale**r | What's this noise, this zum zum zum  
-What's this noise, this zum zum zum  
-  
-It was Manduca da Praia who just killed one  
-It was Manduca da Praia who just killed one  
-  
-When the police arrived it was an auê auê  
-When the police arrived it was an auê auê  
-  
-Let's go, man, this fight is for real  
-Let's go, man, this fight is for real |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Que barulho é esse é um tal de zum zum zum<br>
+        <strong>Que barulho é esse é um tal de zum zum zum</strong><br><br>
+        
+        Foi o Manduca da Praia que acabou de matar um<br>
+        <strong>Foi o Manduca da Praia que acabou de matar um</strong><br><br>
+        
+        Quando a polícia chegou foi um tal de auê auê<br>
+        <strong>Quando a polícia chegou foi um tal de auê auê</strong><br><br>
+        
+        Vamos embora seu moço que essa briga é pra valer<br>
+        <strong>Vamos embora seu moço que essa briga é pra valer</strong></td>
+        <td>What's this noise, this zum zum zum<br>
+        What's this noise, this zum zum zum<br><br>
+        
+        It was Manduca da Praia who just killed one<br>
+        It was Manduca da Praia who just killed one<br><br>
+        
+        When the police arrived it was an auê auê<br>
+        When the police arrived it was an auê auê<br><br>
+        
+        Let's go, man, this fight is for real<br>
+        Let's go, man, this fight is for real</td>
+    </tr>
+</table>
 
 <figcaption>
 

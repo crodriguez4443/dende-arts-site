@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Dá dá dá no nego"
 date: "2020-11-22"
@@ -9,47 +11,54 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Dá dá dá no nego  
-**Dá dá dá no nego**  
-  
-No nego você não dá  
-**Dá dá dá no nego**  
-  
-Mas se der vai apanhar  
-**Dá dá dá no nego**  
-  
-No nego você não dá  
-**Dá dá dá no nego**  
-  
-Jogue o nego para cima  
-**Dá dá dá no nego**  
-  
-Deixa o nego vadiar  
-**Dá dá dá no nego**  
-  
-No nego você não dá  
-**Dá dá dá no nego** | Give it, give it to the black  
-Give it, give it to the black  
-  
-You can't give it to him  
-Give it, give it to the black  
-  
-But if you do, you'll get beat  
-Give it, give it to the black  
-  
-You can't give it to him  
-Give it, give it to the black  
-  
-Throw him in the air  
-Give it, give it to the black  
-  
-Let him play  
-Give it, give it to the black  
-  
-You can't give it to him  
-Give it, give it to the black |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Dá dá dá no nego<br>
+<strong>Dá dá dá no nego</strong><br>
+<br>
+No nego você não dá<br>
+<strong>Dá dá dá no nego</strong><br>
+<br>
+Mas se der vai apanhar<br>
+<strong>Dá dá dá no nego</strong><br>
+<br>
+No nego você não dá<br>
+<strong>Dá dá dá no nego</strong><br>
+<br>
+Jogue o nego para cima<br>
+<strong>Dá dá dá no nego</strong><br>
+<br>
+Deixa o nego vadiar<br>
+<strong>Dá dá dá no nego</strong><br>
+<br>
+No nego você não dá<br>
+<strong>Dá dá dá no nego</strong></td>
+        <td>Give it, give it to the black<br>
+Give it, give it to the black<br>
+<br>
+You can't give it to him<br>
+Give it, give it to the black<br>
+<br>
+But if you do, you'll get beat<br>
+Give it, give it to the black<br>
+<br>
+You can't give it to him<br>
+Give it, give it to the black<br>
+<br>
+Throw him in the air<br>
+Give it, give it to the black<br>
+<br>
+Let him play<br>
+Give it, give it to the black<br>
+<br>
+You can't give it to him<br>
+Give it, give it to the black</td>
+    </tr>
+</table>
 
 <figcaption>
 

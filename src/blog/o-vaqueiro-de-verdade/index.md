@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "O Vaqueiro De Verdade"
 date: "2021-02-25"
@@ -9,55 +11,62 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| O vaqueiro de verdade  
-Não teme a morte e a fome  
-Não foge de emboscada  
-E não treme diante de homem  
-  
-O vaqueiro de verdade  
-Não larga o seu laço da mão  
-Ele não se embaranha em espinho  
-A mulher ele não nega carinho  
-Ao bom Deus ele não nega oração  
-  
-Ô ponha lá vaqueiro  
-Pega o jaleco de couro  
-  
-**Ponha lá vaqueiro**  
-  
-Ô na porteira do curral  
-  
-**Ponha lá vaqueiro**  
-  
-Ô ponha o jaleco de couro  
-Na porteira do curral  
-  
-**Ponha lá vaqueiro** | The real cowboy  
-Does not fear death and hunger  
-Doesn't run away from ambushes  
-And doesn't tremble before man  
-  
-The real cowboy  
-Don't let go of his lasso  
-He does not tangle himself in thorns  
-To the woman he does not deny affection  
-To the good God he does not deny prayer  
-  
-Hey put it there cowboy  
-Get the leather coat  
-  
-Put it there cowboy  
-  
-Oh on the corral gate  
-  
-Put it there cowboy  
-  
-Oh put the leather coat  
-On the corral gate  
-  
-Put it there cowboy |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>O vaqueiro de verdade<br>
+Não teme a morte e a fome<br>
+Não foge de emboscada<br>
+E não treme diante de homem<br>
+<br>
+O vaqueiro de verdade<br>
+Não larga o seu laço da mão<br>
+Ele não se embaranha em espinho<br>
+A mulher ele não nega carinho<br>
+Ao bom Deus ele não nega oração<br>
+<br>
+Ô ponha lá vaqueiro<br>
+Pega o jaleco de couro<br>
+<br>
+<strong>Ponha lá vaqueiro</strong><br>
+<br>
+Ô na porteira do curral<br>
+<br>
+<strong>Ponha lá vaqueiro</strong><br>
+<br>
+Ô ponha o jaleco de couro<br>
+Na porteira do curral<br>
+<br>
+<strong>Ponha lá vaqueiro</strong></td>
+        <td>The real cowboy<br>
+Does not fear death and hunger<br>
+Doesn't run away from ambushes<br>
+And doesn't tremble before man<br>
+<br>
+The real cowboy<br>
+Don't let go of his lasso<br>
+He does not tangle himself in thorns<br>
+To the woman he does not deny affection<br>
+To the good God he does not deny prayer<br>
+<br>
+Hey put it there cowboy<br>
+Get the leather coat<br>
+<br>
+Put it there cowboy<br>
+<br>
+Oh on the corral gate<br>
+<br>
+Put it there cowboy<br>
+<br>
+Oh put the leather coat<br>
+On the corral gate<br>
+<br>
+Put it there cowboy</td>
+    </tr>
+</table>
 
 <figcaption>
 

@@ -1,3 +1,5 @@
+Here's the formatted document:
+
 ---
 title: "Fuzuê"
 date: "2020-11-26"
@@ -8,141 +10,148 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Berimbau batia  
-Cabaça gemia  
-Moeda corria  
-Eu queria pular  
-Ah Ah  
-  
-Eu queria pular  
-Ah Ah  
-  
-Escrevi meu nome num fio de arame  
-E quem quer que me chame  
-Vai ter que gritar  
-Eh Camará, eh Camará  
-Eh Camará, eh Camará  
-  
-Eh fuzuê  
-Parede de barro  
-Não vai me prender  
-  
-Eh fuzuê  
-Parede de barro  
-Não vai me prender  
-  
-Maria Macamba perdeu a caçamba  
-No cateretê  
-Sambou noite e dia  
-Que até parecia que ia morrer  
-  
-Nasceu no quilombo  
-Aprendeu a levar tombo  
-No canjerê  
-  
-Foi de cesta no lombo  
-Com água e pitombo  
-Trocar por dendê, fuzuê  
-  
-Eh fuzuê  
-Parede de barro  
-Não vai me prender  
-  
-Eh fuzuê  
-Parede de barro  
-Não vai me prender  
-  
-Tinha um pé de coqueiro  
-Cobrindo o terreiro  
-De onde eu nasci  
-  
-Eu vi que o coco era oco  
-E valia tão pouco  
-Para se subir  
-  
-Mas eu com um taco de toco  
-Tocava no coco  
-Pro coco cair  
-  
-E pegava no coco  
-Quebrava num soco  
-Sem repetir, fuzuê  
-  
-Eh fuzuê  
-Parede de barro  
-Não vai me prender  
-  
-Eh fuzuê  
-Parede de barro  
-Não vai me prender | Berimbau beat  
-Gourd moaned  
-Currency ran  
-I wanted to jump  
-Ah Ah  
-  
-I wanted to jump  
-Ah Ah  
-  
-I wrote my name on a wire  
-And whoever calls me  
-Will have to scream  
-Eh Camará, eh Camará  
-Eh Camará, eh Camará  
-  
-Hey fuzuê  
-Clay walls  
-Won't hold me  
-  
-Hey fuzuê  
-Clay walls  
-Won't hold me  
-  
-Maria Macamba lost her bucket  
-In the cateretê  
-She danced samba night and day  
-It even looked like she'd die  
-  
-Born in the quilombo  
-She learned how to fall  
-In the canjerê  
-  
-It was a basket on the loin  
-With water and pitombo  
-To swap for palm oil, fuzuê  
-  
-Hey fuzuê  
-Clay walls  
-Won't hold me  
-  
-Hey fuzuê  
-Clay walls  
-Won't hold me  
-  
-There was a coconut tree  
-Covering the yard  
-Where I was born  
-  
-I saw that the coconut was hollow  
-And it was worth so little  
-To rise  
-  
-But me with a taco stick  
-I touched the coconut  
-For coconut to fall  
-  
-And I would take the coconut  
-Broke in a punch  
-Without repeating, fuzuê  
-  
-Hey fuzuê  
-Clay walls  
-Won't hold me  
-  
-Hey fuzuê  
-Clay walls  
-Won't hold me |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Berimbau batia<br>
+Cabaça gemia<br>
+Moeda corria<br>
+Eu queria pular<br>
+Ah Ah<br>
+<br>
+Eu queria pular<br>
+Ah Ah<br>
+<br>
+Escrevi meu nome num fio de arame<br>
+E quem quer que me chame<br>
+Vai ter que gritar<br>
+Eh Camará, eh Camará<br>
+Eh Camará, eh Camará<br>
+<br>
+Eh fuzuê<br>
+Parede de barro<br>
+Não vai me prender<br>
+<br>
+Eh fuzuê<br>
+Parede de barro<br>
+Não vai me prender<br>
+<br>
+Maria Macamba perdeu a caçamba<br>
+No cateretê<br>
+Sambou noite e dia<br>
+Que até parecia que ia morrer<br>
+<br>
+Nasceu no quilombo<br>
+Aprendeu a levar tombo<br>
+No canjerê<br>
+<br>
+Foi de cesta no lombo<br>
+Com água e pitombo<br>
+Trocar por dendê, fuzuê<br>
+<br>
+Eh fuzuê<br>
+Parede de barro<br>
+Não vai me prender<br>
+<br>
+Eh fuzuê<br>
+Parede de barro<br>
+Não vai me prender<br>
+<br>
+Tinha um pé de coqueiro<br>
+Cobrindo o terreiro<br>
+De onde eu nasci<br>
+<br>
+Eu vi que o coco era oco<br>
+E valia tão pouco<br>
+Para se subir<br>
+<br>
+Mas eu com um taco de toco<br>
+Tocava no coco<br>
+Pro coco cair<br>
+<br>
+E pegava no coco<br>
+Quebrava num soco<br>
+Sem repetir, fuzuê<br>
+<br>
+Eh fuzuê<br>
+Parede de barro<br>
+Não vai me prender<br>
+<br>
+Eh fuzuê<br>
+Parede de barro<br>
+Não vai me prender</td>
+        <td>Berimbau beat<br>
+Gourd moaned<br>
+Currency ran<br>
+I wanted to jump<br>
+Ah Ah<br>
+<br>
+I wanted to jump<br>
+Ah Ah<br>
+<br>
+I wrote my name on a wire<br>
+And whoever calls me<br>
+Will have to scream<br>
+Eh Camará, eh Camará<br>
+Eh Camará, eh Camará<br>
+<br>
+Hey fuzuê<br>
+Clay walls<br>
+Won't hold me<br>
+<br>
+Hey fuzuê<br>
+Clay walls<br>
+Won't hold me<br>
+<br>
+Maria Macamba lost her bucket<br>
+In the cateretê<br>
+She danced samba night and day<br>
+It even looked like she'd die<br>
+<br>
+Born in the quilombo<br>
+She learned how to fall<br>
+In the canjerê<br>
+<br>
+It was a basket on the loin<br>
+With water and pitombo<br>
+To swap for palm oil, fuzuê<br>
+<br>
+Hey fuzuê<br>
+Clay walls<br>
+Won't hold me<br>
+<br>
+Hey fuzuê<br>
+Clay walls<br>
+Won't hold me<br>
+<br>
+There was a coconut tree<br>
+Covering the yard<br>
+Where I was born<br>
+<br>
+I saw that the coconut was hollow<br>
+And it was worth so little<br>
+To rise<br>
+<br>
+But me with a taco stick<br>
+I touched the coconut<br>
+For coconut to fall<br>
+<br>
+And I would take the coconut<br>
+Broke in a punch<br>
+Without repeating, fuzuê<br>
+<br>
+Hey fuzuê<br>
+Clay walls<br>
+Won't hold me<br>
+<br>
+Hey fuzuê<br>
+Clay walls<br>
+Won't hold me</td>
+    </tr>
+</table>
 
 <figcaption>
 

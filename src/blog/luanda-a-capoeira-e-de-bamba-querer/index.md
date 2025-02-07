@@ -1,3 +1,5 @@
+Here's the formatted markdown document according to the specifications:
+
 ---
 title: "Luanda (A Capoeira é de Bamba Querer)"
 date: "2021-01-24"
@@ -9,156 +11,165 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Oh aê Luanda  
-Oh aê Luanda  
-  
-**Oh aê Luanda  
-Oh aê Luanda**  
-  
-A capoeira é de bamba querer  
-A capoeira é de querer bamba  
-  
-**A capoeira é de bamba querer  
-A capoeira é de querer bamba**  
-  
-Quem mandou dizer  
-Que ia me encontrar  
-Se isso acontecer  
-Não vai me pegar  
-  
-**A capoeira é de bamba querer  
-A capoeira é de querer bamba  
-  
-A capoeira é de bamba querer  
-A capoeira é de querer bamba**  
-  
-Quem me viu me vê  
-Quem me vê me viu  
-Mas se tem mandinga  
-Tava eu lá, sumi  
-  
-**A capoeira é de bamba querer  
-A capoeira é de querer bamba  
-  
-A capoeira é de bamba querer  
-A capoeira é de querer bamba**  
-  
-Pois na capoeira  
-Posso lhe afirmar  
-Não tem bobo não  
-Lá só tem bamba  
-  
-**A capoeira é de bamba querer  
-A capoeira é de querer bamba  
-  
-A capoeira é de bamba querer  
-A capoeira é de querer bamba**  
-  
-Oh aê Luanda  
-Oh aê Luanda  
-**  
-Oh aê Luanda  
-Oh aê Luanda**  
-  
-A capoeira é de bamba querer  
-A capoeira é de querer bamba**  
-  
-A capoeira é de bamba querer  
-A capoeira é de querer bamba**  
-  
-Quem mandou o recado  
-Já mandei voltar  
-Pro mesmo endereço  
-E lá vai chegar  
-  
-**A capoeira é de bamba querer  
-A capoeira é de querer bamba  
-  
-A capoeira é de bamba querer  
-A capoeira é de querer bamba**  
-  
-Oh aê Luanda  
-Oh aê Luanda  
-  
-**Oh aê Luanda  
-Oh aê Luanda** | Oh aê Luanda  
-Oh aê Luanda  
-  
-Oh aê Luanda  
-Oh aê Luanda  
-  
-Capoeira is bamba's want  
-Capoeira is to want bamba  
-  
-Capoeira is bamba's want  
-Capoeira is to want bamba  
-  
-Who sent to say  
-They were going to find me  
-If that happens  
-You won't catch me  
-  
-Capoeira is bamba's want  
-Capoeira is to want bamba  
-  
-Capoeira is bamba's want  
-Capoeira is to want bamba  
-  
-Who saw me sees me  
-Who sees me saw me  
-But if you have mandinga  
-I was there, I'm gone  
-  
-Capoeira is bamba's want  
-Capoeira is to want bamba  
-  
-Capoeira is bamba's want  
-Capoeira is to want bamba  
-  
-Because in capoeira  
-I can tell you  
-There is no fool  
-There is only bamba  
-  
-Capoeira is bamba's want  
-Capoeira is to want bamba  
-  
-Capoeira is bamba's want  
-Capoeira is to want bamba  
-  
-Oh aê Luanda  
-Oh aê Luanda  
-  
-Oh aê Luanda  
-Oh aê Luanda  
-  
-Capoeira is bamba's want  
-Capoeira is to want bamba  
-  
-Capoeira is bamba's want  
-Capoeira is to want bamba  
-  
-Who sent the message  
-I already sent it back  
-To the same address  
-And there it will arrive  
-  
-Capoeira is bamba's want  
-Capoeira is to want bamba  
-  
-Capoeira is bamba's want  
-Capoeira is to want bamba  
-  
-Oh aê Luanda  
-Oh aê Luanda  
-  
-Oh aê Luanda  
-Oh aê Luanda |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Oh aê Luanda<br>
+            Oh aê Luanda<br>
+            <br>
+            <strong>Oh aê Luanda<br>
+            Oh aê Luanda</strong><br>
+            <br>
+            A capoeira é de bamba querer<br>
+            A capoeira é de querer bamba<br>
+            <br>
+            <strong>A capoeira é de bamba querer<br>
+            A capoeira é de querer bamba</strong><br>
+            <br>
+            Quem mandou dizer<br>
+            Que ia me encontrar<br>
+            Se isso acontecer<br>
+            Não vai me pegar<br>
+            <br>
+            <strong>A capoeira é de bamba querer<br>
+            A capoeira é de querer bamba<br>
+            <br>
+            A capoeira é de bamba querer<br>
+            A capoeira é de querer bamba</strong><br>
+            <br>
+            Quem me viu me vê<br>
+            Quem me vê me viu<br>
+            Mas se tem mandinga<br>
+            Tava eu lá, sumi<br>
+            <br>
+            <strong>A capoeira é de bamba querer<br>
+            A capoeira é de querer bamba<br>
+            <br>
+            A capoeira é de bamba querer<br>
+            A capoeira é de querer bamba</strong><br>
+            <br>
+            Pois na capoeira<br>
+            Posso lhe afirmar<br>
+            Não tem bobo não<br>
+            Lá só tem bamba<br>
+            <br>
+            <strong>A capoeira é de bamba querer<br>
+            A capoeira é de querer bamba<br>
+            <br>
+            A capoeira é de bamba querer<br>
+            A capoeira é de querer bamba</strong><br>
+            <br>
+            Oh aê Luanda<br>
+            Oh aê Luanda<br>
+            <br>
+            <strong>Oh aê Luanda<br>
+            Oh aê Luanda</strong><br>
+            <br>
+            A capoeira é de bamba querer<br>
+            A capoeira é de querer bamba<br>
+            <br>
+            <strong>A capoeira é de bamba querer<br>
+            A capoeira é de querer bamba</strong><br>
+            <br>
+            Quem mandou o recado<br>
+            Já mandei voltar<br>
+            Pro mesmo endereço<br>
+            E lá vai chegar<br>
+            <br>
+            <strong>A capoeira é de bamba querer<br>
+            A capoeira é de querer bamba<br>
+            <br>
+            A capoeira é de bamba querer<br>
+            A capoeira é de querer bamba</strong><br>
+            <br>
+            Oh aê Luanda<br>
+            Oh aê Luanda<br>
+            <br>
+            <strong>Oh aê Luanda<br>
+            Oh aê Luanda</strong>
+        </td>
+        <td>
+            Oh aê Luanda<br>
+            Oh aê Luanda<br>
+            <br>
+            Oh aê Luanda<br>
+            Oh aê Luanda<br>
+            <br>
+            Capoeira is bamba's want<br>
+            Capoeira is to want bamba<br>
+            <br>
+            Capoeira is bamba's want<br>
+            Capoeira is to want bamba<br>
+            <br>
+            Who sent to say<br>
+            They were going to find me<br>
+            If that happens<br>
+            You won't catch me<br>
+            <br>
+            Capoeira is bamba's want<br>
+            Capoeira is to want bamba<br>
+            <br>
+            Capoeira is bamba's want<br>
+            Capoeira is to want bamba<br>
+            <br>
+            Who saw me sees me<br>
+            Who sees me saw me<br>
+            But if you have mandinga<br>
+            I was there, I'm gone<br>
+            <br>
+            Capoeira is bamba's want<br>
+            Capoeira is to want bamba<br>
+            <br>
+            Capoeira is bamba's want<br>
+            Capoeira is to want bamba<br>
+            <br>
+            Because in capoeira<br>
+            I can tell you<br>
+            There is no fool<br>
+            There is only bamba<br>
+            <br>
+            Capoeira is bamba's want<br>
+            Capoeira is to want bamba<br>
+            <br>
+            Capoeira is bamba's want<br>
+            Capoeira is to want bamba<br>
+            <br>
+            Oh aê Luanda<br>
+            Oh aê Luanda<br>
+            <br>
+            Oh aê Luanda<br>
+            Oh aê Luanda<br>
+            <br>
+            Capoeira is bamba's want<br>
+            Capoeira is to want bamba<br>
+            <br>
+            Capoeira is bamba's want<br>
+            Capoeira is to want bamba<br>
+            <br>
+            Who sent the message<br>
+            I already sent it back<br>
+            To the same address<br>
+            And there it will arrive<br>
+            <br>
+            Capoeira is bamba's want<br>
+            Capoeira is to want bamba<br>
+            <br>
+            Capoeira is bamba's want<br>
+            Capoeira is to want bamba<br>
+            <br>
+            Oh aê Luanda<br>
+            Oh aê Luanda<br>
+            <br>
+            Oh aê Luanda<br>
+            Oh aê Luanda
+        </td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Mestre Boa Voz
-
 </figcaption>

@@ -9,53 +9,38 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| O facão bateu em baixo  
-  
-**A bananeira caiu  
-**  
-O facão bateu em baixo  
-  
-**A bananeira caiu  
-**  
-Cai cai bananeira  
-  
-**A bananeira caiu  
-**  
-cai cai bananeira  
-  
-**A bananeira caiu  
-**  
-Cai cai bananeira  
-  
-Rabo de Arraia e nao rasteira  
-  
-**Cai cai bananeira  
-  
-Rabo de Arraia é nao rasteira** | The machete hit low  
-  
-The banana tree fell  
-  
-The machete hit low  
-  
-The banana tree fell  
-  
-Cai falls banana  
-  
-The banana tree fell  
-  
-falls falls banana  
-  
-The banana tree fell  
-  
-Cai falls banana  
-  
-Stingray tail and not creeping  
-  
-Cai falls banana  
-  
-Arraia's tail is not creeping |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>O facão bateu em baixo<br><br>
+<strong>A bananeira caiu</strong><br><br>
+O facão bateu em baixo<br><br>
+<strong>A bananeira caiu</strong><br><br>
+Cai cai bananeira<br><br>
+<strong>A bananeira caiu</strong><br><br>
+cai cai bananeira<br><br>
+<strong>A bananeira caiu</strong><br><br>
+Cai cai bananeira<br><br>
+Rabo de Arraia e nao rasteira<br><br>
+<strong>Cai cai bananeira</strong><br><br>
+<strong>Rabo de Arraia é nao rasteira</strong></td>
+        <td>The machete hit low<br><br>
+The banana tree fell<br><br>
+The machete hit low<br><br>
+The banana tree fell<br><br>
+Cai falls banana<br><br>
+The banana tree fell<br><br>
+falls falls banana<br><br>
+The banana tree fell<br><br>
+Cai falls banana<br><br>
+Stingray tail and not creeping<br><br>
+Cai falls banana<br><br>
+Arraia's tail is not creeping</td>
+    </tr>
+</table>
 
 <figcaption>
 

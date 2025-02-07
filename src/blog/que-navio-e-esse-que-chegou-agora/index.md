@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Que Navio É Esse Que Chegou Agora"
 date: "2021-03-23"
@@ -8,79 +10,86 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Que navio é esse  
-Que chegou agora  
-É o navio negreiro  
-Com os escravos de Angola  
-  
-**Que navio é esse  
-Que chegou agora  
-É o navio negreiro  
-Com os escravos de Angola**  
-  
-Vem gente de Cambinda  
-Benguela e Luanda  
-Eles vinham acorrentados  
-Pra trabalhar nessas bandas  
-  
-**Que navio é esse  
-Que chegou agora  
-É o navio negreiro  
-Com os escravos de Angola**  
-  
-Aqui chegando não perderam a sua fé  
-Criaram o samba  
-A capoeira e o candomblé  
-  
-**Que navio é esse  
-Que chegou agora  
-É o navio negreiro  
-Com os escravos de Angola**  
-  
-Acorrentados no porão do navio  
-Muitos morreram de banzo e de frio  
-  
-**Que navio é esse  
-Que chegou agora  
-É o navio negreiro  
-Com os escravos de Angola** | What's this ship  
-That just arrived  
-It's the slave ship  
-With the slaves of Angola  
-  
-What's this ship  
-That just arrived  
-It's the slave ship  
-With the slaves of Angola  
-  
-People are coming from Cambinda  
-Benguela and Luanda  
-They came in chains  
-To work in these bands  
-  
-What's this ship  
-That just arrived  
-It's the slave ship  
-With the slaves of Angola  
-  
-Arriving here they didn't lose their faith  
-They created samba  
-Capoeira and Candomblé  
-  
-What's this ship  
-That just arrived  
-It's the slave ship  
-With the slaves of Angola  
-  
-Chained in the hold of the ship  
-Many died of banzo and the cold  
-  
-What's this ship  
-That just arrived  
-It's the slave ship  
-With the slaves of Angola |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Que navio é esse<br>
+        Que chegou agora<br>
+        É o navio negreiro<br>
+        Com os escravos de Angola<br>
+        <br>
+        <strong>Que navio é esse<br>
+        Que chegou agora<br>
+        É o navio negreiro<br>
+        Com os escravos de Angola</strong><br>
+        <br>
+        Vem gente de Cambinda<br>
+        Benguela e Luanda<br>
+        Eles vinham acorrentados<br>
+        Pra trabalhar nessas bandas<br>
+        <br>
+        <strong>Que navio é esse<br>
+        Que chegou agora<br>
+        É o navio negreiro<br>
+        Com os escravos de Angola</strong><br>
+        <br>
+        Aqui chegando não perderam a sua fé<br>
+        Criaram o samba<br>
+        A capoeira e o candomblé<br>
+        <br>
+        <strong>Que navio é esse<br>
+        Que chegou agora<br>
+        É o navio negreiro<br>
+        Com os escravos de Angola</strong><br>
+        <br>
+        Acorrentados no porão do navio<br>
+        Muitos morreram de banzo e de frio<br>
+        <br>
+        <strong>Que navio é esse<br>
+        Que chegou agora<br>
+        É o navio negreiro<br>
+        Com os escravos de Angola</strong></td>
+        <td>What's this ship<br>
+        That just arrived<br>
+        It's the slave ship<br>
+        With the slaves of Angola<br>
+        <br>
+        What's this ship<br>
+        That just arrived<br>
+        It's the slave ship<br>
+        With the slaves of Angola<br>
+        <br>
+        People are coming from Cambinda<br>
+        Benguela and Luanda<br>
+        They came in chains<br>
+        To work in these bands<br>
+        <br>
+        What's this ship<br>
+        That just arrived<br>
+        It's the slave ship<br>
+        With the slaves of Angola<br>
+        <br>
+        Arriving here they didn't lose their faith<br>
+        They created samba<br>
+        Capoeira and Candomblé<br>
+        <br>
+        What's this ship<br>
+        That just arrived<br>
+        It's the slave ship<br>
+        With the slaves of Angola<br>
+        <br>
+        Chained in the hold of the ship<br>
+        Many died of banzo and the cold<br>
+        <br>
+        What's this ship<br>
+        That just arrived<br>
+        It's the slave ship<br>
+        With the slaves of Angola</td>
+    </tr>
+</table>
 
 <figcaption>
 

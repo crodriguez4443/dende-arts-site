@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "O Berimbau Tá Tocando"
 date: "2021-02-24"
@@ -9,85 +11,92 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| O berimbau tá tocando  
-A roda tá se formando  
-O meu mestre tá chamando  
-Quero ver quem vai jogar  
-  
-**O berimbau tá tocando  
-A roda tá se formando  
-O meu mestre tá chamando  
-Quero ver quem vai jogar**  
-  
-Esse jogo é de benguela  
-Tu tem que cadenciar  
-É um jogo de malícia  
-Expressão bem no olhar  
-  
-**O berimbau tá tocando  
-A roda tá se formando  
-O meu mestre tá chamando  
-Quero ver quem vai jogar**  
-  
-Quero jogo de benguela  
-Com cadência sem agarrar  
-Quero jogo de malandro  
-Vingativa pode derrubar  
-  
-**O berimbau tá tocando  
-A roda tá se formando  
-O meu mestre tá chamando  
-Quero ver quem vai jogar**  
-  
-É um jogo de inteligência  
-Esse jogo tu tem que estudar  
-Corpo fraco também corpo forte  
-Para adversário voce derrubar  
-  
-**O berimbau tá tocando  
-A roda tá se formando  
-O meu mestre tá chamando  
-Quero ver quem vai jogar** | The berimbau is playing  
-The roda is forming  
-My master is calling  
-I want to see who will play  
-  
-The berimbau is playing  
-The roda is forming  
-My master is calling  
-I want to see who will play  
-  
-This game is benguela  
-You have to add cadence  
-It's a game of malice  
-Expression right in the eye  
-  
-The berimbau is playing  
-The roda is forming  
-My master is calling  
-I want to see who will play  
-  
-I want benguela game  
-With cadence without grabbing  
-I want a sly game  
-Vingativa can bring down  
-  
-The berimbau is playing  
-The roda is forming  
-My master is calling  
-I want to see who will play  
-  
-It's a game of intelligence  
-This game you have to study  
-Weak body also strong body  
-For opponent you take down  
-  
-The berimbau is playing  
-The roda is forming  
-My master is calling  
-I want to see who will play |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>O berimbau tá tocando<br>
+A roda tá se formando<br>
+O meu mestre tá chamando<br>
+Quero ver quem vai jogar<br>
+<br>
+<strong>O berimbau tá tocando<br>
+A roda tá se formando<br>
+O meu mestre tá chamando<br>
+Quero ver quem vai jogar</strong><br>
+<br>
+Esse jogo é de benguela<br>
+Tu tem que cadenciar<br>
+É um jogo de malícia<br>
+Expressão bem no olhar<br>
+<br>
+<strong>O berimbau tá tocando<br>
+A roda tá se formando<br>
+O meu mestre tá chamando<br>
+Quero ver quem vai jogar</strong><br>
+<br>
+Quero jogo de benguela<br>
+Com cadência sem agarrar<br>
+Quero jogo de malandro<br>
+Vingativa pode derrubar<br>
+<br>
+<strong>O berimbau tá tocando<br>
+A roda tá se formando<br>
+O meu mestre tá chamando<br>
+Quero ver quem vai jogar</strong><br>
+<br>
+É um jogo de inteligência<br>
+Esse jogo tu tem que estudar<br>
+Corpo fraco também corpo forte<br>
+Para adversário voce derrubar<br>
+<br>
+<strong>O berimbau tá tocando<br>
+A roda tá se formando<br>
+O meu mestre tá chamando<br>
+Quero ver quem vai jogar</strong></td>
+        <td>The berimbau is playing<br>
+The roda is forming<br>
+My master is calling<br>
+I want to see who will play<br>
+<br>
+The berimbau is playing<br>
+The roda is forming<br>
+My master is calling<br>
+I want to see who will play<br>
+<br>
+This game is benguela<br>
+You have to add cadence<br>
+It's a game of malice<br>
+Expression right in the eye<br>
+<br>
+The berimbau is playing<br>
+The roda is forming<br>
+My master is calling<br>
+I want to see who will play<br>
+<br>
+I want benguela game<br>
+With cadence without grabbing<br>
+I want a sly game<br>
+Vingativa can bring down<br>
+<br>
+The berimbau is playing<br>
+The roda is forming<br>
+My master is calling<br>
+I want to see who will play<br>
+<br>
+It's a game of intelligence<br>
+This game you have to study<br>
+Weak body also strong body<br>
+For opponent you take down<br>
+<br>
+The berimbau is playing<br>
+The roda is forming<br>
+My master is calling<br>
+I want to see who will play</td>
+    </tr>
+</table>
 
 <figcaption>
 

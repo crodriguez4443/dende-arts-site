@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Me Leva na Bahia"
 date: "2021-01-28"
@@ -8,121 +10,130 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Ê me leva na Bahia  
-Ê leva na Bahia  
-**  
-Ê me leva na Bahia  
-Ê leva na Bahia**  
-  
-Vou conhecer  
-A Fazenda Estiva  
-Na terra do Jacobina  
-Meu mestre veio de lá  
-  
-Olha eu vou na Bahia  
-  
-**Ê me leva na Bahia  
-Ê leva na Bahia**  
-  
-Côco mironga  
-Na Bahia chama dendê  
-Dá o tempero ao caruru  
-E também ao vatapá  
-  
-Olha eu vou na Bahia  
-  
-**Ê me leva na Bahia  
-Ê leva na Bahia**  
-  
-A casa de pedra  
-Que foi cativeiro de escravo  
-Onde o navio negreiro  
-Chegava na beira do mar  
-  
-Olha eu vou na Bahia  
-  
-**Ê me leva na Bahia  
-Ê leva na Bahia**  
-  
-Lá tem macumba  
-No pé de Iroko velho  
-Na casa de Pai Xangô  
-No Axé Opô Afonjá  
-  
-Olha eu vou na Bahia  
-  
-**Ê me leva na Bahia  
-Ê leva na Bahia**  
-  
-Minha Bahia  
-Berço da cultura brasileira  
-É terra de Mestre Bimba  
-E também da capoeira  
-  
-Olha eu vou na Bahia  
-  
-**Ê me leva na Bahia  
-Ê leva na Bahia** | Take me to Bahia  
-Take me to Bahia  
-  
-Take me to Bahia  
-Take me to Bahia  
-  
-I'll get to know  
-The Estiva Farm  
-In the land of Jacobina  
-My master came from there  
-  
-Look, I'm going to Bahia  
-  
-Take me to Bahia  
-Take me to Bahia  
-  
-Mironga coconut  
-In Bahia it's called dendê  
-Gives spice to caruru  
-And also to vatapá  
-  
-Look, I'm going to Bahia  
-  
-Take me to Bahia  
-Take me to Bahia  
-  
-The stone house  
-Where slaves were kept captive  
-Where the slave ship  
-Arrived at the edge of the sea  
-  
-Look, I'm going to Bahia  
-  
-Take me to Bahia  
-Take me to Bahia  
-  
-There is macumba  
-At the foot of old Iroko  
-At Pai Xangô's place  
-At Axé Opô Afonjá  
-  
-Look, I'm going to Bahia  
-  
-Take me to Bahia  
-Take me to Bahia  
-  
-My Bahia  
-Cradle of Brazilian culture  
-It is the land of Mestre Bimba  
-And also capoeira  
-  
-Look, I'm going to Bahia  
-  
-Take me to Bahia  
-Take me to Bahia |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Ê me leva na Bahia<br>
+            Ê leva na Bahia<br>
+            <br>
+            <strong>Ê me leva na Bahia<br>
+            Ê leva na Bahia</strong><br>
+            <br>
+            Vou conhecer<br>
+            A Fazenda Estiva<br>
+            Na terra do Jacobina<br>
+            Meu mestre veio de lá<br>
+            <br>
+            Olha eu vou na Bahia<br>
+            <br>
+            <strong>Ê me leva na Bahia<br>
+            Ê leva na Bahia</strong><br>
+            <br>
+            Côco mironga<br>
+            Na Bahia chama dendê<br>
+            Dá o tempero ao caruru<br>
+            E também ao vatapá<br>
+            <br>
+            Olha eu vou na Bahia<br>
+            <br>
+            <strong>Ê me leva na Bahia<br>
+            Ê leva na Bahia</strong><br>
+            <br>
+            A casa de pedra<br>
+            Que foi cativeiro de escravo<br>
+            Onde o navio negreiro<br>
+            Chegava na beira do mar<br>
+            <br>
+            Olha eu vou na Bahia<br>
+            <br>
+            <strong>Ê me leva na Bahia<br>
+            Ê leva na Bahia</strong><br>
+            <br>
+            Lá tem macumba<br>
+            No pé de Iroko velho<br>
+            Na casa de Pai Xangô<br>
+            No Axé Opô Afonjá<br>
+            <br>
+            Olha eu vou na Bahia<br>
+            <br>
+            <strong>Ê me leva na Bahia<br>
+            Ê leva na Bahia</strong><br>
+            <br>
+            Minha Bahia<br>
+            Berço da cultura brasileira<br>
+            É terra de Mestre Bimba<br>
+            E também da capoeira<br>
+            <br>
+            Olha eu vou na Bahia<br>
+            <br>
+            <strong>Ê me leva na Bahia<br>
+            Ê leva na Bahia</strong>
+        </td>
+        <td>
+            Take me to Bahia<br>
+            Take me to Bahia<br>
+            <br>
+            Take me to Bahia<br>
+            Take me to Bahia<br>
+            <br>
+            I'll get to know<br>
+            The Estiva Farm<br>
+            In the land of Jacobina<br>
+            My master came from there<br>
+            <br>
+            Look, I'm going to Bahia<br>
+            <br>
+            Take me to Bahia<br>
+            Take me to Bahia<br>
+            <br>
+            Mironga coconut<br>
+            In Bahia it's called dendê<br>
+            Gives spice to caruru<br>
+            And also to vatapá<br>
+            <br>
+            Look, I'm going to Bahia<br>
+            <br>
+            Take me to Bahia<br>
+            Take me to Bahia<br>
+            <br>
+            The stone house<br>
+            Where slaves were kept captive<br>
+            Where the slave ship<br>
+            Arrived at the edge of the sea<br>
+            <br>
+            Look, I'm going to Bahia<br>
+            <br>
+            Take me to Bahia<br>
+            Take me to Bahia<br>
+            <br>
+            There is macumba<br>
+            At the foot of old Iroko<br>
+            At Pai Xangô's place<br>
+            At Axé Opô Afonjá<br>
+            <br>
+            Look, I'm going to Bahia<br>
+            <br>
+            Take me to Bahia<br>
+            Take me to Bahia<br>
+            <br>
+            My Bahia<br>
+            Cradle of Brazilian culture<br>
+            It is the land of Mestre Bimba<br>
+            And also capoeira<br>
+            <br>
+            Look, I'm going to Bahia<br>
+            <br>
+            Take me to Bahia<br>
+            Take me to Bahia
+        </td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
 Note: Caruru and vatabá are traditional Bahian dishes.
-
 </figcaption>

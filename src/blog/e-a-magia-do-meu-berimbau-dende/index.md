@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "É a Magia do Meu Berimbau, Dendê"
 date: "2020-11-27"
@@ -9,128 +11,136 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| É a magia do meu berimbau dendê  
-Que não me deixa esmorecer  
-É a magia do meu berimbau dendê  
-Que não me deixa esmorecer  
-**  
-É a magia do meu berimbau dendê  
-Que não me deixa esmorecer  
-É a magia do meu berimbau dendê  
-Que não me deixa esmorecer**  
-  
-Todo pescador tem a sua maré de azar  
-Mas sabe não pode desanimar  
-Firmeza no remo pra não virar a canoa  
-Pois sabe que a maré vai passar  
-  
-**É a magia do meu Berimbau dendê  
-Que não me deixa esmorecer  
-É a magia do meu Berimbau dendê  
-Que não me deixa esmorecer**  
-  
-Todo guerreiro um dia vai baixar a guarda  
-E na derrota ele aprende com a dor  
-Levanta a cabeça e não se dá por vencido  
-Pois sabe que a guerra não acabou  
-  
-**É a magia do meu berimbau dendê  
-Que não me deixa esmorecer  
-É a magia do meu berimbau dendê  
-Que não me deixa esmorecer**  
-  
-O amor só termina quando o dinheiro acaba  
-Já se foi quem um dia jurou ficar  
-Só não acaba o amor que sinto pela capoeira  
-E o valor ao meu mestre que sempre vou dar  
-**  
-É a magia do meu berimbau dendê  
-Que não me deixa esmorecer  
-É a magia do meu berimbau dendê  
-Que não me deixa esmorecer**  
-  
-O capoeira é como o guerreiro e o pescador  
-Sempre enfrenta maré de azar e batalha  
-Derrota, naufraga mas não perde seu valor  
-Segue em frente pois sua mandinga não falha  
-  
-**É a magia do meu berimbau dendê  
-Que não me deixa esmorecer  
-É a magia do meu berimbau dendê  
-Que não me deixa esmorecer**  
-  
-A maré muda como a vida que a gente leva  
-Campo de batalha é a vida do capoeira  
-E a magia do meu berimbau me carrega  
-Nas batalhas, maré braba e rasteiras  
-  
-**É a magia do meu berimbau dendê  
-Que não me deixa esmorecer  
-É a magia do meu berimbau dendê  
-Que não me deixa esmorecer** | It's the magic of my berimbau, dendê  
-That won't let me fade  
-It's the magic of my berimbau, dendê  
-That won't let me fade  
-  
-It's the magic of my berimbau, dendê  
-That won't let me fade  
-It's the magic of my berimbau, dendê  
-That won't let me fade  
-  
-Every fisherman has his streak of bad luck  
-But you know you can't be discouraged  
-Firmness in the paddle not to turn the canoe  
-Because you know the tide will pass  
-  
-It's the magic of my berimbau, dendê  
-That won't let me fade  
-It's the magic of my berimbau, dendê  
-That won't let me fade  
-  
-Every warrior will one day let his guard down  
-And in defeat he learns from the pain  
-Lifts his head and doesn't give up  
-Because he knows the war is not over  
-  
-It's the magic of my berimbau, dendê  
-That won't let me fade  
-It's the magic of my berimbau, dendê  
-That won't let me fade  
-  
-Love only ends when money runs out  
-Gone who once swore to stay  
-Only the love I feel for capoeira doesn't end  
-And the value to my master that I will always give  
-  
-It's the magic of my berimbau, dendê  
-That won't let me fade  
-It's the magic of my berimbau, dendê  
-That won't let me fade  
-  
-The capoeira is like the warrior and the fisherman  
-Always faces tides of bad luck and battles  
-Defeat, shipwreck but doesn't lose his valour  
-Carries on because his mandinga doesn't fail  
-  
-It's the magic of my berimbau, dendê  
-That won't let me fade  
-It's the magic of my berimbau, dendê  
-That won't let me fade  
-  
-The tide changes like the life we ​​lead  
-Battlefield is the life of the capoeira  
-And the magic of my berimbau carries me  
-In battles, rough tides and rasteiras  
-  
-It's the magic of my berimbau, dendê  
-That won't let me fade  
-It's the magic of my berimbau, dendê  
-That won't let me fade |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            É a magia do meu berimbau dendê<br>
+            Que não me deixa esmorecer<br>
+            É a magia do meu berimbau dendê<br>
+            Que não me deixa esmorecer<br>
+            <br>
+            <strong>É a magia do meu berimbau dendê<br>
+            Que não me deixa esmorecer<br>
+            É a magia do meu berimbau dendê<br>
+            Que não me deixa esmorecer</strong><br>
+            <br>
+            Todo pescador tem a sua maré de azar<br>
+            Mas sabe não pode desanimar<br>
+            Firmeza no remo pra não virar a canoa<br>
+            Pois sabe que a maré vai passar<br>
+            <br>
+            <strong>É a magia do meu Berimbau dendê<br>
+            Que não me deixa esmorecer<br>
+            É a magia do meu Berimbau dendê<br>
+            Que não me deixa esmorecer</strong><br>
+            <br>
+            Todo guerreiro um dia vai baixar a guarda<br>
+            E na derrota ele aprende com a dor<br>
+            Levanta a cabeça e não se dá por vencido<br>
+            Pois sabe que a guerra não acabou<br>
+            <br>
+            <strong>É a magia do meu berimbau dendê<br>
+            Que não me deixa esmorecer<br>
+            É a magia do meu berimbau dendê<br>
+            Que não me deixa esmorecer</strong><br>
+            <br>
+            O amor só termina quando o dinheiro acaba<br>
+            Já se foi quem um dia jurou ficar<br>
+            Só não acaba o amor que sinto pela capoeira<br>
+            E o valor ao meu mestre que sempre vou dar<br>
+            <strong>É a magia do meu berimbau dendê<br>
+            Que não me deixa esmorecer<br>
+            É a magia do meu berimbau dendê<br>
+            Que não me deixa esmorecer</strong><br>
+            <br>
+            O capoeira é como o guerreiro e o pescador<br>
+            Sempre enfrenta maré de azar e batalha<br>
+            Derrota, naufraga mas não perde seu valor<br>
+            Segue em frente pois sua mandinga não falha<br>
+            <br>
+            <strong>É a magia do meu berimbau dendê<br>
+            Que não me deixa esmorecer<br>
+            É a magia do meu berimbau dendê<br>
+            Que não me deixa esmorecer</strong><br>
+            <br>
+            A maré muda como a vida que a gente leva<br>
+            Campo de batalha é a vida do capoeira<br>
+            E a magia do meu berimbau me carrega<br>
+            Nas batalhas, maré braba e rasteiras<br>
+            <br>
+            <strong>É a magia do meu berimbau dendê<br>
+            Que não me deixa esmorecer<br>
+            É a magia do meu berimbau dendê<br>
+            Que não me deixa esmorecer</strong>
+        </td>
+        <td>
+            It's the magic of my berimbau, dendê<br>
+            That won't let me fade<br>
+            It's the magic of my berimbau, dendê<br>
+            That won't let me fade<br>
+            <br>
+            It's the magic of my berimbau, dendê<br>
+            That won't let me fade<br>
+            It's the magic of my berimbau, dendê<br>
+            That won't let me fade<br>
+            <br>
+            Every fisherman has his streak of bad luck<br>
+            But you know you can't be discouraged<br>
+            Firmness in the paddle not to turn the canoe<br>
+            Because you know the tide will pass<br>
+            <br>
+            It's the magic of my berimbau, dendê<br>
+            That won't let me fade<br>
+            It's the magic of my berimbau, dendê<br>
+            That won't let me fade<br>
+            <br>
+            Every warrior will one day let his guard down<br>
+            And in defeat he learns from the pain<br>
+            Lifts his head and doesn't give up<br>
+            Because he knows the war is not over<br>
+            <br>
+            It's the magic of my berimbau, dendê<br>
+            That won't let me fade<br>
+            It's the magic of my berimbau, dendê<br>
+            That won't let me fade<br>
+            <br>
+            Love only ends when money runs out<br>
+            Gone who once swore to stay<br>
+            Only the love I feel for capoeira doesn't end<br>
+            And the value to my master that I will always give<br>
+            <br>
+            It's the magic of my berimbau, dendê<br>
+            That won't let me fade<br>
+            It's the magic of my berimbau, dendê<br>
+            That won't let me fade<br>
+            <br>
+            The capoeira is like the warrior and the fisherman<br>
+            Always faces tides of bad luck and battles<br>
+            Defeat, shipwreck but doesn't lose his valour<br>
+            Carries on because his mandinga doesn't fail<br>
+            <br>
+            It's the magic of my berimbau, dendê<br>
+            That won't let me fade<br>
+            It's the magic of my berimbau, dendê<br>
+            That won't let me fade<br>
+            <br>
+            The tide changes like the life we ​​lead<br>
+            Battlefield is the life of the capoeira<br>
+            And the magic of my berimbau carries me<br>
+            In battles, rough tides and rasteiras<br>
+            <br>
+            It's the magic of my berimbau, dendê<br>
+            That won't let me fade<br>
+            It's the magic of my berimbau, dendê<br>
+            That won't let me fade
+        </td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Macaco Preto
-
 </figcaption>

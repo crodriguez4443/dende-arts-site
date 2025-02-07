@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Brincadeira Tem Hora"
 date: "2020-10-27"
@@ -9,84 +11,89 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| **Quilombola mandigueiro jogador de capoeira**  
-Mestre Bimba era o rei, da Pituba à Ribeira  
-**Quilombola mandigueiro jogador de capoeira**  
-Jogava duro e manhoso, nossa arte verdadeira  
-  
-Brincadeira tem hora  
-Joga com garra e mandinga  
-Esse jogo é tinhoso, não é angola  
-É capoeira de Bimba  
-  
-**Brincadeira tem hora  
-Joga com garra e mandinga  
-Esse jogo é tinhoso, não é angola  
-É capoeira de Bimba**  
-  
-Brincadeira tem hora  
-Joga com garra e mandinga  
-Esse jogo é tinhoso, não é angola  
-É capoeira de Bimba  
-  
-Hoje em dia me espanto  
-Com tanto papo furado  
-Se dizer que capoeira  
-É somente brincadeira  
-Esquecendo a sua história  
-O seu passado de gloria  
-Como luta verdadeira  
-  
-Capoeira é uma arte  
-Do Africano de valor  
-Que usava a cabeçada  
-Pra se livrar do feitor  
-  
-**Capoeira é uma arte  
-Do Africano de valor  
-Que usava a cabeçada  
-Pra se livrar do feitor** | Quilombola mandigueiro capoeira player  
-Mestre Bimba was the king, from Pituba to Ribeira  
-Quilombola mandigueiro capoeira player  
-Played hard and sly, our true art  
-  
-There's a time for games  
-Play for real and mandinga  
-This game is tricky, it's not Angola  
-It's Bimba's capoeira  
-  
-There's a time for games  
-Play for real and mandinga  
-This game is tricky, it's not Angola  
-It's Bimba's capoeira  
-  
-There's a time for games  
-Play for real and mandinga  
-This game is tricky, it's not Angola  
-It's Bimba's capoeira  
-  
-Nowadays I am amazed  
-With so much bullshit  
-If you say that capoeira  
-Is just a joke  
-Forgetting its story  
-Its glorious past  
-As a true fight  
-  
-Capoeira is an art  
-Of African value  
-Who used the headbutt  
-To get rid of the overseer  
-  
-Capoeira is an art  
-Of African value  
-Who used the headbutt  
-To get rid of the overseer |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td><strong>Quilombola mandigueiro jogador de capoeira</strong><br>
+Mestre Bimba era o rei, da Pituba à Ribeira<br>
+<strong>Quilombola mandigueiro jogador de capoeira</strong><br>
+Jogava duro e manhoso, nossa arte verdadeira<br>
+<br>
+Brincadeira tem hora<br>
+Joga com garra e mandinga<br>
+Esse jogo é tinhoso, não é angola<br>
+É capoeira de Bimba<br>
+<br>
+<strong>Brincadeira tem hora<br>
+Joga com garra e mandinga<br>
+Esse jogo é tinhoso, não é angola<br>
+É capoeira de Bimba</strong><br>
+<br>
+Brincadeira tem hora<br>
+Joga com garra e mandinga<br>
+Esse jogo é tinhoso, não é angola<br>
+É capoeira de Bimba<br>
+<br>
+Hoje em dia me espanto<br>
+Com tanto papo furado<br>
+Se dizer que capoeira<br>
+É somente brincadeira<br>
+Esquecendo a sua história<br>
+O seu passado de gloria<br>
+Como luta verdadeira<br>
+<br>
+Capoeira é uma arte<br>
+Do Africano de valor<br>
+Que usava a cabeçada<br>
+Pra se livrar do feitor<br>
+<br>
+<strong>Capoeira é uma arte<br>
+Do Africano de valor<br>
+Que usava a cabeçada<br>
+Pra se livrar do feitor</strong></td>
+        <td>Quilombola mandingueiro capoeira player<br>
+Mestre Bimba was the king, from Pituba to Ribeira<br>
+Quilombola mandingueiro capoeira player<br>
+Played hard and sly, our true art<br>
+<br>
+There's a time for games<br>
+Play for real and mandinga<br>
+This game is tricky, it's not Angola<br>
+It's Bimba's capoeira<br>
+<br>
+There's a time for games<br>
+Play for real and mandinga<br>
+This game is tricky, it's not Angola<br>
+It's Bimba's capoeira<br>
+<br>
+There's a time for games<br>
+Play for real and mandinga<br>
+This game is tricky, it's not Angola<br>
+It's Bimba's capoeira<br>
+<br>
+Nowadays I am amazed<br>
+With so much bullshit<br>
+If you say that capoeira<br>
+Is just a joke<br>
+Forgetting its story<br>
+Its glorious past<br>
+As a true fight<br>
+<br>
+Capoeira is an art<br>
+Of African value<br>
+Who used the headbutt<br>
+To get rid of the overseer<br>
+<br>
+Capoeira is an art<br>
+Of African value<br>
+Who used the headbutt<br>
+To get rid of the overseer</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Mestre Acordeon
-
 </figcaption>

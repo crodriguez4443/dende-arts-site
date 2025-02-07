@@ -8,87 +8,96 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Bem-te-vi vôou, vôou  
-Bem-te-vi vôou, vôou  
-Deixa voar  
-  
-**Lá lauê, lauê lauê lauá**  
-  
-Ô la la ê la ê  
-**  
-Lá lauê, lauê lauê lauá**  
-  
-Que som, ô que arte é essa  
-De luta e brincadeira  
-Que roda maravilhosa é essa  
-Roda de capoeira\*  
-  
-Em cada som, em cada toque  
-Em cada ginga, tem um estilo de jogo  
-  
-**Em cada som, em cada toque  
-Em cada ginga, tem um estilo de jogo**  
-  
-**Lá lauê, lauê lauê lauá**  
-  
-Ô la la ê la ê  
-  
-**Lá lauê, lauê lauê lauá**  
-  
-Bem-te-vi vôou  
-**Vôou**  
-  
-Bem-te-vi vôou  
-**Vôou**  
-  
-Deixa voar  
-  
-**Lá lauê, lauê lauê lauá**  
-  
-Ô la la ê la ê  
-  
-**Lá lauê, lauê lauê lauá** | Bem-te-vi flew, flew  
-Bem-te-vi flew, flew  
-Let it fly  
-  
-Lá lauê, lauê lauê lauá  
-  
-Ô la la ê la ê  
-  
-Lá lauê, lauê lauê lauá  
-  
-What a sound, what art is this  
-Of fight and play  
-What a wonderful roda this is  
-It's a capoeira roda\*  
-  
-In every sound, in every touch  
-In each swing, there is a style of play  
-  
-In every sound, in every touch  
-In each swing, there is a style of play  
-  
-Lá lauê, lauê lauê lauá  
-  
-Ô la la ê la ê  
-  
-Lá lauê, lauê lauê lauá  
-  
-Bem-vi-flew  
-Flew  
-  
-Bem-vi-flew  
-Flew  
-  
-Let it fly  
-  
-Lá lauê, lauê lauê lauá  
-  
-Ô la la ê la ê  
-  
-Lá lauê, lauê lauê lauá |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Bem-te-vi vôou, vôou<br>
+            Bem-te-vi vôou, vôou<br>
+            Deixa voar<br>
+            <br>
+            <strong>Lá lauê, lauê lauê lauá</strong><br>
+            <br>
+            Ô la la ê la ê<br>
+            <strong>Lá lauê, lauê lauê lauá</strong><br>
+            <br>
+            Que som, ô que arte é essa<br>
+            De luta e brincadeira<br>
+            Que roda maravilhosa é essa<br>
+            Roda de capoeira*<br>
+            <br>
+            Em cada som, em cada toque<br>
+            Em cada ginga, tem um estilo de jogo<br>
+            <br>
+            <strong>Em cada som, em cada toque<br>
+            Em cada ginga, tem um estilo de jogo</strong><br>
+            <br>
+            <strong>Lá lauê, lauê lauê lauá</strong><br>
+            <br>
+            Ô la la ê la ê<br>
+            <br>
+            <strong>Lá lauê, lauê lauê lauá</strong><br>
+            <br>
+            Bem-te-vi vôou<br>
+            <strong>Vôou</strong><br>
+            <br>
+            Bem-te-vi vôou<br>
+            <strong>Vôou</strong><br>
+            <br>
+            Deixa voar<br>
+            <br>
+            <strong>Lá lauê, lauê lauê lauá</strong><br>
+            <br>
+            Ô la la ê la ê<br>
+            <br>
+            <strong>Lá lauê, lauê lauê lauá</strong>
+        </td>
+        <td>
+            Bem-te-vi flew, flew<br>
+            Bem-te-vi flew, flew<br>
+            Let it fly<br>
+            <br>
+            Lá lauê, lauê lauê lauá<br>
+            <br>
+            Ô la la ê la ê<br>
+            Lá lauê, lauê lauê lauá<br>
+            <br>
+            What a sound, what art is this<br>
+            Of fight and play<br>
+            What a wonderful roda this is<br>
+            It's a capoeira roda*<br>
+            <br>
+            In every sound, in every touch<br>
+            In each swing, there is a style of play<br>
+            <br>
+            In every sound, in every touch<br>
+            In each swing, there is a style of play<br>
+            <br>
+            Lá lauê, lauê lauê lauá<br>
+            <br>
+            Ô la la ê la ê<br>
+            <br>
+            Lá lauê, lauê lauê lauá<br>
+            <br>
+            Bem-vi-flew<br>
+            Flew<br>
+            <br>
+            Bem-vi-flew<br>
+            Flew<br>
+            <br>
+            Let it fly<br>
+            <br>
+            Lá lauê, lauê lauê lauá<br>
+            <br>
+            Ô la la ê la ê<br>
+            <br>
+            Lá lauê, lauê lauê lauá
+        </td>
+    </tr>
+</table>
 
 <figcaption>
 

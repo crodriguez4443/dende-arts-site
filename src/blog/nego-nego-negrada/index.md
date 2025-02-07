@@ -1,3 +1,5 @@
+Here's the formatted markdown document according to the specifications:
+
 ---
 title: "Nego Nego Negrada"
 date: "2021-02-23"
@@ -8,60 +10,69 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Nego nego nego êee nego nego negrada  
-**Nego nego nego êee nego nego negrada**  
-  
-A capoeira nasceu lá nos quilombos  
-Nos guetos, nas Senzalas  
-Hoje em dia no mundo inteiro  
-A capoeira é praticada  
-Eu agradeço aos escravos  
-Pela herança deixada, êee  
-  
-**Nego nego nego êee nego nego negrada**  
-  
-O negro lutou firme e forte  
-Contra sua escravidão  
-Com força e restência  
-Por sua libertaçao êee  
-  
-**Nego nego nego êee nego nego negrada**  
-  
-Cada um tem sua reza  
-Cada um sua oração  
-Eu agradeço a luz do dia  
-Que Deus nos deu irmão êee  
-  
-**Nego nego nego êee nego nego negrada** | Nego nego nego nego nego nego negrada  
-Nego nego nego nego nego nego negrada  
-  
-Capoeira was born there in the quilombos  
-In the ghettos, in the Senzalas  
-Nowadays all over the world  
-Capoeira is practised  
-I thank the slaves  
-For the inheritance left  
-  
-Nego nego nego nego nego nego negrada  
-  
-The black people fought hard and strong  
-Against their enslavement  
-With strength and endurance  
-For their release  
-  
-Nego nego nego nego nego nego negrada  
-  
-Each has their prayers  
-Each their prayer  
-I thank the daylight  
-That God gave us brother  
-  
-Nego nego nego nego nego nego negrada |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Nego nego nego êee nego nego negrada<br>
+            <strong>Nego nego nego êee nego nego negrada</strong><br>
+            <br>
+            A capoeira nasceu lá nos quilombos<br>
+            Nos guetos, nas Senzalas<br>
+            Hoje em dia no mundo inteiro<br>
+            A capoeira é praticada<br>
+            Eu agradeço aos escravos<br>
+            Pela herança deixada, êee<br>
+            <br>
+            <strong>Nego nego nego êee nego nego negrada</strong><br>
+            <br>
+            O negro lutou firme e forte<br>
+            Contra sua escravidão<br>
+            Com força e restência<br>
+            Por sua libertaçao êee<br>
+            <br>
+            <strong>Nego nego nego êee nego negro negrada</strong><br>
+            <br>
+            Cada um tem sua reza<br>
+            Cada um sua oração<br>
+            Eu agradeço a luz do dia<br>
+            Que Deus nos deu irmão êee<br>
+            <br>
+            <strong>Nego nego nego êee nego nego negrada</strong>
+        </td>
+        <td>
+            Nego nego nego nego nego nego negrada<br>
+            Nego nego nego nego nego nego negrada<br>
+            <br>
+            Capoeira was born there in the quilombos<br>
+            In the ghettos, in the Senzalas<br>
+            Nowadays all over the world<br>
+            Capoeira is practised<br>
+            I thank the slaves<br>
+            For the inheritance left<br>
+            <br>
+            Nego nego nego nego nego nego negrada<br>
+            <br>
+            The black people fought hard and strong<br>
+            Against their enslavement<br>
+            With strength and endurance<br>
+            For their release<br>
+            <br>
+            Nego nego nego nego nego nego negrada<br>
+            <br>
+            Each has their prayers<br>
+            Each their prayer<br>
+            I thank the daylight<br>
+            That God gave us brother<br>
+            <br>
+            Nego nego nego nego nego nego negrada
+        </td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Gia-Gia
-
 </figcaption>

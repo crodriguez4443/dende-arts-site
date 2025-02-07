@@ -8,31 +8,38 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Santo António eu quero água  
-**Santo António eu quero água**  
-  
-Quero água pra beber  
-Quero água pra lavar  
-Quero água pra benzer  
-Quero água  
-  
-**Quero água pra beber  
-Quero água pra lavar  
-Quero água pra benzer  
-Quero água** | Santo António I want water  
-Santo António I want water  
-  
-I want water to drink  
-I want water to wash  
-I want water for blessings  
-I want water  
-  
-I want water to drink  
-I want water to wash  
-I want water for blessings  
-I want water |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Santo António eu quero água<br>
+<strong>Santo António eu quero água</strong><br>
+<br>
+Quero água pra beber<br>
+Quero água pra lavar<br>
+Quero água pra benzer<br>
+Quero água<br>
+<br>
+<strong>Quero água pra beber<br>
+Quero água pra lavar<br>
+Quero água pra benzer<br>
+Quero água</strong></td>
+        <td>Santo António I want water<br>
+Santo António I want water<br>
+<br>
+I want water to drink<br>
+I want water to wash<br>
+I want water for blessings<br>
+I want water<br>
+<br>
+I want water to drink<br>
+I want water to wash<br>
+I want water for blessings<br>
+I want water</td>
+    </tr>
+</table>
 
 <figcaption>
 

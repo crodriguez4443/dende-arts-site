@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Lá Na Bahia Côco de Dendê"
 date: "2021-01-22"
@@ -8,23 +10,16 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Lá na Bahia côco de dendê  
-Lá na Bahia côco de dendê  
-  
-Pega devagar  
-**Com dendê**  
-  
-Pega devagar  
-**Com dendê** | There in Bahia dendê coconut  
-There in Bahia dendê coconut  
-  
-Take it slowly  
-With dendê  
-  
-Take it slowly  
-With dendê |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Lá na Bahia côco de dendê<br>Lá na Bahia côco de dendê<br><br>Pega devagar<br><strong>Com dendê</strong><br><br>Pega devagar<br><strong>Com dendê</strong></td>
+        <td>There in Bahia dendê coconut<br>There in Bahia dendê coconut<br><br>Take it slowly<br>With dendê<br><br>Take it slowly<br>With dendê</td>
+    </tr>
+</table>
 
 <figcaption>
 

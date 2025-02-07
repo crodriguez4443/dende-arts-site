@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Hoje Tem Capoeira"
 date: "2020-12-28"
@@ -9,82 +11,87 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Olha pega a beriba e começa a tocar  
-Pandeiro, atabaque não pode faltar  
-No jogo ligeiro que lá na bahia  
-Aprendi a jogar  
-Meia-lua, rasteira, martelo e pisão  
-Solta a mandinga conforme a razão  
-Na reza cantada pede proteção  
-  
-**Ê hoje tem capoeira  
-No toque da viola  
-Chega pra roda  
-E vamos jogar  
-  
-Ê hoje tem capoeira  
-No toque da viola  
-Chega pra roda  
-E vamos jogar**  
-  
-O meu mestre foi Bimba  
-Negro mandingueiro com quem esta arte  
-Aprendi a jogar  
-Já joguei na ribeira  
-No pé da ladeira, na beira do mar  
-Pula daqui, joga pra lá  
-Discípulo de Bimba  
-Chegou pra jogar  
-  
-**Ê hoje tem capoeira  
-No toque da viola  
-Chega pra roda  
-E vamos jogar  
-  
-Ê hoje tem capoeira  
-No toque da viola  
-Chega pra roda  
-E vamos jogar** | Look, pick up the beriba and start playing  
-Pandeiro, atabaque can't be lacking  
-In the quick game that over in Bahia  
-I learned to play  
-Meia-lua, rasteira, martelo and pisão  
-Release the mandinga according to the reason  
-In the sung prayer ask for protection  
-  
-Hey, today there's capoeira  
-At the rhythm of the viola  
-Get to the roda  
-And let's play  
-  
-Hey, today there's capoeira  
-At the rhythm of the viola  
-Get to the roda  
-And let's play  
-  
-My master was Bimba  
-Black mandingueiro with whom this art  
-I learned to play  
-I've played on the river  
-At the foot of the slope, at the edge of the sea  
-Jump over here, hop over there  
-Disciple of Bimba  
-Came to play  
-  
-Hey, today there's capoeira  
-At the rhythm of the viola  
-Get to the roda  
-And let's play  
-  
-Hey, today there's capoeira  
-At the rhythm of the viola  
-Get to the roda  
-And let's play |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Olha pega a beriba e começa a tocar<br>
+Pandeiro, atabaque não pode faltar<br>
+No jogo ligeiro que lá na bahia<br>
+Aprendi a jogar<br>
+Meia-lua, rasteira, martelo e pisão<br>
+Solta a mandinga conforme a razão<br>
+Na reza cantada pede proteção<br>
+<br>
+<strong>Ê hoje tem capoeira<br>
+No toque da viola<br>
+Chega pra roda<br>
+E vamos jogar<br>
+<br>
+Ê hoje tem capoeira<br>
+No toque da viola<br>
+Chega pra roda<br>
+E vamos jogar</strong><br>
+<br>
+O meu mestre foi Bimba<br>
+Negro mandingueiro com quem esta arte<br>
+Aprendi a jogar<br>
+Já joguei na ribeira<br>
+No pé da ladeira, na beira do mar<br>
+Pula daqui, joga pra lá<br>
+Discípulo de Bimba<br>
+Chegou pra jogar<br>
+<br>
+<strong>Ê hoje tem capoeira<br>
+No toque da viola<br>
+Chega pra roda<br>
+E vamos jogar<br>
+<br>
+Ê hoje tem capoeira<br>
+No toque da viola<br>
+Chega pra roda<br>
+E vamos jogar</strong></td>
+        <td>Look, pick up the beriba and start playing<br>
+Pandeiro, atabaque can't be lacking<br>
+In the quick game that over in Bahia<br>
+I learned to play<br>
+Meia-lua, rasteira, martelo and pisão<br>
+Release the mandinga according to the reason<br>
+In the sung prayer ask for protection<br>
+<br>
+Hey, today there's capoeira<br>
+At the rhythm of the viola<br>
+Get to the roda<br>
+And let's play<br>
+<br>
+Hey, today there's capoeira<br>
+At the rhythm of the viola<br>
+Get to the roda<br>
+And let's play<br>
+<br>
+My master was Bimba<br>
+Black mandingueiro with whom this art<br>
+I learned to play<br>
+I've played on the river<br>
+At the foot of the slope, at the edge of the sea<br>
+Jump over here, hop over there<br>
+Disciple of Bimba<br>
+Came to play<br>
+<br>
+Hey, today there's capoeira<br>
+At the rhythm of the viola<br>
+Get to the roda<br>
+And let's play<br>
+<br>
+Hey, today there's capoeira<br>
+At the rhythm of the viola<br>
+Get to the roda<br>
+And let's play</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Mestre Camisa
-
 </figcaption>

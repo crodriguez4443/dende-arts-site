@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Eu Vim Pra Vadiar No Berimbau"
 date: "2020-12-22"
@@ -9,85 +11,92 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Eu vim pra vadiar no berimbau  
-Eu vim pra vadiar no jogo  
-Eu vim pra vadiar no canto e na palma  
-Eu vim ver capoeira vadiar  
-  
-**Eu vim pra vadiar no berimbau  
-Eu vim pra vadiar no jogo  
-Eu vim pra vadiar no canto e na palma  
-Eu vim ver capoeira vadiar**  
-  
-Vadeia berimbau me dá o som  
-Transmita toda sua energia  
-Ao seu comando a roda vai começar  
-Pois hoje é dia de alegria  
-  
-**Eu vim pra vadiar no berimbau  
-Eu vim pra vadiar no jogo  
-Eu vim pra vadiar no canto e na palma  
-Eu vim ver capoeira vadiar**  
-  
-E o capoeira sai para a vadiação  
-E um bom jogo nos arrepia  
-Martelo, cabeçada, rasteira e pisão  
-Mas sem atropelo e na harmonia  
-  
-**Eu vim pra vadiar no berimbau  
-Eu vim pra vadiar no jogo  
-Eu vim pra vadiar no canto e na palma  
-Eu vim ver capoeira vadiar**  
-  
-E o canto embala o coração  
-É história é lamento é poesia  
-E a voz de um guerreiro solta no ar  
-E a palma animando a bateria  
-**  
-Eu vim pra vadiar no berimbau  
-Eu vim pra vadiar no jogo  
-Eu vim pra vadiar no canto e na palma  
-Eu vim ver capoeira vadiar** | I came to play the berimbau  
-I came to have fun in the game  
-I came to have a good time, singing and clapping  
-I came to see capoeira play  
-  
-I came to play the berimbau  
-I came to have fun in the game  
-I came to have a good time, singing and clapping  
-I came to see capoeira play  
-  
-Play berimbau, give me the sound  
-Transmit all your energy  
-At your command the roda will start  
-For today is a day of joy  
-  
-I came to play the berimbau  
-I came to have fun in the game  
-I came to have a good time, singing and clapping  
-I came to see capoeira play  
-  
-And the capoeira goes out to play  
-And a good game gives us goosebumps  
-Martelo, cabeçada, rasteira, and pisão  
-But no trampling and in harmony  
-  
-I came to play the berimbau  
-I came to have fun in the game  
-I came to have a good time, singing and clapping  
-I came to see capoeira play  
-  
-And the song cradles the heart  
-It's history, it's a lament, it's poetry  
-And a warrior's voice loose in the air  
-And the palm animating the drums  
-  
-I came to play the berimbau  
-I came to have fun in the game  
-I came to have a good time, singing and clapping  
-I came to see capoeira play |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Eu vim pra vadiar no berimbau<br>
+Eu vim pra vadiar no jogo<br>
+Eu vim pra vadiar no canto e na palma<br>
+Eu vim ver capoeira vadiar<br>
+<br>
+<strong>Eu vim pra vadiar no berimbau<br>
+Eu vim pra vadiar no jogo<br>
+Eu vim pra vadiar no canto e na palma<br>
+Eu vim ver capoeira vadiar</strong><br>
+<br>
+Vadeia berimbau me dá o som<br>
+Transmita toda sua energia<br>
+Ao seu comando a roda vai começar<br>
+Pois hoje é dia de alegria<br>
+<br>
+<strong>Eu vim pra vadiar no berimbau<br>
+Eu vim pra vadiar no jogo<br>
+Eu vim pra vadiar no canto e na palma<br>
+Eu vim ver capoeira vadiar</strong><br>
+<br>
+E o capoeira sai para a vadiação<br>
+E um bom jogo nos arrepia<br>
+Martelo, cabeçada, rasteira e pisão<br>
+Mas sem atropelo e na harmonia<br>
+<br>
+<strong>Eu vim pra vadiar no berimbau<br>
+Eu vim pra vadiar no jogo<br>
+Eu vim pra vadiar no canto e na palma<br>
+Eu vim ver capoeira vadiar</strong><br>
+<br>
+E o canto embala o coração<br>
+É história é lamento é poesia<br>
+E a voz de um guerreiro solta no ar<br>
+E a palma animando a bateria<br>
+<strong><br>
+Eu vim pra vadiar no berimbau<br>
+Eu vim pra vadiar no jogo<br>
+Eu vim pra vadiar no canto e na palma<br>
+Eu vim ver capoeira vadiar</strong></td>
+        <td>I came to play the berimbau<br>
+I came to have fun in the game<br>
+I came to have a good time, singing and clapping<br>
+I came to see capoeira play<br>
+<br>
+I came to play the berimbau<br>
+I came to have fun in the game<br>
+I came to have a good time, singing and clapping<br>
+I came to see capoeira play<br>
+<br>
+Play berimbau, give me the sound<br>
+Transmit all your energy<br>
+At your command the roda will start<br>
+For today is a day of joy<br>
+<br>
+I came to play the berimbau<br>
+I came to have fun in the game<br>
+I came to have a good time, singing and clapping<br>
+I came to see capoeira play<br>
+<br>
+And the capoeira goes out to play<br>
+And a good game gives us goosebumps<br>
+Martelo, cabeçada, rasteira, and pisão<br>
+But no trampling and in harmony<br>
+<br>
+I came to play the berimbau<br>
+I came to have fun in the game<br>
+I came to have a good time, singing and clapping<br>
+I came to see capoeira play<br>
+<br>
+And the song cradles the heart<br>
+It's history, it's a lament, it's poetry<br>
+And a warrior's voice loose in the air<br>
+And the palm animating the drums<br>
+<br>
+I came to play the berimbau<br>
+I came to have fun in the game<br>
+I came to have a good time, singing and clapping<br>
+I came to see capoeira play</td>
+    </tr>
+</table>
 
 <figcaption>
 

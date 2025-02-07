@@ -8,31 +8,38 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Parabéns pra você  
-Nessa data querida  
-Muitas felicidades  
-E muitos anos de vida  
-  
-**Parabéns pra você  
-Nessa data querida  
-Muitas felicidades  
-E muitos anos de vida**  
-  
-Parabéns, parabéns, parabéns para você  
-**Parabéns, parabéns, parabéns para você** | Happy birthday to You  
-On this dear date  
-Best wishes  
-And many years of life  
-  
-Happy birthday to You  
-On this dear date  
-Best wishes  
-And many years of life  
-  
-Congratulations, congratulations, congratulations to you  
-Congratulations, congratulations, congratulations to you |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Parabéns pra você<br>
+        Nessa data querida<br>
+        Muitas felicidades<br>
+        E muitos anos de vida<br>
+        <br>
+        <strong>Parabéns pra você<br>
+        Nessa data querida<br>
+        Muitas felicidades<br>
+        E muitos anos de vida</strong><br>
+        <br>
+        Parabéns, parabéns, parabéns para você<br>
+        <strong>Parabéns, parabéns, parabéns para você</strong></td>
+        <td>Happy birthday to You<br>
+        On this dear date<br>
+        Best wishes<br>
+        And many years of life<br>
+        <br>
+        Happy birthday to You<br>
+        On this dear date<br>
+        Best wishes<br>
+        And many years of life<br>
+        <br>
+        Congratulations, congratulations, congratulations to you<br>
+        Congratulations, congratulations, congratulations to you</td>
+    </tr>
+</table>
 
 <figcaption>
 

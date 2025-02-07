@@ -8,91 +8,100 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Sambalelê bateu na porta  
-Sambalelê vai ver quem é  
-Sambalelê é meu amor  
-Sambalelê samba no pé  
-**  
-Sambalelê bateu na porta  
-Sambalelê vai ver quem é  
-Sambalelê é meu amor  
-Sambalelê samba no pé**  
-  
-Andam dizendo por aí  
-Que o amor se acabou  
-É mentira de quem disse  
-Ele apenas começou  
-  
-****Sambalelê bateu na porta  
-Sambalelê vai ver quem é  
-Sambalelê é meu amor  
-Sambalelê samba no pé****  
-  
-Mas mulher velha não se casa  
-Porque não acha ninguem  
-Quando chega no roçado  
-Chama todos de meu bem  
-**  
-**Sambalelê bateu na porta  
-Sambalelê vai ver quem é  
-Sambalelê é meu amor  
-Sambalelê samba no pé****  
-  
-Olha aí moça bonita  
-Coisa linda de se ver  
-Você é o pé da rosa  
-Eu sou a rosa do pé  
-  
-****Sambalelê bateu na porta  
-Sambalelê vai ver quem é  
-Sambalelê é meu amor  
-Sambalelê samba no pé**** | Sambalelê knocked on the door  
-Sambalelê go see who it is  
-Sambalelê it's my love  
-Sambalelê samba in the foot  
-  
-Sambalelê knocked on the door  
-Sambalelê go see who it is  
-Sambalelê it's my love  
-Sambalelê samba in the foot  
-  
-They are saying around  
-That love has run out  
-They are telling a lit  
-It has just started  
-  
-Sambalelê knocked on the door  
-Sambalelê go see who it is  
-Sambalelê it's my love  
-Sambalelê samba in the foot  
-  
-Old woman who doesn't marry  
-Because she doesn't find anyone  
-When she arrives at the clearing  
-Calls everyone her darling  
-  
-Sambalelê knocked on the door  
-Sambalelê go see who it is  
-Sambalelê it's my love  
-Sambalelê samba in the foot  
-  
-Look there, pretty girl  
-Beautiful thing to see  
-You are the foot of the rose  
-I'm the rose of the foot  
-  
-Sambalelê knocked on the door  
-Sambalelê go see who it is  
-Sambalelê it's my love  
-Sambalelê samba in the foot |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Sambalelê bateu na porta<br>
+            Sambalelê vai ver quem é<br>
+            Sambalelê é meu amor<br>
+            Sambalelê samba no pé<br>
+            <br>
+            <strong>Sambalelê bateu na porta<br>
+            Sambalelê vai ver quem é<br>
+            Sambalelê é meu amor<br>
+            Sambalelê samba no pé</strong><br>
+            <br>
+            Andam dizendo por aí<br>
+            Que o amor se acabou<br>
+            É mentira de quem disse<br>
+            Ele apenas começou<br>
+            <br>
+            <strong>Sambalelê bateu na porta<br>
+            Sambalelê vai ver quem é<br>
+            Sambalelê é meu amor<br>
+            Sambalelê samba no pé</strong><br>
+            <br>
+            Mas mulher velha não se casa<br>
+            Porque não acha ninguem<br>
+            Quando chega no roçado<br>
+            Chama todos de meu bem<br>
+            <br>
+            <strong>Sambalelê bateu na porta<br>
+            Sambalelê vai ver quem é<br>
+            Sambalelê é meu amor<br>
+            Sambalelê samba no pé</strong><br>
+            <br>
+            Olha aí moça bonita<br>
+            Coisa linda de se ver<br>
+            Você é o pé da rosa<br>
+            Eu sou a rosa do pé<br>
+            <br>
+            <strong>Sambalelê bateu na porta<br>
+            Sambalelê vai ver quem é<br>
+            Sambalelê é meu amor<br>
+            Sambalelê samba no pé</strong>
+        </td>
+        <td>
+            Sambalelê knocked on the door<br>
+            Sambalelê go see who it is<br>
+            Sambalelê it's my love<br>
+            Sambalelê samba in the foot<br>
+            <br>
+            Sambalelê knocked on the door<br>
+            Sambalelê go see who it is<br>
+            Sambalelê it's my love<br>
+            Sambalelê samba in the foot<br>
+            <br>
+            They are saying around<br>
+            That love has run out<br>
+            They are telling a lit<br>
+            It has just started<br>
+            <br>
+            Sambalelê knocked on the door<br>
+            Sambalelê go see who it is<br>
+            Sambalelê it's my love<br>
+            Sambalelê samba in the foot<br>
+            <br>
+            Old woman who doesn't marry<br>
+            Because she doesn't find anyone<br>
+            When she arrives at the clearing<br>
+            Calls everyone her darling<br>
+            <br>
+            Sambalelê knocked on the door<br>
+            Sambalelê go see who it is<br>
+            Sambalelê it's my love<br>
+            Sambalelê samba in the foot<br>
+            <br>
+            Look there, pretty girl<br>
+            Beautiful thing to see<br>
+            You are the foot of the rose<br>
+            I'm the rose of the foot<br>
+            <br>
+            Sambalelê knocked on the door<br>
+            Sambalelê go see who it is<br>
+            Sambalelê it's my love<br>
+            Sambalelê samba in the foot
+        </td>
+    </tr>
+</table>
 
 <figcaption>
-
-Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
+Author: Unknown (Do you know who wrote this song? Tell us in the comments!)<br>
 Note: 'Sambalelê' (or samba lê lê, samba-lelê) means "a mess, a confusion".
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Vn11Cw6gjbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

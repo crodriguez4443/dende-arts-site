@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Eu Vou Cortar Madeira"
 date: "2020-12-22"
@@ -8,86 +10,91 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| É lua minguante eu vou cortar madeira  
-Madeira boa não corta na lua cheia  
-  
-**É lua minguante eu vou cortar madeira  
-Madeira boa não corta na lua cheia**  
-  
-Meu mestre me disse  
-Não vai pra mata á toa  
-Que é só na lua minguante  
-Que corta madeira boa  
-  
-**É lua minguante eu vou cortar madeira  
-Madeira boa não corta na lua cheia  
-  
-É lua minguante eu vou cortar madeira  
-Madeira boa não corta na lua cheia**  
-  
-Não importa a madeira  
-Se é biriba ou cambotá  
-Se não for na lua certa  
-A madeira vai quebrar  
-  
-**É lua minguante eu vou cortar madeira  
-Madeira boa não corta na lua cheia  
-  
-É lua minguante eu vou cortar madeira  
-Madeira boa não corta na lua cheia**  
-  
-Vou cortar madeira boa  
-Vou entrar no matagal  
-Mas eu vou na lua certa  
-Pra fazer bom berimbau  
-  
-**É lua minguante eu vou cortar madeira  
-Madeira boa não corta na lua cheia  
-  
-É lua minguante eu vou cortar madeira  
-Madeira boa não corta na lua cheia** | It's a waning moon I'm going to cut wood  
-Good wood isn't cut on a full moon  
-  
-It's a waning moon I'm going to cut wood  
-Good wood isn't cut on a full moon  
-  
-My master told me  
-Don't go to the woods for nothing  
-That is only during the waning moon  
-That you cut good wood  
-  
-It's a waning moon I'm going to cut wood  
-Good wood isn't cut on a full moon  
-  
-It's a waning moon I'm going to cut wood  
-Good wood isn't cut on a full moon  
-  
-No matter the wood  
-Whether it's biriba or cambotá  
-If it's not on the right moon  
-The wood will break  
-  
-It's a waning moon I'm going to cut wood  
-Good wood isn't cut on a full moon  
-  
-It's a waning moon I'm going to cut wood  
-Good wood isn't cut on a full moon  
-  
-I will cut good wood  
-I will enter the scrub  
-But I'm going on the right moon  
-To make good berimbau  
-  
-It's a waning moon I'm going to cut wood  
-Good wood isn't cut on a full moon  
-  
-It's a waning moon I'm going to cut wood  
-Good wood isn't cut on a full moon |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>É lua minguante eu vou cortar madeira<br>
+Madeira boa não corta na lua cheia<br>
+<br>
+<strong>É lua minguante eu vou cortar madeira<br>
+Madeira boa não corta na lua cheia</strong><br>
+<br>
+Meu mestre me disse<br>
+Não vai pra mata á toa<br>
+Que é só na lua minguante<br>
+Que corta madeira boa<br>
+<br>
+<strong>É lua minguante eu vou cortar madeira<br>
+Madeira boa não corta na lua cheia<br>
+<br>
+É lua minguante eu vou cortar madeira<br>
+Madeira boa não corta na lua cheia</strong><br>
+<br>
+Não importa a madeira<br>
+Se é biriba ou cambotá<br>
+Se não for na lua certa<br>
+A madeira vai quebrar<br>
+<br>
+<strong>É lua minguante eu vou cortar madeira<br>
+Madeira boa não corta na lua cheia<br>
+<br>
+É lua minguante eu vou cortar madeira<br>
+Madeira boa não corta na lua cheia</strong><br>
+<br>
+Vou cortar madeira boa<br>
+Vou entrar no matagal<br>
+Mas eu vou na lua certa<br>
+Pra fazer bom berimbau<br>
+<br>
+<strong>É lua minguante eu vou cortar madeira<br>
+Madeira boa não corta na lua cheia<br>
+<br>
+É lua minguante eu vou cortar madeira<br>
+Madeira boa não corta na lua cheia</strong></td>
+        <td>It's a waning moon I'm going to cut wood<br>
+Good wood isn't cut on a full moon<br>
+<br>
+It's a waning moon I'm going to cut wood<br>
+Good wood isn't cut on a full moon<br>
+<br>
+My master told me<br>
+Don't go to the woods for nothing<br>
+That is only during the waning moon<br>
+That you cut good wood<br>
+<br>
+It's a waning moon I'm going to cut wood<br>
+Good wood isn't cut on a full moon<br>
+<br>
+It's a waning moon I'm going to cut wood<br>
+Good wood isn't cut on a full moon<br>
+<br>
+No matter the wood<br>
+Whether it's biriba or cambotá<br>
+If it's not on the right moon<br>
+The wood will break<br>
+<br>
+It's a waning moon I'm going to cut wood<br>
+Good wood isn't cut on a full moon<br>
+<br>
+It's a waning moon I'm going to cut wood<br>
+Good wood isn't cut on a full moon<br>
+<br>
+I will cut good wood<br>
+I will enter the scrub<br>
+But I'm going on the right moon<br>
+To make good berimbau<br>
+<br>
+It's a waning moon I'm going to cut wood<br>
+Good wood isn't cut on a full moon<br>
+<br>
+It's a waning moon I'm going to cut wood<br>
+Good wood isn't cut on a full moon</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Ferrugem
-
 </figcaption>

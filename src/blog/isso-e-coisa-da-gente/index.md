@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Isso É Coisa da Gente"
 date: "2020-12-30"
@@ -9,75 +11,86 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Se você faz um jogo ligeiro  
-Dá um pulo pra lá e pra cá  
-Não se julgue tão bom capoeira  
-Que a capoeira não é tão vulgar  
-  
-Para ser um bom capoeirista  
-Pra ter muita gente que lhe dê valor  
-Você tem que ter muita humildade  
-Tocar instrumentos, ser um bom professor  
-  
-O capoeira faz chula bonita  
-Canta um lamento com muita emoção  
-Quando vê seu mestre jogando  
-Sente alegria no seu coração  
-  
-Ele joga angola miudinho  
-Se a coisa esquenta, não corre do pau  
-Tem amigos por todos os lados  
-Um grande sorriso também não faz mal  
-  
-Isso é coisa da gente  
-Ginga pra lá e pra cá  
-  
-Mexe o corpo ligeiro  
-A mandinga não pode acabar  
-  
-**Isso é coisa da gente  
-Ginga pra lá e pra cá**  
-  
-Mexe o corpo ligeiro  
-A mandinga não pode acabar  
-  
-**Isso é coisa da gente  
-Ginga pra lá e pra cá** | If you play a quick game  
-Take a leaps back and forth  
-Don't judge yourself so good a capoeira  
-That capoeira is not so trivial  
-  
-To be a good capoeirista  
-To have a lot of people who value you  
-You need to be very humble  
-Play instruments, be a good teacher  
-  
-Capoeira makes beautiful chulas  
-Sings a lament with a lot of emotion  
-When they see their master playing  
-Feel joy in their heart  
-  
-They play Angola and miudinho  
-If the things heat up, they don't run from a fight  
-Has friends everywhere  
-A big smile doesn't hurt either  
-  
-This is our thing  
-Ginga back and forth  
-  
-Move the body quickly  
-The mandinga can't end  
-  
-This is our thing  
-Ginga back and forth  
-  
-Move the body quickly  
-The mandinga can't end  
-  
-This is our thing  
-Ginga back and forth |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Se você faz um jogo ligeiro<br>
+            Dá um pulo pra lá e pra cá<br>
+            Não se julgue tão bom capoeira<br>
+            Que a capoeira não é tão vulgar<br>
+            <br>
+            Para ser um bom capoeirista<br>
+            Pra ter muita gente que lhe dê valor<br>
+            Você tem que ter muita humildade<br>
+            Tocar instrumentos, ser um bom professor<br>
+            <br>
+            O capoeira faz chula bonita<br>
+            Canta um lamento com muita emoção<br>
+            Quando vê seu mestre jogando<br>
+            Sente alegria no seu coração<br>
+            <br>
+            Ele joga angola miudinho<br>
+            Se a coisa esquenta, não corre do pau<br>
+            Tem amigos por todos os lados<br>
+            Um grande sorriso também não faz mal<br>
+            <br>
+            Isso é coisa da gente<br>
+            Ginga pra lá e pra cá<br>
+            <br>
+            Mexe o corpo ligeiro<br>
+            A mandinga não pode acabar<br>
+            <br>
+            <strong>Isso é coisa da gente<br>
+            Ginga pra lá e pra cá</strong><br>
+            <br>
+            Mexe o corpo ligeiro<br>
+            A mandinga não pode acabar<br>
+            <br>
+            <strong>Isso é coisa da gente<br>
+            Ginga pra lá e pra cá</strong>
+        </td>
+        <td>
+            If you play a quick game<br>
+            Take a leaps back and forth<br>
+            Don't judge yourself so good a capoeira<br>
+            That capoeira is not so trivial<br>
+            <br>
+            To be a good capoeirista<br>
+            To have a lot of people who value you<br>
+            You need to be very humble<br>
+            Play instruments, be a good teacher<br>
+            <br>
+            Capoeira makes beautiful chulas<br>
+            Sings a lament with a lot of emotion<br>
+            When they see their master playing<br>
+            Feel joy in their heart<br>
+            <br>
+            They play Angola and miudinho<br>
+            If the things heat up, they don't run from a fight<br>
+            Has friends everywhere<br>
+            A big smile doesn't hurt either<br>
+            <br>
+            This is our thing<br>
+            Ginga back and forth<br>
+            <br>
+            Move the body quickly<br>
+            The mandinga can't end<br>
+            <br>
+            This is our thing<br>
+            Ginga back and forth<br>
+            <br>
+            Move the body quickly<br>
+            The mandinga can't end<br>
+            <br>
+            This is our thing<br>
+            Ginga back and forth
+        </td>
+    </tr>
+</table>
 
 <figcaption>
 

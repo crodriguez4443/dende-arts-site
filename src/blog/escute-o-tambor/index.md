@@ -1,3 +1,5 @@
+Here's the formatted markdown document according to the specifications:
+
 ---
 title: "Escute o Tambor"
 date: "2020-12-12"
@@ -9,78 +11,82 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Quando o Céu fica escuro  
-E a vida diz não  
-Quando tudo parece sem solução  
-Escute o tambor no seu coração  
-  
-Escute o tambor  
-  
-**Êee ôoo**  
-  
-Escute o tambor  
-  
-Nosso batuque ancestral  
-Acima do bem e do mal  
-Tá no coração do menino, Senhor  
-Não não aceite o chicote  
-Chama pra luta de morte  
-É feito de sangue e suor o tambor  
-  
-Escute o tambor  
-  
-**Êee ôoo**  
-  
-Escute o tambor  
-  
-Quando a luta parece perdida  
-Debaixo das asas de um falso opressor  
-Grita, grita forte pela vida  
-Que a vida mora dentro do tambor  
-  
-Escute o tambor  
-**  
-Êee ôoo**  
-  
-Escute o tambor | When the sky gets dark  
-And life says no  
-When it seems there is no solution  
-Listen to the drum in your heart  
-  
-Listen to the drum  
-  
-Êee ôoo  
-  
-Listen to the drum  
-  
-Our ancestral drumming  
-Above good and evil  
-It's in the boy's heart, Lord  
-Don't don't accept the whip  
-Challenge to the fight of death  
-It is made of blood and sweat the drum  
-  
-Listen to the drum  
-  
-Êee ôoo  
-  
-Listen to the drum  
-  
-When the fight seems lost  
-Under the wings of a false oppressor  
-Scream, scream loudly for life  
-Because life lives inside the drum  
-  
-Listen to the drum  
-  
-Êee ôoo  
-  
-Listen to the drum |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Quando o Céu fica escuro<br>
+E a vida diz não<br>
+Quando tudo parece sem solução<br>
+Escute o tambor no seu coração<br>
+<br>
+Escute o tambor<br>
+<br>
+<strong>Êee ôoo</strong><br>
+<br>
+Escute o tambor<br>
+<br>
+Nosso batuque ancestral<br>
+Acima do bem e do mal<br>
+Tá no coração do menino, Senhor<br>
+Não não aceite o chicote<br>
+Chama pra luta de morte<br>
+É feito de sangue e suor o tambor<br>
+<br>
+Escute o tambor<br>
+<br>
+<strong>Êee ôoo</strong><br>
+<br>
+Escute o tambor<br>
+<br>
+Quando a luta parece perdida<br>
+Debaixo das asas de um falso opressor<br>
+Grita, grita forte pela vida<br>
+Que a vida mora dentro do tambor<br>
+<br>
+Escute o tambor<br>
+<strong>Êee ôoo</strong><br>
+<br>
+Escute o tambor</td>
+        <td>When the sky gets dark<br>
+And life says no<br>
+When it seems there is no solution<br>
+Listen to the drum in your heart<br>
+<br>
+Listen to the drum<br>
+<br>
+Êee ôoo<br>
+<br>
+Listen to the drum<br>
+<br>
+Our ancestral drumming<br>
+Above good and evil<br>
+It's in the boy's heart, Lord<br>
+Don't don't accept the whip<br>
+Challenge to the fight of death<br>
+It is made of blood and sweat the drum<br>
+<br>
+Listen to the drum<br>
+<br>
+Êee ôoo<br>
+<br>
+Listen to the drum<br>
+<br>
+When the fight seems lost<br>
+Under the wings of a false oppressor<br>
+Scream, scream loudly for life<br>
+Because life lives inside the drum<br>
+<br>
+Listen to the drum<br>
+<br>
+Êee ôoo<br>
+<br>
+Listen to the drum</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Mestre Toni Vargas
-
 </figcaption>

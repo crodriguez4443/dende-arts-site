@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Quando o Berimbau Tocou"
 date: "2021-03-22"
@@ -8,41 +10,16 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Quando o berimbau tocou  
-E o mar se revoltou  
-Pra Maré passar  
-Quando o berimbau toca benguela de Mestre Bimba pra Maré jogar  
-  
-**Quando o berimbau tocou  
-E o mar se revoltou  
-Pra Maré passar  
-Quando o berimbau toca benguela de Mestre Bimba pra Maré jogar**  
-  
-Vem, vem jogar, vem mandingar, vem Angola  
-Toca benguela de Bimba pra Maré passar  
-  
-**Quando o berimbau tocou  
-E o mar se revoltou  
-Pra Maré passar  
-Quando o berimbau toca benguela de Mestre Bimba pra Maré jogar** | When the berimbau played  
-And the sea revolted  
-For Maré to pass  
-When the berimbau plays Master Bimba's benguela for Maré to play  
-  
-When the berimbau played  
-And the sea revolted  
-For Maré to pass  
-When the berimbau plays Master Bimba's benguela for Maré to play  
-  
-Come, come play, come mandingar, come Angola  
-Play Bimba's benguela for Maré to pass  
-  
-When the berimbau played  
-And the sea revolted  
-For Maré to pass  
-When the berimbau plays Master Bimba's benguela for Maré to play |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Quando o berimbau tocou<br>E o mar se revoltou<br>Pra Maré passar<br>Quando o berimbau toca benguela de Mestre Bimba pra Maré jogar<br><br><strong>Quando o berimbau tocou<br>E o mar se revoltou<br>Pra Maré passar<br>Quando o berimbau toca benguela de Mestre Bimba pra Maré jogar</strong><br><br>Vem, vem jogar, vem mandingar, vem Angola<br>Toca benguela de Bimba pra Maré passar<br><br><strong>Quando o berimbau tocou<br>E o mar se revoltou<br>Pra Maré passar<br>Quando o berimbau toca benguela de Mestre Bimba pra Maré jogar</strong></td>
+        <td>When the berimbau played<br>And the sea revolted<br>For Maré to pass<br>When the berimbau plays Master Bimba's benguela for Maré to play<br><br>When the berimbau played<br>And the sea revolted<br>For Maré to pass<br>When the berimbau plays Master Bimba's benguela for Maré to play<br><br>Come, come play, come mandingar, come Angola<br>Play Bimba's benguela for Maré to pass<br><br>When the berimbau played<br>And the sea revolted<br>For Maré to pass<br>When the berimbau plays Master Bimba's benguela for Maré to play</td>
+    </tr>
+</table>
 
 <figcaption>
 

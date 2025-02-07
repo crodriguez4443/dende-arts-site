@@ -9,27 +9,34 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Tamanduá, como vai coroa  
-Tamanduá, como vai coroa  
-Tamanduá, como vai coroa  
-Tamanduá  
-  
-**Como vai coroa  
-**  
-Olha tamanduá  
-  
-**Como vai coroa** | Anteater, how are you, crown  
-Anteater, how are you, crown  
-Anteater, how are you, crown  
-Anteater  
-  
-how are you, tails  
-  
-look anteater  
-  
-how are you, tails |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Tamanduá, como vai coroa<br>
+Tamanduá, como vai coroa<br>
+Tamanduá, como vai coroa<br>
+Tamanduá<br>
+<br>
+<strong>Como vai coroa</strong><br>
+<br>
+Olha tamanduá<br>
+<br>
+<strong>Como vai coroa</strong></td>
+        <td>Anteater, how are you, crown<br>
+Anteater, how are you, crown<br>
+Anteater, how are you, crown<br>
+Anteater<br>
+<br>
+how are you, tails<br>
+<br>
+look anteater<br>
+<br>
+how are you, tails</td>
+    </tr>
+</table>
 
 <figcaption>
 

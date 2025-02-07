@@ -9,23 +9,34 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Êe ea  
-Eu quero ver o coqueiro balançar  
-  
-**Êe ea  
-Eu quero ver o coqueiro balançar**  
-  
-Balança ê balança  
-**O coqueiro balança** | Êe ea  
-I want to see the coconut tree sway  
-  
-Êe ea  
-I want to see the coconut tree sway  
-  
-Sway ê sway  
-The coconut tree sways |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Êe ea<br>
+            Eu quero ver o coqueiro balançar<br>
+            <br>
+            <strong>Êe ea<br>
+            Eu quero ver o coqueiro balançar</strong><br>
+            <br>
+            Balança ê balança<br>
+            <strong>O coqueiro balança</strong>
+        </td>
+        <td>
+            Êe ea<br>
+            I want to see the coconut tree sway<br>
+            <br>
+            Êe ea<br>
+            I want to see the coconut tree sway<br>
+            <br>
+            Sway ê sway<br>
+            The coconut tree sways
+        </td>
+    </tr>
+</table>
 
 <figcaption>
 

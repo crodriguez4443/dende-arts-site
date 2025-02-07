@@ -9,86 +9,19 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| O mar me chama pra jogar  
-Capoeira na roda  
-Mas um dia eu chego lá  
-  
-O mar me chama pra jogar  
-Capoeira na roda  
-Mas um dia eu chego lá  
-  
-Eu chego lá  
-Se Deus quiser  
-Eu chego lá, camará  
-Eu tenho fé  
-  
-**Eu chego lá  
-Se Deus quiser  
-Eu chego lá, camará  
-Eu tenho fé**  
-  
-Mas se eu tenho fé  
-Ninguém vai me pegar  
-Dou rabo de arraia  
-Dou salto mortal  
-  
-Pula pra ali  
-Olha pula pra lá  
-Ô moleque mandingueiro  
-Que sabe jogar  
-  
-Eu chego lá  
-Se Deus quiser  
-Eu chego lá, camará  
-Eu tenho fé  
-  
-**Eu chego lá  
-Se Deus quiser  
-Eu chego lá, camará  
-Eu tenho fé** | The sea calls me to play  
-Capoeira in the roda  
-But one day I'll get there  
-  
-The sea calls me to play  
-Capoeira in the roda  
-But one day I'll get there  
-  
-I'll get there  
-If it is God's will  
-I'll get there, buddy  
-I have faith  
-  
-I'll get there  
-If it is God's will  
-I'll get there, buddy  
-I have faith  
-  
-But if I have faith  
-No one will catch me  
-I'll do a rabo de arraia  
-I'll do a backflip  
-  
-Jump over here  
-Look, jump over there  
-Hey mandingueiro boy  
-Who knows how to play  
-  
-I'll get there  
-If it is God's will  
-I'll get there, buddy  
-I have faith  
-  
-I'll get there  
-If it is God's will  
-I'll get there, buddy  
-I have faith |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>O mar me chama pra jogar<br>Capoeira na roda<br>Mas um dia eu chego lá<br><br>O mar me chama pra jogar<br>Capoeira na roda<br>Mas um dia eu chego lá<br><br>Eu chego lá<br>Se Deus quiser<br>Eu chego lá, camará<br>Eu tenho fé<br><br><strong>Eu chego lá<br>Se Deus quiser<br>Eu chego lá, camará<br>Eu tenho fé</strong><br><br>Mas se eu tenho fé<br>Ninguém vai me pegar<br>Dou rabo de arraia<br>Dou salto mortal<br><br>Pula pra ali<br>Olha pula pra lá<br>Ô moleque mandingueiro<br>Que sabe jogar<br><br>Eu chego lá<br>Se Deus quiser<br>Eu chego lá, camará<br>Eu tenho fé<br><br><strong>Eu chego lá<br>Se Deus quiser<br>Eu chego lá, camará<br>Eu tenho fé</strong></td>
+        <td>The sea calls me to play<br>Capoeira in the roda<br>But one day I'll get there<br><br>The sea calls me to play<br>Capoeira in the roda<br>But one day I'll get there<br><br>I'll get there<br>If it is God's will<br>I'll get there, buddy<br>I have faith<br><br>I'll get there<br>If it is God's will<br>I'll get there, buddy<br>I have faith<br><br>But if I have faith<br>No one will catch me<br>I'll do a rabo de arraia<br>I'll do a backflip<br><br>Jump over here<br>Look, jump over there<br>Hey mandingueiro boy<br>Who knows how to play<br><br>I'll get there<br>If it is God's will<br>I'll get there, buddy<br>I have faith<br><br>I'll get there<br>If it is God's will<br>I'll get there, buddy<br>I have faith</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Bigodinho
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ScODwF5JVA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

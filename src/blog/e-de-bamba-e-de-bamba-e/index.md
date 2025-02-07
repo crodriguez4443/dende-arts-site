@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "É de Bamba, É de Bamba Ê"
 date: "2020-11-27"
@@ -9,55 +11,62 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| É de bamba, é de bamba, é de bamba ê  
-A capoeira é de bamba  
-  
-**É de bamba, é de bamba ê**  
-  
-Jogo de Dentro é de bamba  
-**  
-É de bamba, é de bamba ê**  
-  
-Lá na Bahia só tem bamba  
-  
-**É de bamba, é de bamba ê**  
-  
-Todo mundo aqui e bamba  
-  
-**É de bamba, é de bamba ê**  
-  
-Mestre Acordeon é de bamba  
-  
-**É de bamba, é de bamba ê**  
-  
-Esse jogo é de bamba  
-  
-**É de bamba, é de bamba ê** | It's bamba, it's bamba, it's bamba ê  
-Capoeira is bamba  
-  
-It's bamba, it's bamba, it's bamba ê  
-  
-Jogo de Dentro is bamba  
-  
-It's bamba, it's bamba ê  
-  
-There are only bambas in Bahia  
-  
-It's bamba, it's bamba ê  
-  
-Everyone here is bamba  
-  
-It's bamba, it's bamba ê  
-  
-Mestre Accordeon is bamba  
-  
-It's bamba, it's bamba ê  
-  
-This game is bamba  
-  
-It's bamba, it's bamba ê |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>É de bamba, é de bamba, é de bamba ê<br>
+        A capoeira é de bamba<br>
+        <br>
+        <strong>É de bamba, é de bamba ê</strong><br>
+        <br>
+        Jogo de Dentro é de bamba<br>
+        <strong><br>
+        É de bamba, é de bamba ê</strong><br>
+        <br>
+        Lá na Bahia só tem bamba<br>
+        <br>
+        <strong>É de bamba, é de bamba ê</strong><br>
+        <br>
+        Todo mundo aqui e bamba<br>
+        <br>
+        <strong>É de bamba, é de bamba ê</strong><br>
+        <br>
+        Mestre Acordeon é de bamba<br>
+        <br>
+        <strong>É de bamba, é de bamba ê</strong><br>
+        <br>
+        Esse jogo é de bamba<br>
+        <br>
+        <strong>É de bamba, é de bamba ê</strong></td>
+        <td>It's bamba, it's bamba, it's bamba ê<br>
+        Capoeira is bamba<br>
+        <br>
+        It's bamba, it's bamba, it's bamba ê<br>
+        <br>
+        Jogo de Dentro is bamba<br>
+        <br>
+        It's bamba, it's bamba ê<br>
+        <br>
+        There are only bambas in Bahia<br>
+        <br>
+        It's bamba, it's bamba ê<br>
+        <br>
+        Everyone here is bamba<br>
+        <br>
+        It's bamba, it's bamba ê<br>
+        <br>
+        Mestre Accordeon is bamba<br>
+        <br>
+        It's bamba, it's bamba ê<br>
+        <br>
+        This game is bamba<br>
+        <br>
+        It's bamba, it's bamba ê</td>
+    </tr>
+</table>
 
 <figcaption>
 

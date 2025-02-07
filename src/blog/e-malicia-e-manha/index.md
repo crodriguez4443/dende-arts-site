@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "É Malícia, É Manha"
 date: "2021-01-25"
@@ -8,108 +10,113 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| A capoeira é assim  
-É malícia, é manha  
-O mandingueiro vadeia  
-Cheio de artimanha  
-  
-**A capoeira é assim  
-É malícia, é manha  
-O mandingueiro vadeia  
-Cheio de artimanha**  
-  
-Se cai, levanta sorrindo  
-Ele não fica nervoso  
-Ele põe um tempero na ginga  
-E te pega daqui a pouco  
-  
-**A capoeira é assim  
-É malícia, é manha  
-O mandingueiro vadeia  
-Cheio de artimanha**  
-  
-Ele se finge de morto  
-Até faz você acreditar  
-Vai jogando em cima embaixo  
-Daqui a pouco, cê pode esperar  
-  
-**A capoeira é assim  
-É malícia, é manha  
-O mandingueiro vadeia  
-Cheio de artimanha**  
-  
-O fraco e o forte na roda  
-Esses não ficam pra trás  
-Quando se é mandingueiro  
-Na capoeira isso tanto faz  
-  
-**A capoeira é assim  
-É malícia, é manha  
-O mandingueiro vadeia  
-Cheio de artimanha**  
-  
-É tudo que os olhos vêem  
-Que a boca come  
-Mandinga, malícia e dendê  
-Na capoeira é o que o corpo consome  
-  
-**A capoeira é assim  
-É malícia, é manha  
-O mandingueiro vadeia  
-Cheio de artimanha** | Capoeira is like that  
-It's malícia, it's skill  
-The mandingueiro plays  
-Full of trickery  
-  
-Capoeira is like that  
-It's malícia, it's skill  
-The mandingueiro plays  
-Full of trickery  
-  
-If he falls, he get up smiling  
-He doesn't get nervous  
-He adds spice to the ginga  
-And he'll catch you in a little while  
-  
-Capoeira is like that  
-It's malícia, it's skill  
-The mandingueiro plays  
-Full of trickery  
-  
-He pretends to be dead  
-He even makes you believe  
-He plays high and low  
-In a little while, you can wait  
-  
-Capoeira is like that  
-It's malícia, it's skill  
-The mandingueiro plays  
-Full of trickery  
-  
-The weak and the strong in the roda  
-These are not left behind  
-When you are a mandingueiro  
-In capoeira it doesn't matter  
-  
-Capoeira is like that  
-It's malícia, it's skill  
-The mandingueiro plays  
-Full of trickery  
-  
-It's all that the eyes see  
-That the mouth eats  
-Mandinga, malícia, and dendê  
-Capoeira is all the body consumes  
-  
-Capoeira is like that  
-It's malícia, it's skill  
-The mandingueiro plays  
-Full of trickery |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>A capoeira é assim<br>
+É malícia, é manha<br>
+O mandingueiro vadeia<br>
+Cheio de artimanha<br>
+<br>
+<strong>A capoeira é assim<br>
+É malícia, é manha<br>
+O mandingueiro vadeia<br>
+Cheio de artimanha</strong><br>
+<br>
+Se cai, levanta sorrindo<br>
+Ele não fica nervoso<br>
+Ele põe um tempero na ginga<br>
+E te pega daqui a pouco<br>
+<br>
+<strong>A capoeira é assim<br>
+É malícia, é manha<br>
+O mandingueiro vadeia<br>
+Cheio de artimanha</strong><br>
+<br>
+Ele se finge de morto<br>
+Até faz você acreditar<br>
+Vai jogando em cima embaixo<br>
+Daqui a pouco, cê pode esperar<br>
+<br>
+<strong>A capoeira é assim<br>
+É malícia, é manha<br>
+O mandingueiro vadeia<br>
+Cheio de artimanha</strong><br>
+<br>
+O fraco e o forte na roda<br>
+Esses não ficam pra trás<br>
+Quando se é mandingueiro<br>
+Na capoeira isso tanto faz<br>
+<br>
+<strong>A capoeira é assim<br>
+É malícia, é manha<br>
+O mandingueiro vadeia<br>
+Cheio de artimanha</strong><br>
+<br>
+É tudo que os olhos vêem<br>
+Que a boca come<br>
+Mandinga, malícia e dendê<br>
+Na capoeira é o que o corpo consome<br>
+<br>
+<strong>A capoeira é assim<br>
+É malícia, é manha<br>
+O mandingueiro vadeia<br>
+Cheio de artimanha</strong></td>
+        <td>Capoeira is like that<br>
+It's malícia, it's skill<br>
+The mandingueiro plays<br>
+Full of trickery<br>
+<br>
+Capoeira is like that<br>
+It's malícia, it's skill<br>
+The mandingueiro plays<br>
+Full of trickery<br>
+<br>
+If he falls, he get up smiling<br>
+He doesn't get nervous<br>
+He adds spice to the ginga<br>
+And he'll catch you in a little while<br>
+<br>
+Capoeira is like that<br>
+It's malícia, it's skill<br>
+The mandingueiro plays<br>
+Full of trickery<br>
+<br>
+He pretends to be dead<br>
+He even makes you believe<br>
+He plays high and low<br>
+In a little while, you can wait<br>
+<br>
+Capoeira is like that<br>
+It's malícia, it's skill<br>
+The mandingueiro plays<br>
+Full of trickery<br>
+<br>
+The weak and the strong in the roda<br>
+These are not left behind<br>
+When you are a mandingueiro<br>
+In capoeira it doesn't matter<br>
+<br>
+Capoeira is like that<br>
+It's malícia, it's skill<br>
+The mandingueiro plays<br>
+Full of trickery<br>
+<br>
+It's all that the eyes see<br>
+That the mouth eats<br>
+Mandinga, malícia, and dendê<br>
+Capoeira is all the body consumes<br>
+<br>
+Capoeira is like that<br>
+It's malícia, it's skill<br>
+The mandingueiro plays<br>
+Full of trickery</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Gordinho
-
 </figcaption>

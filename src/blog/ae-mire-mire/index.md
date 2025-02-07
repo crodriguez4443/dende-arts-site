@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Aé Miré Miré"
 date: "2020-09-23"
@@ -10,37 +12,44 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Aé Miré Miré  
-Aé Miré Miré  
-É de Babá é de Olorum  
-Mas Aé Miré Miré  
-Ê de Babá Luanda ô  
-  
-**Aé Miré Miré  
-Aé Miré Miré**  
-  
-Ê de Babá é de Olorum  
-Mas Aé Miré Miré  
-Ê de Babá Luanda ô  
-  
-**Aé Miré Miré  
-Aé Miré Miré** | Aé Miré Miré  
-Aé Miré Miré  
-It’s from Babá Olorum  
-Yet Aé Miré Miré  
-It’s from Babá It’s from Luanda ô  
-  
-Aé Miré Miré  
-Aé Miré Miré  
-  
-It’s from Babá it's from Olorum  
-yet Aé Miré Miré  
-It’s from Babá It’s from Luanda ô  
-  
-Aé Miré Miré  
-Aé Miré Miré |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Aé Miré Miré<br>
+        Aé Miré Miré<br>
+        É de Babá é de Olorum<br>
+        Mas Aé Miré Miré<br>
+        Ê de Babá Luanda ô<br>
+        <br>
+        <strong>Aé Miré Miré<br>
+        Aé Miré Miré</strong><br>
+        <br>
+        Ê de Babá é de Olorum<br>
+        Mas Aé Miré Miré<br>
+        Ê de Babá Luanda ô<br>
+        <br>
+        <strong>Aé Miré Miré<br>
+        Aé Miré Miré</strong></td>
+        <td>Aé Miré Miré<br>
+        Aé Miré Miré<br>
+        It's from Babá Olorum<br>
+        Yet Aé Miré Miré<br>
+        It's from Babá It's from Luanda ô<br>
+        <br>
+        Aé Miré Miré<br>
+        Aé Miré Miré<br>
+        <br>
+        It's from Babá it's from Olorum<br>
+        yet Aé Miré Miré<br>
+        It's from Babá It's from Luanda ô<br>
+        <br>
+        Aé Miré Miré<br>
+        Aé Miré Miré</td>
+    </tr>
+</table>
 
 <figcaption>
 

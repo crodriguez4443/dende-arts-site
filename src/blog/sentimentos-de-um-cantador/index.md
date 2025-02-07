@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Sentimentos de um Cantador"
 date: "2021-03-30"
@@ -9,100 +11,109 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Toca em meu corpo um berimbau  
-Carregado de emoção  
-Toca em meu corpo um berimbau  
-Ô ia ia lamentos do coração  
-**  
-Toca em meu corpo um berimbau  
-Carregado de emoção  
-Toca em meu corpo um berimbau  
-Ô ia ia lamentos do coração**  
-  
-Arrastado pelo toque  
-Que manejo em minhas mãos  
-Eu transmito em ladainha  
-As mais lindas poesias  
-Sentimento e emoção  
-**  
-Toca em meu corpo um berimbau  
-Carregado de emoção  
-Toca em meu corpo um berimbau  
-Ô ia ia lamentos do coração**  
-  
-Vejo dia virar noite  
-A noite vejo o luar  
-Eu vejo o azul do céu  
-As estrelas a brilhar  
-São rascunhos, são momentos  
-Lágrimas de um pensamento  
-Como um pássaro a voar  
-  
-**Toca em meu corpo um berimbau  
-Carregado de emoção  
-Toca em meu corpo um berimbau  
-Ô ia ia lamentos do coração**  
-  
-Orvalho caiu do céu  
-Molhadinho do sereno  
-O suor molha o meu corpo  
-O meu corpo moreno  
-Eu trago na cor da pele as marcas do sofrimento  
-  
-**Toca em meu corpo um berimbau  
-Carregado de emoção  
-Toca em meu corpo um berimbau  
-Ô ia ia lamentos do coração** | A berimbau plays within my body  
-Loaded with emotion  
-A berimbau plays within my body  
-Ô ia ia regrets of the heart  
-  
-A berimbau plays within my body  
-Loaded with emotion  
-A berimbau plays within my body  
-Ô ia ia regrets of the heart  
-  
-Dragged by rhythm  
-That I handle in my hands  
-I broadcast in a litany  
-The most beautiful poetry  
-Feeling and emotion  
-  
-A berimbau plays within my body  
-Loaded with emotion  
-A berimbau plays within my body  
-Ô ia ia regrets of the heart  
-  
-I see day turning into night  
-At night I see the moonlight  
-I see the blue sky  
-The stars that shine  
-They are drafts, they are moments  
-Tears of a thought  
-Like a bird in flight  
-  
-A berimbau plays within my body  
-Loaded with emotion  
-A berimbau plays within my body  
-Ô ia ia regrets of the heart  
-  
-Dew fell from the sky  
-Wet from the dew  
-Sweat soaks my body  
-My dark body  
-I bring in the colour of my skin the marks of suffering  
-  
-A berimbau plays within my body  
-Loaded with emotion  
-A berimbau plays within my body  
-Ô ia ia regrets of the heart |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Toca em meu corpo um berimbau<br>
+            Carregado de emoção<br>
+            Toca em meu corpo um berimbau<br>
+            Ô ia ia lamentos do coração<br>
+            <br>
+            <strong>Toca em meu corpo um berimbau<br>
+            Carregado de emoção<br>
+            Toca em meu corpo um berimbau<br>
+            Ô ia ia lamentos do coração</strong><br>
+            <br>
+            Arrastado pelo toque<br>
+            Que manejo em minhas mãos<br>
+            Eu transmito em ladainha<br>
+            As mais lindas poesias<br>
+            Sentimento e emoção<br>
+            <br>
+            <strong>Toca em meu corpo um berimbau<br>
+            Carregado de emoção<br>
+            Toca em meu corpo um berimbau<br>
+            Ô ia ia lamentos do coração</strong><br>
+            <br>
+            Vejo dia virar noite<br>
+            A noite vejo o luar<br>
+            Eu vejo o azul do céu<br>
+            As estrelas a brilhar<br>
+            São rascunhos, são momentos<br>
+            Lágrimas de um pensamento<br>
+            Como um pássaro a voar<br>
+            <br>
+            <strong>Toca em meu corpo um berimbau<br>
+            Carregado de emoção<br>
+            Toca em meu corpo um berimbau<br>
+            Ô ia ia lamentos do coração</strong><br>
+            <br>
+            Orvalho caiu do céu<br>
+            Molhadinho do sereno<br>
+            O suor molha o meu corpo<br>
+            O meu corpo moreno<br>
+            Eu trago na cor da pele as marcas do sofrimento<br>
+            <br>
+            <strong>Toca em meu corpo um berimbau<br>
+            Carregado de emoção<br>
+            Toca em meu corpo um berimbau<br>
+            Ô ia ia lamentos do coração</strong>
+        </td>
+        <td>
+            A berimbau plays within my body<br>
+            Loaded with emotion<br>
+            A berimbau plays within my body<br>
+            Ô ia ia regrets of the heart<br>
+            <br>
+            A berimbau plays within my body<br>
+            Loaded with emotion<br>
+            A berimbau plays within my body<br>
+            Ô ia ia regrets of the heart<br>
+            <br>
+            Dragged by rhythm<br>
+            That I handle in my hands<br>
+            I broadcast in a litany<br>
+            The most beautiful poetry<br>
+            Feeling and emotion<br>
+            <br>
+            A berimbau plays within my body<br>
+            Loaded with emotion<br>
+            A berimbau plays within my body<br>
+            Ô ia ia regrets of the heart<br>
+            <br>
+            I see day turning into night<br>
+            At night I see the moonlight<br>
+            I see the blue sky<br>
+            The stars that shine<br>
+            They are drafts, they are moments<br>
+            Tears of a thought<br>
+            Like a bird in flight<br>
+            <br>
+            A berimbau plays within my body<br>
+            Loaded with emotion<br>
+            A berimbau plays within my body<br>
+            Ô ia ia regrets of the heart<br>
+            <br>
+            Dew fell from the sky<br>
+            Wet from the dew<br>
+            Sweat soaks my body<br>
+            My dark body<br>
+            I bring in the colour of my skin the marks of suffering<br>
+            <br>
+            A berimbau plays within my body<br>
+            Loaded with emotion<br>
+            A berimbau plays within my body<br>
+            Ô ia ia regrets of the heart
+        </td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Contra-mestre Iuna
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gfdQXGX0M3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

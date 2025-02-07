@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Ê Angola Vem"
 date: "2020-11-27"
@@ -8,56 +10,39 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| A roda já começou  
-  
-**Ê angola vem**  
-  
-O berimbau tocou  
-  
-**Ê angola vai**  
-  
-A roda já começou  
-  
-**Ê angola vem**  
-  
-O pandeiro já marcou  
-  
-**Ê angola vai**  
-  
-O atabaque soou  
-**  
-Ê angola vem**  
-  
-A roda já começou  
-**  
-Ê angola vai** | The roda already started  
-  
-Ê angola comes  
-  
-The berimbau played  
-  
-Ê angola goes  
-  
-The roda has already started  
-  
-Ê angola comes  
-  
-The tambourine is already playing  
-  
-Ê angola goes  
-  
-The atabaque sounded  
-  
-Ê angola comes  
-  
-The roda has already started  
-  
-Ê angola goes |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>A roda já começou<br><br>
+        <strong>Ê angola vem</strong><br><br>
+        O berimbau tocou<br><br>
+        <strong>Ê angola vai</strong><br><br>
+        A roda já começou<br><br>
+        <strong>Ê angola vem</strong><br><br>
+        O pandeiro já marcou<br><br>
+        <strong>Ê angola vai</strong><br><br>
+        O atabaque soou<br>
+        <strong>Ê angola vem</strong><br><br>
+        A roda já começou<br>
+        <strong>Ê angola vai</strong></td>
+        <td>The roda already started<br><br>
+        Ê angola comes<br><br>
+        The berimbau played<br><br>
+        Ê angola goes<br><br>
+        The roda has already started<br><br>
+        Ê angola comes<br><br>
+        The tambourine is already playing<br><br>
+        Ê angola goes<br><br>
+        The atabaque sounded<br>
+        Ê angola comes<br><br>
+        The roda has already started<br>
+        Ê angola goes</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

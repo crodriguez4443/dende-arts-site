@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Filho de Ogum"
 date: "2020-11-23"
@@ -9,63 +11,68 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Vale-me Deus do céu  
-Vale-me Deus do céu  
-Colega velho  
-Vale-me nossa senhora  
-Vou jogar a capoeira,  
-Jogo de dentro e de fora  
-  
-Sou filho de Ogum  
-Num tem dia e não tem hora  
-Que me dê protecção  
-Nesse jogo de agora  
-  
-Se o jogo não apanha  
-Nem se pode se derrubar  
-Sou descendência de escravo  
-Tenho o meu corpo fechado  
-  
-Filho de Ogum não pode apanhar  
-  
-Eu sou guerreiro  
-Eu vim guerriar  
-Filho de Ogum não pode apanhar  
-  
-Eu sou guerreiro  
-Eu vim guerriar  
-Filho de Ogum não pode apanhar | Help me, God in heaven  
-Help me, God in heaven  
-  
-Old colleague  
-Help me our lady  
-I will play capoeira,  
-Jogo de dentro and jogo de fora  
-  
-I am Ogun's son  
-There is no day nor hour  
-Give me protection  
-In this game now  
-  
-If the game doesn't catch  
-You can't be knocked down  
-I am a slave descendant  
-I have my body closed  
-  
-Ogun's son can't be beaten  
-  
-I am warrior  
-I came to battle  
-Ogun's son can't be beaten  
-  
-I am warrior  
-I came to battle  
-Ogun's son can't be beaten |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Vale-me Deus do céu<br>
+Vale-me Deus do céu<br>
+Colega velho<br>
+Vale-me nossa senhora<br>
+Vou jogar a capoeira,<br>
+Jogo de dentro e de fora<br>
+<br>
+Sou filho de Ogum<br>
+Num tem dia e não tem hora<br>
+Que me dê protecção<br>
+Nesse jogo de agora<br>
+<br>
+Se o jogo não apanha<br>
+Nem se pode se derrubar<br>
+Sou descendência de escravo<br>
+Tenho o meu corpo fechado<br>
+<br>
+Filho de Ogum não pode apanhar<br>
+<br>
+Eu sou guerreiro<br>
+Eu vim guerriar<br>
+Filho de Ogum não pode apanhar<br>
+<br>
+Eu sou guerreiro<br>
+Eu vim guerriar<br>
+Filho de Ogum não pode apanhar</td>
+        <td>Help me, God in heaven<br>
+Help me, God in heaven<br>
+<br>
+Old colleague<br>
+Help me our lady<br>
+I will play capoeira,<br>
+Jogo de dentro and jogo de fora<br>
+<br>
+I am Ogun's son<br>
+There is no day nor hour<br>
+Give me protection<br>
+In this game now<br>
+<br>
+If the game doesn't catch<br>
+You can't be knocked down<br>
+I am a slave descendant<br>
+I have my body closed<br>
+<br>
+Ogun's son can't be beaten<br>
+<br>
+I am warrior<br>
+I came to battle<br>
+Ogun's son can't be beaten<br>
+<br>
+I am warrior<br>
+I came to battle<br>
+Ogun's son can't be beaten</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Mestre Liminha
-
 </figcaption>

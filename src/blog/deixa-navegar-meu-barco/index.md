@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Deixa Navegar Meu Barco"
 date: "2020-11-17"
@@ -8,60 +10,65 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Deixa navegar meu barco iôiô  
-Deixa o meu barco navegar  
-Navio oh navio  
-Navega nas ondas do mar  
-  
-**Deixa navegar meu barco iôiô  
-Deixa o meu barco navegar  
-Navio oh navio  
-Navega nas ondas do mar**  
-  
-Navega nas ondas do mar  
-**Navega nas ondas do mar**  
-  
-Navio que me leva ao passado  
-No tempo onde existia a escravidão  
-Me lembra de todos  
-Seus pensamentos  
-Dessa dor e sofrimento  
-Do negro meu irmão  
-Navega navega iôiô  
-**  
-Deixa navegar meu barco iôiô  
-Deixa o meu barco navegar  
-Navio oh navio  
-Navega nas ondas do mar** | Let my boat sail, iôiô  
-Let my boat sail  
-Ship oh ship  
-Sail the sea waves  
-  
-Let my boat sail, iôiô  
-Let my boat sail  
-Ship oh ship  
-Sail the sea waves  
-  
-Sail the sea waves  
-Sail the sea waves  
-  
-Ship that takes me to the past  
-To the time when slavery existed  
-Reminds me of everyone  
-Your thoughts  
-Of this pain and suffering  
-Of my black brothers  
-Sail, sail iôiô  
-  
-Let my boa sail, iôiô  
-Let my boat sail  
-Ship oh ship  
-Sail the sea waves |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Deixa navegar meu barco iôiô<br>
+        Deixa o meu barco navegar<br>
+        Navio oh navio<br>
+        Navega nas ondas do mar<br>
+        <br>
+        <strong>Deixa navegar meu barco iôiô<br>
+        Deixa o meu barco navegar<br>
+        Navio oh navio<br>
+        Navega nas ondas do mar</strong><br>
+        <br>
+        Navega nas ondas do mar<br>
+        <strong>Navega nas ondas do mar</strong><br>
+        <br>
+        Navio que me leva ao passado<br>
+        No tempo onde existia a escravidão<br>
+        Me lembra de todos<br>
+        Seus pensamentos<br>
+        Dessa dor e sofrimento<br>
+        Do negro meu irmão<br>
+        Navega navega iôiô<br>
+        <br>
+        <strong>Deixa navegar meu barco iôiô<br>
+        Deixa o meu barco navegar<br>
+        Navio oh navio<br>
+        Navega nas ondas do mar</strong></td>
+        <td>Let my boat sail, iôiô<br>
+        Let my boat sail<br>
+        Ship oh ship<br>
+        Sail the sea waves<br>
+        <br>
+        Let my boat sail, iôiô<br>
+        Let my boat sail<br>
+        Ship oh ship<br>
+        Sail the sea waves<br>
+        <br>
+        Sail the sea waves<br>
+        Sail the sea waves<br>
+        <br>
+        Ship that takes me to the past<br>
+        To the time when slavery existed<br>
+        Reminds me of everyone<br>
+        Your thoughts<br>
+        Of this pain and suffering<br>
+        Of my black brothers<br>
+        Sail, sail iôiô<br>
+        <br>
+        Let my boa sail, iôiô<br>
+        Let my boat sail<br>
+        Ship oh ship<br>
+        Sail the sea waves</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

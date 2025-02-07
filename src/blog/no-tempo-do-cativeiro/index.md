@@ -8,99 +8,106 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| No tempo do cativeiro  
-Quando o senhor me batia  
-Eu rezava pra Nossa Senhora  
-Como a pancada doía  
-  
-**Chorus  
-No tempo do cativeiro  
-Quando o senhor me batia  
-Eu rezava pra Nossa Senhora, ai meu Deus  
-Como a pancada doía**  
-  
-No tempo do cativeiro  
-Eu não posso nem me lembrar  
-O negão só trabalhava  
-Apanhava pra nada ganhar  
-  
-**No tempo do cativeiro  
-Quando o senhor me batia  
-Eu rezava pra Nossa Senhora, ai meu Deus  
-Como a pancada doía**  
-  
-Mamãe tá me chamando  
-Vovô mandou me chamar  
-No tempo do cativeiro  
-Capoeira eu quero jogar  
-  
-**No tempo do cativeiro  
-Quando o senhor me batia  
-Eu rezava pra Nossa Senhora, ai meu Deus  
-Como a pancada doía**  
-  
-A vovó tá me chamando  
-Vovó mandou me chamar  
-Essa roda sagrada o garoto  
-Capoeira eu quero jogar  
-  
-**No tempo do cativeiro  
-Quando o senhor me batia  
-Eu rezava pra Nossa Senhora, ai meu Deus  
-Como a pancada doía**  
-  
-Ie, ai meu bem  
-Como a pancada doía  
-  
-Ie, ai meu Deus  
-Como a pancada doía | In the time of captivity  
-When the lord would beat me  
-I prayed to Our Lady  
-How the blow hurt  
-  
-**Coro  
-In the time of captivity  
-When the lord would beat me  
-I prayed to Our Lady, oh my God  
-How the blow hurt**  
-  
-In the time of captivity  
-I can't even remember  
-The black man only worked  
-He was beaten in exchange for nothing  
-  
-**In the time of captivity  
-When the lord would beat me  
-I prayed to Our Lady, oh my God  
-How the blow hurt**  
-  
-Mom is calling me  
-Grandpa sent for me  
-In the time of captivity  
-Capoeira I want to play  
-  
-**In the time of captivity  
-When the lord would beat me  
-I prayed to Our Lady, oh my God  
-How the blow hurt**  
-  
-Grandma is calling me  
-Grandma sent for me  
-This sacred roda the boy  
-Capoeira I want to play  
-  
-**In the time of captivity  
-When the lord would beat me  
-I prayed to Our Lady, oh my God  
-How the blow hurt**  
-  
-Hey, baby  
-How the blow hurt  
-  
-Hey, oh my God  
-How the blow hurt |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>No tempo do cativeiro<br>
+Quando o senhor me batia<br>
+Eu rezava pra Nossa Senhora<br>
+Como a pancada doía<br>
+<br>
+<strong>Chorus<br>
+No tempo do cativeiro<br>
+Quando o senhor me batia<br>
+Eu rezava pra Nossa Senhora, ai meu Deus<br>
+Como a pancada doía</strong><br>
+<br>
+No tempo do cativeiro<br>
+Eu não posso nem me lembrar<br>
+O negão só trabalhava<br>
+Apanhava pra nada ganhar<br>
+<br>
+<strong>No tempo do cativeiro<br>
+Quando o senhor me batia<br>
+Eu rezava pra Nossa Senhora, ai meu Deus<br>
+Como a pancada doía</strong><br>
+<br>
+Mamãe tá me chamando<br>
+Vovô mandou me chamar<br>
+No tempo do cativeiro<br>
+Capoeira eu quero jogar<br>
+<br>
+<strong>No tempo do cativeiro<br>
+Quando o senhor me batia<br>
+Eu rezava pra Nossa Senhora, ai meu Deus<br>
+Como a pancada doía</strong><br>
+<br>
+A vovó tá me chamando<br>
+Vovó mandou me chamar<br>
+Essa roda sagrada o garoto<br>
+Capoeira eu quero jogar<br>
+<br>
+<strong>No tempo do cativeiro<br>
+Quando o senhor me batia<br>
+Eu rezava pra Nossa Senhora, ai meu Deus<br>
+Como a pancada doía</strong><br>
+<br>
+Ie, ai meu bem<br>
+Como a pancada doía<br>
+<br>
+Ie, ai meu Deus<br>
+Como a pancada doía</td>
+        <td>In the time of captivity<br>
+When the lord would beat me<br>
+I prayed to Our Lady<br>
+How the blow hurt<br>
+<br>
+<strong>Coro<br>
+In the time of captivity<br>
+When the lord would beat me<br>
+I prayed to Our Lady, oh my God<br>
+How the blow hurt</strong><br>
+<br>
+In the time of captivity<br>
+I can't even remember<br>
+The black man only worked<br>
+He was beaten in exchange for nothing<br>
+<br>
+<strong>In the time of captivity<br>
+When the lord would beat me<br>
+I prayed to Our Lady, oh my God<br>
+How the blow hurt</strong><br>
+<br>
+Mom is calling me<br>
+Grandpa sent for me<br>
+In the time of captivity<br>
+Capoeira I want to play<br>
+<br>
+<strong>In the time of captivity<br>
+When the lord would beat me<br>
+I prayed to Our Lady, oh my God<br>
+How the blow hurt</strong><br>
+<br>
+Grandma is calling me<br>
+Grandma sent for me<br>
+This sacred roda the boy<br>
+Capoeira I want to play<br>
+<br>
+<strong>In the time of captivity<br>
+When the lord would beat me<br>
+I prayed to Our Lady, oh my God<br>
+How the blow hurt</strong><br>
+<br>
+Hey, baby<br>
+How the blow hurt<br>
+<br>
+Hey, oh my God<br>
+How the blow hurt</td>
+    </tr>
+</table>
 
 <figcaption>
 

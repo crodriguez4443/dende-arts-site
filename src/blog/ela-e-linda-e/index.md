@@ -1,3 +1,5 @@
+Here's the formatted markdown document according to the specifications:
+
 ---
 title: "Ela é Linda, é"
 date: "2020-12-12"
@@ -8,78 +10,83 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Ela é linda é  
-Ela linda a capoeira  
-  
-**Ela é linda é  
-Ela linda a capoeira**  
-  
-Reflita pro mar e ver se tá bom assim  
-Paro pra pensar e penso um pouco em mim  
-Mulher é que nem ela me levou no seu gingado  
-Amarrou a minha corda no meu abadá surrado  
-  
-**Ela é linda é  
-Ela linda a capoeira**  
-  
-Capoeiragem  
-À Bimba essa homenagem  
-Capoeira é luta e dança  
-Vem do batuque com paz  
-  
-Capoeiragem  
-À Bimba essa homenagem  
-Quem não sai de academia  
-Não conhece a malandragem  
-  
-**Ela é linda é  
-Ela linda a capoeira**  
-  
-E o sol quando nasce passa o dia a brilhar  
-Quando a noite cai a lua vem iluminar  
-Cuidado moço, é luta de malícia moço  
-Não vá se confundir com a expressão do meu rosto  
-  
-**Ela é linda é  
-Ela linda a capoeira** | It's beautiful, it is  
-Capoeira is beautiful  
-  
-It's beautiful, it is  
-Capoeira is beautiful  
-  
-Reflect to the sea and see if it’s that good  
-I stop to think and think about myself a little  
-Woman is like she took me in her swing  
-Tied my rope to my shabby abadá  
-  
-It's beautiful, it is  
-Capoeira is beautiful  
-  
-Capoeira  
-Á Bimba this tribute  
-Capoeira is fight and dance  
-Comes from drumming with peace  
-  
-Capoeira  
-Á Bimba this tribute  
-Those who don't leave the gym  
-Don't learn malandragem  
-  
-It's beautiful, it is  
-Capoeira is beautiful  
-  
-And when the sun rises, it spends the day shining  
-When night falls the moon comes to shine  
-Careful boy, it's a fight of malice, boy  
-Don't get confused with the expression on my face  
-  
-It's beautiful, it is  
-Capoeira is beautiful |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Ela é linda é<br>
+Ela linda a capoeira<br>
+<br>
+<strong>Ela é linda é<br>
+Ela linda a capoeira</strong><br>
+<br>
+Reflita pro mar e ver se tá bom assim<br>
+Paro pra pensar e penso um pouco em mim<br>
+Mulher é que nem ela me levou no seu gingado<br>
+Amarrou a minha corda no meu abadá surrado<br>
+<br>
+<strong>Ela é linda é<br>
+Ela linda a capoeira</strong><br>
+<br>
+Capoeiragem<br>
+À Bimba essa homenagem<br>
+Capoeira é luta e dança<br>
+Vem do batuque com paz<br>
+<br>
+Capoeiragem<br>
+À Bimba essa homenagem<br>
+Quem não sai de academia<br>
+Não conhece a malandragem<br>
+<br>
+<strong>Ela é linda é<br>
+Ela linda a capoeira</strong><br>
+<br>
+E o sol quando nasce passa o dia a brilhar<br>
+Quando a noite cai a lua vem iluminar<br>
+Cuidado moço, é luta de malícia moço<br>
+Não vá se confundir com a expressão do meu rosto<br>
+<br>
+<strong>Ela é linda é<br>
+Ela linda a capoeira</strong></td>
+        <td>It's beautiful, it is<br>
+Capoeira is beautiful<br>
+<br>
+It's beautiful, it is<br>
+Capoeira is beautiful<br>
+<br>
+Reflect to the sea and see if it's that good<br>
+I stop to think and think about myself a little<br>
+Woman is like she took me in her swing<br>
+Tied my rope to my shabby abadá<br>
+<br>
+It's beautiful, it is<br>
+Capoeira is beautiful<br>
+<br>
+Capoeira<br>
+Á Bimba this tribute<br>
+Capoeira is fight and dance<br>
+Comes from drumming with peace<br>
+<br>
+Capoeira<br>
+Á Bimba this tribute<br>
+Those who don't leave the gym<br>
+Don't learn malandragem<br>
+<br>
+It's beautiful, it is<br>
+Capoeira is beautiful<br>
+<br>
+And when the sun rises, it spends the day shining<br>
+When night falls the moon comes to shine<br>
+Careful boy, it's a fight of malice, boy<br>
+Don't get confused with the expression on my face<br>
+<br>
+It's beautiful, it is<br>
+Capoeira is beautiful</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Mestre Capu
-
 </figcaption>

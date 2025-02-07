@@ -9,45 +9,52 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Avisa meu mano  
-avisa meu mano  
-avisa meu mano  
-Capoeira mandou me chamar  
-  
-**Avisa meu mano  
-avisa meu mano  
-avisa meu mano  
-Capoeira mandou me chamar**  
-  
-Capoeira é luta nossa  
-Da era colonial  
-é nasceu foi na Bahia  
-Angola e Regional  
-  
-**Avisa meu mano  
-avisa meu mano  
-avisa meu mano  
-Capoeira mandou me chamar** | Warn my brother  
-warn my brother  
-warn my brother  
-Capoeira has called me  
-  
-Warn my brother  
-warn my brother  
-warn my brother  
-Capoeira has called me  
-  
-Capoeira is our fight  
-From colonial time  
-It was born in Bahia  
-Angola and Regional  
-  
-Warn my brother  
-warn my brother  
-warn my brother  
-Capoeira has called me |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Avisa meu mano<br>
+avisa meu mano<br>
+avisa meu mano<br>
+Capoeira mandou me chamar<br>
+<br>
+<strong>Avisa meu mano<br>
+avisa meu mano<br>
+avisa meu mano<br>
+Capoeira mandou me chamar</strong><br>
+<br>
+Capoeira é luta nossa<br>
+Da era colonial<br>
+é nasceu foi na Bahia<br>
+Angola e Regional<br>
+<br>
+<strong>Avisa meu mano<br>
+avisa meu mano<br>
+avisa meu mano<br>
+Capoeira mandou me chamar</strong></td>
+        <td>Warn my brother<br>
+warn my brother<br>
+warn my brother<br>
+Capoeira has called me<br>
+<br>
+Warn my brother<br>
+warn my brother<br>
+warn my brother<br>
+Capoeira has called me<br>
+<br>
+Capoeira is our fight<br>
+From colonial time<br>
+It was born in Bahia<br>
+Angola and Regional<br>
+<br>
+Warn my brother<br>
+warn my brother<br>
+warn my brother<br>
+Capoeira has called me</td>
+    </tr>
+</table>
 
 <figcaption>
 

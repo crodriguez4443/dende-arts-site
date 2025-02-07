@@ -9,28 +9,37 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| É, é, é, tum tum tum  
-Olhá a pisada de Lampião  
-**É, é, é, tum tum tum**  
-Olhá a pisada de Lampião  
-**É, é, é, tum tum tum**  
-Lampião deseu a serra  
-**É, é, é, tum tum tum**  
-Amanhá e dia santo  
-**É, é, é, tum tum tum** | É, é, é, tum tum tum  
-look at Lampião's footsteps  
-É, é, é, tum tum tum  
-look at Lampião's footsteps  
-É, é, é, tum tum tum  
-Lampião went down the mountain  
-É, é, é, tum tum tum  
-Tomorrow and holy day  
-É, é, é, tum tum tum |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            É, é, é, tum tum tum<br>
+            Olhá a pisada de Lampião<br>
+            <strong>É, é, é, tum tum tum</strong><br>
+            Olhá a pisada de Lampião<br>
+            <strong>É, é, é, tum tum tum</strong><br>
+            Lampião deseu a serra<br>
+            <strong>É, é, é, tum tum tum</strong><br>
+            Amanhá e dia santo<br>
+            <strong>É, é, é, tum tum tum</strong>
+        </td>
+        <td>
+            É, é, é, tum tum tum<br>
+            look at Lampião's footsteps<br>
+            É, é, é, tum tum tum<br>
+            look at Lampião's footsteps<br>
+            É, é, é, tum tum tum<br>
+            Lampião went down the mountain<br>
+            É, é, é, tum tum tum<br>
+            Tomorrow and holy day<br>
+            É, é, é, tum tum tum
+        </td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: unknown
-
 </figcaption>

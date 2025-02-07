@@ -8,105 +8,112 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Quem nunca caiu  
-Na roda de capoeira  
-Não sabe o valor da queda  
-Pensa só que é brincadeira  
-  
-Eu já caí  
-Mas agora estou de pé  
-Pronto pra cair de novo  
-Pro que der e o que vier  
-  
-**Quem nunca caiu  
-Na roda de capoeira  
-Não sabe o valor da queda  
-Pensa só que é brincadeira  
-  
-Quem nunca caiu  
-Na roda de capoeira  
-Não sabe o valor da queda  
-Pensa só que é brincadeira**  
-  
-Dei uma armada  
-E depois uma rasteira  
-Moleque saltou de banda  
-Ele é bom de capoeira  
-  
-**Quem nunca caiu  
-Na roda de capoeira  
-Não sabe o valor da queda  
-Pensa só que é brincadeira  
-  
-Quem nunca caiu  
-Na roda de capoeira  
-Não sabe o valor da queda  
-Pensa só que é brincadeira**  
-  
-Que vida engraçada  
-Cheia de desilusão  
-Hoje ele joga muito  
-Amanhã está no chão  
-  
-**Quem nunca caiu  
-Na roda de capoeira  
-Não sabe o valor da queda  
-Pensa só que é brincadeira  
-  
-Quem nunca caiu  
-Na roda de capoeira  
-Não sabe o valor da queda  
-Pensa só que é brincadeira** | Those who never fell  
-In the capoeira roda  
-Don't know the value of the fall  
-Just think it's a joke  
-  
-I already fell  
-But now I'm standing  
-Ready to fall again  
-Come what may  
-  
-Those who never fell  
-In the capoeira roda  
-Don't know the value of the fall  
-Just think it's a joke  
-  
-Those who never fell  
-In the capoeira roda  
-Don't know the value of the fall  
-Just think it's a joke  
-  
-I gave an armada  
-And then a rasteira  
-Kid jumped out with a banda  
-He's good at capoeira  
-  
-Those who never fell  
-In the capoeira roda  
-Don't know the value of the fall  
-Just think it's a joke  
-  
-Those who never fell  
-In the capoeira roda  
-Don't know the value of the fall  
-Just think it's a joke  
-  
-What a funny life  
-Full of disappointment  
-Today he plays a lot  
-Tomorrow he's on the floor  
-  
-Those who never fell  
-In the capoeira roda  
-Don't know the value of the fall  
-Just think it's a joke  
-  
-Those who never fell  
-In the capoeira roda  
-Don't know the value of the fall  
-Just think it's a joke |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Quem nunca caiu<br>
+Na roda de capoeira<br>
+Não sabe o valor da queda<br>
+Pensa só que é brincadeira<br>
+<br>
+Eu já caí<br>
+Mas agora estou de pé<br>
+Pronto pra cair de novo<br>
+Pro que der e o que vier<br>
+<br>
+<strong>Quem nunca caiu<br>
+Na roda de capoeira<br>
+Não sabe o valor da queda<br>
+Pensa só que é brincadeira<br>
+<br>
+Quem nunca caiu<br>
+Na roda de capoeira<br>
+Não sabe o valor da queda<br>
+Pensa só que é brincadeira</strong><br>
+<br>
+Dei uma armada<br>
+E depois uma rasteira<br>
+Moleque saltou de banda<br>
+Ele é bom de capoeira<br>
+<br>
+<strong>Quem nunca caiu<br>
+Na roda de capoeira<br>
+Não sabe o valor da queda<br>
+Pensa só que é brincadeira<br>
+<br>
+Quem nunca caiu<br>
+Na roda de capoeira<br>
+Não sabe o valor da queda<br>
+Pensa só que é brincadeira</strong><br>
+<br>
+Que vida engraçada<br>
+Cheia de desilusão<br>
+Hoje ele joga muito<br>
+Amanhã está no chão<br>
+<br>
+<strong>Quem nunca caiu<br>
+Na roda de capoeira<br>
+Não sabe o valor da queda<br>
+Pensa só que é brincadeira<br>
+<br>
+Quem nunca caiu<br>
+Na roda de capoeira<br>
+Não sabe o valor da queda<br>
+Pensa só que é brincadeira</strong></td>
+        <td>Those who never fell<br>
+In the capoeira roda<br>
+Don't know the value of the fall<br>
+Just think it's a joke<br>
+<br>
+I already fell<br>
+But now I'm standing<br>
+Ready to fall again<br>
+Come what may<br>
+<br>
+Those who never fell<br>
+In the capoeira roda<br>
+Don't know the value of the fall<br>
+Just think it's a joke<br>
+<br>
+Those who never fell<br>
+In the capoeira roda<br>
+Don't know the value of the fall<br>
+Just think it's a joke<br>
+<br>
+I gave an armada<br>
+And then a rasteira<br>
+Kid jumped out with a banda<br>
+He's good at capoeira<br>
+<br>
+Those who never fell<br>
+In the capoeira roda<br>
+Don't know the value of the fall<br>
+Just think it's a joke<br>
+<br>
+Those who never fell<br>
+In the capoeira roda<br>
+Don't know the value of the fall<br>
+Just think it's a joke<br>
+<br>
+What a funny life<br>
+Full of disappointment<br>
+Today he plays a lot<br>
+Tomorrow he's on the floor<br>
+<br>
+Those who never fell<br>
+In the capoeira roda<br>
+Don't know the value of the fall<br>
+Just think it's a joke<br>
+<br>
+Those who never fell<br>
+In the capoeira roda<br>
+Don't know the value of the fall<br>
+Just think it's a joke</td>
+    </tr>
+</table>
 
 <figcaption>
 

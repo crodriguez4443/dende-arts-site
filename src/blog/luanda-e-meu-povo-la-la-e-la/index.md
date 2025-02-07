@@ -1,3 +1,5 @@
+Here's the formatted markdown document:
+
 ---
 title: "Luanda Ê Meu Povo (La La Ê La)"
 date: "2021-01-24"
@@ -8,139 +10,146 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Luanda ê, meu povo  
-Luanda em Pará  
-Teresa samba deitada  
-Marina samba de pé  
-E lá no cais da Bahia  
-Não tem lelê, não tem lá  
-Oh, não tem lelê nem lalá  
-  
-Oh, la ê la de la  
-**Oh lê lê**  
-  
-Oh, la la ê la de la  
-**Oh lê lê**  
-  
-Oh, la ê la de la  
-**Oh lê lê**  
-  
-Oh, la ê la de la  
-**Oh lê lê**  
-  
-Luanda ê, meu boi  
-Luanda em Mará  
-Teresa samba deitada  
-Oh Marina samba de pé  
-E lá no cais da Bahia  
-Não tem lelê, não tem nada  
-Oh, não tem lelê nem lalá  
-  
-Oh, la ê la de la  
-**Oh lê lê**  
-  
-Oh, la la ê la de la  
-**Oh le lê**  
-  
-Oh, la ê la ê la  
-**Oh lê lê**  
-  
-Oh la la ê, la la la ê la la ê la  
-Oh la la ê, la la la ê la la ê la  
-  
-Oh, laê  
-**La la ê la**  
-  
-Oh, laê  
-**La la ê la**  
-  
-Oh, la la ê  
-**La la ê la**  
-  
-Oh, laê  
-**La la ê la**  
-  
-Oh, laê  
-**La la ê la**  
-  
-Oh, laê  
-**La la ê la**  
-  
-Oh la la ê, la la la ê la la ê la  
-Oh la la ê, la la la ê la la ê la  
-  
-Oh, laê  
-**La la ê la**  
-  
-Oh, laê  
-**La la ê la** | Luanda, my people  
-Luanda in Pará  
-Teresa sambas lying down  
-Marina sambas standing  
-And there on the pier in Bahia  
-There's no lele, there's none there  
-Oh, there’s no lele nor lala  
-  
-Oh, la ê la de la  
-Oh lê lê  
-  
-Oh, la la ê la de la  
-Oh lê lê  
-  
-Oh, la ê la de la  
-Oh lê lê  
-  
-Oh, la ê la de la  
-Oh lê lê  
-  
-Luanda hey, my ox  
-Luanda in Mará  
-Teresa sambas lying down  
-Marina sambas standing  
-And there on the pier in Bahia  
-There's no lele, there's nothing  
-Oh, there’s no lele nor lala  
-  
-Oh, la ê la de la  
-Oh lê lê  
-  
-Oh, la la ê la de la  
-Oh le lê  
-  
-Oh, la ê la ê la  
-Oh lê lê  
-  
-Oh la la ê, la la la ê la la ê la  
-Oh la la ê, la la la ê la la ê la  
-  
-Oh, laê  
-La la ê la  
-  
-Oh, laê  
-La la ê la  
-  
-Oh, la la ê  
-La la ê la  
-  
-Oh, laê  
-La la ê la  
-  
-Oh, laê  
-La la ê la  
-  
-Oh, laê  
-La la ê la  
-  
-Oh la la ê, la la la ê la la ê la  
-Oh la la ê, la la la ê la la ê la  
-  
-Oh, laê  
-La la ê la  
-  
-Oh, laê  
-La la ê la |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Luanda ê, meu povo<br>
+Luanda em Pará<br>
+Teresa samba deitada<br>
+Marina samba de pé<br>
+E lá no cais da Bahia<br>
+Não tem lelê, não tem lá<br>
+Oh, não tem lelê nem lalá<br>
+<br>
+Oh, la ê la de la<br>
+<strong>Oh lê lê</strong><br>
+<br>
+Oh, la la ê la de la<br>
+<strong>Oh lê lê</strong><br>
+<br>
+Oh, la ê la de la<br>
+<strong>Oh lê lê</strong><br>
+<br>
+Oh, la ê la de la<br>
+<strong>Oh lê lê</strong><br>
+<br>
+Luanda ê, meu boi<br>
+Luanda em Mará<br>
+Teresa samba deitada<br>
+Oh Marina samba de pé<br>
+E lá no cais da Bahia<br>
+Não tem lelê, não tem nada<br>
+Oh, não tem lelê nem lalá<br>
+<br>
+Oh, la ê la de la<br>
+<strong>Oh lê lê</strong><br>
+<br>
+Oh, la la ê la de la<br>
+<strong>Oh le lê</strong><br>
+<br>
+Oh, la ê la ê la<br>
+<strong>Oh lê lê</strong><br>
+<br>
+Oh la la ê, la la la ê la la ê la<br>
+Oh la la ê, la la la ê la la ê la<br>
+<br>
+Oh, laê<br>
+<strong>La la ê la</strong><br>
+<br>
+Oh, laê<br>
+<strong>La la ê la</strong><br>
+<br>
+Oh, la la ê<br>
+<strong>La la ê la</strong><br>
+<br>
+Oh, laê<br>
+<strong>La la ê la</strong><br>
+<br>
+Oh, laê<br>
+<strong>La la ê la</strong><br>
+<br>
+Oh, laê<br>
+<strong>La la ê la</strong><br>
+<br>
+Oh la la ê, la la la ê la la ê la<br>
+Oh la la ê, la la la ê la la ê la<br>
+<br>
+Oh, laê<br>
+<strong>La la ê la</strong><br>
+<br>
+Oh, laê<br>
+<strong>La la ê la</strong></td>
+        <td>Luanda, my people<br>
+Luanda in Pará<br>
+Teresa sambas lying down<br>
+Marina sambas standing<br>
+And there on the pier in Bahia<br>
+There's no lele, there's none there<br>
+Oh, there's no lele nor lala<br>
+<br>
+Oh, la ê la de la<br>
+Oh lê lê<br>
+<br>
+Oh, la la ê la de la<br>
+Oh lê lê<br>
+<br>
+Oh, la ê la de la<br>
+Oh lê lê<br>
+<br>
+Oh, la ê la de la<br>
+Oh lê lê<br>
+<br>
+Luanda hey, my ox<br>
+Luanda in Mará<br>
+Teresa sambas lying down<br>
+Marina sambas standing<br>
+And there on the pier in Bahia<br>
+There's no lele, there's nothing<br>
+Oh, there's no lele nor lala<br>
+<br>
+Oh, la ê la de la<br>
+Oh lê lê<br>
+<br>
+Oh, la la ê la de la<br>
+Oh le lê<br>
+<br>
+Oh, la ê la ê la<br>
+Oh lê lê<br>
+<br>
+Oh la la ê, la la la ê la la ê la<br>
+Oh la la ê, la la la ê la la ê la<br>
+<br>
+Oh, laê<br>
+La la ê la<br>
+<br>
+Oh, laê<br>
+La la ê la<br>
+<br>
+Oh, la la ê<br>
+La la ê la<br>
+<br>
+Oh, laê<br>
+La la ê la<br>
+<br>
+Oh, laê<br>
+La la ê la<br>
+<br>
+Oh, laê<br>
+La la ê la<br>
+<br>
+Oh la la ê, la la la ê la la ê la<br>
+Oh la la ê, la la la ê la la ê la<br>
+<br>
+Oh, laê<br>
+La la ê la<br>
+<br>
+Oh, laê<br>
+La la ê la</td>
+    </tr>
+</table>
 
 <figcaption>
 

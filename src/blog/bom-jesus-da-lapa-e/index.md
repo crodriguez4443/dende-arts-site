@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Bom Jesus da Lapa Ê"
 date: "2023-02-10"
@@ -9,81 +11,88 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Bom Jesus da Lapa ê  
-Bom Jesus da Lapa  
-  
-**Bom Jesus da Lapa ê  
-Bom Jesus da Lapa**  
-  
-Eu nunca fiz inimigo  
-Sei aonde vou pisar  
-Eu só peço proteção  
-Pra maldade afastar  
-  
-**Bom Jesus da Lapa ê  
-Bom Jesus da Lapa**  
-  
-Eu pedi você ajuda  
-Para nada me faltar  
-Pois agora eu lhe agradeço  
-Bom Jesus da Lapa  
-  
-**Bom Jesus da Lapa ê  
-Bom Jesus da Lapa**  
-  
-Quem manda no mundo é Deus  
-E ninguém pode negar  
-Eu não acredito em Santo  
-Não carrego patuá  
-  
-**Bom Jesus da Lapa ê  
-Bom Jesus da Lapa**  
-  
-Abençõe o meu caminho  
-Por onde eu caminhar  
-Ilumine a escuridão  
-Pra eu sempre enxergar  
-  
-**Bom Jesus da Lapa ê  
-Bom Jesus da Lapa** | Good Jesus from Lapa, ê  
-Bom Jesus from Lapa  
-  
-Good Jesus from Lapa, ê  
-Bom Jesus from Lapa  
-  
-I never made an enemy  
-I know where I'm going  
-I only ask for protection  
-To push away evil  
-  
-Good Jesus from Lapa, ê  
-Bom Jesus from Lapa  
-  
-I asked you for help  
-I lack nothing  
-Well now I thank you  
-Bom Jesus da Lapa  
-  
-Good Jesus from Lapa, ê  
-Bom Jesus from Lapa  
-  
-Who rules the world is God  
-And no one can deny  
-I don't believe in Saint  
-I don't carry patuá  
-  
-Good Jesus from Lapa, ê  
-Bom Jesus from Lapa  
-  
-Bless my way  
-where I walk  
-light up the dark  
-For me to always see  
-  
-Good Jesus from Lapa, ê  
-Bom Jesus from Lapa |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Bom Jesus da Lapa ê<br>
+Bom Jesus da Lapa<br>
+<br>
+<strong>Bom Jesus da Lapa ê<br>
+Bom Jesus da Lapa</strong><br>
+<br>
+Eu nunca fiz inimigo<br>
+Sei aonde vou pisar<br>
+Eu só peço proteção<br>
+Pra maldade afastar<br>
+<br>
+<strong>Bom Jesus da Lapa ê<br>
+Bom Jesus da Lapa</strong><br>
+<br>
+Eu pedi você ajuda<br>
+Para nada me faltar<br>
+Pois agora eu lhe agradeço<br>
+Bom Jesus da Lapa<br>
+<br>
+<strong>Bom Jesus da Lapa ê<br>
+Bom Jesus da Lapa</strong><br>
+<br>
+Quem manda no mundo é Deus<br>
+E ninguém pode negar<br>
+Eu não acredito em Santo<br>
+Não carrego patuá<br>
+<br>
+<strong>Bom Jesus da Lapa ê<br>
+Bom Jesus da Lapa</strong><br>
+<br>
+Abençõe o meu caminho<br>
+Por onde eu caminhar<br>
+Ilumine a escuridão<br>
+Pra eu sempre enxergar<br>
+<br>
+<strong>Bom Jesus da Lapa ê<br>
+Bom Jesus da Lapa</strong></td>
+        <td>Good Jesus from Lapa, ê<br>
+Bom Jesus from Lapa<br>
+<br>
+Good Jesus from Lapa, ê<br>
+Bom Jesus from Lapa<br>
+<br>
+I never made an enemy<br>
+I know where I'm going<br>
+I only ask for protection<br>
+To push away evil<br>
+<br>
+Good Jesus from Lapa, ê<br>
+Bom Jesus from Lapa<br>
+<br>
+I asked you for help<br>
+I lack nothing<br>
+Well now I thank you<br>
+Bom Jesus da Lapa<br>
+<br>
+Good Jesus from Lapa, ê<br>
+Bom Jesus from Lapa<br>
+<br>
+Who rules the world is God<br>
+And no one can deny<br>
+I don't believe in Saint<br>
+I don't carry patuá<br>
+<br>
+Good Jesus from Lapa, ê<br>
+Bom Jesus from Lapa<br>
+<br>
+Bless my way<br>
+where I walk<br>
+light up the dark<br>
+For me to always see<br>
+<br>
+Good Jesus from Lapa, ê<br>
+Bom Jesus from Lapa</td>
+    </tr>
+</table>
 
 <figcaption>
 

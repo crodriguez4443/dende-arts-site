@@ -1,3 +1,5 @@
+Here's the formatted markdown document according to the specifications:
+
 ---
 title: "Povo de Aruanda"
 date: "2021-02-28"
@@ -8,119 +10,126 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Povo de Aruanda  
-Povo de Aruanda  
-Berimbau me dê liçença  
-A nossa roda vai começar  
-Meu berimbau me dê liçença  
-A nossa roda vai começar  
-  
-**Povo de Aruanda  
-Povo de Aruanda  
-Berimbau me dê liçença  
-A roda vai começar  
-Meu berimbau me dê liçença  
-A roda vai começar**  
-  
-Capoeira é nossa vida  
-Atrás ela vamos caminhar  
-Capoeira é nossa vida  
-Atrás ela vamos caminhar  
-Nossa Senhora me ajuda  
-No lugares onde eu passar  
-Nossa Senhora me ajuda  
-A nossa roda vai começar  
-**  
-Povo de Aruanda  
-Povo de Aruanda  
-Berimbau me dê liçença  
-A roda vai começar  
-Meu berimbau me dê liçença  
-A roda vai começar**  
-  
-Tambor sagrado, o nosso tambor é abençoado  
-Tambor sagrado, o nosso tambor é abençoado  
-Traz a força e a magia pra nossa roda começar  
-Traz o povo de Angola, Moçambique e Guiné  
-Deixa liberdade lá nas terras de Aruanda  
-Aruanda  
-  
-**Povo de Aruanda  
-Povo de Aruanda  
-Berimbau me dê liçença  
-A roda vai começar  
-Meu berimbau me dê liçença  
-A roda vai começar**  
-  
-Meus camaradas mas não vai chorar agora  
-Meus camaradas mas não vai chorar agora  
-Tô tocando berimbau pra roda jogar sem precisar  
-Traz a forca e a magia pra na nossa roda vadiar  
-Aruanda  
-  
-**Povo de Aruanda  
-Povo de Aruanda  
-Berimbau me dê liçença  
-A roda vai começar  
-Meu berimbau me dê liçença  
-A roda vai começar** | People of Aruanda  
-People of Aruanda  
-Berimbau give me permission  
-Our roda will start  
-My berimbau give me permission  
-Our roda will start  
-  
-People of Aruanda  
-People of Aruanda  
-Berimbau give me permission  
-The roda will start  
-My berimbau give me permission  
-The roda will start  
-  
-Capoeira is our life  
-Behind it we will walk  
-Capoeira is our life  
-Behind it we will walk  
-Our Lady help me  
-In the places where I pass  
-Our Lady help me  
-Our roda will start  
-  
-People of Aruanda  
-People of Aruanda  
-Berimbau give me permission  
-The roda will start  
-My berimbau give me permission  
-The roda will start  
-  
-Sacred drum, our drum is blessed  
-Sacred drum, our drum is blessed  
-Brings strength and magic to start our roda  
-It brings the people of Angola, Mozambique and Guinea  
-Leave freedom there in the lands of Aruanda  
-Aruanda  
-  
-People of Aruanda  
-People of Aruanda  
-Berimbau give me permission  
-The roda will start  
-My berimbau give me permission  
-The roda will start  
-  
-But don't cry now my comrades  
-But don't cry now my comrades  
-I'm playing berimbau so as to play without needing  
-Bring the strength and magic to play in our roda  
-Aruanda  
-  
-People of Aruanda  
-People of Aruanda  
-Berimbau give me permission  
-The roda will start  
-My berimbau give me permission  
-The roda will start |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Povo de Aruanda<br>
+Povo de Aruanda<br>
+Berimbau me dê liçença<br>
+A nossa roda vai começar<br>
+Meu berimbau me dê liçença<br>
+A nossa roda vai começar<br>
+<br>
+<strong>Povo de Aruanda<br>
+Povo de Aruanda<br>
+Berimbau me dê liçença<br>
+A roda vai começar<br>
+Meu berimbau me dê liçença<br>
+A roda vai começar</strong><br>
+<br>
+Capoeira é nossa vida<br>
+Atrás ela vamos caminhar<br>
+Capoeira é nossa vida<br>
+Atrás ela vamos caminhar<br>
+Nossa Senhora me ajuda<br>
+No lugares onde eu passar<br>
+Nossa Senhora me ajuda<br>
+A nossa roda vai começar<br>
+<br>
+<strong>Povo de Aruanda<br>
+Povo de Aruanda<br>
+Berimbau me dê liçença<br>
+A roda vai começar<br>
+Meu berimbau me dê liçença<br>
+A roda vai começar</strong><br>
+<br>
+Tambor sagrado, o nosso tambor é abençoado<br>
+Tambor sagrado, o nosso tambor é abençoado<br>
+Traz a força e a magia pra nossa roda começar<br>
+Traz o povo de Angola, Moçambique e Guiné<br>
+Deixa liberdade lá nas terras de Aruanda<br>
+Aruanda<br>
+<br>
+<strong>Povo de Aruanda<br>
+Povo de Aruanda<br>
+Berimbau me dê liçença<br>
+A roda vai começar<br>
+Meu berimbau me dê liçença<br>
+A roda vai começar</strong><br>
+<br>
+Meus camaradas mas não vai chorar agora<br>
+Meus camaradas mas não vai chorar agora<br>
+Tô tocando berimbau pra roda jogar sem precisar<br>
+Traz a forca e a magia pra na nossa roda vadiar<br>
+Aruanda<br>
+<br>
+<strong>Povo de Aruanda<br>
+Povo de Aruanda<br>
+Berimbau me dê liçença<br>
+A roda vai começar<br>
+Meu berimbau me dê liçença<br>
+A roda vai começar</strong></td>
+        <td>People of Aruanda<br>
+People of Aruanda<br>
+Berimbau give me permission<br>
+Our roda will start<br>
+My berimbau give me permission<br>
+Our roda will start<br>
+<br>
+People of Aruanda<br>
+People of Aruanda<br>
+Berimbau give me permission<br>
+The roda will start<br>
+My berimbau give me permission<br>
+The roda will start<br>
+<br>
+Capoeira is our life<br>
+Behind it we will walk<br>
+Capoeira is our life<br>
+Behind it we will walk<br>
+Our Lady help me<br>
+In the places where I pass<br>
+Our Lady help me<br>
+Our roda will start<br>
+<br>
+People of Aruanda<br>
+People of Aruanda<br>
+Berimbau give me permission<br>
+The roda will start<br>
+My berimbau give me permission<br>
+The roda will start<br>
+<br>
+Sacred drum, our drum is blessed<br>
+Sacred drum, our drum is blessed<br>
+Brings strength and magic to start our roda<br>
+It brings the people of Angola, Mozambique and Guinea<br>
+Leave freedom there in the lands of Aruanda<br>
+Aruanda<br>
+<br>
+People of Aruanda<br>
+People of Aruanda<br>
+Berimbau give me permission<br>
+The roda will start<br>
+My berimbau give me permission<br>
+The roda will start<br>
+<br>
+But don't cry now my comrades<br>
+But don't cry now my comrades<br>
+I'm playing berimbau so as to play without needing<br>
+Bring the strength and magic to play in our roda<br>
+Aruanda<br>
+<br>
+People of Aruanda<br>
+People of Aruanda<br>
+Berimbau give me permission<br>
+The roda will start<br>
+My berimbau give me permission<br>
+The roda will start</td>
+    </tr>
+</table>
 
 <figcaption>
 

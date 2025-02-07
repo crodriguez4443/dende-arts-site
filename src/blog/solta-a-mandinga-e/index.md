@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Solta a Mandinga Ê"
 date: "2021-05-23"
@@ -8,70 +10,79 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Solta a mandinga ê  
-Solta a mandinga  
-Solta a mandinga ê capoeira  
-Solta a mandinga  
-**  
-Solta a mandinga ê  
-Solta a mandinga  
-Solta a mandinga ê capoeira  
-Solta a mandinga**  
-  
-Se voçe năo tem mandinga  
-Então não sabe jogar  
-É preciso ter malícia  
-É preciso improvisar  
-**  
-Solta a mandinga ê  
-Solta a mandinga  
-Solta a mandinga ê capoeira  
-Solta a mandinga**  
-  
-Brincar leve, jogar solto  
-Ou também saber entrar  
-Enganar o jogo do outro  
-E saber movimentar  
-  
-**Solta a mandinga ê  
-Solta a mandinga  
-Solta a mandinga ê capoeira  
-Solta a mandinga** | Let your mandinga loose ê  
-Let your mandinga loose  
-Let your mandinga loose ê capoeira  
-Let your mandinga loose  
-  
-Let your mandinga loose ê  
-Let your mandinga loose  
-Let your mandinga loose ê capoeira  
-Let your mandinga loose  
-  
-If you don't have mandinga  
-Then you don't know how to play  
-You must have malice  
-You need to improvise  
-  
-Let your mandinga loose ê  
-Let your mandinga loose  
-Let your mandinga loose ê capoeira  
-Let your mandinga loose  
-  
-Play lightly, play loose  
-Or also know how to enter  
-Deceive each other's game  
-And know how to move  
-  
-Let your mandinga loose ê  
-Let your mandinga loose  
-Let your mandinga loose ê capoeira  
-Let your mandinga loose |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Solta a mandinga ê<br>
+            Solta a mandinga<br>
+            Solta a mandinga ê capoeira<br>
+            Solta a mandinga<br>
+            <strong><br>
+            Solta a mandinga ê<br>
+            Solta a mandinga<br>
+            Solta a mandinga ê capoeira<br>
+            Solta a mandinga</strong><br>
+            <br>
+            Se voçe năo tem mandinga<br>
+            Então não sabe jogar<br>
+            É preciso ter malícia<br>
+            É preciso improvisar<br>
+            <strong><br>
+            Solta a mandinga ê<br>
+            Solta a mandinga<br>
+            Solta a mandinga ê capoeira<br>
+            Solta a mandinga</strong><br>
+            <br>
+            Brincar leve, jogar solto<br>
+            Ou também saber entrar<br>
+            Enganar o jogo do outro<br>
+            E saber movimentar<br>
+            <br>
+            <strong>Solta a mandinga ê<br>
+            Solta a mandinga<br>
+            Solta a mandinga ê capoeira<br>
+            Solta a mandinga</strong>
+        </td>
+        <td>
+            Let your mandinga loose ê<br>
+            Let your mandinga loose<br>
+            Let your mandinga loose ê capoeira<br>
+            Let your mandinga loose<br>
+            <br>
+            Let your mandinga loose ê<br>
+            Let your mandinga loose<br>
+            Let your mandinga loose ê capoeira<br>
+            Let your mandinga loose<br>
+            <br>
+            If you don't have mandinga<br>
+            Then you don't know how to play<br>
+            You must have malice<br>
+            You need to improvise<br>
+            <br>
+            Let your mandinga loose ê<br>
+            Let your mandinga loose<br>
+            Let your mandinga loose ê capoeira<br>
+            Let your mandinga loose<br>
+            <br>
+            Play lightly, play loose<br>
+            Or also know how to enter<br>
+            Deceive each other's game<br>
+            And know how to move<br>
+            <br>
+            Let your mandinga loose ê<br>
+            Let your mandinga loose<br>
+            Let your mandinga loose ê capoeira<br>
+            Let your mandinga loose
+        </td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yAt4j-3dSVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

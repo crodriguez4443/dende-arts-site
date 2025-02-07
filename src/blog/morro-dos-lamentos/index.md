@@ -8,27 +8,34 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Lá no morro dos lamentos eu fiz minha oração  
-E pedi para São Bento que me desse proteção  
-Mas eu jurei no pé do Berimbau  
-Se segura camarada que a roda vai começar  
-  
-Mas eu jurei  
-**Mas eu jurei no pé do berimbau**  
-  
-Mas eu jurei  
-**Mas eu jurei no pé do berimbau** | There in the hill of the lament I said my prayer  
-And I asked São Bento to give me protection  
-But I swore at the foot of the berimbau  
-Hold on buddy the roda will start  
-  
-But I swore  
-But I swore at the foot of the berimbau  
-  
-But I swore  
-But I swore at the foot of the berimbau |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Lá no morro dos lamentos eu fiz minha oração<br>
+E pedi para São Bento que me desse proteção<br>
+Mas eu jurei no pé do Berimbau<br>
+Se segura camarada que a roda vai começar<br>
+<br>
+Mas eu jurei<br>
+<strong>Mas eu jurei no pé do berimbau</strong><br>
+<br>
+Mas eu jurei<br>
+<strong>Mas eu jurei no pé do berimbau</strong></td>
+        <td>There in the hill of the lament I said my prayer<br>
+And I asked São Bento to give me protection<br>
+But I swore at the foot of the berimbau<br>
+Hold on buddy the roda will start<br>
+<br>
+But I swore<br>
+But I swore at the foot of the berimbau<br>
+<br>
+But I swore<br>
+But I swore at the foot of the berimbau</td>
+    </tr>
+</table>
 
 <figcaption>
 

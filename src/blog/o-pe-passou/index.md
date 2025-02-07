@@ -1,3 +1,5 @@
+Here's the formatted document:
+
 ---
 title: "O Pé Passou"
 date: "2021-02-25"
@@ -8,35 +10,42 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| O pé passou  
-E o moleque não viu  
-  
-**O pé passou  
-E o moleque não viu**  
-  
-Isso aqui é capoeira  
-**É capoeira Brasil**  
-  
-Isso aqui é capoeira  
-**É capoeira Brasil**  
-  
-É capoeira Brasil  
-**É capoeira Brasil** | The foot passed  
-And the kid didn't see  
-  
-The foot passed  
-And the kid didn't see  
-  
-This is capoeira  
-It's capoeira Brazil  
-  
-This is capoeira  
-It's capoeira Brazil  
-  
-It's capoeira Brazil  
-It's capoeira Brazil |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>O pé passou<br>
+        E o moleque não viu<br>
+        <br>
+        <strong>O pé passou<br>
+        E o moleque não viu</strong><br>
+        <br>
+        Isso aqui é capoeira<br>
+        <strong>É capoeira Brasil</strong><br>
+        <br>
+        Isso aqui é capoeira<br>
+        <strong>É capoeira Brasil</strong><br>
+        <br>
+        É capoeira Brasil<br>
+        <strong>É capoeira Brasil</strong></td>
+        <td>The foot passed<br>
+        And the kid didn't see<br>
+        <br>
+        The foot passed<br>
+        And the kid didn't see<br>
+        <br>
+        This is capoeira<br>
+        It's capoeira Brazil<br>
+        <br>
+        This is capoeira<br>
+        It's capoeira Brazil<br>
+        <br>
+        It's capoeira Brazil<br>
+        It's capoeira Brazil</td>
+    </tr>
+</table>
 
 <figcaption>
 

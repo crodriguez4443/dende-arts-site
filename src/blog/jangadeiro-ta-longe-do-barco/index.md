@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Jangadeiro Tá Longe do Barco"
 date: "2020-12-30"
@@ -8,49 +10,56 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Jangadeiro tá longe do barco  
-Marinheiro tá longe do mar  
-Sinto falta do meu berimbau  
-Sem capoeira não posso ficar  
-**  
-Jangadeiro tá longe do barco  
-Marinheiro tá longe do mar  
-Sinto falta do meu berimbau  
-Sem capoeira não posso ficar**  
-  
-O jangadeiro  
-**Tá longe do barco**  
-  
-O marinheiro  
-**Tá longe do mar**  
-  
-O jangadeiro  
-**Tá longe do barco**  
-  
-O marinheiro  
-**Tá longe do mar** | The fisherman is far from the boat  
-The sailor is far from the sea  
-I miss my berimbau  
-Without capoeira I can't stay  
-  
-The fisherman is far from the boat  
-The sailor is far from the sea  
-I miss my berimbau  
-Without capoeira I can't stay  
-  
-The fisherman  
-Is far from the boat  
-  
-The sailor  
-Is far from the sea  
-  
-The fisherman  
-Is far from the boat  
-  
-The sailor  
-Is far from the sea |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Jangadeiro tá longe do barco<br>
+Marinheiro tá longe do mar<br>
+Sinto falta do meu berimbau<br>
+Sem capoeira não posso ficar<br>
+<br>
+<strong>Jangadeiro tá longe do barco<br>
+Marinheiro tá longe do mar<br>
+Sinto falta do meu berimbau<br>
+Sem capoeira não posso ficar</strong><br>
+<br>
+O jangadeiro<br>
+<strong>Tá longe do barco</strong><br>
+<br>
+O marinheiro<br>
+<strong>Tá longe do mar</strong><br>
+<br>
+O jangadeiro<br>
+<strong>Tá longe do barco</strong><br>
+<br>
+O marinheiro<br>
+<strong>Tá longe do mar</strong></td>
+        <td>The fisherman is far from the boat<br>
+The sailor is far from the sea<br>
+I miss my berimbau<br>
+Without capoeira I can't stay<br>
+<br>
+The fisherman is far from the boat<br>
+The sailor is far from the sea<br>
+I miss my berimbau<br>
+Without capoeira I can't stay<br>
+<br>
+The fisherman<br>
+Is far from the boat<br>
+<br>
+The sailor<br>
+Is far from the sea<br>
+<br>
+The fisherman<br>
+Is far from the boat<br>
+<br>
+The sailor<br>
+Is far from the sea</td>
+    </tr>
+</table>
 
 <figcaption>
 

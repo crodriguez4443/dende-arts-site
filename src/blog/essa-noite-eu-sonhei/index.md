@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Essa Noite Eu Sonhei"
 date: "2020-12-19"
@@ -8,92 +10,97 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Essa noite eu sonhei  
-Quase acreditei  
-Que um dia seu Bimba  
-Vinha me visitar  
-Foi um sonho, eu sei  
-Muito triste eu fiquei  
-Se eu pudesse do sonho  
-Não iria acordar  
-  
-Sonhei  
-  
-**Essa noite eu sonhei  
-Quase acreditei  
-Que um dia seu Bimba  
-Vinha me visitar  
-Foi um sonho, eu sei  
-Muito triste eu fiquei  
-Se eu pudesse do sonho  
-Não iria acordar**  
-  
-Ele vinha de branco  
-Olhar bem fechado, com seu Berimbau  
-Cantou logo uma quadra e um corrido da sua regional  
-Depois sumiu com o vento  
-E se espalhou todo pelo ar  
-Mestre Bimba está  
-Aonde berimbau tocar  
-  
-**Mestre Bimba está  
-Aonde berimbau tocar**  
-  
-Eu sonhei  
-  
-**Essa noite eu sonhei  
-Quase acreditei  
-Que um dia seu Bimba  
-Vinha me visitar  
-Foi um sonho, eu sei  
-Muito triste eu fiquei  
-Se eu pudesse do sonho  
-Não iria acordar** | Last night I dreamed  
-I almost believed  
-May one day Mr. Bimba  
-Would come visit me  
-It was a dream, I know  
-I was very sad  
-If I could, from the dream  
-I wouldn't wake up  
-  
-I dreamed  
-  
-Last night I dreamed  
-I almost believed  
-May one day Mr. Bimba  
-Would come visit me  
-It was a dream, I know  
-I was very sad  
-If I could, from the dream  
-I wouldn't wake up  
-  
-He came in white  
-A guarded look, with his berimbau  
-He immediately sang a quadra and a corrido from his regional  
-Then he disappeared with the wind  
-And spread all over the air  
-Mestre Bimba is  
-Wherever the berimbau plays  
-  
-Mestre Bimba is  
-Whever the berimbau plays  
-  
-I dreamed  
-  
-Last night I dreamed  
-I almost believed  
-May one day Mr. Bimba  
-Would come visit me  
-It was a dream, I know  
-I was very sad  
-If I could, from the dream  
-I wouldn't wake up |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Essa noite eu sonhei<br>
+        Quase acreditei<br>
+        Que um dia seu Bimba<br>
+        Vinha me visitar<br>
+        Foi um sonho, eu sei<br>
+        Muito triste eu fiquei<br>
+        Se eu pudesse do sonho<br>
+        Não iria acordar<br>
+        <br>
+        Sonhei<br>
+        <br>
+        <strong>Essa noite eu sonhei<br>
+        Quase acreditei<br>
+        Que um dia seu Bimba<br>
+        Vinha me visitar<br>
+        Foi um sonho, eu sei<br>
+        Muito triste eu fiquei<br>
+        Se eu pudesse do sonho<br>
+        Não iria acordar</strong><br>
+        <br>
+        Ele vinha de branco<br>
+        Olhar bem fechado, com seu Berimbau<br>
+        Cantou logo uma quadra e um corrido da sua regional<br>
+        Depois sumiu com o vento<br>
+        E se espalhou todo pelo ar<br>
+        Mestre Bimba está<br>
+        Aonde berimbau tocar<br>
+        <br>
+        <strong>Mestre Bimba está<br>
+        Aonde berimbau tocar</strong><br>
+        <br>
+        Eu sonhei<br>
+        <br>
+        <strong>Essa noite eu sonhei<br>
+        Quase acreditei<br>
+        Que um dia seu Bimba<br>
+        Vinha me visitar<br>
+        Foi um sonho, eu sei<br>
+        Muito triste eu fiquei<br>
+        Se eu pudesse do sonho<br>
+        Não iria acordar</strong></td>
+        <td>Last night I dreamed<br>
+        I almost believed<br>
+        May one day Mr. Bimba<br>
+        Would come visit me<br>
+        It was a dream, I know<br>
+        I was very sad<br>
+        If I could, from the dream<br>
+        I wouldn't wake up<br>
+        <br>
+        I dreamed<br>
+        <br>
+        Last night I dreamed<br>
+        I almost believed<br>
+        May one day Mr. Bimba<br>
+        Would come visit me<br>
+        It was a dream, I know<br>
+        I was very sad<br>
+        If I could, from the dream<br>
+        I wouldn't wake up<br>
+        <br>
+        He came in white<br>
+        A guarded look, with his berimbau<br>
+        He immediately sang a quadra and a corrido from his regional<br>
+        Then he disappeared with the wind<br>
+        And spread all over the air<br>
+        Mestre Bimba is<br>
+        Wherever the berimbau plays<br>
+        <br>
+        Mestre Bimba is<br>
+        Whever the berimbau plays<br>
+        <br>
+        I dreamed<br>
+        <br>
+        Last night I dreamed<br>
+        I almost believed<br>
+        May one day Mr. Bimba<br>
+        Would come visit me<br>
+        It was a dream, I know<br>
+        I was very sad<br>
+        If I could, from the dream<br>
+        I wouldn't wake up</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Mestre Cabeça
-
 </figcaption>

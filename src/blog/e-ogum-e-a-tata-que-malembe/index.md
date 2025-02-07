@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Ê Ogum ê, a tata que malembe"
 date: "2024-04-28"
@@ -9,31 +11,38 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Ê Ogum ê Ogum é tata que malembe, Ê Ogum ê Ogum é tata que malembe  
-**Coro  
-Ê Ogum ê Ogum é tata que malembe, Ê Ogum ê Ogum é tata que malembe**  
-Ê Ogum ê Ogum é tata que malembe, Ê Ogum ê Ogum é tata que malembe  
-**Ê Ogum ê Ogum é tata que malembe Ê Ogum ê Ogum é tata que malembe  
-**  
-Ogum ê!  
-**Tata que malembe  
-**Ogum ê!  
-**Tata que malembe  
-**Ogum ê!  
-**Tata que malembe** | Ê Ogum ê Ogum é father that sooths, Ê Ogum ê Ogum é father that soothes  
-**Coro  
-Ê Ogum ê Ogum é father that soothes Ê Ogum ê Ogum é father that soothes**  
-Ê Ogum ê Ogum é tata que malembe Ê Ogum ê Ogum é tata que malembe  
-****Ê Ogum ê Ogum é father that soothes Ê Ogum ê Ogum é father that soothes****  
-  
-Ogum ê!  
-**Father that soothes  
-**Ogum ê!  
-****Father that soothes  
-****Ogum ê!  
-****Father that soothes**** |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Ê Ogum ê Ogum é tata que malembe, Ê Ogum ê Ogum é tata que malembe<br>
+<strong>Coro<br>
+Ê Ogum ê Ogum é tata que malembe, Ê Ogum ê Ogum é tata que malembe</strong><br>
+Ê Ogum ê Ogum é tata que malembe, Ê Ogum ê Ogum é tata que malembe<br>
+<strong>Ê Ogum ê Ogum é tata que malembe Ê Ogum ê Ogum é tata que malembe</strong><br>
+<br>
+Ogum ê!<br>
+<strong>Tata que malembe</strong><br>
+Ogum ê!<br>
+<strong>Tata que malembe</strong><br>
+Ogum ê!<br>
+<strong>Tata que malembe</strong></td>
+        <td>Ê Ogum ê Ogum é father that sooths, Ê Ogum ê Ogum é father that soothes<br>
+<strong>Coro<br>
+Ê Ogum ê Ogum é father that soothes Ê Ogum ê Ogum é father that soothes</strong><br>
+Ê Ogum ê Ogum é tata que malembe Ê Ogum ê Ogum é tata que malembe<br>
+<strong>Ê Ogum ê Ogum é father that soothes Ê Ogum ê Ogum é father that soothes</strong><br>
+<br>
+Ogum ê!<br>
+<strong>Father that soothes</strong><br>
+Ogum ê!<br>
+<strong>Father that soothes</strong><br>
+Ogum ê!<br>
+<strong>Father that soothes</strong></td>
+    </tr>
+</table>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qtbs5qWPLF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

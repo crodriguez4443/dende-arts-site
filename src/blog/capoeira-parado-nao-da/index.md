@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Capoeira Parado Não Dá"
 date: "2021-03-20"
@@ -9,180 +11,189 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Capoeira antigamente  
-Tinha que movimentar  
-Que era pra enganar a gente  
-Que era pra negaciar  
-Agora tá diferente  
-Capoeira tá parado  
-Joga no mesmo lugar  
-  
-Pula pra cá, pula pra lá  
-  
-**Capoeira parado não dá**  
-  
-Pula menino sai do lugar  
-  
-**Capoeira parado não dá**  
-  
-Não se vê mais negativa  
-Onde onda a rasteira?  
-Nunca mais vi meia-lua  
-Inventaram a tal ponteira  
-Não se vê mais cabra leve  
-Brincando na bananeira  
-Isso me deixa confuso  
-Será que isso é capoeira?  
-  
-Olha pula menino, sai do lugar  
-  
-**Capoeira parado não dá**  
-  
-Se arrasta no chão feito cobra coral  
-  
-**Capoeira parado não dá**  
-  
-Ninguém mais bate uma palma  
-Ninguém responde um refrão  
-Ninguém faz uma cantiga  
-Do fundo do coração  
-Ninguém mais respeita um mestre  
-Que tem tanto pra ensinar  
-Isso me deixa confuso  
-Onde é que isso tudo vai parar?  
-  
-Pula pra lá, pula pra cá  
-  
-**Capoeira parado não dá**  
-  
-Pula pro alto dá salto mortal  
-  
-**Capoeira parado não dá**  
-  
-Ôh neguinho da malícia  
-Ôh neguinho da mandinga  
-Eu posso ver sem capoeira  
-Todos têm a mesma ginga  
-Pode ser que eu esteja velho  
-As coisas tem que mudar  
-Mas parado com o punho fechado  
-O quê que há meu irmão  
-Capoeira parado não dá  
-  
-Pula pra lá, pula pra cá  
-  
-**Capoeira parado não dá**  
-  
-Todo mundo de cara amarrada  
-Todo mundo querendo brigar  
-Só na boca de espera  
-Sem saber como esperar  
-Capoeira que era do povo  
-Foi parar em outro lugar  
-O meu mestre sempre dizia  
-Capoeira parado não dá  
-  
-Pula pra lá, pula pra cá  
-  
-**Capoeira parado não dá**  
-  
-Pula menino sai do lugar  
-  
-**Capoeira parado não dá**  
-  
-Se arrasta no chão feito cobra coral  
-  
-**Capoeira parado não dá** | Capoeira in the past  
-One had to move  
-That was to deceive us  
-That was to provoke  
-Now it's different  
-Capoeira is still  
-Played in the same spot  
-  
-Jump here, jump there  
-  
-Still capoeira just doesn't work  
-  
-Jump, boy, get out of place  
-  
-Still capoeira just doesn't work  
-  
-You don't see negativa anymore  
-Where has rasteira been?  
-I never again saw a meia-lua  
-They invented the so-called ponteira  
-You don't see a light player anymore  
-Playing in the handstand  
-It makes me confused  
-Is this even capoeira?  
-  
-Jump, boy, get out of place  
-  
-Still capoeira just doesn't work  
-  
-Crawl on the ground like a coral snake  
-  
-Still capoeira just doesn't work  
-  
-Nobody claps their hands  
-No one answers a chorus  
-Nobody makes a song  
-From the bottom of their hearts  
-Nobody respects a master anymore  
-Who has so much to teach  
-It makes me confused  
-Where will it all end?  
-  
-Jump over there, jump over here  
-  
-Still capoeira just doesn't work  
-  
-Jump high, do a back-somersault  
-  
-Still capoeira just doesn't work  
-  
-Hey black man of malice  
-Hey black man of mandinga  
-I can see without capoeira  
-Everyone has the same swing  
-It may be that I'm old  
-Things have to change  
-But standing with a clenched fist  
-What going on, my brother  
-Still capoeira just doesn't work  
-  
-Jump over there, jump over here  
-  
-Still capoeira just doesn't work  
-  
-Everyone's frowning  
-Everyone wanting to fight  
-Only in the waiting for a chance  
-Without knowing how  
-Capoeira which belonged to the people  
-It ended up somewhere else  
-My master always said  
-Still capoeira just doesn't work  
-  
-Jump over there, jump over here  
-  
-Still capoeira just doesn't work  
-  
-Jumps boy out of place  
-  
-Still capoeira just doesn't work  
-  
-It crawls on the ground like a coral snake  
-  
-Still capoeira just doesn't work |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Capoeira antigamente<br>
+            Tinha que movimentar<br>
+            Que era pra enganar a gente<br>
+            Que era pra negaciar<br>
+            Agora tá diferente<br>
+            Capoeira tá parado<br>
+            Joga no mesmo lugar<br>
+            <br>
+            Pula pra cá, pula pra lá<br>
+            <br>
+            <strong>Capoeira parado não dá</strong><br>
+            <br>
+            Pula menino sai do lugar<br>
+            <br>
+            <strong>Capoeira parado não dá</strong><br>
+            <br>
+            Não se vê mais negativa<br>
+            Onde onda a rasteira?<br>
+            Nunca mais vi meia-lua<br>
+            Inventaram a tal ponteira<br>
+            Não se vê mais cabra leve<br>
+            Brincando na bananeira<br>
+            Isso me deixa confuso<br>
+            Será que isso é capoeira?<br>
+            <br>
+            Olha pula menino, sai do lugar<br>
+            <br>
+            <strong>Capoeira parado não dá</strong><br>
+            <br>
+            Se arrasta no chão feito cobra coral<br>
+            <br>
+            <strong>Capoeira parado não dá</strong><br>
+            <br>
+            Ninguém mais bate uma palma<br>
+            Ninguém responde um refrão<br>
+            Ninguém faz uma cantiga<br>
+            Do fundo do coração<br>
+            Ninguém mais respeita um mestre<br>
+            Que tem tanto pra ensinar<br>
+            Isso me deixa confuso<br>
+            Onde é que isso tudo vai parar?<br>
+            <br>
+            Pula pra lá, pula pra cá<br>
+            <br>
+            <strong>Capoeira parado não dá</strong><br>
+            <br>
+            Pula pro alto dá salto mortal<br>
+            <br>
+            <strong>Capoeira parado não dá</strong><br>
+            <br>
+            Ôh neguinho da malícia<br>
+            Ôh neguinho da mandinga<br>
+            Eu posso ver sem capoeira<br>
+            Todos têm a mesma ginga<br>
+            Pode ser que eu esteja velho<br>
+            As coisas tem que mudar<br>
+            Mas parado com o punho fechado<br>
+            O quê que há meu irmão<br>
+            Capoeira parado não dá<br>
+            <br>
+            Pula pra lá, pula pra cá<br>
+            <br>
+            <strong>Capoeira parado não dá</strong><br>
+            <br>
+            Todo mundo de cara amarrada<br>
+            Todo mundo querendo brigar<br>
+            Só na boca de espera<br>
+            Sem saber como esperar<br>
+            Capoeira que era do povo<br>
+            Foi parar em outro lugar<br>
+            O meu mestre sempre dizia<br>
+            Capoeira parado não dá<br>
+            <br>
+            Pula pra lá, pula pra cá<br>
+            <br>
+            <strong>Capoeira parado não dá</strong><br>
+            <br>
+            Pula menino sai do lugar<br>
+            <br>
+            <strong>Capoeira parado não dá</strong><br>
+            <br>
+            Se arrasta no chão feito cobra coral<br>
+            <br>
+            <strong>Capoeira parado não dá</strong>
+        </td>
+        <td>
+            Capoeira in the past<br>
+            One had to move<br>
+            That was to deceive us<br>
+            That was to provoke<br>
+            Now it's different<br>
+            Capoeira is still<br>
+            Played in the same spot<br>
+            <br>
+            Jump here, jump there<br>
+            <br>
+            Still capoeira just doesn't work<br>
+            <br>
+            Jump, boy, get out of place<br>
+            <br>
+            Still capoeira just doesn't work<br>
+            <br>
+            You don't see negativa anymore<br>
+            Where has rasteira been?<br>
+            I never again saw a meia-lua<br>
+            They invented the so-called ponteira<br>
+            You don't see a light player anymore<br>
+            Playing in the handstand<br>
+            It makes me confused<br>
+            Is this even capoeira?<br>
+            <br>
+            Jump, boy, get out of place<br>
+            <br>
+            Still capoeira just doesn't work<br>
+            <br>
+            Crawl on the ground like a coral snake<br>
+            <br>
+            Still capoeira just doesn't work<br>
+            <br>
+            Nobody claps their hands<br>
+            No one answers a chorus<br>
+            Nobody makes a song<br>
+            From the bottom of their hearts<br>
+            Nobody respects a master anymore<br>
+            Who has so much to teach<br>
+            It makes me confused<br>
+            Where will it all end?<br>
+            <br>
+            Jump over there, jump over here<br>
+            <br>
+            Still capoeira just doesn't work<br>
+            <br>
+            Jump high, do a back-somersault<br>
+            <br>
+            Still capoeira just doesn't work<br>
+            <br>
+            Hey black man of malice<br>
+            Hey black man of mandinga<br>
+            I can see without capoeira<br>
+            Everyone has the same swing<br>
+            It may be that I'm old<br>
+            Things have to change<br>
+            But standing with a clenched fist<br>
+            What going on, my brother<br>
+            Still capoeira just doesn't work<br>
+            <br>
+            Jump over there, jump over here<br>
+            <br>
+            Still capoeira just doesn't work<br>
+            <br>
+            Everyone's frowning<br>
+            Everyone wanting to fight<br>
+            Only in the waiting for a chance<br>
+            Without knowing how<br>
+            Capoeira which belonged to the people<br>
+            It ended up somewhere else<br>
+            My master always said<br>
+            Still capoeira just doesn't work<br>
+            <br>
+            Jump over there, jump over here<br>
+            <br>
+            Still capoeira just doesn't work<br>
+            <br>
+            Jumps boy out of place<br>
+            <br>
+            Still capoeira just doesn't work<br>
+            <br>
+            It crawls on the ground like a coral snake<br>
+            <br>
+            Still capoeira just doesn't work
+        </td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Mestre Toni Vargas
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/efUQn8UZ5-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

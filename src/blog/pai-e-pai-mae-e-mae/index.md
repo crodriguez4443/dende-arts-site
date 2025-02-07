@@ -8,37 +8,44 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Pai é pai  
-Mãe é mãe  
-Eu sou xodó de papai  
-Eu sou xodó de mamãe  
-  
-**Pai é pai  
-Mãe é mãe  
-Eu sou xodó de papai  
-Eu sou xodó de mamãe**  
-  
-Sou xodó de papai  
-Sou xodó de mamãe  
-  
-**Sou xodó de papai  
-Sou xodó de mamãe** | A father is a father  
-A mother is a mother  
-I'm daddy's love  
-I'm mommy's love  
-  
-A father is a father  
-A mother is a mother  
-I'm daddy's love  
-I'm mommy's love  
-  
-I'm daddy's love  
-I'm mommy's love  
-  
-I'm daddy's love  
-I'm mommy's love |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Pai é pai<br>
+Mãe é mãe<br>
+Eu sou xodó de papai<br>
+Eu sou xodó de mamãe<br>
+<br>
+<strong>Pai é pai<br>
+Mãe é mãe<br>
+Eu sou xodó de papai<br>
+Eu sou xodó de mamãe</strong><br>
+<br>
+Sou xodó de papai<br>
+Sou xodó de mamãe<br>
+<br>
+<strong>Sou xodó de papai<br>
+Sou xodó de mamãe</strong></td>
+        <td>A father is a father<br>
+A mother is a mother<br>
+I'm daddy's love<br>
+I'm mommy's love<br>
+<br>
+A father is a father<br>
+A mother is a mother<br>
+I'm daddy's love<br>
+I'm mommy's love<br>
+<br>
+I'm daddy's love<br>
+I'm mommy's love<br>
+<br>
+I'm daddy's love<br>
+I'm mommy's love</td>
+    </tr>
+</table>
 
 <figcaption>
 

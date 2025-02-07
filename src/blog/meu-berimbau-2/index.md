@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Meu Berimbau"
 date: "2021-01-29"
@@ -8,105 +10,116 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Meu berimbau, ê ê  
-Meu berimbau, camará  
-Ele é enfeitado com laços de fita  
-E as conchas do mar  
-  
-**Meu berimbau, ê ê  
-Meu berimbau, camará  
-Ele é enfeitado com laços de fita  
-E as conchas do mar**  
-  
-Eu enfrento um sereno  
-Desfaço o veneno dessa solidão  
-Rezo Saõ Bento Grande, São Bento Pequeno  
-Conforme a razão  
-Na roda o medo não fala  
-Menino aprende a lição  
-Coragem nunca falta  
-Vence quem tem coração  
-Com os pés na Senzala  
-O nego se ajoelha fazendo oração  
-  
-Meu berimbau, ê ê  
-Meu berimbau, camará  
-Ele é enfeitado com laços de fita  
-E as conchas do mar  
-  
-**Meu berimbau, ê ê  
-Meu berimbau, camará  
-Ele é enfeitado com laços de fita  
-E as conchas do mar**  
-  
-Vem menino vem,  
-Vem descendo a ladeira  
-No cais dourado vai ter capoeira pra matar  
-Dança morena faceira  
-Vadeia na beira do mar  
-Preto velho ligeiro  
-Vem da Gameleira  
-Chegou aqui pra jogar  
-  
-Meu berimbau, ê ê  
-Meu berimbau, camará  
-Ele é enfeitado com laços de fita  
-E as conchas do mar  
-  
-**Meu berimbau, ê ê  
-Meu berimbau, camará  
-Ele é enfeitado com laços de fita  
-E as conchas do mar** | My berimbau, ê ê  
-My berimbau, comrade  
-It is adorned with ribbon bows  
-And seashells  
-  
-My berimbau, ê ê  
-My berimbau, comrade  
-It is adorned with ribbon bows  
-And seashells  
-  
-I face the dew  
-I undo the poison of this loneliness  
-I pray Saõ Bento Grande, São Bento Pequeno  
-Depending on the reason  
-In the roda, fear does not speak  
-Boy, learn the lesson  
-Courage never fails  
-Whoever has heart wins  
-With your feet in the Senzala  
-The black man kneels in prayer  
-  
-My berimbau, ê ê  
-My berimbau, comrade  
-It is adorned with ribbon bows  
-And seashells  
-  
-My berimbau, ê ê  
-My berimbau, comrade  
-It is adorned with ribbon bows  
-And seashells  
-  
-Come boy come,  
-Come down the slope  
-On the golden pier there will be killer capoeira  
-Dance, elegant morena  
-Play at the edge of the sea  
-Quick old black man  
-Comes from Gameleira  
-Came here to play  
-  
-My berimbau, ê ê  
-My berimbau, comrade  
-It is adorned with ribbon bows  
-And seashells  
-  
-My berimbau, ê ê  
-My berimbau, comrade  
-It is adorned with ribbon bows  
-And seashells |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Meu berimbau, ê ê<br>
+            Meu berimbau, camará<br>
+            Ele é enfeitado com laços de fita<br>
+            E as conchas do mar<br>
+            <br>
+            <strong>Meu berimbau, ê ê<br>
+            Meu berimbau, camará<br>
+            Ele é enfeitado com laços de fita<br>
+            E as conchas do mar</strong><br>
+            <br>
+            Eu enfrento um sereno<br>
+            Desfaço o veneno dessa solidão<br>
+            Rezo Saõ Bento Grande, São Bento Pequeno<br>
+            Conforme a razão<br>
+            Na roda o medo não fala<br>
+            Menino aprende a lição<br>
+            Coragem nunca falta<br>
+            Vence quem tem coração<br>
+            Com os pés na Senzala<br>
+            O nego se ajoelha fazendo oração<br>
+            <br>
+            Meu berimbau, ê ê<br>
+            Meu berimbau, camará<br>
+            Ele é enfeitado com laços de fita<br>
+            E as conchas do mar<br>
+            <br>
+            <strong>Meu berimbau, ê ê<br>
+            Meu berimbau, camará<br>
+            Ele é enfeitado com laços de fita<br>
+            E as conchas do mar</strong><br>
+            <br>
+            Vem menino vem,<br>
+            Vem descendo a ladeira<br>
+            No cais dourado vai ter capoeira pra matar<br>
+            Dança morena faceira<br>
+            Vadeia na beira do mar<br>
+            Preto velho ligeiro<br>
+            Vem da Gameleira<br>
+            Chegou aqui pra jogar<br>
+            <br>
+            Meu berimbau, ê ê<br>
+            Meu berimbau, camará<br>
+            Ele é enfeitado com laços de fita<br>
+            E as conchas do mar<br>
+            <br>
+            <strong>Meu berimbau, ê ê<br>
+            Meu berimbau, camará<br>
+            Ele é enfeitado com laços de fita<br>
+            E as conchas do mar</strong>
+        </td>
+        <td>
+            My berimbau, ê ê<br>
+            My berimbau, comrade<br>
+            It is adorned with ribbon bows<br>
+            And seashells<br>
+            <br>
+            My berimbau, ê ê<br>
+            My berimbau, comrade<br>
+            It is adorned with ribbon bows<br>
+            And seashells<br>
+            <br>
+            I face the dew<br>
+            I undo the poison of this loneliness<br>
+            I pray Saõ Bento Grande, São Bento Pequeno<br>
+            Depending on the reason<br>
+            In the roda, fear does not speak<br>
+            Boy, learn the lesson<br>
+            Courage never fails<br>
+            Whoever has heart wins<br>
+            With your feet in the Senzala<br>
+            The black man kneels in prayer<br>
+            <br>
+            My berimbau, ê ê<br>
+            My berimbau, comrade<br>
+            It is adorned with ribbon bows<br>
+            And seashells<br>
+            <br>
+            My berimbau, ê ê<br>
+            My berimbau, comrade<br>
+            It is adorned with ribbon bows<br>
+            And seashells<br>
+            <br>
+            Come boy come,<br>
+            Come down the slope<br>
+            On the golden pier there will be killer capoeira<br>
+            Dance, elegant morena<br>
+            Play at the edge of the sea<br>
+            Quick old black man<br>
+            Comes from Gameleira<br>
+            Came here to play<br>
+            <br>
+            My berimbau, ê ê<br>
+            My berimbau, comrade<br>
+            It is adorned with ribbon bows<br>
+            And seashells<br>
+            <br>
+            My berimbau, ê ê<br>
+            My berimbau, comrade<br>
+            It is adorned with ribbon bows<br>
+            And seashells
+        </td>
+    </tr>
+</table>
 
 <figcaption>
 

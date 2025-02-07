@@ -10,49 +10,56 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Poi dendê, poi dendê  
-Poi dendê pra ver  
-  
-**Poi dendê, poi dendê  
-Poi dendê pra ver**  
-  
-Poi dendê no Berimbau  
-  
-**Poi dendê pra ver  
-**  
-Pra roda fica legal  
-  
-**Poi dendê pra ver  
-**  
-O Axé ser ancestral  
-  
-**Poi dendê pra ver  
-**  
-Pra ficar na moral  
-  
-**Poi dendê pra ver** | Put dendê (palm oil), Put dendê,  
-Put dendê to see  
-  
-**Put dendê (palm oil), Put dendê,  
-Put dendê to see**  
-  
-Put dendê on the Berimbau  
-  
-**Put dendê to see  
-**  
-So the roda gets good  
-  
-**Put dendê to see  
-**  
-For the Axé (energy) being ancestral  
-  
-**Put dendê to see  
-**  
-To stay chill/without worries  
-  
-**Put dendê to see** |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Poi dendê, poi dendê<br>
+Poi dendê pra ver<br>
+<br>
+<strong>Poi dendê, poi dendê<br>
+Poi dendê pra ver</strong><br>
+<br>
+Poi dendê no Berimbau<br>
+<br>
+<strong>Poi dendê pra ver</strong><br>
+<br>
+Pra roda fica legal<br>
+<br>
+<strong>Poi dendê pra ver</strong><br>
+<br>
+O Axé ser ancestral<br>
+<br>
+<strong>Poi dendê pra ver</strong><br>
+<br>
+Pra ficar na moral<br>
+<br>
+<strong>Poi dendê pra ver</strong></td>
+        <td>Put dendê (palm oil), Put dendê,<br>
+Put dendê to see<br>
+<br>
+<strong>Put dendê (palm oil), Put dendê,<br>
+Put dendê to see</strong><br>
+<br>
+Put dendê on the Berimbau<br>
+<br>
+<strong>Put dendê to see</strong><br>
+<br>
+So the roda gets good<br>
+<br>
+<strong>Put dendê to see</strong><br>
+<br>
+For the Axé (energy) being ancestral<br>
+<br>
+<strong>Put dendê to see</strong><br>
+<br>
+To stay chill/without worries<br>
+<br>
+<strong>Put dendê to see</strong></td>
+    </tr>
+</table>
 
 <figcaption>
 

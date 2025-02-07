@@ -1,3 +1,5 @@
+Here's the formatted markdown document according to the specifications:
+
 ---
 title: "É Roda, Vem Jogar"
 date: "2020-12-12"
@@ -8,129 +10,136 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| É roda, vem jogar  
-Berimbau tá tocando  
-E o jogo é regional  
-  
-**É roda, vem jogar  
-Berimbau tá tocando  
-E o jogo é regional**  
-  
-Escuta só quem está chamando  
-A roda já se formou  
-Agora é berimbau  
-Oi pandeiro, atabaque e agôgô  
-  
-**É roda, vem jogar  
-Berimbau tá tocando  
-E o jogo é regional**  
-  
-Berimbau toca regional  
-O corpo se arrepia  
-Criada por Mestre Bimba  
-Esse jogo na Bahia  
-  
-**É roda, vem jogar  
-Berimbau tá tocando  
-E o jogo é regional**  
-  
-Regional Bimba criou  
-Essa luta eficiente  
-Essa luta só funciona  
-Quando incorpora na gente  
-  
-**É roda, vem jogar  
-Berimbau tá tocando  
-E o jogo é regional**  
-  
-Mas joga aí quem tem coragem  
-Não é pra qualquer um não  
-O jogo da regional  
-Mas vai bater forte o coração  
-  
-**É roda, vem jogar  
-Berimbau tá tocando  
-E o jogo é regional**  
-  
-Mas agora já não tem jeito  
-Berimbau já lhe chamou  
-Pé quente cabeça fria  
-Como o Mestre me ensinou  
-  
-**É roda, vem jogar  
-Berimbau tá tocando  
-E o jogo é regional**  
-  
-Berimbau toca regional  
-O corpo se arrepia  
-Criada pelo Mestre Bimba  
-Esse jogo na Bahia  
-  
-**É roda, vem jogar  
-Berimbau tá tocando  
-E o jogo é regional** | It's a roda, come play  
-Berimbau is playing  
-And the game is regional  
-  
-It's a roda, come play  
-Berimbau is playing  
-And the game is regional  
-  
-Listen only to the caller  
-The roda has already formed  
-Now it's berimbau  
-Tambourine, atabaque, and agôgô  
-  
-It's a roda, come play  
-Berimbau is playing  
-And the game is regional  
-  
-Berimbau plays regional  
-The body shivers  
-Created by Mestre Bimba  
-This game in Bahia  
-  
-It's a roda, come play  
-Berimbau is playing  
-And the game is regional  
-  
-Regional Bimba created  
-This efficient fight  
-This fight only works  
-When it incorporates in us  
-  
-It's a roda, come play  
-Berimbau is playing  
-And the game is regional  
-  
-But those who have courage play  
-Not for anyone, no  
-The regional game  
-The heart will beat hard  
-  
-It's a roda, come play  
-Berimbau is playing  
-And the game is regional  
-  
-But now there's no way  
-Berimbau has already called you  
-Hot foot, cold head  
-As Master taught me  
-  
-It's a roda, come play  
-Berimbau is playing  
-And the game is regional  
-  
-Berimbau plays regional  
-The body shivers  
-Created by Mestre Bimba  
-This game in Bahia  
-  
-It's a roda, come play  
-Berimbau is playing  
-And the game is regional |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>É roda, vem jogar<br>
+Berimbau tá tocando<br>
+E o jogo é regional<br>
+<br>
+<strong>É roda, vem jogar<br>
+Berimbau tá tocando<br>
+E o jogo é regional</strong><br>
+<br>
+Escuta só quem está chamando<br>
+A roda já se formou<br>
+Agora é berimbau<br>
+Oi pandeiro, atabaque e agôgô<br>
+<br>
+<strong>É roda, vem jogar<br>
+Berimbau tá tocando<br>
+E o jogo é regional</strong><br>
+<br>
+Berimbau toca regional<br>
+O corpo se arrepia<br>
+Criada por Mestre Bimba<br>
+Esse jogo na Bahia<br>
+<br>
+<strong>É roda, vem jogar<br>
+Berimbau tá tocando<br>
+E o jogo é regional</strong><br>
+<br>
+Regional Bimba criou<br>
+Essa luta eficiente<br>
+Essa luta só funciona<br>
+Quando incorpora na gente<br>
+<br>
+<strong>É roda, vem jogar<br>
+Berimbau tá tocando<br>
+E o jogo é regional</strong><br>
+<br>
+Mas joga aí quem tem coragem<br>
+Não é pra qualquer um não<br>
+O jogo da regional<br>
+Mas vai bater forte o coração<br>
+<br>
+<strong>É roda, vem jogar<br>
+Berimbau tá tocando<br>
+E o jogo é regional</strong><br>
+<br>
+Mas agora já não tem jeito<br>
+Berimbau já lhe chamou<br>
+Pé quente cabeça fria<br>
+Como o Mestre me ensinou<br>
+<br>
+<strong>É roda, vem jogar<br>
+Berimbau tá tocando<br>
+E o jogo é regional</strong><br>
+<br>
+Berimbau toca regional<br>
+O corpo se arrepia<br>
+Criada pelo Mestre Bimba<br>
+Esse jogo na Bahia<br>
+<br>
+<strong>É roda, vem jogar<br>
+Berimbau tá tocando<br>
+E o jogo é regional</strong></td>
+        <td>It's a roda, come play<br>
+Berimbau is playing<br>
+And the game is regional<br>
+<br>
+It's a roda, come play<br>
+Berimbau is playing<br>
+And the game is regional<br>
+<br>
+Listen only to the caller<br>
+The roda has already formed<br>
+Now it's berimbau<br>
+Tambourine, atabaque, and agôgô<br>
+<br>
+It's a roda, come play<br>
+Berimbau is playing<br>
+And the game is regional<br>
+<br>
+Berimbau plays regional<br>
+The body shivers<br>
+Created by Mestre Bimba<br>
+This game in Bahia<br>
+<br>
+It's a roda, come play<br>
+Berimbau is playing<br>
+And the game is regional<br>
+<br>
+Regional Bimba created<br>
+This efficient fight<br>
+This fight only works<br>
+When it incorporates in us<br>
+<br>
+It's a roda, come play<br>
+Berimbau is playing<br>
+And the game is regional<br>
+<br>
+But those who have courage play<br>
+Not for anyone, no<br>
+The regional game<br>
+The heart will beat hard<br>
+<br>
+It's a roda, come play<br>
+Berimbau is playing<br>
+And the game is regional<br>
+<br>
+But now there's no way<br>
+Berimbau has already called you<br>
+Hot foot, cold head<br>
+As Master taught me<br>
+<br>
+It's a roda, come play<br>
+Berimbau is playing<br>
+And the game is regional<br>
+<br>
+Berimbau plays regional<br>
+The body shivers<br>
+Created by Mestre Bimba<br>
+This game in Bahia<br>
+<br>
+It's a roda, come play<br>
+Berimbau is playing<br>
+And the game is regional</td>
+    </tr>
+</table>
 
 <figcaption>
 

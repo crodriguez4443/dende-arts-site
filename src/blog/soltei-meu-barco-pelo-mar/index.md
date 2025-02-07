@@ -9,98 +9,107 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Soltei meu barco pelo mar  
-No balanço das ondas  
-É que eu vou navegar  
-  
-**Soltei meu barco pelo mar  
-No balanço das ondas  
-É que eu vou navegar**  
-  
-As ondas que carregam  
-Meu barco pelo mar  
-Capoeira é minha sina  
-Ela quer me levar  
-  
-**Soltei meu barco pelo mar  
-No balanço das ondas  
-É que eu vou navegar**  
-  
-Sei que no meu caminho  
-Tempestades irei encontrar  
-Mas meus laços são fortes  
-Vou na família Abadá  
-  
-**Soltei meu barco pelo mar  
-No balanço das ondas  
-É que eu vou navegar**  
-  
-Dou a volta no mundo  
-Tenho conhecimento  
-Eu levo a capoeira  
-E os seus fundamentos  
-  
-**Soltei meu barco pelo mar  
-No balanço das ondas  
-É que eu vou navegar  
-**  
-O meu barco navega  
-Eu encontrei a paz  
-Nesse mar tão imenso  
-Abadá é meu cais  
-  
-**Soltei meu barco pelo mar  
-No balanço das ondas  
-É que eu vou navegar** | I released my boat in the sea  
-On the rolling waves  
-I'm going to sail  
-  
-I released my boat in the sea  
-On the rolling waves  
-I'm going to sail  
-  
-The waves that carry  
-My boat throughout the sea  
-Capoeira is my fate  
-It wants to take me  
-  
-I released my boat in the sea  
-On the rolling waves  
-I'm going to sail  
-  
-I know that on my way  
-Storms I will find  
-But my ties are strong  
-I'm going with the Abadá family  
-  
-I released my boat in the sea  
-On the rolling waves  
-I'm going to sail  
-  
-I go around the world  
-I have knowledge  
-I take capoeira  
-And its fundaments  
-  
-I released my boat in the sea  
-On the rolling waves  
-I'm going to sail  
-  
-My boat sails  
-I found peace  
-In this immense sea  
-Abadá is my pier  
-  
-I released my boat in the sea  
-On the rolling waves  
-I'm going to sail |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Soltei meu barco pelo mar<br>
+            No balanço das ondas<br>
+            É que eu vou navegar<br>
+            <br>
+            <strong>Soltei meu barco pelo mar<br>
+            No balanço das ondas<br>
+            É que eu vou navegar</strong><br>
+            <br>
+            As ondas que carregam<br>
+            Meu barco pelo mar<br>
+            Capoeira é minha sina<br>
+            Ela quer me levar<br>
+            <br>
+            <strong>Soltei meu barco pelo mar<br>
+            No balanço das ondas<br>
+            É que eu vou navegar</strong><br>
+            <br>
+            Sei que no meu caminho<br>
+            Tempestades irei encontrar<br>
+            Mas meus laços são fortes<br>
+            Vou na família Abadá<br>
+            <br>
+            <strong>Soltei meu barco pelo mar<br>
+            No balanço das ondas<br>
+            É que eu vou navegar</strong><br>
+            <br>
+            Dou a volta no mundo<br>
+            Tenho conhecimento<br>
+            Eu levo a capoeira<br>
+            E os seus fundamentos<br>
+            <br>
+            <strong>Soltei meu barco pelo mar<br>
+            No balanço das ondas<br>
+            É que eu vou navegar</strong><br>
+            <br>
+            O meu barco navega<br>
+            Eu encontrei a paz<br>
+            Nesse mar tão imenso<br>
+            Abadá é meu cais<br>
+            <br>
+            <strong>Soltei meu barco pelo mar<br>
+            No balanço das ondas<br>
+            É que eu vou navegar</strong>
+        </td>
+        <td>
+            I released my boat in the sea<br>
+            On the rolling waves<br>
+            I'm going to sail<br>
+            <br>
+            I released my boat in the sea<br>
+            On the rolling waves<br>
+            I'm going to sail<br>
+            <br>
+            The waves that carry<br>
+            My boat throughout the sea<br>
+            Capoeira is my fate<br>
+            It wants to take me<br>
+            <br>
+            I released my boat in the sea<br>
+            On the rolling waves<br>
+            I'm going to sail<br>
+            <br>
+            I know that on my way<br>
+            Storms I will find<br>
+            But my ties are strong<br>
+            I'm going with the Abadá family<br>
+            <br>
+            I released my boat in the sea<br>
+            On the rolling waves<br>
+            I'm going to sail<br>
+            <br>
+            I go around the world<br>
+            I have knowledge<br>
+            I take capoeira<br>
+            And its fundaments<br>
+            <br>
+            I released my boat in the sea<br>
+            On the rolling waves<br>
+            I'm going to sail<br>
+            <br>
+            My boat sails<br>
+            I found peace<br>
+            In this immense sea<br>
+            Abadá is my pier<br>
+            <br>
+            I released my boat in the sea<br>
+            On the rolling waves<br>
+            I'm going to sail
+        </td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Macaco Preto
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FBQ6PwizFl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

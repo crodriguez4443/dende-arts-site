@@ -8,35 +8,42 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Agua do rio que corre pro mar  
-Chama meu mano pra nos vadiar  
-  
-**Agua do rio que corre pro mar  
-**  
-Que corre pro mar, que corre pro mar  
-  
-**Agua do rio que corre pro mar**  
-  
-Chama meu mano pra nos vadiar  
-  
-**Agua do rio que corre pro mar**  
-  
-Me leva pro mar, me leva pro mar | River water flowing to the sea  
-Call my brother to play  
-  
-River water flowing to the sea  
-  
-That runs to the sea, that runs to the sea  
-  
-River water flowing to the sea  
-  
-Call my brother to play  
-  
-River water flowing to the sea  
-  
-Take me to the sea Take me to the sea |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Agua do rio que corre pro mar<br>
+        Chama meu mano pra nos vadiar<br>
+        <br>
+        <strong>Agua do rio que corre pro mar</strong><br>
+        <br>
+        Que corre pro mar, que corre pro mar<br>
+        <br>
+        <strong>Agua do rio que corre pro mar</strong><br>
+        <br>
+        Chama meu mano pra nos vadiar<br>
+        <br>
+        <strong>Agua do rio que corre pro mar</strong><br>
+        <br>
+        Me leva pro mar, me leva pro mar</td>
+        <td>River water flowing to the sea<br>
+        Call my brother to play<br>
+        <br>
+        River water flowing to the sea<br>
+        <br>
+        That runs to the sea, that runs to the sea<br>
+        <br>
+        River water flowing to the sea<br>
+        <br>
+        Call my brother to play<br>
+        <br>
+        River water flowing to the sea<br>
+        <br>
+        Take me to the sea Take me to the sea</td>
+    </tr>
+</table>
 
 <figcaption>
 

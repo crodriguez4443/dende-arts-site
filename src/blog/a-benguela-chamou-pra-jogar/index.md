@@ -8,133 +8,143 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Tudo começou assim  
-Hoje eu tenho que lembrar  
-De Maria Martinha do Bonfim  
-Luiz Candido Machado  
-Que eram os pais  
-de Mestre Bimba  
-Manoel dos Reis Machado  
-  
-A Benguela chamou pra jogar  
-A Benguela chamou pra jogar  
-Capoeira  
-  
-**A Benguela chamou pra jogar  
-A Benguela chamou pra jogar  
-Capoeira  
-**  
-Em mil novecentos  
-Este fato aconteceu  
-Em vinte trés de novembro  
-O Mestre Bimba nasceu  
-  
-A Benguela chamou pra jogar  
-A Benguela chamou pra jogar  
-Capoeira  
-  
-**A Benguela chamou pra jogar  
-A Benguela chamou pra jogar  
-Capoeira**  
-  
-Bimba assim dizia  
-Tocando seu Berimbau  
-Sentado no velho banco  
-Ensinando regional  
-  
-A Benguela chamou pra jogar  
-A Benguela chamou pra jogar  
-Capoeira  
-  
-**A Benguela chamou pra jogar  
-A Benguela chamou pra jogar  
-Capoeira  
-**  
-Nos dias de formatura  
-Era obrigado a jogar  
-O São Bento Grande  
-e o toque de Iuna  
-a Benguela nâo podia sujar  
-  
-A Benguela chamou pra jogar  
-A Benguela chamou pra jogar  
-Capoeira  
-  
-**A Benguela chamou pra jogar  
-A Benguela chamou pra jogar  
-Capoeira**  
-  
-Em cinco de fevereiro  
-do ano de setenta e quatro  
-Esta tristeza aconteceu  
-Na cidade de Goiânia  
-Mestre Bimba faleceu | Everything started like this  
-Today I have to remember  
-Mary Martinha do Bonfim  
-Luiz Candido Machado  
-What were the parents  
-of Mestre Bimba  
-Manoel dos Reis Machado  
-  
-The Benguela called to play  
-The Benguela called to play  
-Capoeira  
-  
-The Benguela called to play  
-The Benguela called to play  
-Capoeira  
-In nineteen  
-This actually happened  
-In November twenty tree  
-Mestre Bimba was born  
-  
-The Benguela called to play  
-The Benguela called to play  
-capoeira  
-  
-The Benguela called to play  
-The Benguela called to play  
-capoeira  
-  
-Bimba well said  
-Playing his Berimbau  
-Sitting on the old bench  
-Teaching regional  
-  
-The Benguela called to play  
-The Benguela called to play  
-capoeira  
-  
-The Benguela called to play  
-The Benguela called to play  
-capoeira  
-  
-In the days of graduation  
-Was forced to play  
-The São Bento Grande  
-and the rhythm of Iuna  
-Benguela could not mess  
-  
-The Benguela called to play  
-The Benguela called to play  
-capoeira  
-  
-The Benguela called to play  
-The Benguela called to play  
-capoeira  
-  
-On February 5  
-the year of seventy-four  
-This  grief happened  
-In the city of Goiânia  
-Mestre Bimba died |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Tudo começou assim<br>
+            Hoje eu tenho que lembrar<br>
+            De Maria Martinha do Bonfim<br>
+            Luiz Candido Machado<br>
+            Que eram os pais<br>
+            de Mestre Bimba<br>
+            Manoel dos Reis Machado<br>
+            <br>
+            A Benguela chamou pra jogar<br>
+            A Benguela chamou pra jogar<br>
+            Capoeira<br>
+            <br>
+            <strong>A Benguela chamou pra jogar<br>
+            A Benguela chamou pra jogar<br>
+            Capoeira</strong><br>
+            <br>
+            Em mil novecentos<br>
+            Este fato aconteceu<br>
+            Em vinte trés de novembro<br>
+            O Mestre Bimba nasceu<br>
+            <br>
+            A Benguela chamou pra jogar<br>
+            A Benguela chamou pra jogar<br>
+            Capoeira<br>
+            <br>
+            <strong>A Benguela chamou pra jogar<br>
+            A Benguela chamou pra jogar<br>
+            Capoeira</strong><br>
+            <br>
+            Bimba assim dizia<br>
+            Tocando seu Berimbau<br>
+            Sentado no velho banco<br>
+            Ensinando regional<br>
+            <br>
+            A Benguela chamou pra jogar<br>
+            A Benguela chamou pra jogar<br>
+            Capoeira<br>
+            <br>
+            <strong>A Benguela chamou pra jogar<br>
+            A Benguela chamou pra jogar<br>
+            Capoeira</strong><br>
+            <br>
+            Nos dias de formatura<br>
+            Era obrigado a jogar<br>
+            O São Bento Grande<br>
+            e o toque de Iuna<br>
+            a Benguela nâo podia sujar<br>
+            <br>
+            A Benguela chamou pra jogar<br>
+            A Benguela chamou pra jogar<br>
+            Capoeira<br>
+            <br>
+            <strong>A Benguela chamou pra jogar<br>
+            A Benguela chamou pra jogar<br>
+            Capoeira</strong><br>
+            <br>
+            Em cinco de fevereiro<br>
+            do ano de setenta e quatro<br>
+            Esta tristeza aconteceu<br>
+            Na cidade de Goiânia<br>
+            Mestre Bimba faleceu
+        </td>
+        <td>
+            Everything started like this<br>
+            Today I have to remember<br>
+            Mary Martinha do Bonfim<br>
+            Luiz Candido Machado<br>
+            What were the parents<br>
+            of Mestre Bimba<br>
+            Manoel dos Reis Machado<br>
+            <br>
+            The Benguela called to play<br>
+            The Benguela called to play<br>
+            Capoeira<br>
+            <br>
+            The Benguela called to play<br>
+            The Benguela called to play<br>
+            Capoeira<br>
+            <br>
+            In nineteen<br>
+            This actually happened<br>
+            In November twenty tree<br>
+            Mestre Bimba was born<br>
+            <br>
+            The Benguela called to play<br>
+            The Benguela called to play<br>
+            capoeira<br>
+            <br>
+            The Benguela called to play<br>
+            The Benguela called to play<br>
+            capoeira<br>
+            <br>
+            Bimba well said<br>
+            Playing his Berimbau<br>
+            Sitting on the old bench<br>
+            Teaching regional<br>
+            <br>
+            The Benguela called to play<br>
+            The Benguela called to play<br>
+            capoeira<br>
+            <br>
+            The Benguela called to play<br>
+            The Benguela called to play<br>
+            capoeira<br>
+            <br>
+            In the days of graduation<br>
+            Was forced to play<br>
+            The São Bento Grande<br>
+            and the rhythm of Iuna<br>
+            Benguela could not mess<br>
+            <br>
+            The Benguela called to play<br>
+            The Benguela called to play<br>
+            capoeira<br>
+            <br>
+            The Benguela called to play<br>
+            The Benguela called to play<br>
+            capoeira<br>
+            <br>
+            On February 5<br>
+            the year of seventy-four<br>
+            This  grief happened<br>
+            In the city of Goiânia<br>
+            Mestre Bimba died
+        </td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unkown
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NEeKBJTjZdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

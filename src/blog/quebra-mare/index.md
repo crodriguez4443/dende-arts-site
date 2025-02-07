@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Mare Cheia (Quebra Mare)"
 date: "2023-04-14"
@@ -9,49 +11,56 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Mare ta cheia o barco na agua  
-Vento forte, onda brava  
-E a mare alta nao da pe  
-Quebra mar  
-  
-Quebra mare  
-  
-Quebra mar  
-  
-Quebra mare  
-  
-O vento empurra minha jangada  
-Eu vou botar meu barco em agua  
-Vou voltar la pra Guine  
-Quebra mar  
-  
-Quebra mare  
-  
-Quebra mar  
-  
-Quebra mare | The tide is full, the boat is in the water  
-Strong wind, rough wave  
-And the high tide does gives no exit  
-Seawall  
-  
-breaks the tide  
-  
-Seawall  
-  
-breaks the tide  
-  
-The wind pushes my raft  
-I will put my boat in water  
-I'm going back to Guinea  
-Seawall  
-  
-breaks the tide  
-  
-Seawall  
-  
-breaks the tide |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Mare ta cheia o barco na agua<br>
+        Vento forte, onda brava<br>
+        E a mare alta nao da pe<br>
+        Quebra mar<br>
+        <br>
+        Quebra mare<br>
+        <br>
+        Quebra mar<br>
+        <br>
+        Quebra mare<br>
+        <br>
+        O vento empurra minha jangada<br>
+        Eu vou botar meu barco em agua<br>
+        Vou voltar la pra Guine<br>
+        Quebra mar<br>
+        <br>
+        Quebra mare<br>
+        <br>
+        Quebra mar<br>
+        <br>
+        Quebra mare</td>
+        <td>The tide is full, the boat is in the water<br>
+        Strong wind, rough wave<br>
+        And the high tide does gives no exit<br>
+        Seawall<br>
+        <br>
+        breaks the tide<br>
+        <br>
+        Seawall<br>
+        <br>
+        breaks the tide<br>
+        <br>
+        The wind pushes my raft<br>
+        I will put my boat in water<br>
+        I'm going back to Guinea<br>
+        Seawall<br>
+        <br>
+        breaks the tide<br>
+        <br>
+        Seawall<br>
+        <br>
+        breaks the tide</td>
+    </tr>
+</table>
 
 <figcaption>
 

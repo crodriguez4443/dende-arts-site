@@ -8,35 +8,42 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Iê!  
-Maior é Deus  
-Maior é Deus  
-Pequeno sou eu  
-O que eu tenho  
-foi Deus que me deu  
-O que eu tenho  
-foi Deus que me deu  
-Na roda da Capoeira  
-Grande e pequeno sou eu  
-Camará!  
-  
-Iê viva meu deus  
-Iê viva meu deus, camará | Iê!  
-God is Great  
-God is Great  
-Small I am  
-That which I have  
-It was God that gave me  
-That which I have  
-It was God that gave me  
-In the Capoeira Roda  
-Great and small am I  
-Comrade!  
-  
-Long live God,  
-Long live God, friend |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Iê!<br>
+Maior é Deus<br>
+Maior é Deus<br>
+Pequeno sou eu<br>
+O que eu tenho<br>
+foi Deus que me deu<br>
+O que eu tenho<br>
+foi Deus que me deu<br>
+Na roda da Capoeira<br>
+Grande e pequeno sou eu<br>
+Camará!<br>
+<br>
+Iê viva meu deus<br>
+Iê viva meu deus, camará</td>
+        <td>Iê!<br>
+God is Great<br>
+God is Great<br>
+Small I am<br>
+That which I have<br>
+It was God that gave me<br>
+That which I have<br>
+It was God that gave me<br>
+In the Capoeira Roda<br>
+Great and small am I<br>
+Comrade!<br>
+<br>
+Long live God,<br>
+Long live God, friend</td>
+    </tr>
+</table>
 
 <figcaption>
 

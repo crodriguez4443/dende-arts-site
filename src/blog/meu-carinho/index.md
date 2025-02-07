@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Meu Carinho"
 date: "2021-01-29"
@@ -8,105 +10,112 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Hoje o sol não brilhou  
-A lua não apareceu  
-E as estrelas perderam o brilho  
-Mas hoje o dia está tão triste  
-Nem mesmo o galo cantou  
-E até meu berimbau  
-A corda arrebentou  
-A cabaça caiu no chão  
-E também espatifou  
-  
-Era um lamento profundo  
-De sofrimento e solidão  
-Aqui dentro do meu peito  
-Sufocando o coração  
-Lágrimas caíram dos olhos  
-Banhando todo meu leito  
-Minha alma que gritava  
-Aqui dentro do meu peito  
-Estou perdido nos encantos  
-De uma jovem capoeira  
-Olha, na roda da vida  
-Ela meu deu uma rasteira  
-  
-Chora Chora  
-Bem baixinho  
-Oh meu amor, oh meu carinho  
-  
-**Chora Chora  
-Bem baixinho  
-Oh meu amor, oh meu carinho**  
-  
-Vou levantar dessa rasteira  
-Para o jogo continuar  
-Vou tocar meu berimbau  
-Para a vida alegrar  
-Vou te ensinar a capoeira  
-Com todo meu coração  
-Olha, apesar de tudo  
-Ódio eu não sinto não  
-Você é meu arco íris  
-Minha vida, minha paixão  
-  
-Chora Chora  
-Bem baixinho  
-Oh meu amor, oh meu carinho  
-  
-**Chora Chora  
-Bem baixinho  
-Oh meu amor, oh meu carinho** | Today the sun didn't shine  
-The moon did not appear  
-And the stars have lost their shine  
-But today the day is so sad  
-Not even the rooster crowed  
-And even my berimbau  
-The string snapped  
-The gourd fell to the ground  
-And it also broke  
-  
-It was a deep cry  
-Of suffering and loneliness  
-Here inside my chest  
-Choking my heart  
-Tears fell from my eyes  
-Bathing my bed  
-My screaming soul  
-Here inside my chest  
-I'm lost in the charms  
-Of a young capoeira  
-Look, in the roda of life  
-She gave me a rasteira  
-  
-Cry Cry  
-Very quietly  
-Oh my love, oh my affection  
-  
-Cry Cry  
-Very quietly  
-Oh my love, oh my affection  
-  
-I'll get up  
-For to continue with the game  
-I'll play my berimbau  
-For brighten life  
-I'll teach you capoeira  
-With all my heart  
-Look, despite everything  
-I don't feel any hate  
-You are my rainbow  
-My life, my passion  
-  
-Cry Cry  
-Very quietly  
-O my love, o my affection  
-  
-Cry Cry  
-Very quietly  
-O my love, o my affection |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Hoje o sol não brilhou<br>
+A lua não apareceu<br>
+E as estrelas perderam o brilho<br>
+Mas hoje o dia está tão triste<br>
+Nem mesmo o galo cantou<br>
+E até meu berimbau<br>
+A corda arrebentou<br>
+A cabaça caiu no chão<br>
+E também espatifou<br>
+<br>
+Era um lamento profundo<br>
+De sofrimento e solidão<br>
+Aqui dentro do meu peito<br>
+Sufocando o coração<br>
+Lágrimas caíram dos olhos<br>
+Banhando todo meu leito<br>
+Minha alma que gritava<br>
+Aqui dentro do meu peito<br>
+Estou perdido nos encantos<br>
+De uma jovem capoeira<br>
+Olha, na roda da vida<br>
+Ela meu deu uma rasteira<br>
+<br>
+Chora Chora<br>
+Bem baixinho<br>
+Oh meu amor, oh meu carinho<br>
+<br>
+<strong>Chora Chora<br>
+Bem baixinho<br>
+Oh meu amor, oh meu carinho</strong><br>
+<br>
+Vou levantar dessa rasteira<br>
+Para o jogo continuar<br>
+Vou tocar meu berimbau<br>
+Para a vida alegrar<br>
+Vou te ensinar a capoeira<br>
+Com todo meu coração<br>
+Olha, apesar de tudo<br>
+Ódio eu não sinto não<br>
+Você é meu arco íris<br>
+Minha vida, minha paixão<br>
+<br>
+Chora Chora<br>
+Bem baixinho<br>
+Oh meu amor, oh meu carinho<br>
+<br>
+<strong>Chora Chora<br>
+Bem baixinho<br>
+Oh meu amor, oh meu carinho</strong></td>
+        <td>Today the sun didn't shine<br>
+The moon did not appear<br>
+And the stars have lost their shine<br>
+But today the day is so sad<br>
+Not even the rooster crowed<br>
+And even my berimbau<br>
+The string snapped<br>
+The gourd fell to the ground<br>
+And it also broke<br>
+<br>
+It was a deep cry<br>
+Of suffering and loneliness<br>
+Here inside my chest<br>
+Choking my heart<br>
+Tears fell from my eyes<br>
+Bathing my bed<br>
+My screaming soul<br>
+Here inside my chest<br>
+I'm lost in the charms<br>
+Of a young capoeira<br>
+Look, in the roda of life<br>
+She gave me a rasteira<br>
+<br>
+Cry Cry<br>
+Very quietly<br>
+Oh my love, oh my affection<br>
+<br>
+Cry Cry<br>
+Very quietly<br>
+Oh my love, oh my affection<br>
+<br>
+I'll get up<br>
+For to continue with the game<br>
+I'll play my berimbau<br>
+For brighten life<br>
+I'll teach you capoeira<br>
+With all my heart<br>
+Look, despite everything<br>
+I don't feel any hate<br>
+You are my rainbow<br>
+My life, my passion<br>
+<br>
+Cry Cry<br>
+Very quietly<br>
+O my love, o my affection<br>
+<br>
+Cry Cry<br>
+Very quietly<br>
+O my love, o my affection</td>
+    </tr>
+</table>
 
 <figcaption>
 

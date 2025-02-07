@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Laça, Laça, Laçador"
 date: "2021-02-28"
@@ -8,51 +10,58 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| E o boi fugiu da fazenda do senhor  
-E o boi fugiu da fazenda do senhor  
-Vaqueiro tava dormindo quando o mandado chegou  
-Vaqueiro velho mas ainda é laçador  
-Calça de sola, colete de couro cru  
-Lá vem o vaqueiro velho no rastro do boi zebu  
-  
-Pega, pega, larga, larga, laça, laça, laçador  
-E o boi fugiu da fazendo do senhor  
-**Pega, pega, larga, larga, laça, laça, laçador**  
-  
-Mas tudo é capoeira onde o boi se embananou  
-**Pega, pega, larga, larga, laça, laça, laçador**  
-  
-Vaqueiro velho mas ainda é laçador  
-**Pega, pega, larga, larga, laça, laça, laçador**  
-  
-E o boi fugiu da fazenda do senhor  
-**Pega, pega, larga, larga, laça, laça, laçador**  
-  
-Vaqueiro velho mas ainda é laçador  
-**Pega, pega, larga, larga, laça, laça, laçador** | And the bull escaped from the lord's farm  
-And the bull escaped from the lord's farm  
-Cowboy was sleeping when the warrant arrived  
-Old cowboy but still a lassoer  
-Sole pants, rawhide vest  
-Here comes the old cowboy on the trail of the zebu bull  
-  
-Catch, catch, release, release, lasso, lasso, lassoer  
-And the bull escaped from the lord's farm  
-Catch, catch, release, release, lasso, lasso, lassoer  
-  
-But everything is capoeira where the ox has shaken itself  
-Catch, catch, release, release, lasso, lasso, lassoer  
-  
-Old cowboy but still a lassoer  
-Catch, catch, release, release, lasso, lasso, lassoer  
-  
-And the bull escaped from the lord's farm  
-Catch, catch, release, release, lasso, lasso, lassoer  
-  
-Old cowboy but he is still a lassoer  
-Catch, catch, release, release, lasso, lasso, lassoer |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>E o boi fugiu da fazenda do senhor<br>
+E o boi fugiu da fazenda do senhor<br>
+Vaqueiro tava dormindo quando o mandado chegou<br>
+Vaqueiro velho mas ainda é laçador<br>
+Calça de sola, colete de couro cru<br>
+Lá vem o vaqueiro velho no rastro do boi zebu<br>
+<br>
+Pega, pega, larga, larga, laça, laça, laçador<br>
+E o boi fugiu da fazendo do senhor<br>
+<strong>Pega, pega, larga, larga, laça, laça, laçador</strong><br>
+<br>
+Mas tudo é capoeira onde o boi se embananou<br>
+<strong>Pega, pega, larga, larga, laça, laça, laçador</strong><br>
+<br>
+Vaqueiro velho mas ainda é laçador<br>
+<strong>Pega, pega, larga, larga, laça, laça, laçador</strong><br>
+<br>
+E o boi fugiu da fazenda do senhor<br>
+<strong>Pega, pega, larga, larga, laça, laça, laçador</strong><br>
+<br>
+Vaqueiro velho mas ainda é laçador<br>
+<strong>Pega, pega, larga, larga, laça, laça, laçador</strong></td>
+        <td>And the bull escaped from the lord's farm<br>
+And the bull escaped from the lord's farm<br>
+Cowboy was sleeping when the warrant arrived<br>
+Old cowboy but still a lassoer<br>
+Sole pants, rawhide vest<br>
+Here comes the old cowboy on the trail of the zebu bull<br>
+<br>
+Catch, catch, release, release, lasso, lasso, lassoer<br>
+And the bull escaped from the lord's farm<br>
+Catch, catch, release, release, lasso, lasso, lassoer<br>
+<br>
+But everything is capoeira where the ox has shaken itself<br>
+Catch, catch, release, release, lasso, lasso, lassoer<br>
+<br>
+Old cowboy but still a lassoer<br>
+Catch, catch, release, release, lasso, lasso, lassoer<br>
+<br>
+And the bull escaped from the lord's farm<br>
+Catch, catch, release, release, lasso, lasso, lassoer<br>
+<br>
+Old cowboy but he is still a lassoer<br>
+Catch, catch, release, release, lasso, lasso, lassoer</td>
+    </tr>
+</table>
 
 <figcaption>
 

@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Capineiro de ioiô capineiro de iaia"
 date: "2020-11-01"
@@ -8,99 +10,106 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Capineiro de ioiô capineiro de iaia  
-**Capineiro de ioiô capineiro de iaia  
-**  
-Não corte capim daí  
-  
-**Capineiro  
-**  
-Só corte quando eu mandar  
-  
-**Capineiro  
-**  
-Não mexa com marimbondo  
-  
-**Capineiro  
-**  
-No tronco do mangangá  
-  
-**Capineiro**  
-  
-Na fazenda do Sertão  
-A tristeza era demais  
-  
-**Na fazenda do Sertão  
-A tristeza era demais  
-**  
-Era a cana na moenda  
-  
-**Pra faser garapa**\*  
-  
-Era milho no pilão  
-  
-**Pra fazer fubá  
-**  
-Eu andava sete léguas  
-  
-**Sem olhar pra trás  
-**  
-Cada passo que eu dava  
-  
-**Era um capataz  
-**  
-Capineiro que corta cana  
-No meio do canavial  
-  
-**Capineiro que corta cana  
-No meio do canavial** | Capineer from yo-yo, capineiro from iaia  
-Capineer from yo-yo, capineiro from iaia  
-  
-Don't cut grass from there  
-  
-Capineiro  
-  
-Only cut when I send  
-  
-Capineiro  
-  
-Don't mess with wasp  
-  
-Capineiro  
-  
-In the trunk of the mangangá  
-  
-Capineiro  
-  
-At the backwater farm  
-The sadness was too much  
-  
-At the backwater farm  
-The sadness was too much  
-  
-It was the cane in the mill  
-  
-To faser garapa  
-  
-It was corn in the pestle  
-  
-To make cornmeal  
-  
-I walked seven leagues  
-  
-Without looking back  
-  
-Every step I took  
-  
-Was a foreman  
-  
-Capineer who cuts cane  
-In the middle of the cane field  
-  
-Capineer who cuts cane  
-In the middle of the cane field |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Capineiro de ioiô capineiro de iaia<br>
+<strong>Capineiro de ioiô capineiro de iaia</strong><br>
+<br>
+Não corte capim daí<br>
+<br>
+<strong>Capineiro</strong><br>
+<br>
+Só corte quando eu mandar<br>
+<br>
+<strong>Capineiro</strong><br>
+<br>
+Não mexa com marimbondo<br>
+<br>
+<strong>Capineiro</strong><br>
+<br>
+No tronco do mangangá<br>
+<br>
+<strong>Capineiro</strong><br>
+<br>
+Na fazenda do Sertão<br>
+A tristeza era demais<br>
+<br>
+<strong>Na fazenda do Sertão<br>
+A tristeza era demais</strong><br>
+<br>
+Era a cana na moenda<br>
+<br>
+<strong>Pra faser garapa</strong>*<br>
+<br>
+Era milho no pilão<br>
+<br>
+<strong>Pra fazer fubá</strong><br>
+<br>
+Eu andava sete léguas<br>
+<br>
+<strong>Sem olhar pra trás</strong><br>
+<br>
+Cada passo que eu dava<br>
+<br>
+<strong>Era um capataz</strong><br>
+<br>
+Capineiro que corta cana<br>
+No meio do canavial<br>
+<br>
+<strong>Capineiro que corta cana<br>
+No meio do canavial</strong></td>
+        <td>Capineer from yo-yo, capineiro from iaia<br>
+Capineer from yo-yo, capineiro from iaia<br>
+<br>
+Don't cut grass from there<br>
+<br>
+Capineiro<br>
+<br>
+Only cut when I send<br>
+<br>
+Capineiro<br>
+<br>
+Don't mess with wasp<br>
+<br>
+Capineiro<br>
+<br>
+In the trunk of the mangangá<br>
+<br>
+Capineiro<br>
+<br>
+At the backwater farm<br>
+The sadness was too much<br>
+<br>
+At the backwater farm<br>
+The sadness was too much<br>
+<br>
+It was the cane in the mill<br>
+<br>
+To faser garapa<br>
+<br>
+It was corn in the pestle<br>
+<br>
+To make cornmeal<br>
+<br>
+I walked seven leagues<br>
+<br>
+Without looking back<br>
+<br>
+Every step I took<br>
+<br>
+Was a foreman<br>
+<br>
+Capineer who cuts cane<br>
+In the middle of the cane field<br>
+<br>
+Capineer who cuts cane<br>
+In the middle of the cane field</td>
+    </tr>
+</table>
 
 <figcaption>
 

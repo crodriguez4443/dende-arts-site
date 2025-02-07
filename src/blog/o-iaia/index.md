@@ -8,35 +8,42 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Ô iaiá, meu senhor mandou chamar  
-**Ô iaiá**  
-  
-So vou lá quando acabar, ô iaiá  
-**Ô iaiá**  
-  
-To jogando capoeira, ô iaiá  
-**Ô iaiá**  
-  
-No mercado popular, ô iaiá  
-**Ô iaiá**  
-  
-Vou vencer a guerra do Paraná, ô iaiá  
-**Ô iaiá** | Oh iaiá, my lord sent for me  
-Oh iaiá  
-  
-I'll only go there when it's over, oh iaiá  
-Oh iaiá  
-  
-I'm playing capoeira, oh iaiá  
-Oh iaiá  
-  
-In the popular market, oh iaiá  
-Oh iaiá  
-  
-I'm going to win the Paraná war, oh iaiá  
-Oh iaiá |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Ô iaiá, meu senhor mandou chamar<br>
+<strong>Ô iaiá</strong><br>
+<br>
+So vou lá quando acabar, ô iaiá<br>
+<strong>Ô iaiá</strong><br>
+<br>
+To jogando capoeira, ô iaiá<br>
+<strong>Ô iaiá</strong><br>
+<br>
+No mercado popular, ô iaiá<br>
+<strong>Ô iaiá</strong><br>
+<br>
+Vou vencer a guerra do Paraná, ô iaiá<br>
+<strong>Ô iaiá</strong></td>
+        <td>Oh iaiá, my lord sent for me<br>
+Oh iaiá<br>
+<br>
+I'll only go there when it's over, oh iaiá<br>
+Oh iaiá<br>
+<br>
+I'm playing capoeira, oh iaiá<br>
+Oh iaiá<br>
+<br>
+In the popular market, oh iaiá<br>
+Oh iaiá<br>
+<br>
+I'm going to win the Paraná war, oh iaiá<br>
+Oh iaiá</td>
+    </tr>
+</table>
 
 <figcaption>
 

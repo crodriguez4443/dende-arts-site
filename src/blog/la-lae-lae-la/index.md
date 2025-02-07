@@ -1,3 +1,5 @@
+Here's the formatted markdown document according to the specifications:
+
 ---
 title: "La Laê Laê La"
 date: "2021-01-22"
@@ -8,121 +10,128 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Ê, la laê laê la  
-La laê laê la  
-Lê lê lê lê la la  
-  
-**Ê, la laê laê la  
-La laê laê la  
-Lê lê lê lê la la**  
-  
-Berimbau chamou pro jogo  
-Pandeiro que respondeu  
-O atabaque já entrou  
-Mestre Bimba apareceu  
-La laê laê la  
-  
-**Ê, la laê laê la  
-La laê laê la  
-Lê lê lê lê la la**  
-  
-Capoeira comecou  
-Como roda tradicional  
-Era dança e defesa  
-Do negro no canavial  
-La laê laê la  
-  
-**Ê, la laê laê la  
-La laê laê la  
-Lê lê lê lê la la**  
-  
-Manoel dos Reis Machado  
-Criador da Regional  
-Espalhando pelo mundo  
-Essa cultura nacional  
-La laê laê la  
-  
-**Ê, la laê laê la  
-La laê laê la  
-Lê lê lê lê la la**  
-  
-Manoel dos Reis Machado  
-Estivador na beira do cais  
-Incorporou o jogo de Angola  
-Com Batuque e muito mais  
-La laê laê la  
-  
-**Ê, la laê laê la  
-La laê laê la  
-Lê lê lê lê la la**  
-  
-E no cais Bimba criou  
-A capoeira Regional  
-Espalhou pro mundo inteiro  
-Essa arte nacional  
-La laê laê la  
-  
-**Ê, la laê laê la  
-La laê laê la  
-Lê lê lê lê la la** | Ê, la laê laê la  
-La laê laê la  
-Lê lê lê lê la la  
-  
-Ê, la laê laê la  
-La laê laê la  
-Lê lê lê lê la la  
-  
-Berimbau called for the game  
-Pandeiro answered  
-The atabaque has already begun  
-Mestre Bimba appeared  
-La laê laê la  
-  
-Ê, la laê laê la  
-La laê laê la  
-Lê lê lê lê la la  
-  
-Capoeira started  
-Like a traditional roda  
-It was dance and defense  
-Of the black people in the cane fields  
-La laê laê la  
-  
-Ê, la laê laê la  
-La laê laê la  
-Lê lê lê lê la la  
-  
-Manoel dos Reis Machado  
-Regional Creator  
-Spreading throughout the world  
-This national culture  
-La laê laê la  
-  
-Ê, la laê laê la  
-La laê laê la  
-Lê lê lê lê la la  
-  
-Manoel dos Reis Machado  
-Docker on the edge of the pier  
-Incorporated the game of Angola  
-With Batuque and more  
-La laê laê la  
-  
-Ê, la laê laê la  
-La laê laê la  
-Lê lê lê lê la la  
-  
-And on the pier Bimba created  
-Capoeira Regional  
-Spread to the entire world  
-This national art  
-La laê laê la  
-  
-Ê, la laê laê la  
-La laê laê la  
-Lê lê lê lê la la |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Ê, la laê laê la<br>
+La laê laê la<br>
+Lê lê lê lê la la<br>
+<br>
+<strong>Ê, la laê laê la<br>
+La laê laê la<br>
+Lê lê lê lê la la</strong><br>
+<br>
+Berimbau chamou pro jogo<br>
+Pandeiro que respondeu<br>
+O atabaque já entrou<br>
+Mestre Bimba apareceu<br>
+La laê laê la<br>
+<br>
+<strong>Ê, la laê laê la<br>
+La laê laê la<br>
+Lê lê lê lê la la</strong><br>
+<br>
+Capoeira comecou<br>
+Como roda tradicional<br>
+Era dança e defesa<br>
+Do negro no canavial<br>
+La laê laê la<br>
+<br>
+<strong>Ê, la laê laê la<br>
+La laê laê la<br>
+Lê lê lê lê la la</strong><br>
+<br>
+Manoel dos Reis Machado<br>
+Criador da Regional<br>
+Espalhando pelo mundo<br>
+Essa cultura nacional<br>
+La laê laê la<br>
+<br>
+<strong>Ê, la laê laê la<br>
+La laê laê la<br>
+Lê lê lê lê la la</strong><br>
+<br>
+Manoel dos Reis Machado<br>
+Estivador na beira do cais<br>
+Incorporou o jogo de Angola<br>
+Com Batuque e muito mais<br>
+La laê laê la<br>
+<br>
+<strong>Ê, la laê laê la<br>
+La laê laê la<br>
+Lê lê lê lê la la</strong><br>
+<br>
+E no cais Bimba criou<br>
+A capoeira Regional<br>
+Espalhou pro mundo inteiro<br>
+Essa arte nacional<br>
+La laê laê la<br>
+<br>
+<strong>Ê, la laê laê la<br>
+La laê laê la<br>
+Lê lê lê lê la la</strong></td>
+        <td>Ê, la laê laê la<br>
+La laê laê la<br>
+Lê lê lê lê la la<br>
+<br>
+Ê, la laê laê la<br>
+La laê laê la<br>
+Lê lê lê lê la la<br>
+<br>
+Berimbau called for the game<br>
+Pandeiro answered<br>
+The atabaque has already begun<br>
+Mestre Bimba appeared<br>
+La laê laê la<br>
+<br>
+Ê, la laê laê la<br>
+La laê laê la<br>
+Lê lê lê lê la la<br>
+<br>
+Capoeira started<br>
+Like a traditional roda<br>
+It was dance and defense<br>
+Of the black people in the cane fields<br>
+La laê laê la<br>
+<br>
+Ê, la laê laê la<br>
+La laê laê la<br>
+Lê lê lê lê la la<br>
+<br>
+Manoel dos Reis Machado<br>
+Regional Creator<br>
+Spreading throughout the world<br>
+This national culture<br>
+La laê laê la<br>
+<br>
+Ê, la laê laê la<br>
+La laê laê la<br>
+Lê lê lê lê la la<br>
+<br>
+Manoel dos Reis Machado<br>
+Docker on the edge of the pier<br>
+Incorporated the game of Angola<br>
+With Batuque and more<br>
+La laê laê la<br>
+<br>
+Ê, la laê laê la<br>
+La laê laê la<br>
+Lê lê lê lê la la<br>
+<br>
+And on the pier Bimba created<br>
+Capoeira Regional<br>
+Spread to the entire world<br>
+This national art<br>
+La laê laê la<br>
+<br>
+Ê, la laê laê la<br>
+La laê laê la<br>
+Lê lê lê lê la la</td>
+    </tr>
+</table>
 
 <figcaption>
 

@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "CORDÃO DE OURO IN NEW YORK CITY"
 date: "2018-05-07"
@@ -21,7 +23,7 @@ layout: "blog-post-layout.njk"
 
 ## STARTING APRIL 2018
 
-The Capoeira News-o-sphere might not have picked up just yet, but let me be the first to let you know that CDO has come to the Big Apple. As of April 20th, 2018, CDO will have its first official school in New York City. Specifically, it’ll be held at Wild Heart Performing Art Center at 32-32 Steinway St. Floor 3 in Astoria, Queens. Astoria is about 15 minutes outside of Manhattan and the space is accessible to everyone Queens, Manhattan, Harlem, the South Bronx, and most of Brooklyn.
+The Capoeira News-o-sphere might not have picked up just yet, but let me be the first to let you know that CDO has come to the Big Apple. As of April 20th, 2018, CDO will have its first official school in New York City. Specifically, it'll be held at Wild Heart Performing Art Center at 32-32 Steinway St. Floor 3 in Astoria, Queens. Astoria is about 15 minutes outside of Manhattan and the space is accessible to everyone Queens, Manhattan, Harlem, the South Bronx, and most of Brooklyn.
 
 ## TAUGHT BY WHO?
 
@@ -29,7 +31,7 @@ Classes will be taught by me, [Monitor Calado](https://www.instagram.com/dende_a
 
 ## FAN OF CAPOEIRA? OF MOVEMENT?
 
-If you’re a fan of Cordao de Ouro, or a fan of Capoeira, or just a fan of movement in general, I look forward to having you and welcoming you to our new space. The CDO family is big and it’s only getting bigger and better. Axé my friends. If you’d like to reach out to me, please do, my contact information can be found [here](https://dendearts.com/contact). Don’t hesitate to call, text, or email me.
+If you're a fan of Cordao de Ouro, or a fan of Capoeira, or just a fan of movement in general, I look forward to having you and welcoming you to our new space. The CDO family is big and it's only getting bigger and better. Axé my friends. If you'd like to reach out to me, please do, my contact information can be found [here](https://dendearts.com/contact). Don't hesitate to call, text, or email me.
 
 Wishing you the best on your journey.
 
@@ -44,3 +46,5 @@ Email Address \*
 First Name \*
 
 Last Name \*
+
+Note: There are no song lyrics in this document, so no table formatting was applied.

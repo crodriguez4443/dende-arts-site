@@ -1,3 +1,5 @@
+Here's the formatted markdown document according to the specifications:
+
 ---
 title: "Iaiá, ioiô"
 date: "2020-12-29"
@@ -9,134 +11,139 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Quando o meu mestre se foi  
-Toda a Bahia chorou  
-  
-Iaiá ioiô  
-  
-**Iaiá ioiô  
-Iaiá ioiô**  
-  
-Oi menino com quem tu aprendeu  
-Oi menino com quem tu aprendeu  
-Aprendeu a jogar capoeira, aprendeu  
-Quem me ensinou já morreu  
-Quem me ensinou já morreu  
-O seu nome está gravado  
-Na terra onde ele nasceu  
-Salve o Mestre Bimba  
-Salve Ilha de maré  
-Salve o mestre que me ensinou  
-A mandinga de bater com o pé  
-  
-Iaiá ioiô  
-  
-**Iaiá ioiô  
-Iaiá ioiô**  
-  
-Mandingueiro  
-Cheio de malemolência  
-Era ligeiro o meu mestre  
-Que jogava conforme a cadência  
-Do bater do Berimbau  
-Salve o Mestre Bimba  
-Criador da regional  
-  
-Salve o mestre Bimba  
-**Criador da regional**  
-  
-Iaiá ioiô  
-  
-**Iaiá ioiô  
-Iaiá ioiô**  
-  
-Aprendeu meia-lua, aprendeu  
-E martelo, rabo-de-arraia  
-Jogava no pé da ladeira  
-Muitas vezes na beira da praia  
-Salve São Salvador  
-Salve a Ilha de Maré  
-Salve o mestre que me ensinou  
-A mandinga de bater com o pé  
-  
-Iaiá ioiô  
-  
-**Iaiá ioiô  
-Iaiá ioiô**  
-  
-Quando meu mestre se foi  
-Toda a Bahia chorou  
-  
-Iaiá ioiô  
-  
-**Iaiá ioiô  
-Iaiá ioiô** | When my master left  
-All of Bahia cried  
-  
-Iaiá ioiô  
-  
-Iaiá ioiô  
-Iaiá ioiô  
-  
-Hi boy you learned from  
-Hi boy you learned from  
-He learned to play capoeira, he learned  
-Whoever taught me has died  
-Whoever taught me has died  
-His name is engraved  
-In the land where he was born  
-Save Mestre Bimba  
-Save Tidal Island  
-Save the master who taught me  
-The foot-tapping mandinga  
-  
-Iaiá ioiô  
-  
-Iaiá ioiô  
-Iaiá ioiô  
-  
-Witch Doctor  
-Full of emollience  
-My master was quick  
-He played according to the cadence  
-Of the beat of the Berimbau  
-Save Master Bimba  
-Regional Creator  
-  
-Save Master Bimba  
-Regional Creator  
-  
-Iaiá ioiô  
-  
-Iaiá ioiô  
-Iaiá ioiô  
-  
-He learned meia-lua, he did  
-And martelo, rabo-de-arraia  
-He played at the foot of the slope  
-Often by the beach  
-Save São Salvador  
-Save the Ilha de Maré  
-Save the master who taught me  
-The foot-tapping mandinga  
-  
-Iaiá ioiô  
-  
-Iaiá ioiô  
-Iaiá ioiô  
-  
-When my master left  
-All of Bahia cried  
-  
-Iaiá ioiô  
-  
-Iaiá ioiô  
-Iaiá ioiô |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Quando o meu mestre se foi<br>
+Toda a Bahia chorou<br>
+<br>
+Iaiá ioiô<br>
+<br>
+<strong>Iaiá ioiô<br>
+Iaiá ioiô</strong><br>
+<br>
+Oi menino com quem tu aprendeu<br>
+Oi menino com quem tu aprendeu<br>
+Aprendeu a jogar capoeira, aprendeu<br>
+Quem me ensinou já morreu<br>
+Quem me ensinou já morreu<br>
+O seu nome está gravado<br>
+Na terra onde ele nasceu<br>
+Salve o Mestre Bimba<br>
+Salve Ilha de maré<br>
+Salve o mestre que me ensinou<br>
+A mandinga de bater com o pé<br>
+<br>
+Iaiá ioiô<br>
+<br>
+<strong>Iaiá ioiô<br>
+Iaiá ioiô</strong><br>
+<br>
+Mandingueiro<br>
+Cheio de malemolência<br>
+Era ligeiro o meu mestre<br>
+Que jogava conforme a cadência<br>
+Do bater do Berimbau<br>
+Salve o Mestre Bimba<br>
+Criador da regional<br>
+<br>
+Salve o mestre Bimba<br>
+<strong>Criador da regional</strong><br>
+<br>
+Iaiá ioiô<br>
+<br>
+<strong>Iaiá ioiô<br>
+Iaiá ioiô</strong><br>
+<br>
+Aprendeu meia-lua, aprendeu<br>
+E martelo, rabo-de-arraia<br>
+Jogava no pé da ladeira<br>
+Muitas vezes na beira da praia<br>
+Salve São Salvador<br>
+Salve a Ilha de Maré<br>
+Salve o mestre que me ensinou<br>
+A mandinga de bater com o pé<br>
+<br>
+Iaiá ioiô<br>
+<br>
+<strong>Iaiá ioiô<br>
+Iaiá ioiô</strong><br>
+<br>
+Quando meu mestre se foi<br>
+Toda a Bahia chorou<br>
+<br>
+Iaiá ioiô<br>
+<br>
+<strong>Iaiá ioiô<br>
+Iaiá ioiô</strong></td>
+        <td>When my master left<br>
+All of Bahia cried<br>
+<br>
+Iaiá ioiô<br>
+<br>
+Iaiá ioiô<br>
+Iaiá ioiô<br>
+<br>
+Hi boy you learned from<br>
+Hi boy you learned from<br>
+He learned to play capoeira, he learned<br>
+Whoever taught me has died<br>
+Whoever taught me has died<br>
+His name is engraved<br>
+In the land where he was born<br>
+Save Mestre Bimba<br>
+Save Tidal Island<br>
+Save the master who taught me<br>
+The foot-tapping mandinga<br>
+<br>
+Iaiá ioiô<br>
+<br>
+Iaiá ioiô<br>
+Iaiá ioiô<br>
+<br>
+Witch Doctor<br>
+Full of emollience<br>
+My master was quick<br>
+He played according to the cadence<br>
+Of the beat of the Berimbau<br>
+Save Master Bimba<br>
+Regional Creator<br>
+<br>
+Save Master Bimba<br>
+Regional Creator<br>
+<br>
+Iaiá ioiô<br>
+<br>
+Iaiá ioiô<br>
+Iaiá ioiô<br>
+<br>
+He learned meia-lua, he did<br>
+And martelo, rabo-de-arraia<br>
+He played at the foot of the slope<br>
+Often by the beach<br>
+Save São Salvador<br>
+Save the Ilha de Maré<br>
+Save the master who taught me<br>
+The foot-tapping mandinga<br>
+<br>
+Iaiá ioiô<br>
+<br>
+Iaiá ioiô<br>
+Iaiá ioiô<br>
+<br>
+When my master left<br>
+All of Bahia cried<br>
+<br>
+Iaiá ioiô<br>
+<br>
+Iaiá ioiô<br>
+Iaiá ioiô</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Edson Show
-
 </figcaption>

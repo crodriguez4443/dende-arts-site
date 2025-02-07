@@ -1,3 +1,5 @@
+Here's the formatted markdown document:
+
 ---
 title: "Berimbau me leva ê"
 date: "2020-10-15"
@@ -8,62 +10,17 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Berimbau me leva ê  
-Capoeira vai jogar  
-  
-Camarada eu venho de longe  
-Trazendo meu berimbau  
-Fazendo de capoeira  
-A minha vida, meu ideal  
-  
-Berimbau me leva ê  
-Capoeira vai jogar  
-  
-Berimbau me leva no passado  
-Me leve nos tempos de criança  
-Onde a vida é brincadeira  
-E a saudade é uma lembrança  
-  
-Berimbau me leva ê  
-Capoeira vai jogar  
-  
-Nos caminhos que eu percorri  
-A saudade foi minha companheira  
-O destino a gente não escolhe  
-O meu foi lançado pela capoeira  
-  
-Berimbau me leva ê  
-Capoeira vai jogar | Berimbau take me  
-Capoeira will play  
-  
-Comrade I come from afar  
-Bringing my berimbau  
-Making Capoeira  
-My life, my ideal  
-  
-Berimbau take me  
-Capoeira will play  
-  
-Berimbau take me to the past  
-Take me back to childhood  
-Where life is play  
-And longing is a memory  
-  
-Berimbau take me  
-Capoeira will play  
-  
-On the paths I took  
-Homesickness was my companion  
-We don't choose our fates  
-Mine was given to me by capoeira  
-  
-Berimbau take me  
-Capoeira will play |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Berimbau me leva ê<br>Capoeira vai jogar<br><br>Camarada eu venho de longe<br>Trazendo meu berimbau<br>Fazendo de capoeira<br>A minha vida, meu ideal<br><br>Berimbau me leva ê<br>Capoeira vai jogar<br><br>Berimbau me leva no passado<br>Me leve nos tempos de criança<br>Onde a vida é brincadeira<br>E a saudade é uma lembrança<br><br>Berimbau me leva ê<br>Capoeira vai jogar<br><br>Nos caminhos que eu percorri<br>A saudade foi minha companheira<br>O destino a gente não escolhe<br>O meu foi lançado pela capoeira<br><br>Berimbau me leva ê<br>Capoeira vai jogar</td>
+        <td>Berimbau take me<br>Capoeira will play<br><br>Comrade I come from afar<br>Bringing my berimbau<br>Making Capoeira<br>My life, my ideal<br><br>Berimbau take me<br>Capoeira will play<br><br>Berimbau take me to the past<br>Take me back to childhood<br>Where life is play<br>And longing is a memory<br><br>Berimbau take me<br>Capoeira will play<br><br>On the paths I took<br>Homesickness was my companion<br>We don't choose our fates<br>Mine was given to me by capoeira<br><br>Berimbau take me<br>Capoeira will play</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Camaradaê"
 date: "2020-11-30"
@@ -9,140 +11,17 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Ê meu camarada  
-Ê meu camarada  
-  
-**Ê meu camarada  
-Ê meu camarada**  
-  
-Vamos simbora iá  
-  
-**Ê meu camarada  
-Ê meu camarada**  
-  
-A vida que levo hoje  
-Não é mais vida de cão  
-Tiveram a brilhante ideia  
-De abolir com a escravidão  
-Camarada ê  
-  
-**Ê meu camarada  
-Ê meu camarada**  
-  
-Não trago faca na cinta  
-Nem punhal não trago não  
-Trago o lenço no pescoço  
-Navalha na minha mão  
-Camarada ê  
-  
-**Ê meu camarada  
-Ê meu camarada**  
-  
-Camarada ieieie  
-  
-**Ê meu camarada  
-Ê meu camarada**  
-  
-Trago meu chapéu de palha  
-Também trago o berimbau  
-Na roda de malandragem  
-Passa bem ou passa mal  
-Camarada ê  
-  
-**Ê meu camarada  
-Ê meu camarada**  
-  
-Camarada iê iê iê  
-  
-**Ê meu camarada  
-Ê meu camarada**  
-  
-No meio da vadiagem  
-Com tristeza e atenção  
-O meu lenço no pescoço  
-Navalha não corta não  
-Camarada ê  
-  
-**Ê meu camarada  
-Ê meu camarada**  
-  
-Tem gente que quer bater  
-Não gosta de apanhar  
-Na mandinga do bom mestre  
-Você tem que mandingar  
-Camarada ê  
-  
-**Ê meu camarada  
-Ê meu camarada** | Ê my comrade  
-Ê my comrade  
-  
-Ê my comrade  
-Ê my comrade  
-  
-Let's go  
-  
-Ê my comrade  
-Ê my comrade  
-  
-The life I lead today  
-It's not a dog's life anymore  
-They had the brilliant idea  
-To abolish slavery  
-Comrade ê  
-  
-Ê my comrade  
-Ê my comrade  
-  
-I don't have a knife on my belt  
-I don't even bring a dagger  
-I have a scarf around my neck  
-Razor in my hand  
-Comrade ê  
-  
-Ê my comrade  
-Ê my comrade  
-  
-Comrade ieieie  
-  
-Ê my comrade  
-Ê my comrade  
-  
-I bring my straw hat  
-I also bring the berimbau  
-At the roda of malandragem  
-Feeling good or feeling sick  
-Comrade ê  
-  
-Ê my comrade  
-Ê my comrade  
-  
-Comrade iê iê iê  
-  
-Ê my comrade  
-Ê my comrade  
-  
-In the middle of playing  
-With sadness and attention  
-My scarf around my neck  
-Razor does not cut  
-Comrade ê  
-  
-Ê my comrade  
-Ê my comrade  
-  
-There are people who want to hit  
-Don't like to be beaten  
-In the mandinga of the good master  
-You have to mandinga  
-Comrade ê  
-  
-Ê my comrade  
-Ê my comrade |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Ê meu camarada<br>Ê meu camarada<br><br><strong>Ê meu camarada<br>Ê meu camarada</strong><br><br>Vamos simbora iá<br><br><strong>Ê meu camarada<br>Ê meu camarada</strong><br><br>A vida que levo hoje<br>Não é mais vida de cão<br>Tiveram a brilhante ideia<br>De abolir com a escravidão<br>Camarada ê<br><br><strong>Ê meu camarada<br>Ê meu camarada</strong><br><br>Não trago faca na cinta<br>Nem punhal não trago não<br>Trago o lenço no pescoço<br>Navalha na minha mão<br>Camarada ê<br><br><strong>Ê meu camarada<br>Ê meu camarada</strong><br><br>Camarada ieieie<br><br><strong>Ê meu camarada<br>Ê meu camarada</strong><br><br>Trago meu chapéu de palha<br>Também trago o berimbau<br>Na roda de malandragem<br>Passa bem ou passa mal<br>Camarada ê<br><br><strong>Ê meu camarada<br>Ê meu camarada</strong><br><br>Camarada iê iê iê<br><br><strong>Ê meu camarada<br>Ê meu camarada</strong><br><br>No meio da vadiagem<br>Com tristeza e atenção<br>O meu lenço no pescoço<br>Navalha não corta não<br>Camarada ê<br><br><strong>Ê meu camarada<br>Ê meu camarada</strong><br><br>Tem gente que quer bater<br>Não gosta de apanhar<br>Na mandinga do bom mestre<br>Você tem que mandingar<br>Camarada ê<br><br><strong>Ê meu camarada<br>Ê meu camarada</strong></td>
+        <td>Ê my comrade<br>Ê my comrade<br><br>Ê my comrade<br>Ê my comrade<br><br>Let's go<br><br>Ê my comrade<br>Ê my comrade<br><br>The life I lead today<br>It's not a dog's life anymore<br>They had the brilliant idea<br>To abolish slavery<br>Comrade ê<br><br>Ê my comrade<br>Ê my comrade<br><br>I don't have a knife on my belt<br>I don't even bring a dagger<br>I have a scarf around my neck<br>Razor in my hand<br>Comrade ê<br><br>Ê my comrade<br>Ê my comrade<br><br>Comrade ieieie<br><br>Ê my comrade<br>Ê my comrade<br><br>I bring my straw hat<br>I also bring the berimbau<br>At the roda of malandragem<br>Feeling good or feeling sick<br>Comrade ê<br><br>Ê my comrade<br>Ê my comrade<br><br>Comrade iê iê iê<br><br>Ê my comrade<br>Ê my comrade<br><br>In the middle of playing<br>With sadness and attention<br>My scarf around my neck<br>Razor does not cut<br>Comrade ê<br><br>Ê my comrade<br>Ê my comrade<br><br>There are people who want to hit<br>Don't like to be beaten<br>In the mandinga of the good master<br>You have to mandinga<br>Comrade ê<br><br>Ê my comrade<br>Ê my comrade</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Mestre Jaiminho
-
 </figcaption>

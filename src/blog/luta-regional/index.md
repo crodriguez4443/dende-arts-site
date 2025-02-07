@@ -1,3 +1,5 @@
+Here's the formatted markdown document according to the specifications:
+
 ---
 title: "Luta Regional"
 date: "2021-01-24"
@@ -9,116 +11,121 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Quando seu Bimba criou a regional  
-Com dois pandeiros e um só berimbau  
-Subiu no ringue e fez acontecer  
-A regional do seu Bimba é pra valer  
-Cabra caiu na capoeira  
-Levou martelo, cabeçada e rasteira  
-  
-**Cabra caiu na capoeira**  
-  
-A Regional é uma luta brasileira  
-**  
-Cabra caiu na capoeira**  
-  
-Estilo novo e muito eficiente  
-Apresentou até pro presidente  
-A capoeira quando legalizada  
-Sua academia, a primeira registrada  
-Cabra caiu, meu Deus, na capoeira  
-Toma cuidado com o tombo da ladeira  
-**  
-Cabra caiu na capoeira**  
-  
-Foi no martelo, cabeçada, e ponteira  
-**  
-Cabra caiu na capoeira**  
-  
-Mas muita gente veio lhe desafiar  
-Seu Caiçara também foi lá tentar  
-Foi lá dentro da sua academia  
-Era valente com ousadia  
-Cabra caiu, meu Deus, na capoeira  
-Levou martelo, cabeçada e rasteira  
-  
-**Cabra caiu na Capoeira**  
-  
-O mestre Bimba foi bamba na capoeira  
-  
-**Cabra caiu na capoeira**  
-  
-O Mestre Bimba então armou o berimbau  
-Pra defender a capoeira regional  
-Um pé na boca bem logo na entrada  
-Seu Caiçara caiu não entendeu nada  
-É pé, meu filho eu falei pra você  
-Foi mestre Bimba osso duro de roer  
-Cabra caiu, meu Deus, na capoeira  
-Cuidado moço com o tombo da ladeira  
-  
-**Cabra caiu na capoeira**  
-  
-O mestre Bimba foi bamba na capoeira  
-  
-**Cabra caiu na capoeira** | When Mr. Bimba created the regional  
-With two tambourines and a single berimbau  
-He got in the ring and made it happen  
-Mr. Bimba's regional is for real  
-Tough guy fell in capoeira  
-He took martelo, cabeçada and rasteira  
-  
-Tough guy fell in capoeira  
-  
-Regional is a Brazilian fight  
-  
-Tough guy fell in capoeira  
-  
-A new and very efficient style  
-He even presented it to the president  
-Capoeira when legalized  
-His academy was the first registered  
-Tough guy fell, my God, in capoeira  
-Take care of the tumble of the slope  
-  
-Tough guy fell in capoeira  
-  
-It was in the martelo, cabeçada and ponteira  
-  
-Tough guy fell in capoeira  
-  
-But a lot of people came to challenge him  
-Mr. Caiçara also went there to try  
-Went into his gym  
-He was brave and bold  
-Tough guy fell, my God, in capoeira  
-He took martelo, cabeçada and rasteira  
-  
-Tough guy fell in capoeira  
-  
-Mestre Bimba was great at capoeira  
-  
-Tough guy fell in capoeira  
-  
-Mestre Bimba then set up the berimbau  
-To defend regional capoeira  
-One foot to the mouth right at the entrance  
-Mr. Caiçara fell did not understand anything  
-Foot, my son, I told you  
-It was master Bimba hard to crack  
-Tough guy fell, my God, in capoeira  
-Take care of the tumble of the slope  
-  
-Tough guy fell in capoeira  
-  
-Mestre Bimba was great at capoeira  
-  
-Tough guy fell in capoeira |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Quando seu Bimba criou a regional<br>
+Com dois pandeiros e um só berimbau<br>
+Subiu no ringue e fez acontecer<br>
+A regional do seu Bimba é pra valer<br>
+Cabra caiu na capoeira<br>
+Levou martelo, cabeçada e rasteira<br>
+<br>
+<strong>Cabra caiu na capoeira</strong><br>
+<br>
+A Regional é uma luta brasileira<br>
+<strong><br>
+Cabra caiu na capoeira</strong><br>
+<br>
+Estilo novo e muito eficiente<br>
+Apresentou até pro presidente<br>
+A capoeira quando legalizada<br>
+Sua academia, a primeira registrada<br>
+Cabra caiu, meu Deus, na capoeira<br>
+Toma cuidado com o tombo da ladeira<br>
+<strong><br>
+Cabra caiu na capoeira</strong><br>
+<br>
+Foi no martelo, cabeçada, e ponteira<br>
+<strong><br>
+Cabra caiu na capoeira</strong><br>
+<br>
+Mas muita gente veio lhe desafiar<br>
+Seu Caiçara também foi lá tentar<br>
+Foi lá dentro da sua academia<br>
+Era valente com ousadia<br>
+Cabra caiu, meu Deus, na capoeira<br>
+Levou martelo, cabeçada e rasteira<br>
+<br>
+<strong>Cabra caiu na Capoeira</strong><br>
+<br>
+O mestre Bimba foi bamba na capoeira<br>
+<br>
+<strong>Cabra caiu na capoeira</strong><br>
+<br>
+O Mestre Bimba então armou o berimbau<br>
+Pra defender a capoeira regional<br>
+Um pé na boca bem logo na entrada<br>
+Seu Caiçara caiu não entendeu nada<br>
+É pé, meu filho eu falei pra você<br>
+Foi mestre Bimba osso duro de roer<br>
+Cabra caiu, meu Deus, na capoeira<br>
+Cuidado moço com o tombo da ladeira<br>
+<br>
+<strong>Cabra caiu na capoeira</strong><br>
+<br>
+O mestre Bimba foi bamba na capoeira<br>
+<br>
+<strong>Cabra caiu na capoeira</strong></td>
+        <td>When Mr. Bimba created the regional<br>
+With two tambourines and a single berimbau<br>
+He got in the ring and made it happen<br>
+Mr. Bimba's regional is for real<br>
+Tough guy fell in capoeira<br>
+He took martelo, cabeçada and rasteira<br>
+<br>
+Tough guy fell in capoeira<br>
+<br>
+Regional is a Brazilian fight<br>
+<br>
+Tough guy fell in capoeira<br>
+<br>
+A new and very efficient style<br>
+He even presented it to the president<br>
+Capoeira when legalized<br>
+His academy was the first registered<br>
+Tough guy fell, my God, in capoeira<br>
+Take care of the tumble of the slope<br>
+<br>
+Tough guy fell in capoeira<br>
+<br>
+It was in the martelo, cabeçada and ponteira<br>
+<br>
+Tough guy fell in capoeira<br>
+<br>
+But a lot of people came to challenge him<br>
+Mr. Caiçara also went there to try<br>
+Went into his gym<br>
+He was brave and bold<br>
+Tough guy fell, my God, in capoeira<br>
+He took martelo, cabeçada and rasteira<br>
+<br>
+Tough guy fell in capoeira<br>
+<br>
+Mestre Bimba was great at capoeira<br>
+<br>
+Tough guy fell in capoeira<br>
+<br>
+Mestre Bimba then set up the berimbau<br>
+To defend regional capoeira<br>
+One foot to the mouth right at the entrance<br>
+Mr. Caiçara fell did not understand anything<br>
+Foot, my son, I told you<br>
+It was master Bimba hard to crack<br>
+Tough guy fell, my God, in capoeira<br>
+Take care of the tumble of the slope<br>
+<br>
+Tough guy fell in capoeira<br>
+<br>
+Mestre Bimba was great at capoeira<br>
+<br>
+Tough guy fell in capoeira</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Marquinho Coreba
-
 </figcaption>

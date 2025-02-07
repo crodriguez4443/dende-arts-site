@@ -1,3 +1,5 @@
+Here's the formatted document:
+
 ---
 title: "Folha Seca"
 date: "2020-11-26"
@@ -9,25 +11,30 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Mas eu pisei na folha seca  
-Eu ouvi fazer xuê, xuâ  
-Xuê, xuê, xuê, xuá  
-  
-**Eu ouvi fazer xuê, xuá**  
-  
-Xuê, xuê, xuê, xuá  
-**  
-Eu ouvi fazer xuê, xuá** | I stepped on the dry leaf  
-I heard it go xuê, xuá  
-Xuê, xuê, xuê, xuá  
-  
-I heard it go xuê, xuá  
-  
-Xuê, xuê, xuê, xuá  
-  
-I heard it go xuê, xuá |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Mas eu pisei na folha seca<br>
+        Eu ouvi fazer xuê, xuâ<br>
+        Xuê, xuê, xuê, xuá<br>
+        <br>
+        <strong>Eu ouvi fazer xuê, xuá</strong><br>
+        <br>
+        Xuê, xuê, xuê, xuá<br>
+        <strong>Eu ouvi fazer xuê, xuá</strong></td>
+        <td>I stepped on the dry leaf<br>
+        I heard it go xuê, xuá<br>
+        Xuê, xuê, xuê, xuá<br>
+        <br>
+        I heard it go xuê, xuá<br>
+        <br>
+        Xuê, xuê, xuê, xuá<br>
+        I heard it go xuê, xuá</td>
+    </tr>
+</table>
 
 <figcaption>
 

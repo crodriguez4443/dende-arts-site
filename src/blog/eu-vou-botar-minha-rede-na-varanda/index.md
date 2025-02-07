@@ -9,25 +9,32 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Eu vou botar minha rede na varanda  
-Eu quero ver minha rede balançar  
-Balança rede ioio  
-Balança rede iaia  
-  
-**Eu vou botar minha rede na varanda**  
-**Eu quero ver minha rede balançar**  
-**Balança rede ioio**  
-**Balança rede iaia** | I’m going to put my hammock on the porch/balcony  
-I want to see my hammock swing  
-swing hammock ioio  
-Swing hammoch iaia  
-  
-**I’m going to put my hammock on the porch  
-I want to see my hammock swing  
-swing hammock ioio  
-Swing hammoch iaia** |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Eu vou botar minha rede na varanda<br>
+        Eu quero ver minha rede balançar<br>
+        Balança rede ioio<br>
+        Balança rede iaia<br>
+        <br>
+        <strong>Eu vou botar minha rede na varanda</strong><br>
+        <strong>Eu quero ver minha rede balançar</strong><br>
+        <strong>Balança rede ioio</strong><br>
+        <strong>Balança rede iaia</strong></td>
+        <td>I'm going to put my hammock on the porch/balcony<br>
+        I want to see my hammock swing<br>
+        swing hammock ioio<br>
+        Swing hammoch iaia<br>
+        <br>
+        <strong>I'm going to put my hammock on the porch</strong><br>
+        <strong>I want to see my hammock swing</strong><br>
+        <strong>swing hammock ioio</strong><br>
+        <strong>Swing hammoch iaia</strong></td>
+    </tr>
+</table>
 
 <figcaption>
 

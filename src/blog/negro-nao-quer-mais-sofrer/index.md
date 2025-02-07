@@ -8,53 +8,16 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Negro não quer mais correr  
-Negro não quer mais sofrer feitor  
-  
-**Ôoo , ôoo , ôoo**  
-  
-Negro nasceu na senzala  
-Ficou doente sem amor  
-  
-**Ôoo , ôoo , ôoo**  
-  
-Ele veio do cativeiro  
-Na chibata do feitor  
-O suor que se escorria  
-É sangue do trabalhador  
-  
-**Ôoo , ôoo , ôoo**  
-  
-Ai meu Deus o que eu faço  
-A imagem não se apagou  
-Até hoje nessa vida  
-A escravidão não se acabou  
-  
-**Ôoo , ôoo , ôoo** | Black man doesn't want to run anymore  
-Black no longer wants to suffer, overseer  
-  
-Ooo, ooo, ooo  
-  
-Black man was born in the senzala  
-Got sick without love  
-  
-Ooo, ooo, ooo  
-  
-He came from captivity  
-In the overseer's whip  
-The sweat that ran  
-Is the worker's blood  
-  
-Ooo, ooo, ooo  
-  
-Oh my God what do I do  
-The image did not fade  
-Even today in this life  
-Slavery is not over  
-  
-Ooo, ooo, ooo |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Negro não quer mais correr<br>Negro não quer mais sofrer feitor<br><br><strong>Ôoo , ôoo , ôoo</strong><br><br>Negro nasceu na senzala<br>Ficou doente sem amor<br><br><strong>Ôoo , ôoo , ôoo</strong><br><br>Ele veio do cativeiro<br>Na chibata do feitor<br>O suor que se escorria<br>É sangue do trabalhador<br><br><strong>Ôoo , ôoo , ôoo</strong><br><br>Ai meu Deus o que eu faço<br>A imagem não se apagou<br>Até hoje nessa vida<br>A escravidão não se acabou<br><br><strong>Ôoo , ôoo , ôoo</strong></td>
+        <td>Black man doesn't want to run anymore<br>Black no longer wants to suffer, overseer<br><br>Ooo, ooo, ooo<br><br>Black man was born in the senzala<br>Got sick without love<br><br>Ooo, ooo, ooo<br><br>He came from captivity<br>In the overseer's whip<br>The sweat that ran<br>Is the worker's blood<br><br>Ooo, ooo, ooo<br><br>Oh my God what do I do<br>The image did not fade<br>Even today in this life<br>Slavery is not over<br><br>Ooo, ooo, ooo</td>
+    </tr>
+</table>
 
 <figcaption>
 

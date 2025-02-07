@@ -9,27 +9,34 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portugues | English |
-| --- | --- |
-| O que é berimbau?  
-**A cabaça, o arame, e um pedaço de pau**  
-O que é berimbau?  
-**A cabaça, o arame, e um pedaço de pau**  
-como é gostoso tocar berimbau  
-A cabaça, o arame, e um pedaço de pau  
-O que é berimbau?  
-**A cabaça, o arame, e um pedaço de pau**  
-O que é berimbau?  
-**A cabaça, o arame, e um pedaço de pau** | What is berimbau?  
-The gourd, the wire, and a stick  
-What is berimbau?  
-The gourd, the wire, and a stick  
-How nice it is to play the berimbau  
-The gourd, the wire, and a stick  
-What is berimbau?  
-The gourd, the wire, and a stick  
-What is berimbau?  
-The gourd, the wire, and a stick |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>O que é berimbau?<br>
+        <strong>A cabaça, o arame, e um pedaço de pau</strong><br>
+        O que é berimbau?<br>
+        <strong>A cabaça, o arame, e um pedaço de pau</strong><br>
+        como é gostoso tocar berimbau<br>
+        A cabaça, o arame, e um pedaço de pau<br>
+        O que é berimbau?<br>
+        <strong>A cabaça, o arame, e um pedaço de pau</strong><br>
+        O que é berimbau?<br>
+        <strong>A cabaça, o arame, e um pedaço de pau</strong></td>
+        <td>What is berimbau?<br>
+        The gourd, the wire, and a stick<br>
+        What is berimbau?<br>
+        The gourd, the wire, and a stick<br>
+        How nice it is to play the berimbau<br>
+        The gourd, the wire, and a stick<br>
+        What is berimbau?<br>
+        The gourd, the wire, and a stick<br>
+        What is berimbau?<br>
+        The gourd, the wire, and a stick</td>
+    </tr>
+</table>
 
 <figcaption>
 

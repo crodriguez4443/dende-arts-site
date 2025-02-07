@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Dendê do Céu"
 date: "2020-11-22"
@@ -8,54 +10,17 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Meu Mestre chegou pra roda  
-E se benzeu  
-Olhou pro céu pediu pra Deus  
-Te proteger  
-Pegou berimbau tocou São Bento  
-Pediu pra ver  
-Energia nessa roda eu quero ver  
-  
-Dendê Dendê Dendê eu vi Dendê  
-Quando olhei pro céu eu vi Dendê  
-  
-**Dendê Dendê Dendê eu vi Dendê  
-Quando olhei pro céu eu vi Dendê**  
-  
-Olhando lá pro céu vi caindo esse dendê  
-Quem mandou foi Mestre Bimba  
-Energia pra valer  
-Meu Mestre pediu dendê para a Roda ficar boa  
-Pegou o berimbau e pediu dendê  
-  
-**Dendê Dendê Dendê eu vi Dendê  
-Quando olhei pro céu eu vi Dendê** | My Master came to the roda  
-And blessed himself  
-Looked at the sky asked God  
-Protect you  
-Picked up the berimbau played São Bento  
-Asked to see  
-Energy in this roda I want to see  
-  
-Dendê Dendê Dendê I saw Dendê  
-When I looked at the sky I saw Dendê  
-  
-Dendê Dendê Dendê I saw Dendê  
-When I looked at the sky I saw Dendê  
-  
-Looking up at the sky I saw this dendê falling  
-Master Bimba was in charge  
-Real energy  
-My Master asked for dendê to make the roda look good  
-He picked up the berimbau and asked for dendê  
-  
-Dendê Dendê Dendê I saw Dendê  
-When I looked at the sky I saw Dendê |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Meu Mestre chegou pra roda<br>E se benzeu<br>Olhou pro céu pediu pra Deus<br>Te proteger<br>Pegou berimbau tocou São Bento<br>Pediu pra ver<br>Energia nessa roda eu quero ver<br><br>Dendê Dendê Dendê eu vi Dendê<br>Quando olhei pro céu eu vi Dendê<br><br><strong>Dendê Dendê Dendê eu vi Dendê<br>Quando olhei pro céu eu vi Dendê</strong><br><br>Olhando lá pro céu vi caindo esse dendê<br>Quem mandou foi Mestre Bimba<br>Energia pra valer<br>Meu Mestre pediu dendê para a Roda ficar boa<br>Pegou o berimbau e pediu dendê<br><br><strong>Dendê Dendê Dendê eu vi Dendê<br>Quando olhei pro céu eu vi Dendê</strong></td>
+        <td>My Master came to the roda<br>And blessed himself<br>Looked at the sky asked God<br>Protect you<br>Picked up the berimbau played São Bento<br>Asked to see<br>Energy in this roda I want to see<br><br>Dendê Dendê Dendê I saw Dendê<br>When I looked at the sky I saw Dendê<br><br>Dendê Dendê Dendê I saw Dendê<br>When I looked at the sky I saw Dendê<br><br>Looking up at the sky I saw this dendê falling<br>Master Bimba was in charge<br>Real energy<br>My Master asked for dendê to make the roda look good<br>He picked up the berimbau and asked for dendê<br><br>Dendê Dendê Dendê I saw Dendê<br>When I looked at the sky I saw Dendê</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Cacau
-
 </figcaption>

@@ -8,25 +8,32 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Sela meu cavalo pequeno  
-Que eu vou embora  
-Sela meu cavalo pequeno  
-Chegou a hora  
-  
-**Sela meu cavalo pequeno  
-Que eu vou embora  
-Sela meu cavalo pequeno  
-Chegou a hora** | Saddle my little horse  
-'Cause I'm leaving  
-Saddle my little horse  
-The time has come  
-  
-Saddle my little horse  
-'Cause I'm leaving  
-Saddle my little horse  
-The time has come |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Sela meu cavalo pequeno<br>
+Que eu vou embora<br>
+Sela meu cavalo pequeno<br>
+Chegou a hora<br>
+<br>
+<strong>Sela meu cavalo pequeno<br>
+Que eu vou embora<br>
+Sela meu cavalo pequeno<br>
+Chegou a hora</strong></td>
+        <td>Saddle my little horse<br>
+'Cause I'm leaving<br>
+Saddle my little horse<br>
+The time has come<br>
+<br>
+Saddle my little horse<br>
+'Cause I'm leaving<br>
+Saddle my little horse<br>
+The time has come</td>
+    </tr>
+</table>
 
 <figcaption>
 

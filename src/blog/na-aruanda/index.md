@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Na Aruanda"
 date: "2020-11-30"
@@ -8,86 +10,91 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| É na Aruanda ê  
-É na Aruanda a  
-  
-**É na Aruanda ê  
-É na Aruanda a**  
-  
-Venho de longe  
-Terra dos meus ancestrais  
-Eu fui acorrentado  
-Pra lá não voltar mais  
-É na Aruanda  
-  
-**É na Aruanda ê  
-É na Aruanda a**  
-  
-Numa casa de madeira  
-Uma tumba flutuante sobre o mar  
-Assim eu fui trazido  
-Ao Brasil pra trabalhar  
-  
-**É na Aruanda ê  
-É na Aruanda a**  
-  
-E na linguagem jeji  
-Congagola e nagô  
-Veio o povo Bantu  
-Que no Brasil chegou  
-  
-**É na Aruanda ê  
-É na Aruanda a**  
-  
-Trazendo sua cultura  
-Sua história, seu axé  
-Os mistérios ancestrais  
-E a força do candomblé  
-  
-**É na Aruanda ê  
-É na Aruanda a** | It's in Aruanda, ê  
-It's in Aruanda, a  
-  
-It's in Aruanda, ê  
-It's in Aruanda, a  
-  
-I come from afar  
-Land of my ancestors  
-I was chained  
-So that I could not return  
-It's in Aruanda  
-  
-It's in Aruanda, ê  
-It's in Aruanda, a  
-  
-In a wooden house  
-A floating tomb over the sea  
-That's how I was brought  
-To work in Brazil  
-  
-It's in Aruanda, ê  
-It's in Aruanda, a  
-  
-And in the jeji language  
-Congagola and Nagô  
-Came the Bantu people  
-Who arrived in Brazil  
-  
-It's in Aruanda, ê  
-It's in Aruanda, a  
-  
-Bringing their culture  
-Their history, their axé  
-The ancestral mysteries  
-And the strength of candomblé  
-  
-It's in Aruanda, ê  
-It's in Aruanda, a |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>É na Aruanda ê<br>
+É na Aruanda a<br>
+<br>
+<strong>É na Aruanda ê<br>
+É na Aruanda a</strong><br>
+<br>
+Venho de longe<br>
+Terra dos meus ancestrais<br>
+Eu fui acorrentado<br>
+Pra lá não voltar mais<br>
+É na Aruanda<br>
+<br>
+<strong>É na Aruanda ê<br>
+É na Aruanda a</strong><br>
+<br>
+Numa casa de madeira<br>
+Uma tumba flutuante sobre o mar<br>
+Assim eu fui trazido<br>
+Ao Brasil pra trabalhar<br>
+<br>
+<strong>É na Aruanda ê<br>
+É na Aruanda a</strong><br>
+<br>
+E na linguagem jeji<br>
+Congagola e nagô<br>
+Veio o povo Bantu<br>
+Que no Brasil chegou<br>
+<br>
+<strong>É na Aruanda ê<br>
+É na Aruanda a</strong><br>
+<br>
+Trazendo sua cultura<br>
+Sua história, seu axé<br>
+Os mistérios ancestrais<br>
+E a força do candomblé<br>
+<br>
+<strong>É na Aruanda ê<br>
+É na Aruanda a</strong></td>
+        <td>It's in Aruanda, ê<br>
+It's in Aruanda, a<br>
+<br>
+It's in Aruanda, ê<br>
+It's in Aruanda, a<br>
+<br>
+I come from afar<br>
+Land of my ancestors<br>
+I was chained<br>
+So that I could not return<br>
+It's in Aruanda<br>
+<br>
+It's in Aruanda, ê<br>
+It's in Aruanda, a<br>
+<br>
+In a wooden house<br>
+A floating tomb over the sea<br>
+That's how I was brought<br>
+To work in Brazil<br>
+<br>
+It's in Aruanda, ê<br>
+It's in Aruanda, a<br>
+<br>
+And in the jeji language<br>
+Congagola and Nagô<br>
+Came the Bantu people<br>
+Who arrived in Brazil<br>
+<br>
+It's in Aruanda, ê<br>
+It's in Aruanda, a<br>
+<br>
+Bringing their culture<br>
+Their history, their axé<br>
+The ancestral mysteries<br>
+And the strength of candomblé<br>
+<br>
+It's in Aruanda, ê<br>
+It's in Aruanda, a</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Mestre Tucano Preto
-
 </figcaption>

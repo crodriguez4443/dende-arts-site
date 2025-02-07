@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Joga A Corda No Chão"
 date: "2020-12-30"
@@ -9,88 +11,17 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Joga a corda no chão menino  
-Pra ver se ela joga  
-A corda não joga não  
-É nós dois quem joga  
-  
-Joga a corda no chão menino  
-Pra ver se ela joga  
-A corda não joga não  
-É nós dois quem joga  
-  
-Não deixa a corda subir seu moço  
-Subir pra sua cabeça  
-A humildade é importante  
-No jogo da capoeira  
-  
-Joga a corda no chão menino  
-Pra ver se ela joga  
-A corda não joga não  
-É nós dois quem joga  
-  
-A hierarquia é importante  
-No jogo da capoeira  
-Invés de mostrar a corda  
-Ensine a capoeira  
-  
-Joga a corda no chão menino  
-Pra ver se ela joga  
-A corda não joga não  
-É nós dois quem joga  
-  
-O capoeira lhe respeita  
-Não é pela cor da corda  
-É pela amizade  
-Humildade que se mostra  
-  
-Joga a corda no chão menino  
-Pra ver se ela joga  
-A corda não joga não  
-É nós dois quem joga | Throw the rope on the floor, boy  
-To see if it plays  
-The rope doesn't play  
-It's the two of us who play  
-  
-Throw the rope on the floor, boy  
-To see if it plays  
-The rope doesn't play  
-It's the two of us who play  
-  
-Don't let the rope get up, lad  
-Get up to your head  
-Humility is important  
-In the game of capoeira  
-  
-Throw the rope on the floor, boy  
-To see if it plays  
-The rope doesn't play  
-It's the two of us who play  
-  
-Hierarchy is important  
-In the game of capoeira  
-Rather than showing the rope  
-Teach capoeira  
-  
-Throw the rope on the floor, boy  
-To see if it plays  
-The rope doesn't play  
-It's the two of us who play  
-  
-A capoeira respects you  
-Not by the color of the rope  
-It's for the friendship  
-Humility that shows  
-  
-Throw the rope on the floor, boy  
-To see if it plays  
-The rope doesn't play  
-It's the two of us who play |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Joga a corda no chão menino<br>Pra ver se ela joga<br>A corda não joga não<br>É nós dois quem joga<br><br>Joga a corda no chão menino<br>Pra ver se ela joga<br>A corda não joga não<br>É nós dois quem joga<br><br>Não deixa a corda subir seu moço<br>Subir pra sua cabeça<br>A humildade é importante<br>No jogo da capoeira<br><br>Joga a corda no chão menino<br>Pra ver se ela joga<br>A corda não joga não<br>É nós dois quem joga<br><br>A hierarquia é importante<br>No jogo da capoeira<br>Invés de mostrar a corda<br>Ensine a capoeira<br><br>Joga a corda no chão menino<br>Pra ver se ela joga<br>A corda não joga não<br>É nós dois quem joga<br><br>O capoeira lhe respeita<br>Não é pela cor da corda<br>É pela amizade<br>Humildade que se mostra<br><br>Joga a corda no chão menino<br>Pra ver se ela joga<br>A corda não joga não<br>É nós dois quem joga</td>
+        <td>Throw the rope on the floor, boy<br>To see if it plays<br>The rope doesn't play<br>It's the two of us who play<br><br>Throw the rope on the floor, boy<br>To see if it plays<br>The rope doesn't play<br>It's the two of us who play<br><br>Don't let the rope get up, lad<br>Get up to your head<br>Humility is important<br>In the game of capoeira<br><br>Throw the rope on the floor, boy<br>To see if it plays<br>The rope doesn't play<br>It's the two of us who play<br><br>Hierarchy is important<br>In the game of capoeira<br>Rather than showing the rope<br>Teach capoeira<br><br>Throw the rope on the floor, boy<br>To see if it plays<br>The rope doesn't play<br>It's the two of us who play<br><br>A capoeira respects you<br>Not by the color of the rope<br>It's for the friendship<br>Humility that shows<br><br>Throw the rope on the floor, boy<br>To see if it plays<br>The rope doesn't play<br>It's the two of us who play</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Paulo Braço
-
 </figcaption>

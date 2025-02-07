@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Ioiô, Toca o Berimbau Viola"
 date: "2020-12-29"
@@ -9,84 +11,93 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Ioiô, toca o berimbau viola  
-Iaiá, que eu viajo pra Angola  
-  
-**Ioiô, toca o berimbau viola  
-Iaiá, que eu viajo pra Angola**  
-  
-Eu viajo pra Angola  
-Antes vou pro cativeiro  
-Pra saber do sofrimento  
-Que teve no navio negreiro  
-  
-**Ioiô, toca o berimbau viola  
-Iaiá, que eu viajo pra Angola**  
-  
-Quando eu saio Luanda  
-Vou passar na Catumbela  
-Vai andando por Lobito  
-Para conhecer Benguela  
-  
-**Ioiô, toca o berimbau viola  
-Iaiá, que eu viajo pra Angola**  
-  
-O mercado de escravos  
-De Benguela faz chorar  
-Em pensar que muitos negros  
-Eram vendidos por lá  
-  
-**Ioiô, toca o berimbau viola  
-Iaiá, que eu viajo pra Angola**  
-  
-Pra conhecer nossas raízes  
-Saber mais de nossa história  
-Com berimbau tocando  
-Tem que conhecer Angola  
-**  
-Ioiô, toca o berimbau viola  
-Iaiá, que eu viajo pra Angola** | Ioiô, play the viola berimbau  
-Iaiá, and I will travel to Angola  
-  
-Ioiô, play the viola berimbau  
-Iaiá, and I will travel to Angola  
-  
-I travel to Angola  
-First I'll go to captivity  
-To know the suffering  
-That existed on the slave ship  
-  
-Ioiô, play the viola berimbau  
-Iaiá, and I will travel to Angola  
-  
-When I leave Luanda  
-I will pass in Catumbela  
-Go walking around Lobito  
-To get to know Benguela  
-  
-Ioiô, play the viola berimbau  
-Iaiá, and I will travel to Angola  
-  
-The slave market  
-Of Benguela makes one cry  
-In thinking that many black people  
-Were sold there  
-  
-Ioiô, play the viola berimbau  
-Iaiá, and I will travel to Angola  
-  
-To know our roots  
-Learn more about our history  
-With the berimbau playing  
-You have to know Angola  
-  
-Ioiô, play the viola berimbau  
-Iaiá, and I will travel to Angola |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Ioiô, toca o berimbau viola<br>
+            Iaiá, que eu viajo pra Angola<br>
+            <br>
+            <strong>Ioiô, toca o berimbau viola<br>
+            Iaiá, que eu viajo pra Angola</strong><br>
+            <br>
+            Eu viajo pra Angola<br>
+            Antes vou pro cativeiro<br>
+            Pra saber do sofrimento<br>
+            Que teve no navio negreiro<br>
+            <br>
+            <strong>Ioiô, toca o berimbau viola<br>
+            Iaiá, que eu viajo pra Angola</strong><br>
+            <br>
+            Quando eu saio Luanda<br>
+            Vou passar na Catumbela<br>
+            Vai andando por Lobito<br>
+            Para conhecer Benguela<br>
+            <br>
+            <strong>Ioiô, toca o berimbau viola<br>
+            Iaiá, que eu viajo pra Angola</strong><br>
+            <br>
+            O mercado de escravos<br>
+            De Benguela faz chorar<br>
+            Em pensar que muitos negros<br>
+            Eram vendidos por lá<br>
+            <br>
+            <strong>Ioiô, toca o berimbau viola<br>
+            Iaiá, que eu viajo pra Angola</strong><br>
+            <br>
+            Pra conhecer nossas raízes<br>
+            Saber mais de nossa história<br>
+            Com berimbau tocando<br>
+            Tem que conhecer Angola<br>
+            <strong><br>
+            Ioiô, toca o berimbau viola<br>
+            Iaiá, que eu viajo pra Angola</strong>
+        </td>
+        <td>
+            Ioiô, play the viola berimbau<br>
+            Iaiá, and I will travel to Angola<br>
+            <br>
+            Ioiô, play the viola berimbau<br>
+            Iaiá, and I will travel to Angola<br>
+            <br>
+            I travel to Angola<br>
+            First I'll go to captivity<br>
+            To know the suffering<br>
+            That existed on the slave ship<br>
+            <br>
+            Ioiô, play the viola berimbau<br>
+            Iaiá, and I will travel to Angola<br>
+            <br>
+            When I leave Luanda<br>
+            I will pass in Catumbela<br>
+            Go walking around Lobito<br>
+            To get to know Benguela<br>
+            <br>
+            Ioiô, play the viola berimbau<br>
+            Iaiá, and I will travel to Angola<br>
+            <br>
+            The slave market<br>
+            Of Benguela makes one cry<br>
+            In thinking that many black people<br>
+            Were sold there<br>
+            <br>
+            Ioiô, play the viola berimbau<br>
+            Iaiá, and I will travel to Angola<br>
+            <br>
+            To know our roots<br>
+            Learn more about our history<br>
+            With the berimbau playing<br>
+            You have to know Angola<br>
+            <br>
+            Ioiô, play the viola berimbau<br>
+            Iaiá, and I will travel to Angola
+        </td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Pretinho
-
 </figcaption>

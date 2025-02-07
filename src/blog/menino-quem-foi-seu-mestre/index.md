@@ -1,3 +1,5 @@
+Here's the formatted document:
+
 ---
 title: "Menino quem foi seu mestre"
 date: "2023-02-06"
@@ -8,36 +10,41 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Iê!!!  
-Menino quem foi seu mestre  
-Meu mestre foi Salomão  
-Andava de pé pra cima, ai meu deus  
-Com a cabeça no chao  
-A ele devo saber, saude e obrigaçao  
-sou discipulo que aprendo  
-sou mestre que da liçao  
-o segredo de Sao Cosme  
-só quem sabe e São Damião, camará...  
-  
-ie via meu mestre  
-Iê viva meu mestre camará | Iê!!!  
-Boy who was your master  
-My master was Solomon  
-He walked with his feet in the air (implying a handstand), oh my god  
-With his head in the ground  
-To him I must know, health and obligation  
-I am a disciple who learns  
-I'm a master who teaches  
-the secret of san cosme  
-only those who know and São Damião, comrade…  
-  
-long live my mestre  
-long live my mestre my friend |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Iê!!!<br>
+        Menino quem foi seu mestre<br>
+        Meu mestre foi Salomão<br>
+        Andava de pé pra cima, ai meu deus<br>
+        Com a cabeça no chao<br>
+        A ele devo saber, saude e obrigaçao<br>
+        sou discipulo que aprendo<br>
+        sou mestre que da liçao<br>
+        o segredo de Sao Cosme<br>
+        só quem sabe e São Damião, camará...<br>
+        <br>
+        ie via meu mestre<br>
+        Iê viva meu mestre camará</td>
+        <td>Iê!!!<br>
+        Boy who was your master<br>
+        My master was Solomon<br>
+        He walked with his feet in the air (implying a handstand), oh my god<br>
+        With his head in the ground<br>
+        To him I must know, health and obligation<br>
+        I am a disciple who learns<br>
+        I'm a master who teaches<br>
+        the secret of san cosme<br>
+        only those who know and São Damião, comrade…<br>
+        <br>
+        long live my mestre<br>
+        long live my mestre my friend</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: unknown
-
 </figcaption>

@@ -9,63 +9,70 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| A jangada me leva  
-pra outro lugar  
-eu não sei onde eu vou  
-nas ondas do mar  
-  
-**A maré a maré me leva ao céu  
-A maré a maré me leva ao céu**  
-  
-O chicote me corta  
-me faz chorar  
-eu não quero mais isso  
-eu vou la pro mar  
-  
-**A maré a maré me leva ao céu  
-A maré a maré me leva ao céu**  
-  
-Onda vai Onda vem  
-não vai parar  
-Vou pedir proteção  
-de Iemanjá  
-  
-**A maré a maré me leva ao céu  
-A maré a maré me leva ao céu**  
-  
-vou me embora da terra  
-eu vou pro mar  
-no navio negreiro  
-peço a Iemanjá | The raft takes me  
-to another place  
-I don’t know where I’ll go  
-in the waves of the sea  
-  
-The tide,the tide,take me to the sky  
-The tide,the tide,take me to the sky  
-  
-The whip cuts me  
-Makes me cry  
-I don’t want this anymore  
-I’ll go there to the sea  
-  
-The tide,the tide,take me to the sky  
-The tide,the tide,take me to the sky  
-  
-The wave comes and goes  
-and will not stop  
-I will ask for protection  
-from Iemanjá  
-  
-The tide,the tide,take me to the sky  
-The tide,the tide,take me to the sky  
-  
-I’ll go leave the earth  
-I’ll go to the sea  
-in the slave ship  
-pray to Iemanjá |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>A jangada me leva<br>
+pra outro lugar<br>
+eu não sei onde eu vou<br>
+nas ondas do mar<br>
+<br>
+<strong>A maré a maré me leva ao céu<br>
+A maré a maré me leva ao céu</strong><br>
+<br>
+O chicote me corta<br>
+me faz chorar<br>
+eu não quero mais isso<br>
+eu vou la pro mar<br>
+<br>
+<strong>A maré a maré me leva ao céu<br>
+A maré a maré me leva ao céu</strong><br>
+<br>
+Onda vai Onda vem<br>
+não vai parar<br>
+Vou pedir proteção<br>
+de Iemanjá<br>
+<br>
+<strong>A maré a maré me leva ao céu<br>
+A maré a maré me leva ao céu</strong><br>
+<br>
+vou me embora da terra<br>
+eu vou pro mar<br>
+no navio negreiro<br>
+peço a Iemanjá</td>
+        <td>The raft takes me<br>
+to another place<br>
+I don't know where I'll go<br>
+in the waves of the sea<br>
+<br>
+The tide,the tide,take me to the sky<br>
+The tide,the tide,take me to the sky<br>
+<br>
+The whip cuts me<br>
+Makes me cry<br>
+I don't want this anymore<br>
+I'll go there to the sea<br>
+<br>
+The tide,the tide,take me to the sky<br>
+The tide,the tide,take me to the sky<br>
+<br>
+The wave comes and goes<br>
+and will not stop<br>
+I will ask for protection<br>
+from Iemanjá<br>
+<br>
+The tide,the tide,take me to the sky<br>
+The tide,the tide,take me to the sky<br>
+<br>
+I'll go leave the earth<br>
+I'll go to the sea<br>
+in the slave ship<br>
+pray to Iemanjá</td>
+    </tr>
+</table>
 
 <figcaption>
 

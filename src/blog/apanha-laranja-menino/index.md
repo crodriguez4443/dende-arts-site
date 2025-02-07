@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Apanha Laranja Menino"
 date: "2020-10-23"
@@ -8,96 +10,101 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Apanhá laranjá menino  
-Apanhá laranjá do chão  
-Defénde o seu reino sózinho  
-Com a forca do seu coraçao  
-  
-**Apanhá laranjá menino**  
-**Apanhá laranjá do chão**  
-**Defénde o seu reino sózinho**  
-**Com a forca do seu coraçao**  
-  
-Procurei meu amigo  
-  
-**Não veio**  
-  
-Será que e meu amigo  
-  
-**Eu não sei**  
-  
-Me pédiu amizidade  
-  
-**Eu dei**  
-  
-Me deixou na saudade  
-  
-**Outra vez**  
-  
-Quem faz uma faz duas  
-  
-**Faz três**  
-  
-Quem faz quatro faz cinco  
-  
-**Faz seis**  
-  
-Apanhá laranjá menino  
-Apanhá laranjá do chão  
-Defénde o seu reino sózinho  
-Com a forca do seu coraçao  
-  
-**Apanhá laranjá menino**  
-**Apanhá laranjá do chão**  
-**Defénde o seu reino sózinho**  
-**Com a forca do seu coraçao** | Pick up the orange boy  
-Pick up the orange from the ground  
-Defend your kingdom alone  
-With the strength of your heart  
-  
-Pick up the orange boy  
-Pick up the orange from the ground  
-Defend your kingdom alone  
-With the strength of your heart  
-  
-I looked for my friend  
-  
-Did not come  
-  
-Are they my friend?  
-  
-I don't know  
-  
-\[They\] Asked me for friendship  
-  
-I gave  
-  
-\[They\] Left me missing  
-  
-Again  
-  
-Who makes one makes two  
-  
-Makes three  
-  
-Who makes four makes five  
-  
-Makes six  
-  
-Pick up the orange boy  
-Pick up the orange from the ground  
-Defend your kingdom alone  
-With the strength of your heart  
-  
-Pick up the orange boy  
-Pick up the orange from the ground  
-Defend your kingdom alone  
-With the strength of your heart |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Apanhá laranjá menino<br>
+Apanhá laranjá do chão<br>
+Defénde o seu reino sózinho<br>
+Com a forca do seu coraçao<br>
+<br>
+<strong>Apanhá laranjá menino</strong><br>
+<strong>Apanhá laranjá do chão</strong><br>
+<strong>Defénde o seu reino sózinho</strong><br>
+<strong>Com a forca do seu coraçao</strong><br>
+<br>
+Procurei meu amigo<br>
+<br>
+<strong>Não veio</strong><br>
+<br>
+Será que e meu amigo<br>
+<br>
+<strong>Eu não sei</strong><br>
+<br>
+Me pédiu amizidade<br>
+<br>
+<strong>Eu dei</strong><br>
+<br>
+Me deixou na saudade<br>
+<br>
+<strong>Outra vez</strong><br>
+<br>
+Quem faz uma faz duas<br>
+<br>
+<strong>Faz três</strong><br>
+<br>
+Quem faz quatro faz cinco<br>
+<br>
+<strong>Faz seis</strong><br>
+<br>
+Apanhá laranjá menino<br>
+Apanhá laranjá do chão<br>
+Defénde o seu reino sózinho<br>
+Com a forca do seu coraçao<br>
+<br>
+<strong>Apanhá laranjá menino</strong><br>
+<strong>Apanhá laranjá do chão</strong><br>
+<strong>Defénde o seu reino sózinho</strong><br>
+<strong>Com a forca do seu coraçao</strong></td>
+        <td>Pick up the orange boy<br>
+Pick up the orange from the ground<br>
+Defend your kingdom alone<br>
+With the strength of your heart<br>
+<br>
+Pick up the orange boy<br>
+Pick up the orange from the ground<br>
+Defend your kingdom alone<br>
+With the strength of your heart<br>
+<br>
+I looked for my friend<br>
+<br>
+Did not come<br>
+<br>
+Are they my friend?<br>
+<br>
+I don't know<br>
+<br>
+[They] Asked me for friendship<br>
+<br>
+I gave<br>
+<br>
+[They] Left me missing<br>
+<br>
+Again<br>
+<br>
+Who makes one makes two<br>
+<br>
+Makes three<br>
+<br>
+Who makes four makes five<br>
+<br>
+Makes six<br>
+<br>
+Pick up the orange boy<br>
+Pick up the orange from the ground<br>
+Defend your kingdom alone<br>
+With the strength of your heart<br>
+<br>
+Pick up the orange boy<br>
+Pick up the orange from the ground<br>
+Defend your kingdom alone<br>
+With the strength of your heart</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unknown
-
 </figcaption>

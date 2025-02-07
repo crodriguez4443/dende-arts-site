@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Na Beira do Mar"
 date: "2021-01-31"
@@ -8,73 +10,80 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Na beira do mar  
-É, na beira do mar  
-Aprendi a jogar  
-Capoeira de Angola  
-Na beira do mar  
-  
-**Na beira do mar  
-É, na beira do mar  
-Aprendi a jogar  
-Capoeira de Angola  
-Na beira do mar**  
-  
-Vou me embora que é de noite  
-Tão cedo não venho cá  
-Se iaiá quiser me ver  
-Bote seu navio no mar  
-  
-**Na beira do mar  
-É, na beira do mar  
-Aprendi a jogar  
-Capoeira de Angola  
-Na beira do mar**  
-  
-É verdade meu amigo  
-Escute o que eu vou falar  
-Quem é dono não ciúma  
-Quem não é quer ciúmar  
-  
-**Na beira do mar  
-É, na beira do mar  
-Aprendi a jogar  
-Capoeira de Angola  
-Na beira do mar** | At the seashore  
-Yeah, at the edge of the sea  
-I learned to play  
-Capoeira de Angola  
-At the seashore  
-  
-At the seashore  
-Yeah, at the edge of the sea  
-I learned to play  
-Capoeira de Angola  
-At the seashore  
-  
-I'm leaving 'cause it's night  
-I won't come here so soon  
-If iaiá wants to see me  
-Put her ship in the sea  
-  
-At the seashore  
-Yeah, at the edge of the sea  
-I learned to play  
-Capoeira de Angola  
-At the seashore  
-  
-It's true, my friend  
-Listen to what I'm going to say  
-Who owns is not jealous  
-Those who don't get jealous  
-  
-At the seashore  
-Yeah, at the edge of the sea  
-I learned to play  
-Capoeira de Angola  
-At the seashore |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Na beira do mar<br>
+É, na beira do mar<br>
+Aprendi a jogar<br>
+Capoeira de Angola<br>
+Na beira do mar<br>
+<br>
+<strong>Na beira do mar<br>
+É, na beira do mar<br>
+Aprendi a jogar<br>
+Capoeira de Angola<br>
+Na beira do mar</strong><br>
+<br>
+Vou me embora que é de noite<br>
+Tão cedo não venho cá<br>
+Se iaiá quiser me ver<br>
+Bote seu navio no mar<br>
+<br>
+<strong>Na beira do mar<br>
+É, na beira do mar<br>
+Aprendi a jogar<br>
+Capoeira de Angola<br>
+Na beira do mar</strong><br>
+<br>
+É verdade meu amigo<br>
+Escute o que eu vou falar<br>
+Quem é dono não ciúma<br>
+Quem não é quer ciúmar<br>
+<br>
+<strong>Na beira do mar<br>
+É, na beira do mar<br>
+Aprendi a jogar<br>
+Capoeira de Angola<br>
+Na beira do mar</strong></td>
+        <td>At the seashore<br>
+Yeah, at the edge of the sea<br>
+I learned to play<br>
+Capoeira de Angola<br>
+At the seashore<br>
+<br>
+At the seashore<br>
+Yeah, at the edge of the sea<br>
+I learned to play<br>
+Capoeira de Angola<br>
+At the seashore<br>
+<br>
+I'm leaving 'cause it's night<br>
+I won't come here so soon<br>
+If iaiá wants to see me<br>
+Put her ship in the sea<br>
+<br>
+At the seashore<br>
+Yeah, at the edge of the sea<br>
+I learned to play<br>
+Capoeira de Angola<br>
+At the seashore<br>
+<br>
+It's true, my friend<br>
+Listen to what I'm going to say<br>
+Who owns is not jealous<br>
+Those who don't get jealous<br>
+<br>
+At the seashore<br>
+Yeah, at the edge of the sea<br>
+I learned to play<br>
+Capoeira de Angola<br>
+At the seashore</td>
+    </tr>
+</table>
 
 <figcaption>
 

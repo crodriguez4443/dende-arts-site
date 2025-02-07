@@ -9,57 +9,76 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Marinheiro sou,  
-de outro lugarEstou no Porto NovoMe deixa atracar  
-chorus  
-**Marinheiro sou,**  
-**de outro lugarEstou no Porto NovoMe deixa atracar**  
-  
-Trouxe dinheiro pra gastarE navalha boa pra cortarEu não quero brigaMe deixa atracar  
-  
-**Marinheiro sou,**  
-**de outro lugarEstou no Porto NovoMe deixa atracar**  
-  
-Os tempos mudaramNossa paz é verdadeiraAgora somos amigosMarinheiro e capoeira  
-  
-**Marinheiro sou,**  
-**de outro lugarEstou no Porto NovoMe deixa atracar** | I am a sailor,  
-from elsewhere  
-I'm in a new Port Novo  
-Let me dock  
-  
-chorus  
-**I am a sailor,  
-from elsewhere  
-I'm in Porto Novo  
-Let me dock  
-**  
-I brought money to spend  
-And a good razor to cut  
-I don't want a fight  
-Let me dock  
-  
-**I am a sailor,  
-from elsewhere  
-I'm in Porto Novo  
-Let me dock**  
-  
-Times have changed  
-Our peace is true  
-Now we are friends  
-Sailor and capoeira  
-  
-**I am a sailor,  
-from elsewhere  
-I'm in Porto Novo  
-Let me dock** |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Marinheiro sou,<br>
+de outro lugar<br>
+Estou no Porto Novo<br>
+Me deixa atracar<br>
+chorus<br>
+<strong>Marinheiro sou,</strong><br>
+<strong>de outro lugar<br>
+Estou no Porto Novo<br>
+Me deixa atracar</strong><br>
+<br>
+Trouxe dinheiro pra gastar<br>
+E navalha boa pra cortar<br>
+Eu não quero briga<br>
+Me deixa atracar<br>
+<br>
+<strong>Marinheiro sou,</strong><br>
+<strong>de outro lugar<br>
+Estou no Porto Novo<br>
+Me deixa atracar</strong><br>
+<br>
+Os tempos mudaram<br>
+Nossa paz é verdadeira<br>
+Agora somos amigos<br>
+Marinheiro e capoeira<br>
+<br>
+<strong>Marinheiro sou,</strong><br>
+<strong>de outro lugar<br>
+Estou no Porto Novo<br>
+Me deixa atracar</strong></td>
+        <td>I am a sailor,<br>
+from elsewhere<br>
+I'm in a new Port Novo<br>
+Let me dock<br>
+<br>
+chorus<br>
+<strong>I am a sailor,<br>
+from elsewhere<br>
+I'm in Porto Novo<br>
+Let me dock</strong><br>
+<br>
+I brought money to spend<br>
+And a good razor to cut<br>
+I don't want a fight<br>
+Let me dock<br>
+<br>
+<strong>I am a sailor,<br>
+from elsewhere<br>
+I'm in Porto Novo<br>
+Let me dock</strong><br>
+<br>
+Times have changed<br>
+Our peace is true<br>
+Now we are friends<br>
+Sailor and capoeira<br>
+<br>
+<strong>I am a sailor,<br>
+from elsewhere<br>
+I'm in Porto Novo<br>
+Let me dock</strong></td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Mestre Moande Katendê
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uYz9jRjqwyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

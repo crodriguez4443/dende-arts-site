@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Bimba Foi Desafiado"
 date: "2020-10-27"
@@ -9,78 +11,83 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Bimba foi desafiado  
-Por um negro esquisito  
-De andar malandriado  
-Cujo nome é Benedito  
-  
-Disse não acreditava  
-Nessa tal de capoeira  
-Que essa luta não passava  
-De uma simples brincadeira  
-  
-Logo se formou uma roda  
-Ali no meio da rua  
-Bimba desmaiou o homem  
-Só com uma meia lua  
-  
-Quando o homem despertou  
-Mestre Bimba assim falou  
-Levanta cabra safado  
-Que o jogo mal começou  
-  
-Benedito então falou  
-Para a pequena multidao  
-Segurem Mestre Bimba  
-Não quero apanhar mais não  
-  
-Na roda de capoeira  
-Esse homem é um cão  
-Camará  
-  
-Iê, viva Seu Bimba  
-**Iê, viva Seu Bimba**  
-  
-Iê, é mandingueiro  
-**Iê, é mandingueiro** | Bimba was challenged  
-By a strange black man  
-That walked like a rascal  
-Whose name is Benedito  
-  
-He said did not believe  
-In this so-called capoeira  
-That this fight was nothing more  
-Than a simple joke  
-  
-Soon a roda was formed  
-There in the middle of the street  
-Bimba knocked the man out  
-Using only a meia-lua  
-  
-When the man woke up  
-Mestre Bimba said  
-Get up you scoundrel  
-The game has barely started  
-  
-Benedito then spoke  
-For the small crowd  
-Hold on to Mestre Bimba  
-I don't want to be beaten anymore  
-  
-In the capoeira roda  
-That man is a dog  
-Comrade  
-  
-Iê, long live Seu Bimba  
-Iê, long live Seu Bimba  
-  
-Iê, he's a mandingueiro  
-Iê, he's a mandingueiro |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Bimba foi desafiado<br>
+Por um negro esquisito<br>
+De andar malandriado<br>
+Cujo nome é Benedito<br>
+<br>
+Disse não acreditava<br>
+Nessa tal de capoeira<br>
+Que essa luta não passava<br>
+De uma simples brincadeira<br>
+<br>
+Logo se formou uma roda<br>
+Ali no meio da rua<br>
+Bimba desmaiou o homem<br>
+Só com uma meia lua<br>
+<br>
+Quando o homem despertou<br>
+Mestre Bimba assim falou<br>
+Levanta cabra safado<br>
+Que o jogo mal começou<br>
+<br>
+Benedito então falou<br>
+Para a pequena multidao<br>
+Segurem Mestre Bimba<br>
+Não quero apanhar mais não<br>
+<br>
+Na roda de capoeira<br>
+Esse homem é um cão<br>
+Camará<br>
+<br>
+Iê, viva Seu Bimba<br>
+<strong>Iê, viva Seu Bimba</strong><br>
+<br>
+Iê, é mandingueiro<br>
+<strong>Iê, é mandingueiro</strong></td>
+        <td>Bimba was challenged<br>
+By a strange black man<br>
+That walked like a rascal<br>
+Whose name is Benedito<br>
+<br>
+He said did not believe<br>
+In this so-called capoeira<br>
+That this fight was nothing more<br>
+Than a simple joke<br>
+<br>
+Soon a roda was formed<br>
+There in the middle of the street<br>
+Bimba knocked the man out<br>
+Using only a meia-lua<br>
+<br>
+When the man woke up<br>
+Mestre Bimba said<br>
+Get up you scoundrel<br>
+The game has barely started<br>
+<br>
+Benedito then spoke<br>
+For the small crowd<br>
+Hold on to Mestre Bimba<br>
+I don't want to be beaten anymore<br>
+<br>
+In the capoeira roda<br>
+That man is a dog<br>
+Comrade<br>
+<br>
+Iê, long live Seu Bimba<br>
+Iê, long live Seu Bimba<br>
+<br>
+Iê, he's a mandingueiro<br>
+Iê, he's a mandingueiro</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

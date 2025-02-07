@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Tindolelê"
 date: "2023-02-20"
@@ -9,53 +11,60 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Tindolelê auê Cauiza  
-Tindolelê é sangue real  
-Meu pai é filho eu sou neto de Aruanda  
-Tindolelê auê Cauiza  
-Cauiza, de onde é que veio  
-  
-Eu vim de Angola ê  
-  
-Maculelê, de onde é que veio  
-  
-Eu vim de Angola ê  
-  
-Mestre Popó, de onde é que veio  
-  
-Eu vim de Angola ê  
-  
-E o atabaque, de onde é que veio  
-  
-Eu vim de Angola ê  
-  
-E o agogô, de onde é que veio  
-  
-Eu vim de Angola ê | Tindolelê auê Cauiza  
-Tindolelê is royal blood  
-My father is the son, I am the grandson of Aruanda  
-Tindolelê auê Cauiza  
-Cauiza, where did you come from  
-  
-I came from Angola  
-  
-Maculelê, where did it come from  
-  
-I came from Angola  
-  
-Mestre Popó, where did you come from  
-  
-I came from Angola  
-  
-And the atabaque, where did it come from  
-  
-I came from Angola  
-  
-And the agogô, where did it come from  
-  
-I came from Angola |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Tindolelê auê Cauiza<br>
+        Tindolelê é sangue real<br>
+        Meu pai é filho eu sou neto de Aruanda<br>
+        Tindolelê auê Cauiza<br>
+        Cauiza, de onde é que veio<br>
+        <br>
+        Eu vim de Angola ê<br>
+        <br>
+        Maculelê, de onde é que veio<br>
+        <br>
+        Eu vim de Angola ê<br>
+        <br>
+        Mestre Popó, de onde é que veio<br>
+        <br>
+        Eu vim de Angola ê<br>
+        <br>
+        E o atabaque, de onde é que veio<br>
+        <br>
+        Eu vim de Angola ê<br>
+        <br>
+        E o agogô, de onde é que veio<br>
+        <br>
+        Eu vim de Angola ê</td>
+        <td>Tindolelê auê Cauiza<br>
+        Tindolelê is royal blood<br>
+        My father is the son, I am the grandson of Aruanda<br>
+        Tindolelê auê Cauiza<br>
+        Cauiza, where did you come from<br>
+        <br>
+        I came from Angola<br>
+        <br>
+        Maculelê, where did it come from<br>
+        <br>
+        I came from Angola<br>
+        <br>
+        Mestre Popó, where did you come from<br>
+        <br>
+        I came from Angola<br>
+        <br>
+        And the atabaque, where did it come from<br>
+        <br>
+        I came from Angola<br>
+        <br>
+        And the agogô, where did it come from<br>
+        <br>
+        I came from Angola</td>
+    </tr>
+</table>
 
 <figcaption>
 

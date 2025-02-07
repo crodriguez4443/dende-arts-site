@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Mandei Caiar Meu Sobrado"
 date: "2021-01-28"
@@ -8,105 +10,112 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Mandei caiar meu sobrado  
-Mandei, mandei, mandei  
-Mandei caiar de amarelo  
-Caiei, caiei, caiei  
-  
-**Mandei caiar meu sobrado  
-Mandei, mandei, mandei  
-Mandei caiar de amarelo  
-Caiei, caiei, caiei**  
-  
-Amarelo que lembra dourado  
-Dourado, que é meu berimbau  
-Dourado, de cordão de ouro  
-Besouro, Besouro, Besouro  
-  
-**Mandei caiar meu sobrado  
-Mandei, mandei, mandei  
-Mandei caiar de amarelo  
-Caiei, caiei, caiei**  
-  
-Pra quem nunca ouviu falar  
-E pra aqueles que dizem: é lenda  
-Pois saibam que Besouro Preto  
-Viveu, viveu e morreu  
-  
-**Mandei caiar meu sobrado  
-Mandei, mandei, mandei  
-Mandei caiar de amarelo  
-Caiei, caiei, caiei**  
-  
-Pras bandas de Maracangalha  
-Sem temer a inimigo nenhum  
-Não valeu, seu corpo fechado  
-Pras facas de ticum  
-  
-**Mandei caiar meu sobrado  
-Mandei, mandei, mandei  
-Mandei caiar de amarelo  
-Caiei, caiei, caiei**  
-  
-Mas mesmo depois de morto  
-Entre uma e outra cantiga  
-Besouro vai sempre viver  
-Enquanto existir mandinga  
-  
-**Mandei caiar meu sobrado  
-Mandei, mandei, mandei  
-Mandei caiar de amarelo  
-Caiei, caiei, caiei** | I had my house painted  
-I did, I did, I did  
-I had it painted yellow  
-I painted, I painted, I painted  
-  
-I had my house painted  
-I did, I did, I did  
-I had it painted yellow  
-I painted, I painted, I painted  
-  
-Yellow which is reminiscent of gold  
-Golden, which is my berimbau  
-Gold, from gold cord  
-Besouro, Besouro, Besouro  
-  
-I had my house painted  
-I did, I did, I did  
-I had it painted yellow  
-I painted, I painted, I painted  
-  
-For those who have never heard  
-And for those who say: it's a legend  
-Know that Besouro Preto  
-Lived, lived, and died  
-  
-I had my house painted  
-I did, I did, I did  
-I had it painted yellow  
-I painted, I painted, I painted  
-  
-Around Maracangalha  
-Without fearing any enemy  
-It didn't work, his closed body  
-For ticum knives  
-  
-I had my house painted  
-I did, I did, I did  
-I had it painted yellow  
-I painted, I painted, I painted  
-  
-But even after he died  
-Between one and another song  
-Besouro will always live  
-As long as there is mandinga  
-  
-I had my house painted  
-I did, I did, I did  
-I had it painted yellow  
-I painted, I painted, I painted |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Mandei caiar meu sobrado<br>
+Mandei, mandei, mandei<br>
+Mandei caiar de amarelo<br>
+Caiei, caiei, caiei<br>
+<br>
+<strong>Mandei caiar meu sobrado<br>
+Mandei, mandei, mandei<br>
+Mandei caiar de amarelo<br>
+Caiei, caiei, caiei</strong><br>
+<br>
+Amarelo que lembra dourado<br>
+Dourado, que é meu berimbau<br>
+Dourado, de cordão de ouro<br>
+Besouro, Besouro, Besouro<br>
+<br>
+<strong>Mandei caiar meu sobrado<br>
+Mandei, mandei, mandei<br>
+Mandei caiar de amarelo<br>
+Caiei, caiei, caiei</strong><br>
+<br>
+Pra quem nunca ouviu falar<br>
+E pra aqueles que dizem: é lenda<br>
+Pois saibam que Besouro Preto<br>
+Viveu, viveu e morreu<br>
+<br>
+<strong>Mandei caiar meu sobrado<br>
+Mandei, mandei, mandei<br>
+Mandei caiar de amarelo<br>
+Caiei, caiei, caiei</strong><br>
+<br>
+Pras bandas de Maracangalha<br>
+Sem temer a inimigo nenhum<br>
+Não valeu, seu corpo fechado<br>
+Pras facas de ticum<br>
+<br>
+<strong>Mandei caiar meu sobrado<br>
+Mandei, mandei, mandei<br>
+Mandei caiar de amarelo<br>
+Caiei, caiei, caiei</strong><br>
+<br>
+Mas mesmo depois de morto<br>
+Entre uma e outra cantiga<br>
+Besouro vai sempre viver<br>
+Enquanto existir mandinga<br>
+<br>
+<strong>Mandei caiar meu sobrado<br>
+Mandei, mandei, mandei<br>
+Mandei caiar de amarelo<br>
+Caiei, caiei, caiei</strong></td>
+        <td>I had my house painted<br>
+I did, I did, I did<br>
+I had it painted yellow<br>
+I painted, I painted, I painted<br>
+<br>
+I had my house painted<br>
+I did, I did, I did<br>
+I had it painted yellow<br>
+I painted, I painted, I painted<br>
+<br>
+Yellow which is reminiscent of gold<br>
+Golden, which is my berimbau<br>
+Gold, from gold cord<br>
+Besouro, Besouro, Besouro<br>
+<br>
+I had my house painted<br>
+I did, I did, I did<br>
+I had it painted yellow<br>
+I painted, I painted, I painted<br>
+<br>
+For those who have never heard<br>
+And for those who say: it's a legend<br>
+Know that Besouro Preto<br>
+Lived, lived, and died<br>
+<br>
+I had my house painted<br>
+I did, I did, I did<br>
+I had it painted yellow<br>
+I painted, I painted, I painted<br>
+<br>
+Around Maracangalha<br>
+Without fearing any enemy<br>
+It didn't work, his closed body<br>
+For ticum knives<br>
+<br>
+I had my house painted<br>
+I did, I did, I did<br>
+I had it painted yellow<br>
+I painted, I painted, I painted<br>
+<br>
+But even after he died<br>
+Between one and another song<br>
+Besouro will always live<br>
+As long as there is mandinga<br>
+<br>
+I had my house painted<br>
+I did, I did, I did<br>
+I had it painted yellow<br>
+I painted, I painted, I painted</td>
+    </tr>
+</table>
 
 <figcaption>
 

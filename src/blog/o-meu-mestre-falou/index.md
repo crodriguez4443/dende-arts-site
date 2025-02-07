@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "O Meu Mestre Falou"
 date: "2021-02-25"
@@ -10,130 +12,139 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| É, meu mestre falou assim  
-Menino não precisa preocupar  
-Que a vida que se leva é essa mesma  
-E a capoeira não deixa nada faltar  
-  
-É, meu mestre falou assim  
-Menino não precisa preocupar  
-Que a vida que se leva é essa mesma  
-E a capoeira não deixa nada faltar  
-  
-Até naquilo que mais te incomoda  
-Às vezes você tem que relevar  
-Conversa com teu mestre e vai pra roda  
-Que a capoeira bota tudo no lugar  
-  
-É, meu mestre falou assim  
-Menino não precisa preocupar  
-Que a vida que se leva é essa mesma  
-E a capoeira não deixa nada faltar  
-  
-E se o que você quer é amizade  
-Que é ainda mais difícil verdadeira  
-Junte a humildade ao bom caráter  
-E só então você vai pra capoeira  
-  
-É, meu mestre falou assim  
-Menino não precisa preocupar  
-Que a vida que se leva é essa mesma  
-E a capoeira não deixa nada faltar  
-  
-E aquele com marra de valentão  
-E que faz mais barulho que ação  
-Cuidado, camarada, a capoeira  
-Não é o que tu tá pensando não  
-  
-É, meu mestre falou assim  
-Menino não precisa preocupar  
-Que a vida que se leva é essa mesma  
-E a capoeira não deixa nada faltar  
-  
-Perguntei: “Caveira quem te matou?”  
-Respondo que o calado é vencedor  
-Porque o veneno que sai pela boca  
-É mais mortal que aquele que entrou  
-  
-É, meu mestre falou assim  
-Menino não precisa preocupar  
-Que a vida que se leva é essa mesma  
-E a capoeira não deixa nada faltar  
-  
-Em tudo o que se passa pela vida  
-O que é mais difícil de entender  
-É que pra conseguir felicidade  
-É preciso viver e conviver  
-  
-É, meu mestre falou assim  
-Menino não precisa preocupar  
-Que a vida que se leva é essa mesma  
-E a capoeira não deixa nada faltar | Yes, my master said so  
-Boy, you need not worry  
-'Cause the life you lead is this one  
-And capoeira doesn't miss anything  
-  
-Yes, my master said so  
-Boy, you need not worry  
-'Cause the life you lead is this one  
-And capoeira doesn't miss anything  
-  
-Even in what bothers you most  
-Sometimes you have to let go  
-Talk to your master and go to the roda  
-'Cause capoeira puts everything in place  
-  
-Yes, my master said so  
-Boy, you need not worry  
-'Cause the life you lead is this one  
-And capoeira doesn't miss anything  
-  
-And if what you want is friendship  
-A true one if even more difficult  
-Add humility to good character  
-And only then do you go to capoeira  
-  
-Yes, my master said so  
-Boy, you need not worry  
-'Cause the life you lead is this one  
-And capoeira doesn't miss anything  
-  
-And the one with the tough guy attitude  
-Who makes more noise than takes action  
-Watch out, buddy, capoeira  
-Is not what you're thinking  
-  
-Yes, my master said so  
-Boy, you need not worry  
-'Cause the life you lead is this one  
-And capoeira doesn't miss anything  
-  
-I asked, "Skull who killed you?"  
-I reply that the silent one is the winner  
-Because the poison coming out of the mouth  
-Is deadlier than the one that entered  
-  
-Yes, my master said so  
-Boy, you need not worry  
-'Cause the life you lead is this one  
-And capoeira doesn't miss anything  
-  
-In everything that you go through in life  
-What is most difficult to understand  
-Is that to achieve happiness  
-It is necessary to live and live together  
-  
-Yes, my master said so  
-Boy, you need not worry  
-'Cause the life you lead is this one  
-And capoeira doesn't miss anything |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            É, meu mestre falou assim<br>
+            Menino não precisa preocupar<br>
+            Que a vida que se leva é essa mesma<br>
+            E a capoeira não deixa nada faltar<br>
+            <br>
+            É, meu mestre falou assim<br>
+            Menino não precisa preocupar<br>
+            Que a vida que se leva é essa mesma<br>
+            E a capoeira não deixa nada faltar<br>
+            <br>
+            Até naquilo que mais te incomoda<br>
+            Às vezes você tem que relevar<br>
+            Conversa com teu mestre e vai pra roda<br>
+            Que a capoeira bota tudo no lugar<br>
+            <br>
+            É, meu mestre falou assim<br>
+            Menino não precisa preocupar<br>
+            Que a vida que se leva é essa mesma<br>
+            E a capoeira não deixa nada faltar<br>
+            <br>
+            E se o que você quer é amizade<br>
+            Que é ainda mais difícil verdadeira<br>
+            Junte a humildade ao bom caráter<br>
+            E só então você vai pra capoeira<br>
+            <br>
+            É, meu mestre falou assim<br>
+            Menino não precisa preocupar<br>
+            Que a vida que se leva é essa mesma<br>
+            E a capoeira não deixa nada faltar<br>
+            <br>
+            E aquele com marra de valentão<br>
+            E que faz mais barulho que ação<br>
+            Cuidado, camarada, a capoeira<br>
+            Não é o que tu tá pensando não<br>
+            <br>
+            É, meu mestre falou assim<br>
+            Menino não precisa preocupar<br>
+            Que a vida que se leva é essa mesma<br>
+            E a capoeira não deixa nada faltar<br>
+            <br>
+            Perguntei: "Caveira quem te matou?"<br>
+            Respondo que o calado é vencedor<br>
+            Porque o veneno que sai pela boca<br>
+            É mais mortal que aquele que entrou<br>
+            <br>
+            É, meu mestre falou assim<br>
+            Menino não precisa preocupar<br>
+            Que a vida que se leva é essa mesma<br>
+            E a capoeira não deixa nada faltar<br>
+            <br>
+            Em tudo o que se passa pela vida<br>
+            O que é mais difícil de entender<br>
+            É que pra conseguir felicidade<br>
+            É preciso viver e conviver<br>
+            <br>
+            É, meu mestre falou assim<br>
+            Menino não precisa preocupar<br>
+            Que a vida que se leva é essa mesma<br>
+            E a capoeira não deixa nada faltar
+        </td>
+        <td>
+            Yes, my master said so<br>
+            Boy, you need not worry<br>
+            'Cause the life you lead is this one<br>
+            And capoeira doesn't miss anything<br>
+            <br>
+            Yes, my master said so<br>
+            Boy, you need not worry<br>
+            'Cause the life you lead is this one<br>
+            And capoeira doesn't miss anything<br>
+            <br>
+            Even in what bothers you most<br>
+            Sometimes you have to let go<br>
+            Talk to your master and go to the roda<br>
+            'Cause capoeira puts everything in place<br>
+            <br>
+            Yes, my master said so<br>
+            Boy, you need not worry<br>
+            'Cause the life you lead is this one<br>
+            And capoeira doesn't miss anything<br>
+            <br>
+            And if what you want is friendship<br>
+            A true one if even more difficult<br>
+            Add humility to good character<br>
+            And only then do you go to capoeira<br>
+            <br>
+            Yes, my master said so<br>
+            Boy, you need not worry<br>
+            'Cause the life you lead is this one<br>
+            And capoeira doesn't miss anything<br>
+            <br>
+            And the one with the tough guy attitude<br>
+            Who makes more noise than takes action<br>
+            Watch out, buddy, capoeira<br>
+            Is not what you're thinking<br>
+            <br>
+            Yes, my master said so<br>
+            Boy, you need not worry<br>
+            'Cause the life you lead is this one<br>
+            And capoeira doesn't miss anything<br>
+            <br>
+            I asked, "Skull who killed you?"<br>
+            I reply that the silent one is the winner<br>
+            Because the poison coming out of the mouth<br>
+            Is deadlier than the one that entered<br>
+            <br>
+            Yes, my master said so<br>
+            Boy, you need not worry<br>
+            'Cause the life you lead is this one<br>
+            And capoeira doesn't miss anything<br>
+            <br>
+            In everything that you go through in life<br>
+            What is most difficult to understand<br>
+            Is that to achieve happiness<br>
+            It is necessary to live and live together<br>
+            <br>
+            Yes, my master said so<br>
+            Boy, you need not worry<br>
+            'Cause the life you lead is this one<br>
+            And capoeira doesn't miss anything
+        </td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Mestre Boa Voz
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KIz1uMaHSaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

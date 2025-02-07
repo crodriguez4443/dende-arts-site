@@ -9,25 +9,32 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Vamos todos à louvar  
-a nossa nação brasileira  
-salve zumbi dos palmares ora meu deus  
-que nos livrou do cativeiro  
-  
-**vamos todos à louvar  
-a nossa nação brasileira  
-salve zumbi dos palmares ora meu deus  
-que nos livrou do cativeiro** | Let's all praise  
-Our Brazilian nation  
-Hail Zumbi Dos Palmares pray my god  
-Who delivered us from captivity  
-  
-let's all praise  
-Our Brazilian nation  
-Hail Zumbi Dos Palmares pray my god  
-Who delivered us from captivity |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Vamos todos à louvar<br>
+a nossa nação brasileira<br>
+salve zumbi dos palmares ora meu deus<br>
+que nos livrou do cativeiro<br>
+<br>
+<strong>vamos todos à louvar<br>
+a nossa nação brasileira<br>
+salve zumbi dos palmares ora meu deus<br>
+que nos livrou do cativeiro</strong></td>
+        <td>Let's all praise<br>
+Our Brazilian nation<br>
+Hail Zumbi Dos Palmares pray my god<br>
+Who delivered us from captivity<br>
+<br>
+let's all praise<br>
+Our Brazilian nation<br>
+Hail Zumbi Dos Palmares pray my god<br>
+Who delivered us from captivity</td>
+    </tr>
+</table>
 
 <figcaption>
 

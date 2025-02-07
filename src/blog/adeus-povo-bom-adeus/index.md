@@ -8,29 +8,36 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Adeus povo bom adeus  
-Adeus eu ja vou me embora  
-Pelas ondas do mar eu vim  
-Pelas ondas do mar  
-eu vou me embora  
-  
-**Adeus povo bom adeus  
-Adeus eu ja vou me embora  
-Pelas ondas do mar eu vim  
-Pelas ondas do mar  
-eu vou me embora** | Goodbye people goodbye  
-Goodbye, I'm leaving  
-By the waves of the sea I came  
-By the waves of the sea  
-I am leaving  
-  
-Goodbye people goodbye  
-Goodbye, I'm leaving  
-By the waves of the sea I came  
-By the waves of the sea  
-I am leaving |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Adeus povo bom adeus<br>
+Adeus eu ja vou me embora<br>
+Pelas ondas do mar eu vim<br>
+Pelas ondas do mar<br>
+eu vou me embora<br>
+<br>
+<strong>Adeus povo bom adeus<br>
+Adeus eu ja vou me embora<br>
+Pelas ondas do mar eu vim<br>
+Pelas ondas do mar<br>
+eu vou me embora</strong></td>
+        <td>Goodbye people goodbye<br>
+Goodbye, I'm leaving<br>
+By the waves of the sea I came<br>
+By the waves of the sea<br>
+I am leaving<br>
+<br>
+Goodbye people goodbye<br>
+Goodbye, I'm leaving<br>
+By the waves of the sea I came<br>
+By the waves of the sea<br>
+I am leaving</td>
+    </tr>
+</table>
 
 <figcaption>
 

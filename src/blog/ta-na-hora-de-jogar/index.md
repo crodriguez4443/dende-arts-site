@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Ta na hora de jogar"
 date: "2021-07-17"
@@ -9,109 +11,120 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Ta na hora de jogar  
-Vamos la vadiar  
-  
-**Ta na hora de jogar  
-Vamos la vadiar**  
-  
-O Berimbau me convido  
-E nao posso recusar  
-Eu benzo o meu corpo  
-E entro para jogar  
-  
-**Ta na hora de jogar  
-Vamos la vadiar**  
-  
-E quando chega a hora  
-Para mim e uma alegria  
-Eu pego no Berimbau  
-e comeso a canturia  
-  
-**Ta na hora de jogar  
-Vamos la vadiar**  
-  
-A roda passa no meio  
-Berimbau falo assim  
-O jogo termina agora  
-Capoeira nao tem fim  
-  
-**Ta na hora de jogar  
-Vamos la vadiar**  
-  
-Pra que vive Capoeira  
-Quando o Berimbau desarma  
-e uma tristeza no espirito  
-Os olhos enchendo d’agua  
-  
-**Ta na hora de jogar  
-Vamos la vadiar**  
-  
-eu vou eu vou, vou vadiar  
-  
-**eu vou eu vou, vou vadiar  
-**  
-Ta na hora de jogar  
-Vamos la vadiar  
-  
-**Ta na hora de jogar  
-Vamos la vadiar**  
-  
-eu vou eu vou, vou vadiar  
-  
-**eu vou eu vou, vou vadiar** | It's time to play  
-let's vadiar  
-  
-It's time to play  
-let's vadiar  
-  
-The berimbau invites me  
-And I can't refuse  
-I bless my body  
-and I go in to play  
-  
-It's time to play  
-let's vadiar  
-  
-And when the time comes  
-for me and a joy  
-I pick up at Berimbau  
-and eat cantery  
-  
-It's time to play  
-let's vadiar  
-  
-the roda passes in the middle  
-Berimbau I speak like this  
-The game ends now  
-Capoeira has no end  
-  
-It's time to play  
-let's vadiar  
-  
-What does Capoeira live for?  
-When Berimbau Disarms  
-and a sadness in the spirit  
-the eyes filling with water  
-  
-It's time to play  
-let's vadiar  
-  
-i will i will i will vadiar  
-  
-i will i will i will vadiar  
-  
-It's time to play  
-let's vadiar  
-  
-It's time to play  
-let's vadiar  
-  
-I will i will i will vadiar  
-  
-I will i will, i will vadiar |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Ta na hora de jogar<br>
+            Vamos la vadiar<br>
+            <br>
+            <strong>Ta na hora de jogar<br>
+            Vamos la vadiar</strong><br>
+            <br>
+            O Berimbau me convido<br>
+            E nao posso recusar<br>
+            Eu benzo o meu corpo<br>
+            E entro para jogar<br>
+            <br>
+            <strong>Ta na hora de jogar<br>
+            Vamos la vadiar</strong><br>
+            <br>
+            E quando chega a hora<br>
+            Para mim e uma alegria<br>
+            Eu pego no Berimbau<br>
+            e comeso a canturia<br>
+            <br>
+            <strong>Ta na hora de jogar<br>
+            Vamos la vadiar</strong><br>
+            <br>
+            A roda passa no meio<br>
+            Berimbau falo assim<br>
+            O jogo termina agora<br>
+            Capoeira nao tem fim<br>
+            <br>
+            <strong>Ta na hora de jogar<br>
+            Vamos la vadiar</strong><br>
+            <br>
+            Pra que vive Capoeira<br>
+            Quando o Berimbau desarma<br>
+            e uma tristeza no espirito<br>
+            Os olhos enchendo d'agua<br>
+            <br>
+            <strong>Ta na hora de jogar<br>
+            Vamos la vadiar</strong><br>
+            <br>
+            eu vou eu vou, vou vadiar<br>
+            <br>
+            <strong>eu vou eu vou, vou vadiar</strong><br>
+            <br>
+            Ta na hora de jogar<br>
+            Vamos la vadiar<br>
+            <br>
+            <strong>Ta na hora de jogar<br>
+            Vamos la vadiar</strong><br>
+            <br>
+            eu vou eu vou, vou vadiar<br>
+            <br>
+            <strong>eu vou eu vou, vou vadiar</strong>
+        </td>
+        <td>
+            It's time to play<br>
+            let's vadiar<br>
+            <br>
+            It's time to play<br>
+            let's vadiar<br>
+            <br>
+            The berimbau invites me<br>
+            And I can't refuse<br>
+            I bless my body<br>
+            and I go in to play<br>
+            <br>
+            It's time to play<br>
+            let's vadiar<br>
+            <br>
+            And when the time comes<br>
+            for me and a joy<br>
+            I pick up at Berimbau<br>
+            and eat cantery<br>
+            <br>
+            It's time to play<br>
+            let's vadiar<br>
+            <br>
+            the roda passes in the middle<br>
+            Berimbau I speak like this<br>
+            The game ends now<br>
+            Capoeira has no end<br>
+            <br>
+            It's time to play<br>
+            let's vadiar<br>
+            <br>
+            What does Capoeira live for?<br>
+            When Berimbau Disarms<br>
+            and a sadness in the spirit<br>
+            the eyes filling with water<br>
+            <br>
+            It's time to play<br>
+            let's vadiar<br>
+            <br>
+            i will i will i will vadiar<br>
+            <br>
+            i will i will i will vadiar<br>
+            <br>
+            It's time to play<br>
+            let's vadiar<br>
+            <br>
+            It's time to play<br>
+            let's vadiar<br>
+            <br>
+            I will i will i will vadiar<br>
+            <br>
+            I will i will, i will vadiar
+        </td>
+    </tr>
+</table>
 
 <figcaption>
 

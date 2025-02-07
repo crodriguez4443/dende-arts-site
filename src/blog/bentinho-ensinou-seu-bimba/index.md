@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Bentinho ensinou seu Bimba"
 date: "2020-10-12"
@@ -8,93 +10,100 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Bentinho ensinou seu Bimba  
-A jogar Capoeira  
-A malícia de Angola  
-E o tombo na ladeira  
-  
-**Bentinho ensinou seu Bimba  
-A jogar Capoeira  
-A malícia de Angola  
-E o tombo na ladeira**  
-  
-Bentinho ensinou seu Bimba  
-Capoeira de verdade  
-A malícia de Angola  
-Bimba conheceu  
-Aos doze anos de idade  
-  
-Filho de batuqueiro  
-Já nasceu guerreiro  
-Foi predestinado  
-Bimba foi lutador  
-Foi estivador  
-Foi homem respeitado  
-  
-**Bentinho ensinou seu Bimba  
-A jogar Capoeira  
-A malícia de Angola  
-E o tombo na ladeira**  
-  
-Angola com batuque  
-Energia que emana  
-Foi mistura de estilo  
-Luta Regional Bahiana  
-  
-A sequência de Bimba  
-Criação genial  
-Cintura desprezada  
-Com dois pandeiros  
-E um Berimbau  
-**  
-Bentinho ensinou seu Bimba  
-A jogar Capoeira  
-A malícia de Angola  
-E o tombo na ladeira** | Bentinho taught Mr. Bimba  
-How to Capoeira  
-The malice of Angola  
-And the fall of the slope  
-  
-Bentinho taught Mr. Bimba  
-How to Capoeira  
-The malice of Angola  
-And the fall of the slope  
-  
-Bentinho taught Mr. Bimba  
-Real capoeira  
-The malice of Angola  
-Bimba learned  
-At twelve years of age  
-  
-Son of a drummer  
-He was already born a warrior  
-It was predestined  
-Bimba was a fighter  
-He worked at the docks  
-He was a respected man  
-  
-Bentinho taught Mr. Bimba  
-How to Capoeira  
-The malice of Angola  
-And the fall of the slope  
-  
-Angola with drumming  
-Energy that emanates  
-It was a mix of styles  
-Bahian Regional Fight  
-  
-Bimba's sequence  
-Genius creation  
-Cintura desprezada  
-With two tambourines  
-And a Berimbau  
-  
-Bentinho taught Mr. Bimba  
-How to Capoeira  
-The malice of Angola  
-And the fall of the slope |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Bentinho ensinou seu Bimba<br>
+A jogar Capoeira<br>
+A malícia de Angola<br>
+E o tombo na ladeira<br>
+<br>
+<strong>Bentinho ensinou seu Bimba<br>
+A jogar Capoeira<br>
+A malícia de Angola<br>
+E o tombo na ladeira</strong><br>
+<br>
+Bentinho ensinou seu Bimba<br>
+Capoeira de verdade<br>
+A malícia de Angola<br>
+Bimba conheceu<br>
+Aos doze anos de idade<br>
+<br>
+Filho de batuqueiro<br>
+Já nasceu guerreiro<br>
+Foi predestinado<br>
+Bimba foi lutador<br>
+Foi estivador<br>
+Foi homem respeitado<br>
+<br>
+<strong>Bentinho ensinou seu Bimba<br>
+A jogar Capoeira<br>
+A malícia de Angola<br>
+E o tombo na ladeira</strong><br>
+<br>
+Angola com batuque<br>
+Energia que emana<br>
+Foi mistura de estilo<br>
+Luta Regional Bahiana<br>
+<br>
+A sequência de Bimba<br>
+Criação genial<br>
+Cintura desprezada<br>
+Com dois pandeiros<br>
+E um Berimbau<br>
+<strong>
+Bentinho ensinou seu Bimba<br>
+A jogar Capoeira<br>
+A malícia de Angola<br>
+E o tombo na ladeira</strong></td>
+        <td>Bentinho taught Mr. Bimba<br>
+How to Capoeira<br>
+The malice of Angola<br>
+And the fall of the slope<br>
+<br>
+Bentinho taught Mr. Bimba<br>
+How to Capoeira<br>
+The malice of Angola<br>
+And the fall of the slope<br>
+<br>
+Bentinho taught Mr. Bimba<br>
+Real capoeira<br>
+The malice of Angola<br>
+Bimba learned<br>
+At twelve years of age<br>
+<br>
+Son of a drummer<br>
+He was already born a warrior<br>
+It was predestined<br>
+Bimba was a fighter<br>
+He worked at the docks<br>
+He was a respected man<br>
+<br>
+Bentinho taught Mr. Bimba<br>
+How to Capoeira<br>
+The malice of Angola<br>
+And the fall of the slope<br>
+<br>
+Angola with drumming<br>
+Energy that emanates<br>
+It was a mix of styles<br>
+Bahian Regional Fight<br>
+<br>
+Bimba's sequence<br>
+Genius creation<br>
+Cintura desprezada<br>
+With two tambourines<br>
+And a Berimbau<br>
+<br>
+Bentinho taught Mr. Bimba<br>
+How to Capoeira<br>
+The malice of Angola<br>
+And the fall of the slope</td>
+    </tr>
+</table>
 
 <figcaption>
 

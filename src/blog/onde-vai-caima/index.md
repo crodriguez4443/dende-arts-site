@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Onde Vai Caimã"
 date: "2021-02-27"
@@ -9,71 +11,78 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Caimã é capoeira  
-**Onde vai Caimã**  
-  
-O mundo ele foi rodar  
-**Onde vai Caimã**  
-  
-Foi levando a sua arte  
-**Onde vai Caimã**  
-  
-Por onde ele passar  
-**Onde vai Caimã**  
-  
-Onde vai Caimã, Caimã, Caimã  
-**Onde vai Caimã**  
-  
-Vai para Ilha de Maré  
-**Onde vai Caimã**  
-  
-Foi jogar a capoeira  
-**Onde vai Caimã**  
-  
-Arte de bater com o pé  
-**Onde vai Caimã**  
-  
-Na lagoa do Abaeté  
-**Onde vai Caimã**  
-  
-Caimã o jacaré  
-**Onde vai Caimã**  
-  
-Pra jogar a capoeira  
-**Onde vai Caimã** | Caimã is capoeira  
-Where goes Caimã?  
-   
-The world he went around  
-Where goes Caimã?  
-   
-He takes his art  
-Where goes Caimã?  
-   
-Wherever he goes  
-Where goes Caimã?  
-   
-Where goes Caimã, Caimã, Caimã  
-Where goes Caimã?  
-   
-Go to Tide Island  
-Where goes Caimã?  
-   
-Went to play capoeira  
-Where goes Caimã?  
-   
-The art of striking with the foot  
-Where goes Caimã?  
-   
-At the Abaeté Lagoon  
-Where goes Caimã?  
-   
-Caiman the alligator  
-Where goes Caimã?  
-  
-To play capoeira  
-Where goes Caimã? |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Caimã é capoeira<br>
+<strong>Onde vai Caimã</strong><br>
+<br>
+O mundo ele foi rodar<br>
+<strong>Onde vai Caimã</strong><br>
+<br>
+Foi levando a sua arte<br>
+<strong>Onde vai Caimã</strong><br>
+<br>
+Por onde ele passar<br>
+<strong>Onde vai Caimã</strong><br>
+<br>
+Onde vai Caimã, Caimã, Caimã<br>
+<strong>Onde vai Caimã</strong><br>
+<br>
+Vai para Ilha de Maré<br>
+<strong>Onde vai Caimã</strong><br>
+<br>
+Foi jogar a capoeira<br>
+<strong>Onde vai Caimã</strong><br>
+<br>
+Arte de bater com o pé<br>
+<strong>Onde vai Caimã</strong><br>
+<br>
+Na lagoa do Abaeté<br>
+<strong>Onde vai Caimã</strong><br>
+<br>
+Caimã o jacaré<br>
+<strong>Onde vai Caimã</strong><br>
+<br>
+Pra jogar a capoeira<br>
+<strong>Onde vai Caimã</strong></td>
+        <td>Caimã is capoeira<br>
+Where goes Caimã?<br>
+<br>
+The world he went around<br>
+Where goes Caimã?<br>
+<br>
+He takes his art<br>
+Where goes Caimã?<br>
+<br>
+Wherever he goes<br>
+Where goes Caimã?<br>
+<br>
+Where goes Caimã, Caimã, Caimã<br>
+Where goes Caimã?<br>
+<br>
+Go to Tide Island<br>
+Where goes Caimã?<br>
+<br>
+Went to play capoeira<br>
+Where goes Caimã?<br>
+<br>
+The art of striking with the foot<br>
+Where goes Caimã?<br>
+<br>
+At the Abaeté Lagoon<br>
+Where goes Caimã?<br>
+<br>
+Caiman the alligator<br>
+Where goes Caimã?<br>
+<br>
+To play capoeira<br>
+Where goes Caimã?</td>
+    </tr>
+</table>
 
 <figcaption>
 

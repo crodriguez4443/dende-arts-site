@@ -1,3 +1,5 @@
+Here's the formatted markdown document according to the specifications:
+
 ---
 title: "Na Beira do Cais"
 date: "2021-01-31"
@@ -9,120 +11,125 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Que saudade do tempo  
-De jogar com alegria  
-Me recordo o respeito, o sorisso no rosto  
-A maior energia  
-  
-Lá na beira do cais  
-Berimbau se ouvia  
-Eu chegava de branco  
-E minha roupa branca voltava limpinha  
-Na beira do cais  
-  
-**Na beira do cais  
-Berimbau se ouvia**  
-  
-A roda famosa na beira do cais  
-Lá no cais da Bahia  
-Na beira do cais  
-  
-**Na beira do cais  
-Berimbau se ouvia**  
-  
-O malandro jogava,  
-O sorisso no rosto, a maior alegria  
-Na beira do cais  
-  
-**Na beira do cais  
-Berimbau se ouvia**  
-  
-A cobra picava,  
-O veneno da cobra não me atingia  
-Na beira do cais  
-  
-**Na beira do cais  
-Berimbau se ouvia**  
-  
-Eu pulava na roda,  
-Minha proteção era a virgem Maria  
-Na beira do cais  
-  
-**Na beira do cais  
-Berimbau se ouvia**  
-  
-No jogo de Angola,  
-Eu jogava manhoso e a mandinga saía  
-Na beira do cais  
-  
-**Na beira do cais  
-Berimbau se ouvia**  
-  
-Eu pedia a São Bento sua proteção  
-E São Bento me ouvia  
-Na beira do cais  
-  
-**Na beira do cais  
-Berimbau se ouvia** | I miss the time  
-To play with joy  
-I remember the respect, the smiles on faces  
-The greatest energy  
-  
-There at the edge of the pier  
-The berimbau was heard  
-I'd arrive in white  
-And my white clothes came back clean  
-At the edge of the pier  
-  
-At the edge of the pier  
-The berimbau was heard  
-  
-The famous roda on the edge of the pier  
-There on the pier in Bahia  
-At the edge of the pier  
-  
-At the edge of the pier  
-The berimbau was heard  
-  
-The malandro would play,  
-The smile on his face, the greatest joy  
-At the edge of the pier  
-  
-At the edge of the pier  
-The berimbau was heard  
-  
-The snake would sting,  
-The snake venom wouldn't get to me  
-At the edge of the pier  
-  
-At the edge of the pier  
-The berimbau was heard  
-  
-I would jump into the roda  
-My protection was the Virgin Mary  
-At the edge of the pier  
-  
-At the edge of the pier  
-The berimbau was heard  
-  
-In the Angola game,  
-I'd play tricky and the mandinga would came out  
-At the edge of the pier  
-  
-At the edge of the pier  
-The berimbau was heard  
-  
-I'd asked São Bento for his protection  
-And São Bento would hear me  
-At the edge of the pier  
-  
-At the edge of the pier  
-The berimbau was heard |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Que saudade do tempo<br>
+De jogar com alegria<br>
+Me recordo o respeito, o sorisso no rosto<br>
+A maior energia<br>
+<br>
+Lá na beira do cais<br>
+Berimbau se ouvia<br>
+Eu chegava de branco<br>
+E minha roupa branca voltava limpinha<br>
+Na beira do cais<br>
+<br>
+<strong>Na beira do cais<br>
+Berimbau se ouvia</strong><br>
+<br>
+A roda famosa na beira do cais<br>
+Lá no cais da Bahia<br>
+Na beira do cais<br>
+<br>
+<strong>Na beira do cais<br>
+Berimbau se ouvia</strong><br>
+<br>
+O malandro jogava,<br>
+O sorisso no rosto, a maior alegria<br>
+Na beira do cais<br>
+<br>
+<strong>Na beira do cais<br>
+Berimbau se ouvia</strong><br>
+<br>
+A cobra picava,<br>
+O veneno da cobra não me atingia<br>
+Na beira do cais<br>
+<br>
+<strong>Na beira do cais<br>
+Berimbau se ouvia</strong><br>
+<br>
+Eu pulava na roda,<br>
+Minha proteção era a virgem Maria<br>
+Na beira do cais<br>
+<br>
+<strong>Na beira do cais<br>
+Berimbau se ouvia</strong><br>
+<br>
+No jogo de Angola,<br>
+Eu jogava manhoso e a mandinga saía<br>
+Na beira do cais<br>
+<br>
+<strong>Na beira do cais<br>
+Berimbau se ouvia</strong><br>
+<br>
+Eu pedia a São Bento sua proteção<br>
+E São Bento me ouvia<br>
+Na beira do cais<br>
+<br>
+<strong>Na beira do cais<br>
+Berimbau se ouvia</strong></td>
+        <td>I miss the time<br>
+To play with joy<br>
+I remember the respect, the smiles on faces<br>
+The greatest energy<br>
+<br>
+There at the edge of the pier<br>
+The berimbau was heard<br>
+I'd arrive in white<br>
+And my white clothes came back clean<br>
+At the edge of the pier<br>
+<br>
+At the edge of the pier<br>
+The berimbau was heard<br>
+<br>
+The famous roda on the edge of the pier<br>
+There on the pier in Bahia<br>
+At the edge of the pier<br>
+<br>
+At the edge of the pier<br>
+The berimbau was heard<br>
+<br>
+The malandro would play,<br>
+The smile on his face, the greatest joy<br>
+At the edge of the pier<br>
+<br>
+At the edge of the pier<br>
+The berimbau was heard<br>
+<br>
+The snake would sting,<br>
+The snake venom wouldn't get to me<br>
+At the edge of the pier<br>
+<br>
+At the edge of the pier<br>
+The berimbau was heard<br>
+<br>
+I would jump into the roda<br>
+My protection was the Virgin Mary<br>
+At the edge of the pier<br>
+<br>
+At the edge of the pier<br>
+The berimbau was heard<br>
+<br>
+In the Angola game,<br>
+I'd play tricky and the mandinga would came out<br>
+At the edge of the pier<br>
+<br>
+At the edge of the pier<br>
+The berimbau was heard<br>
+<br>
+I'd asked São Bento for his protection<br>
+And São Bento would hear me<br>
+At the edge of the pier<br>
+<br>
+At the edge of the pier<br>
+The berimbau was heard</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Mestre Fanho
-
 </figcaption>

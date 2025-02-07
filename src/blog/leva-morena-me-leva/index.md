@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Leva Morena, Me Leva"
 date: "2021-01-24"
@@ -10,101 +12,112 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Eu que já lhe fiz inveja  
-Hoje só lhe causo pena  
-Perdi tudo que eu já tive  
-Pelo amor duma morena  
-  
-Me leva morena me leva  
-Me leva pro teu bangalô  
-Me leva e com um beijo me cala  
-Que eu sou da Senzala, sou seu professor  
-  
-**Me leva morena me leva  
-Me leva pro seu bangalô**  
-  
-Me leva morena querida  
-Que eu dou minha vida  
-Pelo teu amor  
-  
-**Me leva morena me leva  
-Me leva pro seu bangalô**  
-  
-Me leva morena não esquece  
-Que o dia amanhece  
-O galo já cantou  
-  
-**Me leva morena me leva  
-Me leva pro seu bangalô**  
-  
-Me leva de noite e de dia  
-Eu faço poesia  
-Eu te falo de amor  
-  
-**Me leva morena me leva  
-Me leva pro seu bangalô**  
-  
-Me leva depressa, ligeiro  
-Que eu sou prisioneiro  
-Desse teu amor  
-**  
-Me leva morena me leva  
-Me leva pro seu bangalô**  
-  
-Leva me leva  
-Me leva morena  
-Que eu vou  
-**  
-Me leva morena me leva  
-Me leva pro seu bangalô** | I, who you once envied  
-Today you only have pity for me  
-I lost everything I ever had  
-For the love of a morena  
-  
-Take me morena take me  
-Take me to your bungalow  
-Take me and shut me up with a kiss  
-I'm from Senzala, I'm your teacher  
-  
-Take me morena take me  
-Take me to your bungalow  
-  
-Take me darling morena  
-'Cause I'll give my life  
-For your love  
-  
-Take me morena take me  
-Take me to your bungalow  
-  
-Take me morena don't forget  
-That day dawns  
-The rooster has already crowed  
-  
-Take me morena take me  
-Take me to your bungalow  
-  
-Take me night and day  
-I make poetry  
-I'll talk to you about love  
-  
-Take me morena take me  
-Take me to your bungalow  
-  
-Take me fast, quickly  
-'Cause I'm a prisoner  
-Of your love  
-  
-Take me morena take me  
-Take me to your bungalow  
-  
-Take me take me  
-Take me morena  
-'Cause I'll go  
-  
-Take me morena take me  
-Take me to your bungalow |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Eu que já lhe fiz inveja<br>
+            Hoje só lhe causo pena<br>
+            Perdi tudo que eu já tive<br>
+            Pelo amor duma morena<br>
+            <br>
+            Me leva morena me leva<br>
+            Me leva pro teu bangalô<br>
+            Me leva e com um beijo me cala<br>
+            Que eu sou da Senzala, sou seu professor<br>
+            <br>
+            <strong>Me leva morena me leva<br>
+            Me leva pro seu bangalô</strong><br>
+            <br>
+            Me leva morena querida<br>
+            Que eu dou minha vida<br>
+            Pelo teu amor<br>
+            <br>
+            <strong>Me leva morena me leva<br>
+            Me leva pro seu bangalô</strong><br>
+            <br>
+            Me leva morena não esquece<br>
+            Que o dia amanhece<br>
+            O galo já cantou<br>
+            <br>
+            <strong>Me leva morena me leva<br>
+            Me leva pro seu bangalô</strong><br>
+            <br>
+            Me leva de noite e de dia<br>
+            Eu faço poesia<br>
+            Eu te falo de amor<br>
+            <br>
+            <strong>Me leva morena me leva<br>
+            Me leva pro seu bangalô</strong><br>
+            <br>
+            Me leva depressa, ligeiro<br>
+            Que eu sou prisioneiro<br>
+            Desse teu amor<br>
+            <br>
+            <strong>Me leva morena me leva<br>
+            Me leva pro seu bangalô</strong><br>
+            <br>
+            Leva me leva<br>
+            Me leva morena<br>
+            Que eu vou<br>
+            <br>
+            <strong>Me leva morena me leva<br>
+            Me leva pro seu bangalô</strong>
+        </td>
+        <td>
+            I, who you once envied<br>
+            Today you only have pity for me<br>
+            I lost everything I ever had<br>
+            For the love of a morena<br>
+            <br>
+            Take me morena take me<br>
+            Take me to your bungalow<br>
+            Take me and shut me up with a kiss<br>
+            I'm from Senzala, I'm your teacher<br>
+            <br>
+            Take me morena take me<br>
+            Take me to your bungalow<br>
+            <br>
+            Take me darling morena<br>
+            'Cause I'll give my life<br>
+            For your love<br>
+            <br>
+            Take me morena take me<br>
+            Take me to your bungalow<br>
+            <br>
+            Take me morena don't forget<br>
+            That day dawns<br>
+            The rooster has already crowed<br>
+            <br>
+            Take me morena take me<br>
+            Take me to your bungalow<br>
+            <br>
+            Take me night and day<br>
+            I make poetry<br>
+            I'll talk to you about love<br>
+            <br>
+            Take me morena take me<br>
+            Take me to your bungalow<br>
+            <br>
+            Take me fast, quickly<br>
+            'Cause I'm a prisoner<br>
+            Of your love<br>
+            <br>
+            Take me morena take me<br>
+            Take me to your bungalow<br>
+            <br>
+            Take me take me<br>
+            Take me morena<br>
+            'Cause I'll go<br>
+            <br>
+            Take me morena take me<br>
+            Take me to your bungalow
+        </td>
+    </tr>
+</table>
 
 <figcaption>
 

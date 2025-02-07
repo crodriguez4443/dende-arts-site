@@ -9,77 +9,84 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Tamo junto misturado  
-Quando Berimbau tocar  
-Me diga quem é você  
-Vamos vadiar  
-  
-**Tamo junto misturado  
-Quando Berimbau tocar  
-Me diga quem é você  
-Vamos vadiar**  
-  
-Me diga quem é você  
-  
-**Vamos vadiar**  
-  
-Mano meu camarada  
-Irmão pra vida inteira  
-Com certeza é presente de Deus essa linda Capoeira  
-  
-**Tamo junto misturado  
-Quando Berimbau tocar**  
-**Me diga quem é você  
-Vamos vadiar**  
-  
-Chega junto devagar  
-Sabendo como chegar  
-Quem já deu a volta ao mundo pisa no chão devagar  
-  
-**Tamo junto misturado  
-Quando Berimbau tocar  
-Me diga quem é você  
-Vamos vadiar**  
-  
-Me diga quem é você  
-  
-**Vamos vadiar** | We're mixed together  
-when berimbau plays  
-tell me who are you  
-Let's vadiar  
-  
-We're mixed together  
-when berimbau plays  
-tell me who are you  
-Let's vadiar  
-  
-tell me who are you  
-  
-Let's vadiar  
-  
-Bro my comrade  
-Brother for life  
-This beautiful Capoeira is surely a gift from God.  
-  
-We're mixed together  
-When berimbau plays  
-Tell me who are you  
-Let's vadiar  
-  
-get together slowly  
-knowing how to get there  
-Anyone who has traveled around the world steps on the ground slowly  
-  
-We're mixed together  
-When berimbau plays  
-Tell me who are you  
-Let's vadiar  
-  
-tell me who are you  
-  
-Let's laze |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Tamo junto misturado<br>
+Quando Berimbau tocar<br>
+Me diga quem é você<br>
+Vamos vadiar<br>
+<br>
+<strong>Tamo junto misturado<br>
+Quando Berimbau tocar<br>
+Me diga quem é você<br>
+Vamos vadiar</strong><br>
+<br>
+Me diga quem é você<br>
+<br>
+<strong>Vamos vadiar</strong><br>
+<br>
+Mano meu camarada<br>
+Irmão pra vida inteira<br>
+Com certeza é presente de Deus essa linda Capoeira<br>
+<br>
+<strong>Tamo junto misturado<br>
+Quando Berimbau tocar</strong><br>
+<strong>Me diga quem é você<br>
+Vamos vadiar</strong><br>
+<br>
+Chega junto devagar<br>
+Sabendo como chegar<br>
+Quem já deu a volta ao mundo pisa no chão devagar<br>
+<br>
+<strong>Tamo junto misturado<br>
+Quando Berimbau tocar<br>
+Me diga quem é você<br>
+Vamos vadiar</strong><br>
+<br>
+Me diga quem é você<br>
+<br>
+<strong>Vamos vadiar</strong></td>
+        <td>We're mixed together<br>
+when berimbau plays<br>
+tell me who are you<br>
+Let's vadiar<br>
+<br>
+We're mixed together<br>
+when berimbau plays<br>
+tell me who are you<br>
+Let's vadiar<br>
+<br>
+tell me who are you<br>
+<br>
+Let's vadiar<br>
+<br>
+Bro my comrade<br>
+Brother for life<br>
+This beautiful Capoeira is surely a gift from God.<br>
+<br>
+We're mixed together<br>
+When berimbau plays<br>
+Tell me who are you<br>
+Let's vadiar<br>
+<br>
+get together slowly<br>
+knowing how to get there<br>
+Anyone who has traveled around the world steps on the ground slowly<br>
+<br>
+We're mixed together<br>
+When berimbau plays<br>
+Tell me who are you<br>
+Let's vadiar<br>
+<br>
+tell me who are you<br>
+<br>
+Let's laze</td>
+    </tr>
+</table>
 
 <figcaption>
 

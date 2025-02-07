@@ -8,62 +8,67 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Um dois três  
-Três e três, seis  
-Seis e três, nove  
-Nove e três, doze  
-  
-**Um dois três  
-Três e três, seis  
-Seis e três, nove  
-Nove e três, doze**  
-  
-Amanhã e dia santo  
-  
-**Um dois três  
-**  
-Dia de povo de deus  
-  
-**Três e três, seis  
-**  
-Quem tem roupa vai na missa  
-  
-**Seis e três, nove  
-**  
-Quem nao tem faz como eu  
-  
-**Nove e três, doze** | One two Three  
-Three and three, six  
-Six and three, nine  
-Nine and three, twelve  
-  
-One two Three  
-Three and three, six  
-Six and three, nine  
-Nine and three, twelve  
-  
-Tomorrow and holy day  
-  
-One two Three  
-  
-God's people day  
-  
-Three and three, six  
-  
-Who has clothes goes to mass  
-  
-Six and three, nine  
-  
-Who doesn't have it like me  
-  
-Nine and three, twelve |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Um dois três<br>
+        Três e três, seis<br>
+        Seis e três, nove<br>
+        Nove e três, doze<br>
+        <br>
+        <strong>Um dois três<br>
+        Três e três, seis<br>
+        Seis e três, nove<br>
+        Nove e três, doze</strong><br>
+        <br>
+        Amanhã e dia santo<br>
+        <br>
+        <strong>Um dois três</strong><br>
+        <br>
+        Dia de povo de deus<br>
+        <br>
+        <strong>Três e três, seis</strong><br>
+        <br>
+        Quem tem roupa vai na missa<br>
+        <br>
+        <strong>Seis e três, nove</strong><br>
+        <br>
+        Quem nao tem faz como eu<br>
+        <br>
+        <strong>Nove e três, doze</strong></td>
+        <td>One two Three<br>
+        Three and three, six<br>
+        Six and three, nine<br>
+        Nine and three, twelve<br>
+        <br>
+        One two Three<br>
+        Three and three, six<br>
+        Six and three, nine<br>
+        Nine and three, twelve<br>
+        <br>
+        Tomorrow and holy day<br>
+        <br>
+        One two Three<br>
+        <br>
+        God's people day<br>
+        <br>
+        Three and three, six<br>
+        <br>
+        Who has clothes goes to mass<br>
+        <br>
+        Six and three, nine<br>
+        <br>
+        Who doesn't have it like me<br>
+        <br>
+        Nine and three, twelve</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unkown
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YRe9t2OFaXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -1,3 +1,5 @@
+Here's the formatted document:
+
 ---
 title: "Arrodeia o mar três vezes"
 date: "2020-10-20"
@@ -9,68 +11,73 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Se quiser me ver  
-Arrodeia o mar três vezes  
-Se quiser me ver  
-Três vezes arrodeia o mar  
-  
-**Se quiser me ver  
-Arrodeia o mar três vezes  
-Se quiser me ver  
-Três vezes arrodeia o mar**  
-  
-Vou me embora, vou me embora  
-Mas eu tenho que passar  
-Mas se você quiser me ver  
-Três vezes arrodeia o mar  
-  
-**Se quiser me ver  
-Arrodeia o mar três vezes  
-Se quiser me ver  
-Três vezes arrodeia o mar**  
-  
-Arrodeia o mar três vezes  
-Com esse jogo de angola  
-Se quiser me ver  
-Três vezes arrodeia o mar  
-  
-**Se quiser me ver  
-Arrodeio o mar três vezes  
-Se quiser me ver  
-Três vezes arrodeia o mar** | If you want to see me  
-Go around the sea three times  
-If you want to see me  
-Three times around the sea  
-  
-If you want to see me  
-Go around the sea three times  
-If you want to see me  
-Three times around the sea  
-  
-I'm leaving, I'm leaving  
-But I have to pass  
-But if you want to see me  
-Three times around the sea  
-  
-If you want to see me  
-Go around the sea three times  
-If you want to see me  
-Three times around the sea  
-  
-Surrounds the sea three times  
-With this game of Angola  
-If you want to see me  
-Three times around the sea  
-  
-If you want to see me  
-Go around the sea three times  
-If you want to see me  
-Three times around the sea |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Se quiser me ver<br>
+Arrodeia o mar três vezes<br>
+Se quiser me ver<br>
+Três vezes arrodeia o mar<br>
+<br>
+<strong>Se quiser me ver<br>
+Arrodeia o mar três vezes<br>
+Se quiser me ver<br>
+Três vezes arrodeia o mar</strong><br>
+<br>
+Vou me embora, vou me embora<br>
+Mas eu tenho que passar<br>
+Mas se você quiser me ver<br>
+Três vezes arrodeia o mar<br>
+<br>
+<strong>Se quiser me ver<br>
+Arrodeia o mar três vezes<br>
+Se quiser me ver<br>
+Três vezes arrodeia o mar</strong><br>
+<br>
+Arrodeia o mar três vezes<br>
+Com esse jogo de angola<br>
+Se quiser me ver<br>
+Três vezes arrodeia o mar<br>
+<br>
+<strong>Se quiser me ver<br>
+Arrodeio o mar três vezes<br>
+Se quiser me ver<br>
+Três vezes arrodeia o mar</strong></td>
+        <td>If you want to see me<br>
+Go around the sea three times<br>
+If you want to see me<br>
+Three times around the sea<br>
+<br>
+If you want to see me<br>
+Go around the sea three times<br>
+If you want to see me<br>
+Three times around the sea<br>
+<br>
+I'm leaving, I'm leaving<br>
+But I have to pass<br>
+But if you want to see me<br>
+Three times around the sea<br>
+<br>
+If you want to see me<br>
+Go around the sea three times<br>
+If you want to see me<br>
+Three times around the sea<br>
+<br>
+Surrounds the sea three times<br>
+With this game of Angola<br>
+If you want to see me<br>
+Three times around the sea<br>
+<br>
+If you want to see me<br>
+Go around the sea three times<br>
+If you want to see me<br>
+Three times around the sea</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unknown
-
 </figcaption>

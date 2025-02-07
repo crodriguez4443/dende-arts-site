@@ -9,37 +9,44 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Eu quero ver você jogar  
-Eu quero ver você jogar  
-Capoeira de Angola  
-Capoeira de Angola e Regional, Idalina  
-  
-**Jogue para baixo, jogue para cima**  
-  
-Capoeira de Angola, Idalina  
-**Jogue para baixo, jogue para cima**  
-  
-Quero ver você jogar, Idalina  
-**Jogue para baixo, jogue para cima**  
-  
-Capoeira de Angola, Idalina  
-**Jogue para baixo, jogue para cima** | I want to see you play  
-I want to see you play  
-Capoeira de Angola  
-Capoeira de Angola and Regional, Idalina  
-  
-Play low, play high  
-  
-Capoeira de Angola, Idalina  
-Play low, play high  
-  
-I want to see you play, Idalina  
-Play low, play high  
-  
-Capoeira de Angola, Idalina  
-Play low, play high |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Eu quero ver você jogar<br>
+Eu quero ver você jogar<br>
+Capoeira de Angola<br>
+Capoeira de Angola e Regional, Idalina<br>
+<br>
+<strong>Jogue para baixo, jogue para cima</strong><br>
+<br>
+Capoeira de Angola, Idalina<br>
+<strong>Jogue para baixo, jogue para cima</strong><br>
+<br>
+Quero ver você jogar, Idalina<br>
+<strong>Jogue para baixo, jogue para cima</strong><br>
+<br>
+Capoeira de Angola, Idalina<br>
+<strong>Jogue para baixo, jogue para cima</strong></td>
+        <td>I want to see you play<br>
+I want to see you play<br>
+Capoeira de Angola<br>
+Capoeira de Angola and Regional, Idalina<br>
+<br>
+Play low, play high<br>
+<br>
+Capoeira de Angola, Idalina<br>
+Play low, play high<br>
+<br>
+I want to see you play, Idalina<br>
+Play low, play high<br>
+<br>
+Capoeira de Angola, Idalina<br>
+Play low, play high</td>
+    </tr>
+</table>
 
 <figcaption>
 

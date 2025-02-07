@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Preta Bá"
 date: "2021-03-20"
@@ -9,167 +11,176 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Meu Deus, cadê Preta Bá, meu Deus  
-Meu Deus, cadê Preta Bá, meu Deus  
-**  
-Meu Deus, cadê Preta Bá, meu Deus  
-Meu Deus, cadê Preta Bá, meu Deus**  
-  
-O filho do coronel  
-Chora no colo de sinhá  
-Toda noite acordando  
-Procurando Preta Bá  
-Meu Deus  
-  
-**Meu Deus, cadê Preta Bá, meu Deus  
-Meu Deus, cadê Preta Bá, meu Deus**  
-  
-Preta Bá que o criou  
-Como se fosse um filho seu  
-E o menino só vingou  
-Porque Preta Bá, de seu leite lhe deu  
-Meu Deus  
-  
-**Meu Deus, cadê Preta Bá, meu Deus  
-Meu Deus, cadê Preta Bá, meu Deus**  
-  
-Coronel disse que sim  
-Ninguém vai dizer que não  
-Preta Bá criou seu filho  
-Acabou sua missão  
-Meu Deus  
-  
-**Meu Deus, cadê Preta Bá, meu Deus  
-Meu Deus, cadê Preta Bá, meu Deus**  
-  
-Preta Bá, batendo o pilão  
-Ouviu a voz do coronel  
-Negra chegou sua hora  
-Faça uma prece a Deus do céu  
-Meu Deus  
-  
-**Meu Deus, cadê Preta Bá, meu Deus  
-Meu Deus, cadê Preta Bá, meu Deus**  
-  
-Preta Bá foi castigada  
-Por algo que não cometeu  
-Mas quando foi descoberto  
-Era tarde demais, Preta Bá morreu  
-Meu Deus  
-  
-**Meu Deus, cadê Preta Bá, meu Deus  
-Meu Deus, cadê Preta Bá, meu Deus**  
-  
-Coronel anda calado  
-Triste a se lamentar  
-Preta Bá não suportou  
-O castigo que lhe mandou dar  
-Meu Deus  
-  
-**Meu Deus, cadê Preta Bá, meu Deus  
-Meu Deus, cadê Preta Bá, meu Deus**  
-  
-Quem sabe esse coronel  
-Não soubesse o que fazia  
-Pois não levou muito tempo  
-E sem Preta Bá o menino morria  
-Meu Deus  
-  
-**Meu Deus, cadê Preta Bá, meu Deus  
-Meu Deus, cadê Preta Bá, meu Deus**  
-  
-Sabe Deus pra onde foi  
-E eu fico a imaginar  
-Que o filho do coronel  
-Se encontrou com Preta Bá  
-Meu Deus  
-  
-**Meu Deus, cadê Preta Bá, meu Deus  
-Meu Deus, cadê Preta Bá, meu Deus** | My God, where's Preta Bá, my God  
-My God, where's Preta Bá, my God  
-  
-My God, where's Preta Bá, my God  
-My God, where's Preta Bá, my God  
-  
-The colonel's son  
-Cries in the madam's lap  
-Every night he awakens  
-Looking for Preta Bá  
-My God  
-  
-My God, where's Preta Bá, my God  
-My God, where's Preta Bá, my God  
-  
-Preta Bá who created him  
-As if he were her child  
-And the boy only survived  
-Because Preta Bá gave him her milk  
-My God  
-  
-My God, where's Preta Bá, my God  
-My God, where's Preta Bá, my God  
-  
-Colonel said yes  
-No one would say no  
-Preta Bá raised his son  
-Her mission was over  
-My God  
-  
-My God, where's Preta Bá, my God  
-My God, where's Preta Bá, my God  
-  
-Preta Bá, beating the pestle  
-Heard the colonel's voice  
-Black woman your time has come  
-Pray to God in heaven  
-My God  
-  
-My God, where's Preta Bá, my God  
-My God, where's Preta Bá, my God  
-  
-Preta Bá was punished  
-For something she didn't commit  
-But when it was discovered  
-It was too late, Preta Bá had died  
-My God  
-  
-My God, where's Preta Bá, my God  
-My God, where's Preta Bá, my God  
-  
-Colonel has been silent  
-Sad and lamenting  
-Preta Bá couldn't survive  
-The punishment he'd ordered  
-My God  
-  
-My God, where's Preta Bá, my God  
-My God, where's Preta Bá, my God  
-  
-Who knows, this colonel  
-Didn’t know what he did  
-Because it didn't take long  
-And without Preta Bá the boy died  
-My God  
-  
-My God, where's Preta Bá, my God  
-My God, where's Preta Bá, my God  
-  
-God knows where he went  
-And sometimes I imagine  
-That the colonel's son  
-Met with Preta Bá  
-My God  
-  
-My God, where's Preta Bá, my God  
-My God, where's Preta Bá, my God |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Meu Deus, cadê Preta Bá, meu Deus<br>
+            Meu Deus, cadê Preta Bá, meu Deus<br>
+            <strong><br>
+            Meu Deus, cadê Preta Bá, meu Deus<br>
+            Meu Deus, cadê Preta Bá, meu Deus</strong><br>
+            <br>
+            O filho do coronel<br>
+            Chora no colo de sinhá<br>
+            Toda noite acordando<br>
+            Procurando Preta Bá<br>
+            Meu Deus<br>
+            <br>
+            <strong>Meu Deus, cadê Preta Bá, meu Deus<br>
+            Meu Deus, cadê Preta Bá, meu Deus</strong><br>
+            <br>
+            Preta Bá que o criou<br>
+            Como se fosse um filho seu<br>
+            E o menino só vingou<br>
+            Porque Preta Bá, de seu leite lhe deu<br>
+            Meu Deus<br>
+            <br>
+            <strong>Meu Deus, cadê Preta Bá, meu Deus<br>
+            Meu Deus, cadê Preta Bá, meu Deus</strong><br>
+            <br>
+            Coronel disse que sim<br>
+            Ninguém vai dizer que não<br>
+            Preta Bá criou seu filho<br>
+            Acabou sua missão<br>
+            Meu Deus<br>
+            <br>
+            <strong>Meu Deus, cadê Preta Bá, meu Deus<br>
+            Meu Deus, cadê Preta Bá, meu Deus</strong><br>
+            <br>
+            Preta Bá, batendo o pilão<br>
+            Ouviu a voz do coronel<br>
+            Negra chegou sua hora<br>
+            Faça uma prece a Deus do céu<br>
+            Meu Deus<br>
+            <br>
+            <strong>Meu Deus, cadê Preta Bá, meu Deus<br>
+            Meu Deus, cadê Preta Bá, meu Deus</strong><br>
+            <br>
+            Preta Bá foi castigada<br>
+            Por algo que não cometeu<br>
+            Mas quando foi descoberto<br>
+            Era tarde demais, Preta Bá morreu<br>
+            Meu Deus<br>
+            <br>
+            <strong>Meu Deus, cadê Preta Bá, meu Deus<br>
+            Meu Deus, cadê Preta Bá, meu Deus</strong><br>
+            <br>
+            Coronel anda calado<br>
+            Triste a se lamentar<br>
+            Preta Bá não suportou<br>
+            O castigo que lhe mandou dar<br>
+            Meu Deus<br>
+            <br>
+            <strong>Meu Deus, cadê Preta Bá, meu Deus<br>
+            Meu Deus, cadê Preta Bá, meu Deus</strong><br>
+            <br>
+            Quem sabe esse coronel<br>
+            Não soubesse o que fazia<br>
+            Pois não levou muito tempo<br>
+            E sem Preta Bá o menino morria<br>
+            Meu Deus<br>
+            <br>
+            <strong>Meu Deus, cadê Preta Bá, meu Deus<br>
+            Meu Deus, cadê Preta Bá, meu Deus</strong><br>
+            <br>
+            Sabe Deus pra onde foi<br>
+            E eu fico a imaginar<br>
+            Que o filho do coronel<br>
+            Se encontrou com Preta Bá<br>
+            Meu Deus<br>
+            <br>
+            <strong>Meu Deus, cadê Preta Bá, meu Deus<br>
+            Meu Deus, cadê Preta Bá, meu Deus</strong>
+        </td>
+        <td>
+            My God, where's Preta Bá, my God<br>
+            My God, where's Preta Bá, my God<br>
+            <br>
+            My God, where's Preta Bá, my God<br>
+            My God, where's Preta Bá, my God<br>
+            <br>
+            The colonel's son<br>
+            Cries in the madam's lap<br>
+            Every night he awakens<br>
+            Looking for Preta Bá<br>
+            My God<br>
+            <br>
+            My God, where's Preta Bá, my God<br>
+            My God, where's Preta Bá, my God<br>
+            <br>
+            Preta Bá who created him<br>
+            As if he were her child<br>
+            And the boy only survived<br>
+            Because Preta Bá gave him her milk<br>
+            My God<br>
+            <br>
+            My God, where's Preta Bá, my God<br>
+            My God, where's Preta Bá, my God<br>
+            <br>
+            Colonel said yes<br>
+            No one would say no<br>
+            Preta Bá raised his son<br>
+            Her mission was over<br>
+            My God<br>
+            <br>
+            My God, where's Preta Bá, my God<br>
+            My God, where's Preta Bá, my God<br>
+            <br>
+            Preta Bá, beating the pestle<br>
+            Heard the colonel's voice<br>
+            Black woman your time has come<br>
+            Pray to God in heaven<br>
+            My God<br>
+            <br>
+            My God, where's Preta Bá, my God<br>
+            My God, where's Preta Bá, my God<br>
+            <br>
+            Preta Bá was punished<br>
+            For something she didn't commit<br>
+            But when it was discovered<br>
+            It was too late, Preta Bá had died<br>
+            My God<br>
+            <br>
+            My God, where's Preta Bá, my God<br>
+            My God, where's Preta Bá, my God<br>
+            <br>
+            Colonel has been silent<br>
+            Sad and lamenting<br>
+            Preta Bá couldn't survive<br>
+            The punishment he'd ordered<br>
+            My God<br>
+            <br>
+            My God, where's Preta Bá, my God<br>
+            My God, where's Preta Bá, my God<br>
+            <br>
+            Who knows, this colonel<br>
+            Didn't know what he did<br>
+            Because it didn't take long<br>
+            And without Preta Bá the boy died<br>
+            My God<br>
+            <br>
+            My God, where's Preta Bá, my God<br>
+            My God, where's Preta Bá, my God<br>
+            <br>
+            God knows where he went<br>
+            And sometimes I imagine<br>
+            That the colonel's son<br>
+            Met with Preta Bá<br>
+            My God<br>
+            <br>
+            My God, where's Preta Bá, my God<br>
+            My God, where's Preta Bá, my God
+        </td>
+    </tr>
+</table>
 
 <figcaption>
-
-Author: Mestre Boa Voz  
-Note: I left "Preta Bá" untranslated in the lyrics, but just to clarify. The woman in the song is known as "Preta Bá", which literally means "Balck woman Bá".
-
+Author: Mestre Boa Voz<br>
+Note: I left "Preta Bá" untranslated in the lyrics, but just to clarify. The woman in the song is known as "Preta Bá", which literally means "Black woman Bá".
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VpKnaNl4HoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

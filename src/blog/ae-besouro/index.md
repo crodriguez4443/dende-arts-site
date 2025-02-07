@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Aê Besouro"
 date: "2020-09-23"
@@ -9,85 +11,92 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Aê Besouro  
-Besouro Preto  
-Mangangá  
-Cordão de Ouro Magnagá  
-  
-**Aê Besouro  
-Besouro Preto  
-Mangangá  
-Cordão de Ouro Magnagá**  
-  
-Era o nome de um peixe  
-Um peixe venenoso  
-Ligeiro e perigoso  
-Rápido como Besouro  
-  
-**Aê Besouro  
-Besouro Preto  
-Mangangá  
-Cordão de Ouro Magnagá**  
-  
-Não se via nehuma corda  
-Na cintura de Besouro  
-Por ser tão bom capoeira  
-Era simplesmente Cordão de Ouro  
-  
-**Aê Besouro  
-Besouro Preto  
-Mangangá  
-Cordão de Ouro Magnagá**  
-  
-Era chamado Besouro  
-Porque sabia voar  
-Além de ser venenoso  
-Era dificil de lhe pegar  
-  
-**Aê Besouro  
-Besouro Preto  
-Mangangá  
-Cordão de Ouro Magnagá** | Aê Besouro  
-Black Beetle  
-Manganga  
-Magnagá Gold Cord  
-  
-Aê Besouro  
-Black Beetle  
-Manganga  
-Magnagá Gold Cord  
-  
-it was the name of a fish  
-A poisonous fish  
-Light and dangerous  
-Quick as a Beetle  
-  
-Aê Besouro  
-Black Beetle  
-Manganga  
-Magnagá Gold Cord  
-  
-There was no rope  
-Beetle's waist  
-For being so good capoeira  
-It was simply Gold Cord  
-  
-Aê Besouro  
-Black Beetle  
-Manganga  
-Magnagá Gold Cord  
-  
-It was called Beetle  
-Because I knew how to fly  
-Besides being poisonous  
-It was hard to catch him  
-  
-Aê Besouro  
-Black Beetle  
-Manganga  
-Magnagá Gold Cord |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Aê Besouro<br>
+        Besouro Preto<br>
+        Mangangá<br>
+        Cordão de Ouro Magnagá<br>
+        <br>
+        <strong>Aê Besouro<br>
+        Besouro Preto<br>
+        Mangangá<br>
+        Cordão de Ouro Magnagá</strong><br>
+        <br>
+        Era o nome de um peixe<br>
+        Um peixe venenoso<br>
+        Ligeiro e perigoso<br>
+        Rápido como Besouro<br>
+        <br>
+        <strong>Aê Besouro<br>
+        Besouro Preto<br>
+        Mangangá<br>
+        Cordão de Ouro Magnagá</strong><br>
+        <br>
+        Não se via nehuma corda<br>
+        Na cintura de Besouro<br>
+        Por ser tão bom capoeira<br>
+        Era simplesmente Cordão de Ouro<br>
+        <br>
+        <strong>Aê Besouro<br>
+        Besouro Preto<br>
+        Mangangá<br>
+        Cordão de Ouro Magnagá</strong><br>
+        <br>
+        Era chamado Besouro<br>
+        Porque sabia voar<br>
+        Além de ser venenoso<br>
+        Era dificil de lhe pegar<br>
+        <br>
+        <strong>Aê Besouro<br>
+        Besouro Preto<br>
+        Mangangá<br>
+        Cordão de Ouro Magnagá</strong></td>
+        <td>Aê Besouro<br>
+        Black Beetle<br>
+        Manganga<br>
+        Magnagá Gold Cord<br>
+        <br>
+        Aê Besouro<br>
+        Black Beetle<br>
+        Manganga<br>
+        Magnagá Gold Cord<br>
+        <br>
+        it was the name of a fish<br>
+        A poisonous fish<br>
+        Light and dangerous<br>
+        Quick as a Beetle<br>
+        <br>
+        Aê Besouro<br>
+        Black Beetle<br>
+        Manganga<br>
+        Magnagá Gold Cord<br>
+        <br>
+        There was no rope<br>
+        Beetle's waist<br>
+        For being so good capoeira<br>
+        It was simply Gold Cord<br>
+        <br>
+        Aê Besouro<br>
+        Black Beetle<br>
+        Manganga<br>
+        Magnagá Gold Cord<br>
+        <br>
+        It was called Beetle<br>
+        Because I knew how to fly<br>
+        Besides being poisonous<br>
+        It was hard to catch him<br>
+        <br>
+        Aê Besouro<br>
+        Black Beetle<br>
+        Manganga<br>
+        Magnagá Gold Cord</td>
+    </tr>
+</table>
 
 <figcaption>
 

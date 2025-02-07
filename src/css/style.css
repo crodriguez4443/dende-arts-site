@@ -1446,10 +1446,26 @@ strong {
     padding-bottom: 2rem;
 }
 
+/* === Songbook Blog Page === */
 
-/* .blog-page-container {
-    display: grid;
-} */
+.capoeira-table {
+    border: 1px solid var(--title-color);
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.capoeira-table th,
+.capoeira-table td {
+    border: 1px solid var(--text-form);
+    padding: 1rem;
+    vertical-align: top;
+}
+
+.header-row {
+    background-color: var(--background-beige);
+}
+
 
 /* === Pagination === */
 

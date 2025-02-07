@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "ABC da Capoeira"
 date: "2020-09-22"
@@ -8,103 +10,109 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Vem cá menino, vem aprender  
-Vou lhe ensinar o gingado do ABC  
-  
-**Vem cá menino, vem aprender  
-Vou lhe ensinar o gingado do ABC**  
-  
-A de Angola  
-B de Berimbau  
-C de Capoeira que levanta o meu astral  
-D de Dendê  
-E é de Esquiva  
-F Forma a roda  
-é importante G de Ginga  
-  
-**Vem cá menino, vem aprender  
-Vou lhe ensinar o gingado do ABC**  
-  
-H de Harmonia  
-I de Instrumento  
-J Jogador  
-K de Kim compositor  
-L Lealdade  
-M Mandigueiro  
-N Negaceia  
-O de Orquestra  
-Tem que ter muito respeito  
-  
-**Vem cá menino, vem aprender  
-Vou lhe ensinar o gingado do ABC**  
-  
-P de Pastinha grande mestre que se foi  
-Q de Quilombo onde tudo começou  
-R Regional Mestre Bimba que criou  
-S de Senzala do negro trabalhador  
-  
-**Vem cá menino, vem aprender  
-Vou lhe ensinar o gingado do ABC**  
-  
-T Tava em casa sem pensar nem imaginar  
-U de União isso não pode faltar  
-V Vadiação, olha eu fico por aqui  
-X é de Xangô  
-E o Z é de Zumbi  
-  
-**Vem cá menino, vem aprender  
-Vou lhe ensinar o gingado do ABC** | Come here boy, come learn  
-I'll teach you the ABC Ginga  
-  
-**Come here boy, come learn  
-I'll teach you the ABC Ginga**  
-A for Angola's  
-B for Berimbau  
-C for Capoeira that raises my mood  
-D for Dendê  
-E for dodge  
-F Form the roda  
-G for Ginga is important  
-  
-**Come here boy, come learn  
-I'll teach you the ABC Ginga**  
-  
-H for Harmony  
-I for Instrument  
-J for Player  
-K for Kim the composer  
-L Loyalty  
-M Mandigueiro  
-N Negaceia  
-O for Orchestra  
-You have to have a lot of respect  
-  
-**Come here boy, come learn  
-I'll teach you the ABC Ginga**  
-  
-P for Pastinha great master who is gone  
-Q de Quilombo where it all started  
-R for Regional Mestre Bimba who created  
-S of Senzala of the black worker  
-  
-**Come here boy, come learn  
-I'll teach you the ABC Ginga**  
-  
-T I was at home without thinking or imagining  
-Union U this can't be missing  
-V Vadiação, look I'll stop here  
-X is from Xangô  
-And the Z is from Zombie  
-  
-**Come here boy, come learn  
-I'll teach you the ABC Ginga** |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Vem cá menino, vem aprender<br>
+Vou lhe ensinar o gingado do ABC<br>
+<br>
+<strong>Vem cá menino, vem aprender<br>
+Vou lhe ensinar o gingado do ABC</strong><br>
+<br>
+A de Angola<br>
+B de Berimbau<br>
+C de Capoeira que levanta o meu astral<br>
+D de Dendê<br>
+E é de Esquiva<br>
+F Forma a roda<br>
+é importante G de Ginga<br>
+<br>
+<strong>Vem cá menino, vem aprender<br>
+Vou lhe ensinar o gingado do ABC</strong><br>
+<br>
+H de Harmonia<br>
+I de Instrumento<br>
+J Jogador<br>
+K de Kim compositor<br>
+L Lealdade<br>
+M Mandigueiro<br>
+N Negaceia<br>
+O de Orquestra<br>
+Tem que ter muito respeito<br>
+<br>
+<strong>Vem cá menino, vem aprender<br>
+Vou lhe ensinar o gingado do ABC</strong><br>
+<br>
+P de Pastinha grande mestre que se foi<br>
+Q de Quilombo onde tudo começou<br>
+R Regional Mestre Bimba que criou<br>
+S de Senzala do negro trabalhador<br>
+<br>
+<strong>Vem cá menino, vem aprender<br>
+Vou lhe ensinar o gingado do ABC</strong><br>
+<br>
+T Tava em casa sem pensar nem imaginar<br>
+U de União isso não pode faltar<br>
+V Vadiação, olha eu fico por aqui<br>
+X é de Xangô<br>
+E o Z é de Zumbi<br>
+<br>
+<strong>Vem cá menino, vem aprender<br>
+Vou lhe ensinar o gingado do ABC</strong></td>
+        <td>Come here boy, come learn<br>
+I'll teach you the ABC Ginga<br>
+<br>
+<strong>Come here boy, come learn<br>
+I'll teach you the ABC Ginga</strong><br>
+<br>
+A for Angola's<br>
+B for Berimbau<br>
+C for Capoeira that raises my mood<br>
+D for Dendê<br>
+E for dodge<br>
+F Form the roda<br>
+G for Ginga is important<br>
+<br>
+<strong>Come here boy, come learn<br>
+I'll teach you the ABC Ginga</strong><br>
+<br>
+H for Harmony<br>
+I for Instrument<br>
+J for Player<br>
+K for Kim the composer<br>
+L Loyalty<br>
+M Mandigueiro<br>
+N Negaceia<br>
+O for Orchestra<br>
+You have to have a lot of respect<br>
+<br>
+<strong>Come here boy, come learn<br>
+I'll teach you the ABC Ginga</strong><br>
+<br>
+P for Pastinha great master who is gone<br>
+Q de Quilombo where it all started<br>
+R for Regional Mestre Bimba who created<br>
+S of Senzala of the black worker<br>
+<br>
+<strong>Come here boy, come learn<br>
+I'll teach you the ABC Ginga</strong><br>
+<br>
+T I was at home without thinking or imagining<br>
+Union U this can't be missing<br>
+V Vadiação, look I'll stop here<br>
+X is from Xangô<br>
+And the Z is from Zombie<br>
+<br>
+<strong>Come here boy, come learn<br>
+I'll teach you the ABC Ginga</strong></td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unknown
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TDINDRiaW_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

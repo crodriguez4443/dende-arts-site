@@ -8,130 +8,135 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Uma sintonia boa  
-Não pode nos separar  
-Berimbau é quem me leva  
-E me guia em tudo lugar  
-  
-**Leva eu, leva eu pra vadiar  
-Toca aê, o berimbau com dendê  
-Leva eu pra vadiar  
-Toca o berimbau aê**  
-  
-Berimbau me leva e traz  
-Pelas andanças e pelo mundo  
-Ensinando e aprendendo  
-Respeito acima de tudo  
-  
-****Leva eu, leva eu pra vadiar  
-Toca aê, o berimbau com dendê  
-Leva eu pra vadiar  
-Toca o berimbau aê****  
-  
-Berimbau já me deu um compasso  
-As coisas boas eu guardo e as ruims desfaço  
-Assim é na minha Capoeira  
-Assim eu faço o meu ditado  
-  
-****Leva eu, leva eu pra vadiar  
-Toca aê, o berimbau com dendê  
-Leva eu pra vadiar  
-Toca o berimbau aê****  
-  
-Uma roda com energia  
-Não pode se desfazer  
-Vai quebrar toda harmonia  
-Vai quebrar todo o dendê  
-  
-****Leva eu, leva eu pra vadiar  
-Toca aê, o berimbau com dendê  
-Leva eu pra vadiar  
-Toca o berimbau aê****  
-  
-Na tempestade e na noite traiçoeira  
-A vida é uma caixa de surpresas  
-Eu dei a volta por cima  
-No jogo da capoeira  
-  
-****Leva eu, leva eu pra vadiar  
-Toca aê, o berimbau com dendê  
-Leva eu pra vadiar  
-Toca o berimbau aê****  
-  
-Minha vida não foi facil  
-Nada foi de brincadeira  
-Mas se ando pelo mundo  
-É jogando capoeira  
-  
-****Leva eu, leva eu pra vadiar  
-Toca aê, o berimbau com dendê  
-Leva eu pra vadiar  
-Toca o berimbau aê**** | A good tune  
-You can't separate us  
-Berimbau is the one who takes me  
-And guides me everywhere  
-  
-Take me, take me to play  
-Play the berimbau with dendê  
-Take me to play  
-Play berimbau aê  
-  
-Berimbau takes me and brings me  
-Around the world and around  
-Teaching and learning  
-Respect above all  
-  
-Take me, take me to play  
-Play the berimbau with dendê  
-Take me to play  
-Play berimbau aê  
-  
-Berimbau already gave me a compass  
-The good things I keep and the bad things I undo  
-So it is in my Capoeira  
-So I do my saying  
-  
-Take me, take me to play  
-Play the berimbau with dendê  
-Take me to play  
-Play berimbau aê  
-  
-A wheel with energy  
-Can't come undone  
-It will break all harmony  
-It will break all the oil palm  
-  
-Take me, take me to play  
-Play the berimbau with dendê  
-Take me to play  
-Play berimbau aê  
-  
-In the storm and the treacherous night  
-Life is a box of surprises  
-I went around the top  
-In the game of capoeira  
-  
-Take me, take me to play  
-Play the berimbau with dendê  
-Take me to play  
-Play berimbau aê  
-  
-My life was not easy  
-Nothing was a joke  
-But if I walk the world  
-It's playing capoeira  
-  
-Take me, take me to play  
-Play the berimbau with dendê  
-Take me to play  
-Play berimbau aê |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Uma sintonia boa<br>
+Não pode nos separar<br>
+Berimbau é quem me leva<br>
+E me guia em tudo lugar<br>
+<br>
+<strong>Leva eu, leva eu pra vadiar<br>
+Toca aê, o berimbau com dendê<br>
+Leva eu pra vadiar<br>
+Toca o berimbau aê</strong><br>
+<br>
+Berimbau me leva e traz<br>
+Pelas andanças e pelo mundo<br>
+Ensinando e aprendendo<br>
+Respeito acima de tudo<br>
+<br>
+<strong>Leva eu, leva eu pra vadiar<br>
+Toca aê, o berimbau com dendê<br>
+Leva eu pra vadiar<br>
+Toca o berimbau aê</strong><br>
+<br>
+Berimbau já me deu um compasso<br>
+As coisas boas eu guardo e as ruims desfaço<br>
+Assim é na minha Capoeira<br>
+Assim eu faço o meu ditado<br>
+<br>
+<strong>Leva eu, leva eu pra vadiar<br>
+Toca aê, o berimbau com dendê<br>
+Leva eu pra vadiar<br>
+Toca o berimbau aê</strong><br>
+<br>
+Uma roda com energia<br>
+Não pode se desfazer<br>
+Vai quebrar toda harmonia<br>
+Vai quebrar todo o dendê<br>
+<br>
+<strong>Leva eu, leva eu pra vadiar<br>
+Toca aê, o berimbau com dendê<br>
+Leva eu pra vadiar<br>
+Toca o berimbau aê</strong><br>
+<br>
+Na tempestade e na noite traiçoeira<br>
+A vida é uma caixa de surpresas<br>
+Eu dei a volta por cima<br>
+No jogo da capoeira<br>
+<br>
+<strong>Leva eu, leva eu pra vadiar<br>
+Toca aê, o berimbau com dendê<br>
+Leva eu pra vadiar<br>
+Toca o berimbau aê</strong><br>
+<br>
+Minha vida não foi facil<br>
+Nada foi de brincadeira<br>
+Mas se ando pelo mundo<br>
+É jogando capoeira<br>
+<br>
+<strong>Leva eu, leva eu pra vadiar<br>
+Toca aê, o berimbau com dendê<br>
+Leva eu pra vadiar<br>
+Toca o berimbau aê</strong></td>
+        <td>A good tune<br>
+You can't separate us<br>
+Berimbau is the one who takes me<br>
+And guides me everywhere<br>
+<br>
+Take me, take me to play<br>
+Play the berimbau with dendê<br>
+Take me to play<br>
+Play berimbau aê<br>
+<br>
+Berimbau takes me and brings me<br>
+Around the world and around<br>
+Teaching and learning<br>
+Respect above all<br>
+<br>
+Take me, take me to play<br>
+Play the berimbau with dendê<br>
+Take me to play<br>
+Play berimbau aê<br>
+<br>
+Berimbau already gave me a compass<br>
+The good things I keep and the bad things I undo<br>
+So it is in my Capoeira<br>
+So I do my saying<br>
+<br>
+Take me, take me to play<br>
+Play the berimbau with dendê<br>
+Take me to play<br>
+Play berimbau aê<br>
+<br>
+A wheel with energy<br>
+Can't come undone<br>
+It will break all harmony<br>
+It will break all the oil palm<br>
+<br>
+Take me, take me to play<br>
+Play the berimbau with dendê<br>
+Take me to play<br>
+Play berimbau aê<br>
+<br>
+In the storm and the treacherous night<br>
+Life is a box of surprises<br>
+I went around the top<br>
+In the game of capoeira<br>
+<br>
+Take me, take me to play<br>
+Play the berimbau with dendê<br>
+Take me to play<br>
+Play berimbau aê<br>
+<br>
+My life was not easy<br>
+Nothing was a joke<br>
+But if I walk the world<br>
+It's playing capoeira<br>
+<br>
+Take me, take me to play<br>
+Play the berimbau with dendê<br>
+Take me to play<br>
+Play berimbau aê</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Authors: Pelézinho and Gordinho
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7IQ4mh--J90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Berimbau anunciou"
 date: "2020-10-21"
@@ -9,49 +11,56 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Berimbau anunciou a roda vai começar  
-Capoeira que vai  
-**Vai vadiar**  
-  
-Capoeira que vai  
-**Vai vadiar**  
-  
-Capoeira regional  
-**Vai vadiar**  
-  
-Mestre Bimba  
-**Vai vadiar**  
-  
-A maladragem  
-**Vai vadiar**  
-  
-O mandingueiro  
-**Vai vadiar**  
-  
-E no pandeiro  
-**Vai vadiar** | Berimbau announced that the roda's gonna start  
-The capoeira is gonna  
-Gonna play  
-  
-Capoeira's gonna  
-Gonna play  
-  
-Capoeira regional  
-Gonna play  
-  
-Mestre Bimba  
-Gonna play  
-  
-The maladragem  
-Gonna play  
-  
-The mandingueiro  
-Gonna play  
-  
-And the pandeiro  
-Gonna play |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Berimbau anunciou a roda vai começar<br>
+Capoeira que vai<br>
+<strong>Vai vadiar</strong><br>
+<br>
+Capoeira que vai<br>
+<strong>Vai vadiar</strong><br>
+<br>
+Capoeira regional<br>
+<strong>Vai vadiar</strong><br>
+<br>
+Mestre Bimba<br>
+<strong>Vai vadiar</strong><br>
+<br>
+A maladragem<br>
+<strong>Vai vadiar</strong><br>
+<br>
+O mandingueiro<br>
+<strong>Vai vadiar</strong><br>
+<br>
+E no pandeiro<br>
+<strong>Vai vadiar</strong></td>
+        <td>Berimbau announced that the roda's gonna start<br>
+The capoeira is gonna<br>
+Gonna play<br>
+<br>
+Capoeira's gonna<br>
+Gonna play<br>
+<br>
+Capoeira regional<br>
+Gonna play<br>
+<br>
+Mestre Bimba<br>
+Gonna play<br>
+<br>
+The maladragem<br>
+Gonna play<br>
+<br>
+The mandingueiro<br>
+Gonna play<br>
+<br>
+And the pandeiro<br>
+Gonna play</td>
+    </tr>
+</table>
 
 <figcaption>
 

@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Ingazeira, ô ingá"
 date: "2020-12-29"
@@ -8,53 +10,60 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Ô ingá na ingazeira  
-**Ingazeira, ô ingá**  
-  
-É uma fruta brasileira  
-**Ingazeira, ô ingá**  
-  
-Camarão é peixe bom  
-**Ingazeira, ô ingá**  
-  
-Pra quem sabe temperar  
-**Ingazeira, ô ingá**  
-  
-Deu aú e deu rasteira  
-**Ingazeira, ô ingá**  
-  
-Deu armada e ponteira  
-**Ingazeira, ô ingá**  
-  
-Tem mulher na capoeira  
-**Ingazeira, ô ingá**  
-  
-Mas ô ingá, ô ingá  
-**Ingazeira, ô ingá** | Ô ingá na ingazeira  
-Ingazeira, ô ingá  
-  
-It is a Brazilian fruit  
-Ingazeira, ô ingá  
-  
-Shrimp is good fish  
-Ingazeira, ô ingá  
-  
-For those who know how to season  
-Ingazeira, ô ingá  
-  
-Did an aú and a rasteira  
-Ingazeira, ô ingá  
-  
-Gave armada and ponteira  
-Ingazeira, ô ingá  
-  
-There are women in capoeira  
-Ingazeira, ô ingá  
-  
-But oh ingá, oh ingá  
-Ingazeira, ô ingá |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Ô ingá na ingazeira<br>
+<strong>Ingazeira, ô ingá</strong><br>
+<br>
+É uma fruta brasileira<br>
+<strong>Ingazeira, ô ingá</strong><br>
+<br>
+Camarão é peixe bom<br>
+<strong>Ingazeira, ô ingá</strong><br>
+<br>
+Pra quem sabe temperar<br>
+<strong>Ingazeira, ô ingá</strong><br>
+<br>
+Deu aú e deu rasteira<br>
+<strong>Ingazeira, ô ingá</strong><br>
+<br>
+Deu armada e ponteira<br>
+<strong>Ingazeira, ô ingá</strong><br>
+<br>
+Tem mulher na capoeira<br>
+<strong>Ingazeira, ô ingá</strong><br>
+<br>
+Mas ô ingá, ô ingá<br>
+<strong>Ingazeira, ô ingá</strong></td>
+        <td>Ô ingá na ingazeira<br>
+Ingazeira, ô ingá<br>
+<br>
+It is a Brazilian fruit<br>
+Ingazeira, ô ingá<br>
+<br>
+Shrimp is good fish<br>
+Ingazeira, ô ingá<br>
+<br>
+For those who know how to season<br>
+Ingazeira, ô ingá<br>
+<br>
+Did an aú and a rasteira<br>
+Ingazeira, ô ingá<br>
+<br>
+Gave armada and ponteira<br>
+Ingazeira, ô ingá<br>
+<br>
+There are women in capoeira<br>
+Ingazeira, ô ingá<br>
+<br>
+But oh ingá, oh ingá<br>
+Ingazeira, ô ingá</td>
+    </tr>
+</table>
 
 <figcaption>
 

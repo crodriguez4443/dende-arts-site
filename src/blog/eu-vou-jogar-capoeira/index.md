@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Eu Vou Jogar Capoeira"
 date: "2020-12-22"
@@ -8,88 +10,93 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Eu vou jogar capoeira  
-Eu vou jogar sim sinhô  
-Mas se eu levar uma rasteira  
-Volto pro jogo ioiô  
-  
-Eu vou jogar capoeira  
-Eu vou jogar sim sinhô  
-Mas se eu levar uma rasteira  
-Volto pro jogo ioiô  
-  
-A vida tem suas barreiras  
-Que temos que enfrentar  
-Mas por trás de esta barreiras  
-A vitoria alcançará  
-  
-Eu vou jogar capoeira  
-Eu vou jogar sim sinhô  
-Mas se eu levar uma rasteira  
-Volto pro jogo ioiô  
-  
-Mas sim tudo tá ruim  
-Pior não pode ficar  
-Isso é um bom sinal  
-Tá perto de melhorar  
-  
-Eu vou jogar capoeira  
-Eu vou jogar sim sinhô  
-Mas se eu levar uma rasteira  
-Volto pro jogo ioiô  
-  
-O verdadeiro capoeira  
-Já nasceu pra pelejar  
-Quem manda no mundo é Deus  
-Você tem que acreditar  
-  
-Eu vou jogar capoeira  
-Eu vou jogar sim sinhô  
-Mas se eu levar uma rasteira  
-Volto pro jogo ioiô | I will play capoeira  
-I'll play, yes sir  
-But if I take a trip  
-I'll get back in the game, sir  
-  
-I will play capoeira  
-I'll play, yes sir  
-But if I take a trip  
-I'll get back in the game, sir  
-  
-Life has its barriers  
-That we have to face  
-But behind this barriers  
-Victory we will reach  
-  
-I will play capoeira  
-I'll play, yes sir  
-But if I take a trip  
-I'll get back in the game, sir  
-  
-But yes everything is bad  
-It can't get any worse  
-This is a good sign  
-It's close to improving  
-  
-I will play capoeira  
-I'll play, yes sir  
-But if I take a trip  
-I'll get back in the game, sir  
-  
-The real capoeira  
-Is already born to fight  
-God rules the world  
-You have to believe  
-  
-I will play capoeira  
-I'll play, yes sir  
-But if I take a trip  
-I'll get back in the game, sir |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Eu vou jogar capoeira<br>
+Eu vou jogar sim sinhô<br>
+Mas se eu levar uma rasteira<br>
+Volto pro jogo ioiô<br>
+<br>
+Eu vou jogar capoeira<br>
+Eu vou jogar sim sinhô<br>
+Mas se eu levar uma rasteira<br>
+Volto pro jogo ioiô<br>
+<br>
+A vida tem suas barreiras<br>
+Que temos que enfrentar<br>
+Mas por trás de esta barreiras<br>
+A vitoria alcançará<br>
+<br>
+Eu vou jogar capoeira<br>
+Eu vou jogar sim sinhô<br>
+Mas se eu levar uma rasteira<br>
+Volto pro jogo ioiô<br>
+<br>
+Mas sim tudo tá ruim<br>
+Pior não pode ficar<br>
+Isso é um bom sinal<br>
+Tá perto de melhorar<br>
+<br>
+Eu vou jogar capoeira<br>
+Eu vou jogar sim sinhô<br>
+Mas se eu levar uma rasteira<br>
+Volto pro jogo ioiô<br>
+<br>
+O verdadeiro capoeira<br>
+Já nasceu pra pelejar<br>
+Quem manda no mundo é Deus<br>
+Você tem que acreditar<br>
+<br>
+Eu vou jogar capoeira<br>
+Eu vou jogar sim sinhô<br>
+Mas se eu levar uma rasteira<br>
+Volto pro jogo ioiô</td>
+        <td>I will play capoeira<br>
+I'll play, yes sir<br>
+But if I take a trip<br>
+I'll get back in the game, sir<br>
+<br>
+I will play capoeira<br>
+I'll play, yes sir<br>
+But if I take a trip<br>
+I'll get back in the game, sir<br>
+<br>
+Life has its barriers<br>
+That we have to face<br>
+But behind this barriers<br>
+Victory we will reach<br>
+<br>
+I will play capoeira<br>
+I'll play, yes sir<br>
+But if I take a trip<br>
+I'll get back in the game, sir<br>
+<br>
+But yes everything is bad<br>
+It can't get any worse<br>
+This is a good sign<br>
+It's close to improving<br>
+<br>
+I will play capoeira<br>
+I'll play, yes sir<br>
+But if I take a trip<br>
+I'll get back in the game, sir<br>
+<br>
+The real capoeira<br>
+Is already born to fight<br>
+God rules the world<br>
+You have to believe<br>
+<br>
+I will play capoeira<br>
+I'll play, yes sir<br>
+But if I take a trip<br>
+I'll get back in the game, sir</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

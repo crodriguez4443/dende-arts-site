@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Princesa Isabel"
 date: "2021-03-20"
@@ -8,32 +10,39 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Onde está a liberdade  
-Se a algema não se quebrou  
-O negro quer felicidade  
-O negro também quer ser doutor  
-  
-Princesa Isabel, Princesa Isabel  
-Liberdade do negro só tá no papel  
-  
-**Princesa Isabel, Princesa Isabel,**  
-Liberdade do negro só tá no papel  
-  
-**Princesa Isabel, Princesa Isabel,** | Where is freedom  
-If the handcuff hasn't broken  
-The black man wants happiness  
-The black man also wants to be a doctor  
-  
-Princess Isabel, Princess Isabel  
-Black freedom is only on paper  
-  
-Princess Isabel, Princess Isabel,  
-  
-Black freedom is only on paper  
-  
-Princess Isabel, Princess Isabel, |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Onde está a liberdade<br>
+Se a algema não se quebrou<br>
+O negro quer felicidade<br>
+O negro também quer ser doutor<br>
+<br>
+Princesa Isabel, Princesa Isabel<br>
+Liberdade do negro só tá no papel<br>
+<br>
+<strong>Princesa Isabel, Princesa Isabel,</strong><br>
+Liberdade do negro só tá no papel<br>
+<br>
+<strong>Princesa Isabel, Princesa Isabel,</strong></td>
+        <td>Where is freedom<br>
+If the handcuff hasn't broken<br>
+The black man wants happiness<br>
+The black man also wants to be a doctor<br>
+<br>
+Princess Isabel, Princess Isabel<br>
+Black freedom is only on paper<br>
+<br>
+Princess Isabel, Princess Isabel,<br>
+<br>
+Black freedom is only on paper<br>
+<br>
+Princess Isabel, Princess Isabel,</td>
+    </tr>
+</table>
 
 <figcaption>
 

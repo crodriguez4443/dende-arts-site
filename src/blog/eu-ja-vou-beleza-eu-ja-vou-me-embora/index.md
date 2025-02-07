@@ -1,3 +1,5 @@
+Here's the formatted document:
+
 ---
 title: "Eu já vou beleza, eu já vou me embora"
 date: "2020-12-21"
@@ -9,23 +11,30 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Eu já vou beleza, eu já vou me embora  
-**Eu já vou beleza, eu já vou me embora**  
-  
-Eu já vou me embora, eu já vou beleza  
-**Eu já vou beleza, eu já vou me embora**  
-  
-Eu já vou com Deus, com Nossa Senhora  
-**Eu já vou beleza, eu já vou me embora** | I'm heading out, I'm going away  
-I'm heading out, I'm going away  
-  
-I'm going away, I'm leaving  
-I'm heading out, I'm going away  
-  
-I'm going with God, with Our Lady  
-I'm heading out, I'm going away |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Eu já vou beleza, eu já vou me embora<br>
+<strong>Eu já vou beleza, eu já vou me embora</strong><br>
+<br>
+Eu já vou me embora, eu já vou beleza<br>
+<strong>Eu já vou beleza, eu já vou me embora</strong><br>
+<br>
+Eu já vou com Deus, com Nossa Senhora<br>
+<strong>Eu já vou beleza, eu já vou me embora</strong></td>
+        <td>I'm heading out, I'm going away<br>
+I'm heading out, I'm going away<br>
+<br>
+I'm going away, I'm leaving<br>
+I'm heading out, I'm going away<br>
+<br>
+I'm going with God, with Our Lady<br>
+I'm heading out, I'm going away</td>
+    </tr>
+</table>
 
 <figcaption>
 

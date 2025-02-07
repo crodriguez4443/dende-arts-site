@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Ilha de Maré"
 date: "2020-12-29"
@@ -8,127 +10,138 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Ilha de Maré  
-Ilha de Maré  
-  
-Olha maré  
-  
-**Ilha de Maré  
-Ilha de Maré**  
-  
-Olha no jogo da vida  
-Vá no caminho correto  
-O meu Mestre já dizia  
-Que no fim tudo dá certo  
-A Ilha de Maré  
-  
-**Ilha de Maré  
-Ilha de Maré**  
-  
-Faça sua oração  
-Lá na igreja do Bonfim  
-Se nada não der certo  
-É porque não é o fim  
-A Ilha de Maré  
-  
-**Ilha de Maré  
-Ilha de Maré**  
-  
-Eu fui lá na Bahia  
-Uma cidade ancestral  
-Onde vieram os negros  
-Trazendo o seu berimbau  
-A Ilha de Maré  
-  
-**Ilha de Maré  
-Ilha de Maré**  
-  
-A roda da capoeira  
-Tem defesa e ataque  
-E além do berimbau  
-O negro trouxe o atabaque  
-A Ilha de Maré  
-  
-**Ilha de Maré  
-Ilha de Maré**  
-  
-O meu Mestre me falou  
-Fique esperto e ligeiro  
-Não podemos esquecer  
-Que o negro trouxe o pandeiro  
-A Ilha de Maré  
-  
-**Ilha de Maré  
-Ilha de Maré**  
-  
-Luta maliciosa  
-Já dizia meu avô  
-Fico me perguntando  
-De onde veio o agogô  
-**  
-Ilha de Maré  
-Ilha de Maré** | Ilha de Maré  
-Ilha de Maré  
-  
-Look at the tide  
-  
-Ilha de Maré  
-Ilha de Maré  
-  
-Look at the game of life  
-Go the right way  
-My Master always said  
-That in the end everything works out  
-The Ilha de Maré  
-  
-Ilha de Maré  
-Ilha de Maré  
-  
-Say your prayer  
-There in the church of Bonfim  
-If nothing goes wrong  
-It's because it's not the end  
-The Ilha de Maré  
-  
-Ilha de Maré  
-Ilha de Maré  
-  
-I went there in Bahia  
-An ancestral city  
-Where blacks came from  
-Bringing the berimbau  
-The Ilha de Maré  
-  
-Ilha de Maré  
-Ilha de Maré  
-  
-The capoeira roda  
-Has defence and attack  
-And beyond the berimbau  
-The black man brought the atabaque  
-The Ilha de Maré  
-  
-Ilha de Maré  
-Ilha de Maré  
-  
-My Master told me  
-Stay smart and quick  
-We cannot forget  
-That the black man brought the tambourine  
-The Ilha de Maré  
-  
-Ilha de Maré  
-Ilha de Maré  
-  
-Malicious fight  
-My grandfather would say  
-I'm left wondering  
-Where the agogô came from  
-  
-Ilha de Maré  
-Ilha de Maré |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Ilha de Maré<br>
+            Ilha de Maré<br>
+            <br>
+            Olha maré<br>
+            <br>
+            <strong>Ilha de Maré<br>
+            Ilha de Maré</strong><br>
+            <br>
+            Olha no jogo da vida<br>
+            Vá no caminho correto<br>
+            O meu Mestre já dizia<br>
+            Que no fim tudo dá certo<br>
+            A Ilha de Maré<br>
+            <br>
+            <strong>Ilha de Maré<br>
+            Ilha de Maré</strong><br>
+            <br>
+            Faça sua oração<br>
+            Lá na igreja do Bonfim<br>
+            Se nada não der certo<br>
+            É porque não é o fim<br>
+            A Ilha de Maré<br>
+            <br>
+            <strong>Ilha de Maré<br>
+            Ilha de Maré</strong><br>
+            <br>
+            Eu fui lá na Bahia<br>
+            Uma cidade ancestral<br>
+            Onde vieram os negros<br>
+            Trazendo o seu berimbau<br>
+            A Ilha de Maré<br>
+            <br>
+            <strong>Ilha de Maré<br>
+            Ilha de Maré</strong><br>
+            <br>
+            A roda da capoeira<br>
+            Tem defesa e ataque<br>
+            E além do berimbau<br>
+            O negro trouxe o atabaque<br>
+            A Ilha de Maré<br>
+            <br>
+            <strong>Ilha de Maré<br>
+            Ilha de Maré</strong><br>
+            <br>
+            O meu Mestre me falou<br>
+            Fique esperto e ligeiro<br>
+            Não podemos esquecer<br>
+            Que o negro trouxe o pandeiro<br>
+            A Ilha de Maré<br>
+            <br>
+            <strong>Ilha de Maré<br>
+            Ilha de Maré</strong><br>
+            <br>
+            Luta maliciosa<br>
+            Já dizia meu avô<br>
+            Fico me perguntando<br>
+            De onde veio o agogô<br>
+            <strong><br>
+            Ilha de Maré<br>
+            Ilha de Maré</strong>
+        </td>
+        <td>
+            Ilha de Maré<br>
+            Ilha de Maré<br>
+            <br>
+            Look at the tide<br>
+            <br>
+            Ilha de Maré<br>
+            Ilha de Maré<br>
+            <br>
+            Look at the game of life<br>
+            Go the right way<br>
+            My Master always said<br>
+            That in the end everything works out<br>
+            The Ilha de Maré<br>
+            <br>
+            Ilha de Maré<br>
+            Ilha de Maré<br>
+            <br>
+            Say your prayer<br>
+            There in the church of Bonfim<br>
+            If nothing goes wrong<br>
+            It's because it's not the end<br>
+            The Ilha de Maré<br>
+            <br>
+            Ilha de Maré<br>
+            Ilha de Maré<br>
+            <br>
+            I went there in Bahia<br>
+            An ancestral city<br>
+            Where blacks came from<br>
+            Bringing the berimbau<br>
+            The Ilha de Maré<br>
+            <br>
+            Ilha de Maré<br>
+            Ilha de Maré<br>
+            <br>
+            The capoeira roda<br>
+            Has defence and attack<br>
+            And beyond the berimbau<br>
+            The black man brought the atabaque<br>
+            The Ilha de Maré<br>
+            <br>
+            Ilha de Maré<br>
+            Ilha de Maré<br>
+            <br>
+            My Master told me<br>
+            Stay smart and quick<br>
+            We cannot forget<br>
+            That the black man brought the tambourine<br>
+            The Ilha de Maré<br>
+            <br>
+            Ilha de Maré<br>
+            Ilha de Maré<br>
+            <br>
+            Malicious fight<br>
+            My grandfather would say<br>
+            I'm left wondering<br>
+            Where the agogô came from<br>
+            <br>
+            Ilha de Maré<br>
+            Ilha de Maré
+        </td>
+    </tr>
+</table>
 
 <figcaption>
 

@@ -1,3 +1,5 @@
+Here's the formatted document:
+
 ---
 title: "Olha A Beleza do Mar"
 date: "2021-02-27"
@@ -8,88 +10,93 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Olha a beleza do mar  
-Olha a beleza do mar  
-Olha a beleza do mar  
-Mareja, mareja  
-  
-**Olha a beleza do mar  
-Olha a beleza do mar  
-Olha a beleza do mar  
-Mareja, mareja**  
-  
-Olha o mar é infinito  
-Bonito por natureza  
-Misterioso e delicado  
-Igualzinho a capoeira  
-  
-**Olha a beleza do mar  
-Olha a beleza do mar  
-Olha a beleza do mar  
-Mareja, mareja**  
-  
-Na onda vem areia  
-Que volta pro mar  
-Igualzinho a um capoeira  
-Na hora de jogar  
-**  
-Olha a beleza do mar  
-Olha a beleza do mar  
-Olha a beleza do mar  
-Mareja, mareja**  
-  
-É bonito de se ver  
-Um bom jogo de capoeira  
-Mas cuidado meu amigo  
-Com esta beleza, capoeira  
-  
-**Olha a beleza do mar  
-Olha a beleza do mar  
-Olha a beleza do mar  
-Mareja, mareja** | Look at the beauty of the sea  
-Look at the beauty of the sea  
-Look at the beauty of the sea  
-Mareja, mareja  
-  
-Look at the beauty of the sea  
-Look at the beauty of the sea  
-Look at the beauty of the sea  
-Mareja, mareja  
-  
-Look the sea is infinite  
-Beautiful by nature  
-Mysterious and delicate  
-Just like capoeira  
-  
-Look at the beauty of the sea  
-Look at the beauty of the sea  
-Look at the beauty of the sea  
-Mareja, mareja  
-  
-In the wave comes sand  
-That goes back to the sea  
-Just like a capoeira  
-When it's time to play  
-  
-Look at the beauty of the sea  
-Look at the beauty of the sea  
-Look at the beauty of the sea  
-Mareja, mareja  
-  
-It's beautiful to see  
-A good capoeira game  
-But watch out my friend  
-With this beauty, capoeira  
-  
-Look at the beauty of the sea  
-Look at the beauty of the sea  
-Look at the beauty of the sea  
-Mareja, mareja |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Olha a beleza do mar<br>
+Olha a beleza do mar<br>
+Olha a beleza do mar<br>
+Mareja, mareja<br>
+<br>
+<strong>Olha a beleza do mar<br>
+Olha a beleza do mar<br>
+Olha a beleza do mar<br>
+Mareja, mareja</strong><br>
+<br>
+Olha o mar é infinito<br>
+Bonito por natureza<br>
+Misterioso e delicado<br>
+Igualzinho a capoeira<br>
+<br>
+<strong>Olha a beleza do mar<br>
+Olha a beleza do mar<br>
+Olha a beleza do mar<br>
+Mareja, mareja</strong><br>
+<br>
+Na onda vem areia<br>
+Que volta pro mar<br>
+Igualzinho a um capoeira<br>
+Na hora de jogar<br>
+<strong>
+Olha a beleza do mar<br>
+Olha a beleza do mar<br>
+Olha a beleza do mar<br>
+Mareja, mareja</strong><br>
+<br>
+É bonito de se ver<br>
+Um bom jogo de capoeira<br>
+Mas cuidado meu amigo<br>
+Com esta beleza, capoeira<br>
+<br>
+<strong>Olha a beleza do mar<br>
+Olha a beleza do mar<br>
+Olha a beleza do mar<br>
+Mareja, mareja</strong></td>
+        <td>Look at the beauty of the sea<br>
+Look at the beauty of the sea<br>
+Look at the beauty of the sea<br>
+Mareja, mareja<br>
+<br>
+Look at the beauty of the sea<br>
+Look at the beauty of the sea<br>
+Look at the beauty of the sea<br>
+Mareja, mareja<br>
+<br>
+Look the sea is infinite<br>
+Beautiful by nature<br>
+Mysterious and delicate<br>
+Just like capoeira<br>
+<br>
+Look at the beauty of the sea<br>
+Look at the beauty of the sea<br>
+Look at the beauty of the sea<br>
+Mareja, mareja<br>
+<br>
+In the wave comes sand<br>
+That goes back to the sea<br>
+Just like a capoeira<br>
+When it's time to play<br>
+<br>
+Look at the beauty of the sea<br>
+Look at the beauty of the sea<br>
+Look at the beauty of the sea<br>
+Mareja, mareja<br>
+<br>
+It's beautiful to see<br>
+A good capoeira game<br>
+But watch out my friend<br>
+With this beauty, capoeira<br>
+<br>
+Look at the beauty of the sea<br>
+Look at the beauty of the sea<br>
+Look at the beauty of the sea<br>
+Mareja, mareja</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

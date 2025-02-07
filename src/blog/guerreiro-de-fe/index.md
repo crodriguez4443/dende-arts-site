@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Guerreiro de Fé"
 date: "2020-12-22"
@@ -8,128 +10,137 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| É guerreiro de fé  
-Tá pronto pra tudo  
-Tá pronto agora  
-O que der e vier  
-  
-**É guerreiro de fé  
-Tá pronto pra tudo  
-Tá pronto agora  
-O que der e vier**  
-  
-Um grito ecoou  
-Líder da emboscada  
-Oi Palmares proclama  
-Por mais uma fuga na mata fechada  
-  
-**É guerreiro de fé  
-Tá pronto pra tudo  
-Tá pronto agora  
-O que der e vier**  
-  
-Nego bate o pé  
-A luta já começou  
-Quem aqui tá comigo  
-Bata forte como o som de um tambor  
-  
-**É guerreiro de fé  
-Tá pronto pra tudo  
-Tá pronto agora  
-O que der e vier**  
-  
-Cuidado meu irmão  
-Preciso de você  
-Mas se for necessário  
-Nós vamos lutar, lutar até morrer  
-  
-**É guerreiro de fé  
-Tá pronto pra tudo  
-Tá pronto agora  
-O que der e vier**  
-  
-100 anos de existência  
-Com grande multidão  
-Palmares é minha casa  
-Minha liberdade, é minha nação  
-  
-**É guerreiro de fé  
-Tá pronto pra tudo  
-Tá pronto agora  
-O que der e vier**  
-  
-Mas prestes atenção  
-Achas que eu morri  
-O meu corpo se foi  
-Minha alma tá viva, meu nome é Zumbi  
-**  
-É guerreiro de fé  
-Tá pronto pra tudo  
-Tá pronto agora  
-O que der e vier** | He is a warrior of faith  
-Ready for everything  
-Ready now  
-Come what may  
-  
-He is a warrior of faith  
-Ready for everything  
-Ready now  
-Come what may  
-  
-A scream echoed  
-Ambush leader  
-Hey, Palmares proclaims  
-For another escape in the closed forest  
-  
-He is a warrior of faith  
-Ready for everything  
-Ready now  
-Come what may  
-  
-Black man stomps his foot  
-The fight has begun  
-Who's here with me  
-Strike hard like the sound of a drum  
-  
-He is a warrior of faith  
-Ready for everything  
-Ready now  
-Come what may  
-  
-Watch my brother  
-I need you  
-But if it is necessary  
-We will fight, fight until we die  
-  
-He is a warrior of faith  
-Ready for everything  
-Ready now  
-Come what may  
-  
-100 years of existence  
-With great crowd  
-Palmares is my home  
-My freedom, my nation  
-  
-He is a warrior of faith  
-Ready for everything  
-Ready now  
-Come what may  
-  
-But pay attention  
-Do you think I died  
-My body is gone  
-My soul is alive, my name is Zumbi  
-  
-He is a warrior of faith  
-Ready for everything  
-Ready now  
-Come what may |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            É guerreiro de fé<br>
+            Tá pronto pra tudo<br>
+            Tá pronto agora<br>
+            O que der e vier<br>
+            <br>
+            <strong>É guerreiro de fé<br>
+            Tá pronto pra tudo<br>
+            Tá pronto agora<br>
+            O que der e vier</strong><br>
+            <br>
+            Um grito ecoou<br>
+            Líder da emboscada<br>
+            Oi Palmares proclama<br>
+            Por mais uma fuga na mata fechada<br>
+            <br>
+            <strong>É guerreiro de fé<br>
+            Tá pronto pra tudo<br>
+            Tá pronto agora<br>
+            O que der e vier</strong><br>
+            <br>
+            Nego bate o pé<br>
+            A luta já começou<br>
+            Quem aqui tá comigo<br>
+            Bata forte como o som de um tambor<br>
+            <br>
+            <strong>É guerreiro de fé<br>
+            Tá pronto pra tudo<br>
+            Tá pronto agora<br>
+            O que der e vier</strong><br>
+            <br>
+            Cuidado meu irmão<br>
+            Preciso de você<br>
+            Mas se for necessário<br>
+            Nós vamos lutar, lutar até morrer<br>
+            <br>
+            <strong>É guerreiro de fé<br>
+            Tá pronto pra tudo<br>
+            Tá pronto agora<br>
+            O que der e vier</strong><br>
+            <br>
+            100 anos de existência<br>
+            Com grande multidão<br>
+            Palmares é minha casa<br>
+            Minha liberdade, é minha nação<br>
+            <br>
+            <strong>É guerreiro de fé<br>
+            Tá pronto pra tudo<br>
+            Tá pronto agora<br>
+            O que der e vier</strong><br>
+            <br>
+            Mas prestes atenção<br>
+            Achas que eu morri<br>
+            O meu corpo se foi<br>
+            Minha alma tá viva, meu nome é Zumbi<br>
+            <strong><br>
+            É guerreiro de fé<br>
+            Tá pronto pra tudo<br>
+            Tá pronto agora<br>
+            O que der e vier</strong>
+        </td>
+        <td>
+            He is a warrior of faith<br>
+            Ready for everything<br>
+            Ready now<br>
+            Come what may<br>
+            <br>
+            He is a warrior of faith<br>
+            Ready for everything<br>
+            Ready now<br>
+            Come what may<br>
+            <br>
+            A scream echoed<br>
+            Ambush leader<br>
+            Hey, Palmares proclaims<br>
+            For another escape in the closed forest<br>
+            <br>
+            He is a warrior of faith<br>
+            Ready for everything<br>
+            Ready now<br>
+            Come what may<br>
+            <br>
+            Black man stomps his foot<br>
+            The fight has begun<br>
+            Who's here with me<br>
+            Strike hard like the sound of a drum<br>
+            <br>
+            He is a warrior of faith<br>
+            Ready for everything<br>
+            Ready now<br>
+            Come what may<br>
+            <br>
+            Watch my brother<br>
+            I need you<br>
+            But if it is necessary<br>
+            We will fight, fight until we die<br>
+            <br>
+            He is a warrior of faith<br>
+            Ready for everything<br>
+            Ready now<br>
+            Come what may<br>
+            <br>
+            100 years of existence<br>
+            With great crowd<br>
+            Palmares is my home<br>
+            My freedom, my nation<br>
+            <br>
+            He is a warrior of faith<br>
+            Ready for everything<br>
+            Ready now<br>
+            Come what may<br>
+            <br>
+            But pay attention<br>
+            Do you think I died<br>
+            My body is gone<br>
+            My soul is alive, my name is Zumbi<br>
+            <br>
+            He is a warrior of faith<br>
+            Ready for everything<br>
+            Ready now<br>
+            Come what may
+        </td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Pé de Vento
-
 </figcaption>

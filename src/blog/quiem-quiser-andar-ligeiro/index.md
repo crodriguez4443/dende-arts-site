@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Quiem quiser andar ligeiro"
 date: "2022-12-28"
@@ -8,25 +10,32 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Iê!!!  
-Quem quiser andar ligeiro, ô Meu Deus, nessa vida ande só  
-Quem quiser andar ligeiro, ô Meu Deus, nessa vida ande só  
-Mas se tu quer chegar longe, acompanhado é bem melhor  
-Todo filho tem um pai, pra ser bom pai tem que ser filho  
-O meu verso é uma arma, colega velho, berimbau é o gatilho.  
-  
-Ie via meu mestre  
-Iê viva meu mestre camará | Iê!!!  
-Who wants to walk fast, oh my God, in this life walk alone  
-Who wants to walk fast, oh my God, in this life walk alone  
-But if you want to go far, accompanied is much better  
-Every child has a father, to be a good father you have to be a son  
-My verse is a weapon, old friend, the berimbau is the trigger.  
-  
-Ie via meu mestre  
-Iê viva meu mestre camará |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Iê!!!<br>
+Quem quiser andar ligeiro, ô Meu Deus, nessa vida ande só<br>
+Quem quiser andar ligeiro, ô Meu Deus, nessa vida ande só<br>
+Mas se tu quer chegar longe, acompanhado é bem melhor<br>
+Todo filho tem um pai, pra ser bom pai tem que ser filho<br>
+O meu verso é uma arma, colega velho, berimbau é o gatilho.<br>
+<br>
+Ie via meu mestre<br>
+Iê viva meu mestre camará</td>
+        <td>Iê!!!<br>
+Who wants to walk fast, oh my God, in this life walk alone<br>
+Who wants to walk fast, oh my God, in this life walk alone<br>
+But if you want to go far, accompanied is much better<br>
+Every child has a father, to be a good father you have to be a son<br>
+My verse is a weapon, old friend, the berimbau is the trigger.<br>
+<br>
+Ie via meu mestre<br>
+Iê viva meu mestre camará</td>
+    </tr>
+</table>
 
 <figcaption>
 

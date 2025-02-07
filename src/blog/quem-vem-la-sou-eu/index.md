@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Quem Vem Lá Sou Eu"
 date: "2021-03-24"
@@ -9,69 +11,76 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Quem vem lá, sou eu  
-Quem vem lá, sou eu  
-Berimbau bateu  
-Capoeira sou eu  
-  
-**Quem vem lá, sou eu  
-Quem vem lá, sou eu  
-Berimbau bateu  
-Capoeira sou eu**  
-  
-Eu venho de longe  
-Venho de Itabuna  
-Jogo capoeira  
-Meu nome é Suassuna  
-  
-**Quem vem lá, sou eu  
-Quem vem lá, sou eu  
-Berimbau bateu  
-Capoeira sou eu**  
-  
-Mas sou eu, sou eu  
-**Quem vem lá**  
-  
-Sou eu Brevenuto  
-**Quem vem lá**  
-  
-Montado a cavalo  
-**Quem vem lá**  
-  
-Fumando um charuto  
-**Quem vem lá** | It's me who goes there  
-It's me who goes there  
-Berimbau rung  
-Capoeira is me  
-  
-It's me who goes there  
-It's me who goes there  
-Berimbau rung  
-Capoeira is me  
-  
-I come from afar  
-I come from Itabuna  
-I play capoeira  
-My name is Suassuna  
-  
-It's me who goes there  
-It's me who goes there  
-Berimbau rung  
-Capoeira is me  
-  
-But it's me, it's me  
-Who goes there  
-  
-It's me Brevenuto  
-Who goes there  
-  
-Riding a horse  
-Who goes there  
-  
-Smoking a cigar  
-Who goes there |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Quem vem lá, sou eu<br>
+Quem vem lá, sou eu<br>
+Berimbau bateu<br>
+Capoeira sou eu<br>
+<br>
+<strong>Quem vem lá, sou eu<br>
+Quem vem lá, sou eu<br>
+Berimbau bateu<br>
+Capoeira sou eu</strong><br>
+<br>
+Eu venho de longe<br>
+Venho de Itabuna<br>
+Jogo capoeira<br>
+Meu nome é Suassuna<br>
+<br>
+<strong>Quem vem lá, sou eu<br>
+Quem vem lá, sou eu<br>
+Berimbau bateu<br>
+Capoeira sou eu</strong><br>
+<br>
+Mas sou eu, sou eu<br>
+<strong>Quem vem lá</strong><br>
+<br>
+Sou eu Brevenuto<br>
+<strong>Quem vem lá</strong><br>
+<br>
+Montado a cavalo<br>
+<strong>Quem vem lá</strong><br>
+<br>
+Fumando um charuto<br>
+<strong>Quem vem lá</strong></td>
+        <td>It's me who goes there<br>
+It's me who goes there<br>
+Berimbau rung<br>
+Capoeira is me<br>
+<br>
+It's me who goes there<br>
+It's me who goes there<br>
+Berimbau rung<br>
+Capoeira is me<br>
+<br>
+I come from afar<br>
+I come from Itabuna<br>
+I play capoeira<br>
+My name is Suassuna<br>
+<br>
+It's me who goes there<br>
+It's me who goes there<br>
+Berimbau rung<br>
+Capoeira is me<br>
+<br>
+But it's me, it's me<br>
+Who goes there<br>
+<br>
+It's me Brevenuto<br>
+Who goes there<br>
+<br>
+Riding a horse<br>
+Who goes there<br>
+<br>
+Smoking a cigar<br>
+Who goes there</td>
+    </tr>
+</table>
 
 <figcaption>
 

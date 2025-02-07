@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Meu Orgulho"
 date: "2021-01-29"
@@ -9,84 +11,89 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| O meu orgulho é ver meu mestre jogar  
-Quando ele joga é aquela euforia  
-Ver tanta gente querendo chegar  
-Oh, essa é a minha alegria  
-  
-**O meu orgulho é ver meu mestre jogar  
-Quando ele joga é aquela euforia  
-Ver tanta gente querendo chegar  
-Oh, essa é a minha alegria**  
-  
-Não mexa com o velho  
-Que ele é mandingueiro  
-Não desafia seu mestre  
-É falta de respeto  
-Quem não tem o segredo  
-Não pode ensinar  
-Tem que ser discípulo  
-Quem quer à mestre chegar  
-  
-**O meu orgulho é ver meu mestre jogar  
-Quando ele joga é aquela euforia  
-Ver tanta gente querendo chegar  
-Oh, essa é a minha alegria**  
-  
-Irmão ou amigo  
-Um bom companheiro  
-Um pai sempre forte  
-Em tudos conceitos  
-Com mestre Pastinha  
-E mestre Bimba  
-Fará sacrifícios  
-Mas viva capoeira  
-  
-**O meu orgulho é ver meu mestre jogar  
-Quando ele joga é aquela euforia  
-Ver tanta gente querendo chegar  
-Oh, essa é a minha alegria** | My pride is watching my master play  
-When he plays is that euphoria  
-See so many people wanting to come  
-Oh, that's my joy  
-  
-My pride is watching my master play  
-When he plays is that euphoria  
-See so many people wanting to come  
-Oh, that's my joy  
-  
-Don't mess with the old man  
-'Cause he is a mandingueiro  
-Don't challenge your master  
-It's a lack of respect  
-Those who don't have the secret  
-Can't teach  
-Have to be a disciple  
-Those who want to become a master  
-  
-My pride is watching my master play  
-When he plays is that euphoria  
-See so many people wanting to come  
-Oh, that's my joy  
-  
-Brother or friend  
-A good companion  
-A father, always strong  
-In all concepts  
-With master Pastinha  
-And master Bimba  
-Will make sacrifices  
-But long live capoeira  
-  
-My pride is watching my master play  
-When he plays is that euphoria  
-See so many people wanting to come  
-Oh, that's my joy |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>O meu orgulho é ver meu mestre jogar<br>
+Quando ele joga é aquela euforia<br>
+Ver tanta gente querendo chegar<br>
+Oh, essa é a minha alegria<br>
+<br>
+<strong>O meu orgulho é ver meu mestre jogar<br>
+Quando ele joga é aquela euforia<br>
+Ver tanta gente querendo chegar<br>
+Oh, essa é a minha alegria</strong><br>
+<br>
+Não mexa com o velho<br>
+Que ele é mandingueiro<br>
+Não desafia seu mestre<br>
+É falta de respeto<br>
+Quem não tem o segredo<br>
+Não pode ensinar<br>
+Tem que ser discípulo<br>
+Quem quer à mestre chegar<br>
+<br>
+<strong>O meu orgulho é ver meu mestre jogar<br>
+Quando ele joga é aquela euforia<br>
+Ver tanta gente querendo chegar<br>
+Oh, essa é a minha alegria</strong><br>
+<br>
+Irmão ou amigo<br>
+Um bom companheiro<br>
+Um pai sempre forte<br>
+Em tudos conceitos<br>
+Com mestre Pastinha<br>
+E mestre Bimba<br>
+Fará sacrifícios<br>
+Mas viva capoeira<br>
+<br>
+<strong>O meu orgulho é ver meu mestre jogar<br>
+Quando ele joga é aquela euforia<br>
+Ver tanta gente querendo chegar<br>
+Oh, essa é a minha alegria</strong></td>
+        <td>My pride is watching my master play<br>
+When he plays is that euphoria<br>
+See so many people wanting to come<br>
+Oh, that's my joy<br>
+<br>
+My pride is watching my master play<br>
+When he plays is that euphoria<br>
+See so many people wanting to come<br>
+Oh, that's my joy<br>
+<br>
+Don't mess with the old man<br>
+'Cause he is a mandingueiro<br>
+Don't challenge your master<br>
+It's a lack of respect<br>
+Those who don't have the secret<br>
+Can't teach<br>
+Have to be a disciple<br>
+Those who want to become a master<br>
+<br>
+My pride is watching my master play<br>
+When he plays is that euphoria<br>
+See so many people wanting to come<br>
+Oh, that's my joy<br>
+<br>
+Brother or friend<br>
+A good companion<br>
+A father, always strong<br>
+In all concepts<br>
+With master Pastinha<br>
+And master Bimba<br>
+Will make sacrifices<br>
+But long live capoeira<br>
+<br>
+My pride is watching my master play<br>
+When he plays is that euphoria<br>
+See so many people wanting to come<br>
+Oh, that's my joy</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Eros
-
 </figcaption>

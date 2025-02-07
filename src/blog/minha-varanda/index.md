@@ -8,115 +8,126 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Aqui é minha casa  
-Minha varanda  
-Meu dendê  
-  
-**Aqui é minha casa  
-Minha varanda  
-Meu dendê**  
-  
-Meu chapéu de palha  
-Minha massapê  
-  
-**Meu chapéu de palha  
-Minha massapê**  
-  
-Cada um tem sua história  
-É bom respeitar  
-Para conquistar minha varanda  
-Não foi fácil, camará  
-  
-Aqui é minha casa  
-Minha varanda  
-Meu dendê  
-  
-**Aqui é minha casa  
-Minha varanda  
-Meu dendê**  
-  
-Meu chapéu de palha  
-Minha massapê  
-  
-**Meu chapéu de palha  
-Minha massapê**  
-  
-Se não sabe a minha história  
-Entre aqui vou te contar  
-Tem berimbau, pandeiro e atabaquê para tocar  
-Na parede um quadro  
-De Carybé que mandei pintar  
-E minha varanda  
-É de frente pro mar  
-  
-Aqui é minha casa  
-Minha varanda  
-Meu dendê  
-  
-**Aqui é minha casa  
-Minha varanda  
-Meu dendê**  
-  
-Meu chapéu de palha  
-Minha massapê  
-  
-**Meu chapéu de palha  
-Minha massapê** | Here is my home  
-My balcony  
-My dendê  
-  
-Here is my home  
-My balcony  
-My dendê  
-  
-My straw hat  
-My massapê  
-  
-My straw hat  
-My massapê  
-  
-Everyone has their own story  
-It's good to respect  
-To conquer my balcony  
-It wasn't easy, comrade  
-  
-Here is my home  
-My balcony  
-My dendê  
-  
-Here is my home  
-My balcony  
-My dendê  
-  
-My straw hat  
-My massapê  
-  
-My straw hat  
-My massapê  
-  
-If you don't know my story  
-Get in here I'll tell you  
-There are berimbau, tambourine and atabaquê to play  
-On the wall of picture  
-Of Carybé that I had painted  
-And my balcony  
-It is facing the sea  
-  
-Here is my home  
-My balcony  
-My dendê  
-  
-Here is my home  
-My balcony  
-My dendê  
-  
-My straw hat  
-My massapê  
-  
-My straw hat  
-My massapê |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Aqui é minha casa<br>
+            Minha varanda<br>
+            Meu dendê<br>
+            <br>
+            <strong>Aqui é minha casa<br>
+            Minha varanda<br>
+            Meu dendê</strong><br>
+            <br>
+            Meu chapéu de palha<br>
+            Minha massapê<br>
+            <br>
+            <strong>Meu chapéu de palha<br>
+            Minha massapê</strong><br>
+            <br>
+            Cada um tem sua história<br>
+            É bom respeitar<br>
+            Para conquistar minha varanda<br>
+            Não foi fácil, camará<br>
+            <br>
+            Aqui é minha casa<br>
+            Minha varanda<br>
+            Meu dendê<br>
+            <br>
+            <strong>Aqui é minha casa<br>
+            Minha varanda<br>
+            Meu dendê</strong><br>
+            <br>
+            Meu chapéu de palha<br>
+            Minha massapê<br>
+            <br>
+            <strong>Meu chapéu de palha<br>
+            Minha massapê</strong><br>
+            <br>
+            Se não sabe a minha história<br>
+            Entre aqui vou te contar<br>
+            Tem berimbau, pandeiro e atabaquê para tocar<br>
+            Na parede um quadro<br>
+            De Carybé que mandei pintar<br>
+            E minha varanda<br>
+            É de frente pro mar<br>
+            <br>
+            Aqui é minha casa<br>
+            Minha varanda<br>
+            Meu dendê<br>
+            <br>
+            <strong>Aqui é minha casa<br>
+            Minha varanda<br>
+            Meu dendê</strong><br>
+            <br>
+            Meu chapéu de palha<br>
+            Minha massapê<br>
+            <br>
+            <strong>Meu chapéu de palha<br>
+            Minha massapê</strong>
+        </td>
+        <td>
+            Here is my home<br>
+            My balcony<br>
+            My dendê<br>
+            <br>
+            Here is my home<br>
+            My balcony<br>
+            My dendê<br>
+            <br>
+            My straw hat<br>
+            My massapê<br>
+            <br>
+            My straw hat<br>
+            My massapê<br>
+            <br>
+            Everyone has their own story<br>
+            It's good to respect<br>
+            To conquer my balcony<br>
+            It wasn't easy, comrade<br>
+            <br>
+            Here is my home<br>
+            My balcony<br>
+            My dendê<br>
+            <br>
+            Here is my home<br>
+            My balcony<br>
+            My dendê<br>
+            <br>
+            My straw hat<br>
+            My massapê<br>
+            <br>
+            My straw hat<br>
+            My massapê<br>
+            <br>
+            If you don't know my story<br>
+            Get in here I'll tell you<br>
+            There are berimbau, tambourine and atabaquê to play<br>
+            On the wall of picture<br>
+            Of Carybé that I had painted<br>
+            And my balcony<br>
+            It is facing the sea<br>
+            <br>
+            Here is my home<br>
+            My balcony<br>
+            My dendê<br>
+            <br>
+            Here is my home<br>
+            My balcony<br>
+            My dendê<br>
+            <br>
+            My straw hat<br>
+            My massapê<br>
+            <br>
+            My straw hat<br>
+            My massapê
+        </td>
+    </tr>
+</table>
 
 <figcaption>
 

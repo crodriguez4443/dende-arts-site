@@ -1,3 +1,5 @@
+Here's the formatted document:
+
 ---
 title: "Fui Lá na Bahia Buscar Coco de Dendê"
 date: "2020-11-26"
@@ -8,53 +10,60 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Fui lá na Bahia  
-Buscar coco de dendê  
-  
-**Fui lá na Bahia  
-Buscar coco de dendê**  
-  
-Você é bom capoeira  
-Joga aí que eu quero ver  
-  
-**Você é bom capoeira  
-Joga aí que eu quero ver**  
-  
-Do terreiro de Ioió  
-Do terreiro de Iaiá  
-  
-**Do terreiro de Ioió  
-Do terreiro de Iaiá**  
-  
-Capoeira começa ao anoitecer  
-Vai até o sol raiar  
-  
-**Capoeira começa ao anoitecer  
-Vai até o sol raiar** | I went over to Bahia  
-To fetch oil palm  
-  
-I went over to Bahia  
-To fetch oil palm  
-  
-You are good capoeira  
-Play 'cause I want to see  
-  
-You are good capoeira  
-Play 'cause I want to see  
-  
-From the terreiro of Ioió  
-From the terreiro of Iaiá  
-  
-From the terreiro of Ioió  
-From the terreiro of Iaiá  
-  
-Capoeira starts at dusk  
-Goes until the sun rises  
-  
-Capoeira starts at dusk  
-Goes until the sun rises |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Fui lá na Bahia<br>
+        Buscar coco de dendê<br>
+        <br>
+        <strong>Fui lá na Bahia<br>
+        Buscar coco de dendê</strong><br>
+        <br>
+        Você é bom capoeira<br>
+        Joga aí que eu quero ver<br>
+        <br>
+        <strong>Você é bom capoeira<br>
+        Joga aí que eu quero ver</strong><br>
+        <br>
+        Do terreiro de Ioió<br>
+        Do terreiro de Iaiá<br>
+        <br>
+        <strong>Do terreiro de Ioió<br>
+        Do terreiro de Iaiá</strong><br>
+        <br>
+        Capoeira começa ao anoitecer<br>
+        Vai até o sol raiar<br>
+        <br>
+        <strong>Capoeira começa ao anoitecer<br>
+        Vai até o sol raiar</strong></td>
+        <td>I went over to Bahia<br>
+        To fetch oil palm<br>
+        <br>
+        I went over to Bahia<br>
+        To fetch oil palm<br>
+        <br>
+        You are good capoeira<br>
+        Play 'cause I want to see<br>
+        <br>
+        You are good capoeira<br>
+        Play 'cause I want to see<br>
+        <br>
+        From the terreiro of Ioió<br>
+        From the terreiro of Iaiá<br>
+        <br>
+        From the terreiro of Ioió<br>
+        From the terreiro of Iaiá<br>
+        <br>
+        Capoeira starts at dusk<br>
+        Goes until the sun rises<br>
+        <br>
+        Capoeira starts at dusk<br>
+        Goes until the sun rises</td>
+    </tr>
+</table>
 
 <figcaption>
 

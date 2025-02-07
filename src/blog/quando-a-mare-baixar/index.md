@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Quando a Maré Baixar"
 date: "2021-03-20"
@@ -8,85 +10,92 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Quando a maré baixar  
-Vou encontrar dendê  
-Vou encontrar dendê  
-Do outro lado do mar  
-  
-**Quando a maré baixar  
-Vou encontrar dendê  
-Vou encontrar dendê  
-Do outro lado do mar**  
-  
-Quando a maré ta alta  
-No barco eu vou remando  
-Eu penso em Deus do céu  
-E a vida vai melhorando  
-**  
-Quando a maré baixar  
-Vou encontrar dendê  
-Vou encontrar dendê  
-Do outro lado do mar**  
-  
-A inveja, a maldade, e a raiva  
-São coisas para destruir  
-Firme o corpo, seu moço  
-Nunca pense em desistir  
-  
-**Quando a maré baixar  
-Vou encontrar dendê  
-Vou encontrar dendê  
-Do outro lado do mar**  
-  
-Se na vida tem barreira  
-Não pare, siga em frente  
-Lembre que o vencedor  
-É quem tem a força da mente  
-  
-**Quando a maré baixar  
-Vou encontrar dendê  
-Vou encontrar dendê  
-Do outro lado do mar** | When the tide goes down  
-I will find palm oil  
-I will find palm oil  
-Across the sea  
-  
-When the tide goes down  
-I will find palm oil  
-I will find palm oil  
-Across the sea  
-  
-When the tide is high  
-On the boat I row on  
-I think of God in heaven  
-And life gets better  
-  
-When the tide goes down  
-I will find palm oil  
-I will find palm oil  
-Across the sea  
-  
-Envy, wickedness, and anger  
-Are things to destroy  
-Stay steady, young man  
-Never think about giving up  
-  
-When the tide goes down  
-I will find palm oil  
-I will find palm oil  
-Across the sea  
-  
-If there is a barrier in life  
-Don't stop, move on  
-Remember that the winner  
-Is the one who has the strength of the mind  
-  
-When the tide goes down  
-I will find palm oil  
-I will find palm oil  
-Across the sea |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Quando a maré baixar<br>
+Vou encontrar dendê<br>
+Vou encontrar dendê<br>
+Do outro lado do mar<br>
+<br>
+<strong>Quando a maré baixar<br>
+Vou encontrar dendê<br>
+Vou encontrar dendê<br>
+Do outro lado do mar</strong><br>
+<br>
+Quando a maré ta alta<br>
+No barco eu vou remando<br>
+Eu penso em Deus do céu<br>
+E a vida vai melhorando<br>
+<strong>
+Quando a maré baixar<br>
+Vou encontrar dendê<br>
+Vou encontrar dendê<br>
+Do outro lado do mar</strong><br>
+<br>
+A inveja, a maldade, e a raiva<br>
+São coisas para destruir<br>
+Firme o corpo, seu moço<br>
+Nunca pense em desistir<br>
+<br>
+<strong>Quando a maré baixar<br>
+Vou encontrar dendê<br>
+Vou encontrar dendê<br>
+Do outro lado do mar</strong><br>
+<br>
+Se na vida tem barreira<br>
+Não pare, siga em frente<br>
+Lembre que o vencedor<br>
+É quem tem a força da mente<br>
+<br>
+<strong>Quando a maré baixar<br>
+Vou encontrar dendê<br>
+Vou encontrar dendê<br>
+Do outro lado do mar</strong></td>
+        <td>When the tide goes down<br>
+I will find palm oil<br>
+I will find palm oil<br>
+Across the sea<br>
+<br>
+When the tide goes down<br>
+I will find palm oil<br>
+I will find palm oil<br>
+Across the sea<br>
+<br>
+When the tide is high<br>
+On the boat I row on<br>
+I think of God in heaven<br>
+And life gets better<br>
+<br>
+When the tide goes down<br>
+I will find palm oil<br>
+I will find palm oil<br>
+Across the sea<br>
+<br>
+Envy, wickedness, and anger<br>
+Are things to destroy<br>
+Stay steady, young man<br>
+Never think about giving up<br>
+<br>
+When the tide goes down<br>
+I will find palm oil<br>
+I will find palm oil<br>
+Across the sea<br>
+<br>
+If there is a barrier in life<br>
+Don't stop, move on<br>
+Remember that the winner<br>
+Is the one who has the strength of the mind<br>
+<br>
+When the tide goes down<br>
+I will find palm oil<br>
+I will find palm oil<br>
+Across the sea</td>
+    </tr>
+</table>
 
 <figcaption>
 

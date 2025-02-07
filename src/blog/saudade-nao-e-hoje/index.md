@@ -9,37 +9,44 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Saudade não é hoje  
-Saudade não é agora  
-Saudade é amanhã  
-Quando meu mestre for-se embora  
-  
-**Saudade não é hoje  
-Saudade não é agora  
-Saudade é amanhã  
-Quando meu mestre for-se embora**  
-  
-Despedida de capoeira  
-**Faz chorar**  
-  
-Faz chorar, faz solucão, camará  
-**Faz chorar** | Longing is not today  
-Longing is not now  
-Longing is tomorrow  
-When my master leaves  
-  
-Longing is not today  
-Longing is not now  
-Longing is tomorrow  
-When my master leaves  
-  
-Capoeira farewell  
-Makes you cry  
-  
-Makes you cry, makes you hiccup, comrade  
-Makes you cry |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Saudade não é hoje<br>
+Saudade não é agora<br>
+Saudade é amanhã<br>
+Quando meu mestre for-se embora<br>
+<br>
+<strong>Saudade não é hoje<br>
+Saudade não é agora<br>
+Saudade é amanhã<br>
+Quando meu mestre for-se embora</strong><br>
+<br>
+Despedida de capoeira<br>
+<strong>Faz chorar</strong><br>
+<br>
+Faz chorar, faz solucão, camará<br>
+<strong>Faz chorar</strong></td>
+        <td>Longing is not today<br>
+Longing is not now<br>
+Longing is tomorrow<br>
+When my master leaves<br>
+<br>
+Longing is not today<br>
+Longing is not now<br>
+Longing is tomorrow<br>
+When my master leaves<br>
+<br>
+Capoeira farewell<br>
+Makes you cry<br>
+<br>
+Makes you cry, makes you hiccup, comrade<br>
+Makes you cry</td>
+    </tr>
+</table>
 
 <figcaption>
 

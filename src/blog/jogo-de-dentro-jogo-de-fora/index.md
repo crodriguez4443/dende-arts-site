@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Jogo de Dentro, Jogo de Fora"
 date: "2021-01-14"
@@ -8,33 +10,40 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Jogo de dentro, jogo de fora  
-Valha-me deus, minha Nossa Senhora  
-  
-**Jogo de dentro, jogo de fora**  
-  
-Jogo bonito, esse jogo de Angola  
-**Jogo de dentro, jogo de fora**  
-  
-Jogo manhoso, esse jogo de Angola  
-**Jogo de dentro, jogo de fora**  
-  
-Jogo bonito, quero ver agora  
-**Jogo de dentro, jogo de fora** | Inside game, outside game  
-God help me, my Lady  
-  
-Inside game, outside game  
-  
-Beautiful game, this game from Angola  
-Inside game, outside game  
-  
-Sly game, this game from Angola  
-Inside game, outside game  
-  
-Beautiful game, I want to see it now  
-Inside game, outside game |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Jogo de dentro, jogo de fora<br>
+        Valha-me deus, minha Nossa Senhora<br>
+        <br>
+        <strong>Jogo de dentro, jogo de fora</strong><br>
+        <br>
+        Jogo bonito, esse jogo de Angola<br>
+        <strong>Jogo de dentro, jogo de fora</strong><br>
+        <br>
+        Jogo manhoso, esse jogo de Angola<br>
+        <strong>Jogo de dentro, jogo de fora</strong><br>
+        <br>
+        Jogo bonito, quero ver agora<br>
+        <strong>Jogo de dentro, jogo de fora</strong></td>
+        <td>Inside game, outside game<br>
+        God help me, my Lady<br>
+        <br>
+        Inside game, outside game<br>
+        <br>
+        Beautiful game, this game from Angola<br>
+        Inside game, outside game<br>
+        <br>
+        Sly game, this game from Angola<br>
+        Inside game, outside game<br>
+        <br>
+        Beautiful game, I want to see it now<br>
+        Inside game, outside game</td>
+    </tr>
+</table>
 
 <figcaption>
 

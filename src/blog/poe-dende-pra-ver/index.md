@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Põe Dendê Pra Ver"
 date: "2021-02-28"
@@ -10,41 +12,16 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Põe dendê, põe dendê  
-Põe dendê pra ver  
-**  
-Põe dendê, põe dendê  
-Põe dendê pra ver**  
-  
-Põe dendê no berimbau  
-**Põe dendê pra ver**  
-  
-Pra roda fica legal  
-**Põe dendê pra ver**  
-  
-O axé ser ancestral  
-**Põe dendê pra ver**  
-  
-Pra não ficar na moral  
-**Põe dendê pra ver** | Add dendê, add dendê  
-Add dendê to see  
-  
-Add dendê, add dendê  
-Add dendê to see  
-  
-Add dendê to the berimbau  
-Add dendê to see  
-  
-So the roda is nice  
-Add dendê to see  
-  
-For the axé to be ancestral  
-Add dendê to see  
-  
-So the energy doesn't drop  
-Add dendê to see |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Põe dendê, põe dendê<br>Põe dendê pra ver<br><strong>Põe dendê, põe dendê<br>Põe dendê pra ver</strong><br><br>Põe dendê no berimbau<br><strong>Põe dendê pra ver</strong><br><br>Pra roda fica legal<br><strong>Põe dendê pra ver</strong><br><br>O axé ser ancestral<br><strong>Põe dendê pra ver</strong><br><br>Pra não ficar na moral<br><strong>Põe dendê pra ver</strong></td>
+        <td>Add dendê, add dendê<br>Add dendê to see<br><br>Add dendê, add dendê<br>Add dendê to see<br><br>Add dendê to the berimbau<br>Add dendê to see<br><br>So the roda is nice<br>Add dendê to see<br><br>For the axé to be ancestral<br>Add dendê to see<br><br>So the energy doesn't drop<br>Add dendê to see</td>
+    </tr>
+</table>
 
 <figcaption>
 

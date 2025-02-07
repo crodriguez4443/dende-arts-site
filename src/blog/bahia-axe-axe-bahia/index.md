@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Bahia Axé, Axé Bahia"
 date: "2020-09-28"
@@ -9,55 +11,62 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Que bom  
-Estar com vocês  
-Aqui nesta roda  
-Com este conjunto  
-Bahia axé, axé Bahia  
-Bahia axé, axé Bahia  
-Io ioioioioo  
-Ioioioo  
-Ioioioo  
-Io ioioioioo  
-Ioioioo  
-Ioioioo  
-O vento  
-Que venta tão lindo  
-Entre os coqueirais  
-Issó e demais  
-Io ioioioioo  
-Ioioioo  
-Ioioioo  
-Io ioioioioo  
-Ioioioo  
-Ioioioo  
-Bahia axe, axe Bahia  
-Bahia axe, axe Bahia | It's so good  
-Being with you  
-Here in this roda  
-With this group  
-Bahia axé, Bahia axé  
-Bahia axé, Bahia axé  
-Io ioioioioo  
-Ioioioo  
-Ioioioo  
-Io ioioioioo  
-Ioioioo  
-Ioioioo  
-The wind  
-Which blows so beautifully  
-Between the palm trees  
-It's great  
-Io ioioioioo  
-Ioioioo  
-Ioioioo  
-Io ioioioioo  
-Ioioioo  
-Ioioioo  
-Bahia axé, Bahia axé  
-Bahia axé, Bahia axé |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Que bom<br>
+        Estar com vocês<br>
+        Aqui nesta roda<br>
+        Com este conjunto<br>
+        Bahia axé, axé Bahia<br>
+        Bahia axé, axé Bahia<br>
+        Io ioioioioo<br>
+        Ioioioo<br>
+        Ioioioo<br>
+        Io ioioioioo<br>
+        Ioioioo<br>
+        Ioioioo<br>
+        O vento<br>
+        Que venta tão lindo<br>
+        Entre os coqueirais<br>
+        Issó e demais<br>
+        Io ioioioioo<br>
+        Ioioioo<br>
+        Ioioioo<br>
+        Io ioioioioo<br>
+        Ioioioo<br>
+        Ioioioo<br>
+        Bahia axe, axe Bahia<br>
+        Bahia axe, axe Bahia</td>
+        <td>It's so good<br>
+        Being with you<br>
+        Here in this roda<br>
+        With this group<br>
+        Bahia axé, Bahia axé<br>
+        Bahia axé, Bahia axé<br>
+        Io ioioioioo<br>
+        Ioioioo<br>
+        Ioioioo<br>
+        Io ioioioioo<br>
+        Ioioioo<br>
+        Ioioioo<br>
+        The wind<br>
+        Which blows so beautifully<br>
+        Between the palm trees<br>
+        It's great<br>
+        Io ioioioioo<br>
+        Ioioioo<br>
+        Ioioioo<br>
+        Io ioioioioo<br>
+        Ioioioo<br>
+        Ioioioo<br>
+        Bahia axé, Bahia axé<br>
+        Bahia axé, Bahia axé</td>
+    </tr>
+</table>
 
 <figcaption>
 

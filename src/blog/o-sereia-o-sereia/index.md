@@ -9,58 +9,67 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Pela docura do teu cantar  
-Eu me vejo obrigado a parar  
-Pela docura do teu cantar  
-Eu me vejo obrigado a parar  
-  
-**Ô sereia, ô sereia  
-Ô sereia, ô sereia**  
-  
-A noite é de lua cheia  
-Tava sentado junto a mar  
-Quando de longe eu ouvi  
-O canto de uma sereia  
-  
-**Ô sereia, ô sereia  
-Ô sereia, ô sereia**  
-  
-Eu sou filho de Ogum  
-Sou filho da Iemanjá  
-Tanto faz eu tá na terra  
-Tá na agua, tá no mar  
-  
-**Ô sereia, ô sereia  
-Ô sereia, ô sereia** | For the sweetness of your singing  
-I find myself obliged to stop  
-For the sweetness of your singing  
-I find myself obliged to stop  
-  
-Mermaid, mermaid  
-Mermaid, mermaid  
-  
-It's a full moon night  
-I was sitting by the sea  
-When from afar I heard  
-A mermaid's song  
-  
-Mermaid, mermaid  
-Mermaid, mermaid  
-  
-I am Ogun's son  
-I’m the son of Iemanjá  
-It doesn't matter if I'm on the earth  
-In the water, in the sea  
-  
-Mermaid, mermaid  
-Mermaid, mermaid |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Pela docura do teu cantar<br>
+            Eu me vejo obrigado a parar<br>
+            Pela docura do teu cantar<br>
+            Eu me vejo obrigado a parar<br>
+            <br>
+            <strong>Ô sereia, ô sereia<br>
+            Ô sereia, ô sereia</strong><br>
+            <br>
+            A noite é de lua cheia<br>
+            Tava sentado junto a mar<br>
+            Quando de longe eu ouvi<br>
+            O canto de uma sereia<br>
+            <br>
+            <strong>Ô sereia, ô sereia<br>
+            Ô sereia, ô sereia</strong><br>
+            <br>
+            Eu sou filho de Ogum<br>
+            Sou filho da Iemanjá<br>
+            Tanto faz eu tá na terra<br>
+            Tá na agua, tá no mar<br>
+            <br>
+            <strong>Ô sereia, ô sereia<br>
+            Ô sereia, ô sereia</strong>
+        </td>
+        <td>
+            For the sweetness of your singing<br>
+            I find myself obliged to stop<br>
+            For the sweetness of your singing<br>
+            I find myself obliged to stop<br>
+            <br>
+            Mermaid, mermaid<br>
+            Mermaid, mermaid<br>
+            <br>
+            It's a full moon night<br>
+            I was sitting by the sea<br>
+            When from afar I heard<br>
+            A mermaid's song<br>
+            <br>
+            Mermaid, mermaid<br>
+            Mermaid, mermaid<br>
+            <br>
+            I am Ogun's son<br>
+            I'm the son of Iemanjá<br>
+            It doesn't matter if I'm on the earth<br>
+            In the water, in the sea<br>
+            <br>
+            Mermaid, mermaid<br>
+            Mermaid, mermaid
+        </td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Mestre Natanael
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uxCn8u6J5zI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

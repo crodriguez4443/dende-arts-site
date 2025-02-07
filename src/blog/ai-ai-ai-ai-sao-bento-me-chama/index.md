@@ -8,42 +8,45 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Ai ai ai aiO  
-São bento me chama  
-  
-**Ai ai ai ai  
-**  
-São bento me quer  
-  
-**Ai ai ai ai  
-**  
-Pra jogar capoeira  
-  
-**Ai ai ai ai  
-**  
-O meu mestre me chama  
-  
-**Ai ai ai ai  
-**  
-O meu mestre chamou | Ai ai ai ai  
-São Bento calls me  
-  
-Ai ai ai ai  
-  
-Saint Benedict wants me  
-  
-Ai ai ai ai  
-  
-To play capoeira  
-  
-Ai ai ai ai  
-  
-My master calls me  
-  
-Ai ai ai ai  
-  
-My master called |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            <strong>Ai ai ai ai</strong><br>
+            São bento me chama<br>
+            <br>
+            <strong>Ai ai ai ai</strong><br>
+            São bento me quer<br>
+            <br>
+            <strong>Ai ai ai ai</strong><br>
+            Pra jogar capoeira<br>
+            <br>
+            <strong>Ai ai ai ai</strong><br>
+            O meu mestre me chama<br>
+            <br>
+            <strong>Ai ai ai ai</strong><br>
+            O meu mestre chamou
+        </td>
+        <td>
+            <strong>Ai ai ai ai</strong><br>
+            São Bento calls me<br>
+            <br>
+            <strong>Ai ai ai ai</strong><br>
+            Saint Benedict wants me<br>
+            <br>
+            <strong>Ai ai ai ai</strong><br>
+            To play capoeira<br>
+            <br>
+            <strong>Ai ai ai ai</strong><br>
+            My master calls me<br>
+            <br>
+            <strong>Ai ai ai ai</strong><br>
+            My master called
+        </td>
+    </tr>
+</table>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gkAndJPnhy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

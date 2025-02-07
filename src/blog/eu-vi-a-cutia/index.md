@@ -8,45 +8,52 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Eu vi a cutia  
-Com coco no dente  
-Com coco no dente  
-Com coco no dente  
-  
-**Eu vi a cutia  
-Com coco no dente**  
-  
-Comendo farinha  
-Olhando pra gente  
-**  
-Eu vi a cutia  
-Com coco no dente**  
-  
-Com coco no dente  
-Com coco no dente  
-  
-**Eu vi a cutia  
-Com coco no dente** | I saw the agouti  
-With a coconut in its teeth  
-With a coconut in its teeth  
-With a coconut in its teeth  
-  
-I saw the agouti  
-With a coconut in its teeth  
-  
-Eating flour  
-Looking at us  
-  
-I saw the agouti  
-With a coconut in its teeth  
-  
-With a coconut in its teeth  
-With a coconut in its teeth  
-  
-I saw the agouti  
-With a coconut in its teeth |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Eu vi a cutia<br>
+Com coco no dente<br>
+Com coco no dente<br>
+Com coco no dente<br>
+<br>
+<strong>Eu vi a cutia<br>
+Com coco no dente</strong><br>
+<br>
+Comendo farinha<br>
+Olhando pra gente<br>
+<br>
+<strong>Eu vi a cutia<br>
+Com coco no dente</strong><br>
+<br>
+Com coco no dente<br>
+Com coco no dente<br>
+<br>
+<strong>Eu vi a cutia<br>
+Com coco no dente</strong></td>
+        <td>I saw the agouti<br>
+With a coconut in its teeth<br>
+With a coconut in its teeth<br>
+With a coconut in its teeth<br>
+<br>
+I saw the agouti<br>
+With a coconut in its teeth<br>
+<br>
+Eating flour<br>
+Looking at us<br>
+<br>
+I saw the agouti<br>
+With a coconut in its teeth<br>
+<br>
+With a coconut in its teeth<br>
+With a coconut in its teeth<br>
+<br>
+I saw the agouti<br>
+With a coconut in its teeth</td>
+    </tr>
+</table>
 
 <figcaption>
 

@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Bate Palmas Pra Ele (menino é bom)"
 date: "2020-10-22"
@@ -9,27 +11,34 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Não maltrate este menino  
-Que ele e bom até demais  
-Escorrega na mandinga  
-Tropeça mas não cai  
-  
-O menino é bom  
-Bate palmas pra ele  
-  
-Ê, menino é bom  
-Bate palmas pra ele | Don't mistreat this boy  
-Cause he's good, too good even  
-He slips on the mandinga  
-He trips, but doesn't fall  
-  
-The boy is good  
-Clap for him  
-  
-The boy is good  
-Clap for him |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Não maltrate este menino<br>
+Que ele e bom até demais<br>
+Escorrega na mandinga<br>
+Tropeça mas não cai<br>
+<br>
+O menino é bom<br>
+Bate palmas pra ele<br>
+<br>
+Ê, menino é bom<br>
+Bate palmas pra ele</td>
+        <td>Don't mistreat this boy<br>
+Cause he's good, too good even<br>
+He slips on the mandinga<br>
+He trips, but doesn't fall<br>
+<br>
+The boy is good<br>
+Clap for him<br>
+<br>
+The boy is good<br>
+Clap for him</td>
+    </tr>
+</table>
 
 <figcaption>
 

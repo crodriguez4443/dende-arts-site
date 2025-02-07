@@ -9,110 +9,115 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Sem capoeira eu não posso viver  
-Sou peixe fora do mar  
-Passarinho sem voar  
-Dia sem escurecer  
-  
-**Sem capoeira eu não posso viver  
-Sou peixe fora do mar  
-Passarinho sem voar  
-Dia sem escurecer**  
-  
-Mesmo rastejando eu vou  
-Agacho para jogar  
-Peço ao berimbau que toca  
-E a Deus pra me olhar  
-**  
-Sem capoeira eu não posso viver  
-Sou peixe fora do mar  
-Passarinho sem voar  
-Dia sem escurecer**  
-  
-Posso ficar sem comer  
-Nem água eu beberei  
-Sem capoeira não fico  
-Porque senão eu morrerei  
-  
-**Sem capoeira eu não posso viver  
-Sou peixe fora do mar  
-Passarinho sem voar  
-Dia sem escurecer**  
-  
-Peixe fora da água morre  
-O dia tem que escurecer  
-E eu sem capoeira  
-Não sei o que vou fazer  
-  
-**Sem capoeira eu não posso viver  
-Sou peixe fora do mar  
-Passarinho sem voar  
-Dia sem escurecer**  
-  
-Passarinho sem voar  
-Eu sem minha capoeira  
-Passarinho bateu asa  
-Eu fiquei nessa tristeza  
-  
-**Sem capoeira eu não posso viver  
-Sou peixe fora do mar  
-Passarinho sem voar  
-Dia sem escurecer** | Without capoeira I can't live  
-I'm a fish out of the sea  
-A bird without flight  
-Day without nightfall  
-  
-Without capoeira I can't live  
-I'm a fish out of the sea  
-A bird without flight  
-Day without nightfall  
-  
-Even crawling I will  
-Squat to play  
-I ask the berimbau that plays  
-And God to look after me  
-  
-Without capoeira I can't live  
-I'm a fish out of the sea  
-A bird without flight  
-Day without nightfall  
-  
-I can go without eating  
-I won't even drink water  
-Without capoeira I can't stay  
-Because otherwise I will die  
-  
-Without capoeira I can't live  
-I'm a fish out of the sea  
-A bird without flight  
-Day without nightfall  
-  
-A fish out of water dies  
-The day has to get dark  
-And without capoeira  
-I don't know what I will do  
-  
-Without capoeira I can't live  
-I'm a fish out of the sea  
-A bird without flight  
-Day without nightfall  
-  
-Bird without flight  
-Me without my capoeira  
-Bird flapped its wing  
-I stayed in this sadness  
-  
-Without capoeira I can't live  
-I'm a fish out of the sea  
-A bird without flight  
-Day without nightfall |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Sem capoeira eu não posso viver<br>
+Sou peixe fora do mar<br>
+Passarinho sem voar<br>
+Dia sem escurecer<br>
+<br>
+<strong>Sem capoeira eu não posso viver<br>
+Sou peixe fora do mar<br>
+Passarinho sem voar<br>
+Dia sem escurecer</strong><br>
+<br>
+Mesmo rastejando eu vou<br>
+Agacho para jogar<br>
+Peço ao berimbau que toca<br>
+E a Deus pra me olhar<br>
+<br>
+<strong>Sem capoeira eu não posso viver<br>
+Sou peixe fora do mar<br>
+Passarinho sem voar<br>
+Dia sem escurecer</strong><br>
+<br>
+Posso ficar sem comer<br>
+Nem água eu beberei<br>
+Sem capoeira não fico<br>
+Porque senão eu morrerei<br>
+<br>
+<strong>Sem capoeira eu não posso viver<br>
+Sou peixe fora do mar<br>
+Passarinho sem voar<br>
+Dia sem escurecer</strong><br>
+<br>
+Peixe fora da água morre<br>
+O dia tem que escurecer<br>
+E eu sem capoeira<br>
+Não sei o que vou fazer<br>
+<br>
+<strong>Sem capoeira eu não posso viver<br>
+Sou peixe fora do mar<br>
+Passarinho sem voar<br>
+Dia sem escurecer</strong><br>
+<br>
+Passarinho sem voar<br>
+Eu sem minha capoeira<br>
+Passarinho bateu asa<br>
+Eu fiquei nessa tristeza<br>
+<br>
+<strong>Sem capoeira eu não posso viver<br>
+Sou peixe fora do mar<br>
+Passarinho sem voar<br>
+Dia sem escurecer</strong></td>
+        <td>Without capoeira I can't live<br>
+I'm a fish out of the sea<br>
+A bird without flight<br>
+Day without nightfall<br>
+<br>
+Without capoeira I can't live<br>
+I'm a fish out of the sea<br>
+A bird without flight<br>
+Day without nightfall<br>
+<br>
+Even crawling I will<br>
+Squat to play<br>
+I ask the berimbau that plays<br>
+And God to look after me<br>
+<br>
+Without capoeira I can't live<br>
+I'm a fish out of the sea<br>
+A bird without flight<br>
+Day without nightfall<br>
+<br>
+I can go without eating<br>
+I won't even drink water<br>
+Without capoeira I can't stay<br>
+Because otherwise I will die<br>
+<br>
+Without capoeira I can't live<br>
+I'm a fish out of the sea<br>
+A bird without flight<br>
+Day without nightfall<br>
+<br>
+A fish out of water dies<br>
+The day has to get dark<br>
+And without capoeira<br>
+I don't know what I will do<br>
+<br>
+Without capoeira I can't live<br>
+I'm a fish out of the sea<br>
+A bird without flight<br>
+Day without nightfall<br>
+<br>
+Bird without flight<br>
+Me without my capoeira<br>
+Bird flapped its wing<br>
+I stayed in this sadness<br>
+<br>
+Without capoeira I can't live<br>
+I'm a fish out of the sea<br>
+A bird without flight<br>
+Day without nightfall</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Mestre Charm
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/U1o6NuZDSTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

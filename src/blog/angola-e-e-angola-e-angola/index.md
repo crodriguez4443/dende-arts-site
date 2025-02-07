@@ -1,3 +1,5 @@
+Here's the formatted markdown document according to the specifications:
+
 ---
 title: "Angola é é, angola é Angola"
 date: "2020-10-20"
@@ -8,62 +10,47 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Angola ê ê, Angola ê Angola  
-  
-No balanço de Angola é é,  
-No balanço de Angola, Angola  
-  
-**Angola ê ê, Angola ê Angola  
-**  
-Meu pai vem de Angola é é,  
-Minha mae vem de Angola, Angola  
-  
-**Angola ê ê, Angola ê Angola  
-**  
-eu vim é de Angola ê ê,  
-Oi eu vim é de Angola iaia  
-  
-**Angola ê ê, Angola ê Angola  
-**  
-Vou me embora pra Angola é é,  
-vou me embora pra Angola, Angola  
-  
-**Angola ê ê, Angola ê Angola  
-**  
-No balanco de Angola ê ê  
-No balanco de Angola, Angola  
-  
-**Angola ê ê, Angola ê Angola** | Angola is, Angola is Angola  
-  
-In the balance of Angola it is,  
-In the balance of Angola, Angola  
-  
-Angola is, Angola is Angola  
-  
-My father comes from Angola is,  
-My mother comes from Angola, Angola  
-  
-Angola is, Angola is Angola  
-  
-I came from Angola ê ê,  
-Hi I came from Angola iaia  
-  
-Angola is, Angola is Angola  
-  
-I'm leaving for Angola, yeah,  
-I'm leaving for Angola, Angola  
-  
-Angola is, Angola is Angola  
-  
-On the balance of Angola ê ê  
-On the balance sheet of Angola, Angola  
-  
-Angola is, Angola is Angola |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Angola ê ê, Angola ê Angola<br><br>
+No balanço de Angola é é,<br>
+No balanço de Angola, Angola<br><br>
+<strong>Angola ê ê, Angola ê Angola</strong><br><br>
+Meu pai vem de Angola é é,<br>
+Minha mae vem de Angola, Angola<br><br>
+<strong>Angola ê ê, Angola ê Angola</strong><br><br>
+eu vim é de Angola ê ê,<br>
+Oi eu vim é de Angola iaia<br><br>
+<strong>Angola ê ê, Angola ê Angola</strong><br><br>
+Vou me embora pra Angola é é,<br>
+vou me embora pra Angola, Angola<br><br>
+<strong>Angola ê ê, Angola ê Angola</strong><br><br>
+No balanco de Angola ê ê<br>
+No balanco de Angola, Angola<br><br>
+<strong>Angola ê ê, Angola ê Angola</strong></td>
+        <td>Angola is, Angola is Angola<br><br>
+In the balance of Angola it is,<br>
+In the balance of Angola, Angola<br><br>
+Angola is, Angola is Angola<br><br>
+My father comes from Angola is,<br>
+My mother comes from Angola, Angola<br><br>
+Angola is, Angola is Angola<br><br>
+I came from Angola ê ê,<br>
+Hi I came from Angola iaia<br><br>
+Angola is, Angola is Angola<br><br>
+I'm leaving for Angola, yeah,<br>
+I'm leaving for Angola, Angola<br><br>
+Angola is, Angola is Angola<br><br>
+On the balance of Angola ê ê<br>
+On the balance sheet of Angola, Angola<br><br>
+Angola is, Angola is Angola</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unknown
-
 </figcaption>

@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Moleque É Tu"
 date: "2021-01-30"
@@ -8,89 +10,96 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Ê, não me chame de moleque  
-Não me chame de moleque  
-Oh meu Deus, que moleque não sou eu  
-Olha quem me chamou de moleque  
-Foi Besouro Preto já morreu  
-  
-É você que é moleque  
-**Moleque é tu**  
-  
-Ê não me chama moleque  
-**Moleque é tu**  
-  
-Ê moleque é você  
-**Moleque é tu**  
-  
-Ê moleque danado  
-**Moleque é tu**  
-  
-É danado pra falar  
-**Moleque é tu**  
-  
-Tua mãe num tá em casa  
-**Moleque é tu**  
-  
-Ê moleque quer brigar  
-**Moleque é tu**  
-  
-Ê moleque é o cão  
-**Moleque é tu**  
-  
-Ê mas castiga o moleque  
-**Moleque é tu**  
-  
-Ê conforme a razão  
-**Moleque é tu**  
-  
-Tua mãe foi pra feira  
-**Moleque é tu**  
-  
-Ê moleque quer brigar  
-**Moleque é tu** | Yeah, don't call me kid  
-Don't call me kid  
-Oh my God, what a kid I am not  
-Look who called me kid  
-It was Black Beetle already died  
-  
-You're the kid  
-You kid  
-  
-Ê don't call me kid  
-You kid  
-  
-Ê the kid is you  
-You kid  
-  
-Ê darn kid  
-You kid  
-  
-Always has too much to say  
-You kid  
-  
-Your mother is not at home  
-You kid  
-  
-Kid wants to fight  
-You kid  
-  
-Hey kid is rowdy  
-You kid  
-  
-Ê punish the kid  
-You kid  
-  
-According to reason  
-You kid  
-  
-Your mother went to the fair  
-You kid  
-  
-Kid wants to fight  
-You kid |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Ê, não me chame de moleque<br>
+Não me chame de moleque<br>
+Oh meu Deus, que moleque não sou eu<br>
+Olha quem me chamou de moleque<br>
+Foi Besouro Preto já morreu<br>
+<br>
+É você que é moleque<br>
+<strong>Moleque é tu</strong><br>
+<br>
+Ê não me chama moleque<br>
+<strong>Moleque é tu</strong><br>
+<br>
+Ê moleque é você<br>
+<strong>Moleque é tu</strong><br>
+<br>
+Ê moleque danado<br>
+<strong>Moleque é tu</strong><br>
+<br>
+É danado pra falar<br>
+<strong>Moleque é tu</strong><br>
+<br>
+Tua mãe num tá em casa<br>
+<strong>Moleque é tu</strong><br>
+<br>
+Ê moleque quer brigar<br>
+<strong>Moleque é tu</strong><br>
+<br>
+Ê moleque é o cão<br>
+<strong>Moleque é tu</strong><br>
+<br>
+Ê mas castiga o moleque<br>
+<strong>Moleque é tu</strong><br>
+<br>
+Ê conforme a razão<br>
+<strong>Moleque é tu</strong><br>
+<br>
+Tua mãe foi pra feira<br>
+<strong>Moleque é tu</strong><br>
+<br>
+Ê moleque quer brigar<br>
+<strong>Moleque é tu</strong></td>
+        <td>Yeah, don't call me kid<br>
+Don't call me kid<br>
+Oh my God, what a kid I am not<br>
+Look who called me kid<br>
+It was Black Beetle already died<br>
+<br>
+You're the kid<br>
+You kid<br>
+<br>
+Ê don't call me kid<br>
+You kid<br>
+<br>
+Ê the kid is you<br>
+You kid<br>
+<br>
+Ê darn kid<br>
+You kid<br>
+<br>
+Always has too much to say<br>
+You kid<br>
+<br>
+Your mother is not at home<br>
+You kid<br>
+<br>
+Kid wants to fight<br>
+You kid<br>
+<br>
+Hey kid is rowdy<br>
+You kid<br>
+<br>
+Ê punish the kid<br>
+You kid<br>
+<br>
+According to reason<br>
+You kid<br>
+<br>
+Your mother went to the fair<br>
+You kid<br>
+<br>
+Kid wants to fight<br>
+You kid</td>
+    </tr>
+</table>
 
 <figcaption>
 

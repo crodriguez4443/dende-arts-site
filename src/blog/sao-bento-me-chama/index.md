@@ -1,3 +1,5 @@
+Here's the formatted document according to the specified requirements:
+
 ---
 title: "São Bento Me Chama"
 date: "2021-03-29"
@@ -8,110 +10,115 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| São Bento me chama  
-São Bento me quer  
-São Bento proteja  
-Quem capoeira é  
-  
-São Bento me chama  
-São Bento me quer  
-São Bento proteja  
-Quem capoeira é  
-  
-Proteja quem já foi  
-E aqueles que vem  
-A todos aqui  
-E a capoeira também  
-  
-São Bento me chama  
-São Bento me quer  
-São Bento proteja  
-Quem capoeira é  
-  
-Martelo que derruba  
-Meia-lua que vai  
-Rasteira que vem  
-É o corpo que cai  
-  
-São Bento me chama  
-São Bento me quer  
-São Bento proteja  
-Quem capoeira é  
-  
-E na benguela  
-E no jogo de Angola  
-E na regional  
-Não me deixe de fora  
-  
-São Bento me chama  
-São Bento me quer  
-São Bento proteja  
-Quem capoeira é  
-  
-Mestre Bimba falou  
-Agora que entendi  
-Capoeira é o caminho  
-Quem quiser vai seguir  
-  
-São Bento me chama  
-São Bento me quer  
-São Bento proteja  
-Quem capoeira é | Saint Benedict calls me  
-Saint Benedict wants me  
-Saint Benedict protect  
-Whoever is a capoeira  
-  
-Saint Benedict calls me  
-Saint Benedict wants me  
-Saint Benedict protect  
-Whoever is a capoeira  
-  
-Protect those who have already gone  
-And those who come  
-Everyone here  
-And capoeira too  
-  
-Saint Benedict calls me  
-Saint Benedict wants me  
-Saint Benedict protect  
-Whoever is a capoeira  
-  
-Martelo that knocks down  
-Meia-lua going  
-Rasteira coming  
-It's the body that falls  
-  
-Saint Benedict calls me  
-Saint Benedict wants me  
-Saint Benedict protect  
-Whoever is a capoeira  
-  
-And in the benguela  
-And in the game of Angola  
-And in the regional  
-Don't leave me out  
-  
-Saint Benedict calls me  
-Saint Benedict wants me  
-Saint Benedict protect  
-Whoever is a capoeira  
-  
-Mestre Bimba spoke  
-Now I understand  
-Capoeira is the way  
-Anyone who wants will follow  
-  
-Saint Benedict calls me  
-Saint Benedict wants me  
-Saint Benedict protect  
-Whoever is a capoeira |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>São Bento me chama<br>
+São Bento me quer<br>
+São Bento proteja<br>
+Quem capoeira é<br>
+<br>
+São Bento me chama<br>
+São Bento me quer<br>
+São Bento proteja<br>
+Quem capoeira é<br>
+<br>
+Proteja quem já foi<br>
+E aqueles que vem<br>
+A todos aqui<br>
+E a capoeira também<br>
+<br>
+São Bento me chama<br>
+São Bento me quer<br>
+São Bento proteja<br>
+Quem capoeira é<br>
+<br>
+Martelo que derruba<br>
+Meia-lua que vai<br>
+Rasteira que vem<br>
+É o corpo que cai<br>
+<br>
+São Bento me chama<br>
+São Bento me quer<br>
+São Bento proteja<br>
+Quem capoeira é<br>
+<br>
+E na benguela<br>
+E no jogo de Angola<br>
+E na regional<br>
+Não me deixe de fora<br>
+<br>
+São Bento me chama<br>
+São Bento me quer<br>
+São Bento proteja<br>
+Quem capoeira é<br>
+<br>
+Mestre Bimba falou<br>
+Agora que entendi<br>
+Capoeira é o caminho<br>
+Quem quiser vai seguir<br>
+<br>
+São Bento me chama<br>
+São Bento me quer<br>
+São Bento proteja<br>
+Quem capoeira é</td>
+        <td>Saint Benedict calls me<br>
+Saint Benedict wants me<br>
+Saint Benedict protect<br>
+Whoever is a capoeira<br>
+<br>
+Saint Benedict calls me<br>
+Saint Benedict wants me<br>
+Saint Benedict protect<br>
+Whoever is a capoeira<br>
+<br>
+Protect those who have already gone<br>
+And those who come<br>
+Everyone here<br>
+And capoeira too<br>
+<br>
+Saint Benedict calls me<br>
+Saint Benedict wants me<br>
+Saint Benedict protect<br>
+Whoever is a capoeira<br>
+<br>
+Martelo that knocks down<br>
+Meia-lua going<br>
+Rasteira coming<br>
+It's the body that falls<br>
+<br>
+Saint Benedict calls me<br>
+Saint Benedict wants me<br>
+Saint Benedict protect<br>
+Whoever is a capoeira<br>
+<br>
+And in the benguela<br>
+And in the game of Angola<br>
+And in the regional<br>
+Don't leave me out<br>
+<br>
+Saint Benedict calls me<br>
+Saint Benedict wants me<br>
+Saint Benedict protect<br>
+Whoever is a capoeira<br>
+<br>
+Mestre Bimba spoke<br>
+Now I understand<br>
+Capoeira is the way<br>
+Anyone who wants will follow<br>
+<br>
+Saint Benedict calls me<br>
+Saint Benedict wants me<br>
+Saint Benedict protect<br>
+Whoever is a capoeira</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dw6oR1UL0pQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

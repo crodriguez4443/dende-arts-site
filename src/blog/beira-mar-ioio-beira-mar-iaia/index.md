@@ -9,29 +9,36 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Beira mar ioiô  
-Beira mar iaiá  
-  
-**Beira mar ioiô  
-Beira mar iaiá**  
-  
-Beira mar beira mar  
-**É de ioiô**  
-  
-Beira mar beira mar  
-**É de iaiá** | Seaside ioiô  
-Seaside iaiá  
-  
-Seaside ioiô  
-Seaside iaiá  
-  
-Seaside seaside  
-It's ioiô's  
-  
-Seaside seaside  
-It's iaiá's |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Beira mar ioiô<br>
+        Beira mar iaiá<br>
+        <br>
+        <strong>Beira mar ioiô<br>
+        Beira mar iaiá</strong><br>
+        <br>
+        Beira mar beira mar<br>
+        <strong>É de ioiô</strong><br>
+        <br>
+        Beira mar beira mar<br>
+        <strong>É de iaiá</strong></td>
+        <td>Seaside ioiô<br>
+        Seaside iaiá<br>
+        <br>
+        Seaside ioiô<br>
+        Seaside iaiá<br>
+        <br>
+        Seaside seaside<br>
+        It's ioiô's<br>
+        <br>
+        Seaside seaside<br>
+        It's iaiá's</td>
+    </tr>
+</table>
 
 <figcaption>
 

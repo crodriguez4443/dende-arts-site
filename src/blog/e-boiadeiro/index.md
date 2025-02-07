@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Ê Boiadeiro"
 date: "2024-03-25"
@@ -9,103 +11,106 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Ê boiadeiro, amarra o gado no curral, boiadeiro.  
-**Coro:**  
-**Ê boiadeiro, amarra o gado no curral, boiadeiro.  
-**  
-Debaixo do chapéu de couro, mora eu, mora meu pai, mora a família toda.  
-**Coro:**  
-**Debaixo do chapéu de couro, mora eu, mora meu pai, mora a família toda.  
-**  
-Eu ouvi o berimbau tocando, aonde vai mano?  
-**Coro:**  
-**Vou ali vadiar  
-**  
-Eu ouvi o berimbau tocando, aonde vai mano?  
-**Coro:**  
-**Vou ali vadiar  
-**  
-Introdução opcional 1:  
-De manhãzinha, quando eu chego na estrada,  
-minha boiada pra invernada eu vou levar.  
-São dez cabeças, é muito pouco, é quase nada,  
-mas não tem outras mais bonitas no lugar.  
-  
-**Coro:**  
-**Ê boiadeiro, amarre o gado no curral, boiadeiro...  
-**  
-Introdução opcional 2:  
-Chapéu de palha é pra sol,  
-chapéu de couro é pra espinho.  
-Quando eu entro na mata fechada,  
-ai de mim se eu for sozinho,  
-levo o cavalado Sereno,  
-chapéu, perneira, gibão e Deus guiando meu caminho.  
-  
-**Coro:**  
-**Debaixo do chapéu de couro mora eu, mora meu pai, mora família toda...  
-**  
-Introdução opcional 3:  
-De manhã, logo cedinho, eu vi meu mano levantar,  
-acendeu o candeeiro, começou a se arrumar,  
-e me disse bem baixinho: Mano, eu vou viajar,  
-toma conta de mãe, diz pra ela não chorar.  
-Eu ouvi o berimbau tocando, aonde vai mano?  
-  
-**Coro:**  
-**Vou ali vadiar** | Hey cowboy, tie up the cattle in the corral, cowboy.  
-**Chorus:  
-Hey cowboy, tie up the cattle in the corral, cowboy.**  
-  
-Underneath the leather hat lives I, lives my father, the whole family lives.  
-**Chorus:  
-Underneath the leather hat lives I, lives my father, the whole family lives.**  
-  
-I heard the berimbau playing, where are you going, brother?  
-**Chorus:  
-I'm going over there to play around**  
-  
-I heard the berimbau playing, where are you going, brother?  
-**Chorus:  
-I'm going over there to play around  
-**  
-Optional Introduction 1:  
-Early in the morning, when I hit the road,  
-I take my cattle to the pasture to stay.  
-There are ten heads, it's very little, almost nothing,  
-but there are no others more beautiful in the place.  
-  
-**Chorus:**  
-**Hey cowboy, tie the cattle in the corral, cowboy...  
-**  
-Optional Introduction 2:  
-Straw hat is for the sun,  
-Leather hat is for the thorns.  
-When I enter the dense forest,  
-woe to me if I go alone, I take the horse Sereno,  
-hat, leg guards, leather jacket and God guiding my way.  
-  
-**Chorus:**  
-**Underneath the leather hat lives I, lives my father, the whole family lives...  
-**  
-Optional Introduction 3:  
-Early in the morning, I saw my brother getting up,  
-he lit the lamp and started to get ready,  
-and he told me very quietly:  
-Brother, I'm going to travel, take care of mother, tell her not to cry. I  
-heard the berimbau playing, where are you going, brother?  
-  
-**Chorus:**  
-**I'm going over there to play around  
-**  
- |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Ê boiadeiro, amarra o gado no curral, boiadeiro.<br>
+        <strong>Coro:</strong><br>
+        <strong>Ê boiadeiro, amarra o gado no curral, boiadeiro.</strong><br>
+        <br>
+        Debaixo do chapéu de couro, mora eu, mora meu pai, mora a família toda.<br>
+        <strong>Coro:</strong><br>
+        <strong>Debaixo do chapéu de couro, mora eu, mora meu pai, mora a família toda.</strong><br>
+        <br>
+        Eu ouvi o berimbau tocando, aonde vai mano?<br>
+        <strong>Coro:</strong><br>
+        <strong>Vou ali vadiar</strong><br>
+        <br>
+        Eu ouvi o berimbau tocando, aonde vai mano?<br>
+        <strong>Coro:</strong><br>
+        <strong>Vou ali vadiar</strong><br>
+        <br>
+        Introdução opcional 1:<br>
+        De manhãzinha, quando eu chego na estrada,<br>
+        minha boiada pra invernada eu vou levar.<br>
+        São dez cabeças, é muito pouco, é quase nada,<br>
+        mas não tem outras mais bonitas no lugar.<br>
+        <br>
+        <strong>Coro:</strong><br>
+        <strong>Ê boiadeiro, amarre o gado no curral, boiadeiro...</strong><br>
+        <br>
+        Introdução opcional 2:<br>
+        Chapéu de palha é pra sol,<br>
+        chapéu de couro é pra espinho.<br>
+        Quando eu entro na mata fechada,<br>
+        ai de mim se eu for sozinho,<br>
+        levo o cavalado Sereno,<br>
+        chapéu, perneira, gibão e Deus guiando meu caminho.<br>
+        <br>
+        <strong>Coro:</strong><br>
+        <strong>Debaixo do chapéu de couro mora eu, mora meu pai, mora família toda...</strong><br>
+        <br>
+        Introdução opcional 3:<br>
+        De manhã, logo cedinho, eu vi meu mano levantar,<br>
+        acendeu o candeeiro, começou a se arrumar,<br>
+        e me disse bem baixinho: Mano, eu vou viajar,<br>
+        toma conta de mãe, diz pra ela não chorar.<br>
+        Eu ouvi o berimbau tocando, aonde vai mano?<br>
+        <br>
+        <strong>Coro:</strong><br>
+        <strong>Vou ali vadiar</strong></td>
+        <td>Hey cowboy, tie up the cattle in the corral, cowboy.<br>
+        <strong>Chorus:</strong><br>
+        <strong>Hey cowboy, tie up the cattle in the corral, cowboy.</strong><br>
+        <br>
+        Underneath the leather hat lives I, lives my father, the whole family lives.<br>
+        <strong>Chorus:</strong><br>
+        <strong>Underneath the leather hat lives I, lives my father, the whole family lives.</strong><br>
+        <br>
+        I heard the berimbau playing, where are you going, brother?<br>
+        <strong>Chorus:</strong><br>
+        <strong>I'm going over there to play around</strong><br>
+        <br>
+        I heard the berimbau playing, where are you going, brother?<br>
+        <strong>Chorus:</strong><br>
+        <strong>I'm going over there to play around</strong><br>
+        <br>
+        Optional Introduction 1:<br>
+        Early in the morning, when I hit the road,<br>
+        I take my cattle to the pasture to stay.<br>
+        There are ten heads, it's very little, almost nothing,<br>
+        but there are no others more beautiful in the place.<br>
+        <br>
+        <strong>Chorus:</strong><br>
+        <strong>Hey cowboy, tie the cattle in the corral, cowboy...</strong><br>
+        <br>
+        Optional Introduction 2:<br>
+        Straw hat is for the sun,<br>
+        Leather hat is for the thorns.<br>
+        When I enter the dense forest,<br>
+        woe to me if I go alone, I take the horse Sereno,<br>
+        hat, leg guards, leather jacket and God guiding my way.<br>
+        <br>
+        <strong>Chorus:</strong><br>
+        <strong>Underneath the leather hat lives I, lives my father, the whole family lives...</strong><br>
+        <br>
+        Optional Introduction 3:<br>
+        Early in the morning, I saw my brother getting up,<br>
+        he lit the lamp and started to get ready,<br>
+        and he told me very quietly:<br>
+        Brother, I'm going to travel, take care of mother, tell her not to cry. I<br>
+        heard the berimbau playing, where are you going, brother?<br>
+        <br>
+        <strong>Chorus:</strong><br>
+        <strong>I'm going over there to play around</strong></td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Professor Tiririca GCB PB
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oq7b9YpMH3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -9,19 +9,16 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Mãe Amanha eu vou  
-Mãe amanha chego lá  
-  
-**Mãe Amanha eu vou  
-Mãe amanha chego lá**  
-  
-\*There is lots of room for improvisation as seen in the video below. | Mom tomorrow I'm going  
-Mom, I'll be there tomorrow  
-  
-Mom tomorrow I'm going  
-Mom, I'll be there tomorrow |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Mãe Amanha eu vou<br>Mãe amanha chego lá<br><br><strong>Mãe Amanha eu vou<br>Mãe amanha chego lá</strong><br><br>*There is lots of room for improvisation as seen in the video below.</td>
+        <td>Mom tomorrow I'm going<br>Mom, I'll be there tomorrow<br><br>Mom tomorrow I'm going<br>Mom, I'll be there tomorrow</td>
+    </tr>
+</table>
 
 <figcaption>
 

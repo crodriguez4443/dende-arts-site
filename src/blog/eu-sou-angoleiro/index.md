@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Eu Sou Angoleiro"
 date: "2020-12-21"
@@ -8,49 +10,56 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Eu sou angoleiro  
-Angoleiro é o que eu sou  
-**Eu sou angoleiro**  
-  
-Angoleiro de valor  
-**Eu sou angoleiro**  
-  
-Angoleiro de São Salvador  
-**Eu sou angoleiro**  
-  
-Angoleiro jogador  
-**Eu sou angoleiro**  
-  
-Angoleiro, sim senhor  
-**Eu sou angoleiro**  
-  
-Meu mestre me ensinou  
-**Eu sou angoleiro**  
-  
-Angoleiro de valor  
-**Eu sou angoleiro** | I'm angoleiro  
-Angoleiro is what I am  
-I'm angoleiro  
-  
-Angoleiro of value  
-I'm angoleiro  
-  
-Angoleiro from São Salvador  
-I'm angoleiro  
-  
-Angoleiro player  
-I'm angoleiro  
-  
-Angoleiro, yes sir  
-I'm angoleiro  
-  
-My master taught me  
-I'm angoleiro  
-  
-Angoleiro of value  
-I'm angoleiro |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Eu sou angoleiro<br>
+        Angoleiro é o que eu sou<br>
+        <strong>Eu sou angoleiro</strong><br>
+        <br>
+        Angoleiro de valor<br>
+        <strong>Eu sou angoleiro</strong><br>
+        <br>
+        Angoleiro de São Salvador<br>
+        <strong>Eu sou angoleiro</strong><br>
+        <br>
+        Angoleiro jogador<br>
+        <strong>Eu sou angoleiro</strong><br>
+        <br>
+        Angoleiro, sim senhor<br>
+        <strong>Eu sou angoleiro</strong><br>
+        <br>
+        Meu mestre me ensinou<br>
+        <strong>Eu sou angoleiro</strong><br>
+        <br>
+        Angoleiro de valor<br>
+        <strong>Eu sou angoleiro</strong></td>
+        <td>I'm angoleiro<br>
+        Angoleiro is what I am<br>
+        I'm angoleiro<br>
+        <br>
+        Angoleiro of value<br>
+        I'm angoleiro<br>
+        <br>
+        Angoleiro from São Salvador<br>
+        I'm angoleiro<br>
+        <br>
+        Angoleiro player<br>
+        I'm angoleiro<br>
+        <br>
+        Angoleiro, yes sir<br>
+        I'm angoleiro<br>
+        <br>
+        My master taught me<br>
+        I'm angoleiro<br>
+        <br>
+        Angoleiro of value<br>
+        I'm angoleiro</td>
+    </tr>
+</table>
 
 <figcaption>
 

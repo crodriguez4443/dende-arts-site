@@ -1,3 +1,5 @@
+Here's the formatted document:
+
 ---
 title: "Berimbau chamou"
 date: "2020-10-21"
@@ -9,90 +11,95 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Berimbau chamou seu moço  
-Berimbau chamou sinhá  
-Berimbau chamou seu Bimba  
-Berimbau chamou iaiá  
-  
-**Berimbau chamou seu moço  
-Berimbau chamou sinhá  
-Berimbau chamou seu Bimba  
-Berimbau chamou iaiá**  
-  
-Berimbau chamou você  
-Berimbau chamou Sabiá  
-Berimbau chamou Boneco  
-E Paulão pra joga  
-Berimbau chamou  
-  
-**Berimbau chamou seu moço  
-Berimbau chamou sinhá  
-Berimbau chamou seu Bimba  
-Berimbau chamou iaiá**  
-  
-Berimbau chamou seu Peixinho  
-Lá no céu pra morar  
-Mestre Peixinho foi embora  
-Com Mestre Bimba joga  
-  
-**Berimbau chamou seu moço  
-Berimbau chamou sinhá  
-Berimbau chamou seu Bimba  
-Berimbau chamou iaiá  
-**  
-Berimbau chamou pra roda  
-Vem aqui vadiar  
-Venha jogar capoeira  
-Venha pro meu Paraná  
-  
-**Berimbau chamou seu moço  
-Berimbau chamou sinhá  
-Berimbau chamou seu Bimba  
-Berimbau chamou iaiá** | Berimbau called, young man  
-Berimbau called sinhá  
-Berimbau called Mr. Bimba  
-Berimbau called iaiá  
-  
-Berimbau called, young man  
-Berimbau called sinhá  
-Berimbau called Mr. Bimba  
-Berimbau called iaiá  
-  
-Berimbau called you  
-Berimbau called Sabiá  
-Berimbau called Boneco  
-And Paulão to play  
-Berimbau called  
-  
-Berimbau called, young man  
-Berimbau called sinhá  
-Berimbau called Mr. Bimba  
-Berimbau called iaiá  
-  
-Berimbau called Mr. Peixinho  
-Up to heaven to live  
-Master Peixinho left  
-With Mestre Bimba he plays  
-  
-Berimbau called, young man  
-Berimbau called sinhá  
-Berimbau called Mr. Bimba  
-Berimbau called iaiá  
-  
-Berimbau called for the roda  
-Come here to lounge  
-Come play capoeira  
-Come to my Paraná  
-  
-Berimbau called, young man  
-Berimbau called sinhá  
-Berimbau called Mr. Bimba  
-Berimbau called iaiá |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Berimbau chamou seu moço<br>
+Berimbau chamou sinhá<br>
+Berimbau chamou seu Bimba<br>
+Berimbau chamou iaiá<br>
+<br>
+<strong>Berimbau chamou seu moço<br>
+Berimbau chamou sinhá<br>
+Berimbau chamou seu Bimba<br>
+Berimbau chamou iaiá</strong><br>
+<br>
+Berimbau chamou você<br>
+Berimbau chamou Sabiá<br>
+Berimbau chamou Boneco<br>
+E Paulão pra joga<br>
+Berimbau chamou<br>
+<br>
+<strong>Berimbau chamou seu moço<br>
+Berimbau chamou sinhá<br>
+Berimbau chamou seu Bimba<br>
+Berimbau chamou iaiá</strong><br>
+<br>
+Berimbau chamou seu Peixinho<br>
+Lá no céu pra morar<br>
+Mestre Peixinho foi embora<br>
+Com Mestre Bimba joga<br>
+<br>
+<strong>Berimbau chamou seu moço<br>
+Berimbau chamou sinhá<br>
+Berimbau chamou seu Bimba<br>
+Berimbau chamou iaiá</strong><br>
+<br>
+Berimbau chamou pra roda<br>
+Vem aqui vadiar<br>
+Venha jogar capoeira<br>
+Venha pro meu Paraná<br>
+<br>
+<strong>Berimbau chamou seu moço<br>
+Berimbau chamou sinhá<br>
+Berimbau chamou seu Bimba<br>
+Berimbau chamou iaiá</strong></td>
+        <td>Berimbau called, young man<br>
+Berimbau called sinhá<br>
+Berimbau called Mr. Bimba<br>
+Berimbau called iaiá<br>
+<br>
+Berimbau called, young man<br>
+Berimbau called sinhá<br>
+Berimbau called Mr. Bimba<br>
+Berimbau called iaiá<br>
+<br>
+Berimbau called you<br>
+Berimbau called Sabiá<br>
+Berimbau called Boneco<br>
+And Paulão to play<br>
+Berimbau called<br>
+<br>
+Berimbau called, young man<br>
+Berimbau called sinhá<br>
+Berimbau called Mr. Bimba<br>
+Berimbau called iaiá<br>
+<br>
+Berimbau called Mr. Peixinho<br>
+Up to heaven to live<br>
+Master Peixinho left<br>
+With Mestre Bimba he plays<br>
+<br>
+Berimbau called, young man<br>
+Berimbau called sinhá<br>
+Berimbau called Mr. Bimba<br>
+Berimbau called iaiá<br>
+<br>
+Berimbau called for the roda<br>
+Come here to lounge<br>
+Come play capoeira<br>
+Come to my Paraná<br>
+<br>
+Berimbau called, young man<br>
+Berimbau called sinhá<br>
+Berimbau called Mr. Bimba<br>
+Berimbau called iaiá</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Sagui
-
 </figcaption>

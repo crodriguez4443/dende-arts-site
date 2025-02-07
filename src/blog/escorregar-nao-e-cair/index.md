@@ -9,94 +9,19 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Escorregar não é cair  
-**É jeito que o corpo dá**  
-  
-Escorregar não é cair  
-**É jeito que o corpo dá**  
-  
-Ás vezes eu escorrego  
-Mas é só pra disfarçar  
-  
-Escorregar não é cair  
-**É jeito que o corpo dá**  
-  
-Na roda da capoeira, olhe lá, escute bem  
-Um que vem, outro que vai  
-Um que vai, outro que vem  
-Na panela ninguém sabe  
-Lá por dentro o que é que tem  
-  
-Escorregar não é cair  
-**É jeito que o corpo dá**  
-  
-Você gosta de açaí  
-**É jeito que o corpo dá**  
-  
-Eu prefiro jatobá  
-**É jeito que o corpo dá**  
-  
-Se você nunca gingou  
-**É um jeito que o corpo dá**  
-  
-Hoje vai ter que gingar  
-**É um jeito que o corpo dá**  
-  
-Quando bate é pra matar  
-**É um jeito que o corpo dá**  
-  
-Joga lá que eu jogo cá  
-**É um jeito que o corpo dá**  
-  
-Pula lá que eu gingo cá  
-**É um jeito que o corpo dá** | Slipping is not falling  
-It's the way the body gives  
-  
-Slipping is not falling  
-It's the way the body gives  
-  
-Sometimes I slip  
-But it's just to disguise  
-  
-Slipping is not falling  
-It's the way the body gives  
-  
-In the capoeira roda, look there, listen well  
-One coming, one going  
-One going, one coming  
-Nobody knows in the pot  
-Inside, what's cooking  
-  
-Slipping is not falling  
-It's the way the body gives  
-  
-You like açaí  
-It's the way the body gives  
-  
-I prefer jatobá  
-It's the way the body gives  
-  
-If you never ginga'd  
-It's a way the body gives  
-  
-Today will have to ginga  
-It's a way the body gives  
-  
-When it hits, it's to kill  
-It's a way the body gives  
-  
-Play there, I play here  
-It's a way the body gives  
-  
-Jump there, I'll ginga here  
-It's a way the body gives |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Escorregar não é cair<br><strong>É jeito que o corpo dá</strong><br><br>Escorregar não é cair<br><strong>É jeito que o corpo dá</strong><br><br>Ás vezes eu escorrego<br>Mas é só pra disfarçar<br><br>Escorregar não é cair<br><strong>É jeito que o corpo dá</strong><br><br>Na roda da capoeira, olhe lá, escute bem<br>Um que vem, outro que vai<br>Um que vai, outro que vem<br>Na panela ninguém sabe<br>Lá por dentro o que é que tem<br><br>Escorregar não é cair<br><strong>É jeito que o corpo dá</strong><br><br>Você gosta de açaí<br><strong>É jeito que o corpo dá</strong><br><br>Eu prefiro jatobá<br><strong>É jeito que o corpo dá</strong><br><br>Se você nunca gingou<br><strong>É um jeito que o corpo dá</strong><br><br>Hoje vai ter que gingar<br><strong>É um jeito que o corpo dá</strong><br><br>Quando bate é pra matar<br><strong>É um jeito que o corpo dá</strong><br><br>Joga lá que eu jogo cá<br><strong>É um jeito que o corpo dá</strong><br><br>Pula lá que eu gingo cá<br><strong>É um jeito que o corpo dá</strong></td>
+        <td>Slipping is not falling<br>It's the way the body gives<br><br>Slipping is not falling<br>It's the way the body gives<br><br>Sometimes I slip<br>But it's just to disguise<br><br>Slipping is not falling<br>It's the way the body gives<br><br>In the capoeira roda, look there, listen well<br>One coming, one going<br>One going, one coming<br>Nobody knows in the pot<br>Inside, what's cooking<br><br>Slipping is not falling<br>It's the way the body gives<br><br>You like açaí<br>It's the way the body gives<br><br>I prefer jatobá<br>It's the way the body gives<br><br>If you never ginga'd<br>It's a way the body gives<br><br>Today will have to ginga<br>It's a way the body gives<br><br>When it hits, it's to kill<br>It's a way the body gives<br><br>Play there, I play here<br>It's a way the body gives<br><br>Jump there, I'll ginga here<br>It's a way the body gives</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HlyeZVEU_EI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

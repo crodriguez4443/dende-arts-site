@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Dona Maria cadê ioiô"
 date: "2020-11-22"
@@ -8,49 +10,56 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Dona Maria cadê ioiô  
-Dona Maria cadê iaiá  
-  
-**Dona Maria cadê ioiô  
-Dona Maria cadê iaiá**  
-  
-A roda tá começando  
-Eu não vejo ioiô chegar  
-Dona Maria respondeu  
-Ela foi fazer o jantar  
-  
-**Dona Maria cadê ioiô  
-Dona Maria cadê iaiá**  
-  
-Ioiô tá trabalhando  
-Iaiá venha pra ca  
-Quem não tem cão caça com gato  
-A roda vai começar  
-  
-**Dona Maria cadê ioiô  
-Dona Maria cadê iaiá** | Mrs. Maria where's ioiô  
-Mrs. Maria where is iaiá  
-  
-Mrs. Maria where's ioiô  
-Mrs. Maria where is iaiá  
-  
-The roda is starting  
-I don't see ioiô coming  
-Dona Maria replied  
-She went to make dinner  
-  
-Mrs. Maria where's ioiô  
-Mrs. Maria where is iaiá  
-  
-Ioiô is working  
-Iaiá come here  
-One who doesn't have a dog, hunts with a cat  
-The wheel will start  
-  
-Mrs. Maria where's ioiô  
-Mrs. Maria where is iaiá |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Dona Maria cadê ioiô<br>
+Dona Maria cadê iaiá<br>
+<br>
+<strong>Dona Maria cadê ioiô<br>
+Dona Maria cadê iaiá</strong><br>
+<br>
+A roda tá começando<br>
+Eu não vejo ioiô chegar<br>
+Dona Maria respondeu<br>
+Ela foi fazer o jantar<br>
+<br>
+<strong>Dona Maria cadê ioiô<br>
+Dona Maria cadê iaiá</strong><br>
+<br>
+Ioiô tá trabalhando<br>
+Iaiá venha pra ca<br>
+Quem não tem cão caça com gato<br>
+A roda vai começar<br>
+<br>
+<strong>Dona Maria cadê ioiô<br>
+Dona Maria cadê iaiá</strong></td>
+        <td>Mrs. Maria where's ioiô<br>
+Mrs. Maria where is iaiá<br>
+<br>
+Mrs. Maria where's ioiô<br>
+Mrs. Maria where is iaiá<br>
+<br>
+The roda is starting<br>
+I don't see ioiô coming<br>
+Dona Maria replied<br>
+She went to make dinner<br>
+<br>
+Mrs. Maria where's ioiô<br>
+Mrs. Maria where is iaiá<br>
+<br>
+Ioiô is working<br>
+Iaiá come here<br>
+One who doesn't have a dog, hunts with a cat<br>
+The wheel will start<br>
+<br>
+Mrs. Maria where's ioiô<br>
+Mrs. Maria where is iaiá</td>
+    </tr>
+</table>
 
 <figcaption>
 

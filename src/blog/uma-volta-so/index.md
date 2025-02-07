@@ -9,33 +9,40 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| O iaiá mandou dá  
-Uma volta só  
-Mandou dá, mandou dá  
-  
-**Uma volta só  
-**  
-Mandou jogar  
-  
-**Uma volta só  
-**  
-Mandou cantar  
-  
-**Uma volta só** | O iaiá ordered to give  
-One lap (around the roda)  
-Ordered to give, ordered to give  
-  
-One lap  
-  
-Ordered to play  
-  
-One lap  
-  
-Ordered to sing  
-  
-One lap |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>O iaiá mandou dá<br>
+        Uma volta só<br>
+        Mandou dá, mandou dá<br>
+        <br>
+        <strong>Uma volta só</strong><br>
+        <br>
+        Mandou jogar<br>
+        <br>
+        <strong>Uma volta só</strong><br>
+        <br>
+        Mandou cantar<br>
+        <br>
+        <strong>Uma volta só</strong></td>
+        <td>O iaiá ordered to give<br>
+        One lap (around the roda)<br>
+        Ordered to give, ordered to give<br>
+        <br>
+        One lap<br>
+        <br>
+        Ordered to play<br>
+        <br>
+        One lap<br>
+        <br>
+        Ordered to sing<br>
+        <br>
+        One lap</td>
+    </tr>
+</table>
 
 <figcaption>
 

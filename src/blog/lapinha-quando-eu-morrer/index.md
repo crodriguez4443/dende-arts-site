@@ -1,3 +1,5 @@
+Here's the formatted document:
+
 ---
 title: "Lapinha (Quando Eu Morrer)"
 date: "2021-01-22"
@@ -8,35 +10,16 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Quando eu morrer, me enterre na Lapinha  
-Quando eu morrer, me enterre na Lapinha  
-  
-Calça, culote, paletó e almofadinha  
-**Calça, culote, paletó e almofadinha**  
-  
-Adeus Bahia zum zum zum cordão de ouro  
-Eu vou partir, que mataram seu Besouro  
-  
-Ê Besouro  
-**Cordão de ouro**  
-  
-Ê Besouro  
-**Cordão de ouro** | When I die, bury me in Lapinha  
-When I die, bury me in Lapinha  
-  
-Pants, breeches, jacket and cushion  
-Pants, breeches, jacket and cushion  
-  
-Goodbye Bahia zum zum zum gold cord  
-I'm leaving, they killed your Beetle  
-  
-Ê Besouro  
-Gold chain  
-  
-Ê Besouro  
-Gold chain |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Quando eu morrer, me enterre na Lapinha<br>Quando eu morrer, me enterre na Lapinha<br><br>Calça, culote, paletó e almofadinha<br><strong>Calça, culote, paletó e almofadinha</strong><br><br>Adeus Bahia zum zum zum cordão de ouro<br>Eu vou partir, que mataram seu Besouro<br><br>Ê Besouro<br><strong>Cordão de ouro</strong><br><br>Ê Besouro<br><strong>Cordão de ouro</strong></td>
+        <td>When I die, bury me in Lapinha<br>When I die, bury me in Lapinha<br><br>Pants, breeches, jacket and cushion<br>Pants, breeches, jacket and cushion<br><br>Goodbye Bahia zum zum zum gold cord<br>I'm leaving, they killed your Beetle<br><br>Ê Besouro<br>Gold chain<br><br>Ê Besouro<br>Gold chain</td>
+    </tr>
+</table>
 
 <figcaption>
 

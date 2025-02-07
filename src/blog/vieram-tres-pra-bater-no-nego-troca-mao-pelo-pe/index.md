@@ -9,34 +9,41 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Vieram tres pra bater no nego  
-Vieram tres pra bater no nego \[some sing as chorus\]  
-Trosseram faca, chicote e facão  
-Trosseram faca, chicote e facão \[some sing as chorus\]  
-Faca na cara rasteirar no chão  
-Faca na cara rasteirar no chão\[some sing as chorus\]  
-Você não sabe que poder fazer o negô  
-Você não sabe que poder fazer o negô \[some sing as chorus\]  
-  
-Troca mão pelo pê  
-**Pê pela mao**  
-  
-Troca pe pela mão  
-**Mão pelo pe** | Three came to beat the black man  
-Three came to beat the black man  
-They brought knife, whip, and machete  
-Knife to the face sweep on the ground  
-Knife to the face sweep on the ground  
-You don't know what the black man can do  
-You don't know what the black man can do  
-  
-Exchange hand for foot  
-Foot for the hand  
-  
-Exchange foot for hand  
-Hand for the foot |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Vieram tres pra bater no nego<br>
+        Vieram tres pra bater no nego \[some sing as chorus\]<br>
+        Trosseram faca, chicote e facão<br>
+        Trosseram faca, chicote e facão \[some sing as chorus\]<br>
+        Faca na cara rasteirar no chão<br>
+        Faca na cara rasteirar no chão\[some sing as chorus\]<br>
+        Você não sabe que poder fazer o negô<br>
+        Você não sabe que poder fazer o negô \[some sing as chorus\]<br>
+        <br>
+        Troca mão pelo pê<br>
+        <strong>Pê pela mao</strong><br>
+        <br>
+        Troca pe pela mão<br>
+        <strong>Mão pelo pe</strong></td>
+        <td>Three came to beat the black man<br>
+        Three came to beat the black man<br>
+        They brought knife, whip, and machete<br>
+        Knife to the face sweep on the ground<br>
+        Knife to the face sweep on the ground<br>
+        You don't know what the black man can do<br>
+        You don't know what the black man can do<br>
+        <br>
+        Exchange hand for foot<br>
+        Foot for the hand<br>
+        <br>
+        Exchange foot for hand<br>
+        Hand for the foot</td>
+    </tr>
+</table>
 
 <figcaption>
 

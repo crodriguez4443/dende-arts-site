@@ -1,3 +1,5 @@
+Here's the formatted document:
+
 ---
 title: "Nossa casa de Angola"
 date: "2023-06-04"
@@ -9,43 +11,50 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portugese | English |
-| --- | --- |
-| Dendê O Dendê O,  
-Essa casa de Angola,  
-Areia fina, sacode a poeira,  
-Vem ver Janainha, Rainha do mar  
-  
-coro  
-**Dendê O Dendê O,  
-Essa casa de Angola,  
-Areia fina, sacode a poeira,  
-Vem ver Janainha, Rainha do mar  
-**  
-Vem ver Janainha  
-  
-**Rainha do mar  
-**  
-Vem ver Janainha  
-  
-**Rainha do mar** | Dende O Dende O,  
-This house in Angola,  
-Fine sand, shake off the dust,  
-Come see Janainha, Queen of the Sea  
-  
-coro  
-**Dende O Dende O,  
-This house in Angola,  
-Fine sand, shake off the dust,  
-Come see Janainha, Queen of the Sea**  
-  
-Come see Janainha  
-  
-**Queen of the sea**  
-  
-Come see Janainha  
-  
-**Queen of the sea** |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Dendê O Dendê O,<br>
+        Essa casa de Angola,<br>
+        Areia fina, sacode a poeira,<br>
+        Vem ver Janainha, Rainha do mar<br>
+        <br>
+        coro<br>
+        <strong>Dendê O Dendê O,<br>
+        Essa casa de Angola,<br>
+        Areia fina, sacode a poeira,<br>
+        Vem ver Janainha, Rainha do mar</strong><br>
+        <br>
+        Vem ver Janainha<br>
+        <br>
+        <strong>Rainha do mar</strong><br>
+        <br>
+        Vem ver Janainha<br>
+        <br>
+        <strong>Rainha do mar</strong></td>
+        <td>Dende O Dende O,<br>
+        This house in Angola,<br>
+        Fine sand, shake off the dust,<br>
+        Come see Janainha, Queen of the Sea<br>
+        <br>
+        coro<br>
+        <strong>Dende O Dende O,<br>
+        This house in Angola,<br>
+        Fine sand, shake off the dust,<br>
+        Come see Janainha, Queen of the Sea</strong><br>
+        <br>
+        Come see Janainha<br>
+        <br>
+        <strong>Queen of the sea</strong><br>
+        <br>
+        Come see Janainha<br>
+        <br>
+        <strong>Queen of the sea</strong></td>
+    </tr>
+</table>
 
 <figcaption>
 

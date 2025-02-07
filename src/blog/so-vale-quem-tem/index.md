@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Só Vale Quem Tem"
 date: "2021-05-23"
@@ -9,80 +11,84 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| No tempo que eu tinha dinheiro  
-Iaiá me chamava de amor  
-Agora o dinheiro acabou  
-Iaiá foi embora e me deixou  
-  
-**No tempo que eu tinha dinheiro  
-Iaiá me chamava de amor  
-Agora o dinheiro acabou  
-Iaiá foi embora e me deixou**  
-  
-Meu mestre sempre me disse  
-Na vida só vale quem tem  
-Pois agora eu não tenho dinheiro  
-Ando na vida sozinho e sem ninguém  
-  
-Os amigos que eu tinha foram embora  
-A mulher que eu amava me deixou  
-Pois agora eu só tenho a capoeira  
-Que nunca me abandonou  
-  
-E tenho o meu berimbau  
-Com ele eu faço canção  
-Quando eu estou sozinho  
-Ou triste na solidão  
-  
-No tempo que eu tinha dinheiro  
-Iaiá me chamava de amor  
-Agora o dinheiro acabou  
-Iaiá foi embora e me deixou  
-**  
-No tempo que eu tinha dinheiro  
-Iaiá me chamava de amor  
-Agora o dinheiro acabou  
-Iaiá foi embora e me deixou** | In the time when I had money  
-Iaiá called me love  
-Now the money is gone  
-Iaiá left and left me behind  
-  
-In the time when I had money  
-Iaiá called me love  
-Now the money is gone  
-Iaiá left and left me behind  
-  
-My master always told me  
-In life only those who have something matter  
-For now I have no money  
-I walk in life alone and with no one  
-  
-The friends I had left  
-The woman I loved left me  
-Because now I only have capoeira  
-That never abandoned me  
-  
-And I have my berimbau  
-With it I make songs  
-When I'm alone  
-Or sad in loneliness  
-  
-In the time when I had money  
-Iaiá called me love  
-Now the money is gone  
-Iaiá left and left me behind  
-  
-In the time when I had money  
-Iaiá called me love  
-Now the money is gone  
-Iaiá left and left me behind |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>No tempo que eu tinha dinheiro<br>
+Iaiá me chamava de amor<br>
+Agora o dinheiro acabou<br>
+Iaiá foi embora e me deixou<br>
+<br>
+<strong>No tempo que eu tinha dinheiro<br>
+Iaiá me chamava de amor<br>
+Agora o dinheiro acabou<br>
+Iaiá foi embora e me deixou</strong><br>
+<br>
+Meu mestre sempre me disse<br>
+Na vida só vale quem tem<br>
+Pois agora eu não tenho dinheiro<br>
+Ando na vida sozinho e sem ninguém<br>
+<br>
+Os amigos que eu tinha foram embora<br>
+A mulher que eu amava me deixou<br>
+Pois agora eu só tenho a capoeira<br>
+Que nunca me abandonou<br>
+<br>
+E tenho o meu berimbau<br>
+Com ele eu faço canção<br>
+Quando eu estou sozinho<br>
+Ou triste na solidão<br>
+<br>
+No tempo que eu tinha dinheiro<br>
+Iaiá me chamava de amor<br>
+Agora o dinheiro acabou<br>
+Iaiá foi embora e me deixou<br>
+<strong>No tempo que eu tinha dinheiro<br>
+Iaiá me chamava de amor<br>
+Agora o dinheiro acabou<br>
+Iaiá foi embora e me deixou</strong></td>
+        <td>In the time when I had money<br>
+Iaiá called me love<br>
+Now the money is gone<br>
+Iaiá left and left me behind<br>
+<br>
+In the time when I had money<br>
+Iaiá called me love<br>
+Now the money is gone<br>
+Iaiá left and left me behind<br>
+<br>
+My master always told me<br>
+In life only those who have something matter<br>
+For now I have no money<br>
+I walk in life alone and with no one<br>
+<br>
+The friends I had left<br>
+The woman I loved left me<br>
+Because now I only have capoeira<br>
+That never abandoned me<br>
+<br>
+And I have my berimbau<br>
+With it I make songs<br>
+When I'm alone<br>
+Or sad in loneliness<br>
+<br>
+In the time when I had money<br>
+Iaiá called me love<br>
+Now the money is gone<br>
+Iaiá left and left me behind<br>
+<br>
+In the time when I had money<br>
+Iaiá called me love<br>
+Now the money is gone<br>
+Iaiá left and left me behind</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Mestre Barrão
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4KjmNzMl31g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

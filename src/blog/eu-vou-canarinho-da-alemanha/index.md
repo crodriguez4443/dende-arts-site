@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Eu Vou (Canarinho da Alemanha)"
 date: "2020-12-22"
@@ -8,106 +10,112 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Eu vou, encontrar só  
-Canarinho da Alemanha quem matou meu curió  
-  
-**Eu vou, encontrar só  
-Canarinho da Alemanha quem matou meu curió**  
-  
-Dizem que joga Capoeira  
-Mas o mestre é o melhor  
-Mas o que quero saber  
-É quem matou meu curió  
-Mas eu vou  
-  
-**Eu vou, encontrar só  
-Canarinho da Alemanha quem matou meu curió**  
-  
-Procurei nas Alagoas  
-Bem depois de Maceió  
-Procurei lá na Bahia  
-Cachoeira e Tororó  
-Mas eu vou  
-  
-**Eu vou, encontrar só  
-Canarinho da Alemanha quem matou meu curió**  
-  
-Dizem que a lua tem segredo  
-Mas quem sabe é o clarão do sol  
-Se ela não me responder  
-Eu vou perguntar ao berimbau  
-Mas eu vou  
-  
-**Eu vou, encontrar só  
-Canarinho da Alemanha quem matou meu curió**  
-  
-Sei que todo marinheiro  
-Tem que desatar o nó  
-Mas o que eu quero saber  
-É quem matou meu curió  
-Mas eu vou  
-  
-**Eu vou, encontrar só  
-Canarinho da Alemanha quem matou meu curió**  
-  
-Eu vou procurar sozinho  
-O rastro do curió  
-Sei que quem tem fé em Deus  
-Nessa vida não está só  
-**  
-Eu vou, encontrar só  
-Canarinho da Alemanha quem matou meu curió** | I will find  
-The German canary who killed my finch  
-  
-I will find  
-The German canary who killed my finch  
-  
-They say he plays Capoeira  
-But the master is the best  
-But what I want to know  
-Is who killed my finch  
-But I will  
-  
-I will find  
-The German canary who killed my finch  
-  
-I looked in Alagoas  
-Well beyond Maceió  
-I searched over in Bahia  
-Cachoeira and Tororó  
-But I will  
-  
-I will find  
-The German canary who killed my finch  
-  
-They say the moon has a secret  
-But who knows is the glare of the sun  
-If she doesn't answer me  
-I'm going to ask the berimbau  
-But I will  
-  
-I will find  
-The German canary who killed my finch  
-  
-I know that every sailor  
-Has to untie the knot  
-But what I want to know  
-Is who killed my finch  
-But I will  
-  
-I will find  
-The German canary who killed my finch  
-  
-I'll search alone  
-The trail of the finch  
-I know that those who have faith in God  
-In this life are never alone  
-But I will  
-  
-I will find  
-The German canary who killed my finch |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Eu vou, encontrar só<br>
+        Canarinho da Alemanha quem matou meu curió<br>
+        <br>
+        <strong>Eu vou, encontrar só<br>
+        Canarinho da Alemanha quem matou meu curió</strong><br>
+        <br>
+        Dizem que joga Capoeira<br>
+        Mas o mestre é o melhor<br>
+        Mas o que quero saber<br>
+        É quem matou meu curió<br>
+        Mas eu vou<br>
+        <br>
+        <strong>Eu vou, encontrar só<br>
+        Canarinho da Alemanha quem matou meu curió</strong><br>
+        <br>
+        Procurei nas Alagoas<br>
+        Bem depois de Maceió<br>
+        Procurei lá na Bahia<br>
+        Cachoeira e Tororó<br>
+        Mas eu vou<br>
+        <br>
+        <strong>Eu vou, encontrar só<br>
+        Canarinho da Alemanha quem matou meu curió</strong><br>
+        <br>
+        Dizem que a lua tem segredo<br>
+        Mas quem sabe é o clarão do sol<br>
+        Se ela não me responder<br>
+        Eu vou perguntar ao berimbau<br>
+        Mas eu vou<br>
+        <br>
+        <strong>Eu vou, encontrar só<br>
+        Canarinho da Alemanha quem matou meu curió</strong><br>
+        <br>
+        Sei que todo marinheiro<br>
+        Tem que desatar o nó<br>
+        Mas o que eu quero saber<br>
+        É quem matou meu curió<br>
+        Mas eu vou<br>
+        <br>
+        <strong>Eu vou, encontrar só<br>
+        Canarinho da Alemanha quem matou meu curió</strong><br>
+        <br>
+        Eu vou procurar sozinho<br>
+        O rastro do curió<br>
+        Sei que quem tem fé em Deus<br>
+        Nessa vida não está só<br>
+        <strong>Eu vou, encontrar só<br>
+        Canarinho da Alemanha quem matou meu curió</strong></td>
+        <td>I will find<br>
+        The German canary who killed my finch<br>
+        <br>
+        I will find<br>
+        The German canary who killed my finch<br>
+        <br>
+        They say he plays Capoeira<br>
+        But the master is the best<br>
+        But what I want to know<br>
+        Is who killed my finch<br>
+        But I will<br>
+        <br>
+        I will find<br>
+        The German canary who killed my finch<br>
+        <br>
+        I looked in Alagoas<br>
+        Well beyond Maceió<br>
+        I searched over in Bahia<br>
+        Cachoeira and Tororó<br>
+        But I will<br>
+        <br>
+        I will find<br>
+        The German canary who killed my finch<br>
+        <br>
+        They say the moon has a secret<br>
+        But who knows is the glare of the sun<br>
+        If she doesn't answer me<br>
+        I'm going to ask the berimbau<br>
+        But I will<br>
+        <br>
+        I will find<br>
+        The German canary who killed my finch<br>
+        <br>
+        I know that every sailor<br>
+        Has to untie the knot<br>
+        But what I want to know<br>
+        Is who killed my finch<br>
+        But I will<br>
+        <br>
+        I will find<br>
+        The German canary who killed my finch<br>
+        <br>
+        I'll search alone<br>
+        The trail of the finch<br>
+        I know that those who have faith in God<br>
+        In this life are never alone<br>
+        But I will<br>
+        <br>
+        I will find<br>
+        The German canary who killed my finch</td>
+    </tr>
+</table>
 
 <figcaption>
 

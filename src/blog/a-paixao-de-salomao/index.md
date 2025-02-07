@@ -1,3 +1,5 @@
+Here's the formatted markdown document according to the specifications:
+
 ---
 title: "A Paixão De Salomão"
 date: "2020-09-22"
@@ -10,140 +12,149 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Salomao cade a rainha de Sabá  
-Salomao cade a rainha de Sabá  
-Que voce queria tanto  
-Pro seu reino reinar  
-  
-**Salomao cade a rainha de Sabá  
-Salomao cade a rainha de Sabá  
-Que voce queria tanto  
-Pro seu reino reinar**  
-  
-Rei salomao  
-Era muito admirado  
-Na antiguidade  
-E na capoeira do passado  
-  
-**Salomao cade a rainha de Sabá  
-Salomao cade a rainha de Sabá  
-Que voce queria tanto  
-Pro seu reino reinar**  
-  
-O seu reinado  
-Fruto de grandes tyranias  
-Era filho de davi  
-Comandou com sabedoria  
-  
-**Salomao cade a rainha de Sabá  
-Salomao cade a rainha de Sabá  
-Que voce queria tanto  
-Pro seu reino reinar**  
-  
-Uma negra africana  
-Por nome rainha de Sabá  
-Já enfrentou muitas guerras  
-Ninguem pode dominar  
-  
-**Salomao cade a rainha de Sabá  
-Salomao cade a rainha de Sabá  
-Que voce queria tanto  
-Pro seu reino reinar**  
-  
-A rainha de Sabá  
-Quando encontrou rei salomao  
-Viu nele um grande homem  
-Que conquistou se coracao  
-  
-**Salomao cade a rainha de Sabá  
-Salomao cade a rainha de Sabá  
-Que voce queria tanto  
-Pro seu reino reinar**  
-  
-Seu mestre foi salomao  
-Seu bimba cantava assim  
-Que a estrela de seis pontas  
-Seu brilho nunca tem fim  
-  
-**Salomao cade a rainha de Sabá  
-Salomao cade a rainha de Sabá  
-Que voce queria tanto  
-Pro seu reino reinar**  
-  
-Rainha de Sabá  
-Tinha muita valentia  
-Feito maria doze homens  
-Que vivia na Bahia | Salomao where's the Queen of Saba  
-Salomao where's the Queen of Saba  
-That you wanted so much  
-For your kingdom to reign  
-  
-Salomao where's the Queen of Saba  
-Salomao where's the Queen of Saba  
-That you wanted so much  
-For your kingdom to reign  
-  
-King Salomao  
-It was very admired  
-In ancient times  
-And in the capoeira of the past  
-  
-Salomao where's the Queen of Saba  
-Salomao where's the Queen of Saba  
-That you wanted so much  
-For your kingdom to reign  
-  
-Your reign  
-Fruit of great tyranias  
-Was david's son  
-Commanded with wisdom  
-  
-Salomao where's the Queen of Saba  
-Salomao where's the Queen of Saba  
-That you wanted so much  
-For your kingdom to reign  
-  
-A black African woman  
-By name Queen of Saba  
-Has faced many wars  
-No one can dominate  
-  
-Salomao where's the Queen of Saba  
-Salomao where's the Queen of Saba  
-That you wanted so much  
-For your kingdom to reign  
-  
-The Queen of Saba  
-When he met King Salomao  
-He saw a great man in him  
-Who won your heart  
-  
-Salomao Cade the Queen of Saba  
-Salomao Cade the Queen of Saba  
-That you wanted so much  
-For your kingdom to reign  
-  
-Your master was salomao  
-Your bimba sang like that  
-That the six-pointed star  
-Your shine never ends  
-  
-Salomao where's the Queen of Saba  
-Salomao where's the Queen of Saba  
-That you wanted so much  
-For your kingdom to reign  
-  
-Queen of Sheba  
-I was very brave  
-Made Mary Twelve Men  
-Who lived in Bahia |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Salomao cade a rainha de Sabá<br>
+            Salomao cade a rainha de Sabá<br>
+            Que voce queria tanto<br>
+            Pro seu reino reinar<br>
+            <br>
+            <strong>Salomao cade a rainha de Sabá<br>
+            Salomao cade a rainha de Sabá<br>
+            Que voce queria tanto<br>
+            Pro seu reino reinar</strong><br>
+            <br>
+            Rei salomao<br>
+            Era muito admirado<br>
+            Na antiguidade<br>
+            E na capoeira do passado<br>
+            <br>
+            <strong>Salomao cade a rainha de Sabá<br>
+            Salomao cade a rainha de Sabá<br>
+            Que voce queria tanto<br>
+            Pro seu reino reinar</strong><br>
+            <br>
+            O seu reinado<br>
+            Fruto de grandes tyranias<br>
+            Era filho de davi<br>
+            Comandou com sabedoria<br>
+            <br>
+            <strong>Salomao cade a rainha de Sabá<br>
+            Salomao cade a rainha de Sabá<br>
+            Que voce queria tanto<br>
+            Pro seu reino reinar</strong><br>
+            <br>
+            Uma negra africana<br>
+            Por nome rainha de Sabá<br>
+            Já enfrentou muitas guerras<br>
+            Ninguem pode dominar<br>
+            <br>
+            <strong>Salomao cade a rainha de Sabá<br>
+            Salomao cade a rainha de Sabá<br>
+            Que voce queria tanto<br>
+            Pro seu reino reinar</strong><br>
+            <br>
+            A rainha de Sabá<br>
+            Quando encontrou rei salomao<br>
+            Viu nele um grande homem<br>
+            Que conquistou se coracao<br>
+            <br>
+            <strong>Salomao cade a rainha de Sabá<br>
+            Salomao cade a rainha de Sabá<br>
+            Que voce queria tanto<br>
+            Pro seu reino reinar</strong><br>
+            <br>
+            Seu mestre foi salomao<br>
+            Seu bimba cantava assim<br>
+            Que a estrela de seis pontas<br>
+            Seu brilho nunca tem fim<br>
+            <br>
+            <strong>Salomao cade a rainha de Sabá<br>
+            Salomao cade a rainha de Sabá<br>
+            Que voce queria tanto<br>
+            Pro seu reino reinar</strong><br>
+            <br>
+            Rainha de Sabá<br>
+            Tinha muita valentia<br>
+            Feito maria doze homens<br>
+            Que vivia na Bahia
+        </td>
+        <td>
+            Salomao where's the Queen of Saba<br>
+            Salomao where's the Queen of Saba<br>
+            That you wanted so much<br>
+            For your kingdom to reign<br>
+            <br>
+            Salomao where's the Queen of Saba<br>
+            Salomao where's the Queen of Saba<br>
+            That you wanted so much<br>
+            For your kingdom to reign<br>
+            <br>
+            King Salomao<br>
+            It was very admired<br>
+            In ancient times<br>
+            And in the capoeira of the past<br>
+            <br>
+            Salomao where's the Queen of Saba<br>
+            Salomao where's the Queen of Saba<br>
+            That you wanted so much<br>
+            For your kingdom to reign<br>
+            <br>
+            Your reign<br>
+            Fruit of great tyranias<br>
+            Was david's son<br>
+            Commanded with wisdom<br>
+            <br>
+            Salomao where's the Queen of Saba<br>
+            Salomao where's the Queen of Saba<br>
+            That you wanted so much<br>
+            For your kingdom to reign<br>
+            <br>
+            A black African woman<br>
+            By name Queen of Saba<br>
+            Has faced many wars<br>
+            No one can dominate<br>
+            <br>
+            Salomao where's the Queen of Saba<br>
+            Salomao where's the Queen of Saba<br>
+            That you wanted so much<br>
+            For your kingdom to reign<br>
+            <br>
+            The Queen of Saba<br>
+            When he met King Salomao<br>
+            He saw a great man in him<br>
+            Who won your heart<br>
+            <br>
+            Salomao Cade the Queen of Saba<br>
+            Salomao Cade the Queen of Saba<br>
+            That you wanted so much<br>
+            For your kingdom to reign<br>
+            <br>
+            Your master was salomao<br>
+            Your bimba sang like that<br>
+            That the six-pointed star<br>
+            Your shine never ends<br>
+            <br>
+            Salomao where's the Queen of Saba<br>
+            Salomao where's the Queen of Saba<br>
+            That you wanted so much<br>
+            For your kingdom to reign<br>
+            <br>
+            Queen of Sheba<br>
+            I was very brave<br>
+            Made Mary Twelve Men<br>
+            Who lived in Bahia
+        </td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Mestre Charme
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ksxleqr0vGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

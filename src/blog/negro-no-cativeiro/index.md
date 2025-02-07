@@ -8,110 +8,115 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Negro no cativeiro, êe  
-Fez a corrente arrebentar  
-Negro no cativeiro, êe  
-No cativeiro êe, no cativeiro êa  
-  
-Negro no cativeiro, êe  
-Fez a corrente arrebentar  
-Negro no cativeiro, êe  
-No cativeiro êe, no cativeiro êa  
-  
-Bota o negro lá no tronco  
-Que a cultura vem na dor  
-O negro é muito mais valente  
-Que a chibata do feitor  
-  
-Negro no cativeiro, êe  
-Fez a corrente arrebentar  
-Negro no cativeiro, êe  
-No cativeiro êe, no cativeiro êa  
-  
-Prende o negro na senzala  
-Que ele planta sua semente  
-Fez nascer a capoeira  
-Orgulho de nossa gente  
-  
-Negro no cativeiro, êe  
-Fez a corrente arrebentar  
-Negro no cativeiro, êe  
-No cativeiro êe, no cativeiro êa  
-  
-Negro escravo se rebela  
-E queria novos ares  
-Escapando com Zumbi  
-Pro Quilombo dos Palmares  
-  
-Negro no cativeiro, êe  
-Fez a corrente arrebentar  
-Negro no cativeiro, êe  
-No cativeiro êe, no cativeiro êa  
-  
-Negro ainda sofria  
-Mesmo com sua libertação  
-Besouro Cordão Ouro  
-Deu sua contribuição  
-  
-Negro no cativeiro, êe  
-Fez a corrente arrebentar  
-Negro no cativeiro, êe  
-No cativeiro êe, no cativeiro êa | Black in captivity, êe  
-Made the chain break  
-Black in captivity, êe  
-In captivity êe, in captivity êa  
-  
-Black in captivity, êe  
-Made the chain break  
-Black in captivity, êe  
-In captivity êe, in captivity êa  
-  
-Put the black man against the trunk  
-That culture comes in pain  
-The black man is much more valiant  
-That the overseer's whip  
-  
-Black in captivity, êe  
-Made the chain break  
-Black in captivity, êe  
-In captivity êe, in captivity êa  
-  
-Trap the black man in the slave quarters  
-And he will plant his seed  
-Capoeira was born  
-Pride of our people  
-  
-Black in captivity, êe  
-Made the chain break  
-Black in captivity, êe  
-In captivity êe, in captivity êa  
-  
-Black slave rebels  
-And he wanted new airs  
-Escaping with Zumbi  
-To Quilombo dos Palmares  
-  
-Black in captivity, êe  
-Made the chain break  
-Black in captivity, êe  
-In captivity êe, in captivity êa  
-  
-Black people still suffered  
-Even with their release  
-Besouro Cordão de Ouro  
-Made his contribution  
-  
-Black in captivity, êe  
-Made the chain break  
-Black in captivity, êe  
-In captivity êe, in captivity êa |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Negro no cativeiro, êe<br>
+Fez a corrente arrebentar<br>
+Negro no cativeiro, êe<br>
+No cativeiro êe, no cativeiro êa<br>
+<br>
+Negro no cativeiro, êe<br>
+Fez a corrente arrebentar<br>
+Negro no cativeiro, êe<br>
+No cativeiro êe, no cativeiro êa<br>
+<br>
+Bota o negro lá no tronco<br>
+Que a cultura vem na dor<br>
+O negro é muito mais valente<br>
+Que a chibata do feitor<br>
+<br>
+Negro no cativeiro, êe<br>
+Fez a corrente arrebentar<br>
+Negro no cativeiro, êe<br>
+No cativeiro êe, no cativeiro êa<br>
+<br>
+Prende o negro na senzala<br>
+Que ele planta sua semente<br>
+Fez nascer a capoeira<br>
+Orgulho de nossa gente<br>
+<br>
+Negro no cativeiro, êe<br>
+Fez a corrente arrebentar<br>
+Negro no cativeiro, êe<br>
+No cativeiro êe, no cativeiro êa<br>
+<br>
+Negro escravo se rebela<br>
+E queria novos ares<br>
+Escapando com Zumbi<br>
+Pro Quilombo dos Palmares<br>
+<br>
+Negro no cativeiro, êe<br>
+Fez a corrente arrebentar<br>
+Negro no cativeiro, êe<br>
+No cativeiro êe, no cativeiro êa<br>
+<br>
+Negro ainda sofria<br>
+Mesmo com sua libertação<br>
+Besouro Cordão Ouro<br>
+Deu sua contribuição<br>
+<br>
+Negro no cativeiro, êe<br>
+Fez a corrente arrebentar<br>
+Negro no cativeiro, êe<br>
+No cativeiro êe, no cativeiro êa</td>
+        <td>Black in captivity, êe<br>
+Made the chain break<br>
+Black in captivity, êe<br>
+In captivity êe, in captivity êa<br>
+<br>
+Black in captivity, êe<br>
+Made the chain break<br>
+Black in captivity, êe<br>
+In captivity êe, in captivity êa<br>
+<br>
+Put the black man against the trunk<br>
+That culture comes in pain<br>
+The black man is much more valiant<br>
+That the overseer's whip<br>
+<br>
+Black in captivity, êe<br>
+Made the chain break<br>
+Black in captivity, êe<br>
+In captivity êe, in captivity êa<br>
+<br>
+Trap the black man in the slave quarters<br>
+And he will plant his seed<br>
+Capoeira was born<br>
+Pride of our people<br>
+<br>
+Black in captivity, êe<br>
+Made the chain break<br>
+Black in captivity, êe<br>
+In captivity êe, in captivity êa<br>
+<br>
+Black slave rebels<br>
+And he wanted new airs<br>
+Escaping with Zumbi<br>
+To Quilombo dos Palmares<br>
+<br>
+Black in captivity, êe<br>
+Made the chain break<br>
+Black in captivity, êe<br>
+In captivity êe, in captivity êa<br>
+<br>
+Black people still suffered<br>
+Even with their release<br>
+Besouro Cordão de Ouro<br>
+Made his contribution<br>
+<br>
+Black in captivity, êe<br>
+Made the chain break<br>
+Black in captivity, êe<br>
+In captivity êe, in captivity êa</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Gordinho
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1A7sikuC6KA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

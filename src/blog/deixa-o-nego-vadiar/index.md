@@ -9,47 +9,54 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| O nego tá vadiando  
-Deixa o negro vadiar  
-  
-**O nego tá vadiando  
-Deixa o nego vadiar**  
-  
-Vadeia, vadeia, vadeia nego  
-**Deixa vadiar**  
-  
-Vadeia, vadeia, meu mano  
-**Deixa vadiar**  
-  
-Vadeia, vadeia, vadeia nego  
-**Deixa vadiar**  
-  
-Vadeia, vadeia, meu Mestre  
-**Deixa vadiar**  
-  
-Vadeia, vadeia, tô vadiando  
-**Deixa vadiar** | The black man's is playing  
-Let him play  
-  
-The black man's is playing  
-Let him play  
-  
-Play, play, play man  
-Let him play  
-  
-Play, play, play my brother  
-Let him play  
-  
-Play, play, play man  
-Let him play  
-  
-Play, play, my master  
-Let him play  
-  
-Play, play, I'm playing  
-Let him play |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>O nego tá vadiando<br>
+        Deixa o negro vadiar<br>
+        <br>
+        <strong>O nego tá vadiando<br>
+        Deixa o nego vadiar</strong><br>
+        <br>
+        Vadeia, vadeia, vadeia nego<br>
+        <strong>Deixa vadiar</strong><br>
+        <br>
+        Vadeia, vadeia, meu mano<br>
+        <strong>Deixa vadiar</strong><br>
+        <br>
+        Vadeia, vadeia, vadeia nego<br>
+        <strong>Deixa vadiar</strong><br>
+        <br>
+        Vadeia, vadeia, meu Mestre<br>
+        <strong>Deixa vadiar</strong><br>
+        <br>
+        Vadeia, vadeia, tô vadiando<br>
+        <strong>Deixa vadiar</strong></td>
+        <td>The black man's is playing<br>
+        Let him play<br>
+        <br>
+        The black man's is playing<br>
+        Let him play<br>
+        <br>
+        Play, play, play man<br>
+        Let him play<br>
+        <br>
+        Play, play, play my brother<br>
+        Let him play<br>
+        <br>
+        Play, play, play man<br>
+        Let him play<br>
+        <br>
+        Play, play, my master<br>
+        Let him play<br>
+        <br>
+        Play, play, I'm playing<br>
+        Let him play</td>
+    </tr>
+</table>
 
 <figcaption>
 

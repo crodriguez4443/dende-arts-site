@@ -9,29 +9,26 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| chama o bombeiro que isso aqui vai pegar fogo  
-  
-**chama o bombeiro que isso aqui vai pegar fogo**  
-  
-Vai pegar  
-  
-**Vai pegar fogo**  
-  
-Vai pegar  
-  
-**Vai pegar fogo** | Call the fireman because this here will catch fire  
-  
-**Call the fireman because this here will catch fire**  
-  
-will catch   
-  
-**will catch fire**  
-  
-will catch   
-  
-**will catch fire** |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>chama o bombeiro que isso aqui vai pegar fogo<br>
+<strong>chama o bombeiro que isso aqui vai pegar fogo</strong><br>
+Vai pegar<br>
+<strong>Vai pegar fogo</strong><br>
+Vai pegar<br>
+<strong>Vai pegar fogo</strong></td>
+        <td>Call the fireman because this here will catch fire<br>
+<strong>Call the fireman because this here will catch fire</strong><br>
+will catch<br>
+<strong>will catch fire</strong><br>
+will catch<br>
+<strong>will catch fire</strong></td>
+    </tr>
+</table>
 
 <figcaption>
 

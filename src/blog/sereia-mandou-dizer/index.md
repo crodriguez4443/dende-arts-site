@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Sereia Mandou Dizer"
 date: "2021-03-30"
@@ -8,33 +10,40 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Sereia mandou dizer  
-Sereia mandou falar  
-Que no mar tem muita areia  
-Tem muita areia no mar  
-  
-**Tem, tem, tem areia  
-Tem, tem, tem areia do mar**  
-  
-Tem, tem, tem areia  
-Tem, tem, tem areia do mar  
-  
-**Tem, tem, tem areia  
-Tem, tem, tem areia do mar** | Mermaid ordered to tell  
-Mermaid told to say  
-That there is a lot of sand in the sea  
-There is a lot of sand in the sea  
-  
-There is, there is, there is sand  
-There is, there is, there is sea sand  
-  
-There is, there is, there is sand  
-There is, there is, there is sea sand  
-  
-There is, there is, there is sand  
-There is, there is, there is sea sand |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Sereia mandou dizer<br>
+        Sereia mandou falar<br>
+        Que no mar tem muita areia<br>
+        Tem muita areia no mar<br>
+        <br>
+        <strong>Tem, tem, tem areia<br>
+        Tem, tem, tem areia do mar</strong><br>
+        <br>
+        Tem, tem, tem areia<br>
+        Tem, tem, tem areia do mar<br>
+        <br>
+        <strong>Tem, tem, tem areia<br>
+        Tem, tem, tem areia do mar</strong></td>
+        <td>Mermaid ordered to tell<br>
+        Mermaid told to say<br>
+        That there is a lot of sand in the sea<br>
+        There is a lot of sand in the sea<br>
+        <br>
+        There is, there is, there is sand<br>
+        There is, there is, there is sea sand<br>
+        <br>
+        There is, there is, there is sand<br>
+        There is, there is, there is sea sand<br>
+        <br>
+        There is, there is, there is sand<br>
+        There is, there is, there is sea sand</td>
+    </tr>
+</table>
 
 <figcaption>
 

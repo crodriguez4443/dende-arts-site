@@ -8,49 +8,56 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Adeus Santo Amaro  
-Vou ver Lampião ja vou  
-vou ver Lampião ja vou  
-Eu vou ver Lampião ja vou  
-  
-**Adeus Santo Amaro  
-Vou ver Lampião ja vou**  
-  
-Vou ver Lampião ja vou  
-vou ver Lampião ja vou  
-  
-**Adeus Santo Amaro  
-Vou ver Lampião ja vou**  
-  
-Adeus Santo Amaro  
-Vou ver Lampião ja vou  
-vou ver Lampião ja vou  
-Eu vou ver Lampião ja vou  
-  
-**Adeus Santo Amaro  
-Vou ver Lampião ja vou** | Goodbye Santo Amaro  
-I will see Lampião I (will) go  
-I will see Lampião I (will) go  
-I will see Lampião I (will) go  
-  
-Goodbye Santo Amaro  
-I will see Lampião I (will) go  
-  
-I will see Lampião I (will) go  
-I will see Lampião I (will) go  
-  
-Goodbye Santo Amaro  
-I will see Lampião I (will) go  
-  
-Goodbye Santo Amaro  
-I will see Lampião I (will) go  
-I will see Lampião I (will) go  
-I will see Lampião I (will) go  
-  
-Goodbye Santo Amaro  
-I will see Lampião I (will) go |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Adeus Santo Amaro<br>
+        Vou ver Lampião ja vou<br>
+        vou ver Lampião ja vou<br>
+        Eu vou ver Lampião ja vou<br>
+        <br>
+        <strong>Adeus Santo Amaro<br>
+        Vou ver Lampião ja vou</strong><br>
+        <br>
+        Vou ver Lampião ja vou<br>
+        vou ver Lampião ja vou<br>
+        <br>
+        <strong>Adeus Santo Amaro<br>
+        Vou ver Lampião ja vou</strong><br>
+        <br>
+        Adeus Santo Amaro<br>
+        Vou ver Lampião ja vou<br>
+        vou ver Lampião ja vou<br>
+        Eu vou ver Lampião ja vou<br>
+        <br>
+        <strong>Adeus Santo Amaro<br>
+        Vou ver Lampião ja vou</strong></td>
+        <td>Goodbye Santo Amaro<br>
+        I will see Lampião I (will) go<br>
+        I will see Lampião I (will) go<br>
+        I will see Lampião I (will) go<br>
+        <br>
+        Goodbye Santo Amaro<br>
+        I will see Lampião I (will) go<br>
+        <br>
+        I will see Lampião I (will) go<br>
+        I will see Lampião I (will) go<br>
+        <br>
+        Goodbye Santo Amaro<br>
+        I will see Lampião I (will) go<br>
+        <br>
+        Goodbye Santo Amaro<br>
+        I will see Lampião I (will) go<br>
+        I will see Lampião I (will) go<br>
+        I will see Lampião I (will) go<br>
+        <br>
+        Goodbye Santo Amaro<br>
+        I will see Lampião I (will) go</td>
+    </tr>
+</table>
 
 <figcaption>
 

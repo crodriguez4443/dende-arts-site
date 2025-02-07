@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Eu Fui Na Mata"
 date: "2020-11-29"
@@ -8,29 +10,36 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Eu fui na mata pegar  
-Madeira pro meu gunga fazer  
-Esperei quinze dias secar  
-Pra depois preparar  
-Berimbau pra você  
-  
-**Eu fui na mata pegar  
-Madeira pro meu gunga fazer  
-Esperei quinze dias secar  
-Pra depois preparar  
-Berimbau pra você** | I went to the woods to get  
-Wood to make my gunga  
-I waited fifteen days for it to dry  
-To then prepare  
-A berimbau for you  
-  
-I went to the woods to get  
-Wood to make my gunga  
-I waited fifteen days for it to dry  
-To then prepare  
-A berimbau for you |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Eu fui na mata pegar<br>
+Madeira pro meu gunga fazer<br>
+Esperei quinze dias secar<br>
+Pra depois preparar<br>
+Berimbau pra você<br>
+<br>
+<strong>Eu fui na mata pegar<br>
+Madeira pro meu gunga fazer<br>
+Esperei quinze dias secar<br>
+Pra depois preparar<br>
+Berimbau pra você</strong></td>
+        <td>I went to the woods to get<br>
+Wood to make my gunga<br>
+I waited fifteen days for it to dry<br>
+To then prepare<br>
+A berimbau for you<br>
+<br>
+I went to the woods to get<br>
+Wood to make my gunga<br>
+I waited fifteen days for it to dry<br>
+To then prepare<br>
+A berimbau for you</td>
+    </tr>
+</table>
 
 <figcaption>
 

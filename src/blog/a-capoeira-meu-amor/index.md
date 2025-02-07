@@ -9,37 +9,44 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Porguese | English |
-| --- | --- |
-| Você se lembra de mim  
-Eu nunca vi você tão só  
-O meu amor, o meu xodó  
-minha Bahia  
-  
-**Você se lembra de mim  
-Eu nunca vi você tão só  
-O meu amor, o meu xodo  
-minha Bahia**  
-  
-A Capoeira meu Amor  
-A Capoeira meu Amor  
-  
-**A Capoeira meu Amor  
-A Capoeira meu Amor** | You remember me  
-I’ve never seen you so lonely  
-My love, my darling  
-my Bahia  
-  
-You remember me  
-I’ve never seen you so lonely  
-My love, my exodus  
-my Bahia  
-  
-Capoeira My Love  
-Capoeira my love  
-  
-Capoeira My Love  
-Capoeira my love |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Você se lembra de mim<br>
+        Eu nunca vi você tão só<br>
+        O meu amor, o meu xodó<br>
+        minha Bahia<br>
+        <br>
+        <strong>Você se lembra de mim<br>
+        Eu nunca vi você tão só<br>
+        O meu amor, o meu xodo<br>
+        minha Bahia</strong><br>
+        <br>
+        A Capoeira meu Amor<br>
+        A Capoeira meu Amor<br>
+        <br>
+        <strong>A Capoeira meu Amor<br>
+        A Capoeira meu Amor</strong></td>
+        <td>You remember me<br>
+        I've never seen you so lonely<br>
+        My love, my darling<br>
+        my Bahia<br>
+        <br>
+        You remember me<br>
+        I've never seen you so lonely<br>
+        My love, my exodus<br>
+        my Bahia<br>
+        <br>
+        Capoeira My Love<br>
+        Capoeira my love<br>
+        <br>
+        Capoeira My Love<br>
+        Capoeira my love</td>
+    </tr>
+</table>
 
 <figcaption>
 

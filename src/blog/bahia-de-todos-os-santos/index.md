@@ -1,3 +1,5 @@
+Here's the formatted document:
+
 ---
 title: "Bahia de Todos os Santos"
 date: "2020-10-03"
@@ -8,65 +10,72 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Bahia de todos os santos  
-Bahia dos orixás  
-Bahia de menininha  
-Menininha do gantois  
-  
-Bahia de todos os santos  
-Bahia dos orixás  
-Bahia de menininha  
-Menininha do gantois  
-  
-Bahia dos angoleiros  
-Bahia dos regional  
-Bahia dos angoleiros  
-No mercado popular  
-  
-Bahia dos angoleiros  
-Bahia dos regional  
-Bahia dos angoleiros  
-No mercado popular  
-  
-Bahia de João Pequeno  
-Bahia de Curió  
-Bahia de Boca Rica  
-Mestre Lua de Bobó  
-  
-Bahia de João Pequeno  
-Bahia de Curió  
-Bahia de Boca Rica  
-Mestre Lua de Bobó | All Saint's Bahia  
-The Orixás Bahia  
-Little girl's Bahia  
-Little girl of the gantois  
-  
-All Saint's Bahia  
-The Orixás Bahia  
-Little girl's Bahia  
-Little girl of the gantois  
-  
-The angoleiros' Bahia  
-The regional's Bahia  
-The angoleiro's Bahia  
-At the public market  
-  
-The angoleiros' Bahia  
-The regional's Bahia  
-The angoleiro's Bahia  
-At the public market  
-  
-João Pequeno's Bahia  
-Curió's Bahia  
-Boca Rica's Bahia  
-Mestre Lua de Bobó's Bahia  
-  
-João Pequeno's Bahia  
-Curió's Bahia  
-Boca Rica's Bahia  
-Mestre Lua de Bobó's Bahia |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Bahia de todos os santos<br>
+Bahia dos orixás<br>
+Bahia de menininha<br>
+Menininha do gantois<br>
+<br>
+Bahia de todos os santos<br>
+Bahia dos orixás<br>
+Bahia de menininha<br>
+Menininha do gantois<br>
+<br>
+Bahia dos angoleiros<br>
+Bahia dos regional<br>
+Bahia dos angoleiros<br>
+No mercado popular<br>
+<br>
+Bahia dos angoleiros<br>
+Bahia dos regional<br>
+Bahia dos angoleiros<br>
+No mercado popular<br>
+<br>
+Bahia de João Pequeno<br>
+Bahia de Curió<br>
+Bahia de Boca Rica<br>
+Mestre Lua de Bobó<br>
+<br>
+Bahia de João Pequeno<br>
+Bahia de Curió<br>
+Bahia de Boca Rica<br>
+Mestre Lua de Bobó</td>
+        <td>All Saint's Bahia<br>
+The Orixás Bahia<br>
+Little girl's Bahia<br>
+Little girl of the gantois<br>
+<br>
+All Saint's Bahia<br>
+The Orixás Bahia<br>
+Little girl's Bahia<br>
+Little girl of the gantois<br>
+<br>
+The angoleiros' Bahia<br>
+The regional's Bahia<br>
+The angoleiro's Bahia<br>
+At the public market<br>
+<br>
+The angoleiros' Bahia<br>
+The regional's Bahia<br>
+The angoleiro's Bahia<br>
+At the public market<br>
+<br>
+João Pequeno's Bahia<br>
+Curió's Bahia<br>
+Boca Rica's Bahia<br>
+Mestre Lua de Bobó's Bahia<br>
+<br>
+João Pequeno's Bahia<br>
+Curió's Bahia<br>
+Boca Rica's Bahia<br>
+Mestre Lua de Bobó's Bahia</td>
+    </tr>
+</table>
 
 <figcaption>
 

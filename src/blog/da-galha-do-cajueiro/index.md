@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Da Galha do Cajueiro"
 date: "2020-11-17"
@@ -8,43 +10,50 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Cuidado pra não cair  
-**Da galha do cajueiro**  
-  
-Olha o capoeira\* é danado e mandingueiro  
-Mesmo assim ele caiu  
-**Da galha do cajueiro**  
-  
-Já é tempo de caju eu vou subir no cajueiro  
-Mas cuidado pra não cair  
-**Da galha do cajueiro**  
-  
-Ê moço esperto é jogador de capoeira  
-Mesmo assim ele caiu  
-**Da galha do cajueiro**  
-  
-Meu amigo e valente e guerreiro  
-Mesmo assim ele caiu  
-**Da galha do cajueiro** | Be careful not to fall  
-From the cashew tree's branch  
-  
-Look at capoeira, he's clever and mandingueiro  
-Still he fell  
-From the cashew tree's branch  
-  
-It's already cashew time I'll go up in the cashew tree  
-But be careful not to fall  
-From the cashew tree's branch  
-  
-Ê smart guy is a capoeira player  
-Still he fell  
-From the cashew tree's branch  
-  
-My friend and brave and warrior  
-Still he fell  
-From the cashew tree's branch |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Cuidado pra não cair<br>
+<strong>Da galha do cajueiro</strong><br>
+<br>
+Olha o capoeira* é danado e mandingueiro<br>
+Mesmo assim ele caiu<br>
+<strong>Da galha do cajueiro</strong><br>
+<br>
+Já é tempo de caju eu vou subir no cajueiro<br>
+Mas cuidado pra não cair<br>
+<strong>Da galha do cajueiro</strong><br>
+<br>
+Ê moço esperto é jogador de capoeira<br>
+Mesmo assim ele caiu<br>
+<strong>Da galha do cajueiro</strong><br>
+<br>
+Meu amigo e valente e guerreiro<br>
+Mesmo assim ele caiu<br>
+<strong>Da galha do cajueiro</strong></td>
+        <td>Be careful not to fall<br>
+From the cashew tree's branch<br>
+<br>
+Look at capoeira, he's clever and mandingueiro<br>
+Still he fell<br>
+From the cashew tree's branch<br>
+<br>
+It's already cashew time I'll go up in the cashew tree<br>
+But be careful not to fall<br>
+From the cashew tree's branch<br>
+<br>
+Ê smart guy is a capoeira player<br>
+Still he fell<br>
+From the cashew tree's branch<br>
+<br>
+My friend and brave and warrior<br>
+Still he fell<br>
+From the cashew tree's branch</td>
+    </tr>
+</table>
 
 <figcaption>
 

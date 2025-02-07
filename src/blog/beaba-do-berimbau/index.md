@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Beabá do Berimbau"
 date: "2020-09-28"
@@ -9,33 +11,40 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Iê!  
-Eu vou ler o beabá  
-O beabá do berimbau  
-A cabaça e o caixixi  
-Com um pedaço de pau  
-A moeda e o arame, colega velho  
-Aí está o berimbau  
-Berimbau é um instrumento  
-Tocado de uma corda só  
-Pra tocar São Bento Grande, colega velho  
-Toque Angola em tom maior  
-Agora acabei de crer, colega velho  
-O berimbau é o maior Camaradinha. | Ie!  
-I'll read the ABCs  
-The berimbau's ABCs  
-The gourd and the box  
-With a piece of stick  
-The coin and the wire, old friend  
-Now we have the berimbau  
-Berimbau is an instrument  
-Played with just one string  
-To play São Bento Grande, old friend  
-Play Angola in a larger tone  
-Now I believe, old friend  
-The berimbau is the biggest Camaradinha. |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Iê!<br>
+        Eu vou ler o beabá<br>
+        O beabá do berimbau<br>
+        A cabaça e o caixixi<br>
+        Com um pedaço de pau<br>
+        A moeda e o arame, colega velho<br>
+        Aí está o berimbau<br>
+        Berimbau é um instrumento<br>
+        Tocado de uma corda só<br>
+        Pra tocar São Bento Grande, colega velho<br>
+        Toque Angola em tom maior<br>
+        Agora acabei de crer, colega velho<br>
+        O berimbau é o maior Camaradinha.</td>
+        <td>Ie!<br>
+        I'll read the ABCs<br>
+        The berimbau's ABCs<br>
+        The gourd and the box<br>
+        With a piece of stick<br>
+        The coin and the wire, old friend<br>
+        Now we have the berimbau<br>
+        Berimbau is an instrument<br>
+        Played with just one string<br>
+        To play São Bento Grande, old friend<br>
+        Play Angola in a larger tone<br>
+        Now I believe, old friend<br>
+        The berimbau is the biggest Camaradinha.</td>
+    </tr>
+</table>
 
 <figcaption>
 

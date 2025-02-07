@@ -1,3 +1,5 @@
+Here's the formatted markdown document:
+
 ---
 title: "Foi Dendê"
 date: "2020-11-26"
@@ -8,117 +10,121 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Foi dendê oi dendê dendê vê  
-Foi dendê oi dendê dendê vê  
-  
-**Foi dendê oi dendê dendê vê  
-Foi dendê oi dendê dendê vê**  
-  
-A data já chega o mestre tá viajando  
-Em todo lugar o povo tá lhe esperando  
-Saudade de mestre a gente quer lhe vê  
-Na roda jogando meu mestre Pequinês  
-  
-**Foi dendê oi dendê dendê vê  
-Foi dendê oi dendê dendê vê**  
-  
-Iêe  
-  
-**Foi dendê oi dendê dendê vê  
-Foi dendê oi dendê dendê vê**  
-  
-O dia ele já está aqui pronto pra roda começar  
-A roda é bem vinda  
-Todo o mundo vai chegar  
-Mestre dá energia  
-Com sua voz que contagia  
-Tocando o berimbau  
-Nós cheios de alegria  
-Hoje a roda foi boa  
-Nunca vou esquecer aquele momento foi de muito dendê  
-Oi dendê  
-  
-**Foi dendê oi dendê dendê vê  
-Foi dendê oi dendê dendê vê**  
-  
-Iêe  
-  
-**Foi dendê oi dendê dendê vê  
-Foi dendê oi dendê dendê vê**  
-  
-O dia de troca, dia de batizado  
-Hoje comemora todo o tempo trenando  
-O canto se alegra  
-Galera falou  
-Eu sou capoeira  
-Capoeira Nagô  
-Dendê  
-  
-**Foi dendê oi dendê dendê vê  
-Foi dendê oi dendê dendê vê**  
-  
-Iêe  
-  
-**Foi dendê oi dendê dendê vê  
-Foi dendê oi dendê dendê vê** | It was dendê, oh dendê, see  
-It was dendê, oh dendê, see  
-  
-It was dendê, oh dendê, see  
-It was dendê, oh dendê, see  
-  
-The date has arrived the master is travelling  
-Everywhere the people are waiting for you  
-We miss you, we want to see you  
-On the wheel playing my master Pequinês  
-  
-It was dendê, oh dendê, see  
-It was dendê, oh dendê, see  
-  
-Iêe  
-  
-It was dendê, oh dendê, see  
-It was dendê, oh dendê, see  
-  
-The day he is here ready to start  
-The roda is welcome  
-Everyone will arrive  
-Master gives his energy  
-With his infectious voice  
-Playing the berimbau  
-We are full of joy  
-Today the roda was good  
-I will never forget that moment, it was very dendê  
-Dendê  
-  
-It was dendê, oh dendê, see  
-It was dendê, oh dendê, see  
-  
-Iêe  
-  
-It was dendê, oh dendê, see  
-It was dendê, oh dendê, see  
-  
-Changeover day, christening day  
-Today celebrates all the time training  
-The song rejoices  
-Guys spoke  
-I'm capoeira  
-Capoeira Nagô  
-Dendê  
-  
-It was dendê, oh dendê, see  
-It was dendê, oh dendê, see  
-  
-Iêe  
-  
-It was dendê, oh dendê, see  
-It was dendê, oh dendê, see  
- |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Foi dendê oi dendê dendê vê<br>
+Foi dendê oi dendê dendê vê<br>
+<br>
+<strong>Foi dendê oi dendê dendê vê<br>
+Foi dendê oi dendê dendê vê</strong><br>
+<br>
+A data já chega o mestre tá viajando<br>
+Em todo lugar o povo tá lhe esperando<br>
+Saudade de mestre a gente quer lhe vê<br>
+Na roda jogando meu mestre Pequinês<br>
+<br>
+<strong>Foi dendê oi dendê dendê vê<br>
+Foi dendê oi dendê dendê vê</strong><br>
+<br>
+Iêe<br>
+<br>
+<strong>Foi dendê oi dendê dendê vê<br>
+Foi dendê oi dendê dendê vê</strong><br>
+<br>
+O dia ele já está aqui pronto pra roda começar<br>
+A roda é bem vinda<br>
+Todo o mundo vai chegar<br>
+Mestre dá energia<br>
+Com sua voz que contagia<br>
+Tocando o berimbau<br>
+Nós cheios de alegria<br>
+Hoje a roda foi boa<br>
+Nunca vou esquecer aquele momento foi de muito dendê<br>
+Oi dendê<br>
+<br>
+<strong>Foi dendê oi dendê dendê vê<br>
+Foi dendê oi dendê dendê vê</strong><br>
+<br>
+Iêe<br>
+<br>
+<strong>Foi dendê oi dendê dendê vê<br>
+Foi dendê oi dendê dendê vê</strong><br>
+<br>
+O dia de troca, dia de batizado<br>
+Hoje comemora todo o tempo trenando<br>
+O canto se alegra<br>
+Galera falou<br>
+Eu sou capoeira<br>
+Capoeira Nagô<br>
+Dendê<br>
+<br>
+<strong>Foi dendê oi dendê dendê vê<br>
+Foi dendê oi dendê dendê vê</strong><br>
+<br>
+Iêe<br>
+<br>
+<strong>Foi dendê oi dendê dendê vê<br>
+Foi dendê oi dendê dendê vê</strong></td>
+        <td>It was dendê, oh dendê, see<br>
+It was dendê, oh dendê, see<br>
+<br>
+It was dendê, oh dendê, see<br>
+It was dendê, oh dendê, see<br>
+<br>
+The date has arrived the master is travelling<br>
+Everywhere the people are waiting for you<br>
+We miss you, we want to see you<br>
+On the wheel playing my master Pequinês<br>
+<br>
+It was dendê, oh dendê, see<br>
+It was dendê, oh dendê, see<br>
+<br>
+Iêe<br>
+<br>
+It was dendê, oh dendê, see<br>
+It was dendê, oh dendê, see<br>
+<br>
+The day he is here ready to start<br>
+The roda is welcome<br>
+Everyone will arrive<br>
+Master gives his energy<br>
+With his infectious voice<br>
+Playing the berimbau<br>
+We are full of joy<br>
+Today the roda was good<br>
+I will never forget that moment, it was very dendê<br>
+Dendê<br>
+<br>
+It was dendê, oh dendê, see<br>
+It was dendê, oh dendê, see<br>
+<br>
+Iêe<br>
+<br>
+It was dendê, oh dendê, see<br>
+It was dendê, oh dendê, see<br>
+<br>
+Changeover day, christening day<br>
+Today celebrates all the time training<br>
+The song rejoices<br>
+Guys spoke<br>
+I'm capoeira<br>
+Capoeira Nagô<br>
+Dendê<br>
+<br>
+It was dendê, oh dendê, see<br>
+It was dendê, oh dendê, see<br>
+<br>
+Iêe<br>
+<br>
+It was dendê, oh dendê, see<br>
+It was dendê, oh dendê, see</td>
+    </tr>
+</table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

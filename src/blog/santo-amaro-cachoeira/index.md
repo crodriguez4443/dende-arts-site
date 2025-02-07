@@ -1,3 +1,5 @@
+Here's the formatted document according to the specifications:
+
 ---
 title: "Santo Amaro Cachoeira"
 date: "2021-03-29"
@@ -9,125 +11,132 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-| Portuguese | English |
-| --- | --- |
-| Santo Amaro  
-Cachoeira  
-Ilha de Maré  
-Histórias da capoeira  
-  
-**Santo Amaro  
-Cachoeira  
-Ilha de Maré  
-Histórias da capoeira**  
-  
-Santo Amaro da purificação  
-Suas histórias fazem o corpo arrepiar  
-Das lutas do final da escravidão  
-Nasceu um mito Besouro Manganga  
-  
-**Santo Amaro  
-Cachoeira  
-Ilha de Maré  
-Histórias da capoeira**  
-  
-Cachoeira defendia Salvador  
-Dos invasores daquela cidade  
-O filho que essa terra abençoou  
-Foi Seu Traíra, no bairro da Liberdade  
-  
-**Santo Amaro  
-Cachoeira  
-Ilha de Maré  
-Histórias da capoeira**  
-  
-Ilha de Maré, é terra de tradição  
-De lá saíram famosos capoeiristas  
-Um deles, Seu Waldemar da Paixão  
-Que nessa arte, foi um grande especialista  
-  
-**Santo Amaro  
-Cachoeira  
-Ilha de Maré  
-Histórias da capoeira**  
-  
-Na Bahia capoeira começou  
-Depois Recife e Rio de Janeiro  
-Da terra do Cristo Redentor  
-Capoeira deu volta no mundo inteiro  
-**  
-Santo Amaro  
-Cachoeira  
-Ilha de Maré  
-Histórias da capoeira**  
-  
-Herança do Trapiche de Baixo  
-Das façanhas de Besouro Mangangá  
-Lembranças das rodas do Corta Braço  
-Das artimanhas de Traíra e Waldemar  
-  
-**Santo Amaro**  
-**Cachoeira  
-Ilha de Maré  
-Histórias da capoeira** | Santo Amaro  
-Cachoeira  
-Maré Island  
-Capoeira stories  
-  
-Santo Amaro  
-Cachoeira  
-Maré Island  
-Capoeira stories  
-  
-Santo Amaro of purification  
-Its stories make the body shiver  
-From the struggles of the end of slavery  
-A myth was born, Besouro Mangangá  
-  
-Santo Amaro  
-Cachoeira  
-Maré Island  
-Capoeira stories  
-  
-Cachoeira defended Salvador  
-From the invaders of that city  
-The son that this land blessed  
-He was Seu Traíra, in the Liberdade neighborhood  
-  
-Santo Amaro  
-Cachoeira  
-Maré Island  
-Capoeira stories  
-  
-Ilha de Maré, is a land of tradition  
-Famous capoeiristas came from there  
-One of them, Seu Waldemar da Paixão  
-'Cause in this art, he was a great expert  
-  
-Santo Amaro  
-Cachoeira  
-Maré Island  
-Capoeira stories  
-  
-In Bahia capoeira started  
-Then Recife and Rio de Janeiro  
-From the land of Christ the Redeemer  
-Capoeira went around the world  
-  
-Santo Amaro  
-Cachoeira  
-Maré Island  
-Capoeira stories  
-  
-Inheritance of Trapiche de Baixo  
-Of the exploits of Besouro Mangangá  
-Souvenirs of the rodas of of Corta Braço  
-From the tricks of Traíra and Waldemar  
-  
-Santo Amaro  
-Cachoeira  
-Maré Island  
-Capoeira stories |
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Santo Amaro<br>
+        Cachoeira<br>
+        Ilha de Maré<br>
+        Histórias da capoeira<br>
+        <br>
+        <strong>Santo Amaro<br>
+        Cachoeira<br>
+        Ilha de Maré<br>
+        Histórias da capoeira</strong><br>
+        <br>
+        Santo Amaro da purificação<br>
+        Suas histórias fazem o corpo arrepiar<br>
+        Das lutas do final da escravidão<br>
+        Nasceu um mito Besouro Manganga<br>
+        <br>
+        <strong>Santo Amaro<br>
+        Cachoeira<br>
+        Ilha de Maré<br>
+        Histórias da capoeira</strong><br>
+        <br>
+        Cachoeira defendia Salvador<br>
+        Dos invasores daquela cidade<br>
+        O filho que essa terra abençoou<br>
+        Foi Seu Traíra, no bairro da Liberdade<br>
+        <br>
+        <strong>Santo Amaro<br>
+        Cachoeira<br>
+        Ilha de Maré<br>
+        Histórias da capoeira</strong><br>
+        <br>
+        Ilha de Maré, é terra de tradição<br>
+        De lá saíram famosos capoeiristas<br>
+        Um deles, Seu Waldemar da Paixão<br>
+        Que nessa arte, foi um grande especialista<br>
+        <br>
+        <strong>Santo Amaro<br>
+        Cachoeira<br>
+        Ilha de Maré<br>
+        Histórias da capoeira</strong><br>
+        <br>
+        Na Bahia capoeira começou<br>
+        Depois Recife e Rio de Janeiro<br>
+        Da terra do Cristo Redentor<br>
+        Capoeira deu volta no mundo inteiro<br>
+        <strong><br>
+        Santo Amaro<br>
+        Cachoeira<br>
+        Ilha de Maré<br>
+        Histórias da capoeira</strong><br>
+        <br>
+        Herança do Trapiche de Baixo<br>
+        Das façanhas de Besouro Mangangá<br>
+        Lembranças das rodas do Corta Braço<br>
+        Das artimanhas de Traíra e Waldemar<br>
+        <br>
+        <strong>Santo Amaro</strong><br>
+        <strong>Cachoeira<br>
+        Ilha de Maré<br>
+        Histórias da capoeira</strong></td>
+        <td>Santo Amaro<br>
+        Cachoeira<br>
+        Maré Island<br>
+        Capoeira stories<br>
+        <br>
+        Santo Amaro<br>
+        Cachoeira<br>
+        Maré Island<br>
+        Capoeira stories<br>
+        <br>
+        Santo Amaro of purification<br>
+        Its stories make the body shiver<br>
+        From the struggles of the end of slavery<br>
+        A myth was born, Besouro Mangangá<br>
+        <br>
+        Santo Amaro<br>
+        Cachoeira<br>
+        Maré Island<br>
+        Capoeira stories<br>
+        <br>
+        Cachoeira defended Salvador<br>
+        From the invaders of that city<br>
+        The son that this land blessed<br>
+        He was Seu Traíra, in the Liberdade neighborhood<br>
+        <br>
+        Santo Amaro<br>
+        Cachoeira<br>
+        Maré Island<br>
+        Capoeira stories<br>
+        <br>
+        Ilha de Maré, is a land of tradition<br>
+        Famous capoeiristas came from there<br>
+        One of them, Seu Waldemar da Paixão<br>
+        'Cause in this art, he was a great expert<br>
+        <br>
+        Santo Amaro<br>
+        Cachoeira<br>
+        Maré Island<br>
+        Capoeira stories<br>
+        <br>
+        In Bahia capoeira started<br>
+        Then Recife and Rio de Janeiro<br>
+        From the land of Christ the Redeemer<br>
+        Capoeira went around the world<br>
+        <br>
+        Santo Amaro<br>
+        Cachoeira<br>
+        Maré Island<br>
+        Capoeira stories<br>
+        <br>
+        Inheritance of Trapiche de Baixo<br>
+        Of the exploits of Besouro Mangangá<br>
+        Souvenirs of the rodas of of Corta Braço<br>
+        From the tricks of Traíra and Waldemar<br>
+        <br>
+        Santo Amaro<br>
+        Cachoeira<br>
+        Maré Island<br>
+        Capoeira stories</td>
+    </tr>
+</table>
 
 <figcaption>
 
