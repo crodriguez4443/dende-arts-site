@@ -1,5 +1,3 @@
-Here's the formatted document:
-
 ---
 title: "Na Beira do Mar, Na Beira do Mar"
 date: "2021-01-31"

@@ -1,5 +1,3 @@
-Here's the formatted document:
-
 ---
 title: "Joga a Rede no Mar Ioiô"
 date: "2021-01-14"

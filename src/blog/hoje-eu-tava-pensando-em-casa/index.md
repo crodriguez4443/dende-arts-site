@@ -1,5 +1,3 @@
-Here's the formatted markdown document:
-
 ---
 title: "Hoje Eu Tava Pensando Em Casa"
 date: "2020-12-27"

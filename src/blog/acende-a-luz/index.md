@@ -1,13 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Acende a luz"
-date: "2020-10-23"
-categories: 
-  - "capoeira-songbook"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

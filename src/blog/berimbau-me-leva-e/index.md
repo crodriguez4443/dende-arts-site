@@ -1,5 +1,3 @@
-Here's the formatted markdown document:
-
 ---
 title: "Berimbau me leva ê"
 date: "2020-10-15"

@@ -1,1 +1,1 @@
-This document does not contain any song lyrics in Portuguese and English, so I cannot apply the table formatting as specified. The text appears to be a comprehensive guide about wrist injuries, anatomy, and prevention exercises. Would you like me to help you with something else related to this document?
+The document does not contain song lyrics, so I will not modify the text. The markdown document appears to be an informative article about wrist injuries, anatomy, and prevention strategies.

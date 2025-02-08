@@ -1,14 +1,3 @@
----
-title: "Como é que pode!?"
-date: "2023-02-10"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "advanced"
-  - "corrido"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -35,7 +24,7 @@ layout: "blog-post-layout.njk"
             <strong>do jeito que ela é tamanha</strong><br>
             <strong>vir tecer a sua teia</strong><br>
             <strong>na palma da minha mão</strong><br>
-            _<br>
+            <br>
             como pode uma aranha tão medonha<br>
             do jeito que ela é tamanha<br>
             vir tecer a sua teia<br>
@@ -100,9 +89,7 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Unknown
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/H9X4frwGxps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

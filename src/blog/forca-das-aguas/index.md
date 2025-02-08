@@ -1,5 +1,3 @@
-Here's the formatted document:
-
 ---
 title: "Força das Águas"
 date: "2020-11-26"

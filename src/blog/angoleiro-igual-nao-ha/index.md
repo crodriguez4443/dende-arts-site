@@ -1,113 +1,11 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Angoleiro Igual Não Há"
-date: "2021-01-24"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "advanced"
-  - "ladainha"
-  - "mestre-eziquiel"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
         <th>English</th>
     </tr>
     <tr>
-        <td>Tudo na vida acontece<br>
-        Ô que eu não posso acreditar<br>
-        Tive na avenida Peixe<br>
-        Fui procurar seu Waldemar<br>
-        Mestre velho mandingueiro<br>
-        Angoleiro igual não há<br>
-        <br>
-        Uma voz então me disse<br>
-        Não adianta procurar<br>
-        Ele foi para o infinito<br>
-        Para nunca mais voltar<br>
-        Era devoto de Nanã, de Xango e de Oxalá<br>
-        Mestre velho mandingueiro<br>
-        Angoleiro igual não há<br>
-        <br>
-        Se você for a Bahia<br>
-        Não deixe de visitar<br>
-        A nossa avenida Peixe<br>
-        Onde morou seu Waldemar<br>
-        Do Passeio de Agnelo você sempre vai lembrar<br>
-        Do grande famoso Zacarias, de Mestre Traíra, e Waldemar, camará<br>
-        <br>
-        Água de beber<br>
-        <strong>Iê água de beber, camará</strong><br>
-        <br>
-        Iê Aruandê<br>
-        <strong>Iê Aruandê, camará</strong><br>
-        <br>
-        Iê viva meu Deus<br>
-        <strong>Iê viva meu Deus, camará</strong><br>
-        <br>
-        Iê viva meu mestre<br>
-        <strong>Iê viva meu mestre, camará</strong><br>
-        <br>
-        Iê que me ensinou<br>
-        <strong>Iê que me ensinou, camará</strong><br>
-        <br>
-        Iê a malandragem<br>
-        <strong>Iê a malandragem, camará</strong><br>
-        <br>
-        Vamo-nos embora<br>
-        <strong>Iê vamos embora, camará</strong><br>
-        <br>
-        Iê pro mundo afora<br>
-        <strong>Iê pro mundo afora, camará</strong></td>
-        <td>Everything in life happens<br>
-        Things I can't believe<br>
-        I was at avenida Peixe<br>
-        I went to look for mr. Waldemar<br>
-        Old mandingueiro master<br>
-        There is no equal Angoleiro<br>
-        <br>
-        A voice then told me<br>
-        There's no point in searching<br>
-        He went to infinity<br>
-        Never to return<br>
-        He was a devotee of Nanã, of Xango and Oxalá<br>
-        Old mandingueiro master<br>
-        There is no equal Angoleiro<br>
-        <br>
-        If you go to Bahia<br>
-        Be sure to visit<br>
-        Our avenida Peixe<br>
-        Where did your Waldemar live<br>
-        Of the Agnelo Walk you will always remember<br>
-        Of the great famous Zacarias, Mestre Traíra, and Waldemar, camará<br>
-        <br>
-        Water to drink<br>
-        Iê water to drink, camará<br>
-        <br>
-        Iê Aruandê<br>
-        Iê Aruandê, camará<br>
-        <br>
-        Iê, my God<br>
-        Iê, my God, camará<br>
-        <br>
-        Iê long live my master<br>
-        Iê long live my master, camará<br>
-        <br>
-        Iê who taught me<br>
-        Iê who taught me, camará<br>
-        <br>
-        Iê the malandragem<br>
-        Iê the malandragem, camará<br>
-        <br>
-        Let's go<br>
-        Iê let's go, camará<br>
-        <br>
-        Iê to the world out there<br>
-        Iê to the world out there, camará</td>
+        <td>Tudo na vida acontece<br>Ô que eu não posso acreditar<br>Tive na avenida Peixe<br>Fui procurar seu Waldemar<br>Mestre velho mandingueiro<br>Angoleiro igual não há<br><br>Uma voz então me disse<br>Não adianta procurar<br>Ele foi para o infinito<br>Para nunca mais voltar<br>Era devoto de Nanã, de Xango e de Oxalá<br>Mestre velho mandingueiro<br>Angoleiro igual não há<br><br>Se você for a Bahia<br>Não deixe de visitar<br>A nossa avenida Peixe<br>Onde morou seu Waldemar<br>Do Passeio de Agnelo você sempre vai lembrar<br>Do grande famoso Zacarias, de Mestre Traíra, e Waldemar, camará<br><br>Água de beber<br><strong>Iê água de beber, camará</strong><br><br>Iê Aruandê<br><strong>Iê Aruandê, camará</strong><br><br>Iê viva meu Deus<br><strong>Iê viva meu Deus, camará</strong><br><br>Iê viva meu mestre<br><strong>Iê viva meu mestre, camará</strong><br><br>Iê que me ensinou<br><strong>Iê que me ensinou, camará</strong><br><br>Iê a malandragem<br><strong>Iê a malandragem, camará</strong><br><br>Vamo-nos embora<br><strong>Iê vamos embora, camará</strong><br><br>Iê pro mundo afora<br><strong>Iê pro mundo afora, camará</strong></td>
+        <td>Everything in life happens<br>Things I can't believe<br>I was at avenida Peixe<br>I went to look for mr. Waldemar<br>Old mandingueiro master<br>There is no equal Angoleiro<br><br>A voice then told me<br>There's no point in searching<br>He went to infinity<br>Never to return<br>He was a devotee of Nanã, of Xango and Oxalá<br>Old mandingueiro master<br>There is no equal Angoleiro<br><br>If you go to Bahia<br>Be sure to visit<br>Our avenida Peixe<br>Where did your Waldemar live<br>Of the Agnelo Walk you will always remember<br>Of the great famous Zacarias, Mestre Traíra, and Waldemar, camará<br><br>Water to drink<br>Iê water to drink, camará<br><br>Iê Aruandê<br>Iê Aruandê, camará<br><br>Iê, my God<br>Iê, my God, camará<br><br>Iê long live my master<br>Iê long live my master, camará<br><br>Iê who taught me<br>Iê who taught me, camará<br><br>Iê the malandragem<br>Iê the malandragem, camará<br><br>Let's go<br>Iê let's go, camará<br><br>Iê to the world out there<br>Iê to the world out there, camará</td>
     </tr>
 </table>
 

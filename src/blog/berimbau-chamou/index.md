@@ -1,5 +1,3 @@
-Here's the formatted document:
-
 ---
 title: "Berimbau chamou"
 date: "2020-10-21"

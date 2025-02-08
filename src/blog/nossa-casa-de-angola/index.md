@@ -1,5 +1,3 @@
-Here's the formatted document:
-
 ---
 title: "Nossa casa de Angola"
 date: "2023-06-04"

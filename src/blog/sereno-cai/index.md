@@ -1,53 +1,11 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Sereno Cai"
-date: "2021-03-30"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
         <th>English</th>
     </tr>
     <tr>
-        <td>Sereno cai<br>
-        Eu ralo tanto no cumbuco do balaio<br><br>
-        <strong>Sereno cai<br>
-        Eu ralo tanto no cumbuco do balaio</strong><br><br>
-        Eu quero papai, quero mamae, quero dindinha<br>
-        Eu quero anel, quero dedo, quero linha<br>
-        Sou rapaz não tenho dinheiro<br>
-        Uma moça que garante os cabelos<br><br>
-        Cascavel de vareta<br>
-        É danado pra bater chocalho<br>
-        Papai tu corta caminhos<br>
-        Que hoje vai cair orvalho<br><br>
-        Aê, aê, aê<br>
-        Aê, aê, aê, aô<br><br>
-        <strong>Aê, aê, aê<br>
-        Aê, aê, aê, aô</strong></td>
-        <td>Dew falls<br>
-        I work so much in the cumbuco of the hamper<br><br>
-        Dew falls<br>
-        I work so much in the cumbuco of the hamper<br><br>
-        I want daddy, I want mommy, I want godmother<br>
-        I want a ring, I want a finger, I want a line<br>
-        I'm a boy I don't have money<br>
-        A woman that guarantees her hair<br><br>
-        Rattlesnake<br>
-        It's prone to rattle<br>
-        Dad you cut paths<br>
-        'Cause today dew will fall<br><br>
-        Aê, aê, aê<br>
-        Aê, aê, aê, aô<br><br>
-        Aê, aê, aê<br>
-        Aê, aê, aê, aô</td>
+        <td>Sereno cai<br>Eu ralo tanto no cumbuco do balaio<br><br><strong>Sereno cai<br>Eu ralo tanto no cumbuco do balaio</strong><br><br>Eu quero papai, quero mamae, quero dindinha<br>Eu quero anel, quero dedo, quero linha<br>Sou rapaz não tenho dinheiro<br>Uma moça que garante os cabelos<br><br>Cascavel de vareta<br>É danado pra bater chocalho<br>Papai tu corta caminhos<br>Que hoje vai cair orvalho<br><br>Aê, aê, aê<br>Aê, aê, aê, aô<br><br><strong>Aê, aê, aê<br>Aê, aê, aê, aô</strong></td>
+        <td>Dew falls<br>I work so much in the cumbuco of the hamper<br><br>Dew falls<br>I work so much in the cumbuco of the hamper<br><br>I want daddy, I want mommy, I want godmother<br>I want a ring, I want a finger, I want a line<br>I'm a boy I don't have money<br>A woman that guarantees her hair<br><br>Rattlesnake<br>It's prone to rattle<br>Dad you cut paths<br>'Cause today dew will fall<br><br>Aê, aê, aê<br>Aê, aê, aê, aô<br><br>Aê, aê, aê<br>Aê, aê, aê, aô</td>
     </tr>
 </table>
 

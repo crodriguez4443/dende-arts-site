@@ -14,34 +14,8 @@ layout: "blog-post-layout.njk"
         <th>English</th>
     </tr>
     <tr>
-        <td>Ô iaiá, meu senhor mandou chamar<br>
-<strong>Ô iaiá</strong><br>
-<br>
-So vou lá quando acabar, ô iaiá<br>
-<strong>Ô iaiá</strong><br>
-<br>
-To jogando capoeira, ô iaiá<br>
-<strong>Ô iaiá</strong><br>
-<br>
-No mercado popular, ô iaiá<br>
-<strong>Ô iaiá</strong><br>
-<br>
-Vou vencer a guerra do Paraná, ô iaiá<br>
-<strong>Ô iaiá</strong></td>
-        <td>Oh iaiá, my lord sent for me<br>
-Oh iaiá<br>
-<br>
-I'll only go there when it's over, oh iaiá<br>
-Oh iaiá<br>
-<br>
-I'm playing capoeira, oh iaiá<br>
-Oh iaiá<br>
-<br>
-In the popular market, oh iaiá<br>
-Oh iaiá<br>
-<br>
-I'm going to win the Paraná war, oh iaiá<br>
-Oh iaiá</td>
+        <td>Ô iaiá, meu senhor mandou chamar<br><strong>Ô iaiá</strong><br><br>So vou lá quando acabar, ô iaiá<br><strong>Ô iaiá</strong><br><br>To jogando capoeira, ô iaiá<br><strong>Ô iaiá</strong><br><br>No mercado popular, ô iaiá<br><strong>Ô iaiá</strong><br><br>Vou vencer a guerra do Paraná, ô iaiá<br><strong>Ô iaiá</strong></td>
+        <td>Oh iaiá, my lord sent for me<br>Oh iaiá<br><br>I'll only go there when it's over, oh iaiá<br>Oh iaiá<br><br>I'm playing capoeira, oh iaiá<br>Oh iaiá<br><br>In the popular market, oh iaiá<br>Oh iaiá<br><br>I'm going to win the Paraná war, oh iaiá<br>Oh iaiá</td>
     </tr>
 </table>
 

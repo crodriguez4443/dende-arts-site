@@ -1,16 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Baraúna Caiu, Quanto Mais Eu"
-date: "2020-09-28"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-  - "mestre-paulo-dos-anjos"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -93,8 +80,6 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
-Author: Mestre Paulo dos Anjos  
+Author: Mestre Paulo dos Anjos<br>
 T/L: Baraúna is a strong tree
-
 </figcaption>

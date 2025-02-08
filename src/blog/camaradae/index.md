@@ -1,16 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Camaradaê"
-date: "2020-11-30"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "intermediate"
-  - "quadra"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

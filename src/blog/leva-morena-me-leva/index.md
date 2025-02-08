@@ -1,17 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Leva Morena, Me Leva"
-date: "2021-01-24"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-  - "corrido"
-  - "mestre-toni-vargas"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -120,8 +106,6 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
-Author: Mestre Toni Vargas  
+Author: Mestre Toni Vargas<br>
 T/L: I left "morena" as it can be interpreted in different ways. In Brazil 'morena' will usually be either a woman with a medium to dark complexion, or any woman with dark brown hair (brunette).
-
 </figcaption>

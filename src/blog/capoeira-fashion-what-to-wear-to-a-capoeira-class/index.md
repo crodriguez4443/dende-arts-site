@@ -1,1 +1,1 @@
-This document does not contain a markdown table with song lyrics in Portuguese and English, so I cannot apply the table formatting specifications. The text appears to be a blog post about Capoeira clothing and uniforms. Would you like me to help you with something else related to this document?
+The document does not contain song lyrics, so I will not modify the text. The markdown document appears to be a blog post about what to wear to a Capoeira class.

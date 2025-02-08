@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "8 WEEK BRIDGE CHALLENGE PT.2"
 date: "2017-06-05"

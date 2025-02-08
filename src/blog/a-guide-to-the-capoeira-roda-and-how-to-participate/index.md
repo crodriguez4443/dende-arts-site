@@ -1,3 +1,1 @@
-I apologize, but there are no song lyrics in this markdown document to convert into a table. This appears to be an informative blog post about participating in a Capoeira roda (circle). The document contains text explaining the rules and etiquette of participating in a Capoeira roda, along with some images and captions. 
-
-Would you like me to help you with something specific about this document, or do you have a different markdown file with song lyrics that needs formatting?
+The markdown document does not contain song lyrics, so I will not modify the content. The document appears to be an informative blog post about participating in a Capoeira roda.

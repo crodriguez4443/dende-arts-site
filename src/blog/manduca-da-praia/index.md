@@ -1,5 +1,3 @@
-Here's the formatted document:
-
 ---
 title: "Manduca da Praia"
 date: "2021-01-28"

@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Ó Ligeiro"
 date: "2021-02-25"
@@ -17,22 +15,8 @@ layout: "blog-post-layout.njk"
         <th>English</th>
     </tr>
     <tr>
-        <td>Ó ligeiro, ó ligeiro<br>
-<strong>Paraná</strong><br><br>
-Eu tambem sou ligeiro<br>
-<strong>Paraná</strong><br><br>
-É ligeiro, ó ligeiro<br>
-<strong>Paraná</strong><br><br>
-Mestre Bimba foi ligeiro<br>
-<strong>Paraná</strong></td>
-        <td>Look how swift, look how swift<br>
-Paraná<br><br>
-I'm also swift<br>
-Paraná<br><br>
-It's swift, look how swift<br>
-Paraná<br><br>
-Mestre Bimba was quick<br>
-Paraná</td>
+        <td>Ó ligeiro, ó ligeiro<br><strong>Paraná</strong><br><br>Eu tambem sou ligeiro<br><strong>Paraná</strong><br><br>É ligeiro, ó ligeiro<br><strong>Paraná</strong><br><br>Mestre Bimba foi ligeiro<br><strong>Paraná</strong></td>
+        <td>Look how swift, look how swift<br>Paraná<br><br>I'm also swift<br>Paraná<br><br>It's swift, look how swift<br>Paraná<br><br>Mestre Bimba was quick<br>Paraná</td>
     </tr>
 </table>
 

@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Na Volta do Mundo"
 date: "2021-02-23"
@@ -21,8 +19,8 @@ layout: "blog-post-layout.njk"
         O toque de benguela<br>
         Pra lembrar de Bimba<br>
         O seu criador<br>
-        <br>
-        <strong>Na volta do mundo<br>
+        <strong>
+        Na volta do mundo<br>
         Berimbau já tocou<br>
         O toque de benguela<br>
         Pra lembrar de Bimba<br>

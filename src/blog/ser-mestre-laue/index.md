@@ -1,15 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Ser Mestre (Lauê)"
-date: "2021-01-21"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

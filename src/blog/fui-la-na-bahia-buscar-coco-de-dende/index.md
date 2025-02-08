@@ -1,73 +1,15 @@
-Here's the formatted document:
-
----
-title: "Fui Lá na Bahia Buscar Coco de Dendê"
-date: "2020-11-26"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
         <th>English</th>
     </tr>
     <tr>
-        <td>Fui lá na Bahia<br>
-        Buscar coco de dendê<br>
-        <br>
-        <strong>Fui lá na Bahia<br>
-        Buscar coco de dendê</strong><br>
-        <br>
-        Você é bom capoeira<br>
-        Joga aí que eu quero ver<br>
-        <br>
-        <strong>Você é bom capoeira<br>
-        Joga aí que eu quero ver</strong><br>
-        <br>
-        Do terreiro de Ioió<br>
-        Do terreiro de Iaiá<br>
-        <br>
-        <strong>Do terreiro de Ioió<br>
-        Do terreiro de Iaiá</strong><br>
-        <br>
-        Capoeira começa ao anoitecer<br>
-        Vai até o sol raiar<br>
-        <br>
-        <strong>Capoeira começa ao anoitecer<br>
-        Vai até o sol raiar</strong></td>
-        <td>I went over to Bahia<br>
-        To fetch oil palm<br>
-        <br>
-        I went over to Bahia<br>
-        To fetch oil palm<br>
-        <br>
-        You are good capoeira<br>
-        Play 'cause I want to see<br>
-        <br>
-        You are good capoeira<br>
-        Play 'cause I want to see<br>
-        <br>
-        From the terreiro of Ioió<br>
-        From the terreiro of Iaiá<br>
-        <br>
-        From the terreiro of Ioió<br>
-        From the terreiro of Iaiá<br>
-        <br>
-        Capoeira starts at dusk<br>
-        Goes until the sun rises<br>
-        <br>
-        Capoeira starts at dusk<br>
-        Goes until the sun rises</td>
+        <td>Fui lá na Bahia<br>Buscar coco de dendê<br><br><strong>Fui lá na Bahia<br>Buscar coco de dendê</strong><br><br>Você é bom capoeira<br>Joga aí que eu quero ver<br><br><strong>Você é bom capoeira<br>Joga aí que eu quero ver</strong><br><br>Do terreiro de Ioió<br>Do terreiro de Iaiá<br><br><strong>Do terreiro de Ioió<br>Do terreiro de Iaiá</strong><br><br>Capoeira começa ao anoitecer<br>Vai até o sol raiar<br><br><strong>Capoeira começa ao anoitecer<br>Vai até o sol raiar</strong></td>
+        <td>I went over to Bahia<br>To fetch oil palm<br><br>I went over to Bahia<br>To fetch oil palm<br><br>You are good capoeira<br>Play 'cause I want to see<br><br>You are good capoeira<br>Play 'cause I want to see<br><br>From the terreiro of Ioió<br>From the terreiro of Iaiá<br><br>From the terreiro of Ioió<br>From the terreiro of Iaiá<br><br>Capoeira starts at dusk<br>Goes until the sun rises<br><br>Capoeira starts at dusk<br>Goes until the sun rises</td>
     </tr>
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
 T/L: 'Terreiro' is a specific religious space in many Afro-Brazilian religions. I couldn't find an equivalent in English, so I left it as is!
-
 </figcaption>

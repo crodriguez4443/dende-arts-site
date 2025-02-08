@@ -1,17 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Na boca sou eu que lhe bato"
-date: "2024-03-11"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "ananias"
-  - "corrido"
-  - "intermediate"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

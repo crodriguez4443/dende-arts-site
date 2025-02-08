@@ -1,16 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Mestre Me Dizia"
-date: "2023-01-02"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "intermediate"
-  - "ladainha"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Quando o Berimbau Tocou"
 date: "2021-03-22"
@@ -22,8 +20,6 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
-Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
+Author: Unknown (Do you know who wrote this song? Tell us in the comments!)<br>
 Note: 'Maré' translates to 'tide', however, in this case I believe the song is referring to Mestre Totonho de Maré. Since it is a name, I've left it untranslated in the lyrics.
-
 </figcaption>

@@ -1,5 +1,3 @@
-Here's the formatted markdown document according to the specifications:
-
 ---
 title: "Vai você (Dona Maria)"
 date: "2022-09-06"

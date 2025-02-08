@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "É Jogo Praticado na terra de São Salvador"
 date: "2020-11-29"

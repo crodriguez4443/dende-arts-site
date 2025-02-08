@@ -23,7 +23,6 @@
 	in the width of an element. 
 	so if you make a box 200px wide,
 	the set padding and border are included */
-    overflow-x: clip;
 }
 
 body {
@@ -32,6 +31,8 @@ body {
 	font-size: 16px; /* or 1.125rem */
 	font-weight: 400; 
 	line-height: 1.6; /* a normal default */
+    overflow-x: clip;
+
 }
 
 img {
@@ -1341,16 +1342,12 @@ strong {
 
 .blog-grid {
     display: grid;
-    grid-template-columns: minmax(1rem, 1fr) minmax(200px, 900px) minmax(100px, 300px) minmax(1rem, 1fr);
-    column-gap: 1.5rem; 
-    max-width: 1200px; 
-    margin: 0 auto; 
-}
-
-.blog-grid::nth
-
-.blog-grid > * {
-    grid-column: 2/4;
+    /* Define three columns that can grow up to 375px */
+    grid-template-columns: repeat(auto-fill, minmax(0px, 375px));
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;    
+    max-width: 1200px;
+    justify-content: center;
 }
 
 .blog-featured-image,
@@ -1410,15 +1407,15 @@ strong {
 
 /* === blog template page === */
 
-.blog-grid {
+.blog-container {
+    display: grid;
+}
+
+.blog-post-grid {
     display: grid;
     grid-template-columns: minmax(1rem, 1fr) minmax(200px, 900px) minmax(100px, 300px) minmax(1rem, 1fr);
     max-width: 1200px; 
     margin: 0 auto; 
-}
-
-.blog-grid > * {
-    grid-column: 2/4;
 }
 
 .breadcrumb-container {
@@ -1443,6 +1440,10 @@ strong {
 
 .blog-info {
     font-size: 1.125rem;
+}
+
+.blog-post-container {
+    display: grid;
 }
 
 .blog-post-container > * {
@@ -1529,4 +1530,29 @@ strong {
         grid-column: 3;
         align-self: baseline;
     }
+}
+
+/* ================ 
+     Search Styles
+================== */
+
+.search-container {
+    grid-column: 2/4;
+    margin-bottom: 2rem;
+}
+
+.searchInput {
+    width: 70%;
+    padding: 1rem;
+    font-size: 1.125rem;
+    border: 1px solid var(--text-form);
+    border-radius: .625rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.no-results {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-color);
 }

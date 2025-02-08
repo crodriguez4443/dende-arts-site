@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Mare Cheia (Quebra Mare)"
 date: "2023-04-14"
@@ -63,9 +61,7 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Autor: Unknown (do you know? let us know!)
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w59sFgZrYdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

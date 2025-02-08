@@ -49,9 +49,7 @@ Makes you cry</td>
 </table>
 
 <figcaption>
-
 Author: Mestre Mão Branca
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RkwYXiWig5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

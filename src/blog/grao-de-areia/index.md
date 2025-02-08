@@ -1,16 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Grão de Areia"
-date: "2020-12-22"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "intermediate"
-  - "morceguinho"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -175,6 +162,6 @@ Of sand</td>
 </table>
 
 <figcaption>
-Author: Morceguinho  
+Author: Morceguinho<br>
 T/L: Cerrado is a vast tropical savanna ecoregion of Brazil, for the translation, I just left 'savannah'. But it's not the African savannas that the song is referring to.
 </figcaption>

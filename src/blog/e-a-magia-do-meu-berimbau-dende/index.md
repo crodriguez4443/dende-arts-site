@@ -1,16 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "É a Magia do Meu Berimbau, Dendê"
-date: "2020-11-27"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "advanced"
-  - "quadra"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -18,11 +5,6 @@ layout: "blog-post-layout.njk"
     </tr>
     <tr>
         <td>
-            É a magia do meu berimbau dendê<br>
-            Que não me deixa esmorecer<br>
-            É a magia do meu berimbau dendê<br>
-            Que não me deixa esmorecer<br>
-            <br>
             <strong>É a magia do meu berimbau dendê<br>
             Que não me deixa esmorecer<br>
             É a magia do meu berimbau dendê<br>
@@ -78,65 +60,59 @@ layout: "blog-post-layout.njk"
             Que não me deixa esmorecer</strong>
         </td>
         <td>
-            It's the magic of my berimbau, dendê<br>
+            <strong>It's the magic of my berimbau, dendê<br>
             That won't let me fade<br>
             It's the magic of my berimbau, dendê<br>
-            That won't let me fade<br>
-            <br>
-            It's the magic of my berimbau, dendê<br>
-            That won't let me fade<br>
-            It's the magic of my berimbau, dendê<br>
-            That won't let me fade<br>
+            That won't let me fade</strong><br>
             <br>
             Every fisherman has his streak of bad luck<br>
             But you know you can't be discouraged<br>
             Firmness in the paddle not to turn the canoe<br>
             Because you know the tide will pass<br>
             <br>
-            It's the magic of my berimbau, dendê<br>
+            <strong>It's the magic of my berimbau, dendê<br>
             That won't let me fade<br>
             It's the magic of my berimbau, dendê<br>
-            That won't let me fade<br>
+            That won't let me fade</strong><br>
             <br>
             Every warrior will one day let his guard down<br>
             And in defeat he learns from the pain<br>
             Lifts his head and doesn't give up<br>
             Because he knows the war is not over<br>
             <br>
-            It's the magic of my berimbau, dendê<br>
+            <strong>It's the magic of my berimbau, dendê<br>
             That won't let me fade<br>
             It's the magic of my berimbau, dendê<br>
-            That won't let me fade<br>
+            That won't let me fade</strong><br>
             <br>
             Love only ends when money runs out<br>
             Gone who once swore to stay<br>
             Only the love I feel for capoeira doesn't end<br>
             And the value to my master that I will always give<br>
-            <br>
-            It's the magic of my berimbau, dendê<br>
+            <strong>It's the magic of my berimbau, dendê<br>
             That won't let me fade<br>
             It's the magic of my berimbau, dendê<br>
-            That won't let me fade<br>
+            That won't let me fade</strong><br>
             <br>
             The capoeira is like the warrior and the fisherman<br>
             Always faces tides of bad luck and battles<br>
             Defeat, shipwreck but doesn't lose his valour<br>
             Carries on because his mandinga doesn't fail<br>
             <br>
-            It's the magic of my berimbau, dendê<br>
+            <strong>It's the magic of my berimbau, dendê<br>
             That won't let me fade<br>
             It's the magic of my berimbau, dendê<br>
-            That won't let me fade<br>
+            That won't let me fade</strong><br>
             <br>
             The tide changes like the life we ​​lead<br>
             Battlefield is the life of the capoeira<br>
             And the magic of my berimbau carries me<br>
             In battles, rough tides and rasteiras<br>
             <br>
-            It's the magic of my berimbau, dendê<br>
+            <strong>It's the magic of my berimbau, dendê<br>
             That won't let me fade<br>
             It's the magic of my berimbau, dendê<br>
-            That won't let me fade
+            That won't let me fade</strong>
         </td>
     </tr>
 </table>

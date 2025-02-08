@@ -1,15 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Eu Vou (Canarinho da Alemanha)"
-date: "2020-12-22"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -118,8 +106,6 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
-Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
+Author: Unknown (Do you know who wrote this song? Tell us in the comments!)<br>
 T/L: I translated 'curió' simply as finch, but it's specifically the chestnut-bellied seed finch (_Sporophila angolensis_), which is more widespread throughout Brazil.
-
 </figcaption>

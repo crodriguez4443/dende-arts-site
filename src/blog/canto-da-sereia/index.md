@@ -1,5 +1,3 @@
-Here's the formatted markdown document:
-
 ---
 title: "Canto da Sereia"
 date: "2020-11-01"

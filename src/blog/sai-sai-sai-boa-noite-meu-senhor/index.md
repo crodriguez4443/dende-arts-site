@@ -16,27 +16,39 @@ layout: "blog-post-layout.njk"
     </tr>
     <tr>
         <td>
-        Sai sai sai Boa noite meu Senhor<br><br>
-        <strong>Sai sai sai</strong><br><br>
-        Boa noite meu Senhor<br><br>
-        <strong>Sai sai sai</strong><br><br>
-        O meu senhor e delicencia<br><br>
-        <strong>Sai sai sai</strong><br><br>
-        e como vai como passo<br><br>
-        <strong>Sai sai sai</strong><br><br>
-        Boa noite meu senhor<br><br>
+        <strong>Sai sai sai</strong><br>
+        Boa noite meu Senhor<br>
+        <br>
+        <strong>Sai sai sai</strong><br>
+        <br>
+        O meu senhor e delicencia<br>
+        <br>
+        <strong>Sai sai sai</strong><br>
+        <br>
+        e como vai como passo<br>
+        <br>
+        <strong>Sai sai sai</strong><br>
+        <br>
+        Boa noite meu senhor<br>
+        <br>
         <strong>Sai sai sai</strong>
         </td>
         <td>
-        Get out get out Good night my Lord<br><br>
-        get out get out<br><br>
-        good night my lord<br><br>
-        get out get out<br><br>
-        My lord and delight<br><br>
-        get out get out<br><br>
-        and how is it going<br><br>
-        get out get out<br><br>
-        good night my lord<br><br>
+        Get out get out<br>
+        Good night my Lord<br>
+        <br>
+        get out get out<br>
+        <br>
+        My lord and delight<br>
+        <br>
+        get out get out<br>
+        <br>
+        and how is it going<br>
+        <br>
+        get out get out<br>
+        <br>
+        good night my lord<br>
+        <br>
         get out get out
         </td>
     </tr>

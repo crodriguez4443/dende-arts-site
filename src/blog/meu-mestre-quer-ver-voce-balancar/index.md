@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Meu Mestre Quer Ver Você Balançar"
 date: "2021-01-29"
@@ -68,7 +66,5 @@ Call for comrades</td>
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

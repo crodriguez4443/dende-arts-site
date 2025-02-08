@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Agua de nascente mina de cachoeira"
 date: "2020-09-23"

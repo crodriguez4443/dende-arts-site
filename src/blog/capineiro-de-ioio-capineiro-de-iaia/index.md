@@ -1,15 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Capineiro de ioiô capineiro de iaia"
-date: "2020-11-01"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "advanced"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -112,9 +100,7 @@ In the middle of the cane field</td>
 </table>
 
 <figcaption>
-
 Author:
-
 </figcaption>
 
 Capineiro - Grass cutter (or person who cuts grass)

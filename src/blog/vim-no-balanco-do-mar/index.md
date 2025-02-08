@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Vim no balanço do mar"
 date: "2023-02-10"

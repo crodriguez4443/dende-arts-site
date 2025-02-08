@@ -1,16 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Ioiô, Toca o Berimbau Viola"
-date: "2020-12-29"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "intermediate"
-  - "quadra"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

@@ -57,7 +57,5 @@ Capoeira has called me</td>
 </table>
 
 <figcaption>
-
 Author: Unknown
-
 </figcaption>

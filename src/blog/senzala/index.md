@@ -1,14 +1,3 @@
----
-title: "Senzala"
-date: "2021-03-30"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-  - "mestre-bradesco"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

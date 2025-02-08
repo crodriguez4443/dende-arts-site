@@ -14,40 +14,40 @@ layout: "blog-post-layout.njk"
         <th>English</th>
     </tr>
     <tr>
-        <td>O areia,o areia do mar<br><br>
-<strong>O areia,o areia do mar</strong><br><br>
-O areia,o areia do mar<br><br>
-<strong>O areia,o areia do mar</strong><br><br>
-Dá licença ai<br><br>
-<strong>Areia</strong><br><br>
-Sou pequenininho<br><br>
-<strong>Areia</strong><br><br>
-Me deixa passar<br><br>
-<strong>Areia</strong><br><br>
-Berimbau quebro<br><br>
-<strong>Areia</strong><br><br>
-Foi axe da li<br><br>
-<strong>Areia</strong><br><br>
-Na beira do mar<br><br>
-<strong>Areia</strong><br><br>
-Na beira da praia</td>
-        <td>The sand, the sea sand<br><br>
-The sand, the sea sand<br><br>
-The sand, the sea sand<br><br>
-The sand, the sea sand<br><br>
-Excuse me<br><br>
-Sand<br><br>
-I'm tiny<br><br>
-Sand<br><br>
-let me through<br><br>
-Sand<br><br>
-Berimbau broke<br><br>
-Sand<br><br>
-It was energy from over there<br><br>
-Sand<br><br>
-At the seashore<br><br>
-Sand<br><br>
-On the beach</td>
+        <td><strong>O areia,o areia do mar</strong><br>
+        <strong>O areia,o areia do mar</strong><br>
+        O areia,o areia do mar<br>
+        <strong>O areia,o areia do mar</strong><br>
+        Dá licença ai<br>
+        <strong>Areia</strong><br>
+        Sou pequenininho<br>
+        <strong>Areia</strong><br>
+        Me deixa passar<br>
+        <strong>Areia</strong><br>
+        Berimbau quebro<br>
+        <strong>Areia</strong><br>
+        Foi axe da li<br>
+        <strong>Areia</strong><br>
+        Na beira do mar<br>
+        <strong>Areia</strong><br>
+        Na beira da praia</td>
+        <td>The sand, the sea sand<br>
+        The sand, the sea sand<br>
+        The sand, the sea sand<br>
+        The sand, the sea sand<br>
+        Excuse me<br>
+        Sand<br>
+        I'm tiny<br>
+        Sand<br>
+        let me through<br>
+        Sand<br>
+        Berimbau broke<br>
+        Sand<br>
+        It was energy from over there<br>
+        Sand<br>
+        At the seashore<br>
+        Sand<br>
+        On the beach</td>
     </tr>
 </table>
 

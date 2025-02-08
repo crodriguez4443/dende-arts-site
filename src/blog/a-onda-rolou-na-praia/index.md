@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "A onda rolou na praia"
 date: "2020-09-22"

@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Eu Sou Angoleiro"
 date: "2020-12-21"
@@ -62,7 +60,5 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

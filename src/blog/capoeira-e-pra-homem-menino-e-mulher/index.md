@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Capoeira é pra homem, menino e mulher"
 date: "2020-11-01"
@@ -49,22 +47,18 @@ layout: "blog-post-layout.njk"
         For boys and women<br>
         <br>
         ê ê ê<br>
-        <br>
         For boys and women<br>
         <br>
         ê ê ê<br>
-        <br>
         I met your Traira<br>
         I met Canjiquinha<br>
         and also valdemar<br>
         They told me one day<br>
         Capoeira is for men, boys, and women<br>
         ê ê ê<br>
-        <br>
         For boys and women<br>
         <br>
         ê ê ê<br>
-        <br>
         For boys and women<br>
         <br>
         ê ê ê</td>
@@ -72,9 +66,7 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Unknown (know who the author is? Let us know in the comments!)
-
 </figcaption>
 
-\*This song mentions the names of several well known Capoeira mestres. "I met Mestre Bimba... etc."
+*This song mentions the names of several well known Capoeira mestres. "I met Mestre Bimba... etc."

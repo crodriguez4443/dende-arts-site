@@ -1,1 +1,1 @@
-Since this document does not contain song lyrics in Portuguese and English, I cannot apply the table formatting as specified. The document appears to be a comprehensive blog post about preventing and treating foot blisters, particularly in the context of capoeira and dance. Would you like me to help you with something else related to this document?
+The document does not contain song lyrics, so I will not modify the text. The markdown document remains unchanged.

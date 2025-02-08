@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Por Que Será"
 date: "2021-02-28"
@@ -18,111 +16,81 @@ layout: "blog-post-layout.njk"
     </tr>
     <tr>
         <td>Por que será, por que será<br>
-Que hoje o negro não veio trabalhar<br>
-<br>
-<strong>Por que será, por que será</strong><br>
-<br>
-Que hoje o negro não veio trabalhar<br>
-<br>
-Já correu notícia<br>
-Houve morte em Palmares<br>
-Morreu um negro<br>
-Chamado Gangazumba<br>
-<br>
-Já correu notícia<br>
-Houve morte em Palmares<br>
-Morreu um negro<br>
-Chamado Gangazumba, por que será<br>
-<br>
-Por que será, por que será<br>
-Que hoje o negro não veio trabalhar<br>
-<br>
-<strong>Por que será, por que será</strong><br>
-<br>
-Que hoje o negro não veio trabalhar<br>
-<br>
-Naquele tempo, não existia a princesa<br>
-Não havia pão na mesa<br>
-Só tinha o canavial<br>
-Era o suor, era o sangue derramado<br>
-Era o trabalho do negro<br>
-Dia e noite sem parar<br>
-<br>
-Por que será, por que será<br>
-Que hoje o negro não veio trabalhar<br>
-<br>
-<strong>Por que será, por que será</strong><br>
-<br>
-Que hoje o negro não veio trabalhar<br>
-<br>
-E hoje em dia<br>
-Depois o canavial<br>
-Vem o relógio de ponto<br>
-Que não para de marcar<br>
-E se o negro tá doente<br>
-E não consegue chegar<br>
-O patrão ou sinhozinho<br>
-Continua a perguntar<br>
-<br>
-Por que será, por que será<br>
-Que hoje o negro não veio trabalhar<br>
-<br>
-<strong>Por que será, por que será</strong><br>
-<br>
-Que hoje o negro não veio trabalhar</td>
+        Que hoje o negro não veio trabalhar<br><br>
+        <strong>Por que será, por que será</strong><br><br>
+        Que hoje o negro não veio trabalhar<br><br>
+        Já correu notícia<br>
+        Houve morte em Palmares<br>
+        Morreu um negro<br>
+        Chamado Gangazumba<br><br>
+        Já correu notícia<br>
+        Houve morte em Palmares<br>
+        Morreu um negro<br>
+        Chamado Gangazumba, por que será<br><br>
+        Por que será, por que será<br>
+        Que hoje o negro não veio trabalhar<br><br>
+        <strong>Por que será, por que será</strong><br><br>
+        Que hoje o negro não veio trabalhar<br><br>
+        Naquele tempo, não existia a princesa<br>
+        Não havia pão na mesa<br>
+        Só tinha o canavial<br>
+        Era o suor, era o sangue derramado<br>
+        Era o trabalho do negro<br>
+        Dia e noite sem parar<br><br>
+        Por que será, por que será<br>
+        Que hoje o negro não veio trabalhar<br><br>
+        <strong>Por que será, por que será</strong><br><br>
+        Que hoje o negro não veio trabalhar<br><br>
+        E hoje em dia<br>
+        Depois o canavial<br>
+        Vem o relógio de ponto<br>
+        Que não para de marcar<br>
+        E se o negro tá doente<br>
+        E não consegue chegar<br>
+        O patrão ou sinhozinho<br>
+        Continua a perguntar<br><br>
+        Por que será, por que será<br>
+        Que hoje o negro não veio trabalhar<br><br>
+        <strong>Por que será, por que será</strong><br><br>
+        Que hoje o negro não veio trabalhar</td>
         <td>Why is it, why is it<br>
-That today the black man didn't come to work<br>
-<br>
-Why is it, why is it<br>
-<br>
-That today the black man didn't come to work<br>
-<br>
-News has already spread<br>
-There was death in Palmares<br>
-A black man died<br>
-Called Gangazumba<br>
-<br>
-News has already spread<br>
-There was death in Palmares<br>
-A black man died<br>
-Called Gangazumba, why is it<br>
-<br>
-Why is it, why is it<br>
-That today the black man didn't come to work<br>
-<br>
-Why is it, why is it<br>
-<br>
-That today the black man didn't come to work<br>
-<br>
-At that time, there was no princess<br>
-There was no bread on the table<br>
-There was only the cane field<br>
-It was sweat, it was spilled blood<br>
-It was the black man's job<br>
-Non-stop day and night<br>
-<br>
-Why is it, why is it<br>
-That today the black man didn't come to work<br>
-<br>
-Why is it, why is it<br>
-<br>
-That today the black man didn't come to work<br>
-<br>
-And nowadays<br>
-After the cane field<br>
-Comes the time clock<br>
-That keeps ticking<br>
-And if the black man is sick<br>
-And he can't arrive<br>
-The boss or lord<br>
-Keeps asking<br>
-<br>
-Why is it, why is it<br>
-That today the black man didn't come to work<br>
-<br>
-Why is it, why is it<br>
-<br>
-That today the black man didn't come to work</td>
+        That today the black man didn't come to work<br><br>
+        Why is it, why is it<br><br>
+        That today the black man didn't come to work<br><br>
+        News has already spread<br>
+        There was death in Palmares<br>
+        A black man died<br>
+        Called Gangazumba<br><br>
+        News has already spread<br>
+        There was death in Palmares<br>
+        A black man died<br>
+        Called Gangazumba, why is it<br><br>
+        Why is it, why is it<br>
+        That today the black man didn't come to work<br><br>
+        Why is it, why is it<br><br>
+        That today the black man didn't come to work<br><br>
+        At that time, there was no princess<br>
+        There was no bread on the table<br>
+        There was only the cane field<br>
+        It was sweat, it was spilled blood<br>
+        It was the black man's job<br>
+        Non-stop day and night<br><br>
+        Why is it, why is it<br>
+        That today the black man didn't come to work<br><br>
+        Why is it, why is it<br><br>
+        That today the black man didn't come to work<br><br>
+        And nowadays<br>
+        After the cane field<br>
+        Comes the time clock<br>
+        That keeps ticking<br>
+        And if the black man is sick<br>
+        And he can't arrive<br>
+        The boss or lord<br>
+        Keeps asking<br><br>
+        Why is it, why is it<br>
+        That today the black man didn't come to work<br><br>
+        Why is it, why is it<br><br>
+        That today the black man didn't come to work</td>
     </tr>
 </table>
 

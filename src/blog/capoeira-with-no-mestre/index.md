@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "CAPOEIRA WITH NO MESTRE!?"
 date: "2017-06-20"
@@ -41,5 +39,3 @@ Another point that M. Ferradura makes is that Capoeiristas have always looked fo
 I think the point here is that we as a community have so many resources available to us that we should use them to the best of our abilities to grow and educate those who want to learn Capoeira. We've had tutorials for a few years now, but that same concept could apply to other things in Capoeira, such as game sense, stylistic approaches, and other more abstract ideas. I've personally met tons of people who've told me that they tried to learn Capoeira through videos they've seen online. So long as people are looking for ways to learn, capoeira lovers /enthusiasts/teachers should be trying to look for ways to assist these people and guide them as best they can.
 
 Maybe some time soon we'll go through another transformation where there won't be any "Mestres" in Capoeira, just capoeiristas. It's not clear, but it's an interesting discussion to have.
-
-Note: There were no song lyrics in this markdown document, so no table was created.

@@ -1,16 +1,3 @@
-Here's the formatted markdown document according to the specifications:
-
----
-title: "Na Beira do Cais"
-date: "2021-01-31"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-  - "mestre-fanho"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

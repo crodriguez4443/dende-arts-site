@@ -1,125 +1,15 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Mas Que Saudade Que Me Deu"
-date: "2021-01-28"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "intermediate"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
         <th>English</th>
     </tr>
     <tr>
-        <td>Mas que saudade que me deu<br>
-Mas que saudade que ma dá<br>
-A capoeira me ajudou<br>
-A capoeira vai me curar<br>
-<br>
-Mas que saudade que me deu<br>
-Mas que saudade que ma dá<br>
-A capoeira me ajudou<br>
-A capoeira vai me curar<br>
-<br>
-Mas a distância nos aproxima<br>
-Das coisas que tem valor<br>
-A vida vem, a vida vai<br>
-E o berimbau que me levou<br>
-<br>
-Mas que saudade que me deu<br>
-Mas que saudade que ma dá<br>
-A capoeira me ajudou<br>
-A capoeira vai me curar<br>
-<br>
-De uma presença do que importa<br>
-Do que se foi, que não volta<br>
-Daquela coisa que me inspira<br>
-Sinto saudades da minha rotina<br>
-<br>
-Mas que saudade que me deu<br>
-Mas que saudade que ma dá<br>
-A capoeira me ajudou<br>
-A capoeira vai me curar<br>
-<br>
-Dos bambas jogando na mandinga e na cadência<br>
-Pernadas com malícia e malemolência<br>
-O berimbau numa dobra respondeu<br>
-Um jogo bom que ali aconteceu<br>
-<br>
-Mas que saudade que me deu<br>
-Mas que saudade que ma dá<br>
-A capoeira me ajudou<br>
-A capoeira vai me curar<br>
-<br>
-Mas eu me lembro de um tempo<br>
-Ainda era uma criança<br>
-O berimbau, o meu brinquedo<br>
-E a capoeira, minha esperança<br>
-<br>
-Mas que saudade que me deu<br>
-Mas que saudade que ma dá<br>
-A capoeira me ajudou<br>
-A capoeira vai me curar</td>
-        <td>How much I have yearned<br>
-How much I still do<br>
-Capoeira helped me<br>
-Capoeira will heal me<br>
-<br>
-How much I have yearned<br>
-How much I still do<br>
-Capoeira helped me<br>
-Capoeira will heal me<br>
-<br>
-But the distance brings us closer<br>
-Of things that have value<br>
-Life comes, life goes<br>
-And the berimbau that took me<br>
-<br>
-How much I have yearned<br>
-How much I still do<br>
-Capoeira helped me<br>
-Capoeira will heal me<br>
-<br>
-What matters of a presence<br>
-That is gone, that doesn't return<br>
-That thing that inspires me<br>
-I miss my routine<br>
-<br>
-How much I have yearned<br>
-How much I still do<br>
-Capoeira helped me<br>
-Capoeira will heal me<br>
-<br>
-Of bambas playing mandinga and cadence<br>
-Legs with malice and emollience<br>
-The berimbau in a flourish responded<br>
-A good game that happened there<br>
-<br>
-How much I have yearned<br>
-How much I still do<br>
-Capoeira helped me<br>
-Capoeira will heal me<br>
-<br>
-But I remember a time<br>
-When I was still a child<br>
-The berimbau, my toy<br>
-And capoeira, my hope<br>
-<br>
-How much I have yearned<br>
-How much I still do<br>
-Capoeira helped me<br>
-Capoeira will heal me</td>
+        <td>Mas que saudade que me deu<br>Mas que saudade que ma dá<br>A capoeira me ajudou<br>A capoeira vai me curar<br><br>Mas que saudade que me deu<br>Mas que saudade que ma dá<br>A capoeira me ajudou<br>A capoeira vai me curar<br><br>Mas a distância nos aproxima<br>Das coisas que tem valor<br>A vida vem, a vida vai<br>E o berimbau que me levou<br><br>Mas que saudade que me deu<br>Mas que saudade que ma dá<br>A capoeira me ajudou<br>A capoeira vai me curar<br><br>De uma presença do que importa<br>Do que se foi, que não volta<br>Daquela coisa que me inspira<br>Sinto saudades da minha rotina<br><br>Mas que saudade que me deu<br>Mas que saudade que ma dá<br>A capoeira me ajudou<br>A capoeira vai me curar<br><br>Dos bambas jogando na mandinga e na cadência<br>Pernadas com malícia e malemolência<br>O berimbau numa dobra respondeu<br>Um jogo bom que ali aconteceu<br><br>Mas que saudade que me deu<br>Mas que saudade que ma dá<br>A capoeira me ajudou<br>A capoeira vai me curar<br><br>Mas eu me lembro de um tempo<br>Ainda era uma criança<br>O berimbau, o meu brinquedo<br>E a capoeira, minha esperança<br><br>Mas que saudade que me deu<br>Mas que saudade que ma dá<br>A capoeira me ajudou<br>A capoeira vai me curar</td>
+        <td>How much I have yearned<br>How much I still do<br>Capoeira helped me<br>Capoeira will heal me<br><br>How much I have yearned<br>How much I still do<br>Capoeira helped me<br>Capoeira will heal me<br><br>But the distance brings us closer<br>Of things that have value<br>Life comes, life goes<br>And the berimbau that took me<br><br>How much I have yearned<br>How much I still do<br>Capoeira helped me<br>Capoeira will heal me<br><br>What matters of a presence<br>That is gone, that doesn't return<br>That thing that inspires me<br>I miss my routine<br><br>How much I have yearned<br>How much I still do<br>Capoeira helped me<br>Capoeira will heal me<br><br>Of bambas playing mandinga and cadence<br>Legs with malice and emollience<br>The berimbau in a flourish responded<br>A good game that happened there<br><br>How much I have yearned<br>How much I still do<br>Capoeira helped me<br>Capoeira will heal me<br><br>But I remember a time<br>When I was still a child<br>The berimbau, my toy<br>And capoeira, my hope<br><br>How much I have yearned<br>How much I still do<br>Capoeira helped me<br>Capoeira will heal me</td>
     </tr>
 </table>
 
 <figcaption>
-
-Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
+Author: Unknown (Do you know who wrote this song? Tell us in the comments!)<br>
 Note: Took some liberty with the structure on the chorus in English, due to how awkward it is to translate saudade. "Mas" means "but", as in opposition. In spoken Portuguese, it is sometimes used in the beginning of a sentence to add emphasis and weight.
-
 </figcaption>

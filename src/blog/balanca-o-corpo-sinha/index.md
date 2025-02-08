@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Balança o corpo sinhá"
 date: "2020-10-12"
@@ -98,7 +96,5 @@ Put mandinga in the game, iôiô</td>
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

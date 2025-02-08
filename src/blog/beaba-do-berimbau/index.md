@@ -1,16 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Beabá do Berimbau"
-date: "2020-09-28"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "intermediate"
-  - "mestre-pastinha"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -47,8 +34,6 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
-Author: Mestre Pastinha  
+Author: Mestre Pastinha<br>
 T/L: 'Beabá' would probably translate most closely to 'abecedary'.
-
 </figcaption>

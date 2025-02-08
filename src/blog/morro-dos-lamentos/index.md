@@ -1,13 +1,3 @@
----
-title: "Morro dos Lamentos"
-date: "2021-02-24"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -38,9 +28,7 @@ But I swore at the foot of the berimbau</td>
 </table>
 
 <figcaption>
-
 Author: Sinistro
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l1AX_nDpnDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

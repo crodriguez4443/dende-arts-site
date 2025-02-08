@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Só Vale Quem Tem"
 date: "2021-05-23"

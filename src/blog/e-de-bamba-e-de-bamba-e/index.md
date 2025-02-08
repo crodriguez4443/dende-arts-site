@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "É de Bamba, É de Bamba Ê"
 date: "2020-11-27"
@@ -69,8 +67,6 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
 Note: Improvisation is common. For example, naming different mestres or players.
-
 </figcaption>

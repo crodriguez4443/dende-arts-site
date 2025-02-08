@@ -1,1 +1,1 @@
-The provided document does not contain any song lyrics in Portuguese and English, so there is no table to create. The text appears to be a blog post about Capoeira and who can practice it. Would you like me to help you with something else related to this document?
+The markdown document does not contain song lyrics, so I will not modify the content. The document appears to be a blog post about Capoeira and who can practice it.

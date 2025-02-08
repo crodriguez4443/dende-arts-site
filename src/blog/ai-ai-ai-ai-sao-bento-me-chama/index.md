@@ -14,38 +14,34 @@ layout: "blog-post-layout.njk"
         <th>English</th>
     </tr>
     <tr>
-        <td>
-            <strong>Ai ai ai ai</strong><br>
-            São bento me chama<br>
-            <br>
-            <strong>Ai ai ai ai</strong><br>
-            São bento me quer<br>
-            <br>
-            <strong>Ai ai ai ai</strong><br>
-            Pra jogar capoeira<br>
-            <br>
-            <strong>Ai ai ai ai</strong><br>
-            O meu mestre me chama<br>
-            <br>
-            <strong>Ai ai ai ai</strong><br>
-            O meu mestre chamou
-        </td>
-        <td>
-            <strong>Ai ai ai ai</strong><br>
-            São Bento calls me<br>
-            <br>
-            <strong>Ai ai ai ai</strong><br>
-            Saint Benedict wants me<br>
-            <br>
-            <strong>Ai ai ai ai</strong><br>
-            To play capoeira<br>
-            <br>
-            <strong>Ai ai ai ai</strong><br>
-            My master calls me<br>
-            <br>
-            <strong>Ai ai ai ai</strong><br>
-            My master called
-        </td>
+        <td><strong>Ai ai ai ai</strong><br>
+        São bento me chama<br>
+        <br>
+        <strong>Ai ai ai ai</strong><br>
+        São bento me quer<br>
+        <br>
+        <strong>Ai ai ai ai</strong><br>
+        Pra jogar capoeira<br>
+        <br>
+        <strong>Ai ai ai ai</strong><br>
+        O meu mestre me chama<br>
+        <br>
+        <strong>Ai ai ai ai</strong><br>
+        O meu mestre chamou</td>
+        <td><strong>Ai ai ai ai</strong><br>
+        São Bento calls me<br>
+        <br>
+        <strong>Ai ai ai ai</strong><br>
+        Saint Benedict wants me<br>
+        <br>
+        <strong>Ai ai ai ai</strong><br>
+        To play capoeira<br>
+        <br>
+        <strong>Ai ai ai ai</strong><br>
+        My master calls me<br>
+        <br>
+        <strong>Ai ai ai ai</strong><br>
+        My master called</td>
     </tr>
 </table>
 

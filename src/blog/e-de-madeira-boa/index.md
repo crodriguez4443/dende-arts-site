@@ -1,5 +1,3 @@
-Here's the formatted document:
-
 ---
 title: "É de Madeira Boa"
 date: "2020-11-29"
@@ -18,31 +16,31 @@ layout: "blog-post-layout.njk"
     </tr>
     <tr>
         <td>É de madeira boa<br>
-De madeira boa<br>
-Pode confiar<br>
-<br>
-<strong>É de madeira boa<br>
-De madeira boa<br>
-Pode confiar</strong><br>
-<br>
-E capoeira é de madeira boa<br>
-<strong>Pode confiar</strong><br>
-<br>
-E berimbau é de madeira boa<br>
-<strong>Pode confiar</strong></td>
+        De madeira boa<br>
+        Pode confiar<br>
+        <br>
+        <strong>É de madeira boa<br>
+        De madeira boa<br>
+        Pode confiar</strong><br>
+        <br>
+        E capoeira é de madeira boa<br>
+        <strong>Pode confiar</strong><br>
+        <br>
+        E berimbau é de madeira boa<br>
+        <strong>Pode confiar</strong></td>
         <td>It's good wood<br>
-Good wood<br>
-You can trust<br>
-<br>
-It's good wood<br>
-Good wood<br>
-You can trust<br>
-<br>
-And capoeira is good wood<br>
-You can trust<br>
-<br>
-And berimbau is good wood<br>
-You can trust</td>
+        Good wood<br>
+        You can trust<br>
+        <br>
+        It's good wood<br>
+        Good wood<br>
+        You can trust<br>
+        <br>
+        And capoeira is good wood<br>
+        You can trust<br>
+        <br>
+        And berimbau is good wood<br>
+        You can trust</td>
     </tr>
 </table>
 

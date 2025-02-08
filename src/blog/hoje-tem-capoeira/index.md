@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Hoje Tem Capoeira"
 date: "2020-12-28"

@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Preta Bá"
 date: "2021-03-20"
@@ -20,8 +18,7 @@ layout: "blog-post-layout.njk"
         <td>
             Meu Deus, cadê Preta Bá, meu Deus<br>
             Meu Deus, cadê Preta Bá, meu Deus<br>
-            <strong><br>
-            Meu Deus, cadê Preta Bá, meu Deus<br>
+            <strong>Meu Deus, cadê Preta Bá, meu Deus<br>
             Meu Deus, cadê Preta Bá, meu Deus</strong><br>
             <br>
             O filho do coronel<br>
@@ -180,7 +177,7 @@ layout: "blog-post-layout.njk"
 
 <figcaption>
 Author: Mestre Boa Voz<br>
-Note: I left "Preta Bá" untranslated in the lyrics, but just to clarify. The woman in the song is known as "Preta Bá", which literally means "Black woman Bá".
+Note: I left "Preta Bá" untranslated in the lyrics, but just to clarify. The woman in the song is known as "Preta Bá", which literally means "Balck woman Bá".
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VpKnaNl4HoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

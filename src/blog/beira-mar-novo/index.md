@@ -1,74 +1,14 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Beira Mar Novo"
-date: "2020-10-14"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "intermediate"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
         <th>English</th>
     </tr>
     <tr>
-        <td>Beira mar, beira mar novo<br>
-Foi só eu é quem cantei<br>
-Ô beira mar, adeus dona<br>
-Adeus riacho de areia<br>
-<strong>
-Beira mar, beira mar novo<br>
-Foi só eu é quem cantei<br>
-Ô beira mar adeus dona<br>
-Adeus riacho de areia</strong><br>
-<br>
-Adeus, adeus, toma adeus<br>
-Eu já vou embora<br>
-Eu morava no fundo da água<br>
-Não sei quando voltarei<br>
-Sou canoeiro<br>
-Vou pegando minha canoa<br>
-Já no fundo do pesqueiro<br>
-Ô beira mar adeus dona<br>
-Adeus riacho de areia<br>
-<br>
-<strong>Beira mar, beira mar novo<br>
-Foi só eu quem cantei<br>
-Ô beira mar adeus dona<br>
-Adeus riacho de areia</strong></td>
-        <td>Seaside, new seaside<br>
-I was the only one who sang<br>
-Oh, seaside, goodbye lady<br>
-Goodbye sand stream<br>
-<br>
-Seaside, new seaside<br>
-I was the only one who sang<br>
-Oh, seaside, goodbye lady<br>
-Goodbye sand stream<br>
-<br>
-Goodbye, goodbye, take my farewell,<br>
-I'm leaving<br>
-I lived deep in the water<br>
-I don't know when I'll be back<br>
-I'm a canoeist<br>
-I'll get my canoe<br>
-At the bottom of the fishing boat<br>
-The seaside goodbye dona<br>
-Goodbye sand stream<br>
-<br>
-Seaside, new seaside<br>
-I was the only one who sang<br>
-Oh, seaside, goodbye lady<br>
-Goodbye sand stream</td>
+        <td>Beira mar, beira mar novo<br>Foi só eu é quem cantei<br>Ô beira mar, adeus dona<br>Adeus riacho de areia<br><br><strong>Beira mar, beira mar novo<br>Foi só eu é quem cantei<br>Ô beira mar adeus dona<br>Adeus riacho de areia</strong><br><br>Adeus, adeus, toma adeus<br>Eu já vou embora<br>Eu morava no fundo da água<br>Não sei quando voltarei<br>Sou canoeiro<br>Vou pegando minha canoa<br>Já no fundo do pesqueiro<br>Ô beira mar adeus dona<br>Adeus riacho de areia<br><br><strong>Beira mar, beira mar novo<br>Foi só eu quem cantei<br>Ô beira mar adeus dona<br>Adeus riacho de areia</strong></td>
+        <td>Seaside, new seaside<br>I was the only one who sang<br>Oh, seaside, goodbye lady<br>Goodbye sand stream<br><br>Seaside, new seaside<br>I was the only one who sang<br>Oh, seaside, goodbye lady<br>Goodbye sand stream<br><br>Goodbye, goodbye, take my farewell,<br>I'm leaving<br>I lived deep in the water<br>I don't know when I'll be back<br>I'm a canoeist<br>I'll get my canoe<br>At the bottom of the fishing boat<br>The seaside goodbye dona<br>Goodbye sand stream<br><br>Seaside, new seaside<br>I was the only one who sang<br>Oh, seaside, goodbye lady<br>Goodbye sand stream</td>
     </tr>
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

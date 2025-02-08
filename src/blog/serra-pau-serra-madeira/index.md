@@ -1,16 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Serra Pau, Serra Madeira"
-date: "2021-03-30"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-  - "corrido"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

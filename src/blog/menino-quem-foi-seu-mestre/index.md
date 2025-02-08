@@ -1,15 +1,3 @@
-Here's the formatted document:
-
----
-title: "Menino quem foi seu mestre"
-date: "2023-02-06"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "ladainha"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

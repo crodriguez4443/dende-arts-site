@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Na Aruanda"
 date: "2020-11-30"

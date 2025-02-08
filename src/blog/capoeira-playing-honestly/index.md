@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Capoeira: Playing Honestly"
 date: "2018-07-02"
@@ -14,16 +12,7 @@ coverImage: "kamesh-vedula-59768-unsplash.jpg"
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>"capoeira is treachery!"</td>
-        <td>"capoeira is treachery!"</td>
-    </tr>
-</table>
+"capoeira is treachery!"
 
 - Mestre Bimba
 

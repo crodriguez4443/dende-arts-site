@@ -1,5 +1,3 @@
-Here's the formatted document:
-
 ---
 title: "Elevador"
 date: "2020-12-27"
@@ -22,7 +20,5 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

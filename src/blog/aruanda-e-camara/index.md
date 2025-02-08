@@ -1,5 +1,3 @@
-Here's the formatted document:
-
 ---
 title: "Aruanda ê camará"
 date: "2020-10-20"
@@ -90,9 +88,7 @@ Aruanda ê camará</td>
 </table>
 
 <figcaption>
-
 Author: Unknown
-
 </figcaption>
 
 Aruanda - Refers to a spiritual location in some African traditions, particularly with the Umbanda people. This African concept made its way to Brazil through the slave trade.

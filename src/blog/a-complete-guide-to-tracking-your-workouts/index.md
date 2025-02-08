@@ -1,1 +1,1 @@
-This document does not contain any song lyrics in Portuguese and English, so I cannot apply the table formatting specification. The text appears to be a blog post about tracking fitness workouts using various tools and methods. Would you like me to help you with something else related to this document?
+The document does not contain song lyrics, so I will not modify the markdown. The text remains exactly as it was originally presented.

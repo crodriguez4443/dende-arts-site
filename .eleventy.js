@@ -1,12 +1,13 @@
 const Image = require('@11ty/eleventy-img');
 const { outdent } = require('outdent'); // Make sure to install this if not already present
-const BLOG_CATEGORIES = {
+const BLOG_CATEGORIES = { // categories for blog posts
     history: ["History, Culture, Travel"],
     capoeira: ["Capoeira Music"],
     movement: ["Movement Guides"],
     equipment: ["Equipment Reviews"],
     beginners: ["Beginners Capoeira"]
 };
+const lunr = require('lunr');
 
 // Utility function to stringify attributes
 function stringifyAttributes(attributesObj) {
@@ -93,20 +94,6 @@ module.exports = function(eleventyConfig) {
         return new Date(dateObj).toISOString().split('T')[0];
     });
 
-    // Blog posts collection
-    // eleventyConfig.addCollection('posts', function(collection) {
-    //     // Collect all markdown files in the blog directory
-    //     return collection.getFilteredByGlob('src/blog/*/index.md')
-    //         // Sort by date, most recent first
-    //         .sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
-    // });
-
-    // module.exports = function(eleventyConfig) {
-    //     eleventyConfig.addFilter("resolvePageUrl", function(url) {
-    //         return url.replace(/\/index\.html$/, "/");
-    //     });
-    // };
-
     eleventyConfig.addCollection('filteredPosts', function(collection) {
         const posts = collection.getFilteredByGlob('src/blog/*/index.md')
             .filter(post => {
@@ -131,6 +118,97 @@ module.exports = function(eleventyConfig) {
         console.log(`Found ${posts.length} songbook posts`);
         return posts;
     });
+
+    // ADD LUNR SEARCH 
+    eleventyConfig.addCollection('searchIndices', function(collection) {
+    const allPosts = collection.getFilteredByGlob('src/blog/*/index.md');
+    
+    // Split posts into regular and songbook
+    const regularPosts = allPosts.filter(post => {
+        const categories = post.data.categories || [];
+        return !categories.includes('capoeira-songbook');
+    });
+
+    const songbookPosts = allPosts.filter(post => {
+        const categories = post.data.categories || [];
+        return categories.includes('capoeira-songbook');
+    });
+
+    // Create regular posts index
+    const regularIndex = lunr(function() {
+        this.ref('id');
+        this.field(('title'), {boost: 10}); 
+        this.field('excerpt');
+        this.field('categories');
+
+        regularPosts.forEach((post, idx) => {
+            const doc = {
+                id: idx,
+                title: post.data.title || '',
+                excerpt: post.data.excerpt || '',
+                categories: post.data.categories || [],
+                url: post.url,
+                coverImage: post.data.coverImage || ''
+            };
+            this.add(doc);
+        });
+    });
+
+    // Create songbook index
+    const songbookIndex = lunr(function() {
+        this.ref('id');
+        this.field(('title'), {boost: 10});
+        this.field('excerpt');
+        this.field('categories');
+
+        songbookPosts.forEach((post, idx) => {
+            const doc = {
+                id: idx,
+                title: post.data.title || '',
+                excerpt: post.data.excerpt || '',
+                categories: post.data.categories || [],
+                url: post.url
+            };
+            this.add(doc);
+        });
+    });
+
+    // Return both indices and their respective posts
+    return {
+        regular: {
+            index: regularIndex.toJSON(),
+            posts: regularPosts.map((post, idx) => {
+                // Debug log the image path
+                console.log('starting post');
+                const imagePath = post.data.coverImage 
+                    ? `/blog/${post.fileSlug}/images/${post.data.coverImage}`
+                    : null;
+    
+                console.log('Post:', post.data.title);
+                console.log('Original coverImage:', post.data.coverImage);
+                console.log('Computed path:', imagePath);
+    
+                return {
+                    id: idx,
+                    title: post.data.title || '',
+                    excerpt: post.data.excerpt || '',
+                    categories: post.data.categories || [],
+                    url: post.url,
+                    coverImage: imagePath
+                };
+            })
+        },
+        songbook: {
+            index: songbookIndex.toJSON(),
+            posts: songbookPosts.map((post, idx) => ({
+                id: idx,
+                title: post.data.title || '',
+                excerpt: post.data.excerpt || '',
+                categories: post.data.categories || [],
+                url: post.url,
+            }))
+        }
+    }});
 
     return {
         dir: {

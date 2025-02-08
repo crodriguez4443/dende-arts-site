@@ -1,5 +1,3 @@
-Here's the formatted document:
-
 ---
 title: "Meu Berimbau Instumento Genial"
 date: "2021-01-28"

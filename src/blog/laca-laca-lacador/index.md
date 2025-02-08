@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Laça, Laça, Laçador"
 date: "2021-02-28"
@@ -64,10 +62,8 @@ Catch, catch, release, release, lasso, lasso, lassoer</td>
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
 Note: As far as I know, "lassoer" isn't actually a word in English, but I'm hoping it conveys the intended meaning; someone who is adept at using the lasso and catching errant livestock.
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YpM20yJHNtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

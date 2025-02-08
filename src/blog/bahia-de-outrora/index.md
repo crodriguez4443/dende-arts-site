@@ -1,17 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Bahia de Outrora"
-date: "2020-09-28"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "intermediate"
-  - "mestre-mao-branca"
-  - "quadra"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

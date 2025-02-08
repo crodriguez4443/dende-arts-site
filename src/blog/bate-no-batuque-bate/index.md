@@ -1,16 +1,3 @@
-Here's the formatted markdown document:
-
----
-title: "Bate no batuque, bate"
-date: "2020-10-21"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-  - "chula"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

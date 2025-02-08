@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Você diz que sabe tudo, lagartixa sabe mais"
 date: "2023-02-06"
@@ -34,7 +32,5 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Unknown
-
 </figcaption>

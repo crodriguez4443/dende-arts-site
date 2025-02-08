@@ -1,5 +1,3 @@
-Here's the formatted markdown document according to the specifications:
-
 ---
 title: "Berimbau de Mestre Waldemar"
 date: "2020-10-27"

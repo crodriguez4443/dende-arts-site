@@ -1,3 +1,1 @@
-I apologize, but the document you provided does not contain a markdown table with song lyrics in Portuguese and English. This appears to be a blog post about choosing a Capoeira school. The formatting instructions you specified are for a song lyrics table, but this document does not have such a table.
-
-Would you like me to help you with something specific about this blog post, or did you intend to share a different document with song lyrics?
+The document does not contain song lyrics, so I will not modify the text. The markdown document appears to be a blog post about choosing a Capoeira school.

@@ -1,92 +1,85 @@
-Here's the formatted document according to the specifications:
-
----
-title: "É legal, é legal"
-date: "2020-11-30"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
         <th>English</th>
     </tr>
     <tr>
-        <td>É legal, é legal<br><br>
-        Jogar capoeira e tocar berimbau<br>
-        <strong>É legal, é legal</strong><br><br>
-        
-        Oi jogar capoeira é um negócio legal<br>
-        <strong>É legal, é legal</strong><br><br>
-        
-        A capoeira ela é luta e brincadeira<br>
-        Não importa se é ligeira se angola ou regional<br>
-        A capoeira tem madinga tem rasteira<br>
-        Você planta bananeira<br>
-        Você ginga e dá mortal<br>
-        Diz<br><br>
-        
-        <strong>É legal, é legal</strong><br><br>
-        
-        Jogar capoeira e tocar berimbau<br>
-        <strong>É legal, é legal</strong><br><br>
-        
-        Oi jogar capoeira è um negócio legal<br>
-        <strong>É legal, é legal</strong><br><br>
-        
-        A capoeira essa luta brasileira de malicia e brincadeira<br>
-        Pois eu nunca vi igual<br>
-        Na capoeira você joga bate palma<br>
-        Você canta ladainha,<br>
-        Ainda toca berimbau<br><br>
-        
-        <strong>É legal, é legal</strong><br><br>
-        
-        Jogar capoeira e tocar berimbau<br>
-        <strong>É legal, é legal</strong><br><br>
-        
-        Oi jogar capoeira è um negócio legal<br>
-        <strong>É legal, é legal</strong></td>
-        <td>It's cool, it's cool<br><br>
-        
-        Play capoeira and play berimbau<br>
-        It's cool, it's cool<br><br>
-        
-        Hey playing capoeira is a cool thing<br>
-        It's cool, it's cool<br><br>
-        
-        Capoeira she is fighting and playing<br>
-        It doesn't matter if it is mild if it's Angola or regional<br>
-        Capoeira has madinga and rasteira<br>
-        You handstand<br>
-        You swing and flip<br>
-        Say<br><br>
-        
-        It's cool, it's cool<br><br>
-        
-        Play capoeira and play berimbau<br>
-        It's cool, it's cool<br><br>
-        
-        Hey, playing capoeira is a cool thing<br>
-        It's cool, it's cool<br><br>
-        
-        Capoeira this Brazilian fight of malice and play<br>
-        Cause I've never seen the same<br>
-        In capoeira you play and clap<br>
-        You sing litanies,<br>
-        And you also play berimbau<br><br>
-        
-        It's cool, it's cool<br><br>
-        
-        Play capoeira and play berimbau<br>
-        It's cool, it's cool<br><br>
-        
-        Hi, playing capoeira is a cool thing<br>
-        It's cool, it's cool</td>
+        <td>
+            É legal, é legal<br>
+            <br>
+            Jogar capoeira e tocar berimbau<br>
+            <strong>É legal, é legal</strong><br>
+            <br>
+            Oi jogar capoeira é um negócio legal<br>
+            <strong>É legal, é legal</strong><br>
+            <br>
+            A capoeira ela é luta e brincadeira<br>
+            Não importa se é ligeira se angola ou regional<br>
+            A capoeira tem madinga tem rasteira<br>
+            Você planta bananeira<br>
+            Você ginga e dá mortal<br>
+            Diz<br>
+            <br>
+            <strong>É legal, é legal</strong><br>
+            <br>
+            Jogar capoeira e tocar berimbau<br>
+            <strong>É legal, é legal</strong><br>
+            <br>
+            Oi jogar capoeira è um negócio legal<br>
+            <strong>É legal, é legal</strong><br>
+            <br>
+            A capoeira essa luta brasileira de malicia e brincadeira<br>
+            Pois eu nunca vi igual<br>
+            Na capoeira você joga bate palma<br>
+            Você canta ladainha,<br>
+            Ainda toca berimbau<br>
+            <br>
+            <strong>É legal, é legal</strong><br>
+            <br>
+            Jogar capoeira e tocar berimbau<br>
+            <strong>É legal, é legal</strong><br>
+            <br>
+            Oi jogar capoeira è um negócio legal<br>
+            <strong>É legal, é legal</strong>
+        </td>
+        <td>
+            It's cool, it's cool<br>
+            <br>
+            Play capoeira and play berimbau<br>
+            It's cool, it's cool<br>
+            <br>
+            Hey playing capoeira is a cool thing<br>
+            It's cool, it's cool<br>
+            <br>
+            Capoeira she is fighting and playing<br>
+            It doesn't matter if it is mild if it's Angola or regional<br>
+            Capoeira has madinga and rasteira<br>
+            You handstand<br>
+            You swing and flip<br>
+            Say<br>
+            <br>
+            It's cool, it's cool<br>
+            <br>
+            Play capoeira and play berimbau<br>
+            It's cool, it's cool<br>
+            <br>
+            Hey, playing capoeira is a cool thing<br>
+            It's cool, it's cool<br>
+            <br>
+            Capoeira this Brazilian fight of malice and play<br>
+            Cause I've never seen the same<br>
+            In capoeira you play and clap<br>
+            You sing litanies,<br>
+            And you also play berimbau<br>
+            <br>
+            It's cool, it's cool<br>
+            <br>
+            Play capoeira and play berimbau<br>
+            It's cool, it's cool<br>
+            <br>
+            Hi, playing capoeira is a cool thing<br>
+            It's cool, it's cool
+        </td>
     </tr>
 </table>
 

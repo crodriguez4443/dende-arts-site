@@ -1,5 +1,3 @@
-Here's the formatted document:
-
 ---
 title: "Folha Seca"
 date: "2020-11-26"
@@ -37,10 +35,8 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
-Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
+Author: Unknown (Do you know who wrote this song? Tell us in the comments!)<br>
 T/L: Xuê and xuá are onomatopoeias, so I didn't translate them.
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o6mviwiWqCw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

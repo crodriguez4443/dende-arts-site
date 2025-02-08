@@ -17,18 +17,8 @@ By unknown
         <th>English</th>
     </tr>
     <tr>
-        <td>O facão bateu embaixo<br>
-<strong>a bananeira caiu</strong><br>
-o facão bateu embaixo<br>
-<strong>a bananeira caiu</strong><br>
-cai cai bananeira<br>
-<strong>a bananeira caiu</strong></td>
-        <td>The machete hit below<br>
-the banana tree fell<br>
-the machete hit down<br>
-the banana tree fell<br>
-falls falls banana<br>
-the banana tree fell</td>
+        <td>O facão bateu embaixo<br><strong>a bananeira caiu</strong><br>o facão bateu embaixo<br><strong>a bananeira caiu</strong><br><strong>cai cai bananeira</strong><br><strong>a bananeira caiu</strong></td>
+        <td>The machete hit below<br>the banana tree fell<br>the machete hit down<br>the banana tree fell<br>falls falls banana<br>the banana tree fell</td>
     </tr>
 </table>
 

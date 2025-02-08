@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Africa se uniu"
 date: "2020-09-23"

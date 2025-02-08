@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Desejo de Regresso"
 date: "2020-12-21"
@@ -65,8 +63,8 @@ Eu quero voltar<br>
 Eu quero voltar<br>
 Eu quero voltar<br>
 Minha mãe, África<br>
-<strong><br>
-Eu quero voltar<br>
+<br>
+<strong>Eu quero voltar<br>
 Eu quero voltar<br>
 Eu quero voltar<br>
 Minha mãe, África</strong><br>

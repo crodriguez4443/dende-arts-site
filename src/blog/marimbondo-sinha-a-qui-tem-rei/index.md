@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Marimbondo Sinhá (A qui tem rei)"
 date: "2023-09-25"
@@ -17,28 +15,8 @@ layout: "blog-post-layout.njk"
         <th>English</th>
     </tr>
     <tr>
-        <td>Aqui tem rei Marimbondo sinhá<br>
-Aqui tem rei<br>
-<br>
-<strong>Marimbondo sinhá (chorus)</strong><br>
-<strong>Aqui tem rei</strong><br>
-<strong>Marimbondo sinhá (chorus)</strong><br>
-<strong>Tem rei</strong><br>
-<strong>Marimbondo sinhá (chorus)</strong><br>
-<strong>Aqui tem rei</strong><br>
-<strong>Marimbondo sinhá (chorus)</strong><br>
-<strong>Tem rei</strong></td>
-        <td>Here is a king, Marimbondo, miss<br>
-Here is a king<br>
-<br>
-Marimbondo miss (chorus)<br>
-Here is a king<br>
-Sinhá wasp (chorus)<br>
-Here is a king<br>
-Sinhá wasp (chorus)<br>
-Here is a king<br>
-Sinhá wasp (chorus)<br>
-Here is a king</td>
+        <td>Aqui tem rei Marimbondo sinhá<br>Aqui tem rei<br><br><strong>Marimbondo sinhá (chorus)</strong><br><strong>Aqui tem rei</strong><br><strong>Marimbondo sinhá (chorus)</strong><br><strong>Tem rei</strong><br><strong>Marimbondo sinhá (chorus)</strong><br><strong>Aqui tem rei</strong><br><strong>Marimbondo sinhá (chorus)</strong><br><strong>Tem rei</strong></td>
+        <td>Here is a king, Marimbondo, miss<br>Here is a king<br><br>Marimbondo miss (chorus)<br>Here is a king<br>Sinhá wasp (chorus)<br>Here is a king<br>Sinhá wasp (chorus)<br>Here is a king<br>Sinhá wasp (chorus)<br>Here is a king</td>
     </tr>
 </table>
 

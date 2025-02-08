@@ -1,1 +1,1 @@
-Since there are no song lyrics in this document, I cannot create a table as specified. The document appears to be a comprehensive article about the history and components of the berimbau in Capoeira. Would you like me to do anything else with this text?
+The markdown document does not contain song lyrics, so I will not modify the text. The document appears to be a detailed article about the history and components of the berimbau in Capoeira.

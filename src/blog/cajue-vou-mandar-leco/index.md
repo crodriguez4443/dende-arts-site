@@ -1,107 +1,99 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Cajuê (Vou mandar leco)"
-date: "2020-10-23"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
         <th>English</th>
     </tr>
     <tr>
-        <td><strong>Introdução opcional:<br>
-        </strong>Seu Capoeira Que Aconteceu<br>
-        Naquela roda em noite de lua<br>
-        Deu meia-lua, levou cabeçada<br>
-        Meu camarada pode acreditar<br>
-        Pois nessa roda foi uma beleza<br>
-        Na certeza que eu vim de la<br>
-        Daquela terra muito abençoada<br>
-        É da Bahia que eu vou falar<br>
-        <br>
-        Vou mandar lecô<br>
-        <br>
-        <strong>Cajuê</strong><br>
-        <br>
-        Vou mandar loiá<br>
-        <br>
-        <strong>Cajuê</strong><br>
-        <br>
-        Vou mandar leco cajuê<br>
-        Vou mandar loiá<br>
-        Vou mandar leco cajuê<br>
-        Vou mandar loiá<br>
-        <br>
-        <strong>Vou mandar leco cajuê<br>
-        Vou mandar loiá<br>
-        Vou mandar leco cajuê<br>
-        Vou mandar loiá</strong><br>
-        <br>
-        Vou mandar lecô<br>
-        <br>
-        <strong>Cajuê</strong><br>
-        <br>
-        Vou mandar loiá<br>
-        <br>
-        <strong>Cajuê</strong><br>
-        <br>
-        Vou mandar lecô<br>
-        <br>
-        <strong>Cajuê</strong><br>
-        <br>
-        Vou mandar loiá<br>
-        <br>
-        <strong>Cajuê</strong></td>
-        <td><strong>Optional introduction:</strong><br>
-        Capoeira Master, what happened<br>
-        In that roda on a moonlit night<br>
-        He gave a meia-lua, received a headbutt<br>
-        My friend, you can believe it<br>
-        Because in that roda, it was beautiful<br>
-        I'm certain because I came from there<br>
-        From that very blessed land<br>
-        It's Bahia that I'm going to talk about<br>
-        <br>
-        Vou send lecô<br>
-        <br>
-        Cashew<br>
-        <br>
-        I'll send loiá<br>
-        <br>
-        Cashew<br>
-        <br>
-        I'll send leco cajuê<br>
-        I'll send loiá<br>
-        I'll send leco cajuê<br>
-        I'll send loiá<br>
-        <br>
-        I'll send leco cajuê<br>
-        I'll send loiá<br>
-        I'll send leco cajuê<br>
-        I'll send loiá<br>
-        <br>
-        Vou send lecô<br>
-        <br>
-        Cashew<br>
-        <br>
-        I'll send loiá<br>
-        <br>
-        Cashew<br>
-        <br>
-        I'll send lecô<br>
-        <br>
-        Cashew<br>
-        <br>
-        I'll send loiá<br>
-        <br>
-        Cashew</td>
+        <td>
+            <strong>Introdução opcional:<br>
+            </strong>Seu Capoeira Que Aconteceu<br>
+            Naquela roda em noite de lua<br>
+            Deu meia-lua, levou cabeçada<br>
+            Meu camarada pode acreditar<br>
+            Pois nessa roda foi uma beleza<br>
+            Na certeza que eu vim de la<br>
+            Daquela terra muito abençoada<br>
+            É da Bahia que eu vou falar<br>
+            <br>
+            Vou mandar lecô<br>
+            <br>
+            <strong>Cajuê</strong><br>
+            <br>
+            Vou mandar loiá<br>
+            <br>
+            <strong>Cajuê</strong><br>
+            <br>
+            Vou mandar leco cajuê<br>
+            Vou mandar loiá<br>
+            Vou mandar leco cajuê<br>
+            Vou mandar loiá<br>
+            <br>
+            <strong>Vou mandar leco cajuê<br>
+            Vou mandar loiá<br>
+            Vou mandar leco cajuê<br>
+            Vou mandar loiá</strong><br>
+            <br>
+            Vou mandar lecô<br>
+            <br>
+            <strong>Cajuê</strong><br>
+            <br>
+            Vou mandar loiá<br>
+            <br>
+            <strong>Cajuê</strong><br>
+            <br>
+            Vou mandar lecô<br>
+            <br>
+            <strong>Cajuê</strong><br>
+            <br>
+            Vou mandar loiá<br>
+            <br>
+            <strong>Cajuê</strong>
+        </td>
+        <td>
+            <strong>Optional introduction:</strong><br>
+            Capoeira Master, what happened<br>
+            In that roda on a moonlit night<br>
+            He gave a meia-lua, received a headbutt<br>
+            My friend, you can believe it<br>
+            Because in that roda, it was beautiful<br>
+            I'm certain because I came from there<br>
+            From that very blessed land<br>
+            It's Bahia that I'm going to talk about<br>
+            <br>
+            Vou send lecô<br>
+            <br>
+            Cashew<br>
+            <br>
+            I'll send loiá<br>
+            <br>
+            Cashew<br>
+            <br>
+            I'll send leco cajuê<br>
+            I'll send loiá<br>
+            I'll send leco cajuê<br>
+            I'll send loiá<br>
+            <br>
+            I'll send leco cajuê<br>
+            I'll send loiá<br>
+            I'll send leco cajuê<br>
+            I'll send loiá<br>
+            <br>
+            Vou send lecô<br>
+            <br>
+            Cashew<br>
+            <br>
+            I'll send loiá<br>
+            <br>
+            Cashew<br>
+            <br>
+            I'll send lecô<br>
+            <br>
+            Cashew<br>
+            <br>
+            I'll send loiá<br>
+            <br>
+            Cashew
+        </td>
     </tr>
 </table>
 

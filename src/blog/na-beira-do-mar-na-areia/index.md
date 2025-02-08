@@ -1,15 +1,3 @@
-Here's the formatted markdown document according to the specifications:
-
----
-title: "Na Beira do Mar, Na Areia"
-date: "2021-01-31"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

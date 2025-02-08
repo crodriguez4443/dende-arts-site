@@ -1,1 +1,1 @@
-I apologize, but there are no song lyrics in this markdown document. This appears to be a blog post about improving kicking techniques in martial arts. The document does not require the table formatting you specified. Would you like me to help you with something else related to this document?
+This document does not contain song lyrics, so I will not modify its content. The markdown document appears to be a detailed blog post about improving kicking technique and flexibility in martial arts, specifically with references to Capoeira.

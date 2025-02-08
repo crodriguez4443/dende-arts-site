@@ -15,26 +15,8 @@ layout: "blog-post-layout.njk"
         <th>English</th>
     </tr>
     <tr>
-        <td>A hora e essa<br><br>
-<strong>A hora e essa</strong><br><br>
-Berimbau tocou na Capoeira<br>
-Berimbau tocou eu vou jogar<br><br>
-<strong>Berimbau tocou na Capoeira<br>
-Berimbau tocou eu vou jogar</strong><br><br>
-A hora e essa<br><br>
-<strong>A hora e essa</strong><br><br>
-Berimbau tocou na Capoeira<br><br>
-<strong>Berimbau tocou eu vou jogar</strong></td>
-        <td>The hour is now<br><br>
-The hour is now<br><br>
-The Berimbau played Capoeira<br>
-The Berimbau played I will play<br><br>
-The Berimbau played Capoeira<br>
-The Berimbau played I will play<br><br>
-The hour is now<br><br>
-The hour is now<br><br>
-The Berimbau played Capoeira<br><br>
-The Berimbau played I will play</td>
+        <td><strong>A hora e essa</strong><br><br>Berimbau tocou na Capoeira<br>Berimbau tocou eu vou jogar<br><br><strong>Berimbau tocou na Capoeira<br>Berimbau tocou eu vou jogar</strong><br><br><strong>A hora e essa</strong><br><br><strong>A hora e essa</strong><br><br>Berimbau tocou na Capoeira<br><br><strong>Berimbau tocou eu vou jogar</strong></td>
+        <td>The hour is now<br><br>The hour is now<br><br>The Berimbau played Capoeira<br>The Berimbau played I will play<br><br>The Berimbau played Capoeira<br>The Berimbau played I will play<br><br>The hour is now<br><br>The hour is now<br><br>The Berimbau played Capoeira<br><br>The Berimbau played I will play</td>
     </tr>
 </table>
 

@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "É de ioiô, é de iaiá"
 date: "2020-11-29"

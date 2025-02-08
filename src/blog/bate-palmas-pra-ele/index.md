@@ -1,16 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Bate Palmas Pra Ele (menino é bom)"
-date: "2020-10-22"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-  - "corrido"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -18,30 +5,28 @@ layout: "blog-post-layout.njk"
     </tr>
     <tr>
         <td>Não maltrate este menino<br>
-Que ele e bom até demais<br>
-Escorrega na mandinga<br>
-Tropeça mas não cai<br>
-<br>
-O menino é bom<br>
-Bate palmas pra ele<br>
-<br>
-Ê, menino é bom<br>
-Bate palmas pra ele</td>
+        Que ele e bom até demais<br>
+        Escorrega na mandinga<br>
+        Tropeça mas não cai<br>
+        <br>
+        O menino é bom<br>
+        Bate palmas pra ele<br>
+        <br>
+        Ê, menino é bom<br>
+        Bate palmas pra ele</td>
         <td>Don't mistreat this boy<br>
-Cause he's good, too good even<br>
-He slips on the mandinga<br>
-He trips, but doesn't fall<br>
-<br>
-The boy is good<br>
-Clap for him<br>
-<br>
-The boy is good<br>
-Clap for him</td>
+        Cause he's good, too good even<br>
+        He slips on the mandinga<br>
+        He trips, but doesn't fall<br>
+        <br>
+        The boy is good<br>
+        Clap for him<br>
+        <br>
+        The boy is good<br>
+        Clap for him</td>
     </tr>
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

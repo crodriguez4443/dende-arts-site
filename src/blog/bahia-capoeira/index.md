@@ -1,15 +1,3 @@
-Here's the formatted markdown document:
-
----
-title: "Bahia Capoeira"
-date: "2020-09-28"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "intermediate"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

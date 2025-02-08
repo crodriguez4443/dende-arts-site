@@ -1,5 +1,3 @@
-Here's the formatted markdown document according to the specifications:
-
 ---
 title: "Escute o Tambor"
 date: "2020-12-12"

@@ -1,16 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Bimba Foi Desafiado"
-date: "2020-10-27"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "advanced"
-  - "ladainha"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -81,10 +68,10 @@ That man is a dog<br>
 Comrade<br>
 <br>
 Iê, long live Seu Bimba<br>
-Iê, long live Seu Bimba<br>
+<strong>Iê, long live Seu Bimba</strong><br>
 <br>
 Iê, he's a mandingueiro<br>
-Iê, he's a mandingueiro</td>
+<strong>Iê, he's a mandingueiro</strong></td>
     </tr>
 </table>
 

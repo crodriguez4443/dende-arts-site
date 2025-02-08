@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "MACHISMO AND CAPOEIRA"
 date: "2017-06-26"
@@ -43,5 +41,3 @@ But what to do? Do we ban people from events? Do we refuse to do shows with them
 More than consequences, I think we need to educate our new teachers by showing them (preferably, by example) that as a male Capoeirista, your value is not tied to some macho bullshit. What matters is what you contributed: What have you given so that your brothers and sisters can blossom in Capoeira? How have you presented yourself as a leader? Virtues! We need virtues like respect, community, diligence, and dignity to guide us as we grow.
 
 I honestly believe that the way this video became viral shows how much progress we have made as a community as much as it shows how much more we have to go.
-
-Note: There are no song lyrics in this document, so no table was created. The document remains unchanged.

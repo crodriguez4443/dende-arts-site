@@ -1,5 +1,3 @@
-Here's the formatted markdown document:
-
 ---
 title: "Já Nasce na Capoeira"
 date: "2020-12-30"
@@ -16,40 +14,8 @@ layout: "blog-post-layout.njk"
         <th>English</th>
     </tr>
     <tr>
-        <td>Bem-te-vi cantou na galha da gamaleira<br>
-        Bem-te-vi cantou na galha da gamaleira<br>
-        Sabia responde do meio da laranjeira<br>
-        Dizendo de quem é bamba<br>
-        Já nasce na capoeira<br>
-        <br>
-        Dizendo de quem é bamba<br>
-        <strong>Já nasce na capoeira</strong><br>
-        <br>
-        E Mestre Bimba que foi bamba<br>
-        <strong>Já nasce na capoeira</strong><br>
-        <br>
-        O berimbau tambem é bamba<br>
-        <strong>Já nasce na capoeira</strong><br>
-        <br>
-        E tudo mundo que é bamba<br>
-        <strong>Já nasce na capoeira</strong></td>
-        <td>Bem-te-vi sang on the gameleira branch<br>
-        Bem-te-vi sang on the gameleira branch<br>
-        Sabia answers from the middle of the orange tree<br>
-        Saying those who are bamba<br>
-        Are already in capoeira<br>
-        <br>
-        Saying those who are bamba<br>
-        Are already in capoeira<br>
-        <br>
-        And Mestre Bimba who was bamba<br>
-        Are already in capoeira<br>
-        <br>
-        The berimbau is also bamba<br>
-        Are already in capoeira<br>
-        <br>
-        And everything that is bamba<br>
-        Are already in capoeira</td>
+        <td>Bem-te-vi cantou na galha da gamaleira<br>Bem-te-vi cantou na galha da gamaleira<br>Sabia responde do meio da laranjeira<br>Dizendo de quem é bamba<br>Já nasce na capoeira<br><br>Dizendo de quem é bamba<br><strong>Já nasce na capoeira</strong><br><br>E Mestre Bimba que foi bamba<br><strong>Já nasce na capoeira</strong><br><br>O berimbau tambem é bamba<br><strong>Já nasce na capoeira</strong><br><br>E tudo mundo que é bamba<br><strong>Já nasce na capoeira</strong></td>
+        <td>Bem-te-vi sang on the gameleira branch<br>Bem-te-vi sang on the gameleira branch<br>Sabia answers from the middle of the orange tree<br>Saying those who are bamba<br>Are already in capoeira<br><br>Saying those who are bamba<br>Are already in capoeira<br><br>And Mestre Bimba who was bamba<br>Are already in capoeira<br><br>The berimbau is also bamba<br>Are already in capoeira<br><br>And everything that is bamba<br>Are already in capoeira</td>
     </tr>
 </table>
 

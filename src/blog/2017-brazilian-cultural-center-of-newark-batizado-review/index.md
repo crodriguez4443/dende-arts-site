@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "2017 BCC of NEWARK BATIZADO REVIEW"
 date: "2017-07-17"
@@ -55,5 +53,3 @@ Sadly, we had someone who was programmed to do a workshop, drop out at the last 
 ## WRAPPING UP
 
 The event was a lot of good fun. Lots of games, lots of workshops, and overall the event was very inclusive of the kids we had participate. Special shoutout to Professor Budoy from [CDO Montretal](https://www.facebook.com/compassocordaodeouro/). That whole crew is full of great people, so if you ever find yourself in Quebec with a free night, stop by their space for solid training. Hope to see you next year!
-
-Note: There are no song lyrics in this document, so no table was created. The document remains unchanged.

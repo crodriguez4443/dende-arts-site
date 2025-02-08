@@ -1,5 +1,3 @@
-Here's the document with the table formatted according to the specifications:
-
 ---
 title: "LESSONS FROM OPENING A CAPOEIRA ACADEMY"
 date: "2017-07-11"
@@ -39,5 +37,3 @@ If Malcolm Gladwell was right and you need 10,000 hours before you can master an
 I felt very lucky that I was able to give my students the opportunity to learn from someone with much more experience than me. For me that meant having [Professor Silencio](https://www.youtube.com/watch?v=ugGpHZR823k) of [Capoeira Mandinga](http://mandinga.org/capoeira/our-instructors/professor-silencio/) come and teach a 2 hour class (practically a seminar) on expression and some creativity in movement. This is a win win for everyone involved. The teacher is payed, you learn something new, and your students learn something they could not otherwise. Bring more people into the fold and expand what you are able to bring to the table. Don't let people forget the lessons they learn, write this stuff down! notes, pictures, and videos are very helpful to make sure you take full advantage of your guest teacher's lessons.
 
 Although there were many things I learned while teaching class, I think the biggest thing is to care for your students. Like children, they lean on you to know what to do next, so you have to always be on your toes, ready for the questions and challenges they bring. The experience was like no other and I hope everyone who does Capoeira gets the chance to teach at some point.
-
-Note: There were no song lyrics in this document, so no table was created. The document remains unchanged.

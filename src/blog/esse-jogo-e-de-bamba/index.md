@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Esse Jogo é de Bamba"
 date: "2023-02-09"
@@ -17,90 +15,8 @@ layout: "blog-post-layout.njk"
         <th>English</th>
     </tr>
     <tr>
-        <td>
-            Balanca é, balanca<br>
-            Balanca é, balanca<br>
-            Que esse jogo é de bamba<br>
-            Esse jogo é de bamba<br>
-            <br>
-            <strong>Balanca é, balanca<br>
-            Balanca é, balanca<br>
-            Que esse jogo é de bamba<br>
-            Esse jogo é de bamba</strong><br>
-            <br>
-            No toque do Berimbau<br>
-            Na palma cadenciada<br>
-            Preste atencao nesse jogo<br>
-            Esse jogo é de bamba, rapaziada<br>
-            <br>
-            <strong>Balanca é, balanca<br>
-            Balanca é, balanca<br>
-            Que esse jogo é de bamba<br>
-            Esse jogo é de bamba</strong><br>
-            <br>
-            Muita energia que rola<br>
-            Mais um jogo que fica pra história<br>
-            É, venha cá, venha ver<br>
-            Meia-lua, esquiva, rasteira<br>
-            O nome já foi dado, é Capoeira<br>
-            Quero mais aprender, quero mais aprender<br>
-            <br>
-            <strong>Balanca é, balanca<br>
-            Balanca é, balanca<br>
-            Que esse jogo é de bamba<br>
-            Esse jogo é de bamba</strong><br>
-            <br>
-            E essa roda tá boa, eu quero jogar<br>
-            Se for jogo de bamba, é melhor respeitar<br>
-            Meu mestre me falou, meu mestre me falou<br>
-            <br>
-            <strong>Balanca é, balanca<br>
-            Balanca é, balanca<br>
-            Que esse jogo é de bamba<br>
-            Esse jogo é de bamba</strong>
-        </td>
-        <td>
-            Balance is, balance<br>
-            Balance is, balance<br>
-            That this game is tough<br>
-            This game is tough (for the strong)<br>
-            <br>
-            Balance is, balance<br>
-            Balance is, balance<br>
-            That this game is tough<br>
-            This game is tough (for the strong)<br>
-            <br>
-            In the rhythm of the Berimbau<br>
-            In the rhythmic clap<br>
-            Pay attention to this game<br>
-            This game is tough (for the strong), guys<br>
-            <br>
-            Balance is, balance<br>
-            Balance is, balance<br>
-            That this game sucks<br>
-            This game is badass<br>
-            <br>
-            Lots of energy rolling<br>
-            Another game that goes down in history<br>
-            Yeah, come here, come see<br>
-            Meia-lua (the kick), esquiva, rasteira<br>
-            The name has already been given, it's Capoeira<br>
-            I want to learn more, I want to learn more<br>
-            <br>
-            Balance is, balance<br>
-            Balance is, balance<br>
-            That this game sucks<br>
-            This game is badass<br>
-            <br>
-            And this roda is good, I want to play<br>
-            If it's a tough game, it's better to respect<br>
-            My master told me, my master told me<br>
-            <br>
-            Balance is, balance<br>
-            Balance is, balance<br>
-            That this game sucks<br>
-            This game is badass
-        </td>
+        <td>Balanca é, balanca<br>Balanca é, balanca<br>Que esse jogo é de bamba<br>Esse jogo é de bamba<br><br><strong>Balanca é, balanca<br>Balanca é, balanca<br>Que esse jogo é de bamba<br>Esse jogo é de bamba</strong><br><br>No toque do Berimbau<br>Na palma cadenciada<br>Preste atencao nesse jogo<br>Esse jogo é de bamba, rapaziada<br><br><strong>Balanca é, balanca<br>Balanca é, balanca<br>Que esse jogo é de bamba<br>Esse jogo é de bamba</strong><br><br>Muita energia que rola<br>Mais um jogo que fica pra história<br>É, venha cá, venha ver<br>Meia-lua, esquiva, rasteira<br>O nome já foi dado, é Capoeira<br>Quero mais aprender, quero mais aprender<br><br><strong>Balanca é, balanca<br>Balanca é, balanca<br>Que esse jogo é de bamba<br>Esse jogo é de bamba</strong><br><br>E essa roda tá boa, eu quero jogar<br>Se for jogo de bamba, é melhor respeitar<br>Meu mestre me falou, meu mestre me falou<br><br><strong>Balanca é, balanca<br>Balanca é, balanca<br>Que esse jogo é de bamba<br>Esse jogo é de bamba</strong></td>
+        <td>Balance is, balance<br>Balance is, balance<br>That this game is tough<br>This game is tough (for the strong)<br><br>Balance is, balance<br>Balance is, balance<br>That this game is tough<br>This game is tough (for the strong)<br><br>In the rhythm of the Berimbau<br>In the rhythmic clap<br>Pay attention to this game<br>This game is tough (for the strong), guys<br><br>Balance is, balance<br>Balance is, balance<br>That this game sucks<br>This game is badass<br><br>Lots of energy rolling<br>Another game that goes down in history<br>Yeah, come here, come see<br>Meia-lua (the kick), esquiva, rasteira<br>The name has already been given, it's Capoeira<br>I want to learn more, I want to learn more<br><br>Balance is, balance<br>Balance is, balance<br>That this game sucks<br>This game is badass<br><br>And this roda is good, I want to play<br>If it's a tough game, it's better to respect<br>My master told me, my master told me<br><br>Balance is, balance<br>Balance is, balance<br>That this game sucks<br>This game is badass</td>
     </tr>
 </table>
 

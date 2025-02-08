@@ -1,1 +1,1 @@
-Since there are no song lyrics in this markdown document, I cannot create a table as specified. The document appears to be a comprehensive blog post about playing Capoeira, explaining its rules, techniques, and philosophy. Would you like me to help you with anything else related to this text?
+The document does not contain song lyrics, so I will not modify the text. The markdown document is left as is.

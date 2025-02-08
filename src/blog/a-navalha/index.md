@@ -1,5 +1,3 @@
-Here's the formatted markdown document according to the specifications:
-
 ---
 title: "A navalha"
 date: "2020-10-23"
@@ -39,7 +37,6 @@ layout: "blog-post-layout.njk"
             <strong>O lê lê lê, é capoeira, lê lê,<br>
             É berimbau, lê lê,<br>
             É capoeira de angola e regional</strong>
-            <!-- Rest of the Portuguese lyrics following the same pattern -->
         </td>
         <td>
             But the razor in my pocket<br>
@@ -64,9 +61,9 @@ layout: "blog-post-layout.njk"
             The lê lê lê, it's capoeira, lê lê,<br>
             It's berimbau, lê lê,<br>
             It is capoeira from angola and regional
-            <!-- Rest of the English lyrics following the same pattern -->
         </td>
     </tr>
+    <!-- Additional verses would continue in the same table -->
 </table>
 
 <figcaption>

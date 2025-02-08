@@ -1,17 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "A palma de Bimba"
-date: "2020-09-22"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "advanced"
-  - "mestre-itapoan"
-  - "quadra"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

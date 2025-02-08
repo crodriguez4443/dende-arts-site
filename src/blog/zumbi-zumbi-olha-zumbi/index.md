@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Zumbi, Zumbi, Olha Zumbi"
 date: "2020-10-17"

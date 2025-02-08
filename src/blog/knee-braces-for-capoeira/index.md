@@ -1,3 +1,1 @@
-This document does not contain any song lyrics in Portuguese and English, so the specified formatting for a bilingual song lyrics table is not applicable. The document appears to be a comprehensive blog post about knee braces for capoeira practitioners. 
-
-Would you like me to help you with something specific about this document, such as preserving its current formatting or structure?
+The document does not contain song lyrics, so I will not modify its content. The markdown document appears to be a comprehensive guide about knee braces for capoeira practitioners, discussing different types of knee braces, their uses, and recommendations for training with knee injuries.

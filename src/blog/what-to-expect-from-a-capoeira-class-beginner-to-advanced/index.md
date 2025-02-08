@@ -1,3 +1,1 @@
-I apologize, but there are no song lyrics in this markdown document. This appears to be a comprehensive blog post about what to expect in a Capoeira class. The document contains text about Capoeira styles, classes, uniforms, and learning experiences. Would you like me to help you with something specific about this text?
-
-If you intended to include song lyrics, could you please provide those lyrics? I'm ready to format them according to the specifications you outlined.
+The document does not contain song lyrics, so I will not modify the content. The markdown document appears to be an informative blog post about what to expect in a Capoeira class.

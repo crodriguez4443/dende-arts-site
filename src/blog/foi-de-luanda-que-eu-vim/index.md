@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Foi de Luanda Que Eu Vim"
 date: "2020-11-26"

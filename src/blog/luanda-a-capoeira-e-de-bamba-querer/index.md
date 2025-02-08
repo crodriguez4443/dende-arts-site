@@ -1,5 +1,3 @@
-Here's the formatted markdown document according to the specifications:
-
 ---
 title: "Luanda (A Capoeira é de Bamba Querer)"
 date: "2021-01-24"
@@ -65,15 +63,15 @@ layout: "blog-post-layout.njk"
             <br>
             Oh aê Luanda<br>
             Oh aê Luanda<br>
-            <br>
-            <strong>Oh aê Luanda<br>
+            <strong><br>
+            Oh aê Luanda<br>
             Oh aê Luanda</strong><br>
             <br>
             A capoeira é de bamba querer<br>
-            A capoeira é de querer bamba<br>
+            A capoeira é de querer bamba**<br>
             <br>
-            <strong>A capoeira é de bamba querer<br>
-            A capoeira é de querer bamba</strong><br>
+            A capoeira é de bamba querer<br>
+            A capoeira é de querer bamba**<br>
             <br>
             Quem mandou o recado<br>
             Já mandei voltar<br>

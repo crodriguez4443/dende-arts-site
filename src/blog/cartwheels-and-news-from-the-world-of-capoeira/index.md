@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "CARTWHEELS  and news from the world of Capoeira"
 date: "2018-05-28"

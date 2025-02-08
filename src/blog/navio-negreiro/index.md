@@ -15,46 +15,8 @@ layout: "blog-post-layout.njk"
         <th>English</th>
     </tr>
     <tr>
-        <td>Navio negreiro<br>
-        Tumba flutuante<br>
-        Terra mãe distante<br>
-        Dor e desespero<br>
-        <br>
-        <strong>Navio negreiro</strong><br>
-        <br>
-        Segue a nau errante<br>
-        Singrando saudades<br>
-        África distante<br>
-        Ouça meus cantares<br>
-        <br>
-        <strong>Navio negreiro</strong><br>
-        <br>
-        Mãe que perde o filho<br>
-        Rei perde rainha<br>
-        Povo perde o brio<br>
-        Enquanto definha<br>
-        <br>
-        <strong>Navio negreiro</strong></td>
-        <td>Slaveship<br>
-        Floating tomb<br>
-        Distant motherland<br>
-        Pain and despair<br>
-        <br>
-        Slaveship<br>
-        <br>
-        Follows the wandering ship<br>
-        Sailing homesickness<br>
-        Distant Africa<br>
-        Listen to my songs<br>
-        <br>
-        Slaveship<br>
-        <br>
-        Mother who loses her son<br>
-        King loses his queen<br>
-        People lose their panache<br>
-        While wasting away<br>
-        <br>
-        Slaveship</td>
+        <td>Navio negreiro<br>Tumba flutuante<br>Terra mãe distante<br>Dor e desespero<br><br><strong>Navio negreiro</strong><br><br>Segue a nau errante<br>Singrando saudades<br>África distante<br>Ouça meus cantares<br><br><strong>Navio negreiro</strong><br><br>Mãe que perde o filho<br>Rei perde rainha<br>Povo perde o brio<br>Enquanto definha<br><br><strong>Navio negreiro</strong></td>
+        <td>Slaveship<br>Floating tomb<br>Distant motherland<br>Pain and despair<br><br>Slaveship<br><br>Follows the wandering ship<br>Sailing homesickness<br>Distant Africa<br>Listen to my songs<br><br>Slaveship<br><br>Mother who loses her son<br>King loses his queen<br>People lose their panache<br>While wasting away<br><br>Slaveship</td>
     </tr>
 </table>
 

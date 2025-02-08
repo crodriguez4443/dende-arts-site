@@ -18,123 +18,123 @@ layout: "blog-post-layout.njk"
             Vejo o balanço do mar<br>
             Na praia de Amaralina<br>
             Ouço o berimbau tocar<br>
-            Sinto a presença de Bimba<br>
+            <strong>Sinto a presença de Bimba</strong><br>
             <br>
-            <strong>Vejo o balanço do mar<br>
+            <strong>Vejo o balanço do mar</strong><br>
             Na praia de Amaralina<br>
             Ouço o berimbau tocar<br>
-            Sinto a presença de Bimba</strong><br>
+            <strong>Sinto a presença de Bimba</strong><br>
             <br>
             O vento balança o coqueiro<br>
             O corpo se embala na ginga<br>
             Queria eu voltar no tempo<br>
             Para encontrar Mestre Bimba<br>
             <br>
-            <strong>Vejo o balanço do mar<br>
+            <strong>Vejo o balanço do mar</strong><br>
             Na praia de Amaralina<br>
             Ouço o berimbau tocar<br>
-            Sinto a presença de Bimba</strong><br>
+            <strong>Sinto a presença de Bimba</strong><br>
             <br>
             Sinto a presença de Bimba<br>
             Quando eu entro na roda<br>
             Sinto a presença de Bimba<br>
             Quando o meu berimbau toca<br>
             <br>
-            <strong>Vejo o balanço do mar<br>
+            <strong>Vejo o balanço do mar</strong><br>
             Na praia de Amaralina<br>
             Ouço o berimbau tocar<br>
-            Sinto a presença de Bimba</strong><br>
+            <strong>Sinto a presença de Bimba</strong><br>
             <br>
             Sonhei com uma formatura<br>
             Meu Deus mas que coisa tão linda<br>
             Mestre Bimba entregando as medalhas<br>
             No nordeste de Amaralina<br>
             <br>
-            <strong>Vejo o balanço do mar<br>
+            <strong>Vejo o balanço do mar</strong><br>
             Na praia de Amaralina<br>
             Ouço o berimbau tocar<br>
-            Sinto a presença de Bimba</strong><br>
+            <strong>Sinto a presença de Bimba</strong><br>
             <br>
             Mestre Bimba partiu para o céu<br>
             Deixando uma tristeza imensa<br>
             Mas vejo meu mestre jogando<br>
             E sinto a sua presença<br>
             <br>
-            <strong>Vejo o balanço do mar<br>
+            <strong>Vejo o balanço do mar</strong><br>
             Na praia de Amaralina<br>
             Ouço o berimbau tocar<br>
-            Sinto a presença de Bimba</strong><br>
+            <strong>Sinto a presença de Bimba</strong><br>
             <br>
             Mestre Bimba foi um grande mestre<br>
             Não apenas um simples mortal<br>
             Que sempre estará presente<br>
             Onde tocar o berimbau<br>
             <br>
-            <strong>Vejo o balanço do mar<br>
+            <strong>Vejo o balanço do mar</strong><br>
             Na praia de Amaralina<br>
             Ouço o berimbau tocar<br>
-            Sinto a presença de Bimba</strong>
+            <strong>Sinto a presença de Bimba</strong>
         </td>
         <td>
             I see the swing of the sea<br>
             On the beach of Amaralina<br>
             I hear the berimbau play<br>
-            I feel the presence of Bimba<br>
+            <strong>I feel the presence of Bimba</strong><br>
             <br>
-            I see the swing of the sea<br>
+            <strong>I see the swing of the sea</strong><br>
             On the beach of Amaralina<br>
             I hear the berimbau play<br>
-            I feel the presence of Bimba<br>
+            <strong>I feel the presence of Bimba</strong><br>
             <br>
             The wind shakes the coconut tree<br>
             The body swings in the ginga<br>
             I wish I could go back in time<br>
             To find Mestre Bimba<br>
             <br>
-            I see the swing of the sea<br>
+            <strong>I see the swing of the sea</strong><br>
             On the beach of Amaralina<br>
             I hear the berimbau play<br>
-            I feel the presence of Bimba<br>
+            <strong>I feel the presence of Bimba</strong><br>
             <br>
             I feel the presence of Bimba<br>
             When I get in the roda<br>
             I feel the presence of Bimba<br>
             When my berimbau plays<br>
             <br>
-            I see the swing of the sea<br>
+            <strong>I see the swing of the sea</strong><br>
             On the beach of Amaralina<br>
             I hear the berimbau play<br>
-            I feel the presence of Bimba<br>
+            <strong>I feel the presence of Bimba</strong><br>
             <br>
             I dreamed about a graduation<br>
             My God but what a beautiful thing<br>
             Mestre Bimba handing over the medals<br>
             In the northeast of Amaralina<br>
             <br>
-            I see the swing of the sea<br>
+            <strong>I see the swing of the sea</strong><br>
             On the beach of Amaralina<br>
             I hear the berimbau play<br>
-            I feel the presence of Bimba<br>
+            <strong>I feel the presence of Bimba</strong><br>
             <br>
             Mestre Bimba left for heaven<br>
             Leaving an immense sadness<br>
             But I see my master playing<br>
             And I feel his presence<br>
             <br>
-            I see the swing of the sea<br>
+            <strong>I see the swing of the sea</strong><br>
             On the beach of Amaralina<br>
             I hear the berimbau play<br>
-            I feel the presence of Bimba<br>
+            <strong>I feel the presence of Bimba</strong><br>
             <br>
             Mestre Bimba was a great master<br>
             Not just a mere mortal<br>
             He will always be present<br>
             Wherever the berimbau plays<br>
             <br>
-            I see the swing of the sea<br>
+            <strong>I see the swing of the sea</strong><br>
             On the beach of Amaralina<br>
             I hear the berimbau play<br>
-            I feel the presence of Bimba
+            <strong>I feel the presence of Bimba</strong>
         </td>
     </tr>
 </table>

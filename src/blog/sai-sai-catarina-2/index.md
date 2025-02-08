@@ -1,5 +1,3 @@
-Here's the formatted markdown document according to the specifications:
-
 ---
 title: "Sai sai Catarina"
 date: "2022-09-06"
@@ -23,10 +21,7 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
-
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YqdEWWrktZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

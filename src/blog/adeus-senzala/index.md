@@ -1,14 +1,3 @@
----
-title: "Adeus Senzala"
-date: "2020-09-23"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "intermediate"
-  - "quadra"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

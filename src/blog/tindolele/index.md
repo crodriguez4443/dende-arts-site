@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Tindolelê"
 date: "2023-02-20"
@@ -67,9 +65,7 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Unknown
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/I98Ctil7nCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

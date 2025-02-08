@@ -1,16 +1,3 @@
-Here's the formatted markdown document:
-
----
-title: "Fogo de Palha (Devagar Se Chega Lá)"
-date: "2020-11-23"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "intermediate"
-  - "mestre-fanho"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

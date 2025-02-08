@@ -1,15 +1,3 @@
-Here's the formatted markdown document:
-
----
-title: "Siri de Mangue"
-date: "2023-01-02"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "ladainha"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

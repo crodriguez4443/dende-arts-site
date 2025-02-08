@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Ae ae a minha Angola"
 date: "2020-09-23"

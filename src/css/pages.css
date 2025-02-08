@@ -220,6 +220,7 @@
 
 
 
+
 /* =======================
       PRODUCT SHOP
 ======================= */    
@@ -387,3 +388,84 @@
     width: auto;
 }
 
+
+/* =======================
+      Bulk Order Page
+======================= */
+
+/* Form styling mostly found in contact.css */
+
+.bulk-title {
+    text-align: center;
+
+}
+
+.bulk-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.bulk-page-content p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--action-primary);
+}
+
+/* Flex container for selectors */
+.selectors-container {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+/* Equal width for both select groups */
+.selectors-container .form-group {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.contact-form select {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    font-family: DM Sans;
+    font-size: 1rem;
+    background-color: #f8f8f8;
+    border: none;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23a2a9b0" width="40" height="40"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-size: 40px 40px; /* Updated size */
+    background-position: right 0.5rem center; /* Adjusted position */
+    padding-right: 3.5rem; /* Increased padding to accommodate larger arrow */
+    color: #000;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+/* Equal width for both select groups */
+.selectors-container .form-group {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+/* Add these new rules */
+.contact-form select:invalid {
+    color: #a2a9b0;
+}
+
+.contact-form select option {
+    color: #000000;
+}
+
+@media (min-width: 725px) {
+    .bulk-form-container {
+        min-width: 700px;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+    }
+}

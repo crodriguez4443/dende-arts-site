@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "COME EARLY TO EVENTS. THE NEW META"
 date: "2018-03-04"
@@ -45,5 +43,3 @@ Capoeira's about making friends! And I definitely did during my trip to Charlott
 ## Join us in the Roda!
 
 \* indicates required Email Address \* First Name \* Last Name \* (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames\[0\]='EMAIL';ftypes\[0\]='email';fnames\[1\]='FNAME';ftypes\[1\]='text';fnames\[2\]='LNAME';ftypes\[2\]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
-
-Note: There were no song lyrics in Portuguese and English in this document, so no table was created. The document remains unchanged.

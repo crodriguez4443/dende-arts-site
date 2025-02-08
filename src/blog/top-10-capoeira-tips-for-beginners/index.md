@@ -1,3 +1,1 @@
-I apologize, but there are no song lyrics in this markdown document. This appears to be a blog post about Capoeira tips for beginners. The document contains advice and guidance for new Capoeira practitioners, but does not include any song lyrics in Portuguese and English that would require the table formatting you described.
-
-Would you like me to help you with something else related to this document?
+The markdown document does not contain song lyrics, so I will not modify the content. The document appears to be a blog post about Capoeira tips for beginners.

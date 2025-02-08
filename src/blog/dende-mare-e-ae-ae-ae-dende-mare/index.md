@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Dendê Maré (ê, aê, aê, aê, dendê maré)"
 date: "2020-11-22"
@@ -20,16 +18,16 @@ layout: "blog-post-layout.njk"
 Dá pro capoeira remar<br>
 Mas quando a maré tá alta<br>
 É aí que o barco não pode virar<br>
-<strong>
-Ê, aê, aê, aê, aê, dendê maré<br>
+<br>
+<strong>Ê, aê, aê, aê, aê, dendê maré<br>
 Ê, aê, aê, aê, aê, dendê maré</strong><br>
 <br>
 A vida é como a capoeira<br>
 Quem ganha também pode perder<br>
 Mas são como os tombos da vida<br>
 É aí que fazem o homem crescer<br>
-<strong>
-Ê, aê, aê, aê, aê, dendê maré<br>
+<br>
+<strong>Ê, aê, aê, aê, aê, dendê maré<br>
 Ê, aê, aê, aê, aê, dendê maré</strong><br>
 <br>
 Aguenta firme capoeira<br>
@@ -45,8 +43,8 @@ O berimbau tem que ter um tocador<br>
 O tocador toca com seu coração<br>
 Levando para sua vida inteira<br>
 Mestre Bimba como sua inspiração<br>
-<strong>
-Ê, aê, aê, aê, aê, dendê maré<br>
+<br>
+<strong>Ê, aê, aê, aê, aê, dendê maré<br>
 Ê, aê, aê, aê, aê, dendê maré</strong></td>
         <td>When the tide is low<br>
 Capoeira can row<br>

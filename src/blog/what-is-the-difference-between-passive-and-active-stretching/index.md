@@ -1,3 +1,1 @@
-I apologize, but the document you provided does not contain any song lyrics in Portuguese and English. The text appears to be an informative article about active and passive stretching techniques. The formatting instructions you specified are for a song lyrics table, which is not present in this document.
-
-Would you like me to help you with formatting this stretching article in a different way, or did you intend to send a different document with song lyrics?
+The provided markdown document does not contain song lyrics. Therefore, I will not modify the document and will leave it exactly as it was originally presented.

@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "I Can't Even do a Cartwheel"
 date: "2017-04-10"
@@ -55,5 +53,3 @@ An interesting thing about the body is that it can do more than you think. Skill
 This example is all to say one thing: "You can do much more than you think is possible". You think you can't do a backflip? Believe me, I've seen teenagers with the BMI of a 55 year old fantasy football nerd do them. You think you could never get in the roda and play a competent capoeira game with someone? Any improvement takes time, but people who have motivated themselves to get better, have done just that, and go on to be very impressive.
 
 So the next time you think you can't do a cartwheel, just remember, you're capable of much more than you think. The only thing left is for you to take a bet on YOURSELF and go for it.
-
-Note: This document does not contain a song with Portuguese and English lyrics, so no table was created. The markdown was preserved exactly as it was.

@@ -1,42 +1,14 @@
----
-title: "Sela Meu Cavalo Pequeno"
-date: "2021-03-29"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "corrido"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
         <th>English</th>
     </tr>
     <tr>
-        <td>Sela meu cavalo pequeno<br>
-Que eu vou embora<br>
-Sela meu cavalo pequeno<br>
-Chegou a hora<br>
-<br>
-<strong>Sela meu cavalo pequeno<br>
-Que eu vou embora<br>
-Sela meu cavalo pequeno<br>
-Chegou a hora</strong></td>
-        <td>Saddle my little horse<br>
-'Cause I'm leaving<br>
-Saddle my little horse<br>
-The time has come<br>
-<br>
-Saddle my little horse<br>
-'Cause I'm leaving<br>
-Saddle my little horse<br>
-The time has come</td>
+        <td>Sela meu cavalo pequeno<br>Que eu vou embora<br>Sela meu cavalo pequeno<br>Chegou a hora<br><br><strong>Sela meu cavalo pequeno<br>Que eu vou embora<br>Sela meu cavalo pequeno<br>Chegou a hora</strong></td>
+        <td>Saddle my little horse<br>'Cause I'm leaving<br>Saddle my little horse<br>The time has come<br><br>Saddle my little horse<br>'Cause I'm leaving<br>Saddle my little horse<br>The time has come</td>
     </tr>
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

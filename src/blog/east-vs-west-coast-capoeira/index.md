@@ -20,5 +20,3 @@ A friend of mine asked me to describe the difference between the capoeira scene 
 4. I thought I would write a few lines about LA because i got a chance to visit for Mestre Amen's batizado. The amount of time I was there was very short. However, on this topic I'll just say that there are a lot of creative people in this region and a lot of themes see capoeira as a strong supplement to their work. This is awesome to see as it theoretically gives people more time and reason to train.
 
 In summary what's the difference between the east coast capoeira scene and the west coast capoeira scene? The west coast is older, more concentrated, and benefitting from decades of investing in students. The east coast on the other hand is just now getting its bearings and will no doubt grow, but this will take years maybe even decades at the pace we're going.
-
-Note: This document does not contain a markdown table with song lyrics, so no table formatting was applied.

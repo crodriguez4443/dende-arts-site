@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Tumba la é ca"
 date: "2023-02-14"

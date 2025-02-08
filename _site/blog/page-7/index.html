@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The number 1 Capoeira blog online</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<!-- src/_includes/layouts/blog.njk -->
+<div class="blog-page-container main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <h1 class="blog-page-title"><strong>We are the biggest online capoeira community!</strong> Find thoughts, resources and recommendations.</h1>
+    <!-- Add search bar -->
+    <div class="search-container">
+        <input class="searchInput" type="text" id="regularSearchInput" placeholder="Search Capoeira Articles...">
+    </div>
+    
+    <!-- blog-grid.njk -->
+    <div class="blog-grid" id="blog-grid">
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/how-to-move-your-pinky-toe-independently-and-its-benefits/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/how-to-move-your-pinky-toe-independently-and-its-benefits/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/how-to-play-the-game-of-capoeira/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/how-to-play-the-game-of-capoeira/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/how-to-play-the-pandeiro-for-capoeira/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/how-to-play-the-pandeiro-for-capoeira/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/how-to-practice-capoeira-music-without-instruments/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/how-to-practice-capoeira-music-without-instruments/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/how-to-pronounce-capoeira-for-english-speakers/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/how-to-pronounce-capoeira-for-english-speakers/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/how-to-quickly-convert-my-living-room-to-a-workout-room/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/how-to-quickly-convert-my-living-room-to-a-workout-room/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/how-to-start-working-out-at-home-according-to-top-productivity-books/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/how-to-start-working-out-at-home-according-to-top-productivity-books/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/how-to-test-and-strengthen-your-foot-and-big-toe-strength/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/how-to-test-and-strengthen-your-foot-and-big-toe-strength/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/iaia-acende-o-candieiro-iaia/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/iaia-acende-o-candieiro-iaia/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/iaia-ioio/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/iaia-ioio/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/ijexa/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/ijexa/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/ilha-de-mare/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/ilha-de-mare/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/ingazeira-o-inga/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/ingazeira-o-inga/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/injury-prevention-with-yuri-marmerstein-and-kit-lauglin/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/injury-prevention-with-yuri-marmerstein-and-kit-lauglin/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/ioio-toca-o-berimbau-viola/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/ioio-toca-o-berimbau-viola/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/is-capoeira-an-effective-martial-art/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/is-capoeira-an-effective-martial-art/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/is-capoeira-hard-to-learn-no-and-heres-why/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/is-capoeira-hard-to-learn-no-and-heres-why/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/isso-e-coisa-da-gente/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/isso-e-coisa-da-gente/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/its-my-first-capoeira-class-pt1/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/its-my-first-capoeira-class-pt1/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/its-my-first-capoeira-class-pt2/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/its-my-first-capoeira-class-pt2/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/its-my-first-capoeira-class-pt3/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/its-my-first-capoeira-class-pt3/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/jogar-capoeira-de-angola/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/jogar-capoeira-de-angola/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/knee-braces-for-capoeira/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/knee-braces-for-capoeira/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/la-la-e-la-la/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/la-la-e-la-la/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/lapinha-quando-eu-morrer/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/lapinha-quando-eu-morrer/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/leva-eu-leva-eu-pra-vadiar/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/leva-eu-leva-eu-pra-vadiar/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/leva-morena-me-leva/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/leva-morena-me-leva/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/licoes-da-capoeira/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/licoes-da-capoeira/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/list-of-cartwheel-progressions-from-beginner-to-hardcore/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/list-of-cartwheel-progressions-from-beginner-to-hardcore/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="blog-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/list-of-fundamental-capoeira-movements/"></a>
+                    </h3>
+                    
+                    
+                    <a href="/blog/list-of-fundamental-capoeira-movements/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+    </div>
+
+
+    
+    <nav class="pagination" aria-label="Pagination">
+        
+            <a href="/blog/page-6/" class="pagination-link">Previous</a>
+        
+
+        
+            
+            
+                <a href="/blog/" 
+                class="pagination-link">
+                    1
+                </a>
+            
+        
+            
+            
+                <a href="/blog/page-2/" 
+                class="pagination-link">
+                    2
+                </a>
+            
+        
+            
+            
+                <a href="/blog/page-3/" 
+                class="pagination-link">
+                    3
+                </a>
+            
+        
+            
+            
+                <a href="/blog/page-4/" 
+                class="pagination-link">
+                    4
+                </a>
+            
+        
+            
+            
+                <a href="/blog/page-5/" 
+                class="pagination-link">
+                    5
+                </a>
+            
+        
+            
+            
+                <a href="/blog/page-6/" 
+                class="pagination-link">
+                    6
+                </a>
+            
+        
+            
+            
+                <span class="pagination-link current">7</span>
+            
+        
+            
+            
+                <a href="/blog/page-8/" 
+                class="pagination-link">
+                    8
+                </a>
+            
+        
+            
+            
+                <a href="/blog/page-9/" 
+                class="pagination-link">
+                    9
+                </a>
+            
+        
+            
+            
+                <a href="/blog/page-10/" 
+                class="pagination-link">
+                    10
+                </a>
+            
+        
+
+        
+            <a href="/blog/page-8/" class="pagination-link">Next</a>
+        
+    </nav>
+</div>
+
+
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                
+                <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Gear</a>
+                <a href="/">Learn</a>
+                <a href="/">Blog</a>
+                <a href="/">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    
+    
+</body>
+
+
+</html>

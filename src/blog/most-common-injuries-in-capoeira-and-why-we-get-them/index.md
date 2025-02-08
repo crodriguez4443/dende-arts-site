@@ -1,1 +1,1 @@
-Since this document does not contain song lyrics, I cannot convert it into a song lyrics table. This appears to be a detailed blog post about injuries in Capoeira. Would you like me to help you with something else related to this document?
+The document does not contain song lyrics, so I will not modify the text. The markdown document appears to be a blog post about injuries in Capoeira and injury prevention strategies.

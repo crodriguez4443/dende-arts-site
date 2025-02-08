@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/testimonials.css">
     <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="/css/blog.css">
     <link rel="stylesheet" href="/css/pages.css"> 
 
     <!-- Primary font -->
@@ -105,7 +104,7 @@
                     <a href="/abada-joggers-landing/">Abadas</a>
                     
                     <a href="/blog/">Blog</a>
-                    <a href="/">Contact</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
                     <!-- Add this to your nav.njk -->
                     <div class="cart-indicator">
                         <span id="cart-count" style="display: none">0</span>
@@ -113,59 +112,59 @@
                 </nav>
             </div>
         </div>
-</div>
-<div class="blog-post-container blog-grid">
-    <article class="blog-post">
-        <div class="breadcrumb-container">
-            <a href="/">Home/</a>
-            <a href="/blog">Blog/</a>
-            <a href="/blog/">Capoeira Build 01</a>
-        </div>
-        <h1>Capoeira Build 01</h1>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">Capoeira Build 01</a>
+            </div>
+            <h1>Capoeira Build 01</h1>
 
-        
-        
-        
-        
-        <div class="blog-post-meta">
-            <time datetime="2017-10-18">
-                October 17, 2017
-            </time>
-        </div>
-        
-        <div class="blog-post-content">
-            <p>[embedyt] https://www.youtube.com/watch?v=J0He3HamL-0[/embedyt]</p>
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2017-10-18">
+                    October 17, 2017
+                </time>
+            </div>
+            
+            <div class="blog-post-content">
+                <p>[embedyt] https://www.youtube.com/watch?v=J0He3HamL-0[/embedyt]</p>
 <p>#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; } /* Add your own MailChimp form style overrides in your site stylesheet or in this style block. We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */</p>
 <h2>Join us in the Roda!</h2>
 <p>* indicates required Email Address * First Name * Last Name * (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</p>
 
-        </div>
-    </article>
-    <aside class="blog-post-sidebar">
-        <div class="search-form">
-            <p>Search articles and songs form</p>
-        </div>
-        <h3>Table of Contents</h3>
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#benefits">Benefits</a></li>
-        </ul>
-        <div class="related-posts">
-            <p>Related posts</p>
-        </div>
-        <div class="popular-posts">
-            <p>Popular posts</p>
-        </div>
-        <div class="popular songs">
-            <p>Popular songs</p>
-        </div>
-        <div class="ads space">
-            <p>Ad space</p>
-            <p>Ad space</p>
-        </div>
-    </aside>
-</div>      
+            </div>
+        </article>
+        <aside class="blog-post-sidebar">
+            <div class="search-form">
+                <p>Search articles and songs form</p>
+            </div>
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+            </ul>
+            <div class="related-posts">
+                <p>Related posts</p>
+            </div>
+            <div class="popular-posts">
+                <p>Popular posts</p>
+            </div>
+            <div class="popular songs">
+                <p>Popular songs</p>
+            </div>
+            <div class="ads space">
+                <p>Ad space</p>
+                <p>Ad space</p>
+            </div>
+        </aside>
+    </div>        
+</div>
     </main>
     <footer class="footer main-grid">
         <div class="footer-top-content">
@@ -242,9 +241,9 @@
 
     <script src="/js/nav.js"></script>
     <!-- script to update copyright year -->
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
     
     
 </body>

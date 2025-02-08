@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Capoeira e defesa ataque"
 date: "2020-11-01"
@@ -107,9 +105,7 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Unknown (do you know? Let us know in the comments!)
-
 </figcaption>
 
 *Malandragem - Trickery with ill intent.

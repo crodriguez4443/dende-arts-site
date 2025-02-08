@@ -1,13 +1,3 @@
----
-title: "Mercado Modelo (Eu Sou Capoeira e Maculelê)"
-date: "2020-12-21"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -20,7 +10,7 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
+Author: Unknown (Do you know who wrote this song? Tell us in the comments!)<br>
 T/L: Some versions of the song have "batuquegê" instead of "maculelê".
 </figcaption>
 

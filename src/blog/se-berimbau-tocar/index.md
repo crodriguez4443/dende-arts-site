@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Se Berimbau Tocar"
 date: "2021-03-29"

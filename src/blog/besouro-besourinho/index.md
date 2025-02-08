@@ -1,5 +1,3 @@
-Here's the formatted document:
-
 ---
 title: "Besouro besourinho"
 date: "2020-10-21"
@@ -17,25 +15,25 @@ layout: "blog-post-layout.njk"
     </tr>
     <tr>
         <td>Agora sim, que mataram o seu Besouro<br>
-Depois de morto, Besourinho cordão de ouro<br>
-<strong>Agora sim, que mataram o seu Besouro<br>
-Depois de morto, Besourinho cordão de ouro</strong><br>
-<br>
-Besouro Besourinho<br>
-Cordão de ouro<br>
-<br>
-Besouro Besourinho<br>
-Cordão de uro</td>
+        Depois de morto, Besourinho cordão de ouro<br>
+        <strong>Agora sim, que mataram o seu Besouro<br>
+        Depois de morto, Besourinho cordão de ouro</strong><br>
+        <br>
+        Besouro Besourinho<br>
+        Cordão de ouro<br>
+        <br>
+        Besouro Besourinho<br>
+        Cordão de uro</td>
         <td>Now that they killed Besouro<br>
-After death, Besourinho golden cord<br>
-Now that they killed Besouro<br>
-After death, Besourinho golden cord<br>
-<br>
-Besouro Besourinho<br>
-Golden cord<br>
-<br>
-Besouro Besourinho<br>
-Golden cord</td>
+        After death, Besourinho golden cord<br>
+        Now that they killed Besouro<br>
+        After death, Besourinho golden cord<br>
+        <br>
+        Besouro Besourinho<br>
+        Golden cord<br>
+        <br>
+        Besouro Besourinho<br>
+        Golden cord</td>
     </tr>
 </table>
 

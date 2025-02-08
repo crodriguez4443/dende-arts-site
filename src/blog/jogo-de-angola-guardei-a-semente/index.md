@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Jogo de Angola (Guardei a Semente)"
 date: "2021-01-14"

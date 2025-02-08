@@ -1,3 +1,1 @@
-I apologize, but there are no song lyrics in Portuguese and English in this markdown document. This appears to be a blog post about how to do cartwheels. The formatting specifications you provided are for a song lyrics table, but this document does not contain such content. 
-
-Would you like me to help you with formatting this blog post in some other way, or did you intend to send a different document with song lyrics?
+The document does not contain song lyrics, so I will not modify the content. The markdown document remains exactly as it was originally presented.

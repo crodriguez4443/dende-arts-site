@@ -1,60 +1,16 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Aé Miré Miré"
-date: "2020-09-23"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "ananias"
-  - "mestre-ananias"
-  - "quadra"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
         <th>English</th>
     </tr>
     <tr>
-        <td>Aé Miré Miré<br>
-        Aé Miré Miré<br>
-        É de Babá é de Olorum<br>
-        Mas Aé Miré Miré<br>
-        Ê de Babá Luanda ô<br>
-        <br>
-        <strong>Aé Miré Miré<br>
-        Aé Miré Miré</strong><br>
-        <br>
-        Ê de Babá é de Olorum<br>
-        Mas Aé Miré Miré<br>
-        Ê de Babá Luanda ô<br>
-        <br>
-        <strong>Aé Miré Miré<br>
-        Aé Miré Miré</strong></td>
-        <td>Aé Miré Miré<br>
-        Aé Miré Miré<br>
-        It's from Babá Olorum<br>
-        Yet Aé Miré Miré<br>
-        It's from Babá It's from Luanda ô<br>
-        <br>
-        Aé Miré Miré<br>
-        Aé Miré Miré<br>
-        <br>
-        It's from Babá it's from Olorum<br>
-        yet Aé Miré Miré<br>
-        It's from Babá It's from Luanda ô<br>
-        <br>
-        Aé Miré Miré<br>
-        Aé Miré Miré</td>
+        <td>Aé Miré Miré<br>Aé Miré Miré<br>É de Babá é de Olorum<br>Mas Aé Miré Miré<br>Ê de Babá Luanda ô<br><br><strong>Aé Miré Miré<br>Aé Miré Miré</strong><br><br>Ê de Babá é de Olorum<br>Mas Aé Miré Miré<br>Ê de Babá Luanda ô<br><br><strong>Aé Miré Miré<br>Aé Miré Miré</strong></td>
+        <td>Aé Miré Miré<br>Aé Miré Miré<br>It's from Babá Olorum<br>Yet Aé Miré Miré<br>It's from Babá It's from Luanda ô<br><br>Aé Miré Miré<br>Aé Miré Miré<br><br>It's from Babá it's from Olorum<br>yet Aé Miré Miré<br>It's from Babá It's from Luanda ô<br><br>Aé Miré Miré<br>Aé Miré Miré</td>
     </tr>
 </table>
 
 <figcaption>
-
 Author: Mestre Ananias
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KJ-gDgJAqeg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

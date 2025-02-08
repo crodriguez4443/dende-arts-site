@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Princesa Isabel"
 date: "2021-03-20"

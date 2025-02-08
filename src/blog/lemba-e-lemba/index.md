@@ -1,5 +1,3 @@
-Here's the formatted document:
-
 ---
 title: "Lemba, Ê Lemba"
 date: "2021-01-22"

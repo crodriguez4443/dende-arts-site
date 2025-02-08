@@ -1,137 +1,15 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Dendê maré (Ô dendê, dendê maré)"
-date: "2020-11-22"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
         <th>English</th>
     </tr>
     <tr>
-        <td>Ô dendê dendê maré<br>
-Ô dendê dendê maré<br>
-<br>
-<strong>Ô dendê dendê maré<br>
-Ô dendê dendê maré</strong><br>
-<br>
-Pescador já vai pro mar<br>
-Vai de encontro com a maré<br>
-Procurando um peixe bom<br>
-Conforme a baiana quer<br>
-Ô dendê de maré dendê<br>
-<br>
-<strong>Ô dendê dendê maré<br>
-Ô dendê dendê maré</strong><br>
-<br>
-Baiana prepara o peixe<br>
-Pescador trouxe do mar<br>
-Põe tempero na moqueca<br>
-Dendê não pode faltar<br>
-Ô dendê de maré dendê<br>
-<br>
-<strong>Ô dendê dendê maré<br>
-Ô dendê dendê maré</strong><br>
-<br>
-Que Totonho de Maré<br>
-Foi um grande jogador<br>
-A onda balança o barco<br>
-Como Totonho balançou<br>
-Ô dendê de maré dendê<br>
-<br>
-<strong>Ô dendê dendê maré<br>
-Ô dendê dendê maré</strong><br>
-<br>
-Puxa puxa leva leva<br>
-Puxa a rede do mar<br>
-Se for um bom pescador<br>
-Peixe bom não vai faltar<br>
-Ô dendê de maré dendê<br>
-<br>
-<strong>Ô dendê dendê maré<br>
-Ô dendê dendê maré</strong><br>
-<br>
-É noite de lua cheia<br>
-Pescador volta do mar<br>
-Vai ter festa na aldeia<br>
-Capoeira vai jogar<br>
-Ô dendê de maré dendê<br>
-<br>
-<strong>Ô dendê dendê maré<br>
-Ô dendê dendê maré</strong><br>
-<br>
-Ô dendê de maré dendê<br>
-<br>
-<strong>Ô dendê dendê maré<br>
-Ô dendê dendê maré</strong></td>
-        <td>Ô dendê dendê tide<br>
-Ô dendê dendê tide<br>
-<br>
-Ô dendê dendê tide<br>
-Ô dendê dendê tide<br>
-<br>
-Fisherman is already going to sea<br>
-He's going to meet the tide<br>
-Looking for a good fish<br>
-As the baiana wants<br>
-Ô dendê tide<br>
-<br>
-Ô dendê dendê tide<br>
-Ô dendê dendê tide<br>
-<br>
-Baiana prepares the fish<br>
-That the fisherman brought from the sea<br>
-Add seasoning to the moqueca<br>
-Dendê cannot be lacking<br>
-Ô dendê tide<br>
-<br>
-Ô dendê dendê tide<br>
-Ô dendê dendê tide<br>
-<br>
-Totonho de Maré<br>
-Was a great player<br>
-The wave rocks the boat<br>
-The way that Totonho swayed<br>
-Ô dendê tide<br>
-<br>
-Ô dendê dendê tide<br>
-Ô dendê dendê tide<br>
-<br>
-Pull pull take take<br>
-Pull the net from the sea<br>
-If you are a good fisherman<br>
-Good fish will not be lacking<br>
-Ô dendê tide<br>
-<br>
-Ô dendê dendê tide<br>
-Ô dendê dendê tide<br>
-<br>
-It's a full moon night<br>
-Fisherman returns from the sea<br>
-There will be a party in the village<br>
-Capoeira will play<br>
-Ô dendê tide<br>
-<br>
-Ô dendê dendê tide<br>
-Ô dendê dendê tide<br>
-<br>
-Ô oil palm tide<br>
-<br>
-Ô dendê dendê tide<br>
-Ô dendê dendê tide</td>
+        <td>Ô dendê dendê maré<br>Ô dendê dendê maré<br><br><strong>Ô dendê dendê maré<br>Ô dendê dendê maré</strong><br><br>Pescador já vai pro mar<br>Vai de encontro com a maré<br>Procurando um peixe bom<br>Conforme a baiana quer<br>Ô dendê de maré dendê<br><br><strong>Ô dendê dendê maré<br>Ô dendê dendê maré</strong><br><br>Baiana prepara o peixe<br>Pescador trouxe do mar<br>Põe tempero na moqueca<br>Dendê não pode faltar<br>Ô dendê de maré dendê<br><br><strong>Ô dendê dendê maré<br>Ô dendê dendê maré</strong><br><br>Que Totonho de Maré<br>Foi um grande jogador<br>A onda balança o barco<br>Como Totonho balançou<br>Ô dendê de maré dendê<br><br><strong>Ô dendê dendê maré<br>Ô dendê dendê maré</strong><br><br>Puxa puxa leva leva<br>Puxa a rede do mar<br>Se for um bom pescador<br>Peixe bom não vai faltar<br>Ô dendê de maré dendê<br><br><strong>Ô dendê dendê maré<br>Ô dendê dendê maré</strong><br><br>É noite de lua cheia<br>Pescador volta do mar<br>Vai ter festa na aldeia<br>Capoeira vai jogar<br>Ô dendê de maré dendê<br><br><strong>Ô dendê dendê maré<br>Ô dendê dendê maré</strong><br><br>Ô dendê de maré dendê<br><br><strong>Ô dendê dendê maré<br>Ô dendê dendê maré</strong></td>
+        <td>Ô dendê dendê tide<br>Ô dendê dendê tide<br><br>Ô dendê dendê tide<br>Ô dendê dendê tide<br><br>Fisherman is already going to sea<br>He's going to meet the tide<br>Looking for a good fish<br>As the baiana wants<br>Ô dendê tide<br><br>Ô dendê dendê tide<br>Ô dendê dendê tide<br><br>Baiana prepares the fish<br>That the fisherman brought from the sea<br>Add seasoning to the moqueca<br>Dendê cannot be lacking<br>Ô dendê tide<br><br>Ô dendê dendê tide<br>Ô dendê dendê tide<br><br>Totonho de Maré<br>Was a great player<br>The wave rocks the boat<br>The way that Totonho swayed<br>Ô dendê tide<br><br>Ô dendê dendê tide<br>Ô dendê dendê tide<br><br>Pull pull take take<br>Pull the net from the sea<br>If you are a good fisherman<br>Good fish will not be lacking<br>Ô dendê tide<br><br>Ô dendê dendê tide<br>Ô dendê dendê tide<br><br>It's a full moon night<br>Fisherman returns from the sea<br>There will be a party in the village<br>Capoeira will play<br>Ô dendê tide<br><br>Ô dendê dendê tide<br>Ô dendê dendê tide<br><br>Ô oil palm tide<br><br>Ô dendê dendê tide<br>Ô dendê dendê tide</td>
     </tr>
 </table>
 
 <figcaption>
-
-Author: Pelézinho  
+Author: Pelézinho<br>
 T/L: 'Baiana' is a woman from Bahia. 'Moqueca' is a seafood stew.
-
 </figcaption>

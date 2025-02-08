@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "O Coco Que Tem Dendê"
 date: "2021-02-24"
@@ -40,7 +38,6 @@ layout: "blog-post-layout.njk"
         It's the mironga coconut that has palm oil<br>
         It's the coconut that has palm oil<br>
         It's the mironga coconut that has palm oil<br>
-        <br>
         There's oil, there's oil<br>
         It's the mironga coconut that has palm oil<br>
         <br>
@@ -53,9 +50,7 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_2knBGqZRzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

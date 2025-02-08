@@ -1,1 +1,1 @@
-Since there are no song lyrics in this document, I cannot create a table with Portuguese and English lyrics. The document appears to be a blog post about stretching techniques for improving cartwheels. Would you like me to help you with something else related to this document?
+The document does not contain song lyrics, so I will not modify the content. The markdown document appears to be an informative blog post about improving flexibility for cartwheels.

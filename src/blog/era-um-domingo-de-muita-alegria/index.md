@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Era um Domingo de Muita Alegria"
 date: "2020-12-19"

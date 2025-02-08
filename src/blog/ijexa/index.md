@@ -1,105 +1,11 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Ijexá"
-date: "2020-12-29"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "advanced"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
         <th>English</th>
     </tr>
     <tr>
-        <td>
-            Ijexá é a dança do nego<br>
-            <strong>Ijexá é a dança do nego</strong><br>
-            <br>
-            E o nego é, é nagô<br>
-            E o nego é,<br>
-            <strong>É nagô</strong><br>
-            <br>
-            E vai<br>
-            <strong>Vai, vai, vai, cair</strong><br>
-            <br>
-            Beleza beleza<br>
-            <strong>Vai, vai, vai, cair</strong><br>
-            <br>
-            Isso é capoeira<br>
-            <strong>Vai, vai, vai, cair</strong><br>
-            <br>
-            E quando<br>
-            <br>
-            <strong>Quando o meu mestre passar</strong><br>
-            <br>
-            Passar<br>
-            <br>
-            <strong>Batam palma, acenando para o ar</strong><br>
-            <br>
-            Para o ar, para o ar<br>
-            <br>
-            <strong>Mas não se esqueça do que ele falou</strong><br>
-            <br>
-            Falou<br>
-            <br>
-            <strong>Toque pandeiro, berimbau, toque agogô<br>
-            Toque pandeiro, berimbau, toque agogô</strong><br>
-            <br>
-            Meu povo<br>
-            <strong>Meu povo que beleza<br>
-            É a dança capoeira com certeza</strong><br>
-            <br>
-            Meu povo<br>
-            <strong>Meu povo que beleza<br>
-            É a dança capoeira com certeza</strong>
-        </td>
-        <td>
-            Ijexá is the dance of the black man<br>
-            Ijexá is the dance of the black man<br>
-            <br>
-            And the black man is, is nagô<br>
-            And the black man is,<br>
-            Is nagô<br>
-            <br>
-            And will<br>
-            Will, will, will, fall<br>
-            <br>
-            Beauty beauty<br>
-            Will, will, will, fall<br>
-            <br>
-            This is capoeira<br>
-            Will, will, will, fall<br>
-            <br>
-            And when<br>
-            <br>
-            When my master passes<br>
-            <br>
-            Passes<br>
-            <br>
-            Clap your hands, waving in the air<br>
-            <br>
-            In the air, in the air<br>
-            <br>
-            But don't forget what he said<br>
-            <br>
-            Said<br>
-            <br>
-            Play tambourine, berimbau, play agogô<br>
-            Play tambourine, berimbau, play agogô<br>
-            <br>
-            My people<br>
-            My people what beauty<br>
-            It's capoeira dance for sure<br>
-            <br>
-            My people<br>
-            My people that beauty<br>
-            It's capoeira dance for sure
-        </td>
+        <td>Ijexá é a dança do nego<br><strong>Ijexá é a dança do nego</strong><br><br>E o nego é, é nagô<br>E o nego é,<br><strong>É nagô</strong><br><br>E vai<br><strong>Vai, vai, vai, cair</strong><br><br>Beleza beleza<br><strong>Vai, vai, vai, cair</strong><br><br>Isso é capoeira<br><strong>Vai, vai, vai, cair</strong><br><br>E quando<br><br><strong>Quando o meu mestre passar</strong><br><br>Passar<br><br><strong>Batam palma, acenando para o ar</strong><br><br>Para o ar, para o ar<br><br><strong>Mas não se esqueça do que ele falou</strong><br><br>Falou<br><br><strong>Toque pandeiro, berimbau, toque agogô<br>Toque pandeiro, berimbau, toque agogô</strong><br><br>Meu povo<br><strong>Meu povo que beleza<br>É a dança capoeira com certeza</strong><br><br>Meu povo<br><strong>Meu povo que beleza<br>É a dança capoeira com certeza</strong></td>
+        <td>Ijexá is the dance of the black man<br>Ijexá is the dance of the black man<br><br>And the black man is, is nagô<br>And the black man is,<br>Is nagô<br><br>And will<br>Will, will, will, fall<br><br>Beauty beauty<br>Will, will, will, fall<br><br>This is capoeira<br>Will, will, will, fall<br><br>And when<br><br>When my master passes<br><br>Passes<br><br>Clap your hands, waving in the air<br><br>In the air, in the air<br><br>But don't forget what he said<br><br>Said<br><br>Play tambourine, berimbau, play agogô<br>Play tambourine, berimbau, play agogô<br><br>My people<br>My people what beauty<br>It's capoeira dance for sure<br><br>My people<br>My people that beauty<br>It's capoeira dance for sure</td>
     </tr>
 </table>
 

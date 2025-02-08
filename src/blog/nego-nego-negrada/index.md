@@ -1,15 +1,3 @@
-Here's the formatted markdown document according to the specifications:
-
----
-title: "Nego Nego Negrada"
-date: "2021-02-23"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "intermediate"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -34,7 +22,7 @@ layout: "blog-post-layout.njk"
             Com força e restência<br>
             Por sua libertaçao êee<br>
             <br>
-            <strong>Nego nego nego êee nego negro negrada</strong><br>
+            <strong>Nego nego nego êee nego nego negrada</strong><br>
             <br>
             Cada um tem sua reza<br>
             Cada um sua oração<br>

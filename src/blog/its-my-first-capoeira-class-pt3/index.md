@@ -1,3 +1,1 @@
-The provided markdown document does not contain any song lyrics in Portuguese and English, so there is no table to format according to the specifications. The document appears to be a blog post about Capoeira training and personal progress.
-
-If you would like me to format a table with song lyrics, please provide the lyrics in both Portuguese and English, and I will be happy to help you structure them according to the specified HTML table format.
+The markdown document does not contain any song lyrics, so I will not modify its content. The document appears to be a blog post about Capoeira training and personal progress.

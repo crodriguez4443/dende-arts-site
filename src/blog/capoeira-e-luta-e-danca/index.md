@@ -1,16 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Capoeira é luta é dança"
-date: "2020-11-01"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "advanced"
-  - "mestre-barrao"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

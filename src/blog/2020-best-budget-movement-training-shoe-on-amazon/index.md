@@ -1,1 +1,1 @@
-This document does not contain song lyrics in Portuguese and English, so the specified markdown formatting cannot be applied. The text appears to be a blog post review about Feiyue shoes for movement training. Would you like me to help you with something else related to this document?
+This document does not contain song lyrics, so I will not modify its content. The text appears to be a detailed review of Feiyue shoes for movement training and calisthenics.

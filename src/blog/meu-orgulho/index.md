@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Meu Orgulho"
 date: "2021-01-29"

@@ -1,5 +1,3 @@
-Here's the formatted markdown document according to the specifications:
-
 ---
 title: "Tim tim tim la vai viola"
 date: "2022-09-06"

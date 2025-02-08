@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Saudades do Mestre Waldemar"
 date: "2021-03-29"
@@ -89,10 +87,8 @@ Lê lê lê lê lê ô</td>
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
 Note: * → In this case she's referring to playing an instrument, not playing in he roda.
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6WXZ3vPRS3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

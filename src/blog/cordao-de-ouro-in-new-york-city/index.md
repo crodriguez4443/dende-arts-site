@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "CORDÃO DE OURO IN NEW YORK CITY"
 date: "2018-05-07"
@@ -46,5 +44,3 @@ Email Address \*
 First Name \*
 
 Last Name \*
-
-Note: There are no song lyrics in this document, so no table formatting was applied.

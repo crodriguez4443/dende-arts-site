@@ -1,5 +1,3 @@
-Here's the formatted document:
-
 ---
 title: "Na Bahia Tem"
 date: "2021-01-31"
@@ -34,6 +32,7 @@ layout: "blog-post-layout.njk"
         Tem cacao e tem dendê<br>
         Mas tambem tem capoeira<br>
         Basta tu ir lá pra ver<br>
+        <br>
         <strong>Na Bahia tem<br>
         Vou mandar buscar</strong><br>
         <br>
@@ -73,6 +72,6 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-Author: Unknown (Do you know who wrote this song? Tell us in the comments!)<br>
+Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
 Note: With "ferro de engomar", I'm not sure what is meant. When I look for it, I only find irons, as in to iron clothes.
 </figcaption>

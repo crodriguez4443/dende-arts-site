@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "O Sobrado de Mamãe (tem ouro tem prata, tem diamante...)"
 date: "2021-05-23"

@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "WHAT IS THE GINGA?"
 date: "2017-04-24"
@@ -13,55 +11,20 @@ layout: "blog-post-layout.njk"
 
 ## THE FOUNDATION OF CAPOEIRA
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>
-        "Ginga" significa balançar. A Ginga é portanto a maneira como você balança seu corpo enquanto faz Capoeira. Para um iniciante, a Ginga tem 3 passos: (1) uma perna para trás e a mão oposta cobrindo o rosto, (2) pernas paralelas, (3) outra perna para trás com a mão oposta cobrindo o rosto. Repita.
-        </td>
-        <td>
-        "Ginga" means swing. The Ginga therefore is the way you swing your body while doing Capoeira. For a beginner, the Ginga has 3 steps: (1) one leg back and the opposite hand covering your face, (2) legs parallel,  (3) other leg back with opposite hand covering your face. Repeat.
-        </td>
-    </tr>
-</table>
-
 There is a 99% chance that during your first Capoeira class, your teacher showed you how to perform [The Ginga](https://upload.wikimedia.org/wikipedia/commons/9/9a/Ginga_de_dos.gif). The Ginga is the first thing to learn in Capoeira because it is the foundation for all other movements.
+
+"Ginga" in Portuguese means swing. The Ginga therefore is the way you swing your body while doing Capoeira. For a beginner, the Ginga has 3 steps: (1) one leg back and the opposite hand covering your face, (2) legs parallel,  (3) other leg back with opposite hand covering your face. Repeat.
 
 ## FUNCTION
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>
-        Embora não seja claro de onde a Ginga se origina, o movimento deve ser constante e imprevisível. Este é o principal ingrediente que dá à Capoeira a aparência de uma dança e a torna tão imprevisível. A Ginga deve permitir que o capoeirista ataque, esquive, e contra-ataque a qualquer momento. Lançar um chute de um ângulo inesperado não é apenas difícil de lidar, mas desafia quem você está jogando a responder com igual criatividade.
-        </td>
-        <td>
-        Although it's not clear where the Ginga originates from, the movement is meant to be constant an unpredictable. This is the main ingredient that gives Capoeira the appearance of a dance and makes it as unpredictable as it is. The Ginga should allow the capoeirista to attack, esquiva(dodge), and counterattack at any moment. Launching a kick from an unexpected angle is not only tricky to deal with, but it challenges who you are playing with to respond with an equal amount of creativity.
-        </td>
-    </tr>
-</table>
+Although it's not clear where the Ginga originates from, the movement is meant to be constant an unpredictable. This is the main ingredient that gives Capoeira the appearance of a dance and makes it as unpredictable as it is. The Ginga should allow the capoeirista to attack, esquiva(dodge), and counterattack at any moment. Launching a kick from an unexpected angle is not only tricky to deal with, but it challenges who you are playing with to respond with an equal amount of creativity.
 
 ## EXPRESS YOURSELF
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>
-        A Ginga não é apenas uma maneira de se mover na roda, mas também uma forma de se expressar. Seus braços, ombros, pés, cabeça e quadris trabalham juntos para comunicar ou mascarar suas intenções. Pular, girar, até mesmo se abaixar e fazer uma flexão no chão podem fazer parte da sua Ginga. O que importa é sua intenção e como você a comunica através do movimento.
-        </td>
-        <td>
-        The Ginga isn't just a way to move around the roda, but also a way to express yourself. Your arms, shoulders, feet, head, and hips all work together to communicate or mask your intentions. Jumping, spinning, even getting down and doing a push-up on the ground can all be part of your Ginga. What matters is your intention and how you communicate it through your movement.
-        </td>
-    </tr>
-</table>
+The Ginga isn't just a way to move around the roda, but also a way to express yourself. Your arms, shoulders, feet, head, and hips all work together to communicate or mask your intentions. Jumping, spinning, even getting down and doing a push-up on the ground can all be part of your Ginga. What matters is your intention and how you communicate it through your movement.
 
-[Rest of the document remains unchanged]
+On a basic level, a person's Ginga can tell you two things. The first is a general sense of a person's experience/ability to play capoeira. The second is their intention. A new person's Ginga is more often timid, small, and less coordinated. It is common to see someone half-heatedly through a kick or esquiva (dodge) without a complete understanding of where the kick is coming from - they just notice the danger. This is, of course, part of the learning processes and similarities can be drawn to many fields. By contrast, someone more advanced usually Gingas with confidence and clear intentions. These intentions, however, can be masked. Feinting a kick to create pressure and provoke a response is a common [example](https://www.youtube.com/watch?v=zZhYwtJTA9g). (E.g.  Person A feints an armada to provoke a Banda from person B, person A see that B takes the bait and swoops in with a vingativa. Person B lands butt first on the floor).
+
+## Best Way to Perform the Ginga?
+
+Most mestres have an idea of how they want their students to Ginga. Guidance can include placement of the arm, how large a step to take, how low to the ground you should be, etc. Despite this, no two people have the same ginga, so how can we determine how to perform the best possible Ginga? This discussion I will continue with insights from mestres, texts, and other resources to see if there is such a thing as a "best" Ginga.

@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-img": "^5.0.0",
+    "lunr": "^2.3.9",
     "swell-js": "^4.2.5"
   }
 }

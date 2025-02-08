@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Lá Na Bahia Côco de Dendê"
 date: "2021-01-22"

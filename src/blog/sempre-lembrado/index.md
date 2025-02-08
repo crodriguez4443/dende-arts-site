@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Sempre Lembrado"
 date: "2021-03-30"

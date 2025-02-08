@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "SUMMER CAPOEIRA"
 date: "2017-07-25"

@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "A violinha chorou"
 date: "2020-09-22"
@@ -99,9 +97,7 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Unknown
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YieoCyA802I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

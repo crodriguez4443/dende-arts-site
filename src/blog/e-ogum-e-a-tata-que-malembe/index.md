@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Ê Ogum ê, a tata que malembe"
 date: "2024-04-28"
@@ -29,7 +27,7 @@ Ogum ê!<br>
 <strong>Tata que malembe</strong><br>
 Ogum ê!<br>
 <strong>Tata que malembe</strong></td>
-        <td>Ê Ogum ê Ogum é father that sooths, Ê Ogum ê Ogum é father that soothes<br>
+        <td>Ê Ogum ê Ogum é father that soothes, Ê Ogum ê Ogum é father that soothes<br>
 <strong>Coro<br>
 Ê Ogum ê Ogum é father that soothes Ê Ogum ê Ogum é father that soothes</strong><br>
 Ê Ogum ê Ogum é tata que malembe Ê Ogum ê Ogum é tata que malembe<br>

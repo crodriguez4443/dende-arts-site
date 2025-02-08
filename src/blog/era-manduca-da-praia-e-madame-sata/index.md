@@ -1,15 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Era Manduca da Praia e Madame Satã"
-date: "2020-12-19"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

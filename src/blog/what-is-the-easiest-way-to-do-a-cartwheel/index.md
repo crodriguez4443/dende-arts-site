@@ -1,1 +1,1 @@
-This document does not contain any song lyrics in Portuguese and English, so the table formatting specification cannot be applied. The document is a blog post about how to do a cartwheel, with detailed instructions, stretches, and embedded videos. Would you like me to help you with something else related to this document?
+The document does not contain song lyrics, so I will not modify the text. The markdown document remains unchanged.

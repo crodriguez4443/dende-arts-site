@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Filho de Ogum"
 date: "2020-11-23"
@@ -17,59 +15,8 @@ layout: "blog-post-layout.njk"
         <th>English</th>
     </tr>
     <tr>
-        <td>Vale-me Deus do céu<br>
-Vale-me Deus do céu<br>
-Colega velho<br>
-Vale-me nossa senhora<br>
-Vou jogar a capoeira,<br>
-Jogo de dentro e de fora<br>
-<br>
-Sou filho de Ogum<br>
-Num tem dia e não tem hora<br>
-Que me dê protecção<br>
-Nesse jogo de agora<br>
-<br>
-Se o jogo não apanha<br>
-Nem se pode se derrubar<br>
-Sou descendência de escravo<br>
-Tenho o meu corpo fechado<br>
-<br>
-Filho de Ogum não pode apanhar<br>
-<br>
-Eu sou guerreiro<br>
-Eu vim guerriar<br>
-Filho de Ogum não pode apanhar<br>
-<br>
-Eu sou guerreiro<br>
-Eu vim guerriar<br>
-Filho de Ogum não pode apanhar</td>
-        <td>Help me, God in heaven<br>
-Help me, God in heaven<br>
-<br>
-Old colleague<br>
-Help me our lady<br>
-I will play capoeira,<br>
-Jogo de dentro and jogo de fora<br>
-<br>
-I am Ogun's son<br>
-There is no day nor hour<br>
-Give me protection<br>
-In this game now<br>
-<br>
-If the game doesn't catch<br>
-You can't be knocked down<br>
-I am a slave descendant<br>
-I have my body closed<br>
-<br>
-Ogun's son can't be beaten<br>
-<br>
-I am warrior<br>
-I came to battle<br>
-Ogun's son can't be beaten<br>
-<br>
-I am warrior<br>
-I came to battle<br>
-Ogun's son can't be beaten</td>
+        <td>Vale-me Deus do céu<br>Vale-me Deus do céu<br>Colega velho<br>Vale-me nossa senhora<br>Vou jogar a capoeira,<br>Jogo de dentro e de fora<br><br>Sou filho de Ogum<br>Num tem dia e não tem hora<br>Que me dê protecção<br>Nesse jogo de agora<br><br>Se o jogo não apanha<br>Nem se pode se derrubar<br>Sou descendência de escravo<br>Tenho o meu corpo fechado<br><br>Filho de Ogum não pode apanhar<br><br>Eu sou guerreiro<br>Eu vim guerriar<br>Filho de Ogum não pode apanhar<br><br>Eu sou guerreiro<br>Eu vim guerriar<br>Filho de Ogum não pode apanhar</td>
+        <td>Help me, God in heaven<br>Help me, God in heaven<br><br>Old colleague<br>Help me our lady<br>I will play capoeira,<br>Jogo de dentro and jogo de fora<br><br>I am Ogun's son<br>There is no day nor hour<br>Give me protection<br>In this game now<br><br>If the game doesn't catch<br>You can't be knocked down<br>I am a slave descendant<br>I have my body closed<br><br>Ogun's son can't be beaten<br><br>I am warrior<br>I came to battle<br>Ogun's son can't be beaten<br><br>I am warrior<br>I came to battle<br>Ogun's son can't be beaten</td>
     </tr>
 </table>
 

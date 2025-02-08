@@ -1,16 +1,3 @@
-Here's the formatted markdown document according to the specifications:
-
----
-title: "Aqui do lado (veja veja)"
-date: "2020-10-20"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "intermediate"
-  - "minha-velha"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -23,7 +10,5 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Minha Velha
-
 </figcaption>

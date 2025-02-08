@@ -1,45 +1,11 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Ê Angola Vem"
-date: "2020-11-27"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
         <th>English</th>
     </tr>
     <tr>
-        <td>A roda já começou<br><br>
-        <strong>Ê angola vem</strong><br><br>
-        O berimbau tocou<br><br>
-        <strong>Ê angola vai</strong><br><br>
-        A roda já começou<br><br>
-        <strong>Ê angola vem</strong><br><br>
-        O pandeiro já marcou<br><br>
-        <strong>Ê angola vai</strong><br><br>
-        O atabaque soou<br>
-        <strong>Ê angola vem</strong><br><br>
-        A roda já começou<br>
-        <strong>Ê angola vai</strong></td>
-        <td>The roda already started<br><br>
-        Ê angola comes<br><br>
-        The berimbau played<br><br>
-        Ê angola goes<br><br>
-        The roda has already started<br><br>
-        Ê angola comes<br><br>
-        The tambourine is already playing<br><br>
-        Ê angola goes<br><br>
-        The atabaque sounded<br>
-        Ê angola comes<br><br>
-        The roda has already started<br>
-        Ê angola goes</td>
+        <td>A roda já começou<br><br><strong>Ê angola vem</strong><br><br>O berimbau tocou<br><br><strong>Ê angola vai</strong><br><br>A roda já começou<br><br><strong>Ê angola vem</strong><br><br>O pandeiro já marcou<br><br><strong>Ê angola vai</strong><br><br>O atabaque soou<br><strong>Ê angola vem</strong><br><br>A roda já começou<br><strong>Ê angola vai</strong></td>
+        <td>The roda already started<br><br>Ê angola comes<br><br>The berimbau played<br><br>Ê angola goes<br><br>The roda has already started<br><br>Ê angola comes<br><br>The tambourine is already playing<br><br>Ê angola goes<br><br>The atabaque sounded<br>Ê angola comes<br><br>The roda has already started<br>Ê angola goes</td>
     </tr>
 </table>
 

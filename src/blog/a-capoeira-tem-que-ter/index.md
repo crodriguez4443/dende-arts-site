@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "A capoeira tem que ter"
 date: "2020-09-21"
@@ -23,9 +21,7 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Mestre Fanho
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RkPdDZvuvgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

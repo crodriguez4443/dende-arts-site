@@ -1,46 +1,39 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Era Tempo de Bamba ae, era tempo de bamba (DJ Capoeira Version)"
-date: "2023-09-29"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "advanced"
-  - "quadra"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
         <th>English</th>
     </tr>
     <tr>
-        <td>
-            Era o tempo de Bamba ae<br>
-            Era tempo de Bamba<br>
-            Era tempo da roda de rua, é aqui<br>
-            De São Paulo, eu também estava lá<br>
-            <br>
-            <strong>Coro<br>
-            Era o tempo da Bamba ae<br>
-            Era tempo de Bamba</strong><br>
-            <br>
-            (Rest of the Portuguese lyrics follows the same formatting...)
-        </td>
-        <td>
-            It was Bamba's time<br>
-            It was Bamba's time<br>
-            It was time for the street roda, it's here<br>
-            From São Paulo, I was there too<br>
-            <br>
-            <strong>Choir<br>
-            It was Bamba's time<br>
-            It was Bamba's time</strong><br>
-            <br>
-            (Rest of the English lyrics follows the same formatting...)
-        </td>
+        <td>Era o tempo de Bamba ae<br>
+Era tempo de Bamba<br>
+Era tempo da roda de rua, é aqui<br>
+De São Paulo, eu também estava lá<br>
+<br>
+<strong>Coro<br>
+Era o tempo da Bamba ae<br>
+Era tempo de Bamba</strong><br>
+<br>
+Oi, Era tempo da roda de rua,<br>
+é a lá na República, eu também fui lá<br>
+<br>
+<strong>Coro<br>
+Era o tempo da Bamba ae<br>
+Era tempo de Bamba</strong></td>
+        <td>It was Bamba's time<br>
+It was Bamba's time<br>
+It was time for the street roda, it's here<br>
+From São Paulo, I was there too<br>
+<br>
+<strong>Choir<br>
+It was Bamba's time<br>
+It was Bamba's time</strong><br>
+<br>
+Hi, It was time for the street circle,<br>
+It's there in the Republic, I went there too<br>
+<br>
+<strong>Choir<br>
+It was Bamba's time<br>
+It was Bamba's time</strong></td>
     </tr>
 </table>
 

@@ -1,4 +1,4 @@
-Here's the formatted document according to the specifications:
+The markdown document does not contain song lyrics, so I will reproduce it exactly as provided without any modifications.
 
 ---
 title: "CAPOEIRA GOT YOUR FEET SORE?"

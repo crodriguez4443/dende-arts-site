@@ -1,15 +1,3 @@
-Here's the formatted document:
-
----
-title: "Saia Do Mar, Minha Sereia"
-date: "2021-03-25"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "corrido"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

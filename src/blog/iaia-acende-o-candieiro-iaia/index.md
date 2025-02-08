@@ -1,15 +1,3 @@
-Here's the formatted markdown document according to the specifications:
-
----
-title: "Iaiá, Acende o Candieiro, Iaiá"
-date: "2020-12-28"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "advanced"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

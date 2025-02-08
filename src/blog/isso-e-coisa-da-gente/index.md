@@ -1,16 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Isso É Coisa da Gente"
-date: "2020-12-30"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "intermediate"
-  - "mestre-fanho"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -93,8 +80,6 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
-Author: Mestre Fanho  
+Author: Mestre Fanho<br>
 T/L: "Vulgar" in Portuguese has a few different interpretations. I went with trivial/commonplace, but it could also mean vulgar, low, coarse, and so on.
-
 </figcaption>

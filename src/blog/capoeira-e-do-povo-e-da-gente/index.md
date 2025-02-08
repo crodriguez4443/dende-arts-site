@@ -1,15 +1,3 @@
-Here's the formatted markdown document:
-
----
-title: "Capoeira é do povo é da gente"
-date: "2020-11-01"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "advanced"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Dona Alice não me pegue não"
 date: "2020-11-22"
@@ -50,7 +48,5 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Mestre Pastinha
-
 </figcaption>

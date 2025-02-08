@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Pererê, Pererê, Pererê"
 date: "2021-02-27"

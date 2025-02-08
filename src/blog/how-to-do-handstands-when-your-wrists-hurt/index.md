@@ -1,3 +1,1 @@
-I apologize, but the document you provided does not contain any song lyrics in Portuguese and English. The text appears to be a detailed blog post about handstands and wrist pain. The formatting instructions you specified are for a song lyrics table, which is not present in this document.
-
-Would you like me to help you with formatting this blog post in a different way, or did you intend to send a different document with song lyrics?
+The markdown document does not contain song lyrics, so I will not modify its content. The document appears to be a detailed blog post about handstand techniques, wrist pain, and injury prevention.

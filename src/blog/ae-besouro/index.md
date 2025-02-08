@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Aê Besouro"
 date: "2020-09-23"
@@ -99,9 +97,7 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Unknown
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/D2VgVvGO1EQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

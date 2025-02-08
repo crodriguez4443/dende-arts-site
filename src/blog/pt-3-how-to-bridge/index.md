@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "PT. 3 HOW TO BRIDGE"
 date: "2017-07-31"

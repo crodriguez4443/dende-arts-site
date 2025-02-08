@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Das Abóboras do Caldeirão da Serra"
 date: "2020-11-17"
@@ -90,7 +88,5 @@ O lê lê o lê lê a lá lá</td>
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

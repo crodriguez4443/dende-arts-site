@@ -1,15 +1,3 @@
-Here's the formatted document:
-
----
-title: "Lapinha (Quando Eu Morrer)"
-date: "2021-01-22"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -22,10 +10,8 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
 Note: I put author as unknown as it is unkown how/when this song got adapted and used in capoeira, but parts of this song are taken by a composition by Baden Powell.
-
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9hNTadP3LFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

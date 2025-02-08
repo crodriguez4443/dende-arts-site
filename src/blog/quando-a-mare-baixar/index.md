@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Quando a Maré Baixar"
 date: "2021-03-20"
@@ -30,8 +28,8 @@ Quando a maré ta alta<br>
 No barco eu vou remando<br>
 Eu penso em Deus do céu<br>
 E a vida vai melhorando<br>
-<strong>
-Quando a maré baixar<br>
+<br>
+<strong>Quando a maré baixar<br>
 Vou encontrar dendê<br>
 Vou encontrar dendê<br>
 Do outro lado do mar</strong><br>

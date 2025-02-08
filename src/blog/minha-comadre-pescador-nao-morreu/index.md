@@ -1,15 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Minha Comadre Pescador Não Morreu"
-date: "2021-01-29"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "advanced"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -126,8 +114,6 @@ The first offering is mine</td>
 </table>
 
 <figcaption>
-
-Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
+Author: Unknown (Do you know who wrote this song? Tell us in the comments!)<br>
 Note: "Odoiá" is an Orixá. "Iemanjá" is also an Orixá, and "Janaína" is another name for her. A "guia" is a necklace worn by adepts of Candomblé, especially mediums.
-
 </figcaption>

@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Só Eu Sou Vencedor"
 date: "2021-04-01"

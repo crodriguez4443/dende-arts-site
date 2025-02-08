@@ -1,15 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Ilha de Maré"
-date: "2020-12-29"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -144,8 +132,6 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
-Author: Aritana  
+Author: Aritana<br>
 T/L: "Ilha de Maré" translates to "Tide Island", or "Maré Island". I left the name in Portuguese as it is a specific island off the coast of Salvador.
-
 </figcaption>

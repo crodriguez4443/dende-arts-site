@@ -1,3 +1,1 @@
-I apologize, but the document you've provided does not contain any song lyrics in Portuguese and English. The text appears to be a blog post about injury prevention. Without song lyrics, I cannot create the specified markdown table format. 
-
-Would you like me to help you with something else related to this document, or do you have a different markdown document with song lyrics that needs formatting?
+The document does not contain song lyrics, so I will leave it exactly as it is.

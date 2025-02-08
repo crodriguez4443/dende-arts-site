@@ -1,15 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Sinhá Me Tira Da Senzala"
-date: "2021-04-01"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "intermediate"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

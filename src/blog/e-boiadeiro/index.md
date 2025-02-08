@@ -1,16 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Ê Boiadeiro"
-date: "2024-03-25"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "corrido"
-  - "intermediate"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

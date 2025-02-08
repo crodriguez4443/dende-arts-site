@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Na Beira do Mar"
 date: "2021-01-31"
@@ -86,8 +84,6 @@ At the seashore</td>
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
 Note: "Quem é dono não ciúma, quem não é quer ciumar" is an expression. It's about someone who owns something, securely, has no reason to be jealous or envious. This isn't the version I hear in Boca Rica & Bigodinho's CD, but I cannot make out what they sing in that version.
-
 </figcaption>

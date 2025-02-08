@@ -1,1 +1,1 @@
-This document does not contain any markdown table or song lyrics in Portuguese and English, so there is no table to format according to the specifications. The text appears to be a blog post about converting a living room into a workout space. Would you like me to help you with something else?
+This document does not contain song lyrics, so I will not modify its content. The markdown document is a blog post about converting a living room into a workout space.

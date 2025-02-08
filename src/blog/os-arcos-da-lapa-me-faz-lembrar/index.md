@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Os Arcos da Lapa Me Faz Lembrar"
 date: "2021-02-27"
@@ -55,7 +53,5 @@ It's from Lapa, it's from Lapa</td>
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Mora Iemanjá (quando a maré baixar)"
 date: "2021-01-30"
@@ -105,9 +103,7 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Marquinho Coreba
-
 </figcaption>
 
 Iemanjá - part of the Yoruba Pantheon and is regarded as the godess of the sea.

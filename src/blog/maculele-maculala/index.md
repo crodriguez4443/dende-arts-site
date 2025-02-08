@@ -1,16 +1,3 @@
-Here's the formatted document:
-
----
-title: "Maculelê Maculala"
-date: "2023-02-20"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "intermediate"
-  - "maculele"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -23,9 +10,7 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: Unknown
-
 </figcaption>
 
 No video available.

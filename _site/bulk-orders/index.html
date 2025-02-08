@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk order Capoeira Uniforms from the United States</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<section class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <div class="bulk-page-content">
+        <h1 class="bulk-title">Finally!</br> Fast &amp; easy bulk orders of Capoeira Uniforms to anywhere in the world</h1>
+        <p class="bulk-page-text">Fill out the form. We'll be in touch about getting your order set up!</p>
+    </div>
+    <div class="bulk-form-container">
+        
+<div class="contact-page-form">
+    <form class="contact-form" 
+        name="contact" 
+        method="POST" 
+        data-netlify="true" 
+        netlify-honeypot="bot-field"
+        action="/Thank-you/"
+    >
+        
+        <input type="hidden" name="form-name" value="contact">
+        <input type="hidden" name="subject" value="Nuevo mensaje de contacto">
+
+        
+        <p hidden>
+            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+        </p>
+
+        
+        <div class="form-grid">
+            <div class="form-group">
+                <input type="text" name="test" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" placeholder="Telephone number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="businessname" placeholder="Business Name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="location" placeholder="Location (City, State, Country)" required>
+            </div>
+            <div class="selectors-container">
+                <div class="form-group">
+                    <select name="uniform-type" required>
+                        <option value="" selected disabled>Uniform Type</option>
+                        <option value="Adults">Adults</option>
+                        <option value="Kids">Kids</option>
+                        <option value="Adults and Kids">Adults and Kids</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select name="quantity-range" required>
+                        <option value="" selected disabled>Quantity Range</option>
+                        <option value="50 - 99">50 - 99</option>
+                        <option value="100 - 299">100 - 299</option>
+                        <option value="300 - 499">300 - 499</option>
+                        <option value="500+">500+</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group full-width">
+                <textarea name="message" placeholder="Write your message here..." required></textarea>
+            </div>
+        </div>
+        
+        <button type="submit" class="btn-dark btn-form full-width">
+            Get in touch
+        </button>
+    </form>
+</div>
+    </div>
+</section>
+
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                
+                <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Gear</a>
+                <a href="/">Learn</a>
+                <a href="/">Blog</a>
+                <a href="/">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    
+    
+</body>
+
+
+</html>

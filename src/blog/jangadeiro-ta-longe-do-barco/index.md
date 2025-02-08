@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Jangadeiro Tá Longe do Barco"
 date: "2020-12-30"
@@ -21,10 +19,10 @@ Marinheiro tá longe do mar<br>
 Sinto falta do meu berimbau<br>
 Sem capoeira não posso ficar<br>
 <br>
-<strong>Jangadeiro tá longe do barco<br>
+Jangadeiro tá longe do barco<br>
 Marinheiro tá longe do mar<br>
 Sinto falta do meu berimbau<br>
-Sem capoeira não posso ficar</strong><br>
+Sem capoeira não posso ficar<br>
 <br>
 O jangadeiro<br>
 <strong>Tá longe do barco</strong><br>
@@ -62,7 +60,5 @@ Is far from the sea</td>
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

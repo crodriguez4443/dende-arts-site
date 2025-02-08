@@ -1,16 +1,3 @@
-Here's the formatted markdown document according to the specifications:
-
----
-title: "Luta Regional"
-date: "2021-01-24"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "advanced"
-  - "marquinho-coreba"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -27,8 +14,8 @@ Levou martelo, cabeçada e rasteira<br>
 <strong>Cabra caiu na capoeira</strong><br>
 <br>
 A Regional é uma luta brasileira<br>
-<strong><br>
-Cabra caiu na capoeira</strong><br>
+<strong></strong><br>
+<strong>Cabra caiu na capoeira</strong><br>
 <br>
 Estilo novo e muito eficiente<br>
 Apresentou até pro presidente<br>
@@ -36,12 +23,12 @@ A capoeira quando legalizada<br>
 Sua academia, a primeira registrada<br>
 Cabra caiu, meu Deus, na capoeira<br>
 Toma cuidado com o tombo da ladeira<br>
-<strong><br>
-Cabra caiu na capoeira</strong><br>
+<strong></strong><br>
+<strong>Cabra caiu na capoeira</strong><br>
 <br>
 Foi no martelo, cabeçada, e ponteira<br>
-<strong><br>
-Cabra caiu na capoeira</strong><br>
+<strong></strong><br>
+<strong>Cabra caiu na capoeira</strong><br>
 <br>
 Mas muita gente veio lhe desafiar<br>
 Seu Caiçara também foi lá tentar<br>

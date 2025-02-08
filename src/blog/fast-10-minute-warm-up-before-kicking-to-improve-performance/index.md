@@ -1,3 +1,1 @@
-I apologize, but the document you provided does not contain any song lyrics in Portuguese and English. The text appears to be a detailed guide about warming up and stretching for kicking in martial arts. The formatting instructions you specified are for a song lyrics table, which is not present in this document.
-
-Would you like me to help you with formatting this document in a different way, or did you intend to send a different document with song lyrics?
+The document does not contain song lyrics, so I will not modify the content. The markdown document appears to be an instructional guide about warming up and stretching for kicking techniques.

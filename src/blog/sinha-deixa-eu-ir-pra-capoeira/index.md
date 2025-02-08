@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Sinhá Deixa Eu Ir Pra Capoeira"
 date: "2021-03-31"
@@ -19,11 +17,6 @@ layout: "blog-post-layout.njk"
     </tr>
     <tr>
         <td>
-            Sinhá, ô sinhá<br>
-            Deixa eu ir pra capoeira<br>
-            Ôo<br>
-            Deixa eu ir pra capoeira<br>
-            <br>
             <strong>Sinhá, ô sinhá<br>
             Deixa eu ir pra capoeira<br>
             Ôo<br>
@@ -70,55 +63,50 @@ layout: "blog-post-layout.njk"
             Deixa eu ir pra capoeira</strong>
         </td>
         <td>
-            Sinhá, oh sinhá<br>
+            <strong>Sinhá, oh sinhá<br>
             Let me go to capoeira<br>
             Oh<br>
-            Let me go to capoeira<br>
-            <br>
-            Sinhá, oh sinhá<br>
-            Let me go to capoeira<br>
-            Oh<br>
-            Let me go to capoeira<br>
+            Let me go to capoeira</strong><br>
             <br>
             Wind blew into the cane field<br>
             From afar I hear the sound of the berimbau<br>
             That goes in the soul invading the heart<br>
             Taking the marks of the time of slavery<br>
             <br>
-            Sinhá, oh sinhá<br>
+            <strong>Sinhá, oh sinhá<br>
             Let me go to capoeira<br>
             Oh<br>
-            Let me go to capoeira<br>
+            Let me go to capoeira</strong><br>
             <br>
             Fine is the steel of the overseer's whip<br>
             Well punished to be able to work<br>
             The night comes and I escape to the woods outside<br>
             Waiting for a roda to be able to play<br>
             <br>
-            Sinhá, oh sinhá<br>
+            <strong>Sinhá, oh sinhá<br>
             Let me go to capoeira<br>
             Oh<br>
-            Let me go to capoeira<br>
+            Let me go to capoeira</strong><br>
             <br>
             From afar I hear moaning through the air<br>
             They are songs, it makes my body shiver<br>
             Oh let me go my lord, oh let me go sinhá<br>
             'Cause today I want to set my soul free<br>
             <br>
-            Sinhá, oh sinhá<br>
+            <strong>Sinhá, oh sinhá<br>
             Let me go to capoeira<br>
             Oh<br>
-            Let me go to capoeira<br>
+            Let me go to capoeira</strong><br>
             <br>
             From sun to sun the body burns nonstop<br>
             It's a tribulation that black people have to go through<br>
             Oh give me strength my God for faith not fail me<br>
             'Cause today I want to escape the cane field<br>
             <br>
-            Sinhá, oh sinhá<br>
+            <strong>Sinhá, oh sinhá<br>
             Let me go to capoeira<br>
             Oh<br>
-            Let me go to capoeira
+            Let me go to capoeira</strong>
         </td>
     </tr>
 </table>

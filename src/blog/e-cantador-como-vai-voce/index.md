@@ -1,15 +1,3 @@
-Here's the formatted document:
-
----
-title: "Ê Cantador Como Vai Você"
-date: "2020-11-27"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -17,46 +5,47 @@ layout: "blog-post-layout.njk"
     </tr>
     <tr>
         <td>Ê cantador como vai você<br>
-Vim lhe visitar ia ia, eu vim aqui lhe ver<br>
-<br>
-<strong>Ê cantador como vai você<br>
-Vim lhe visitar ia ia, eu vim aqui lhe ver</strong><br>
-<br>
-Ê cantador quando é bom<br>
-Ê nos conhece no olhar<br>
-Ê na mandinga, no jogo ia ia<br>
-Ê e tambem no jogar<br>
-<br>
-<strong>Ê cantador como vai você<br>
-Vim lhe visitar ia ia, eu vim aqui lhe ver</strong><br>
-<br>
-Ê cantador quando é bom<br>
-Ê não precisa chamar<br>
-Ele sabe sua hora a ia ia<br>
-Ê de cantar e de versar ia ia<br>
-<strong>Ê cantador como vai você<br>
-Vim lhe visitar ia ia, eu vim aqui lhe ver</strong></td>
+        Vim lhe visitar ia ia, eu vim aqui lhe ver<br>
+        <br>
+        <strong>Ê cantador como vai você<br>
+        Vim lhe visitar ia ia, eu vim aqui lhe ver</strong><br>
+        <br>
+        Ê cantador quando é bom<br>
+        Ê nos conhece no olhar<br>
+        Ê na mandinga, no jogo ia ia<br>
+        Ê e tambem no jogar<br>
+        <br>
+        <strong>Ê cantador como vai você<br>
+        Vim lhe visitar ia ia, eu vim aqui lhe ver</strong><br>
+        <br>
+        Ê cantador quando é bom<br>
+        Ê não precisa chamar<br>
+        Ele sabe sua hora a ia ia<br>
+        Ê de cantar e de versar ia ia<br>
+        <br>
+        <strong>Ê cantador como vai você<br>
+        Vim lhe visitar ia ia, eu vim aqui lhe ver</strong></td>
         <td>Ê singer how are you<br>
-I came to visit you, I came here to see you<br>
-<br>
-Ê singer how are you<br>
-I came to visit you, I came here to see you<br>
-<br>
-Ê singer when he's good<br>
-Ê knows us in the eyes<br>
-Ê in mandinga, in the game<br>
-It is also in play<br>
-<br>
-Ê singer how are you<br>
-I came to visit you, I came here to see you<br>
-<br>
-Ê singer when he's good<br>
-No need to call<br>
-He knows his time<br>
-To sing and to verse ia ia<br>
-<br>
-Ê singer how are you<br>
-I came to visit you, I came here to see you</td>
+        I came to visit you, I came here to see you<br>
+        <br>
+        Ê singer how are you<br>
+        I came to visit you, I came here to see you<br>
+        <br>
+        Ê singer when he's good<br>
+        Ê knows us in the eyes<br>
+        Ê in mandinga, in the game<br>
+        It is also in play<br>
+        <br>
+        Ê singer how are you<br>
+        I came to visit you, I came here to see you<br>
+        <br>
+        Ê singer when he's good<br>
+        No need to call<br>
+        He knows his time<br>
+        To sing and to verse ia ia<br>
+        <br>
+        Ê singer how are you<br>
+        I came to visit you, I came here to see you</td>
     </tr>
 </table>
 

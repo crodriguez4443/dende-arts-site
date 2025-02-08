@@ -1,16 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Ta na hora de jogar"
-date: "2021-07-17"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-  - "corrido"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -127,9 +114,7 @@ layout: "blog-post-layout.njk"
 </table>
 
 <figcaption>
-
 Author: unknown (if you know the author, let us know!)
-
 </figcaption>
 
 Viadiar - Comes from "vadio", which means a tramp, a lazy person, a vagabond. As a verb, it can mean several things. 1.; to wander aimlessly, 2.; to lead an easy, unworried life 3.; to have fun, play, have a good time, hang out and talk with friends, 4.; to have a short, uncommitted sexual relationship with someone. In capoeira, it is most often used in the sense of playing capoeira (especially in a playful, easygoing, and friendly manner), or hanging around and having a good time with friends.

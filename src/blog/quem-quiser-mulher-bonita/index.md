@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Quem Quiser Mulher Bonita"
 date: "2021-03-24"
@@ -17,7 +15,6 @@ layout: "blog-post-layout.njk"
     </tr>
     <tr>
         <td>
-            Quem quiser mulher bonita vai na Ilhá de Maré<br><br>
             <strong>Quem quiser mulher bonita vai na Ilhá de Maré<br>
             Quem quiser mulher bonita vai na Ilhá de Maré</strong><br><br>
             Diz que lá não falta homem<br>
@@ -43,7 +40,7 @@ layout: "blog-post-layout.njk"
             <strong>Quem quiser mulher bonita vai na Ilhá de Maré<br>
             Quem quiser mulher bonita vai na Ilhá de Maré</strong><br><br>
             Caetano e Bethânia falou<br>
-            Antes do cantar do galo<br>
+            Antes do cantar o galo<br>
             Vai fazer um canjerê<br>
             Mas tem que ser em Santo Amaro<br><br>
             <strong>Quem quiser mulher bonita vai na Ilhá de Maré<br>

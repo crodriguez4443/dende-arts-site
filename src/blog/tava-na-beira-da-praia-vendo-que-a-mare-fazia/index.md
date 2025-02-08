@@ -1,46 +1,11 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Tava na beira da praia vendo que a maré fazia"
-date: "2024-04-28"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-  - "corrido"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
         <th>English</th>
     </tr>
     <tr>
-        <td>Tava na beira da praia vendo que maré fazia<br>
-<strong>Coro<br>
-Tava na beira da praia vendo que maré fazia</strong><br>
-Tava na beira da praia vendo que maré fazia<br>
-<strong>Tava na beira da praia vendo que maré fazia</strong><br>
-<br>
-Quando eu ia ela voltava<br>
-<strong>Quando eu volto ela ia</strong><br>
-Quando eu ia ela voltava<br>
-<strong>Quando eu volto ela ia</strong><br>
-Mas eu ia ela voltava<br>
-<strong>Quando eu volto ela ia</strong></td>
-        <td>I was on the edge of the beach, seeing what the tide would do<br>
-<strong>Chorus<br>
-I was on the edge of the beach, seeing what the tide would do</strong><br>
-I was on the edge of the beach, seeing what the tide would do<br>
-<strong>I was on the edge of the beach, seeing what the tide would do</strong><br>
-<br>
-When I went, she returned<br>
-<strong>When I returned, she went</strong><br>
-When I went, she returned<br>
-<strong>When I returned, she went</strong><br>
-But I went, she returned<br>
-<strong>When I returned, she went</strong></td>
+        <td>Tava na beira da praia vendo que maré fazia<br><strong>Coro<br>Tava na beira da praia vendo que maré fazia</strong><br>Tava na beira da praia vendo que maré fazia<br><strong>Tava na beira da praia vendo que maré fazia</strong><br><br>Quando eu ia ela voltava<br><strong>Quando eu volto ela ia</strong><br>Quando eu ia ela voltava<br><strong>Quando eu volto ela ia</strong><br>Mas eu ia ela voltava<br><strong>Quando eu volto ela ia</strong></td>
+        <td>I was on the edge of the beach, seeing what the tide would do<br><strong>Chorus<br>I was on the edge of the beach, seeing what the tide would do</strong><br>I was on the edge of the beach, seeing what the tide would do<br><strong>I was on the edge of the beach, seeing what the tide would do</strong><br><br>When I went, she returned<br><strong>When I returned, she went</strong><br>When I went, she returned<br><strong>When I returned, she went</strong><br>But I went, she returned<br><strong>When I returned, she went</strong></td>
     </tr>
 </table>
 

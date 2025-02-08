@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Pego Na Viola"
 date: "2021-02-27"
@@ -17,28 +15,28 @@ layout: "blog-post-layout.njk"
     </tr>
     <tr>
         <td>
-            Sou capoeira, pego na viola<br>
+            <strong>Sou capoeira, pego na viola</strong><br>
             <strong>Sou capoeira, pego na viola</strong><br>
             <br>
-            Se essa roda ficar boa não vai terminar agora<br>
+            <strong>Se essa roda ficar boa não vai terminar agora</strong><br>
             <strong>Se essa roda ficar boa não vai terminar agora</strong><br>
             <br>
-            Não vai terminar agora<br>
+            <strong>Não vai terminar agora</strong><br>
             <strong>Não vai terminar agora</strong><br>
             <br>
-            Não vai terminar agora<br>
+            <strong>Não vai terminar agora</strong><br>
             <strong>Não vai terminar agora</strong><br>
             <br>
-            Toquei berimbau, cantei pra iaiá<br>
+            <strong>Toquei berimbau, cantei pra iaiá</strong><br>
             <strong>Toquei berimbau, cantei pra iaiá</strong><br>
             <br>
-            Na roda de capoeira quero ouvir o gunga falar<br>
+            <strong>Na roda de capoeira quero ouvir o gunga falar</strong><br>
             <strong>Na roda de capoeira quero ouvir o gunga falar</strong><br>
             <br>
-            Quero ouvir o gunga falar<br>
+            <strong>Quero ouvir o gunga falar</strong><br>
             <strong>Quero ouvir o gunga falar</strong><br>
             <br>
-            Quero ouvir o gunga falar<br>
+            <strong>Quero ouvir o gunga falar</strong><br>
             <strong>Quero ouvir o gunga falar</strong>
         </td>
         <td>

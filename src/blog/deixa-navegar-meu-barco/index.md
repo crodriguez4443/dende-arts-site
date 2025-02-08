@@ -1,15 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Deixa Navegar Meu Barco"
-date: "2020-11-17"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "intermediate"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>

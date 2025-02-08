@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Eu Vim Pra Vadiar No Berimbau"
 date: "2020-12-22"
@@ -99,8 +97,6 @@ I came to see capoeira play</td>
 </table>
 
 <figcaption>
-
-Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
+Author: Unknown (Do you know who wrote this song? Tell us in the comments!)<br>
 T/L: Not 'trampling' here is supposed to mean something like not going overboard in the game, playing respectively and cooperatively with ones partner.
-
 </figcaption>

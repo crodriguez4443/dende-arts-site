@@ -1,17 +1,3 @@
----
-title: "Citizenship and Capoeira"
-date: "2018-04-22"
-categories: 
-  - "capoeira101"
-tags: 
-  - "american-dream"
-  - "capoeira"
-  - "citizenship"
-  - "immigrant"
-  - "party"
-layout: "blog-post-layout.njk"
----
-
 ## TRY, LEARN, REPEAT
 
 A good friend of mine in Capoeira got his citizenship this past week. I'm going to his batizado (belt ceremony) now to congratulate him and celebrate the event.
@@ -27,5 +13,3 @@ The capoeira family is gathering to paaaartttaaaayyy!
 ## Join us in the Roda!
 
 \* indicates required Email Address \* First Name \* Last Name \* (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames\[0\]='EMAIL';ftypes\[0\]='email';fnames\[1\]='FNAME';ftypes\[1\]='text';fnames\[2\]='LNAME';ftypes\[2\]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
-
-Note: There are no song lyrics in this markdown document, so no table formatting was necessary. The document appears to be a blog post about capoeira and citizenship.

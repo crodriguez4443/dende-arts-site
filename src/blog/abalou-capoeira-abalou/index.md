@@ -1,16 +1,3 @@
-Here's the formatted document according to the specifications:
-
----
-title: "Abalou cachoeira abalou (DJ Capoeira Entrance)"
-date: "2020-09-22"
-categories: 
-  - "capoeira-songbook"
-tags: 
-  - "beginner"
-  - "corrido"
-layout: "blog-post-layout.njk"
----
-
 <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
@@ -63,9 +50,7 @@ it shook, let it shake</td>
 </table>
 
 <figcaption>
-
 Author: Unknown
-
 </figcaption>
 
 Pernada - Refers to a rough Capoeira game. Literally means hard kicks.

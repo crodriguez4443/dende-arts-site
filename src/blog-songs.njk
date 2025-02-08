@@ -8,68 +8,65 @@ pagination:
 permalink: "songbook/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 ---
 
-<!-- src/_includes/layouts/blog.njk -->
+<!-- src/_includes/layouts/songbook.njk -->
 <div class="blog-page-container main-grid">
     {% include "nav.njk" %}
     <h1 class="blog-page-title"><strong>We are the biggest online capoeira community!</strong> Find thoughts, resources and recommendations.</h1>
 
-    <div class="blog-container">
+    <!-- Add search bar for songs -->
+    <div class="search-container">
+        <input class="searchInput" type="text" id="songbookSearchInput" placeholder="Search Capoeira Songs...">
+    </div>
 
-        {# Blog Grid #}
-        <!-- blog-grid.njk -->
-        <div class="blog-grid" id="blog-grid">
-            {% for post in songbookPosts %}
-                <article class="songbook-card">
-                    {% if post.data.coverImage %}
-                        {% image 
-                            "src/blog/" + post.fileSlug + "/images/" + post.data.coverImage,
-                            post.data.title, 
-                            "blog-featured-image"
-                        %}
+    {# Blog Grid #}
+    <!-- blog-grid.njk -->
+    <div class="blog-grid" id="blog-grid">
+        {% for post in songbookPosts %}
+            <article class="songbook-card">
+                {% if post.data.coverImage %}
+                    {% image 
+                        "src/blog/" + post.fileSlug + "/images/" + post.data.coverImage,
+                        post.data.title, 
+                        "blog-featured-image"
+                    %}
+                {% endif %}
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="{{ post.url }}">{{ post.data.title }}</a>
+                    </h3>
+                    {% if post.data.excerpt %}
+                        <p class="blog-card-excerpt">{{ post.data.excerpt }}</p>
                     {% endif %}
                     
-                    <div class="blog-card-content">
-                        <h3 class="blog-card-title">
-                            <a href="{{ post.url }}">{{ post.data.title }}</a>
-                        </h3>
-                        {% if post.data.excerpt %}
-                            <p class="blog-card-excerpt">{{ post.data.excerpt }}</p>
-                        {% endif %}
-                        
-                        <a href="{{ post.url }}" class="read-more">Read More</a>
-                    </div>
-                </article>
-            {% endfor %}
-        </div>
-
-
-        {# Pagination Navigation #}
-        <nav class="pagination" aria-label="Pagination">
-            {% if pagination.href.previous %}
-                <a href="{{ pagination.href.previous }}" class="pagination-link">Previous</a>
-            {% endif %}
-
-            {% for page in pagination.pages %}
-                {% set pageNumber = loop.index %}
-                {% if pageNumber === pagination.pageNumber + 1 %}
-                    <span class="pagination-link current">{{ pageNumber }}</span>
-                {% else %}
-                    <a href="{% if loop.index0 == 0 %}/songbook/{% else %}/songbook/page-{{ pageNumber }}/{% endif %}" 
-                    class="pagination-link">
-                        {{ pageNumber }}
-                    </a>
-                {% endif %}
-            {% endfor %}
-
-            {% if pagination.href.next %}
-                <a href="{{ pagination.href.next }}" class="pagination-link">Next</a>
-            {% endif %}
-        </nav>
-
-        {# Load More Button #}
-        {# <div class="load-more-container">
-            <button id="load-more" class="load-more-btn btn-dark">Load More Posts</button>
-        </div> #}
+                    <a href="{{ post.url }}" class="read-more">Read More</a>
+                </div>
+            </article>
+        {% endfor %}
     </div>
+
+
+    {# Pagination Navigation #}
+    <nav class="pagination" aria-label="Pagination">
+        {% if pagination.href.previous %}
+            <a href="{{ pagination.href.previous }}" class="pagination-link">Previous</a>
+        {% endif %}
+
+        {% for page in pagination.pages %}
+            {% set pageNumber = loop.index %}
+            {% if pageNumber === pagination.pageNumber + 1 %}
+                <span class="pagination-link current">{{ pageNumber }}</span>
+            {% else %}
+                <a href="{% if loop.index0 == 0 %}/songbook/{% else %}/songbook/page-{{ pageNumber }}/{% endif %}" 
+                class="pagination-link">
+                    {{ pageNumber }}
+                </a>
+            {% endif %}
+        {% endfor %}
+
+        {% if pagination.href.next %}
+            <a href="{{ pagination.href.next }}" class="pagination-link">Next</a>
+        {% endif %}
+    </nav>
 </div>
 

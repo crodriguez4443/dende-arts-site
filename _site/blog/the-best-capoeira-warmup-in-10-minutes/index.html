@@ -1,140 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The best Capoeira warmup in 10 minutes</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/testimonials.css">
-    <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="/css/blog.css">
-    <link rel="stylesheet" href="/css/pages.css"> 
-
-    <!-- Primary font -->
-    <link 
-        rel="preload" 
-        href="/fonts/DMSans-Variable.woff2" 
-        as="font" 
-        type="font/woff2" 
-        crossorigin
-    >
-
-    <!-- load swell.js first -->
-
-    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
-    <!-- swell js integration -->
-    <script>
-        // Create a global initialization function
-        window.initializeSwell = async function() {
-            try {
-                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
-                    useCamelCase: true,
-                    cache: false
-                });
-                console.log('Swell initialized successfully');
-                
-                // Initialize cart after Swell is ready
-                await initializeCart();
-            } catch (error) {
-                console.error('Swell initialization error:', error);
-            }
-        };
-    </script>
-
-    <!-- layout.njk -->
-    <script>
-        // Initialize cart function
-        async function initializeCart() {
-            try {
-                const cart = await swell.cart.get();
-                if (cart?.item_count) {
-                    updateCartCount(cart.item_count);
-                }
-                console.log('Cart initialized:', cart);
-            } catch (error) {
-                console.error('Error initializing cart:', error);
-            }
-        }
-
-        // Update cart count function
-        function updateCartCount(count) {
-            const cartCount = document.getElementById('cart-count');
-            if (cartCount) {
-                cartCount.textContent = count.toString();
-                cartCount.style.display = count > 0 ? 'block' : 'none';
-            }
-        }
-
-        // Call initialization when document is loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            window.initializeSwell();
-        });
-    </script>
-</head>
-<body>
-    <main>
-        
-<div class="main-grid">
-    <div class="nav-content">
-            <!-- use shortcode for these image -->
-            <div class="logo-link-container">
-                <picture class="logo-link">
-            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
-<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
-<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
-            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
-        </picture>
-                <picture class="logo-link-lg">
-            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
-<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
-<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
-            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
-        </picture>
-            </div>
-            <!-- use shortcode for these image -->
-            <div class="nav-container">
-                <button class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="overlay"></div>
-                <nav class="nav-menu">
-                    <a href="/">Home</a>
-                    
-                    <a href="/abada-joggers-landing/">Abadas</a>
-                    
-                    <a href="/blog/">Blog</a>
-                    <a href="/">Contact</a>
-                    <!-- Add this to your nav.njk -->
-                    <div class="cart-indicator">
-                        <span id="cart-count" style="display: none">0</span>
-                    </div>
-                </nav>
-            </div>
-        </div>
-</div>
-<div class="blog-post-container blog-grid">
-    <article class="blog-post">
-        <div class="breadcrumb-container">
-            <a href="/">Home/</a>
-            <a href="/blog">Blog/</a>
-            <a href="/blog/">The best Capoeira warmup in 10 minutes</a>
-        </div>
-        <h1>The best Capoeira warmup in 10 minutes</h1>
-
-        
-        
-        
-        
-        <div class="blog-post-meta">
-            <time datetime="2020-05-11">
-                May 10, 2020
-            </time>
-        </div>
-        
-        <div class="blog-post-content">
-            <p>A good warm up should increase your heart rate and get your blood pumping in anticipation for any activity. Next, it should improve circulation in the joints that will be seeing a lot of work. A warm up should also start up your nervous system and get it ready for the intensity you are about to expose it to.</p>
+<p>Since this document does not contain song lyrics, I will copy the markdown document as is without any modifications.</p>
+<hr>
+<p>title: &quot;The best Capoeira warmup in 10 minutes&quot;
+date: &quot;2020-05-11&quot;
+categories:</p>
+<ul>
+<li>&quot;capoeira101&quot;</li>
+<li>&quot;movement-guides&quot;
+coverImage: &quot;Screen-Shot-2020-05-11-at-4.34.28-PM.png&quot;
+layout: &quot;blog-post-layout.njk&quot;</li>
+</ul>
+<hr>
+<p>A good warm up should increase your heart rate and get your blood pumping in anticipation for any activity. Next, it should improve circulation in the joints that will be seeing a lot of work. A warm up should also start up your nervous system and get it ready for the intensity you are about to expose it to.</p>
 <p>This might run contrary to some people's beliefs that a warm up is supposed to literally &quot;warm up the body&quot;. Or that a warm up should consist of stretches to &quot;elongate&quot; muscles. At the same time, warm ups like jumping jacks, running, and mountain climbers are not inherently bad in any way. They just don't cover the wide range of preparation that an activity like Capoeira requires. When you play Capoeira, the body will be moving in many different ways, and this is what we want to get it ready for.</p>
 <p>We'll start work with the most critical things to warm up. Our time limit will be 10 minutes and we'll try to get you as ready as possible to play Capoeira in that time. We'll also assume you don't have any prior injuries (because otherwise this guide would be impossible to do).</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/t86pc6Rx4kw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -155,11 +31,11 @@
 <h2>Warm up for the back: cat/cow or Spinal segmentation</h2>
 <p>Even if you don't plan on doing a lot of back bending movements, warming up the back is essential for Capoeira. Having a strong, supple, and resilient spine will ensure you can train for years to come. There is a simple and an advanced way to warm up the back. First I'll start with the simple version and then move on the advanced method.</p>
 <p>Cat/cow is a very simple movements. To start, we want to be in a quadruped position, meaning our hands and knees are on the ground with our back straight. The &quot;cat&quot; part of this movement has us sucking our bellies in - as if to pull the stomach through our backs and towards the ceiling. Make sure to push the shoulders up(protraction), let the head come down, and tuck the tailbone in. By doing this, we flex all the segments of the spine at once. While maintaining this pose, we'll make sure to engage the core to help us flex each spinal segment. Once in this position, we want to lower down into the &quot;cow&quot; part of the movement. From having our back fully flexed, we want to extend the back as much as we can.</p>
-<p><img src="https://lh3.googleusercontent.com/B5iChuECMB7N_txXlfhqxfwCFNSfKYbRStQ3qOGfnnCf8qCgkGrJhLxHz0MXvWDbdA9i95zKXJLiT5mLym0Dfj1zOMaoOY2V4SYkLrXlkk-yl63VvbXMUpmlFYzmgqB6om7p5ViJ" alt=""></p>
+<p><img src="https://lh3.googleusercontent.com/B5iChuECMB7N_txXlfhqxfwCFNSfKYbRStQ3qOGfnnCf8qCgkGrJhLxHz0MXvWDbdA9i95zKXJLiT5mLym63vbXMUpmlFYzmgqB6om7p5ViJ" alt=""></p>
 <p><img src="https://lh6.googleusercontent.com/F3JwIrtfwTZko_haHPnROhPJiBrLsshP8RdqPGaSiwUNoT-EujCGW7XiRoz0siXMUlD68y8y-WcGM4raJrZ5lFWO2OcWDZ2mgHN0d-_DTERRkfQlQ0jMVALcZuFJnoar9Jv5f1NS" alt=""></p>
 <p>As you bring the spine down, imagine your heart is being pulled down towards the floor. The shoulders will come down(retraction) and the shoulder blades will come together. The hips will also rotate out in the opposite direction. The back muscles should begin to flex as you move into the cow position. While in the cow position, we want to make sure each spinal segment is fully extended. Take note of this before switching back to the cat position. Continue doing this about 20 times or until you feel you are ready.</p>
 <p>The advanced way to do this involves moving each segment of the spine one at a time. The spine consists of 31 different segments. 8 segments can be found in the cervical portion of the spine. This is the upper back to the neck. 12 segments are for the thoracic. This is the largest grouping of segments and runs from the upper to lower back. 5 segments comprise the lumbar. This consists of segments in the lower back. And lastly, 5 segments can be found in the sacral and 1 lonely segment is in the coccygeal section. The parts we are most concerned with are the cervic, thoracic, and lumbar portions of the spine.<br>
-<img src="https://lh5.googleusercontent.com/uHq-0XZ_ChuhdJp7NvFTRWAfBJVDAiDzEXdrQSgebUsD-i9X8t_3VeeCS1YTJxRcfmNCER5jyM3p3lbGZTpKpTBHZpwWuCFXzlCwvcU6nKt2OoFtTYy0cTJanShsiSPSSbRB6Bmh" alt=""></p>
+<img src="https://lh5.googleusercontent.com/uHq-0XZ_ChuhdJp7NvFTRWAfBJVDAiDzEXdrQSgebUsD-i9X8t_3VeeCS1YTJxRcfmNCER5jyM3p3lbGZTpKpTYy0cTJanShsiSPSSbRB6Bmh" alt=""></p>
 <p>The starting position for this advanced method is the same quadruped position as the simpler version. You want to start from a neutral spine position and the first thing you'll do is tuck your tailbone in. The idea is to start flexing each segment of your spine starting from the lower-most segment. This means we'll start from about the sacral or lumbar segments and work our way up to the cervical portion. Keep your core tight and your belly button sucked in as you do this movement.</p>
 <p>This may take a lot of concentration as you start getting used to moving each segment independently. You can compare this to moving toes. Some toes are more difficult to move independently than others due to a poor brain to toe connection. The same thing happens with spinal segments. If segments don't get used, then their ability to move atrophies.</p>
 <p>It might not seem like much, but this is a great warm up for the extension and flexion of the spine. Not only that, but this exercise is meant to increase the neurological connection between the spine and the brain. Doing these exercises regularly means you'll have more control over your spine. Which becomes more and more as we do more advanced movements.</p>
@@ -170,123 +46,10 @@
 <h2>Warm up for the shoulders: Quadruped Shoulder Rotations and over head isometrics</h2>
 <p>The shoulder is one of the most complex joints in the body. This is because your shoulder can move in ways that no other joint can. And this makes a lot of sense considering all the things we do with our hands, but this does pose a challenge for a shoulder warm up.</p>
 <p>To start our warm up we'll start from a high plank position. Place both hands on the floor, fully extended as if you were about to do a push up. From here, we want to move the shoulders around in a circular motion. Note that if this is too difficult you can regress the movement by placing your knees on the ground.</p>
-<p><img src="https://lh5.googleusercontent.com/oA0QlFgPhdggrVDnyE-yORiEJYzRiJFWRNN0ZQmnEA2B7wjuvB6uZG9rH9YNdILDbwQraLUKah3VJERJuYqyeTtJ7bSBAeMCZO8N8lL4eaCevHukneeNgPJ_gvVN9_3L7RUuLW7Z" alt=""></p>
+<p><img src="https://lh5.googleusercontent.com/oA0QlFgPhdggrVDnyE-yORiEJYzRiJFWRNN0ZQmnEA2B7wjuvB6uXDnyE-yORiEJYzRiJFWRNN0ZQmnEA2B7wjuvB6ukneeNgPJ_gvVN9_3L7RUuLW7Z" alt=""></p>
 <p>The direction of the rotation does not matter much, but I advise doing rotations in both. About 10 rotations per direction should be sufficient. As you make these circles, aim to make the circles as big as you can. Start slow, and slowly work your way up until you're making circles as big as you can with your shoulders. This may take a lot of control and may not be that smooth at first. Give this exercise some time and you'll see that slowly you'll acquire more and more control.</p>
 <p>If this exercise feels too easy, you can add resistance to the warm up by including an elastic band. By passing the band around your back and holding the two ends of the band with your hands, you can add resistance to these rotations. For most people this is not necessary, but it does add a layer of intensity if you feel that is what you need.</p>
 <p><img src="https://lh5.googleusercontent.com/Kga_ufcHzCl_g51O-iqU70cO8m5kO2eP3O5xU3O9UHMOjarsd6M-j98t80cyJ9gsl9pQf4f7PiL-8Yr7DcFkMkjeB8sXQvFQCg11pWK7YlO--uksi60bmG34gcV51Em7koWM6DR5" alt=""></p>
 <h2>Warm up the wrist: Wrist routine</h2>
 <p>Although that is the end of this general warm up routine, there are plenty of other body parts that could use a good warm up. One of those body parts is the wrist. The wrist is a joint that receives a lot of punishment in Capoeira and taking the time to warm them up is a good idea. I made a whole blog post equipped with a video on how to do this in the link below. Enjoy!</p>
 <p>https://dendearts.com/fix-wrist-pain-wrist-stretches-for-prevention-and-healing/</p>
-
-        </div>
-    </article>
-    <aside class="blog-post-sidebar">
-        <div class="search-form">
-            <p>Search articles and songs form</p>
-        </div>
-        <h3>Table of Contents</h3>
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#benefits">Benefits</a></li>
-        </ul>
-        <div class="related-posts">
-            <p>Related posts</p>
-        </div>
-        <div class="popular-posts">
-            <p>Popular posts</p>
-        </div>
-        <div class="popular songs">
-            <p>Popular songs</p>
-        </div>
-        <div class="ads space">
-            <p>Ad space</p>
-            <p>Ad space</p>
-        </div>
-    </aside>
-</div>      
-    </main>
-    <footer class="footer main-grid">
-        <div class="footer-top-content">
-        <!-- Logo/Title Section -->
-            <div class="footer-logo-link-container">
-                
-                <picture class="footer-logo-link-lg">
-            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
-<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
-<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
-            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
-        </picture>
-            </div>
-            <!-- Social Media Icons -->
-            <div class="footer-social-large"> 
-                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
-                    <picture class="instagram-logo">
-            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
-<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
-<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
-            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
-        </picture>
-                </a>
-                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
-                    <picture class="youtube-logo">
-            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
-<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
-<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
-            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
-        </picture>
-                </a>
-                
-            </div>
-        </div>
-        <div class="footer-bottom-content">
-
-            <!-- Navigation Links -->
-            <nav class="footer-nav">
-                <a href="/">Home</a>
-                <a href="/">About</a>
-                <a href="/">Gear</a>
-                <a href="/">Learn</a>
-                <a href="/">Blog</a>
-                <a href="/">Contact</a>
-            </nav>
-
-            <!-- Social Media Icons -->
-            <div class="footer-social-small">
-                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
-                    <picture class="instagram-logo">
-            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
-<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
-<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
-            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
-        </picture>
-                </a>
-                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
-                    <picture class="youtube-logo">
-            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
-<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
-<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
-            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
-        </picture>
-                </a>
-                
-            </div>
-    
-            <!-- Copyright -->
-            <div class="footer-copyright">
-                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="/js/nav.js"></script>
-    <!-- script to update copyright year -->
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
-    
-    
-</body>
-
-
-</html>

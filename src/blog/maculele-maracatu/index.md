@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "Maculelê Maracatu"
 date: "2021-01-24"
@@ -52,7 +50,5 @@ Maculelé, maracatu</td>
 </table>
 
 <figcaption>
-
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
-
 </figcaption>

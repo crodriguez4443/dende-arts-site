@@ -1,5 +1,3 @@
-Here's the formatted document according to the specifications:
-
 ---
 title: "No mercado modelo tem acarajé"
 date: "2023-01-16"
@@ -17,21 +15,13 @@ layout: "blog-post-layout.njk"
         <th>English</th>
     </tr>
     <tr>
-        <td>No mercado Modelo, Tem acarajé<br>
-        <strong>No mercado Modelo, Tem acarajé</strong><br><br>
-        Ô io io Modelo, -Io io io Modelo<br>
-        <strong>Ô io io Modelo, -Io io io Modelo</strong></td>
-        <td><em>[At the] Mercado Modelo</em> <em>[they] have acarajé</em><br>
-        <strong><em>[At the] Mercado Modelo</em> <em>[they] have acarajé</em></strong><br><br>
-        Ô io io Modelo, Io io io Modelo<br>
-        <strong>Ô io io Modelo, Io io io Modelo</strong></td>
+        <td>No mercado Modelo, Tem acarajé<br><strong>No mercado Modelo, Tem acarajé</strong><br><br>Ô io io Modelo, -Io io io Modelo<br><strong>Ô io io Modelo, -Io io io Modelo</strong></td>
+        <td><em>[At the] Mercado Modelo</em> <em>[they] have acarajé</em><br><strong><em>[At the] Mercado Modelo</em> <em>[they] have acarajé</em></strong><br><br>Ô io io Modelo, Io io io Modelo<br><strong>Ô io io Modelo, Io io io Modelo</strong></td>
     </tr>
 </table>
 
 <figcaption>
-
 Author: do you know the author? let us know!
-
 </figcaption>
 
 Acarajé - a deep fred shrimp based food or snack
