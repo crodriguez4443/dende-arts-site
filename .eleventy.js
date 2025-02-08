@@ -1,4 +1,7 @@
 const Image = require('@11ty/eleventy-img');
+const markdownIt = require('markdown-it');
+const md = new markdownIt();
+const path = require('path');
 const { outdent } = require('outdent'); // Make sure to install this if not already present
 const BLOG_CATEGORIES = { // categories for blog posts
     history: ["History, Culture, Travel"],
@@ -40,26 +43,26 @@ module.exports = function(eleventyConfig) {
             outputDir: './_site/img/optimized',
             urlPath: '/img/optimized',
         });
-
+    
         const sourceHtmlString = Object.values(imageMetadata)
             .map((images) => {
                 const { sourceType } = images[0];
-
+    
                 const sourceAttributes = stringifyAttributes({
                     type: sourceType,
                     srcset: images.map((image) => image.srcset).join(', '),
                     sizes,
                 });
-
+    
                 return `<source ${sourceAttributes}>`;
             })
             .join('\n');
-
+    
         const getLargestImage = (format) => {
             const images = imageMetadata[format];
             return images[images.length - 1];
         }
-
+    
         const largestUnoptimizedImg = getLargestImage(formats[0]);
         const imgAttributes = stringifyAttributes({
             src: largestUnoptimizedImg.url,
@@ -70,7 +73,7 @@ module.exports = function(eleventyConfig) {
             decoding: 'async',
         });
         const imgHtmlString = `<img ${imgAttributes}>`;
-
+    
         const pictureAttributes = stringifyAttributes({
             class: className,
         });
@@ -78,11 +81,46 @@ module.exports = function(eleventyConfig) {
             ${sourceHtmlString}
             ${imgHtmlString}
         </picture>`;
-
+    
         return outdent`${picture}`;
-    })
-     // Date formatting filters
-     eleventyConfig.addFilter('readableDate', (dateObj) => {
+    });
+
+    // === blog Table of contents 
+
+    eleventyConfig.addFilter('getHeadings', function(content) {
+        try {
+            // First, render the markdown to HTML
+            const htmlContent = md.render(content);
+            
+            const headings = [];
+            const regex = /<h([2-3])[^>]*>(.*?)<\/h\1>/g;
+            let match;
+    
+            while ((match = regex.exec(htmlContent))) {
+                const level = match[1];
+                const text = match[2].replace(/<[^>]*>/g, ''); // Remove any HTML tags inside heading
+                const slug = text.toLowerCase()
+                    .replace(/[^a-z0-9]+/g, '-')
+                    .replace(/(^-|-$)/g, '');
+    
+                headings.push({
+                    level,
+                    text,
+                    slug
+                });
+            }
+    
+            console.log('Found headings:', headings); // Debug log
+            return headings;
+        } catch (error) {
+            console.error('Error in getHeadings filter:', error);
+            return [];
+        }
+    });
+    
+    // === Blog Filters filters
+    
+    eleventyConfig.addFilter('readableDate', (dateObj) => {
         return new Date(dateObj).toLocaleDateString('en-US', {
             year: 'numeric',
             month: 'long',
@@ -119,19 +157,36 @@ module.exports = function(eleventyConfig) {
         return posts;
     });
 
-    // ADD LUNR SEARCH 
-    eleventyConfig.addCollection('searchIndices', function(collection) {
+    // === ADD LUNR SEARCH ===
+
+    eleventyConfig.addCollection('searchIndices', async function(collection) {
     const allPosts = collection.getFilteredByGlob('src/blog/*/index.md');
     
-    // Split posts into regular and songbook
+    // Helper function to process image
+    async function processImage(coverImage, fileSlug) {
+        if (!coverImage) return null;
+        
+        try {
+            const imagePath = `src/blog/${fileSlug}/images/${coverImage}`;
+            const metadata = await Image(imagePath, {
+                widths: [400],
+                formats: ['webp'],
+                outputDir: './_site/img/optimized',
+                urlPath: '/img/optimized',
+            });
+            
+            // Return the URL of the processed image
+            return metadata.webp[0].url;
+        } catch (error) {
+            console.error(`Error processing image for ${fileSlug}:`, error);
+            return null;
+        }
+    }
+
+    // Process regular posts
     const regularPosts = allPosts.filter(post => {
         const categories = post.data.categories || [];
         return !categories.includes('capoeira-songbook');
-    });
-
-    const songbookPosts = allPosts.filter(post => {
-        const categories = post.data.categories || [];
-        return categories.includes('capoeira-songbook');
     });
 
     // Create regular posts index
@@ -148,10 +203,31 @@ module.exports = function(eleventyConfig) {
                 excerpt: post.data.excerpt || '',
                 categories: post.data.categories || [],
                 url: post.url,
-                coverImage: post.data.coverImage || ''
             };
             this.add(doc);
         });
+    });
+
+    // Process images for regular posts
+    const processedRegularPosts = await Promise.all(
+        regularPosts.map(async (post, idx) => {
+            const optimizedImageUrl = await processImage(post.data.coverImage, post.fileSlug);
+            
+            return {
+                id: idx,
+                title: post.data.title || '',
+                excerpt: post.data.excerpt || '',
+                categories: post.data.categories || [],
+                url: post.url,
+                coverImage: optimizedImageUrl
+            };
+        })
+    );
+
+    // Process songbook posts similarly...
+    const songbookPosts = allPosts.filter(post => {
+        const categories = post.data.categories || [];
+        return categories.includes('capoeira-songbook');
     });
 
     // Create songbook index
@@ -177,26 +253,7 @@ module.exports = function(eleventyConfig) {
     return {
         regular: {
             index: regularIndex.toJSON(),
-            posts: regularPosts.map((post, idx) => {
-                // Debug log the image path
-                console.log('starting post');
-                const imagePath = post.data.coverImage 
-                    ? `/blog/${post.fileSlug}/images/${post.data.coverImage}`
-                    : null;
-    
-                console.log('Post:', post.data.title);
-                console.log('Original coverImage:', post.data.coverImage);
-                console.log('Computed path:', imagePath);
-    
-                return {
-                    id: idx,
-                    title: post.data.title || '',
-                    excerpt: post.data.excerpt || '',
-                    categories: post.data.categories || [],
-                    url: post.url,
-                    coverImage: imagePath
-                };
-            })
+            posts: processedRegularPosts
         },
         songbook: {
             index: songbookIndex.toJSON(),
@@ -205,10 +262,11 @@ module.exports = function(eleventyConfig) {
                 title: post.data.title || '',
                 excerpt: post.data.excerpt || '',
                 categories: post.data.categories || [],
-                url: post.url,
+                url: post.url
             }))
         }
-    }});
+    };
+});
 
     return {
         dir: {

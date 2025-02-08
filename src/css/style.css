@@ -1413,7 +1413,7 @@ strong {
 
 .blog-post-grid {
     display: grid;
-    grid-template-columns: minmax(1rem, 1fr) minmax(200px, 900px) minmax(100px, 300px) minmax(1rem, 1fr);
+    grid-template-columns: minmax(1rem, 1fr) minmax(150px, 900px) minmax(75px, 300px) minmax(1rem, 1fr);
     max-width: 1200px; 
     margin: 0 auto; 
 }
@@ -1539,10 +1539,11 @@ strong {
 .search-container {
     grid-column: 2/4;
     margin-bottom: 2rem;
+    display: flex;
 }
 
 .searchInput {
-    width: 70%;
+    width: 80%;
     padding: 1rem;
     font-size: 1.125rem;
     border: 1px solid var(--text-form);
@@ -1551,8 +1552,54 @@ strong {
     margin-bottom: 1rem;
 }
 
+@media (min-width: 768px) {
+    .searchInput {
+        width: 50%;
+    }
+}
+
 .no-results {
     text-align: center;
     padding: 2rem;
     color: var(--text-color);
+}
+
+
+/* ========================= 
+    Blog Table of contents
+========================== */
+
+.table-of-contents {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.toc-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc-nav li {
+    margin: 0.5rem 0;
+}
+
+.toc-level-2 {
+    font-weight: 500;
+}
+
+.toc-level-3 {
+    padding-left: 1rem;
+    font-size: 0.9em;
+}
+
+.toc-nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.toc-nav a:hover {
+    color: var(--action-primary);
 }

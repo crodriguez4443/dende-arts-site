@@ -79,7 +79,7 @@ function displayResults(results, type) {
                     `<img src="${post.coverImage}" 
                          class="blog-featured-image" 
                          alt="${post.title}"
-                         loading="lazy">` 
+                         loading="eager">` 
                     : ''}
                 <div class="blog-card-content">
                     <h3 class="blog-card-title">

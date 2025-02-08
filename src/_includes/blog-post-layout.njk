@@ -6,6 +6,7 @@ layout: layout.njk
     {% include "nav.njk" %}
     <div class="blog-post-container blog-post-grid">
         <article class="blog-post">
+            {# Add IDs to your headings #}
             <div class="breadcrumb-container">
                 <a href="/">Home/</a>
                 <a href="/blog">Blog/</a>
@@ -33,20 +34,39 @@ layout: layout.njk
                 </time>
             </div>
             
+            {% set headings = content | getHeadings %}
+            {% set contentWithIds = content %}
+            {% for heading in headings %}
+                {% set contentWithIds = contentWithIds | replace(
+                    heading.text,
+                    '<h' + heading.level + ' id="' + heading.slug + '">' + heading.text + '</h' + heading.level + '>'
+                ) %}
+            {% endfor %}
+
             <div class="blog-post-content">
-                {{ content | safe }}
+                {{ contentWithIds | safe }}
             </div>
         </article>
+
+        <!--
         <aside class="blog-post-sidebar">
-            <div class="search-form">
-                <p>Search articles and songs form</p>
-            </div>
             <h3>Table of Contents</h3>
-            <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-            </ul>
+            {% set headings = content | getHeadings %}
+            {% if headings.length > 0 %}
+                <div class="table-of-contents">
+                    <h2>Table of Contents</h2>
+                    <nav class="toc-nav">
+                        <ul>
+                        {% for heading in headings %}
+                            <li class="toc-level-{{ heading.level }}">
+                                <a href="#{{ heading.slug }}">{{ heading.text }}</a>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            {% endif %}
+
             <div class="related-posts">
                 <p>Related posts</p>
             </div>
@@ -61,5 +81,7 @@ layout: layout.njk
                 <p>Ad space</p>
             </div>
         </aside>
+        --> 
+        
     </div>        
 </div>
