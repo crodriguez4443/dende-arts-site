@@ -95,7 +95,8 @@ button:hover {
 }
 
 /* add other typography based styles below */
-	
+
+
 
 /* === Buttons === */
 
@@ -1602,4 +1603,18 @@ strong {
 
 .toc-nav a:hover {
     color: var(--action-primary);
+}
+
+
+/* ======
+Remove when Guide is ready
+====== */
+
+.announcement {
+    color: red;
+    text-align: center;
+}
+
+.margin-reset {
+    margin: 0;
 }
