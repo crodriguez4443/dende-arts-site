@@ -1594,8 +1594,6 @@ strong {
 ========================== */
 
 .table-of-contents {
-    padding: 1rem;
-    background: #f8f9fa;
     border-radius: 4px;
     margin-bottom: 2rem;
 }
@@ -1603,11 +1601,24 @@ strong {
 .toc-nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .toc-nav li {
-    margin: 0.5rem 0;
+    color: var(--title-color);
+    padding-bottom: 1rem;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: transform 0.4s, margin 0.4s;
+}
+
+
+li:hover,
+li:focus {
+  transform: scale(1.1);
+  margin: 1rem 0;
 }
 
 .toc-level-2 {

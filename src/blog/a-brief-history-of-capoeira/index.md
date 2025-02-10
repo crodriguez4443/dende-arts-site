@@ -1,5 +1,3 @@
-The document does not contain song lyrics, so I will leave it exactly as it was originally presented.
-
 ---
 title: "A BRIEF HISTORY OF CAPOEIRA"
 date: "2017-11-13"

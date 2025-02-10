@@ -1,6 +1,10 @@
 const Image = require('@11ty/eleventy-img');
 const markdownIt = require('markdown-it');
-const md = new markdownIt();
+const md = new markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true,
+});
 const path = require('path');
 const { outdent } = require('outdent'); // Make sure to install this if not already present
 const BLOG_CATEGORIES = { // categories for blog posts
@@ -89,16 +93,29 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addFilter('getHeadings', function(content) {
         try {
-            // First, render the markdown to HTML
-            const htmlContent = md.render(content);
-            
+            // Check if content exists
+            if (!content) {
+                console.log('No content provided to getHeadings filter');
+                return [];
+            }
+    
+            console.log('Content type:', typeof content); // Debug log
+    
+            // If content is already HTML, use it directly
+            // If it's markdown, render it first
+            const htmlContent = typeof content === 'string' 
+                ? (content.startsWith('<') ? content : md.render(content))
+                : '';
+    
             const headings = [];
-            const regex = /<h([2-3])[^>]*>(.*?)<\/h\1>/g;
+            // Updated regex to be more flexible
+            const regex = /<h([2-3])[^>]*?>(?:.*?)<\/h\1>/gs;
             let match;
     
             while ((match = regex.exec(htmlContent))) {
+                // Extract the heading text, removing any HTML tags
                 const level = match[1];
-                const text = match[2].replace(/<[^>]*>/g, ''); // Remove any HTML tags inside heading
+                const text = match[0].replace(/<[^>]*>/g, '').trim();
                 const slug = text.toLowerCase()
                     .replace(/[^a-z0-9]+/g, '-')
                     .replace(/(^-|-$)/g, '');
@@ -114,6 +131,7 @@ module.exports = function(eleventyConfig) {
             return headings;
         } catch (error) {
             console.error('Error in getHeadings filter:', error);
+            console.error('Content:', content); // Log the content that caused the error
             return [];
         }
     });

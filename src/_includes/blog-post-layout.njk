@@ -54,7 +54,6 @@ layout: layout.njk
             {% set headings = content | getHeadings %}
             {% if headings.length > 0 %}
                 <div class="table-of-contents">
-                    <h2>Table of Contents</h2>
                     <nav class="toc-nav">
                         <ul>
                         {% for heading in headings %}
@@ -67,7 +66,7 @@ layout: layout.njk
                 </div>
             {% endif %}
 
-            <div class="related-posts">
+            {# <div class="related-posts">
                 <p>Related posts</p>
             </div>
             <div class="popular-posts">
@@ -79,7 +78,7 @@ layout: layout.njk
             <div class="ads space">
                 <p>Ad space</p>
                 <p>Ad space</p>
-            </div>
+            </div> #}
         </aside>
         
         
