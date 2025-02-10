@@ -542,8 +542,8 @@ strong {
 =============== */
 
 .hero {
-    background-image: url("/img/homepage/hero-bg.jpg");
-    background-position: calc(100% + 000px) center;    
+    background-image: url("/img/homepage/hero-bg-small.png");
+    background-position: center;    
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 5rem;
@@ -582,6 +582,7 @@ strong {
 @media (min-width: 725px) {
 
     .hero {
+        background-image: url("/img/homepage/hero-bg.jpg");
         background-position: right;    
     }
 
