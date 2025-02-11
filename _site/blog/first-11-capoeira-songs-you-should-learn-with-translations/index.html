@@ -1,40 +1,1520 @@
-<p>I'll format the song lyrics in the specified HTML table format. I'll demonstrate with the first song, and the process would be the same for all songs in the document:</p>
-<h2>1. Ô sim sim sim, Ô não não não</h2>
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>
-            ô sim, sim, sim<br>
-            ô não, não, não<br>
-            <strong>ô sim, sim, sim<br>
-            ô não, não, não</strong><br>
-            Mas hoje tem, amanahã não<br>
-            Mas hoje tem, amanahã não<br>
-            <strong>ô sim, sim, sim<br>
-            ô não, não, não</strong><br>
-            Olha a pisada de lampião<br>
-            Olha a pisada de lampião<br>
-            <strong>ô sim, sim, sim<br>
-            ô não, não, não</strong>
-        </td>
-        <td>
-            Oh yes, yes, yes<br>
-            Oh no, no, no<br>
-            <strong>Oh yes, yes, yes<br>
-            Oh no, no, no</strong><br>
-            Today you have, tomorrow you don't<br>
-            Today you have, tomorrow you don't<br>
-            <strong>Oh yes, yes, yes<br>
-            Oh no, no, no</strong><br>
-            Watch the steps in the lamp light<br>
-            Watch the steps in the lamp light<br>
-            <strong>Oh yes, yes, yes<br>
-            Oh no, no, no</strong>
-        </td>
-    </tr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First 11 Capoeira songs you should learn with Translations</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songbook</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">First 11 Capoeira songs you should learn with Translations</a>
+            </div>
+            <h1>First 11 Capoeira songs you should learn with Translations</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2019-09-10">
+                    September 9, 2019
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <p>In Capoeira, music is a huge deal! Knowing Capoeira songs is a big part of learning the art and for some people this can be intimidating. If you’re not sure what songs to start learning, below is a list of 11 songs that are great for beginners. These song work for beginners because they are relatively easy to learn and you often hear them sung in the roda. The songs and their translations are provided to give a little extra context for the song.</p>
+<h3><strong><h3 id="how-to-improve-your-singing">How to Improve your singing</h3></strong></h3>
+<p>If you want to improve your Capoeira singing, do the following.</p>
+<p>1. Listen/read the song.</p>
+<p>2. Memorize the song chunks at a time.</p>
+<p>3. Work on the rhythm. Sing the choros again and again to get the rhythm down.</p>
+<p>4. Sing the verses. Be aware that a lot of words and sounds get swallowed up from singing fast or trying to fit a lot of words in a few beats.</p>
+<p>5. Sing the song with a instrument you know to play or are learning to play.</p>
+<p>6. Try it in the roda!</p>
+<h2><h2 id="1-sim-sim-sim-n-o-n-o-n-o">1. Ô sim sim sim, Ô não não não</h2></h2>
+<table>
+<thead>
+<tr>
+<th>Portuguese</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ô sim, sim, sim</td>
+<td></td>
+</tr>
+<tr>
+<td>ô não, não, não</td>
+<td></td>
+</tr>
+<tr>
+<td>**ô sim, sim, sim</td>
+<td></td>
+</tr>
+<tr>
+<td>ô não, não, não**</td>
+<td></td>
+</tr>
+<tr>
+<td>Mas hoje tem, amanahã não</td>
+<td></td>
+</tr>
+<tr>
+<td>Mas hoje tem, amanahã não</td>
+<td></td>
+</tr>
+<tr>
+<td>**ô sim, sim, sim</td>
+<td></td>
+</tr>
+<tr>
+<td>ô não, não, não**</td>
+<td></td>
+</tr>
+<tr>
+<td>Olha a pisada de lampião</td>
+<td></td>
+</tr>
+<tr>
+<td>Olha a pisada de lampião</td>
+<td></td>
+</tr>
+<tr>
+<td>**ô sim, sim, sim</td>
+<td></td>
+</tr>
+<tr>
+<td>ô não, não, não**</td>
+<td>Oh yes, yes, yes</td>
+</tr>
+<tr>
+<td>Oh no, no, no</td>
+<td></td>
+</tr>
+<tr>
+<td>**Oh yes, yes, yes</td>
+<td></td>
+</tr>
+<tr>
+<td>Oh no, no, no**</td>
+<td></td>
+</tr>
+<tr>
+<td>Today you have, tomorrow you don't</td>
+<td></td>
+</tr>
+<tr>
+<td>Today you have, tomorrow you don't</td>
+<td></td>
+</tr>
+<tr>
+<td>**Oh yes, yes, yes</td>
+<td></td>
+</tr>
+<tr>
+<td>Oh no, no, no**</td>
+<td></td>
+</tr>
+<tr>
+<td>Watch the steps in the lamp light</td>
+<td></td>
+</tr>
+<tr>
+<td>Watch the steps in the lamp light</td>
+<td></td>
+</tr>
+<tr>
+<td>**Oh yes, yes, yes</td>
+<td></td>
+</tr>
+<tr>
+<td>Oh no, no, no**</td>
+<td></td>
+</tr>
+</tbody>
 </table>
+<p>This is the first song that 90% of Capoeira students learn. The message is simple, as are the lyrics. Nothing too complicated. Try practicing this song while clapping and stepping with the beat!</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qy9gkL1OMMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>I would apply the same formatting to all 10 song sections in the document. Would you like me to proceed with formatting the entire document?</p>
+<h2><h2 id="2-parana">2. Parana ê</h2></h2>
+<table>
+<thead>
+<tr>
+<th>Portuguese</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parana ê</td>
+<td></td>
+</tr>
+<tr>
+<td>Parana ê, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td>Vou dizer pra minha mulher Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td>Capoeira me venceu Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td>**Parana ê, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td>**Ela quis bater com pé firme Parana</td>
+<td></td>
+</tr>
+<tr>
+<td>Isso não aconteceu, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Parana ê, Paraná</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Tem batuque todo dia, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td>Mulata de qualidade, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Parana ê, Paraná</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Mina mãe e mulher velha, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td>Fecha porta e dorme cedo, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Parana ê, Paraná</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>A mulher pra ser bonita, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td>Não precisa se pintar, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Parana ê, Paraná</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Vou me embora, vou membora, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td>Como eu jaá jisse que vou, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Parana ê, Paraná</strong></td>
+<td>Parana ê</td>
+</tr>
+<tr>
+<td>Parana ê, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td>I will tell my wife, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td>Capoeira conquered me, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Parana ê, Paraná</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>She wanted to strike hard with her foot, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td>That did not happen, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Parana ê, Paraná</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>There is drumming all da, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td>Quality mulata, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Parana ê, Paraná</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>My mother is an old woman, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td>Close the door and sleep early, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Parana ê, Paraná</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>A woman to be beautiful, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td>Doesn't need to use makeup, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Parana ê, Paraná</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>I'm leaving, I'm leaving, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td>As I said I will go, Paraná</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Parana ê, Paraná</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Paraná is a river on the frontier of Brazil and Paraguay. The song is about going to the war in Paraná where many Capoeiristas were sent to fight army of Paraguay. The Brazilian government though this would be a good way to get rid of many Capoeiristas, however the plan backfired when these soldier returned as heroes for decimating the army of Paraguay.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/54JRejHOixA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2><h2 id="3-a-manteiga-derramou-vou-dizer-a-meu-sinh">3. A manteiga derramou (vou dizer a meu sinhô...)</h2></h2>
+<table>
+<thead>
+<tr>
+<th>Portuguese</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vou dizer a meu sinhô</td>
+<td></td>
+</tr>
+<tr>
+<td>Que a manteiga derramou</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>E a manteiga não é minha<br>
+E a manteiga é de ioiô</p>
+<p><strong>Vou dizer a meu sinhô<br>
+Que a manteiga derramou</strong></p>
+<p>E a manteiga não é minha<br>
+E a manteiga é de ioiô</p>
+<p>**Vou dizer a meu sinhô<br>
+Que a manteiga derramou<br>
+**<br>
+A manteiga é de ioiô<br>
+Caiu na água e se molhou</p>
+<p>**Vou dizer a meu sinhô<br>
+Que a manteiga derramou<br>
+**<br>
+A manteiga é do patrão<br>
+Caiu no chão e derramou</p>
+<p>**Vou dizer a meu sinhô<br>
+Que a manteiga derramou<br>
+**<br>
+A manteiga não é minha<br>
+É pra filha de ioiô | I’ll tell my master<br>
+The butter has melted</p>
+<p>And butter is not mine<br>
+And butter is of the master</p>
+<p><strong>I’ll tell my master<br>
+The butter has melted</strong></p>
+<p>And butter is not mine<br>
+And butter is of the master</p>
+<p><strong>I’ll tell my master<br>
+The butter has melted</strong></p>
+<p>Butter is of the master<br>
+Fell into the water and got wet</p>
+<p><strong>I’ll tell my master<br>
+The butter has melted</strong></p>
+<p>The butter is of the boss<br>
+Fell to the ground and poured</p>
+<p><strong>I’ll tell my master<br>
+The butter has melted</strong></p>
+<p>The butter is not mine<br>
+It’s for the child of the master |</p>
+<p>Capoeira has its origins in the enslavement of Africans in Brazil. As a slave there is little recourse for getting back at your master. One way to annoy and make the life of your master difficult is to lie and say that there is no more butter because whatever reason you can think of. These small jabs is what the song sings about. This song is very very old. With many older Capoeira songs, we can assume that there was a direct link between the song and the topic it talks about. These songs are as much a part of the oral tradition of Africa as much as it is about Capoeira and the lives of the people associated with the art.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bvs9L1Tjd0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2><h2 id="4-quem-vem-l-sou-eu">4. Quem vem lá sou eu</h2></h2>
+<table>
+<thead>
+<tr>
+<th>Portugeuse</th>
+<th>Englis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quem vem lá sou eu</td>
+<td></td>
+</tr>
+<tr>
+<td>Quem vem lá sou eu</td>
+<td></td>
+</tr>
+<tr>
+<td>Berimbau bateu</td>
+<td></td>
+</tr>
+<tr>
+<td>Capoeira sou eu</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Quem vem lá sou eu<br>
+Quem vem lá sou eu<br>
+Berimbau bateu<br>
+Capoeira sou eu</strong></p>
+<p>Eu venho de longe<br>
+Venho da Bahia<br>
+Jogo Capoeira<br>
+Meu nome e (suassuna)</p>
+<p><strong>Quem vem lá sou eu<br>
+Quem vem lá sou eu<br>
+Berimbau bateu<br>
+Capoeira sou eu</strong></p>
+<p>Mas sou eu sou eu<br>
+**Quem vem lá<br>
+**Mas sou eu (suassuna)<br>
+<strong>Quem vem lá</strong><br>
+Montado a cavalo<br>
+<strong>Quem vem lá</strong><br>
+Fumando um charuto<br>
+<strong>Quem vem lá</strong><br>
+Mas sou eu sou eu<br>
+<strong>Quem vem lá</strong> | Who's coming is me<br>
+Who's coming is me<br>
+Berimbau hit<br>
+I am Capoeira</p>
+<p><strong>Who's coming is me<br>
+Who's coming is me<br>
+Berimbau hit<br>
+I am Capoeira</strong></p>
+<p>I come from far away<br>
+I come from (say where you're from)<br>
+I play Capoeira<br>
+My name is (your name)</p>
+<p><strong>Who's coming is me<br>
+Who's coming is me<br>
+Berimbau hit<br>
+I am Capoeira</strong></p>
+<p>But it's me. It's me<br>
+**Who's coming is me<br>
+**But I'm (your name)<br>
+**Who's coming is me<br>
+**Riding a horse<br>
+**Who's coming is me<br>
+**Smoking a cigar<br>
+<strong>Who's coming is me</strong><br>
+|</p>
+<p>A simple song about presenting yourself. In many Capoeira CDs you'll notice that the artists take the time to talk to the audience and introduce themselves. Presenting yourself is a cultural norm from Brazil that can be seen in this song.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jGcYqbbecz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2><h2 id="5-a-hora-essa">5. A hora é essa</h2></h2>
+<table>
+<thead>
+<tr>
+<th>Portuguese</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A hora e essa</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>A hora e essa</strong></p>
+<p>Berimbau tocou na Capoeira<br>
+Berimbau tocou eu vou jogar</p>
+<p>**Berimbau tocou na Capoeira<br>
+Berimbau tocou eu vou jogar<br>
+**<br>
+A hora e essa</p>
+<p>**A hora e essa<br>
+**<br>
+Berimbau tocou na Capoeira</p>
+<p><strong>Berimbau tocou eu vou jogar</strong> | The hour is now</p>
+<p>**The hour is now<br>
+**<br>
+The Berimbau played during Capoeira<br>
+The Berimbau played I will play</p>
+<p><strong>The Berimbau played during Capoeira<br>
+The Berimbau played I will play</strong></p>
+<p>The hour is now</p>
+<p>**The hour is now<br>
+**<br>
+The Berimbau played Capoeira</p>
+<p><strong>The Berimbau played I will play</strong> |</p>
+<figcaption>
+<p>Author: Unknown</p>
+</figcaption>
+<p>The hour is now! Another simple song that is great for beginners to learn. When the berimbau plays, that &quot;I&quot; go to play Capoeira. This is the spirit of the Capoeirsita. When they hear the berimbau, it pulls on their hearts to play the game of Capoeira. If you start to practice Capoeira, you'll understand how inviting the call of the berimbau can be.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LKrNJupmVNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2><h2 id="6-ai-ai-ai-ai-s-o-bento-me-chama">6. Ai ai ai ai São Bento me chama</h2></h2>
+<table>
+<thead>
+<tr>
+<th>Portuguese</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ai ai ai ai</td>
+<td></td>
+</tr>
+<tr>
+<td>São bento me chama</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>**Ai ai ai ai<br>
+**<br>
+São bento me quer</p>
+<p>**Ai ai ai ai<br>
+**<br>
+Pra jogar capoeira</p>
+<p>**Ai ai ai ai<br>
+**<br>
+O meu mestre me chama</p>
+<p>**Ai ai ai ai<br>
+**<br>
+O meu mestre chamou | Ai ai ai ai<br>
+São Bento calls me</p>
+<p>**Ai ai ai ai<br>
+**<br>
+Saint Benedict wants me</p>
+<p>**Ai ai ai ai<br>
+**<br>
+To play capoeira</p>
+<p>**Ai ai ai ai<br>
+**<br>
+My master calls me</p>
+<p>**Ai ai ai ai<br>
+**<br>
+My master called |</p>
+<p>The Portuguese tried very hard to christianize the slaves of Brazil. In a strange turn of events, the slaves used the christian doctrine to hid their existing religious beliefs. São Bento would be a stand in for one of their gods (perhaps Oxum, Ogum, Oxala, etc.). On the surface, the song is asking for Saint Benedict for protection when they play Capoeira. One layer below that, you can see how the slaves used their creativity to continue practicing their religious beliefs. Capoeira does not have any religious affiliation. This is similar to how in America we say in the pledge of allegiance &quot;...Under god, indivisible...&quot;. This line shows us how at one moment, America was a deeply christian country. Similarly, this song gives us a glimpse of the lives of the people who lived over 100 years ago.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gkAndJPnhy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2><h2 id="7-oh-areia-oh-areia">7. Oh areia, oh areia</h2></h2>
+<table>
+<thead>
+<tr>
+<th>Portuguese</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oh areia, oh areia</td>
+<td></td>
+</tr>
+<tr>
+<td>**Oh areia, oh areia</td>
+<td></td>
+</tr>
+<tr>
+<td>**Oh saia do meu caminho</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Areia</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Eu quero passar</td>
+<td></td>
+</tr>
+<tr>
+<td><strong><strong>Areia</strong></strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Sou pequeninho</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Areia</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Filho de Oxala</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Areia</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Capoeira Angola</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Areia</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>E comforme a razão</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Areia</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Da-me licença moça</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Areia</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Berimbau quebro</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Areia</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Eu quero pescar</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Areia</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Berimbau tocou</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Areia</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Eu vou vadiar</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Areia</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Capoeira Angola</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Areia</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Deixe eu passar</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Areia</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Oh pequeninho</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Areia</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Aprender a lição</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Areia</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Vá pro terreiro</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Areia</strong></td>
+<td>Oh sand, oh sand</td>
+</tr>
+<tr>
+<td><strong>Oh sand, oh sand</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Oh get out of my way</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sand</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>I want to pass</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sand</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>I'm little</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sand</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>son of Oxalá</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sand</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Capoeira Angola</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sand</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>According to reason</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sand</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Excuse me miss</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sand</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Berimbau broke</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sand</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>I wan to fish</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sand</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Berimbau played</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sand</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>I go to play</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sand</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Capoeira Angola</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sand</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Let me through</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sand</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Oh little one</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sand</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Learn the lesson</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sand</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Go to the terreiro</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sand</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The sand, the ocean, and the beach all had tremendous significance to the slaves of Brazil. They knew that across the ocean was their homelands. There are many references to fishing, the ocean, the beach etc. This is partially because in Brazil, the majority of the population lives near the beach. Many slaves worked on the docks of these beaches. The other reason is that the ocean was a constant reminder of the journey to Brazil. And that across the ocean was Africa.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pk1nuRrsg4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2><h2 id="8-gunga-meu">8. Gunga é meu</h2></h2>
+<table>
+<thead>
+<tr>
+<th>Portuguese</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gunga é meu, gunga é meu</td>
+<td></td>
+</tr>
+<tr>
+<td>Gunga é meu, é meu, é meu</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Gunga é meu, gunga é meu</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Gunga é meu foi meu pai que me deu</td>
+<td></td>
+</tr>
+<tr>
+<td>**Gunga é meu, gunga é meu</td>
+<td></td>
+</tr>
+<tr>
+<td>**O gunga e forte o esse gunga é meu</td>
+<td></td>
+</tr>
+<tr>
+<td>**Gunga é meu, gunga é meu</td>
+<td></td>
+</tr>
+<tr>
+<td>**Gunge é meu eu dou a ninguem</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Gunga é meu, gunga é meu</strong></td>
+<td>Gunga is mine, Gunga is mine</td>
+</tr>
+<tr>
+<td>Gunga is mine, is mine, is mine</td>
+<td></td>
+</tr>
+<tr>
+<td>**Gunga is mine, Gunga is mine</td>
+<td></td>
+</tr>
+<tr>
+<td>**Gunga is mine, it was my father who gave it to me</td>
+<td></td>
+</tr>
+<tr>
+<td>**Gunga is mine, Gunga is mine</td>
+<td></td>
+</tr>
+<tr>
+<td>**The Gunga is strong, this gunga is mine</td>
+<td></td>
+</tr>
+<tr>
+<td>**Gunga is mine, Gunga is mine</td>
+<td></td>
+</tr>
+<tr>
+<td>**Gunga is mine, I don't give it to anyone</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Gunga is mine, Gunga is mine</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The Gunga is the leader of the roda. They are like the DJ at the party. They decide what to play and how it is played. They control the atmosphere of the roda and are responsible for it. Capoeiristas hold their berimbaus dearly and do not easily let others play them. for some, the berimbau is almost a sacred instrument.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8DVffBVYJMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2><h2 id="9-vou-mandar-leco-caju">9. Vou mandar Leco, Cajuê</h2></h2>
+<table>
+<thead>
+<tr>
+<th>Portuguese</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>É manda leco</td>
+<td></td>
+</tr>
+<tr>
+<td>**Caju_ê_</td>
+<td></td>
+</tr>
+<tr>
+<td>**Ê manda loiá</td>
+<td></td>
+</tr>
+<tr>
+<td>**Cajuê</td>
+<td></td>
+</tr>
+<tr>
+<td>**Mestre Bimba</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Mestre Pastinha</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>O seu Traira</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Cobrinha verde</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Canjiquinha</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Mestre Gigante</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Ezequiel</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Seu Caiçara</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>O seu Nagé</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td>Send Leco</td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Send Loiá</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Mestre Bimba</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Mestre Pastinha</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>O seu Traira</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Cobrinha Verde</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Canjiquinha</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Mestre Gigante</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Ezequiel</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Seu Caiçara</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>O seu Nagé</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caju_ê_</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Caju in english means Cashew. This nut was seen to have many powers for healing people. This is another old song that has been passed down for many years. Today we might laugh at the thought of a cashew's healing properties, but that was the belief at the time. The song tells us to send Leco to get Cashews. From there, we can improvise with the song (which is often done with every Capoeira song). This song is great to learn improvisation. Start by calling out people's names. In the lyrics you can see the names of many famous mestres. You can also call out the names of some famous mestres or some friends that are with you.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mv8Jr-BHGzg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2><h2 id="10-adues-adeus-boa-viagem">10. Adues adeus, boa viagem</h2></h2>
+<table>
+<thead>
+<tr>
+<th>Portuguese</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adeu adeus</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Boa viagem</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Eu vou</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Boa viagem</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Eu vou, eu vou</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Boa viagem</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Eu vou me embora</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Boa viagem</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Eu vou agora</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Boa viagem</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Eu vou com deus</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Boa viagem</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>E com nossa senhora</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Boa viagem</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>chegou a hora</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Boa viagem</strong></td>
+<td>Bye bye</td>
+</tr>
+<tr>
+<td>**Good trip</td>
+<td></td>
+</tr>
+<tr>
+<td>**I go</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Good trip</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>I go, I go</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Good trip</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>I am leaving</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Good trip</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>I go now</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Good trip</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>I go with God</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Good trip</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>I go with our lady</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Good trip</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>The time has come</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Good trip</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Many great rodas finished with this song. The message is simple. it's time to end the roda. We're leaving now. Goodbye! This is a great note to leave this article on. If you're interested in Capoeira instruments, make sure to check out our page (below) where you can purchase pandeiros, atabaques, reco-recos, and of course, Berimbaus straight from Brazil!</p>
+<p><a href="https://dendearts.com/resources/instruments/">See Capoeira Instruments</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fNk3m-Gxbhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-3">
+                                <a href="#how-to-improve-your-singing">How to Improve your singing</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#1-sim-sim-sim-n-o-n-o-n-o">1. Ô sim sim sim, Ô não não não</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#2-parana">2. Parana ê</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#3-a-manteiga-derramou-vou-dizer-a-meu-sinh">3. A manteiga derramou (vou dizer a meu sinhô...)</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#4-quem-vem-l-sou-eu">4. Quem vem lá sou eu</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#5-a-hora-essa">5. A hora é essa</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#6-ai-ai-ai-ai-s-o-bento-me-chama">6. Ai ai ai ai São Bento me chama</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#7-oh-areia-oh-areia">7. Oh areia, oh areia</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#8-gunga-meu">8. Gunga é meu</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#9-vou-mandar-leco-caju">9. Vou mandar Leco, Cajuê</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#10-adues-adeus-boa-viagem">10. Adues adeus, boa viagem</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+                <!-- Add this to your nav.njk -->
+                <div class="cart-indicator">
+                    <span id="cart-count" style="display: none">0</span>
+                </div>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    
+    
+</body>
+
+
+</html>

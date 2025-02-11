@@ -175,6 +175,15 @@ module.exports = function(eleventyConfig) {
         return posts;
     });
 
+    // Truncate filter (limit text to 150 characters)
+    eleventyConfig.addFilter('truncate', function(str, length = 150) {
+        if (!str) return '';
+        if (str.length <= length) return str;
+        return str.substring(0, length) + '...';
+    });
+
+
+    
     // === ADD LUNR SEARCH ===
 
     eleventyConfig.addCollection('searchIndices', async function(collection) {

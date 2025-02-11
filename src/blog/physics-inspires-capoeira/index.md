@@ -36,7 +36,7 @@ layout: "blog-post-layout.njk"
 
 ## Need some inspiration before the holidays?
 
-A body in motion tends to stay in motion, a body at rest tends to stay at rest. Let me say that again, if you move, it will be easier to move, but if you don't summon the will to move in the first place, your body will fight you tooth and nail.    -  Newton's first law of motion
+A body in motion tends to stay in motion, a body at rest tends to stay at rest. Let me say that again, if you move, it will be easier to move, but if you don't summon the will to move in the first place, your body will fight you tooth and nail.    -  Newton's first law of motion
 
 It's the holidays and it's cold. Don't get complaisant! Move!!
 

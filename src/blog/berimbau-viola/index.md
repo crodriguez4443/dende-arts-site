@@ -1,14 +1,105 @@
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Berimbau viola<br>Berimbau viola<br>Porque será<br>Que a viola chora<br><br><strong>Berimbau viola<br>Berimbau viola<br>Porque será<br>Que a viola chora</strong><br><br>Será saudade<br>Da Cabinda de Luanda<br>Que o navio deixou pra tras<br>Nas águas da velha Kianda<br><br><strong>Berimbau viola<br>Berimbau viola<br>Porque será<br>Que a viola chora</strong><br><br>Chora lembrando<br>Dos tempos do cativeiro<br>Dos negros acorrentados<br>Dentro do navio negreiro<br><br><strong>Berimbau viola<br>Berimbau viola<br>Porque será<br>Que a viola chora</strong><br><br>Gunga tá velho<br>Mas ainda conta história<br>Viola chora<br>Lembrando dos tempos de outrora<br><br><strong>Berimbau viola<br>Berimbau viola<br>Porque será<br>Que a viola chora</strong><br><br>Chora por Bimba, Pastinha e Valdemar<br>Grande mestres de verdade<br>Que de saudade<br>Viola põe-se a chorar</td>
-        <td>Berimbau viola<br>Berimbau viola<br>I wonder why<br>That viola cries<br><br>Berimbau viola<br>Berimbau viola<br>I wonder why<br>That viola cries<br><br>Is it because of longing<br>For the Cabinda in Luanda<br>That the ship left behind<br>In the waters of old Kianda<br><br>Berimbau viola<br>Berimbau viola<br>I wonder why<br>That viola cries<br><br>It cries remembering<br>The times of captivity<br>Of blacks in chains<br>Inside the slave ship<br><br>Berimbau viola<br>Berimbau viola<br>I wonder why<br>That viola cries<br><br>Gunga is old<br>But it still tells the story<br>Viola cries<br>Remembering the days of yore<br><br>Berimbau viola<br>Berimbau viola<br>I wonder why<br>That viola cries<br><br>It cries for Bimba, Pastinha and Valdemar<br>Great true masters<br>That because of the longing<br>Viola starts to cry</td>
-    </tr>
-</table>
+---
+title: "Berimbau Viola"
+date: "2020-10-27"
+categories: 
+  - "capoeira-songbook"
+tags: 
+  - "intermediate"
+layout: "blog-post-layout.njk"
+---
+
+| Portuguese | English |
+| --- | --- |
+| Berimbau viola  
+Berimbau viola  
+Porque será  
+Que a viola chora  
+  
+**Berimbau viola  
+Berimbau viola  
+Porque será  
+Que a viola chora**  
+  
+Será saudade  
+Da Cabinda de Luanda  
+Que o navio deixou pra tras  
+Nas águas da velha Kianda  
+  
+**Berimbau viola  
+Berimbau viola  
+Porque será  
+Que a viola chora**  
+  
+Chora lembrando  
+Dos tempos do cativeiro  
+Dos negros acorrentados  
+Dentro do navio negreiro  
+  
+**Berimbau viola  
+Berimbau viola  
+Porque será  
+Que a viola chora**  
+  
+Gunga tá velho  
+Mas ainda conta história  
+Viola chora  
+Lembrando dos tempos de outrora  
+  
+**Berimbau viola  
+Berimbau viola  
+Porque será  
+Que a viola chora**  
+  
+Chora por Bimba, Pastinha e Valdemar  
+Grande mestres de verdade  
+Que de saudade  
+Viola põe-se a chorar | Berimbau viola  
+Berimbau viola  
+I wonder why  
+That viola cries  
+  
+Berimbau viola  
+Berimbau viola  
+I wonder why  
+That viola cries  
+  
+Is it because of longing  
+For the Cabinda in Luanda  
+That the ship left behind  
+In the waters of old Kianda  
+  
+Berimbau viola  
+Berimbau viola  
+I wonder why  
+That viola cries  
+  
+It cries remembering  
+The times of captivity  
+Of blacks in chains  
+Inside the slave ship  
+  
+Berimbau viola  
+Berimbau viola  
+I wonder why  
+That viola cries  
+  
+Gunga is old  
+But it still tells the story  
+Viola cries  
+Remembering the days of yore  
+  
+Berimbau viola  
+Berimbau viola  
+I wonder why  
+That viola cries  
+  
+It cries for Bimba, Pastinha and Valdemar  
+Great true masters  
+That because of the longing  
+Viola starts to cry |
 
 <figcaption>
+
 Author: Mestre Boa Voz
+
 </figcaption>

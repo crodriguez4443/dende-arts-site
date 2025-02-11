@@ -8,51 +8,62 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Bem miudinho cuidado<br>
-        Esse jogo de Angola é mandingado<br><br>
-        Esse jogo de Angola é mandingado<br>
-        Esse jogo de Angola é mandingado<br><br>
-        <strong>Bem miudinho cuidado<br>
-        Esse jogo de Angola é mandingado</strong><br><br>
-        Esse jogo de Angola é mandingado<br>
-        Esse jogo de Angola é mandingado<br><br>
-        <strong>Bem miudinho cuidado<br>
-        Esse jogo de Angola é mandingado</strong><br><br>
-        Esse jogo de Angola é mandingado<br>
-        Nesse jogo de Angola tem mandinga<br><br>
-        <strong>Bem miudinho cuidado<br>
-        Esse jogo de Angola é mandingado</strong><br><br>
-        Esse jogo de Angola é mandingado<br>
-        Esse jogo de Angola é mandingado<br><br>
-        <strong>Bem miudinho cuidado<br>
-        Esse jogo de Angola é mandingado</strong></td>
-        <td>Really small, be careful<br>
-        This game of Angola is mandingado<br><br>
-        This game of Angola is mandingado<br>
-        This game of Angola is mandingado<br><br>
-        Really small, be careful<br>
-        This game of Angola is mandingado<br><br>
-        This game of Angola is mandingado<br>
-        This game of Angola is mandingado<br><br>
-        Really small, be careful<br>
-        This game of Angola is mandingado<br><br>
-        This game of Angola is mandingado<br>
-        In this game in Angola there are mandinga<br><br>
-        Really small, be careful<br>
-        This game of Angola is mandingado<br><br>
-        This game of Angola is mandingado<br>
-        This game of Angola is mandingado<br><br>
-        Really small, be careful<br>
-        This game of Angola is mandingado</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Bem miudinho cuidado  
+Esse jogo de Angola é mandingado  
+  
+Esse jogo de Angola é mandingado  
+Esse jogo de Angola é mandingado  
+  
+**Bem miudinho cuidado  
+Esse jogo de Angola é mandingado**  
+  
+Esse jogo de Angola é mandingado  
+Esse jogo de Angola é mandingado  
+  
+**Bem miudinho cuidado  
+Esse jogo de Angola é mandingado**  
+  
+Esse jogo de Angola é mandingado  
+Nesse jogo de Angola tem mandinga  
+  
+**Bem miudinho cuidado  
+Esse jogo de Angola é mandingado**  
+  
+Esse jogo de Angola é mandingado  
+Esse jogo de Angola é mandingado  
+  
+**Bem miudinho cuidado  
+Esse jogo de Angola é mandingado** | Really small, be careful  
+This game of Angola is mandingado  
+  
+This game of Angola is mandingado  
+This game of Angola is mandingado  
+  
+Really small, be careful  
+This game of Angola is mandingado  
+  
+This game of Angola is mandingado  
+This game of Angola is mandingado  
+  
+Really small, be careful  
+This game of Angola is mandingado  
+  
+This game of Angola is mandingado  
+In this game in Angola there are mandinga  
+  
+Really small, be careful  
+This game of Angola is mandingado  
+  
+This game of Angola is mandingado  
+This game of Angola is mandingado  
+  
+Really small, be careful  
+This game of Angola is mandingado |
 
 <figcaption>
+
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
+
 </figcaption>

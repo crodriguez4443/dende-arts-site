@@ -8,65 +8,64 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Eu conheci mestre Bimba<br>
-        Conheci Canjiquinha<br>
-        E tambem seu mare<br>
-        Eles me disse um dia<br>
-        Capoeira é pra homem, menino e mulher<br>
-        ê ê ê<br>
-        Pra menino e mulher<br>
-        <br>
-        <strong>ê ê ê</strong><br>
-        Pra menino e mulher<br>
-        <br>
-        <strong>ê ê ê</strong><br>
-        Eu conheci seu Traira<br>
-        Conheci Canjiquinha<br>
-        e tambem valdemar<br>
-        Eles me disse um dia<br>
-        Capoeira é pra homem, menino e mulher<br>
-        ê ê ê<br>
-        Pra menino e mulher<br>
-        <br>
-        <strong>ê ê ê</strong><br>
-        Pra menino e mulher<br>
-        <br>
-        <strong>ê ê ê</strong></td>
-        <td>I met master Bimba<br>
-        I met Canjiquinha<br>
-        And also your sea<br>
-        They told me one day<br>
-        Capoeira is for men, boys, and women<br>
-        ê ê ê<br>
-        For boys and women<br>
-        <br>
-        ê ê ê<br>
-        For boys and women<br>
-        <br>
-        ê ê ê<br>
-        I met your Traira<br>
-        I met Canjiquinha<br>
-        and also valdemar<br>
-        They told me one day<br>
-        Capoeira is for men, boys, and women<br>
-        ê ê ê<br>
-        For boys and women<br>
-        <br>
-        ê ê ê<br>
-        For boys and women<br>
-        <br>
-        ê ê ê</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Eu conheci mestre Bimba  
+Conheci Canjiquinha  
+E tambem seu mare  
+Eles me disse um dia  
+Capoeira é pra homem, menino e mulher  
+ê ê ê  
+Pra menino e mulher  
+  
+**ê ê ê**   
+Pra menino e mulher  
+  
+**ê ê ê**   
+Eu conheci seu Traira  
+Conheci Canjiquinha  
+e tambem valdemar  
+Eles me disse um dia  
+Capoeira é pra homem, menino e mulher  
+ê ê ê  
+Pra menino e mulher  
+  
+**ê ê ê**   
+Pra menino e mulher  
+  
+**ê ê ê** | I met master Bimba  
+I met Canjiquinha  
+And also your sea  
+They told me one day  
+Capoeira is for men, boys, and women  
+ê ê ê  
+For boys and women  
+  
+ê ê ê  
+  
+For boys and women  
+  
+ê ê ê  
+  
+I met your Traira  
+I met Canjiquinha  
+and also valdemar  
+They told me one day  
+Capoeira is for men, boys, and women  
+ê ê ê  
+  
+For boys and women  
+  
+ê ê ê  
+  
+For boys and women  
+  
+ê ê ê |
 
 <figcaption>
+
 Author: Unknown (know who the author is? Let us know in the comments!)
+
 </figcaption>
 
-*This song mentions the names of several well known Capoeira mestres. "I met Mestre Bimba... etc."
+\*This song mentions the names of several well known Capoeira mestres. "I met Mestre Bimba... etc."

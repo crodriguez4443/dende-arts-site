@@ -9,19 +9,23 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>No mercado Modelo, Tem acarajé<br><strong>No mercado Modelo, Tem acarajé</strong><br><br>Ô io io Modelo, -Io io io Modelo<br><strong>Ô io io Modelo, -Io io io Modelo</strong></td>
-        <td><em>[At the] Mercado Modelo</em> <em>[they] have acarajé</em><br><strong><em>[At the] Mercado Modelo</em> <em>[they] have acarajé</em></strong><br><br>Ô io io Modelo, Io io io Modelo<br><strong>Ô io io Modelo, Io io io Modelo</strong></td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| No mercado Modelo, Tem acarajé  
+**No mercado Modelo, Tem acarajé**  
+  
+Ô io io Modelo, -Io io io Modelo  
+**Ô io io Modelo, -Io io io Modelo** | _\[At the\] Mercado Modelo_ _\[they\] have acarajé_  
+**_\[At the\] Mercado Modelo_ _\[they\] have acarajé_**  
+  
+Ô io io Modelo, Io io io Modelo  
+**Ô io io Modelo, Io io io Modelo  
+** |
 
 <figcaption>
+
 Author: do you know the author? let us know!
+
 </figcaption>
 
 Acarajé - a deep fred shrimp based food or snack

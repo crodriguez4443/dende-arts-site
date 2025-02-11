@@ -1,89 +1,328 @@
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>
-            Ioiô, toca o berimbau viola<br>
-            Iaiá, que eu viajo pra Angola<br>
-            <br>
-            <strong>Ioiô, toca o berimbau viola<br>
-            Iaiá, que eu viajo pra Angola</strong><br>
-            <br>
-            Eu viajo pra Angola<br>
-            Antes vou pro cativeiro<br>
-            Pra saber do sofrimento<br>
-            Que teve no navio negreiro<br>
-            <br>
-            <strong>Ioiô, toca o berimbau viola<br>
-            Iaiá, que eu viajo pra Angola</strong><br>
-            <br>
-            Quando eu saio Luanda<br>
-            Vou passar na Catumbela<br>
-            Vai andando por Lobito<br>
-            Para conhecer Benguela<br>
-            <br>
-            <strong>Ioiô, toca o berimbau viola<br>
-            Iaiá, que eu viajo pra Angola</strong><br>
-            <br>
-            O mercado de escravos<br>
-            De Benguela faz chorar<br>
-            Em pensar que muitos negros<br>
-            Eram vendidos por lá<br>
-            <br>
-            <strong>Ioiô, toca o berimbau viola<br>
-            Iaiá, que eu viajo pra Angola</strong><br>
-            <br>
-            Pra conhecer nossas raízes<br>
-            Saber mais de nossa história<br>
-            Com berimbau tocando<br>
-            Tem que conhecer Angola<br>
-            <strong><br>
-            Ioiô, toca o berimbau viola<br>
-            Iaiá, que eu viajo pra Angola</strong>
-        </td>
-        <td>
-            Ioiô, play the viola berimbau<br>
-            Iaiá, and I will travel to Angola<br>
-            <br>
-            Ioiô, play the viola berimbau<br>
-            Iaiá, and I will travel to Angola<br>
-            <br>
-            I travel to Angola<br>
-            First I'll go to captivity<br>
-            To know the suffering<br>
-            That existed on the slave ship<br>
-            <br>
-            Ioiô, play the viola berimbau<br>
-            Iaiá, and I will travel to Angola<br>
-            <br>
-            When I leave Luanda<br>
-            I will pass in Catumbela<br>
-            Go walking around Lobito<br>
-            To get to know Benguela<br>
-            <br>
-            Ioiô, play the viola berimbau<br>
-            Iaiá, and I will travel to Angola<br>
-            <br>
-            The slave market<br>
-            Of Benguela makes one cry<br>
-            In thinking that many black people<br>
-            Were sold there<br>
-            <br>
-            Ioiô, play the viola berimbau<br>
-            Iaiá, and I will travel to Angola<br>
-            <br>
-            To know our roots<br>
-            Learn more about our history<br>
-            With the berimbau playing<br>
-            You have to know Angola<br>
-            <br>
-            Ioiô, play the viola berimbau<br>
-            Iaiá, and I will travel to Angola
-        </td>
-    </tr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ioiô, Toca o Berimbau Viola</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songbook</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">Ioiô, Toca o Berimbau Viola</a>
+            </div>
+            <h1>Ioiô, Toca o Berimbau Viola</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2020-12-29">
+                    December 28, 2020
+                </time>
+            </div>
+            
+            
+            
+            
+
+            <div class="blog-post-content">
+                <table>
+<thead>
+<tr>
+<th>Portuguese</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ioiô, toca o berimbau viola</td>
+<td></td>
+</tr>
+<tr>
+<td>Iaiá, que eu viajo pra Angola</td>
+<td></td>
+</tr>
+</tbody>
 </table>
+<p><strong>Ioiô, toca o berimbau viola<br>
+Iaiá, que eu viajo pra Angola</strong></p>
+<p>Eu viajo pra Angola<br>
+Antes vou pro cativeiro<br>
+Pra saber do sofrimento<br>
+Que teve no navio negreiro</p>
+<p><strong>Ioiô, toca o berimbau viola<br>
+Iaiá, que eu viajo pra Angola</strong></p>
+<p>Quando eu saio Luanda<br>
+Vou passar na Catumbela<br>
+Vai andando por Lobito<br>
+Para conhecer Benguela</p>
+<p><strong>Ioiô, toca o berimbau viola<br>
+Iaiá, que eu viajo pra Angola</strong></p>
+<p>O mercado de escravos<br>
+De Benguela faz chorar<br>
+Em pensar que muitos negros<br>
+Eram vendidos por lá</p>
+<p><strong>Ioiô, toca o berimbau viola<br>
+Iaiá, que eu viajo pra Angola</strong></p>
+<p>Pra conhecer nossas raízes<br>
+Saber mais de nossa história<br>
+Com berimbau tocando<br>
+Tem que conhecer Angola<br>
+**<br>
+Ioiô, toca o berimbau viola<br>
+Iaiá, que eu viajo pra Angola** | Ioiô, play the viola berimbau<br>
+Iaiá, and I will travel to Angola</p>
+<p>Ioiô, play the viola berimbau<br>
+Iaiá, and I will travel to Angola</p>
+<p>I travel to Angola<br>
+First I'll go to captivity<br>
+To know the suffering<br>
+That existed on the slave ship</p>
+<p>Ioiô, play the viola berimbau<br>
+Iaiá, and I will travel to Angola</p>
+<p>When I leave Luanda<br>
+I will pass in Catumbela<br>
+Go walking around Lobito<br>
+To get to know Benguela</p>
+<p>Ioiô, play the viola berimbau<br>
+Iaiá, and I will travel to Angola</p>
+<p>The slave market<br>
+Of Benguela makes one cry<br>
+In thinking that many black people<br>
+Were sold there</p>
+<p>Ioiô, play the viola berimbau<br>
+Iaiá, and I will travel to Angola</p>
+<p>To know our roots<br>
+Learn more about our history<br>
+With the berimbau playing<br>
+You have to know Angola</p>
+<p>Ioiô, play the viola berimbau<br>
+Iaiá, and I will travel to Angola |</p>
 <figcaption>
-Author: Pretinho
+<p>Author: Pretinho</p>
 </figcaption>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+                <!-- Add this to your nav.njk -->
+                <div class="cart-indicator">
+                    <span id="cart-count" style="display: none">0</span>
+                </div>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    
+    
+</body>
+
+
+</html>

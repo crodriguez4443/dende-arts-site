@@ -1,34 +1,276 @@
-<p>The document does not contain song lyrics, so I will leave it exactly as it was originally presented.</p>
-<hr>
-<p>title: &quot;THE BIOGRAPHY OF MESTRE SUASSUNA 3/3&quot;
-date: &quot;2018-01-14&quot;
-categories:</p>
-<ul>
-<li>&quot;capoeira101&quot;
-tags:</li>
-<li>&quot;biography-of-mestre-suassuna&quot;</li>
-<li>&quot;blog-of-capoeira&quot;</li>
-<li>&quot;book-summary&quot;</li>
-<li>&quot;capoeira&quot;</li>
-<li>&quot;capoeira-blog&quot;</li>
-<li>&quot;capoeira-history&quot;</li>
-<li>&quot;capoeira-summary&quot;</li>
-<li>&quot;cdo&quot;</li>
-<li>&quot;cordao-de-ouro&quot;</li>
-<li>&quot;dende-arts&quot;</li>
-<li>&quot;learn-capoeira&quot;</li>
-<li>&quot;mestre-boca-rica&quot;</li>
-<li>&quot;mestre-suassuna&quot;</li>
-<li>&quot;movement-culture&quot;
-coverImage: &quot;biography-of-MS-33.png&quot;
-layout: &quot;blog-post-layout.njk&quot;</li>
-</ul>
-<hr>
-<p>The final chapter. Thanks for all the kind words about this mini-series. This is part 3 of the 3 part series summarizing the amazing Biography of Mestre Suassuna by  <a href="http://capoeiracdobarcelona.com/">M. Boca Rica</a>.</p>
-<p>I want to thank M. Boca Rica again for writing this book and for distributing it. If you're ever looking for Capoeira in Barcelona, Spain,  this is the man to go to.</p>
-<p>If you haven't seen the first part, here is a <a href="https://youtu.be/urTvdvySimU">link</a>. I encourage you to see the first part and the second before watching part 3. This final chapter looks at the 1970's onwards, including the creation of Miudinho, CDO, and Capoeirando. Enjoy.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Biography of Mestre Suassuna Part 3: Life and Legacy</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songbook</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">The Biography of Mestre Suassuna Part 3: Life and Legacy</a>
+            </div>
+            <h1>The Biography of Mestre Suassuna Part 3: Life and Legacy</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2018-01-14">
+                    January 13, 2018
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+
+            <div class="blog-post-content">
+                <p>The final chapter. Thanks for all the kind words about this mini-series. This is part 3 of the 3 part series summarizing the amazing Biography of Mestre Suassuna by  <a href="http://capoeiracdobarcelona.com/">M. Boca Rica</a>.</p>
+<p>I want to thank M. Boca Rica again for writing this book and for distributing it. If you're ever looking for Capoeira in Barcelona, Spain,  this is the man to go to.</p>
+<p>If you haven't seen the first part, here is a <a href="https://youtu.be/urTvdvySimU">link</a>. I encourage you to see the first part and the second before watching part 3. This final chapter looks at the 1970's onwards, including the creation of Miudinho, CDO, and Capoeirando. Enjoy.</p>
 <p>[embedyt] https://www.youtube.com/watch?v=5ucth8u-q9U[/embedyt]</p>
 <p>Mestre Suassuna is one of the biggest living legends in Capoeira today. His style, students, music, and great personality have brought many to him. He is the creator of Cordao de Ouro one of the largest groups around the world, known for their high quality practitioners and super swaggy movement. This biography is my small contribution to being some light to this awesome figure</p>
 <p>#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; } /* Add your own MailChimp form style overrides in your site stylesheet or in this style block. We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */</p>
-<h2>Join us in the Roda!</h2>
+<h2><h2 id="join-us-in-the-roda">Join us in the Roda!</h2></h2>
 <p>* indicates required Email Address * First Name * Last Name * (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</p>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-2">
+                                <a href="#join-us-in-the-roda">Join us in the Roda!</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+                <!-- Add this to your nav.njk -->
+                <div class="cart-indicator">
+                    <span id="cart-count" style="display: none">0</span>
+                </div>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    
+    
+</body>
+
+
+</html>

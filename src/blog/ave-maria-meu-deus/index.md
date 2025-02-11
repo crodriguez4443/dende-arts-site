@@ -8,17 +8,44 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Ave Maria meu Deus<br>nunca vi casa nova cair<br><br><strong>Ave Maria meu Deus<br>nunca vi casa nova cair</strong><br><br>Nunca vi casa nova cair<br>quero ver casa nova cair<br><br><strong>Ave Maria meu Deus<br>nunca vi casa nova cair</strong><br><br>Nunca vi Angoleiro cair<br>Nunca vi Angoleiro cair<br><br><strong>Ave Maria meu Deus<br>nunca vi casa nova cair</strong></td>
-        <td>Hail Mary my God<br>never seen a new house fall<br><br>Hail Mary my God<br>never seen a new house fall<br><br>Never seen a new house fall<br>I want to see new house fall<br><br>Hail Mary my God<br>never seen a new house fall<br><br>I've never seen Angoleiro fall<br>I've never seen Angoleiro fall<br><br>Hail Mary my God<br>never seen a new house fall</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Ave Maria meu Deus  
+nunca vi casa nova cair  
+  
+**Ave Maria meu Deus  
+nunca vi casa nova cair**  
+  
+Nunca vi casa nova cair  
+quero ver casa nova cair  
+**  
+Ave Maria meu Deus  
+nunca vi casa nova cair**  
+  
+Nunca vi Angoleiro cair  
+Nunca vi Angoleiro cair  
+  
+**Ave Maria meu Deus  
+nunca vi casa nova cair** | Hail Mary my God  
+never seen a new house fall  
+  
+Hail Mary my God  
+never seen a new house fall  
+  
+Never seen a new house fall  
+I want to see new house fall  
+  
+Hail Mary my God  
+never seen a new house fall  
+  
+I've never seen Angoleiro fall  
+I've never seen Angoleiro fall  
+  
+Hail Mary my God  
+never seen a new house fall |
 
 <figcaption>
+
 Author: Unknown
+
 </figcaption>

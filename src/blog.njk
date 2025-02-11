@@ -21,6 +21,7 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber
     <!-- blog-grid.njk -->
     <div class="blog-grid" id="blog-grid">
         {% for post in paginatedPosts %}
+       
             <article class="blog-card">
                 {% if post.data.coverImage %}
                     {% image 
@@ -34,9 +35,9 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber
                     <h3 class="blog-card-title">
                         <a href="{{ post.url }}">{{ post.data.title }}</a>
                     </h3>
-                    {% if post.data.excerpt %}
-                        <p class="blog-card-excerpt">{{ post.data.excerpt }}</p>
-                    {% endif %}
+                    {# {% if post.data.excerpt %}
+                        <p class="blog-card-excerpt">{{ excerpt }}</p>
+                    {% endif %} #}
                     
                     <a href="{{ post.url }}" class="read-more">Read More</a>
                 </div>
@@ -69,3 +70,14 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber
     </nav>
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const excerptElements = document.querySelectorAll('.blog-card-excerpt');
+    excerptElements.forEach(el => {
+        const text = el.textContent;
+        if (text.length > 150) {
+            el.textContent = text.substring(0, 150) + '...';
+        }
+    });
+});
+</script>

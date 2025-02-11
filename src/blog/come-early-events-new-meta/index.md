@@ -1,9 +1,9 @@
 ---
 title: "COME EARLY TO EVENTS. THE NEW META"
 date: "2018-03-04"
-categories: 
+categories:
   - "capoeira101"
-tags: 
+tags:
   - "capoeira-blog"
   - "charlotte-capoeira"
   - "charlotte-north-carolina-capoeira"
@@ -14,11 +14,26 @@ tags:
   - "winter-games"
 coverImage: "28337197_10101441935037876_2074666726476622437_o.jpg"
 layout: "blog-post-layout.njk"
+
+# Add new SEO Fields:
+description: "Discover why arriving early to capoeira events is the new meta. Maximize learning & networking. Tips for successful event preparation."
+author: "Chris Calado Rodriguez"
+keywords: "capoeira event preparation, capoeira roda etiquette, capoeira training benefits, capoeira workshop tips, charlotte capoeira community, dende arts capoeira, improving capoeira experience, maximizing capoeira learning"
+
+# Social Sharing:
+socialImage: "28337197_10101441935037876_2074666726476622437_o.jpg"
+
+# Content Details:
+headline: "Come Early to Capoeira Events: The New Meta for Maximizing Your Experience"
+excerpt: "Unlock the secrets to maximizing your capoeira event experience by arriving early, building connections, and preparing for intensive training."
+
+# Indexing:
+type: "blog-article"
 ---
 
 This past weekend, I had the pleasures of going to Charlotte, North Carolina for an awesome Capoeira event. Contra Mestre Zumbi of Cordão de Ouro hosted an even called the [Winter Games](https://www.facebook.com/events/518592958523427/).
 
-What drew me to his event was the fact that I went to the [Charlotte Batizado](https://www.youtube.com/watch?v=Tcwv-qD3g60) a few years back. Mestre Esquilo was there, Mestre Cueca, and many others. the vibe was so great and I think that energy enabled me to play as well as I could - it's rare to find such an event.  
+What drew me to his event was the fact that I went to the [Charlotte Batizado](https://www.youtube.com/watch?v=Tcwv-qD3g60) a few years back. Mestre Esquilo was there, Mestre Cueca, and many others. the vibe was so great and I think that energy enabled me to play as well as I could - it’s rare to find such an event.  
 
 That being said, I had to go again, but this time I had a plan. I asked my job to let me work remotely - most activities didn't start until the afternoon so I had plenty of time to work during the day. Instead of flying in on Friday, like most people, I flew in on Wednesday afternoon. One of Zumbis students picked me up (instagram: @rebbs\_3. Check her out on Instagram!) and this was also the person who hosted me. PRO TIP! If you're going to an event for a few days, make sure to coordinate well ahead of time to make sure there is enough space for you.
 
@@ -30,13 +45,13 @@ This is a great chance to take their classes, get food with them, or just help o
 
 ## DURING THE EVENT
 
-Personally, I find it very hard to get to know someone during the event. Friday, there are workshops and rodas and the same goes for saturday. The time is short, and even if there's a party afterwards, you don't always get good one on one time with someone. At a party everyone's high energy and trying to have fun, so building a connection with someone doesn't always work here either.
+Personally, I find it very hard to get to know someone during the event. Friday, there are workshops and rodas and the same goes for saturday. The time is short, and even if there’s a party afterwards, you don’t always get good one on one time with someone. At a party everyone’s high energy and trying to have fun, so building a connection with someone doesn’t always work here either.
 
-Although this has something to do with preference, I would definitely encourage people to go early to events. If you enjoy traveling, then going early also allows you to get to know a place because if you've ever been to a Capoeira event, you know that you barely see anything outside of the academy space.
+Although this has something to do with preference, I would definitely encourage people to go early to events. If you enjoy traveling, then going early also allows you to get to know a place because if you’ve ever been to a Capoeira event, you know that you barely see anything outside of the academy space.
 
 ## FRIENDS
 
-Capoeira's about making friends! And I definitely did during my trip to Charlotte, NC. If you want to see the rodas from the event, check out my [youtube page](https://www.youtube.com/channel/UCxiwDy2xQUf_B5KkONrrzGg), where I post videos and other goodies. Videos should be up by Monday.
+Capoeira’s about making friends! And I definitely did during my trip to Charlotte, NC. If you want to see the rodas from the event, check out my [youtube page](https://www.youtube.com/channel/UCxiwDy2xQUf_B5KkONrrzGg), where I post videos and other goodies. Videos should be up by Monday.
 
 #mc\_embed\_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; } /\* Add your own MailChimp form style overrides in your site stylesheet or in this style block. We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. \*/
 

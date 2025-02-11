@@ -1,15 +1,30 @@
 ---
 title: "A Capoeira é minha vida"
 date: "2020-09-21"
-categories: 
+categories:
   - "capoeira-songbook"
-tags: 
+tags:
   - "advanced"
   - "quadra"
 layout: "blog-post-layout.njk"
+
+# Add new SEO Fields:
+description: "Explore the soul of Capoeira through 'A Capoeira é minha vida', a powerful quadra celebrating life, movement, and the art of Afro-Brazilian martial arts."
+author: "Chris Calado Rodriguez"
+keywords: "capoeira song meaning, quadra capoeira lyrics, advanced capoeira songs, capoeira life philosophy, afro-brazilian martial arts music, capoeira song for training, capoeira roda song, capoeira music inspiration"
+
+# Social Sharing:
+socialImage: #Use coverImage value
+
+# Content Details:
+headline: "A Capoeira é minha vida: Embracing Life Through Song"
+excerpt: "This quadra, 'A Capoeira é minha vida', delves into the profound connection between Capoeira and life, celebrating the movement, philosophy, and spirit of this Afro-Brazilian art form."
+
+# Indexing:
+type: "song-post"
 ---
 
-Composer unknown
+
 <style>
 .capoeira-table {
     border: 1px solid #ccc;
@@ -37,7 +52,7 @@ Composer unknown
     </tr>
     <tr>
         <td>
-            <strong>Compositor desconhecido</strong><br><br>
+            <strong>Composer unknown</strong><br><br>
             A Capoeira é minha vida<br>
             A Capoeira ela é minha estrela guia<br><br>
             <strong>A Capoeira é minha vida</strong><br>
@@ -96,3 +111,4 @@ Author: Unknown
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ju9ukNKVsgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+```

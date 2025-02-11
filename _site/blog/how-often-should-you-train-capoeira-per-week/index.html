@@ -1,1 +1,322 @@
-<p>The document does not contain song lyrics, so I will not modify the content. The markdown document appears to be a blog post about training frequency in Capoeira.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Often Should You Train Capoeira Per Week?: A Beginner&#39;s Guide</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songbook</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">How Often Should You Train Capoeira Per Week?: A Beginner&#39;s Guide</a>
+            </div>
+            <h1>How Often Should You Train Capoeira Per Week?: A Beginner&#39;s Guide</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2020-06-24">
+                    June 23, 2020
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <p>If you’re new to Capoeira, then you should train at your school 2 to 3 times per week. This will ensure that you progress steadily over time. Training once a week will net you some improvement, but it will take a very long time. If you’re new, then I don’t recommend training 6 to 7 days either, as repeated high intensity classes won’t give your body enough time to recover. 2 to 3 times a week is the goldilocks zo ne if you’re just getting started.</p>
+<h2><h2 id="what-about-intermediate-and-advanced-students">What about intermediate and advanced students?</h2></h2>
+<p>If you’ve been training for a year or more (not necessarily intermediate), then you should feel more comfortable ramping up the intensity of your training. For the best results, make sure to vary your training in terms of its intensity, and what you chooseIf you really want to improve, then I suggest varying your training.</p>
+<p>There are three ways we can do this. The first is to do the same kind of workout, but drastically lower the intensity to about 20%. For example, if Monday you do 1000 kicks, then Tuesday you will do 200 kicks. Although I don’t think this is the best method in terms of giving your muscles time to rest, it does keep you moving. The last thing you want to do on your off days is nothing!</p>
+<p>The second way to vary your training is to workout another body part. This is a common theme in weight training. Leg day, Chest and Back day, Arm day, etc. Mondays can be kicks and esquivas. Tuesday is Ponte. And Wednesday is bananeira and queda de rins.</p>
+<p>The last way you can vary your training is to do something completely different. Go for a walk, swim, yoga, etc. If you enjoy rock climbing, then do it on your off days to give your legs some time to rest. This might not work if your other activity closely resembles what you are doing in Capoeira, but having a light day of swimming can be very beneficial for you.</p>
+<p>I highly recommend the latter two options. In my experience, then yield the best results by helping stay active, while allowing your body to rest. Below are examples of how your workout can be structured throughout the week.</p>
+<h2><h2 id="is-it-possible-to-overtrain">Is it possible to overtrain?</h2></h2>
+<p>Overtraining is a very simple concept. If you do not allow your body to recover sufficiently before putting it under stress, then that can be considered overtraining. How much rest you need depends on you. How intense was your previous workout? How much time did you get to rest? Does it feel like that resting period was enough for the next training session? These are the questions that need to be answered. For most people a day between training sessions is usually sufficient rest. If you’re just starting, then you might need two.</p>
+<p>Our bodies are not machines and we need some time to relax. One of the main ways we injure ourselves is through overuse injuries. If you beat down the muscles and other tissue long enough, it will give under the strain. Don’t make the mistake of thinking that if you threw 500 kicks yesterday, that you can do the same intensity and volume with shot legs. Give your body some time to heal before you think you’re ready for the same kind of workout. Proper sleep and nutrition are imperative for the process of healing.</p>
+<h2><h2 id="what-if-my-school-doesn-t-offer-classes-every-day">What if my school doesn’t offer classes every day</h2></h2>
+<p>Not every school offers classes every single day. If you’re lucky enough to train somewhere that has this, then consider yourself lucky! If not, then the responsibility falls on you to train at home. If you need advice on how to do this, then reach out to your teacher. They will probably have some advice that you can follow.</p>
+<p>Follow our earlier principle of lowering intensity or changing our training focus on our non-class days. Whatever you end up doing, remember to stay active! Don’t just sit on the couch and avoid beating yourself going all out directly after a hard training session.</p>
+<h2><h2 id="measure-measure-measure">Measure! Measure! Measure!</h2></h2>
+<p>Write down what you train! This is probably one of the most important things I learned while training Capoeira. Writing down what you train, the repetitions, sets, intensity, and time it took is very important to keep track of. Here is why tracking what you train is so important.</p>
+<p>Sometimes when we train, we get side tracked. You might start listening to some music and forget about your training, you might look at your phone, etc. There are tons of distractions available to us now because of our phones. The way we combat this is to write everything down to hold ourselves accountable.</p>
+<p>When you write things down, you know exactly how work you did in the time you trained. Here is an example of what this can look like.</p>
+<p><img src="https://lh4.googleusercontent.com/zH2dfi3V9oM7et5SFwBKuCnHKReqUKoljJaytVuE-0c6e9-rpw3mKndLHJ8TUH6a4qOpKR6wH8RD6f8oH97up2-YGKkhNXU6yP6yS63HC-FteaHBaqtV8Oif008dOGGYzsauBprG" alt=""></p>
+<p>There is nothing fancy here. Just a notebook with a pen. Write down what you want to train and how much of it you plan on doing. Get ready for your training with a warmup and as you go through your training session, try to do the amount you wrote down in the notebook. Sometimes you will do less because you’re tired, and that’s ok. Push as much as you feel you can, then write it down. And if you don’t meet your goals, then make it a goal for the next day. If you feel you can do more, then great, that is something you can adjust for next time. Getting better at anything is not a sprint, it’s a MARATHON!</p>
+<p>A helpful tip! Make sure to write down the amount of repetitions of each movement you plan to do in a set. For example, I will do 20 of kick “x” for 3 sets at a moderate intensity.</p>
+<p>The intensity is very important because 20 kicks at 100% your power will gas you out very quickly. I suggest going 100% around the later half of your workout and only for short bursts. Nobody can do 100% kicks 500 times. That’s not what the body was designed to do. For most of your training, you want to kick at somewhere between 60-80% of your capacity.</p>
+<h2><h2 id="what-should-i-focus-on-training-first">What should I focus on training first?</h2></h2>
+<p>Learn to throw kicks and esquiva directly after. And learn to kick out of esquivas. For example, Armada + esquiva baixa. As soon as you throw the kick, you duck down into esquiva baixa. This is a very simple sequence that will build your legs, improve your coordination, and it will be directly applicable in the roda. Every day do 40-60 kicks with an esquiva at the end. Do this at a low to moderate intensity. This will take you about 10 minutes and will keep your body moving smoothly.</p>
+<blockquote>
+<p><strong><a href="https://dendearts.com/list-of-fundamental-capoeira-movements/">If you don’t know the names of all the basic movements, Here is an article about the most fundamental Capoeira movements</a></strong><a href="https://dendearts.com/list-of-fundamental-capoeira-movements/">.</a></p>
+</blockquote>
+<p><a href="https://dendearts.com/list-of-fundamental-capoeira-movements/">CLICK HERE!</a></p>
+<p><a href="https://dendearts.com/list-of-fundamental-capoeira-movements/"></a></p>
+<p>Lastly, don’t forget to warm up before a training session and to stretch after training. These two small details take some time to do, but do a great deal in terms of your overall health. Warming up will reduce risk of injury and allow you to play for years to come. Stretching after class will help improve the ranges of motion you just worked in, improving your technique.</p>
+<p>The most critical things to learn in Capoeira is the ginga, the kicks and the esquivas. If you have a solid understanding of these three concepts you will have a solid Capoeira game. There are plenty of examples of Capoeira games that only have these basic concepts and they look amazingly impressive.</p>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-2">
+                                <a href="#what-about-intermediate-and-advanced-students">What about intermediate and advanced students?</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#is-it-possible-to-overtrain">Is it possible to overtrain?</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#what-if-my-school-doesn-t-offer-classes-every-day">What if my school doesn’t offer classes every day</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#measure-measure-measure">Measure! Measure! Measure!</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#what-should-i-focus-on-training-first">What should I focus on training first?</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+                <!-- Add this to your nav.njk -->
+                <div class="cart-indicator">
+                    <span id="cart-count" style="display: none">0</span>
+                </div>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    
+    
+</body>
+
+
+</html>

@@ -1,22 +1,42 @@
 ---
-title: "VIDEO: THE BIOGRAPHY OF MESTRE SUASSUNA"
+title: "VIDEO: The Inspiring Biography of Mestre Suassuna"
 date: "2017-12-31"
-categories: 
+categories:
   - "capoeira101"
-tags: 
+tags:
   - "biography"
-  - "blog-of-capoeira"
+  - "mestre suassuna biography"
   - "capoeira"
-  - "capoiera-blog"
-  - "cdo"
-  - "cordao-de-ouro"
-  - "cordao-de-ouro-blog"
-  - "mestre-boca-rica"
-  - "mestre-suassuna"
-  - "suassuna"
-  - "video-review"
+  - "cordao de ouro"
+  - "capoeira history"
+  - "mestre suassuna"
+  - "capoeira cdo"
+  - "capoeira video"
 coverImage: "Screen-Shot-2017-12-30-at-4.56.27-PM.png"
 layout: "blog-post-layout.njk"
+
+# Add new SEO Fields:
+description: "Explore the life of Mestre Suassuna, a pivotal figure in Capoeira Cordão de Ouro. Watch the video and discover his journey!"
+author: "Chris Calado Rodriguez"
+keywords:
+  - "mestre suassuna biography video"
+  - "capoeira cordao de ouro history"
+  - "capoeira mestre suassuna techniques"
+  - "cdo capoeira lineage"
+  - "capoeira masters biographies"
+  - "learn capoeira from mestre suassuna"
+  - "capoeira cordao de ouro style"
+  - "mestre suassuna influence on capoeira"
+
+# Social Sharing:
+socialImage: "Screen-Shot-2017-12-30-at-4.56.27-PM.png"
+
+# Content Details:
+headline: "Unveiling the Life of Mestre Suassuna: A Capoeira Legend"
+excerpt: "This video delves into the remarkable life and contributions of Mestre Suassuna, a guiding force within Capoeira Cordão de Ouro."
+
+# Indexing:
+type: "blog-article"
 ---
 
 This summer I got a chance to read the new biography of Mestre Suassuna, written by [M. Boca Rica](http://capoeiracdobarcelona.com/). Here is 1/3 of my summary of this great work.

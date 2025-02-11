@@ -1,32 +1,298 @@
-<p>The document does not contain song lyrics, so I will reproduce it exactly as provided without any modifications.</p>
-<hr>
-<p>title: &quot;Sexual Misconduct: Doing Something Pt. 2&quot;
-date: &quot;2018-06-12&quot;
-categories:</p>
-<ul>
-<li>&quot;capoeira101&quot;
-tags:</li>
-<li>&quot;bill-cosby&quot;</li>
-<li>&quot;capoeira-girls&quot;</li>
-<li>&quot;capoeira-sex&quot;</li>
-<li>&quot;harvey-weinstein&quot;</li>
-<li>&quot;sexual-abuse-in-athletics&quot;</li>
-<li>&quot;sexual-misconduct&quot;</li>
-<li>&quot;sexual-misconduct-in-capoeira&quot;</li>
-<li>&quot;women-of-capoeira&quot;
-coverImage: &quot;Screen-Shot-2018-06-12-at-12.40.54-AM.png&quot;
-layout: &quot;blog-post-layout.njk&quot;</li>
-</ul>
-<hr>
-<p>2017 was undoubtedly the year when the house of cards came crashing down on all sorts of sexual misconduct. Cosby and Weinstein are just a few of the names brought up in the discussion. I made an earlier <a href="https://dendearts.com/sexual-misconduct/">post</a> at the end of 2017 talking about some of the efforts being made in the world of Capoeira.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sexual Misconduct: Doing Something Pt. 2</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songbook</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">Sexual Misconduct: Doing Something Pt. 2</a>
+            </div>
+            <h1>Sexual Misconduct: Doing Something Pt. 2</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2018-06-12">
+                    June 11, 2018
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <p>2017 was undoubtedly the year when the house of cards came crashing down on all sorts of sexual misconduct. Cosby and Weinstein are just a few of the names brought up in the discussion. I made an earlier <a href="https://dendearts.com/sexual-misconduct/">post</a> at the end of 2017 talking about some of the efforts being made in the world of Capoeira.</p>
 <p>A few friends put together a survey and some of their initial findings have been compiled in a very easy to read <a href="https://arodaunida.wordpress.com/">infographic</a>. The surveys asked question to both men and women all over the world about the topic of sexual harassment that they have witnessed or encountered. The findings I think are very interesting and I wanted to highlight some things.</p>
-<h2>SUMMARY</h2>
-<p>Before I start, I think there is some good news in that attitudes are beginning to change and more people are becoming aware of the issue of sexual harassment. I think this survey is proof of that. One fact that was unfortunate was that 97% of the time, the person committing the harassment was of a higher rank, which reflects poorly on people who for many, are role models. Another interesting findings was the 12% of men who reported &quot;unwanted sexual attention&quot;. I haven't heard anything about this topic, but 12% is much lower than what it is for women, 69% of women. One thing I would like to see for the future is a bit of clarity on what certain things mean. This is a very qualitative study, so we might need to take the information with a grain of salt and not use it as absolute truth. That being said, this information is extremely helpful to the community in pointing out something that I think a lot of women in particular have been trying to say, but didn't feel like they had the voice to say it.</p>
-<p>Awesome work and I'm looking forward to seeing what other nuggets of information we can gather from this study.</p>
-<h2>GLOBAL ISSUE</h2>
+<h2><h2 id="summary">SUMMARY</h2></h2>
+<p>Before I start, I think there is some good news in that attitudes are beginning to change and more people are becoming aware of the issue of sexual harassment. I think this survey is proof of that. One fact that was unfortunate was that 97% of the time, the person committing the harassment was of a higher rank, which reflects poorly on people who for many, are role models. Another interesting findings was the 12% of men who reported “unwanted sexual attention”. I haven’t heard anything about this topic, but 12% is much lower than what it is for women, 69% of women. One thing I would like to see for the future is a bit of clarity on what certain things mean. This is a very qualitative study, so we might need to take the information with a grain of salt and not use it as absolute truth. That being said, this information is extremely helpful to the community in pointing out something that I think a lot of women in particular have been trying to say, but didn’t feel like they had the voice to say it.</p>
+<p>Awesome work and I’m looking forward to seeing what other nuggets of information we can gather from this study.</p>
+<h2><h2 id="global-issue">GLOBAL ISSUE</h2></h2>
 <p>OK, yes we know that sexual misconduct is global issue, but I think something that was impressive about this effort was that people from all over the world participated. Most respondents were from the United States (the creators of the survey are american), but over 42 countries were representing in the survey, which means we might get some interesting results when we compare countries.</p>
-<h2>HIGH CASES OF SEXUAL MISCONDUCT</h2>
-<p>The term sexual misconduct is a little tricky, I'm not really sure what it means for people taking the survey (some people could take it to mean wildly different things), but I wouldn't use that as grounds for saying sexual harassment isn't an issue. Some evidence to this difference in definition might be the fact that about 66% of men reported seeing cases of sexual misconduct while 85% of women stated that they witnessing sexual misconduct. Perhaps women are natural more vigilant or sensitive and therefore would report witnessing sexual misconduct at higher rates, but again, I think a study like this is good for pointing out broad trends, which I think it does nicely.</p>
-<h2>ABUSE OF RANK</h2>
-<p>I can definitely say that I've seen this. Abuse of rank is a real thing that seems to be prevalent in most cases of sexual harassment. Bill Cosby was the star of the show and Harvey Weinstein was the gatekeeper to many high paying acting roles. Similarly in Capoeira this is a trend, and unsurprisingly 97% of cases of sexual misconduct involved a person of higher rank abusing their position. It's really unfortunate to me because this behavior fractures our community and many people leave because of it. We don't know exactly how many because many of them might not have known about this survey, but I'm sure we can say that there are plenty of people who could have kept training, but didn't because of some jerk.</p>
-<p>Anyways, as I said in the last article, I'm really glad that this survey happened and I'm interested to see what comes of it. It's getting late now!! Have a good week everyone. Sorry if this article gets you a bit down, but I think it's an article full of hope and possibility for a brighter future.</p>
+<h2><h2 id="high-cases-of-sexual-misconduct">HIGH CASES OF SEXUAL MISCONDUCT</h2></h2>
+<p>The term sexual misconduct is a little tricky, I’m not really sure what it means for people taking the survey (some people could take it to mean wildly different things), but I wouldn't use that as grounds for saying sexual harassment isn’t an issue. Some evidence to this difference in definition might be the fact that about 66% of men reported seeing cases of sexual misconduct while 85% of women stated that they witnessing sexual misconduct. Perhaps women are natural more vigilant or sensitive and therefore would report witnessing sexual misconduct at higher rates, but again, I think a study like this is good for pointing out broad trends, which I think it does nicely.</p>
+<h2><h2 id="abuse-of-rank">ABUSE OF RANK</h2></h2>
+<p>I can definitely say that I’ve seen this. Abuse of rank is a real thing that seems to be prevalent in most cases of sexual harassment. Bill Cosby was the star of the show and Harvey Weinstein was the gatekeeper to many high paying acting roles. Similarly in Capoeira this is a trend, and unsurprisingly 97% of cases of sexual misconduct involved a person of higher rank abusing their position. It’s really unfortunate to me because this behavior fractures our community and many people leave because of it. We don’t know exactly how many because many of them might not have known about this survey, but I’m sure we can say that there are plenty of people who could have kept training, but didn’t because of some jerk.</p>
+<p>Anyways, as I said in the last article, I’m really glad that this survey happened and I’m interested to see what comes of it. It’s getting late now!! Have a good week everyone. Sorry if this article gets you a bit down, but I think it’s an article full of hope and possibility for a brighter future.</p>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-2">
+                                <a href="#summary">SUMMARY</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#global-issue">GLOBAL ISSUE</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#high-cases-of-sexual-misconduct">HIGH CASES OF SEXUAL MISCONDUCT</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#abuse-of-rank">ABUSE OF RANK</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+                <!-- Add this to your nav.njk -->
+                <div class="cart-indicator">
+                    <span id="cart-count" style="display: none">0</span>
+                </div>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    
+    
+</body>
+
+
+</html>

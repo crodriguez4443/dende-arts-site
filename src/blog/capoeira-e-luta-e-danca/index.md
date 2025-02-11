@@ -1,14 +1,106 @@
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Capoeira é luta é dança<br>Capoeira é arte é magia<br><br><strong>Capoeira é luta é dança<br>Capoeira é arte é magia</strong><br><br>Eu jogo a Capoeira<br>Pois ela é minha alegria<br>Quando eu toco Berimbau<br>Minha alma se contagia<br>Pois viver sem Capoeira<br>é uma grande agonia<br>Meu coração logo para<br>Meus olhos ja não brilham<br>Com a falta de Capoeira<br>Que é um vicio de alegria<br>Capoeira é o meu jeito de ser<br>Capoeira é minha filosofia<br>Capoeira eu joguei ontem<br>Jogo hoje e jogo todo dia<br><br>Capoeira é luta é dança<br>Capoeira é arte é magia<br><br><strong>Capoeira é luta é dança<br>Capoeira é arte é magia</strong><br><br>Capoeira dia e noite, colega velho<br>Capoeira noite e dia<br><br><strong>Capoeira é luta é dança<br>Capoeira é arte é magia</strong><br><br>Se não fosse a capoeira, colega velho<br>Eu aqui não estaria<br><br><strong>Capoeira é luta é dança<br>Capoeira é arte é magia</strong><br><br>Vou fazer da capoeira, colega velho<br>A minha filosofia<br><br><strong>Capoeira é luta é dança<br>Capoeira é arte é magia</strong></td>
-        <td>Capoeira is fight and dance<br>Capoeira is art and magic<br><br>Capoeira is fight and dance<br>Capoeira is art and magic<br><br>I play Capoeira<br>For she is my joy<br>When I play Berimbau<br>My soul is contagious<br>Because to live without Capoeira<br>it's a great agony<br>My heart soon stops<br>My eyes no longer shine<br>With the lack of Capoeira<br>That is an addiction of joy<br>Capoeira is my way of being<br>Capoeira is my philosophy<br>Capoeira I played yesterday<br>I play today and I play every day<br><br>Capoeira is fight and dance<br>Capoeira is art and magic<br><br>Capoeira is fight and dance<br>Capoeira is art and magic<br><br>Capoeira day and night, old colleague<br>Capoeira night and day<br><br>Capoeira is fight and dance<br>Capoeira is art and magic<br><br>If it weren't for capoeira, old colleague<br>I wouldn't be here<br><br>Capoeira is fight and dance<br>Capoeira is art and magic<br><br>I'll do capoeira, old colleague<br>My philosophy<br><br>Capoeira is fight and dance<br>Capoeira is art and magic</td>
-    </tr>
-</table>
+---
+title: "Capoeira é luta é dança"
+date: "2020-11-01"
+categories: 
+  - "capoeira-songbook"
+tags: 
+  - "advanced"
+  - "mestre-barrao"
+layout: "blog-post-layout.njk"
+---
+
+| Portuguese | English |
+| --- | --- |
+| Capoeira é luta é dança  
+Capoeira é arte é magia  
+  
+**Capoeira é luta é dança  
+Capoeira é arte é magia**  
+  
+Eu jogo a Capoeira  
+Pois ela é minha alegria  
+Quando eu toco Berimbau  
+Minha alma se contagia  
+Pois viver sem Capoeira  
+é uma grande agonia  
+Meu coração logo para  
+Meus olhos ja não brilham  
+Com a falta de Capoeira  
+Que é um vicio de alegria  
+Capoeira é o meu jeito de ser  
+Capoeira é minha filosofia  
+Capoeira eu joguei ontem  
+Jogo hoje e jogo todo dia  
+  
+Capoeira é luta é dança  
+Capoeira é arte é magia  
+  
+**Capoeira é luta é dança  
+Capoeira é arte é magia  
+**  
+Capoeira dia e noite, colega velho  
+Capoeira noite e dia  
+  
+**Capoeira é luta é dança  
+Capoeira é arte é magia  
+**  
+Se não fosse a capoeira, colega velho  
+Eu aqui não estaria  
+  
+**Capoeira é luta é dança  
+Capoeira é arte é magia**  
+  
+Vou fazer da capoeira, colega velho  
+A minha filosofia  
+  
+**Capoeira é luta é dança  
+Capoeira é arte é magia** | Capoeira is fight and dance  
+Capoeira is art and magic  
+  
+Capoeira is fight and dance  
+Capoeira is art and magic  
+  
+I play Capoeira  
+For she is my joy  
+When I play Berimbau  
+My soul is contagious  
+Because to live without Capoeira  
+it's a great agony  
+My heart soon stops  
+My eyes no longer shine  
+With the lack of Capoeira  
+That is an addiction of joy  
+Capoeira is my way of being  
+Capoeira is my philosophy  
+Capoeira I played yesterday  
+I play today and I play every day  
+  
+Capoeira is fight and dance  
+Capoeira is art and magic  
+  
+Capoeira is fight and dance  
+Capoeira is art and magic  
+  
+Capoeira day and night, old colleague  
+Capoeira night and day  
+  
+Capoeira is fight and dance  
+Capoeira is art and magic  
+  
+If it weren't for capoeira, old colleague  
+I wouldn't be here  
+  
+Capoeira is fight and dance  
+Capoeira is art and magic  
+  
+I'll do capoeira, old colleague  
+My philosophy  
+  
+Capoeira is fight and dance  
+Capoeira is art and magic |
 
 <figcaption>
+
 Author: Mestre Barrao
+
 </figcaption>

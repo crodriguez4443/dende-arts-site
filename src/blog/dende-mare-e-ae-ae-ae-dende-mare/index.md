@@ -8,79 +8,74 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Quando a maré tá baixa<br>
-Dá pro capoeira remar<br>
-Mas quando a maré tá alta<br>
-É aí que o barco não pode virar<br>
-<br>
-<strong>Ê, aê, aê, aê, aê, dendê maré<br>
-Ê, aê, aê, aê, aê, dendê maré</strong><br>
-<br>
-A vida é como a capoeira<br>
-Quem ganha também pode perder<br>
-Mas são como os tombos da vida<br>
-É aí que fazem o homem crescer<br>
-<br>
-<strong>Ê, aê, aê, aê, aê, dendê maré<br>
-Ê, aê, aê, aê, aê, dendê maré</strong><br>
-<br>
-Aguenta firme capoeira<br>
-Tem correnteza querendo te derrubar<br>
-Mas não consegue se tiver sangue de Zumbi<br>
-E a força de Besouro Mangangá<br>
-(Dendê Maré)<br>
-<br>
-<strong>Ê, aê, aê, aê, aê, dendê maré<br>
-Ê, aê, aê, aê, aê, dendê maré</strong><br>
-<br>
-O berimbau tem que ter um tocador<br>
-O tocador toca com seu coração<br>
-Levando para sua vida inteira<br>
-Mestre Bimba como sua inspiração<br>
-<br>
-<strong>Ê, aê, aê, aê, aê, dendê maré<br>
-Ê, aê, aê, aê, aê, dendê maré</strong></td>
-        <td>When the tide is low<br>
-Capoeira can row<br>
-But when the tide is high<br>
-That's when the boat can't turn<br>
-<br>
-Ê, aê, aê, aê, aê, oil palm<br>
-Ê, aê, aê, aê, aê, oil palm<br>
-<br>
-Life is like capoeira<br>
-Whoever wins can also lose<br>
-But they are like the falls of life<br>
-That's where they make man grow<br>
-<br>
-Ê, aê, aê, aê, aê, oil palm<br>
-Ê, aê, aê, aê, aê, oil palm<br>
-<br>
-Hold on tight capoeira<br>
-There's a current wanting to bring you down<br>
-But you can't do it if you have the blood of Zumbi<br>
-And the strength of Besouro Mangangá<br>
-(Dendê Maré)<br>
-<br>
-Ê, aê, aê, aê, aê, oil palm<br>
-Ê, aê, aê, aê, aê, oil palm<br>
-<br>
-The berimbau must have a player<br>
-The player plays with his heart<br>
-Leading for your entire life<br>
-Mestre Bimba as your inspiration<br>
-<br>
-Ê, aê, aê, aê, aê, oil palm<br>
-Ê, aê, aê, aê, aê, oil palm</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Quando a maré tá baixa  
+Dá pro capoeira remar  
+Mas quando a maré tá alta  
+É aí que o barco não pode virar  
+**  
+Ê, aê, aê, aê, aê, dendê maré  
+Ê, aê, aê, aê, aê, dendê maré**  
+  
+A vida é como a capoeira  
+Quem ganha também pode perder  
+Mas são como os tombos da vida  
+É aí que fazem o homem crescer  
+**  
+Ê, aê, aê, aê, aê, dendê maré  
+Ê, aê, aê, aê, aê, dendê maré**  
+  
+Aguenta firme capoeira  
+Tem correnteza querendo te derrubar  
+Mas não consegue se tiver sangue de Zumbi  
+E a força de Besouro Mangangá  
+(Dendê Maré)  
+  
+**Ê, aê, aê, aê, aê, dendê maré  
+Ê, aê, aê, aê, aê, dendê maré**  
+  
+O berimbau tem que ter um tocador  
+O tocador toca com seu coração  
+Levando para sua vida inteira  
+Mestre Bimba como sua inspiração  
+**  
+Ê, aê, aê, aê, aê, dendê maré  
+Ê, aê, aê, aê, aê, dendê maré** | When the tide is low  
+Capoeira can row  
+But when the tide is high  
+That's when the boat can't turn  
+  
+Ê, aê, aê, aê, aê, oil palm  
+Ê, aê, aê, aê, aê, oil palm  
+  
+Life is like capoeira  
+Whoever wins can also lose  
+But they are like the falls of life  
+That's where they make man grow  
+  
+Ê, aê, aê, aê, aê, oil palm  
+Ê, aê, aê, aê, aê, oil palm  
+  
+Hold on tight capoeira  
+There's a current wanting to bring you down  
+But you can't do it if you have the blood of Zumbi  
+And the strength of Besouro Mangangá  
+(Dendê Maré)  
+  
+Ê, aê, aê, aê, aê, oil palm  
+Ê, aê, aê, aê, aê, oil palm  
+  
+The berimbau must have a player  
+The player plays with his heart  
+Leading for your entire life  
+Mestre Bimba as your inspiration  
+  
+Ê, aê, aê, aê, aê, oil palm  
+Ê, aê, aê, aê, aê, oil palm |
 
 <figcaption>
+
 Author: Feijão
+
 </figcaption>

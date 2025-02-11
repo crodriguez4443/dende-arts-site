@@ -1,13 +1,40 @@
-Since this document does not contain song lyrics, I will copy the document as is without any modifications.
-
 ---
-title: "What Makes a good martial arts teacher?"
+title: "What Makes a Good Capoeira Teacher?"
 date: "2021-01-10"
-categories: 
+categories:
   - "beginners-capoeira"
   - "capoeira101"
+tags:
+  - "capoeira teacher qualities"
+  - "martial arts instruction"
+  - "capoeira training"
+  - "beginner capoeira"
+  - "capoeira fundamentals"
 coverImage: "martial-arts-teacher.jpg"
 layout: "blog-post-layout.njk"
+
+# Add new SEO Fields:
+description: "Learn the key qualities of a good capoeira teacher: patience, skill, and cultural knowledge for effective martial arts instruction."
+author: "Chris Calado Rodriguez"
+keywords:
+  - "qualities of a good capoeira teacher"
+  - "how to find a good capoeira instructor"
+  - "best capoeira training methods"
+  - "capoeira teacher certification"
+  - "capoeira teacher experience level"
+  - "benefits of learning from a qualified capoeira teacher"
+  - "capoeira instructor teaching styles"
+  - "capoeira teacher code of ethics"
+
+# Social Sharing:
+socialImage: "martial-arts-teacher.jpg"
+
+# Content Details:
+headline: "What Makes a Great Capoeira Teacher?"
+excerpt: "Discover the essential attributes of a top-notch capoeira instructor, encompassing technical expertise, effective communication, and a deep understanding of capoeira's rich cultural heritage."
+
+# Indexing:
+type: "blog-article"
 ---
 
 There are five fundamentals elements that students can look for when deciding on learning from a martial arts teacher. These elements mxay not be clear during the first few classes, but every good teacher has some understanding of each one. The first is creating a safe classroom. The second is being able to engage their students in a fun teaching environment. The third is being connected to the greater community in their respective art. The fourth is the ability to inspire their students. And the last is encouraging the continued growth of their intermediate and advanced students.

@@ -8,117 +8,108 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>
-            Navegue aí pescador<br>
-            E cante aí cantador<br>
-            Na roda de capoeira<br>
-            Eu sou doutor sim sinhô<br>
-            <br>
-            Navegue aí pescador<br>
-            E cante aí cantador<br>
-            Na roda de capoeira<br>
-            Eu sou doutor sim sinhô<br>
-            <br>
-            Minha maior faculdade<br>
-            Foi o mundo que me mostrou<br>
-            Minha prova é a capoeira<br>
-            Ela é dificil senhor<br>
-            <br>
-            Navegue aí pescador<br>
-            E cante aí cantador<br>
-            Na roda de capoeira<br>
-            Eu sou doutor sim sinhô<br>
-            <br>
-            Muitas barreiras eu tenho<br>
-            Mas não desisto jamais<br>
-            Com meu São Jorge guerreiro<br>
-            Eu vou vencer muito mais<br>
-            <br>
-            Navegue aí pescador<br>
-            E cante aí cantador<br>
-            Na roda de capoeira<br>
-            Eu sou doutor sim sinhô<br>
-            <br>
-            O mundo é muito grande<br>
-            Só se aperta nele quem quer<br>
-            Mas tem muita gente na vida<br>
-            Que ainda não sabe o que quer<br>
-            <br>
-            Navegue aí pescador<br>
-            E cante aí cantador<br>
-            Na roda de capoeira<br>
-            Eu sou doutor sim sinhô<br>
-            <br>
-            Mas escute aqui meu camarada<br>
-            A vida não tem mistério<br>
-            É só cuidar da sua vida<br>
-            E deixar a dos outros quieto<br>
-            <br>
-            Navegue aí pescador<br>
-            E cante aí cantador<br>
-            Na roda de capoeira<br>
-            Eu sou doutor sim sinhô
-        </td>
-        <td>
-            Sail on fisherman<br>
-            And sing on singer<br>
-            In the capoeira roda<br>
-            I am doctor yes sir<br>
-            <br>
-            Sail on fisherman<br>
-            And sing on singer<br>
-            In the capoeira roda<br>
-            I am doctor yes sir<br>
-            <br>
-            My biggest college<br>
-            It was the world that showed me<br>
-            My test is capoeira<br>
-            It's difficult, sir<br>
-            <br>
-            Sail on fisherman<br>
-            And sing on singer<br>
-            In the capoeira roda<br>
-            I am doctor yes sir<br>
-            <br>
-            Many barriers I have<br>
-            But I never give up<br>
-            With my Saint George warrior<br>
-            I'll win a lot more<br>
-            <br>
-            Sail on fisherman<br>
-            And sing on singer<br>
-            In the capoeira roda<br>
-            I am doctor yes sir<br>
-            <br>
-            The world is very big<br>
-            Only those who want to get squeezed<br>
-            But there are a lot of people in life<br>
-            Who still don't know what they want<br>
-            <br>
-            Sail on fisherman<br>
-            And sing on singer<br>
-            In the capoeira roda<br>
-            I am doctor yes sir<br>
-            <br>
-            But listen here, buddy<br>
-            Life has no mystery<br>
-            Just take care of your life<br>
-            And let others' lives be<br>
-            <br>
-            Sail on fisherman<br>
-            And sing on singer<br>
-            In the capoeira roda<br>
-            I am doctor yes sir
-        </td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Navegue aí pescador  
+E cante aí cantador  
+Na roda de capoeira  
+Eu sou doutor sim sinhô  
+  
+Navegue aí pescador  
+E cante aí cantador  
+Na roda de capoeira  
+Eu sou doutor sim sinhô  
+  
+Minha maior faculdade  
+Foi o mundo que me mostrou  
+Minha prova é a capoeira  
+Ela é dificil senhor  
+  
+Navegue aí pescador  
+E cante aí cantador  
+Na roda de capoeira  
+Eu sou doutor sim sinhô  
+  
+Muitas barreiras eu tenho  
+Mas não desisto jamais  
+Com meu São Jorge guerreiro  
+Eu vou vencer muito mais  
+  
+Navegue aí pescador  
+E cante aí cantador  
+Na roda de capoeira  
+Eu sou doutor sim sinhô  
+  
+O mundo é muito grande  
+Só se aperta nele quem quer  
+Mas tem muita gente na vida  
+Que ainda não sabe o que quer  
+  
+Navegue aí pescador  
+E cante aí cantador  
+Na roda de capoeira  
+Eu sou doutor sim sinhô  
+  
+Mas escute aqui meu camarada  
+A vida não tem mistério  
+É só cuidar da sua vida  
+E deixar a dos outros quieto  
+  
+Navegue aí pescador  
+E cante aí cantador  
+Na roda de capoeira  
+Eu sou doutor sim sinhô | Sail on fisherman  
+And sing on singer  
+In the capoeira roda  
+I am doctor yes sir  
+  
+Sail on fisherman  
+And sing on singer  
+In the capoeira roda  
+I am doctor yes sir  
+  
+My biggest college  
+It was the world that showed me  
+My test is capoeira  
+It's difficult, sir  
+  
+Sail on fisherman  
+And sing on singer  
+In the capoeira roda  
+I am doctor yes sir  
+  
+Many barriers I have  
+But I never give up  
+With my Saint George warrior  
+I'll win a lot more  
+  
+Sail on fisherman  
+And sing on singer  
+In the capoeira roda  
+I am doctor yes sir  
+  
+The world is very big  
+Only those who want to get squeezed  
+But there are a lot of people in life  
+Who still don't know what they want  
+  
+Sail on fisherman  
+And sing on singer  
+In the capoeira roda  
+I am doctor yes sir  
+  
+But listen here, buddy  
+Life has no mystery  
+Just take care of your life  
+And let others' lives be  
+  
+Sail on fisherman  
+And sing on singer  
+In the capoeira roda  
+I am doctor yes sir |
 
 <figcaption>
+
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
+
 </figcaption>

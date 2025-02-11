@@ -1,56 +1,82 @@
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Entrada opcional por DJ Capoeira:<br><br>
-No tempo que a capoeira<br>
-Era um jogo pesado,<br>
-Menino que entrava em roda<br>
-Saia de braço quebrado.<br>
-Ê, dava nele uma rasteira<br>
-Coice de mula e uma queixada,<br>
-Rabo de arraia e uma benção pulada<br>
-Jogava ele na calçada<br>
-Menino que entrava em roda<br>
-E não sabia dá pernada.<br><br>
-Abalou cachoeira abalou<br>
-E abalou deixa abalar<br><br>
-<strong>Abalou cachoeira abalou</strong><br><br>
-E abalou vem abalar<br><br>
-<strong>Abalou cachoeira abalou</strong><br><br>
-E abalou vai abalar<br><br>
-<strong>Abalou cachoeira abalou</strong><br><br>
-Menino bom deixa jogar<br><br>
-<strong>Abalou cachoeira abalou</strong><br><br>
-Abalou deixa abalar</td>
-        <td>Optional Intro by DJ Capoeira<br><br>
-In the time that capoeira<br>
-It was a rough game<br>
-Boy enters the roda<br>
-Leaves with a broken arm.<br>
-Ê, They gave him a rasteira<br>
-Mule kick and a Queixada,<br>
-Rabo de arraia and a jumping Benção<br>
-Played him on the pavement<br>
-Boy walking around<br>
-And I didn't know about pernada*<br><br>
-Shook, cachoeira shook<br>
-It shook, let it shake<br><br>
-shook cachoeira shook<br><br>
-It shook, come shake<br><br>
-shook cachoeira shook<br><br>
-It shook, it will shake<br><br>
-shook cachoeira shook<br><br>
-Good boy let him play<br><br>
-shook cachoeira shook<br><br>
-it shook, let it shake</td>
-    </tr>
-</table>
+---
+title: "Abalou cachoeira abalou (DJ Capoeira Entrance)"
+date: "2020-09-22"
+categories: 
+  - "capoeira-songbook"
+tags: 
+  - "beginner"
+  - "corrido"
+layout: "blog-post-layout.njk"
+---
+
+| Portugese | English |
+| --- | --- |
+| Entrada opcional por DJ Capoeira:  
+  
+No tempo que a capoeira  
+Era um jogo pesado,  
+Menino que entrava em roda  
+Saia de braço quebrado.  
+Ê, dava nele uma rasteira  
+Coice de mula e uma queixada,  
+Rabo de arraia e uma benção pulada  
+Jogava ele na calçada  
+Menino que entrava em roda  
+E não sabia dá pernada.”  
+  
+Abalou cachoeira abalou  
+E abalou deixa abalar  
+  
+**Abalou cachoeira abalou  
+**  
+E abalou vem abalar  
+  
+**Abalou cachoeira abalou  
+**  
+E abalou vai abalar  
+  
+**Abalou cachoeira abalou  
+**  
+Menino bom deixa jogar  
+  
+**Abalou cachoeira abalou  
+**  
+Abalou deixa abalar | Optional Intro by DJ Capoeira  
+  
+In the time that capoeira  
+It was a rough game  
+Boy enters the roda  
+Leaves with a broken arm.  
+Ê, They gave him a rasteira  
+Mule kick and a Queixada,  
+Rabo de arraia and a jumping Benção  
+Played him on the pavement  
+Boy walking around  
+And I didn’t know about pernada\*  
+  
+Shook, cachoeira shook  
+It shook, let it shake  
+  
+shook cachoeira shook  
+  
+It shook, come shake  
+  
+shook cachoeira shook  
+  
+It shook, it will shake  
+  
+shook cachoeira shook  
+  
+Good boy let him play  
+  
+shook cachoeira shook  
+  
+it shook, let it shake |
 
 <figcaption>
+
 Author: Unknown
+
 </figcaption>
 
 Pernada - Refers to a rough Capoeira game. Literally means hard kicks.

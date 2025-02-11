@@ -1,13 +1,266 @@
-<table class="capoeira-table">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dedicação (Ê lealá, lelê ô)</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songbook</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">Dedicação (Ê lealá, lelê ô)</a>
+            </div>
+            <h1>Dedicação (Ê lealá, lelê ô)</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2020-11-22">
+                    November 21, 2020
+                </time>
+            </div>
+            
+            
+            
+            
+
+            <div class="blog-post-content">
+                <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
         <th>English</th>
     </tr>
     <tr>
-        <td>Ê laelá lelê ô<br>Ê laelá lelê ô<br><br><strong>Ê laelá lelê ô<br>Ê laelá lelê ô</strong><br><br>Se água no meio de deserto<br>É o que todos querem encontrar<br>Deixa o berimbau tocar na roda<br>Pra dentro do peito ecoar<br><br><strong>Ê laelá lelê ô<br>Ê laelá lelê ô</strong><br><br>Escravo perdido na floresta<br>Vira o caçador de capataz<br>Todo o capoeira que não treina<br>Com o tempo vai ficar pra trás<br><br><strong>Ê laelá lelê ô<br>Ê laelá lelê ô</strong><br><br>Estrela que brilha lá no céu<br>Pode hoje não mais existir<br>Capoeira sem dedicação<br>Seu caminho não vai construir<br><br><strong>Ê laelá lelê ô<br>Ê laelá lelê ô</strong><br><br>Se um barco é meu fundamento<br>Navegando nas ondas do mar<br>Vou em busca de conhecimento<br>Para em terra firme chegar<br><br><strong>Ê laelá lelê ô<br>Ê laelá lelê ô</strong><br><br>De que serve a ave mais veloz<br>Sem querer aprender a voar<br><br><strong>Ê laelá lelê ô<br>Ê laelá lelê ô</strong><br><br>É igual a capoeira de talento<br>Que não tem vontade de treinar<br><br><strong>Ê laelá lelê ô<br>Ê laelá lelê ô</strong><br><br>Nem sempre bom exemplo vem de cima<br>Também pode vir de outro lugar<br><br><strong>Ê laelá lelê ô<br>Ê laelá lelê ô</strong></td>
+        <td>Ê laelá lelê ô<br>Ê laelá lelê ô<br><br><b>Ê laelá lelê ô<br>Ê laelá lelê ô</b><br><br>Se água no meio de deserto<br>É o que todos querem encontrar<br>Deixa o berimbau tocar na roda<br>Pra dentro do peito ecoar<br><br><b>Ê laelá lelê ô<br>Ê laelá lelê ô</b><br><br>Escravo perdido na floresta<br>Vira o caçador de capataz<br>Todo o capoeira que não treina<br>Com o tempo vai ficar pra trás<br><br><b>Ê laelá lelê ô<br>Ê laelá lelê ô</b><br><br>Estrela que brilha lá no céu<br>Pode hoje não mais existir<br>Capoeira sem dedicação<br>Seu caminho não vai construir<br><br><b>Ê laelá lelê ô<br>Ê laelá lelê ô</b><br><br>Se um barco é meu fundamento<br>Navegando nas ondas do mar<br>Vou em busca de conhecimento<br>Para em terra firme chegar<br><br><b>Ê laelá lelê ô<br>Ê laelá lelê ô</b><br><br>De que serve a ave mais veloz<br>Sem querer aprender a voar<br><br><b>Ê laelá lelê ô<br>Ê laelá lelê ô</b><br><br>É igual a capoeira de talento<br>Que não tem vontade de treinar<br><br><b>Ê laelá lelê ô<br>Ê laelá lelê ô</b><br><br>Nem sempre bom exemplo vem de cima<br>Também pode vir de outro lugar<br><br><b>Ê laelá lelê ô<br>Ê laelá lelê ô</b></td>
         <td>Ê laelá lelê ô<br>Ê laelá lelê ô<br><br>Ê laelá lelê ô<br>Ê laelá lelê ô<br><br>If water in the middle of desert<br>Is what everyone wants to find<br>Let the berimbau play in the roda<br>To echo into the chest<br><br>Ê laelá lelê ô<br>Ê laelá lelê ô<br><br>Slave lost in the forest<br>Become the hunter of the foreman<br>All capoeira who doesn't train<br>Over time will get left behind<br><br>Ê laelá lelê ô<br>Ê laelá lelê ô<br><br>Star that shines up in the sky<br>Today it may exist no longer<br>Capoeira without dedication<br>Won't be able to blaze their trail<br><br>Ê laelá lelê ô<br>Ê laelá lelê ô<br><br>If a boat is my foundation<br>Sailing the sea waves<br>I go in search of knowledge<br>To reach solid ground<br><br>Ê laelá lelê ô<br>Ê laelá lelê ô<br><br>What is the fastest bird for<br>If it doesn't want to learn to fly<br><br>Ê laelá lelê ô<br>Ê laelá lelê ô<br><br>Equal to a talented capoeira<br>Who has no desire to train<br><br>Ê laelá lelê ô<br>Ê laelá lelê ô<br><br>Good examples don't always come from above<br>They can also come from elsewhere<br><br>Ê laelá lelê ô<br>Ê laelá lelê ô</td>
     </tr>
 </table>
 <figcaption>
 Author: Perninha
 </figcaption>
+```
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+                <!-- Add this to your nav.njk -->
+                <div class="cart-indicator">
+                    <span id="cart-count" style="display: none">0</span>
+                </div>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    
+    
+</body>
+
+
+</html>

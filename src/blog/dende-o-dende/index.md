@@ -9,19 +9,60 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Dendê, ô dendê<br>Dendê, ô dendê<br>Dendê é de Angola<br>Angola é de dendê<br><br><strong>Dendê, ô dendê<br>Dendê, ô dendê<br>Dendê é de Angola<br>Angola é de dendê</strong><br><br>Mestre Pastinha<br><strong>Foi embora</strong><br><br>Mestre Waldemar<br><strong>Foi embora</strong><br><br>Mestre Bimba<br><strong>Foi embora</strong><br><br>João Pequeno<br><strong>Foi embora</strong><br><br>Cobrinha Verde<br><strong>Foi embora</strong></td>
-        <td>Dendê, ô dendê<br>Dendê, ô dendê<br>Dendê is from Angola<br>Angola is of dendê<br><br>Dendê, ô dendê<br>Dendê, ô dendê<br>Dendê is from Angola<br>Angola is of dendê<br><br>Mestre Pastinha<br>Went away<br><br>Mestre Waldemar<br>Went away<br><br>Mestre Bimba<br>Went away<br><br>João Pequeno<br>Went away<br><br>Green Cobrinha<br>Went away</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Dendê, ô dendê  
+Dendê, ô dendê  
+Dendê é de Angola  
+Angola é de dendê  
+  
+**Dendê, ô dendê  
+Dendê, ô dendê  
+Dendê é de Angola  
+Angola é de dendê**  
+  
+Mestre Pastinha  
+**Foi embora**  
+  
+Mestre Waldemar  
+**Foi embora**  
+  
+Mestre Bimba  
+**Foi embora**  
+  
+João Pequeno  
+**Foi embora**  
+  
+Cobrinha Verde  
+**Foi embora** | Dendê, ô dendê  
+Dendê, ô dendê  
+Dendê is from Angola  
+Angola is of dendê  
+  
+Dendê, ô dendê  
+Dendê, ô dendê  
+Dendê is from Angola  
+Angola is of dendê  
+  
+Mestre Pastinha  
+Went away  
+  
+Mestre Waldemar  
+Went away  
+  
+Mestre Bimba  
+Went away  
+  
+João Pequeno  
+Went away  
+  
+Green Cobrinha  
+Went away |
 
 <figcaption>
+
 Author: Unkown
+
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6WW9w8VHzMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

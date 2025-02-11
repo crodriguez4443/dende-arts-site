@@ -1,9 +1,9 @@
 ---
 title: "Anatomy of the Roda"
 date: "2018-01-21"
-categories: 
+categories:
   - "capoeira101"
-tags: 
+tags:
   - "anatomy-of-the-roda"
   - "capoeira"
   - "capoeira-bateria"
@@ -14,11 +14,34 @@ tags:
   - "play-capoeira"
 coverImage: "the-bateria-01-01-e1516557486529.png"
 layout: "blog-post-layout.njk"
+
+# Add new SEO Fields:
+description: "Explore the heart of Capoeira: unraveling the essential components and dynamic interactions within the Roda."
+author: "Chris Calado Rodriguez"
+keywords:
+  - "capoeira roda structure and roles"
+  - "understanding capoeira bateria instruments"
+  - "capoeira song meanings and interpretations"
+  - "capoeira game dynamics and strategies"
+  - "capoeira cultural significance in Brazil"
+  - "learning capoeira in New York City"
+  - "capoeira music and rhythm analysis"
+  - "the history and evolution of the capoeira roda"
+
+# Social Sharing:
+socialImage: "the-bateria-01-01-e1516557486529.png"
+
+# Content Details:
+headline: "Anatomy of the Capoeira Roda: A Deep Dive"
+excerpt: "Discover the intricate layers of the capoeira roda, from the bateria's rhythm to the players' movements and cultural significance."
+
+# Indexing:
+type: "blog-article"
 ---
 
 ## The Capoeira Roda!
 
-To the naked eye, a roda Just looks like a bunch of people crowding around in a circle the same way kids do when there's a fight. Everyone's trying to get in to watch and everyone's making a bunch of noise. It can feel like a crazy mess, and that is the topic of today. Breaking down the anatomy of the roda.
+To the naked eye, a roda Just looks like a bunch of people crowding around in a circle the same way kids do when there's a fight. Everyone's trying to get in to watch and everyone’s making a bunch of noise. It can feel like a crazy mess, and that is the topic of today. Breaking down the anatomy of the roda.
 
 I made this fun graphic of a Capoeira roda. You can see that the roda is made up of three parts. The actual circle made by the crowd of people/capoeiristas, the bateria, and the entrances on either side. Below I'll break down the roles of each part.
 

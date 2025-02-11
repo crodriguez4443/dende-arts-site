@@ -1,104 +1,107 @@
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>
-            <strong>Introdução opcional:<br>
-            </strong>Seu Capoeira Que Aconteceu<br>
-            Naquela roda em noite de lua<br>
-            Deu meia-lua, levou cabeçada<br>
-            Meu camarada pode acreditar<br>
-            Pois nessa roda foi uma beleza<br>
-            Na certeza que eu vim de la<br>
-            Daquela terra muito abençoada<br>
-            É da Bahia que eu vou falar<br>
-            <br>
-            Vou mandar lecô<br>
-            <br>
-            <strong>Cajuê</strong><br>
-            <br>
-            Vou mandar loiá<br>
-            <br>
-            <strong>Cajuê</strong><br>
-            <br>
-            Vou mandar leco cajuê<br>
-            Vou mandar loiá<br>
-            Vou mandar leco cajuê<br>
-            Vou mandar loiá<br>
-            <br>
-            <strong>Vou mandar leco cajuê<br>
-            Vou mandar loiá<br>
-            Vou mandar leco cajuê<br>
-            Vou mandar loiá</strong><br>
-            <br>
-            Vou mandar lecô<br>
-            <br>
-            <strong>Cajuê</strong><br>
-            <br>
-            Vou mandar loiá<br>
-            <br>
-            <strong>Cajuê</strong><br>
-            <br>
-            Vou mandar lecô<br>
-            <br>
-            <strong>Cajuê</strong><br>
-            <br>
-            Vou mandar loiá<br>
-            <br>
-            <strong>Cajuê</strong>
-        </td>
-        <td>
-            <strong>Optional introduction:</strong><br>
-            Capoeira Master, what happened<br>
-            In that roda on a moonlit night<br>
-            He gave a meia-lua, received a headbutt<br>
-            My friend, you can believe it<br>
-            Because in that roda, it was beautiful<br>
-            I'm certain because I came from there<br>
-            From that very blessed land<br>
-            It's Bahia that I'm going to talk about<br>
-            <br>
-            Vou send lecô<br>
-            <br>
-            Cashew<br>
-            <br>
-            I'll send loiá<br>
-            <br>
-            Cashew<br>
-            <br>
-            I'll send leco cajuê<br>
-            I'll send loiá<br>
-            I'll send leco cajuê<br>
-            I'll send loiá<br>
-            <br>
-            I'll send leco cajuê<br>
-            I'll send loiá<br>
-            I'll send leco cajuê<br>
-            I'll send loiá<br>
-            <br>
-            Vou send lecô<br>
-            <br>
-            Cashew<br>
-            <br>
-            I'll send loiá<br>
-            <br>
-            Cashew<br>
-            <br>
-            I'll send lecô<br>
-            <br>
-            Cashew<br>
-            <br>
-            I'll send loiá<br>
-            <br>
-            Cashew
-        </td>
-    </tr>
-</table>
+---
+title: "Cajuê (Vou mandar leco)"
+date: "2020-10-23"
+categories: 
+  - "capoeira-songbook"
+tags: 
+  - "beginner"
+layout: "blog-post-layout.njk"
+---
+
+| Portuguese |   
+  
+English |
+| --- | --- |
+| **Introdução opcional:  
+**Seu Capoeira Que Aconteceu  
+Naquela roda em noite de lua  
+Deu meia-lua, levou cabeçada  
+Meu camarada pode acreditar  
+Pois nessa roda foi uma beleza  
+Na certeza que eu vim de la  
+Daquela terra muito abençoada  
+É da Bahia que eu vou falar  
+  
+Vou mandar lecô  
+  
+**Cajuê**  
+  
+Vou mandar loiá  
+  
+**Cajuê**  
+  
+Vou mandar leco cajuê  
+Vou mandar loiá  
+Vou mandar leco cajuê  
+Vou mandar loiá  
+  
+**Vou mandar leco cajuê  
+Vou mandar loiá  
+Vou mandar leco cajuê  
+Vou mandar loiá**  
+  
+Vou mandar lecô  
+  
+**Cajuê**  
+  
+Vou mandar loiá  
+  
+**Cajuê**  
+  
+Vou mandar lecô  
+  
+**Cajuê**  
+  
+Vou mandar loiá  
+  
+**Cajuê** | **Optional introduction:**  
+Capoeira Master, what happened  
+In that roda on a moonlit night  
+He gave a meia-lua, received a headbutt  
+My friend, you can believe it  
+Because in that roda, it was beautiful  
+I'm certain because I came from there  
+From that very blessed land  
+It's Bahia that I'm going to talk about  
+  
+Vou send lecô  
+  
+Cashew  
+  
+I'll send loiá  
+  
+Cashew  
+  
+I'll send leco cajuê  
+I'll send loiá  
+I'll send leco cajuê  
+I'll send loiá  
+  
+I'll send leco cajuê  
+I'll send loiá  
+I'll send leco cajuê  
+I'll send loiá  
+  
+Vou send lecô  
+  
+Cashew  
+  
+I'll send loiá  
+  
+Cashew  
+  
+I'll send lecô  
+  
+Cashew  
+  
+I'll send loiá  
+  
+Cashew |
 
 <figcaption>
+
 Author: Unknown
+
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mv8Jr-BHGzg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -109,7 +112,7 @@ Optional Introduction
 
 ## Song Explanation:
 
-The introduction opens by addressing "Seu Capoeira," a term of respect for a master or esteemed practitioner. The song recounts a roda on a moonlit night, aluding to a mystical or magical scene. In this roda, a practitioner performs a "meia-lua" (half-moon kick) but receives a "cabeçada" (headbutt) in return. This line highlights the amazing moments that often in the roda and make people go "oooh" and "aaaah". Lastly, the singer expresses their pride in being part of the roda and their connection to Bahia, which they describe as a "very blessed land". This description underscores the deep heritage and spiritual connection practitioners feel to capoeira's origins.
+The introduction opens by addressing "Seu Capoeira," a term of respect for a master or esteemed practitioner. The song recounts a roda on a moonlit night, aluding to a mystical or magical scene. In this roda, a practitioner performs a "meia-lua" (half-moon kick) but receives a "cabeçada" (headbutt) in return. This line highlights the amazing moments that often in the roda and make people go "oooh" and "aaaah". Lastly, the singer expresses their pride in being part of the roda and their connection to Bahia, which they describe as a “very blessed land”. This description underscores the deep heritage and spiritual connection practitioners feel to capoeira’s origins.
 
 The refrains "Vou mandar lecô" and "Vou mandar loiá," literally means that I send "leco" and I send "loiá". It's not clear who these poeple are in the song, but they are sent to bring cashews. Why cachews?
 

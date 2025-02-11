@@ -6,22 +6,15 @@ categories:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Nego nagô, quando morre, vai na tumba de banguê.<br>
-Os parentes vão dizendo, urubu tem que comer.<br>
-Aqui babá, a cangerê, nego nagô tem catinga de Sariguê.<br>
-<strong>Aqui babá, a cangerê, nego nagô tem catinga de Sariguê</strong></td>
-        <td>When Nego nagô dies, go to the tomb of banguê (stretcher).<br>
-The relatives are saying, vulture[s] needs to eat.<br>
-Here nanny, the cangerê, nego nagô, ballad of the skunk<br>
-Here nanny, the cangerê, nego nagô, ballad of the skunk</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Nego nagô, quando morre, vai na tumba de banguê.  
+Os parentes vão dizendo, urubu tem que comer.  
+Aqui babá, a cangerê, nego nagô tem catinga de Sariguê.  
+**Aqui babá, a cangerê, nego nagô tem catinga de Sariguê** | When Nego nagô dies, go to the tomb of banguê (stretcher).  
+The relatives are saying, vulture\[s\] needs to eat.  
+Here nanny, the cangerê, nego nagô, ballad of the skunk  
+Here nanny, the cangerê, nego nagô, ballad of the skunk |
 
 <figcaption>
 

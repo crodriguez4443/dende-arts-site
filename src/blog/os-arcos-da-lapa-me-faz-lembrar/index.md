@@ -9,49 +9,44 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Os arcos da Lapa me faz lembrar<br>
-<strong>Os arcos da Lapa me faz lembrar</strong><br>
-<br>
-Me faz lembrar, me faz lembrar<br>
-<strong>Os arcos da Lapa me faz lembrar</strong><br>
-<br>
-Me faz lembrar, me faz lembrar<br>
-<strong>Os arcos da Lapa me faz lembrar</strong><br>
-<br>
-Capoeira que é bamba<br>
-<strong>Os arcos da Lapa me faz lembrar</strong><br>
-<br>
-Mestre Leopodinha me faz lembrar<br>
-<strong>Os arcos da Lapa me faz lembrar</strong><br>
-<br>
-É da Lapa, é da Lapa<br>
-<strong>É da Lapa, é da Lapa</strong></td>
-        <td>The arches of Lapa remind me<br>
-The arches of Lapa remind me<br>
-<br>
-They remind me, they remind me<br>
-The arches of Lapa remind me<br>
-<br>
-They remind me, they remind me<br>
-The arches of Lapa remind me<br>
-<br>
-Capoeira who is bamba<br>
-The arches of Lapa remind me<br>
-<br>
-Mestre Leopodinha reminds me<br>
-The arches of Lapa remind me<br>
-<br>
-It's from Lapa, it's from Lapa<br>
-It's from Lapa, it's from Lapa</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Os arcos da Lapa me faz lembrar  
+**Os arcos da Lapa me faz lembrar**  
+  
+Me faz lembrar, me faz lembrar  
+**Os arcos da Lapa me faz lembrar**  
+  
+Me faz lembrar, me faz lembrar  
+**Os arcos da Lapa me faz lembrar**  
+  
+Capoeira que é bamba  
+**Os arcos da Lapa me faz lembrar**  
+  
+Mestre Leopodinha me faz lembrar  
+**Os arcos da Lapa me faz lembrar**  
+  
+É da Lapa, é da Lapa  
+**É da Lapa, é da Lapa** | The arches of Lapa remind me  
+The arches of Lapa remind me  
+  
+They remind me, they remind me  
+The arches of Lapa remind me  
+  
+They remind me, they remind me  
+The arches of Lapa remind me  
+  
+Capoeira who is bamba  
+The arches of Lapa remind me  
+  
+Mestre Leopodinha reminds me  
+The arches of Lapa remind me  
+  
+It's from Lapa, it's from Lapa  
+It's from Lapa, it's from Lapa |
 
 <figcaption>
+
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
+
 </figcaption>

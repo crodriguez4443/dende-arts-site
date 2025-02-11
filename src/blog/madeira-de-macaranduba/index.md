@@ -8,17 +8,32 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Madeira de maçaranduba<br>Madeira de jacarandá<br><br><strong>Madeira de maçaranduba<br>Madeira de jacarandá</strong><br><br>Ô beriba é pau, é madeira<br><strong>Beriba é pra tocar</strong><br><br>Ô beriba é pau, é madeira<br><strong>Beriba é pra tocar</strong></td>
-        <td>Maçaranduba wood<br>Jacaranda wood<br><br>Maçaranduba wood<br>Jacaranda wood<br><br>Ô beriba is a stick, it is wood<br>Beriba is for playing<br><br>Ô beriba is a stick, it is wood<br>Beriba is for playing</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Madeira de maçaranduba  
+Madeira de jacarandá  
+  
+**Madeira de maçaranduba  
+Madeira de jacarandá**  
+  
+Ô beriba é pau, é madeira  
+**Beriba é pra tocar**  
+  
+Ô beriba é pau, é madeira  
+**Beriba é pra tocar** | Maçaranduba wood  
+Jacaranda wood  
+  
+Maçaranduba wood  
+Jacaranda wood  
+  
+Ô beriba is a stick, it is wood  
+Beriba is for playing  
+  
+Ô beriba is a stick, it is wood  
+Beriba is for playing |
 
 <figcaption>
+
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
+
 </figcaption>

@@ -9,43 +9,62 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Oi nega o que vende aí<br><br>
-        Que vende aí, o que vende aí<br><br>
-        <strong>Oi nega o que vende aí</strong><br><br>
-        Vende arroz e camarão<br><br>
-        <strong>Oi nega o que vende aí</strong><br><br>
-        Vende arroz do maranhão<br><br>
-        <strong>Oi nega o que vende aí</strong><br><br>
-        Agora vou perguntar<br><br>
-        <strong>Oi nega o que vende aí</strong><br><br>
-        Onde mora o Waldemar<br><br>
-        <strong>Oi nega o que vende aí</strong><br><br>
-        Você ouviu ele cantar<br><br>
-        <strong>Oi nega o que vende aí</strong></td>
-        <td>Hey black woman what do you sell there<br><br>
-        What do sells there, what do sells there<br><br>
-        Hey black woman what do you sell there<br><br>
-        Sells rice and shrimp<br><br>
-        Hey black woman what do you sell there<br><br>
-        Sells maranhão rice<br><br>
-        Hey black woman what do you sell there<br><br>
-        Now I will ask<br><br>
-        Hey black woman what do you sell there<br><br>
-        Where does Waldemar live<br><br>
-        Hey black woman what do you sell there<br><br>
-        You heard him sing<br><br>
-        Hey black woman what do you sell there</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Oi nega o que vende aí  
+  
+Que vende aí, o que vende aí  
+  
+**Oi nega o que vende aí**  
+  
+Vende arroz e camarão  
+  
+**Oi nega o que vende aí**  
+  
+Vende arroz do maranhão  
+  
+**Oi nega o que vende aí**  
+  
+Agora vou perguntar  
+  
+**Oi nega o que vende aí**  
+  
+Onde mora o Waldemar  
+  
+**Oi nega o que vende aí**  
+  
+Você ouviu ele cantar  
+  
+**Oi nega o que vende aí** | Hey black woman what do you sell there  
+  
+What do sells there, what do sells there  
+  
+Hey black woman what do you sell there  
+  
+Sells rice and shrimp  
+  
+Hey black woman what do you sell there  
+  
+Sells maranhão rice  
+  
+Hey black woman what do you sell there  
+  
+Now I will ask  
+  
+Hey black woman what do you sell there  
+  
+Where does Waldemar live  
+  
+Hey black woman what do you sell there  
+  
+You heard him sing  
+  
+Hey black woman what do you sell there |
 
 <figcaption>
+
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
+
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LyUojavRI-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

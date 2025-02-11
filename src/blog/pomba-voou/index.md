@@ -8,19 +8,48 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Pomba voou, pomba voou<br>Pomba voou, gavião pegou<br>Pomba voou, pomba voou<br><br>Vou me embora desta terra<br><strong>Pomba voou, pomba voou</strong><br><br>Como eu já disse que vou<br><strong>Pomba voou, pomba voou</strong><br><br>Que eu não sou querido aqui<br><strong>Pomba voou, pomba voou</strong><br><br>Na minha terra eu sou<br><strong>Pomba voou, pomba voou</strong><br><br>Pomba voou, gavião pegou<br><strong>Pomba voou, pomba voou</strong></td>
-        <td>Dove flew, dove flew<br>Dove flew, hawk caught<br>Dove flew, dove flew<br><br>I'm leaving this land<br>Dove flew, dove flew<br><br>As I already said I would<br>Dove flew, dove flew<br><br>'Cause I'm not wanted here<br>Dove flew, dove flew<br><br>In my land I am<br>Dove flew, dove flew<br><br>Dove flew, hawk caught<br>Dove flew, dove flew</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Pomba voou, pomba voou  
+Pomba voou, gavião pegou  
+Pomba voou, pomba voou  
+  
+Vou me embora desta terra  
+**Pomba voou, pomba voou**  
+  
+Como eu já disse que vou  
+**Pomba voou, pomba voou**  
+  
+Que eu não sou querido aqui  
+**Pomba voou, pomba voou**  
+  
+Na minha terra eu sou  
+**Pomba voou, pomba voou**  
+  
+Pomba voou, gavião pegou  
+**Pomba voou, pomba voou** | Dove flew, dove flew  
+Dove flew, hawk caught  
+Dove flew, dove flew  
+  
+I'm leaving this land  
+Dove flew, dove flew  
+  
+As I already said I would  
+Dove flew, dove flew  
+  
+'Cause I'm not wanted here  
+Dove flew, dove flew  
+  
+In my land I am  
+Dove flew, dove flew  
+  
+Dove flew, hawk caught  
+Dove flew, dove flew |
 
 <figcaption>
+
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
+
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/V1FxTYTHkSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

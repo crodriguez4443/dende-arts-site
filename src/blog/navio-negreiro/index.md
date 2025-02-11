@@ -9,19 +9,52 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Navio negreiro<br>Tumba flutuante<br>Terra mãe distante<br>Dor e desespero<br><br><strong>Navio negreiro</strong><br><br>Segue a nau errante<br>Singrando saudades<br>África distante<br>Ouça meus cantares<br><br><strong>Navio negreiro</strong><br><br>Mãe que perde o filho<br>Rei perde rainha<br>Povo perde o brio<br>Enquanto definha<br><br><strong>Navio negreiro</strong></td>
-        <td>Slaveship<br>Floating tomb<br>Distant motherland<br>Pain and despair<br><br>Slaveship<br><br>Follows the wandering ship<br>Sailing homesickness<br>Distant Africa<br>Listen to my songs<br><br>Slaveship<br><br>Mother who loses her son<br>King loses his queen<br>People lose their panache<br>While wasting away<br><br>Slaveship</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Navio negreiro  
+Tumba flutuante  
+Terra mãe distante  
+Dor e desespero  
+  
+**Navio negreiro**  
+  
+Segue a nau errante  
+Singrando saudades  
+África distante  
+Ouça meus cantares  
+  
+**Navio negreiro**  
+  
+Mãe que perde o filho  
+Rei perde rainha  
+Povo perde o brio  
+Enquanto definha  
+  
+**Navio negreiro** | Slaveship  
+Floating tomb  
+Distant motherland  
+Pain and despair  
+  
+Slaveship  
+  
+Follows the wandering ship  
+Sailing homesickness  
+Distant Africa  
+Listen to my songs  
+  
+Slaveship  
+  
+Mother who loses her son  
+King loses his queen  
+People lose their panache  
+While wasting away  
+  
+Slaveship |
 
 <figcaption>
+
 Author: Mestre Toni Vargas
+
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2gnXVQQTvCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

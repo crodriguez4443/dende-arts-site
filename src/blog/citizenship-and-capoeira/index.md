@@ -1,3 +1,17 @@
+---
+title: "Citizenship and Capoeira"
+date: "2018-04-22"
+categories: 
+  - "capoeira101"
+tags: 
+  - "american-dream"
+  - "capoeira"
+  - "citizenship"
+  - "immigrant"
+  - "party"
+layout: "blog-post-layout.njk"
+---
+
 ## TRY, LEARN, REPEAT
 
 A good friend of mine in Capoeira got his citizenship this past week. I'm going to his batizado (belt ceremony) now to congratulate him and celebrate the event.

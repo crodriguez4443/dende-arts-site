@@ -1,1 +1,765 @@
-<p>The document does not contain song lyrics that require formatting into a table. The text appears to be an informative blog post about learning Portuguese for Capoeira, with a brief song excerpt near the end that is not formatted for translation. I will leave the document as is.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Portuguese Terms and Phrases with Translations for Capoeira</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songbook</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">100 Portuguese Terms and Phrases with Translations for Capoeira</a>
+            </div>
+            <h1>100 Portuguese Terms and Phrases with Translations for Capoeira</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2020-10-19">
+                    October 18, 2020
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <h2><h2 id="common-phrases">Common phrases</h2></h2>
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Bom dia</td>
+        <td>Good morning</td>
+    </tr>
+    <tr>
+        <td>Boa tarde</td>
+        <td>Good afternoon</td>
+    </tr>
+    <tr>
+        <td>Boa noite</td>
+        <td>Good night</td>
+    </tr>
+    <tr>
+        <td>Como vai?</td>
+        <td>how's it going?</td>
+    </tr>
+    <tr>
+        <td>e aí?</td>
+        <td>Whats up?</td>
+    </tr>
+    <tr>
+        <td>Tchau</td>
+        <td>Bye</td>
+    </tr>
+    <tr>
+        <td>Oi</td>
+        <td>Hi</td>
+    </tr>
+    <tr>
+        <td>Estou bem, obrigado</td>
+        <td>I'm good thanks</td>
+    </tr>
+    <tr>
+        <td>Tenho uma pergunta</td>
+        <td>I have a question</td>
+    </tr>
+    <tr>
+        <td>Mais ou menos</td>
+        <td>More or less</td>
+    </tr>
+    <tr>
+        <td>Pode fazer mais uma vez?</td>
+        <td>Can you do it one more time?</td>
+    </tr>
+    <tr>
+        <td>Pode fazer devagar?</td>
+        <td>Can you do it slower?</td>
+    </tr>
+    <tr>
+        <td>Pode explicar de novo?</td>
+        <td>Can you explain it again?</td>
+    </tr>
+    <tr>
+        <td>Ó</td>
+        <td>Look (you'll hear this more than you would think)</td>
+    </tr>
+    <tr>
+        <td>Bate palma</td>
+        <td>Clap</td>
+    </tr>
+    <tr>
+        <td>Compra o jogo</td>
+        <td>Buy the game</td>
+    </tr>
+</table>
+<h2><h2 id="parts-of-the-body">Parts of the body</h2></h2>
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Mão</td>
+        <td>hand</td>
+    </tr>
+    <tr>
+        <td>braço</td>
+        <td>arm</td>
+    </tr>
+    <tr>
+        <td>Cotovelo</td>
+        <td>elbow</td>
+    </tr>
+    <tr>
+        <td>hombro</td>
+        <td>shoulder</td>
+    </tr>
+    <tr>
+        <td>pescoço</td>
+        <td>neck</td>
+    </tr>
+    <tr>
+        <td>peito</td>
+        <td>chest</td>
+    </tr>
+    <tr>
+        <td>cabeça</td>
+        <td>head</td>
+    </tr>
+    <tr>
+        <td>olhos</td>
+        <td>eyes</td>
+    </tr>
+    <tr>
+        <td>barriga</td>
+        <td>stomach</td>
+    </tr>
+    <tr>
+        <td>perna</td>
+        <td>leg</td>
+    </tr>
+    <tr>
+        <td>bunda</td>
+        <td>butt (slang version. you'll hear it)</td>
+    </tr>
+    <tr>
+        <td>pé</td>
+        <td>foot</td>
+    </tr>
+    <tr>
+        <td>joelho</td>
+        <td>knee</td>
+    </tr>
+    <tr>
+        <td>calcanhar</td>
+        <td>heel</td>
+    </tr>
+    <tr>
+        <td>Quadril</td>
+        <td>Hips</td>
+    </tr>
+    <tr>
+        <td>Tronco</td>
+        <td>Trunk or Torso</td>
+    </tr>
+</table>
+<h2><h2 id="numbers">Numbers</h2></h2>
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Um</td>
+        <td>One</td>
+    </tr>
+    <tr>
+        <td>Dois</td>
+        <td>Two</td>
+    </tr>
+    <tr>
+        <td>Três</td>
+        <td>Three</td>
+    </tr>
+    <tr>
+        <td>Quatro</td>
+        <td>Four</td>
+    </tr>
+    <tr>
+        <td>Cinco</td>
+        <td>Five</td>
+    </tr>
+    <tr>
+        <td>Seis</td>
+        <td>Six</td>
+    </tr>
+    <tr>
+        <td>Sete</td>
+        <td>Seven</td>
+    </tr>
+    <tr>
+        <td>Oito</td>
+        <td>Eight</td>
+    </tr>
+    <tr>
+        <td>Nove</td>
+        <td>Nine</td>
+    </tr>
+    <tr>
+        <td>Dez</td>
+        <td>Ten</td>
+    </tr>
+    <tr>
+        <td>Onze</td>
+        <td>Eleven</td>
+    </tr>
+    <tr>
+        <td>Doze</td>
+        <td>Twelve</td>
+    </tr>
+    <tr>
+        <td>Treze</td>
+        <td>Thirteen</td>
+    </tr>
+    <tr>
+        <td>Catorze</td>
+        <td>Fourteen</td>
+    </tr>
+    <tr>
+        <td>Quinze</td>
+        <td>Fifteen</td>
+    </tr>
+    <tr>
+        <td>Dezesseis</td>
+        <td>Sixteen</td>
+    </tr>
+    <tr>
+        <td>dezessete</td>
+        <td>Seventeen</td>
+    </tr>
+    <tr>
+        <td>Dezoito</td>
+        <td>Eighteen</td>
+    </tr>
+    <tr>
+        <td>Deznove</td>
+        <td>Nineteen</td>
+    </tr>
+    <tr>
+        <td>Vinte</td>
+        <td>Twenty</td>
+    </tr>
+    <tr>
+        <td>Trinta</td>
+        <td>Thirty</td>
+    </tr>
+    <tr>
+        <td>Cem</td>
+        <td>One-Hundred</td>
+    </tr>
+</table>
+<h2><h2 id="moving-around">Moving around</h2></h2>
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Pisa</td>
+        <td>Step</td>
+    </tr>
+    <tr>
+        <td>Lateral</td>
+        <td>Lateral</td>
+    </tr>
+    <tr>
+        <td>Frontal</td>
+        <td>Frontal</td>
+    </tr>
+    <tr>
+        <td>Para trás</td>
+        <td>Backwards</td>
+    </tr>
+    <tr>
+        <td>Esquerda</td>
+        <td>Left</td>
+    </tr>
+    <tr>
+        <td>Direita</td>
+        <td>Right</td>
+    </tr>
+    <tr>
+        <td>Reto</td>
+        <td>Straight</td>
+    </tr>
+    <tr>
+        <td>Pula</td>
+        <td>Jump</td>
+    </tr>
+    <tr>
+        <td>Pra/em Cima</td>
+        <td>To go over / Over</td>
+    </tr>
+    <tr>
+        <td>Pra/em Baixo</td>
+        <td>To go under / Under</td>
+    </tr>
+    <tr>
+        <td>Lá</td>
+        <td>Over there</td>
+    </tr>
+    <tr>
+        <td>Aqui</td>
+        <td>here</td>
+    </tr>
+</table>
+<h2><h2 id="training">Training</h2></h2>
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Dupla</td>
+        <td>Pair</td>
+    </tr>
+    <tr>
+        <td>Acompanha</td>
+        <td>follow or follow along</td>
+    </tr>
+    <tr>
+        <td>Oposto</td>
+        <td>Opposite</td>
+    </tr>
+    <tr>
+        <td>Golpe</td>
+        <td>Hit or strike</td>
+    </tr>
+    <tr>
+        <td>Rápido</td>
+        <td>Fast</td>
+    </tr>
+    <tr>
+        <td>Devagar</td>
+        <td>Slow</td>
+    </tr>
+    <tr>
+        <td>Atenção</td>
+        <td>attention</td>
+    </tr>
+    <tr>
+        <td>Estica parna</td>
+        <td>straighten (your) leg</td>
+    </tr>
+    <tr>
+        <td>Desce</td>
+        <td>Go down</td>
+    </tr>
+    <tr>
+        <td>Sobe</td>
+        <td>Go up</td>
+    </tr>
+    <tr>
+        <td>Prática</td>
+        <td>Practice</td>
+    </tr>
+    <tr>
+        <td>Treino</td>
+        <td><h2 id="training">Training</h2></td>
+    </tr>
+    <tr>
+        <td>Roda</td>
+        <td>wheel (the capoeira circle)</td>
+    </tr>
+    <tr>
+        <td>Esquiva</td>
+        <td>Dodge</td>
+    </tr>
+    <tr>
+        <td>Mestre</td>
+        <td>Master (of Capoeira)</td>
+    </tr>
+    <tr>
+        <td>Jogo</td>
+        <td>Game</td>
+    </tr>
+</table>
+<h2><h2 id="slang">Slang</h2></h2>
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Nossa</td>
+        <td>Oh my God</td>
+    </tr>
+    <tr>
+        <td>Nú</td>
+        <td>Oh my God (another version)</td>
+    </tr>
+    <tr>
+        <td>Ave Maria</td>
+        <td>Oh my God (but to Mary)</td>
+    </tr>
+    <tr>
+        <td>Pera aí</td>
+        <td>Wait there</td>
+    </tr>
+    <tr>
+        <td>Pernada</td>
+        <td>Very hard hit with the leg</td>
+    </tr>
+    <tr>
+        <td>Soco</td>
+        <td>Punch</td>
+    </tr>
+    <tr>
+        <td>Besteira</td>
+        <td>Bull crap</td>
+    </tr>
+    <tr>
+        <td>Ta certo</td>
+        <td>It's right/true</td>
+    </tr>
+    <tr>
+        <td>Show</td>
+        <td>cool</td>
+    </tr>
+    <tr>
+        <td>Beleza</td>
+        <td>Beautiful (also means cool)</td>
+    </tr>
+    <tr>
+        <td>Cara</td>
+        <td>dude or guy</td>
+    </tr>
+    <tr>
+        <td>Gente</td>
+        <td>Guys (literally means people)</td>
+    </tr>
+    <tr>
+        <td>Valeu</td>
+        <td>verbal equivalent of giving someone a thumbs up</td>
+    </tr>
+    <tr>
+        <td>Saroba</td>
+        <td>clumsy</td>
+    </tr>
+    <tr>
+        <td>Legal</td>
+        <td>Awesome / cool</td>
+    </tr>
+    <tr>
+        <td>Fica a vontade</td>
+        <td>Make yourself at home or similar to "no pressure"</td>
+    </tr>
+    <tr>
+        <td>Sei lá</td>
+        <td>No clue or I don't know</td>
+    </tr>
+</table>
+<h2><h2 id="example-song">Example Song</h2></h2>
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Olha um peixe pulou da mare, <br> Olhe um peixe pulo da mare<br>A mare subiu<br>Sobe mare (choros)<br>A mare desceu<br>Desce mare (choros)</td>
+        <td>Look at the fish jump out of the sea, <br> Look at the fish jump out of the sea.<br> The sea rose.<br> Sea Rises.<br> The sea descends.<br> Sea descends</td>
+    </tr>
+</table>
+```
+<p>This HTML code will:</p>
+<ol>
+<li><strong>Include CSS:</strong>  The <code>&lt;style&gt;</code> block at the beginning defines CSS rules to style the table.  This makes it look cleaner and more readable.</li>
+<li><strong>Create Tables:</strong>  Each section (Common Phrases, Parts of the Body, etc.) is now in its own <code>&lt;table&gt;</code> element.</li>
+<li><strong>Use <code>&lt;thead&gt;</code>:</strong>  Each table has a <code>&lt;thead&gt;</code> section containing the <code>&lt;tr&gt;</code> with the <code>&lt;th&gt;</code> (table header) elements &quot;Portuguese&quot; and &quot;English&quot;.  This is semantically correct and helps with accessibility.</li>
+<li><strong>Use <code>&lt;tbody&gt;</code>:</strong> The table data is enclosed in a <code>&lt;tbody&gt;</code> tag.</li>
+<li><strong>Structure Rows and Cells:</strong> Each phrase and its translation are in a <code>&lt;tr&gt;</code> (table row) with two <code>&lt;td&gt;</code> (table data) cells.</li>
+<li><strong>Line Breaks:</strong> The <code>&lt;br&gt;</code> tag is used within the <code>&lt;td&gt;</code> cells to create line breaks where needed, especially in the song example.</li>
+<li><strong>CSS Styling:</strong> The CSS provides basic styling for borders, padding, background colors, and text alignment to make the tables more visually appealing.</li>
+<li><strong>Added H2 Headers:</strong> Added H2 headers to each table to make it easier to read.</li>
+</ol>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-2">
+                                <a href="#common-phrases">Common phrases</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#parts-of-the-body">Parts of the body</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#numbers">Numbers</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#moving-around">Moving around</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#training">Training</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#slang">Slang</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#example-song">Example Song</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+                <!-- Add this to your nav.njk -->
+                <div class="cart-indicator">
+                    <span id="cart-count" style="display: none">0</span>
+                </div>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    
+    
+</body>
+
+
+</html>

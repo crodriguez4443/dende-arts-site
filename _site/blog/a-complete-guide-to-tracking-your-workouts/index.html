@@ -1,1 +1,525 @@
-<p>The document does not contain song lyrics, so I will not modify the markdown. The text remains exactly as it was originally presented.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The easiest way to track your workouts (notebooks, Gcal, and Notion)</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songbook</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">The easiest way to track your workouts (notebooks, Gcal, and Notion)</a>
+            </div>
+            <h1>The easiest way to track your workouts (notebooks, Gcal, and Notion)</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2021-04-20">
+                    April 19, 2021
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <p>Tracking you fitness will 100% make you more fit. Taking the guess work out and seeing your progress written down is a great booster to your motivation. It also gives an objective account of what you are doing and how much you're doing it - which will help you make gains.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/neo-from-matrix.gif"><img src="images/neo-from-matrix.gif" alt=""></a></p>
+<p>There are four steps to tracking your fitness routine - either new or existing.</p>
+<ul>
+<li>Write out our workouts in advance</li>
+<li>Place our workouts in a calendar of some kind to keep us accountable</li>
+<li>Write down basic metrics about the workout</li>
+<li>Analyze the information you recorded (nerd mode)</li>
+</ul>
+<h2><h2 id="why-track-our-fitness-routine">Why track our fitness routine?</h2></h2>
+<p>Myself and many others have lied to themselves about how much they worked out, what they did, and how intense it was. To a degree, we make up stories in our head about what we think happened, but when we put records of our workouts there is no room for error or interpretation.</p>
+<h3><h3 id="objectivity">Objectivity</h3></h3>
+<p>When you track your workouts you don't have to rely on your flawed memory to inform you about your workout. Basic questions like how much weight did you lift, how far did you run, and how intense was the workout can all be written down post-workout. If you ever have a question about what you did, then you can refer back to a previous workout and check to make sure.</p>
+<p>This avoids doing too much or too little intensity.</p>
+<h3><h3 id="motivation">Motivation</h3></h3>
+<p>Once you have a routine, the next hurdle is executing. Execution is the hardest step in any project you will have. The reason is because it takes significant effort. You know what I mean. Getting changed, fighting the urge to watch Netflix, getting in your car, driving for 20 minutes, deciding what to do, etc.</p>
+<p>The list of small tasks that come before workout out is exhausting. Tracking does two things that stimulates motivation.</p>
+<ol>
+<li>First, it tells you when you should be doing your workouts.</li>
+<li>Second, it tells you what you should be doing.</li>
+</ol>
+<p>This removes one of the biggest excuses people have when working out. They &quot;don't know what to do&quot;. But if you have it all ready to go, it's like having a personal trainer there with you laying out the plan as soon as you get to the gym.</p>
+<h3><h3 id="measuring-fitness-is-hard">Measuring fitness is hard</h3></h3>
+<p>Did your running routine help you lose weight or tone your muscles? How do you know? Do you remember what you looked like 3 months ago as compared to now? OF COURSE NOT!</p>
+<p>There are plenty of ways to measure your progress, but if you do nothing, then you'll quickly lose motivation and stop workout out. One of the main reasons we stay consistent is because we see the fruits of our labor, no matter how small.</p>
+<p>We need those small wins and measuring our progress is a massive benefit to tracking our workouts.</p>
+<p>Now, here is how we go about tracking our workouts</p>
+<h2><h2 id="writing-down-our-workouts">Writing down our workouts</h2></h2>
+<p>Before you go to the gym, you should have spent some time going over what you want to do. But don't just plan it the moment before going to the gym. The way to make this easiest on you is to write down 2 or 3 different workout routines that you know you can do given whenever you have free time.</p>
+<p>Maybe you don't have much time, so you schedule a 20 minute HIIT workout. Or maybe you don't have equipment, so you plan a workout with only bodyweight exercises, or maybe you want to run, so you plan out your run and your route. Whatever it is, make sure you include the following information</p>
+<h3><h3 id="1-your-routine-should-include-the-following">1. <h3 id="your-routine-should-include-the-following">Your routine should include the following</h3></h3></h3>
+<ul>
+<li><strong>Name</strong> of the exercise</li>
+<li><strong>Sets</strong> you will do</li>
+<li><strong>Repetitions</strong> (this can be for reps or time. Think the number of bicep curls or time in a handstand)</li>
+<li><strong>Duration</strong> (How long the workout took)</li>
+</ul>
+<h3><h3 id="1-5-optional-to-include-in-your-routine">1.5 <h3 id="optional-to-include-in-your-routine">Optional to include in your routine</h3></h3></h3>
+<ul>
+<li><strong>Weight</strong> (if you're doing weighted exercises)</li>
+<li><strong>Rest</strong> period (after exercise)</li>
+<li><strong>Time under tension</strong>(time doing each repetition)</li>
+<li><strong>Intensity</strong> (how intense was the workout. Or even the exercise)</li>
+</ul>
+<p>This will differ if you're doing something more cardio related. The best thing to do for running is to set a pace that you think you can reasonably do for however many miles you are running. Setting up a distance</p>
+<p>More on how to set this up in a later section!</p>
+<h3><h3 id="2-forget-the-perfect-workout-plan">2. Forget the perfect workout plan</h3></h3>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/perfect-plan-1-scaled.jpeg"><img src="images/perfect-plan-1-1024x683.jpeg" alt=""></a></p>
+<p>There is no perfect plan so don't sweat it.</p>
+<p>Whenever I create a new routine, I first look to see if I already have a similar routine that I can base it around. This cuts down a lot on the time needed to make a new routine from 20 minutes, to 5 minutes. If not, then I make a few guesses (being very conservative) without little expectation of doing everything exactly as written.</p>
+<p>If you're familiar with budgeting (my mom was a financial analyst) then you'll understand that the routine is not something you are held to. It is a standard that you try to reach or exceed depending on how you feel. Understanding how &quot;well&quot; your workout went is something you worry about in the analysis phase.</p>
+<p>If you put down 4 sets of bench press at 150% bodyweight for 10 reps, you could be forgiven if you were only able to do 2 sets at 100% bodyweight for 8 reps. The initial plan is there to orientate you, it's not your boss.</p>
+<h3><h3 id="3-make-iterations-on-your-workout">3. Make iterations on your workout</h3></h3>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/iterations-1.jpeg"><img src="images/iterations-1.jpeg" alt=""></a></p>
+<p>Once you do your workout routine, it's time to edit it. Was the workout too hard or too easy? You are the boss here. Change the workout as you see fit. Add or subtract exercises. Arrange the sets and reps according to what you think is reasonable for you. Go by your gut and don't worry about doing as much as possible. Getting into shape is about the long game. There is no 30 day shred.</p>
+<p>You might think this is a lot of work, but the idea is that you yourself are customizing a workout routine for yourself. The first couple are not going to be perfect, but over time, the routine will turn into your baby. The alternative is to work with a professional who will give you a routine. If this works for you, then do it, but make sure they're also iterating your workout based on your needs and goals.</p>
+<h2><h2 id="add-your-workout-to-a-calendar-like-google-calendar">Add your workout to a calendar like Google Calendar</h2></h2>
+<p>This is where the nerdy fun begins.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/calendar-week.png"><img src="images/calendar-week.png" alt=""></a></p>
+<p>Calendar apps are meant to give an overview of your plans for the day, week, month, and year. You can use this to your advantage and place on what days you will do your workouts. Similar to your routines, this is NOT SET IN STONE. Nor should it be. If you think that working out your legs 4 times a week is too much, then switch it to 2 or 3.</p>
+<h3><h3 id="calendars-give-you-structure-and-eliminate-analysis-paralysis">Calendars give you structure and eliminate analysis paralysis</h3></h3>
+<p>I used to get a little anxious thinking about what to workout. This analysis paralysis stopped me from working out all together many times. Google calendar is my way to track which days I'll be working out what and how. At the moment I'm trying to improve overall upper-body strength with gymnastic rings and am learning to do a pancake. I also do Capoeira and teach on Tuesdays, which is in red. Color coding your calendar into categories is extremely helpful to jog your memory when looking at your calendar.</p>
+<p>The grey is work. If you'll notice, I have rock climbing on Tuesday and the next day an upper body routine. This might work, but I just started rock climbing, so I'll be removing my Wednesday upper body routine and move it somewhere else. This is an example of iterating a workout. It doesn't need to be perfect, but you should try to follow through as much as possible.</p>
+<h3><h3 id="pro-tip-include-buffer-time-between-actions">Pro tip: Include buffer time between actions</h3></h3>
+<p>A mistake people make when planning their calendars (myself included) is that they don't leave enough buffer space between events. You'll notice that not all my event fall into neat 1 hour blocks. Some go for a little longer and that's usually so I have some transition time between actions.</p>
+<p>You're not a machine. Plan out your day, but be generous with yourself. Don't expect the the moon on day one, and don't jam your schedule because that will make you ineffective at the end of the day.</p>
+<h2><h2 id="writing-down-what-is-important">Writing down what is important</h2></h2>
+<p>As you might have noticed, this is only going to get nerdier form here on. You have the basics for tracking your workout, but if you want to go the extra mile, here it is.</p>
+<p>I already mentioned that you want to have the following...</p>
+<h3><h3 id="your-routine-should-include-the-following">Your routine should include the following</h3></h3>
+<ul>
+<li><strong>Name</strong> of the exercise</li>
+<li><strong>Sets</strong></li>
+<li><strong>Repetitions</strong> (this can be for reps or time. Think the number of bicep curls or time in a handstand)</li>
+<li><strong>Duration</strong> (How long the workout took)</li>
+</ul>
+<h3><h3 id="optional-to-include-in-your-routine">Optional to include in your routine</h3></h3>
+<ul>
+<li><strong>Weight</strong> (if you're doing weighted exercises)</li>
+<li><strong>Rest</strong> period (after exercise)</li>
+<li><strong>Time under tension</strong>(time doing each repetition)</li>
+<li><strong>Intensity</strong> (how intense was the workout. Or even the exercise)</li>
+</ul>
+<p>I'm sure you remember this list. Now, the next question is where do you put all this?</p>
+<h2><h2 id="stage-1-get-a-workout-journal">Stage 1: Get a workout journal</h2></h2>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/Notebook-workout.jpg"><img src="images/Notebook-workout-768x1024.jpg" alt=""></a></p>
+<p>The tried and true method. Many serious gym rats use a workout journal of some kind to log their adventure at the gym. Although there are higher-tech solutions further down, a simple notebook might be everything you need.</p>
+<p>One big advantage of a notebook is that by being a physical object, it's harder to ignore. The little book your brought with you to the gym will be staring right at you throughout the workout, so you might as well jot down a few notes in it while you wait for your next set at the bar. If you're running and won't be carrying a notebook, then consider keeping one right where you first walk into your home or apartment.</p>
+<p>Another reason to prefer notebooks is the flexibility. You can cross out routines, write something else on the spot and even doodle in them!</p>
+<p>A big disadvantage with journals is that you have to re-write your workout routine every time. Your workouts on Monday might different in the amount of weight, sets, or reps you do, so you'll have to write them all down in the notebook. Another disadvantage is that you don't be able to aggregate the information later on.</p>
+<h2><h2 id="note-taking-apps-work-too">Note taking apps work too</h2></h2>
+<p>An alternative that I used for a few months was a simple note taking app that came with my phone. I wrote my workout down as I did it. The next day I would copy and past the old workout into the next days sessions. This method was brutally simple and effective. If you're getting started, then try this one out.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/Note-taking-app-workout-1.png"><img src="images/Note-taking-app-workout-1-473x1024.png" alt=""></a></p>
+<h2><h2 id="stage-2-use-google-calendar">Stage 2: Use google calendar</h2></h2>
+<p>If you're already using google calendar, then feel free to use it to write down your workouts. There is a description section in google calendar that you can use for this. It's not the ideal solution, but if you don't want to use a notebook, and prefer not to use my next (and favorite) solution, then this could work for you.</p>
+<p>A major advantage is that if you set your workouts on a repeating schedule - they will appear on the same days every week. A down side is that your calendar app wasn't really made for this kind of work. That being said, I used to use a super simple note taking app when I got started, so this could be a great solution for some people.</p>
+<h2><h2 id="stage-3-use-a-note-taking-app-like-notion">Stage 3: Use a note taking app like Notion</h2></h2>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/Notion-day-workout-1.png"><img src="images/Notion-day-workout-1-1024x832.png" alt=""></a></p>
+<p>Notion is a database. It's a little complicated to get started, but I personally manage a lot of my projects and activities on Notion. I started putting down my workouts on notion when I realized I could create templates and copy and paste them into the new workout days.</p>
+<p>This meant all I have to do is press a few buttons and my workout was in a spreadsheet that contained all the information I needed in it. In case you're not familiar with Notion, here is a great post about getting started.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/notion-workout-1.png"><img src="images/notion-workout-1-1024x584.png" alt=""></a></p>
+<p>Here is another <a href="https://www.notion.so/Calendars-c00c23c26e31471496b540583e1b8c47">blog</a> you can use to create a calendar like this one.</p>
+<ul>
+<li>First I create a page with a calendar</li>
+<li>On the day of my workout I create an entry with a my workout information</li>
+<li>I then copy this information into a template</li>
+</ul>
+<p>Despite the higher barrier to entry, I like this option because it's on your phone and you can quickly make templates and edits as needed. The other advantage is that unlike google maps, the tables make your workouts easier to look at and organize.</p>
+<p>This is the definitely the more advanced option, so if you're already serious about your fitness, then this might be the option for you. If you're newer, then there's nothing wrong with using a notebook or any other note taking app you might have on your phone.</p>
+<h2><h2 id="analyze-your-progress">Analyze your progress</h2></h2>
+<p>The end of the month is a great time to review what you've done, and plan out the upcoming month.</p>
+<p>After 1 months, 3 months, and 6 months, you'll want to know that your efforts had fruit. I like to do monthly reviews to see how consistent I've been with my workouts. It's very easy to trick yourself into thinking that you've been working out much more than you actually have been. And on the other end of the spectrum, you might be working out way more than you think. Having that objective tool can give you great insight.</p>
+<p>For example, you might find out that you haven't worked out your legs in a month! With this information you can change your schedule around or change how you structure your workouts.</p>
+<p>If you weight train, you can monitor the amount of weight you've been lifting and see if you're ready for an increase in weight. You can also get a rough estimate based on your gains where you will be in 3 months, 6 months, etc.</p>
+<h3><h3 id="test-yourself-every-4-6-weeks">Test yourself every 4-6 weeks</h3></h3>
+<p>Why 4-6 weeks? Because this is the amount of time it takes our body to start creating new muscles. Many of the improvements we see in the beginning (beginners gains) comes from improved neurological function not added muscle. You run your machinery more efficiently. Once 4 weeks rolls around you should start to see changes.</p>
+<p>You can use the end of the month to do a basic assessment of your abilities. If you're running, test your 1 mile time. For bodyweight exercises, how many seconds can you hold a handstand? These are just some examples. You'll have to figure out how to measure your progress, but seeing the difference from one month to the other is a great feeling.</p>
+<h3><h3 id="tape-measure-to-measure-hypertrophy">Tape measure to measure hypertrophy</h3></h3>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/tape-measure.jpeg"><img src="images/tape-measure.jpeg" alt=""></a></p>
+<p>If you're interested in hypertrophy, then bust out the measuring tape and measure the circumference of your arms, legs, etc. Whatever you're trying to get bigger (or smaller). Measure yourself at the beginning and at the end of the month.</p>
+<p>This is something you can log in your note taking apparatus, separate from your workouts.</p>
+<h3><h3 id="look-at-body-composition-selfie-time">Look at body composition (selfie time)</h3></h3>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/selfie.jpeg"><img src="images/selfie-695x1024.jpeg" alt=""></a></p>
+<p>Besides the more objective measure, a major reason we workout is to look good! There's no shame here. Take out your phone and take a few photos to see if you're meeting whatever goals you're setting out for. Another reason to use Notion is that you can add photos, but again, it's not necessary!</p>
+<p>Note taking is a powerful tool. Productivity nerds all over the world use it to do their work easier and more efficient. We fitness nerds need to start stepping up our game and doing the same with our fitness. Taking notes is a game changer for keeping motivated and seeing results.</p>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-2">
+                                <a href="#why-track-our-fitness-routine">Why track our fitness routine?</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#objectivity">Objectivity</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#motivation">Motivation</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#measuring-fitness-is-hard">Measuring fitness is hard</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#writing-down-our-workouts">Writing down our workouts</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#1-your-routine-should-include-the-following">1. Your routine should include the following</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#1-5-optional-to-include-in-your-routine">1.5 Optional to include in your routine</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#2-forget-the-perfect-workout-plan">2. Forget the perfect workout plan</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#3-make-iterations-on-your-workout">3. Make iterations on your workout</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#add-your-workout-to-a-calendar-like-google-calendar">Add your workout to a calendar like Google Calendar</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#calendars-give-you-structure-and-eliminate-analysis-paralysis">Calendars give you structure and eliminate analysis paralysis</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#pro-tip-include-buffer-time-between-actions">Pro tip: Include buffer time between actions</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#writing-down-what-is-important">Writing down what is important</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#your-routine-should-include-the-following">Your routine should include the following</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#optional-to-include-in-your-routine">Optional to include in your routine</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#stage-1-get-a-workout-journal">Stage 1: Get a workout journal</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#note-taking-apps-work-too">Note taking apps work too</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#stage-2-use-google-calendar">Stage 2: Use google calendar</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#stage-3-use-a-note-taking-app-like-notion">Stage 3: Use a note taking app like Notion</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#analyze-your-progress">Analyze your progress</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#test-yourself-every-4-6-weeks">Test yourself every 4-6 weeks</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#tape-measure-to-measure-hypertrophy">Tape measure to measure hypertrophy</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#look-at-body-composition-selfie-time">Look at body composition (selfie time)</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+                <!-- Add this to your nav.njk -->
+                <div class="cart-indicator">
+                    <span id="cart-count" style="display: none">0</span>
+                </div>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    
+    
+</body>
+
+
+</html>

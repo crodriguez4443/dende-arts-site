@@ -9,72 +9,65 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Meu berimbau<br>
-        Instrumento genial<br>
-        Meu berimbau<br>
-        Você é fenomenal<br>
-        <br>
-        <strong>Meu berimbau<br>
-        Instrumento genial<br>
-        Meu berimbau<br>
-        Você é fenomenal</strong><br>
-        <br>
-        Berimbau<br>
-        Instrumento que tem som<br>
-        Toca a paz e toca a guerra<br>
-        E também chula de amor<br>
-        <br>
-        Entro na roda<br>
-        Logo vou me encaminhando<br>
-        Com a baqueta e arruela<br>
-        A minha chula eu vou cantando<br>
-        <br>
-        Meu berimbau<br>
-        Instrumento genial<br>
-        Meu berimbau<br>
-        Você é fenomenal<br>
-        <br>
-        <strong>Meu berimbau<br>
-        Instrumento genial<br>
-        Meu berimbau<br>
-        Você é fenomenal</strong></td>
-        <td>My berimbau<br>
-        Brilliant instrument<br>
-        My berimbau<br>
-        You are phenomenal<br>
-        <br>
-        <strong>My berimbau<br>
-        Brilliant instrument<br>
-        My berimbau<br>
-        You are phenomenal</strong><br>
-        <br>
-        Berimbau<br>
-        Instrument that has sound<br>
-        Plays peace and plays war<br>
-        And also chulas of love<br>
-        <br>
-        I get in the wheel<br>
-        Soon I am going<br>
-        With my drumstick and washer<br>
-        My chula I'm singing<br>
-        <br>
-        My berimbau<br>
-        Brilliant instrument<br>
-        My berimbau<br>
-        You are phenomenal<br>
-        <br>
-        <strong>My berimbau<br>
-        Brilliant instrument<br>
-        My berimbau<br>
-        You are phenomenal</strong></td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Meu berimbau  
+Instrumento genial  
+Meu berimbau  
+Você é fenomenal  
+  
+**Meu berimbau  
+Instrumento genial  
+Meu berimbau  
+Você é fenomenal**  
+  
+Berimbau  
+Instrumento que tem som  
+Toca a paz e toca a guerra  
+E também chula de amor  
+  
+Entro na roda  
+Logo vou me encaminhando  
+Com a baqueta e arruela  
+A minha chula eu vou cantando  
+  
+Meu berimbau  
+Instrumento genial  
+Meu berimbau  
+Você é fenomenal  
+  
+**Meu berimbau  
+Instrumento genial  
+Meu berimbau  
+Você é fenomenal** | My berimbau  
+Brilliant instrument  
+My berimbau  
+You are phenomenal  
+  
+**My berimbau  
+Brilliant instrument  
+My berimbau  
+You are phenomenal**  
+  
+Berimbau  
+Instrument that has sound  
+Plays peace and plays war  
+And also chulas of love  
+  
+I get in the wheel  
+Soon I am going  
+With my drumstick and washer  
+My chula I'm singing  
+  
+My berimbau  
+Brilliant instrument  
+My berimbau  
+You are phenomenal  
+  
+**My berimbau  
+Brilliant instrument  
+My berimbau  
+You are phenomenal** |
 
 <figcaption>
 

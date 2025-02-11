@@ -1,119 +1,124 @@
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Minha comadre pescador não morreu<br>
-E a sereia vai ficar sozinha<br>
-Mas se a sereia resolver levar, seu pescador<br>
-A primeira oferenda é minha<br>
-<br>
-<strong>Mas se a sereia resolver levar, seu pescador<br>
-A primeira oferenda é minha</strong><br>
-<br>
-A tempestade balançou o mar<br>
-E o pescador se ajoelhou com fé<br>
-Ele pediu a mãe Iemanjá pra não deixar<br>
-O seu barco virar na maré<br>
-<br>
-Minha comadre pescador não morreu<br>
-E a sereia vai ficar sozinha<br>
-Mas se a sereia resolver levar, seu pescador<br>
-A primeira oferenda é minha<br>
-<br>
-<strong>Mas se a sereia resolver levar, seu pescador<br>
-A primeira oferenda é minha</strong><br>
-<br>
-Será, meu Deus, que é dia de sorte<br>
-A reza forte fez a chuva parar<br>
-Corpo fechado, patuá e guia no pescoço<br>
-Ele é filho de Odoiá<br>
-<br>
-Mas se a sereia resolver levar, seu pescador<br>
-A primeira oferenda é minha<br>
-<br>
-<strong>Mas se a sereia resolver levar, seu pescador<br>
-A primeira oferenda é minha</strong><br>
-<br>
-Mas diz a lenda: Janaína é vaidosa<br>
-E se ela quer, ela vem buscar<br>
-Na lua cheia pescador vem comigo Odoiá<br>
-Fazer morada no fundo do mar<br>
-<br>
-Mas se a sereia resolver levar, seu pescador<br>
-A primeira oferenda é minha<br>
-<br>
-<strong>Mas se a sereia resolver levar, seu pescador<br>
-A primeira oferenda é minha</strong><br>
-<br>
-Um canto forte ecoou na aldeia<br>
-E uma forte magia fez o céu brilhar<br>
-E o pescador já entrava nas aguas da sereia<br>
-Era o feitiço pra morrer no mar<br>
-<br>
-Mas se a sereia resolver levar, seu pescador<br>
-A primeira oferenda é minha<br>
-<br>
-<strong>Mas se a sereia resolver levar, seu pescador<br>
-A primeira oferenda é minha</strong></td>
-        <td>My friend, the fisherman didn't die<br>
-And the mermaid will be alone<br>
-But if the mermaid decides to take it, mr. fisherman<br>
-The first offering is mine<br>
-<br>
-But if the mermaid decides to take it, mr. fisherman<br>
-The first offering is mine<br>
-<br>
-The storm rocked the sea<br>
-And the fisherman knelt in faith<br>
-He asked mother Iemanjá not to let<br>
-His boat turn over in the tide<br>
-<br>
-My friend, the fisherman didn't die<br>
-And the mermaid will be alone<br>
-But if the mermaid decides to take it, mr. fisherman<br>
-The first offering is mine<br>
-<br>
-But if the mermaid decides to take it, mr. fisherman<br>
-The first offering is mine<br>
-<br>
-Could it be, my God, that it's a lucky day<br>
-The strong prayer made the rain stop<br>
-Closed body, patuá and a guia on his neck<br>
-He is the son of Odoiá<br>
-<br>
-But if the mermaid decides to take it, mr. fisherman<br>
-The first offering is mine<br>
-<br>
-But if the mermaid decides to take it, mr. fisherman<br>
-The first offering is mine<br>
-<br>
-But the legend says: Janaína is vain<br>
-And if she wants something, she comes to get it<br>
-At the full moon the fisherman comes with me Odoiá<br>
-Make an address under the sea<br>
-<br>
-But if the mermaid decides to take it, mr. fisherman<br>
-The first offering is mine<br>
-<br>
-But if the mermaid decides to take it, mr. fisherman<br>
-The first offering is mine<br>
-<br>
-A strong song echoed in the village<br>
-And strong magic made the sky shine<br>
-And the fisherman was already entering mermaid's waters<br>
-It was the spell to die at sea<br>
-<br>
-But if the mermaid decides to take it, mr. fisherman<br>
-The first offering is mine<br>
-<br>
-But if the mermaid decides to take it, mr. fisherman<br>
-The first offering is mine</td>
-    </tr>
-</table>
+---
+title: "Minha Comadre Pescador Não Morreu"
+date: "2021-01-29"
+categories: 
+  - "capoeira-songbook"
+tags: 
+  - "advanced"
+layout: "blog-post-layout.njk"
+---
+
+| Portuguese | English |
+| --- | --- |
+| Minha comadre pescador não morreu  
+E a sereia vai ficar sozinha  
+Mas se a sereia resolver levar, seu pescador  
+A primeira oferenda é minha  
+  
+**Mas se a sereia resolver levar, seu pescador  
+A primeira oferenda é minha**  
+  
+A tempestade balançou o mar  
+E o pescador se ajoelhou com fé  
+Ele pediu a mãe Iemanjá pra não deixar  
+O seu barco virar na maré  
+  
+Minha comadre pescador não morreu  
+E a sereia vai ficar sozinha  
+Mas se a sereia resolver levar, seu pescador  
+A primeira oferenda é minha  
+  
+**Mas se a sereia resolver levar, seu pescador  
+A primeira oferenda é minha**  
+  
+Será, meu Deus, que é dia de sorte  
+A reza forte fez a chuva parar  
+Corpo fechado, patuá e guia no pescoço  
+Ele é filho de Odoiá  
+  
+Mas se a sereia resolver levar, seu pescador  
+A primeira oferenda é minha  
+  
+**Mas se a sereia resolver levar, seu pescador  
+A primeira oferenda é minha**  
+  
+Mas diz a lenda: Janaína é vaidosa  
+E se ela quer, ela vem buscar  
+Na lua cheia pescador vem comigo Odoiá  
+Fazer morada no fundo do mar  
+  
+Mas se a sereia resolver levar, seu pescador  
+A primeira oferenda é minha  
+  
+**Mas se a sereia resolver levar, seu pescador  
+A primeira oferenda é minha**  
+  
+Um canto forte ecoou na aldeia  
+E uma forte magia fez o céu brilhar  
+E o pescador já entrava nas aguas da sereia  
+Era o feitiço pra morrer no mar  
+  
+Mas se a sereia resolver levar, seu pescador  
+A primeira oferenda é minha  
+  
+**Mas se a sereia resolver levar, seu pescador  
+A primeira oferenda é minha** | My friend, the fisherman didn't die  
+And the mermaid will be alone  
+But if the mermaid decides to take it, mr. fisherman  
+The first offering is mine  
+  
+But if the mermaid decides to take it, mr. fisherman  
+The first offering is mine  
+  
+The storm rocked the sea  
+And the fisherman knelt in faith  
+He asked mother Iemanjá not to let  
+His boat turn over in the tide  
+  
+My friend, the fisherman didn't die  
+And the mermaid will be alone  
+But if the mermaid decides to take it, mr. fisherman  
+The first offering is mine  
+  
+But if the mermaid decides to take it, mr. fisherman  
+The first offering is mine  
+  
+Could it be, my God, that it's a lucky day  
+The strong prayer made the rain stop  
+Closed body, patuá and a guia on his neck  
+He is the son of Odoiá  
+  
+But if the mermaid decides to take it, mr. fisherman  
+The first offering is mine  
+  
+But if the mermaid decides to take it, mr. fisherman  
+The first offering is mine  
+  
+But the legend says: Janaína is vain  
+And if she wants something, she comes to get it  
+At the full moon the fisherman comes with me Odoiá  
+Make an address under the sea  
+  
+But if the mermaid decides to take it, mr. fisherman  
+The first offering is mine  
+  
+But if the mermaid decides to take it, mr. fisherman  
+The first offering is mine  
+  
+A strong song echoed in the village  
+And strong magic made the sky shine  
+And the fisherman was already entering mermaid's waters  
+It was the spell to die at sea  
+  
+But if the mermaid decides to take it, mr. fisherman  
+The first offering is mine  
+  
+But if the mermaid decides to take it, mr. fisherman  
+The first offering is mine |
 
 <figcaption>
-Author: Unknown (Do you know who wrote this song? Tell us in the comments!)<br>
+
+Author: Unknown (Do you know who wrote this song? Tell us in the comments!)  
 Note: "Odoiá" is an Orixá. "Iemanjá" is also an Orixá, and "Janaína" is another name for her. A "guia" is a necklace worn by adepts of Candomblé, especially mediums.
+
 </figcaption>

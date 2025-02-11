@@ -9,19 +9,80 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Ae ae a minha Angola<br>Ae ae a minha Angola<br><br><strong>Ae ae a minha Angola<br>Ae ae a minha Angola</strong><br><br>Cruzando o mar<br>Naquele escuro tumbeiro<br>Vieram os negros bantos<br>Tinha rei, tinha guerreiro<br><br><strong>Ae ae a minha Angola<br>Ae ae a minha Angola</strong><br><br>Com Yemanjá Eu fiz a minha travessia<br>Ela é minha mãe sereia<br>Quem me guarda, quem me guia<br><br><strong>Ae ae a minha Angola<br>Ae ae a minha Angola</strong><br><br>Chegando lá Misturaram nossas tribos<br>E nascia a irmandade<br>Entre antigos inimigos<br><br><strong>Ae ae a minha Angola<br>Ae ae a minha Angola</strong><br><br>No cativeiro Eu lembrava de Aruanda<br>E pedia a Ogum guerreiro<br>Força para essa demanda<br><br><strong>Ae ae a minha Angola<br>Ae ae a minha Angola</strong></td>
-        <td>Ae ae my Angola<br>Ae ae my Angola<br><br>Ae ae my Angola<br>Ae ae my Angola<br><br>Crossing the sea<br>In that dark slave ship<br>The black Bantus came<br>There was a king, there was a warrior<br><br>Ae ae my Angola<br>Ae ae my Angola<br><br>With Yemanjá I made my crossing<br>She is my mermaid mother<br>Who guards me, who guides me<br><br>Ae ae my Angola<br>Ae ae my Angola<br><br>Getting there Our tribes mixed<br>And the brotherhood was born<br>Among former enemies<br><br>Ae ae my Angola<br>Ae ae my Angola<br><br>In captivity I remembered Aruanda<br>And asked Ogum warrior<br>Strength for this demand<br><br>Ae ae my Angola<br>Ae ae my Angola</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Ae ae a minha Angola  
+Ae ae a minha Angola  
+  
+**Ae ae a minha Angola  
+Ae ae a minha Angola**  
+  
+Cruzando o mar  
+Naquele escuro tumbeiro  
+Vieram os negros bantos  
+Tinha rei, tinha guerreiro  
+  
+**Ae ae a minha Angola  
+Ae ae a minha Angola**  
+  
+Com Yemanjá Eu fiz a minha travessia  
+Ela é minha mãe sereia  
+Quem me guarda, quem me guia  
+  
+**Ae ae a minha Angola  
+Ae ae a minha Angola**  
+  
+Chegando lá Misturaram nossas tribos  
+E nascia a irmandade  
+Entre antigos inimigos  
+  
+**Ae ae a minha Angola  
+Ae ae a minha Angola**  
+  
+No cativeiro Eu lembrava de Aruanda  
+E pedia a Ogum guerreiro  
+Força para essa demanda  
+  
+**Ae ae a minha Angola  
+Ae ae a minha Angola** | Ae ae my Angola  
+Ae ae my Angola  
+  
+Ae ae my Angola  
+Ae ae my Angola  
+  
+Crossing the sea  
+In that dark slave ship  
+The black Bantus came  
+There was a king, there was a warrior  
+  
+Ae ae my Angola  
+Ae ae my Angola  
+  
+With Yemanjá I made my crossing  
+She is my mermaid mother  
+Who guards me, who guides me  
+  
+Ae ae my Angola  
+Ae ae my Angola  
+  
+Getting there Our tribes mixed  
+And the brotherhood was born  
+Among former enemies  
+  
+Ae ae my Angola  
+Ae ae my Angola  
+  
+In captivity I remembered Aruanda  
+And asked Ogum warrior  
+Strength for this demand  
+  
+Ae ae my Angola  
+Ae ae my Angola |
 
 <figcaption>
+
 Author: Unknown
+
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TXrluWGQlLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

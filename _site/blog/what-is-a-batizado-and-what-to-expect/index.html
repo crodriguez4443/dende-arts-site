@@ -1,1 +1,386 @@
-<p>The document does not contain song lyrics, so I will not modify the content. The markdown document appears to be an informative blog post about Batizado in Capoeira.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is a Batizado and What to Expect in Capoeira!</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songbook</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">What is a Batizado and What to Expect in Capoeira!</a>
+            </div>
+            <h1>What is a Batizado and What to Expect in Capoeira!</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2022-05-30">
+                    May 29, 2022
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <p>TLDR (too long didn’t read)</p>
+<p>What is a batiazado you ask! A <em>batizado</em> is your introduction into Capoeira during your first event when you receive your first chord. Graduation events after that are called “Troca de Cordões”, but we usually just call them all Batizados for short. They happen usually once per year and include workshops, roads, and other activities for the Capoeira community.</p>
+<p>Receiving your first chord involves playing a Mestre. This mestre is usually referred to as your “Padrinho”, or a God-father who helps introduce you to the world of Capoeira. After your game, you receive your new chord.</p>
+<p>Keep in mind that these chords are hand-made by your teacher, so treasure them.</p>
+<p>Here is a promo video with footage from our 2019 Batizado:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NYShgulZUqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2><h2 id="origins-of-the-batizado">Origins of the Batizado</h2></h2>
+<p>Mestre Bimba was one of the first Capoeiristas to embrace the ritual of graduating a student to the next level. Previously, students would simply improve without any expectation of receiving a new chord.</p>
+<p>Metre Bimba invented the scarf (lenço) system, which was scarves of different colors meant to represent your proficiency in different aspects of Capoeira:</p>
+<h3><h3 id="the-bimba-len-os-scarves">The Bimba Lenços / Scarves</h3></h3>
+<ul>
+<li>Blue - Graduado. This scarf was received after about 6 -12 months of training. This indicated that you were an advanced student and understood the fundamentals of Mestre Bimba’s training system. The majority of this training included the 8 sequences of Mestre Bimba.</li>
+<li>Red - “Emboscada” (Literally translates to “ambush”). Mestre bimba created an ambush training course, which included going into the woods and needing to move from point A to point B while being ambushed by multiple attackers with weapons. This training was later used by the Brazilian Army to train their soldiers.
+<ul>
+<li>Here is a modern example. Pretty fun to watch: <a href="https://youtu.be/0IKvvL3e6YY?t=691"></a><a href="https://youtu.be/0IKvvL3e6YY?t=691">https://youtu.be/0IKvvL3e6YY?t=691</a></li>
+</ul>
+</li>
+<li>Yellow - Weapons training. After receiving the Red Lenço, you could further specialize by learning to defend yourself against knives and switchblades. These were very common in the early 1900’s, which made it very desirable for the student to know.</li>
+<li>White - Mestre Charangueiro. The white scarf was the Mestre Charanguerio (the master of the bateria). This was not a mestre level scarf. It was simply meant to show that you were capable of playing all the instruments in the bateria (called a Charanga in Capoeira Regional).</li>
+</ul>
+<h2><h2 id="our-graduation-system">Our graduation system</h2></h2>
+<p>The following graduation system is based on the Brazilian flag, which is 1 of the 2 most popular graduation systems. The other graduation system is based off of the colors associated with the Orixas, gods of many enslaved Africans of Brazil.</p>
+<p>For an in depth look at the Capoeira Graduation system, check out this deep dive:</p>
+<p>https://dendearts.com/the-capoeira-belt-system-explained-by-a-capoeira-teacher/#Two_Main_Chord_Systems_in_Capoeira</p>
+<p>Currently, Capoeira de Valor has the following graduation color system:</p>
+<h3><h3 id="students-chords">Students Chords</h3></h3>
+<p>The “in-between” chords (below) may or may not be given. this will depend on the students and the teacher. Students may also teach Capoeira classes, but this depends on the student and the teacher.</p>
+<ul>
+<li>Green 4-12 months</li>
+<li>Green-Green-Yellow (in-between)</li>
+<li>Green-Yellow 1 - 2 years</li>
+<li>Green-Yellow-Yellow (in-between)</li>
+<li>Yellow 3-4 years</li>
+<li>Yellow-Yellow-Blue (in-between)</li>
+<li>Yellow-Blue (Monitor / advanced student) 5 - 7 years</li>
+<li>Yellow-Blue-Blue (Monitor2 / advanced student level 2 - optional)</li>
+</ul>
+<h3><h3 id="teacher-chords">Teacher Chords</h3></h3>
+<p>The blue belt is the beginning of the teacher belts and is often considered the last “student” chord. Professors are often “formado”, which roughly translates to “graduate”. Being a professor and up, there is an expectation for you to teach and spread the knowledge you have been given. This is a transition to an elder who passes down knowledge to others.</p>
+<p>The Contra-mestre is historically an honorific title given to the “right-hand” of the Mestre (master) of the group. Contra-mestres are Mestres in training. Getting ready to manage several students, teachers, and locations.</p>
+<p>Mestre translates into “master”. Mestre Acordeon, student of Mestre Bimba once said that becoming a Mestre is like starting all over again into a whole new world.</p>
+<ul>
+<li>Blue (Instrutor) 6 - 10 years</li>
+<li>Blue-Yellow-Green (Professor) 10+ years</li>
+<li>Blue-Yellow-Green White (Contra-Mestre) 15+ years</li>
+<li>Green-White (Mestre level 1)</li>
+<li>Yellow-White (Mestre Level 2)</li>
+<li>Blue-White (Mestre Level 3)</li>
+<li>White (Grão Mestre)</li>
+</ul>
+<h2><h2 id="what-to-expect-at-the-batizado">What to expect at the Batizado</h2></h2>
+<ul>
+<li>Length: Usually 1 - 3 days</li>
+<li>Number of workshops: This will depend on the length of the event. Saturdays are usually heavy days and can have up to 4 workshops.</li>
+<li>Rodas: Several rodas are held during the event and are great ways to play with people outside of your group. <strong>Always try to play with others outside of your group!</strong> This is some of the best practice you can get.</li>
+<li>Performances: Many Batizados have performances that YOU can participate in.</li>
+<li>Samba / maculele / puxada de rede / etc.</li>
+<li>Often people go out after to celebrate the event.</li>
+</ul>
+<h2><h2 id="how-to-prepare-for-the-batizado">How to prepare for the batizado</h2></h2>
+<ul>
+<li>Bring water</li>
+<li>Bring a snack</li>
+<li>Have ready a change of clothing.</li>
+<li>Bring footwear that you can do Capoeira in. In case there are activities outside or if you get any blisters.</li>
+<li>Bring your uniform as well as some casual athletic wear just in case. Batizados are held with everyone in uniform. But some days may be casual, which means you can wear any athletic wear, which should include some long pants.</li>
+<li>Organize if you need housing with someone (ask the organizer). this is VERY common in Capoeira. Event organizers and their students often offer to house several people so they can come to the event from out of the region.</li>
+</ul>
+<h2><h2 id="what-is-required-to-attend">What is required to attend</h2></h2>
+<ul>
+<li>A uniform, which includes your Abadas (white Capoeira pants), and a uniform shirt (white), and your chord if you have one.</li>
+<li>Pro tip: Register early and pay for the event in advance (early bird pricing is best)</li>
+<li>Volunteer where able. Helping at the front desk is a good way to meet people. Try to come early and help set up. It doesn’t require much more effort, but it makes a big difference for the person organizing!</li>
+<li>If this is your event, greet people coming out of town. See someone new? Introduce yourself, remember their name, and ask how they are doing. You would want the same if you were coming from out of town. In summary, be a good host.</li>
+<li>If this is someone else’s event, greet the organizer if they are not running around like a headless chicken. Greet people as you see them. Coming early makes it way easier to meet people.</li>
+</ul>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-2">
+                                <a href="#origins-of-the-batizado">Origins of the Batizado</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#the-bimba-len-os-scarves">The Bimba Lenços / Scarves</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#our-graduation-system">Our graduation system</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#students-chords">Students Chords</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#teacher-chords">Teacher Chords</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#what-to-expect-at-the-batizado">What to expect at the Batizado</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#how-to-prepare-for-the-batizado">How to prepare for the batizado</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#what-is-required-to-attend">What is required to attend</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+                <!-- Add this to your nav.njk -->
+                <div class="cart-indicator">
+                    <span id="cart-count" style="display: none">0</span>
+                </div>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    
+    
+</body>
+
+
+</html>

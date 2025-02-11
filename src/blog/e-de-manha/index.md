@@ -8,52 +8,50 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>É de manhã, Idalina tá me chamando<br>
-        Idalina tem o costume<br>
-        De chamar e vai andando<br>
-        <strong>É de manhã, Idalina tá me chamando</strong><br>
-        <br>
-        O Idalina meu amor<br>
-        Idalina tá me esperando<br>
-        <br>
-        <strong>É de manhã, Idalina tá me chamando</strong><br>
-        <br>
-        Idalina tem o costume<br>
-        Danado de falar de homem<br>
-        <strong>É de manhã, Idalina tá me chamando</strong><br>
-        <br>
-        Idalina meu amor<br>
-        Idalina tá me esperando<br>
-        <strong>É de manhã, Idalina tá me chamando</strong></td>
-        <td>It's morning, Idalina is calling me<br>
-        Idalina has the custom<br>
-        Of calling, and walking away<br>
-        <br>
-        It's morning, Idalina is calling me<br>
-        <br>
-        Idalina my love<br>
-        Idalina is waiting for me<br>
-        <br>
-        It's morning, Idalina is calling me<br>
-        <br>
-        Idalina has the pesky custom<br>
-        Of talking about men<br>
-        <br>
-        It's morning, Idalina is calling me<br>
-        <br>
-        Idalina my love<br>
-        Idalina is waiting for me<br>
-        <br>
-        It's morning, Idalina is calling me</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| É de manhã, Idalina tá me chamando  
+Idalina tem o costume  
+De chamar e vai andando  
+**  
+É de manhã, Idalina tá me chamando**  
+  
+O Idalina meu amor  
+Idalina tá me esperando  
+  
+**É de manhã, Idalina tá me chamando**  
+  
+Idalina tem o costume  
+Danado de falar de homem  
+**  
+É de manhã, Idalina tá me chamando**  
+  
+Idalina meu amor  
+Idalina tá me esperando  
+**  
+É de manhã, Idalina tá me chamando** | It's morning, Idalina is calling me  
+Idalina has the custom  
+Of calling, and walking away  
+  
+It's morning, Idalina is calling me  
+  
+Idalina my love  
+Idalina is waiting for me  
+  
+It's morning, Idalina is calling me  
+  
+Idalina has the pesky custom  
+Of talking about men  
+  
+It's morning, Idalina is calling me  
+  
+Idalina my love  
+Idalina is waiting for me  
+  
+It's morning, Idalina is calling me |
 
 <figcaption>
+
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
+
 </figcaption>

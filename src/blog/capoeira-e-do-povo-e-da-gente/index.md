@@ -1,80 +1,85 @@
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Capoeira é manha de preto velho<br>
-        Nascido no tempo da escravidão<br>
-        Capoeira levou a raça negra<br>
-        Ao caminho de sua libertação<br>
-        <br>
-        Eu vou dizer a você<br>
-        E digo do fundo do coração<br>
-        Essa luta essa dança brasileira<br>
-        Faz meu corpo vibrar de emoção<br>
-        <br>
-        De Nova York ao Mexico<br>
-        Do Rio de Janeiro até o Japão<br>
-        É no toque do berimbau viola<br>
-        Seja São bento grande ou angola<br>
-        Deixa o corpo rolar normalmente<br>
-        Vou dizer<br>
-        <br>
-        <strong>Ê êê<br>
-        Capoeira é do povo é da gente</strong><br>
-        <br>
-        Vou dizer<br>
-        <br>
-        <strong>Ê êê<br>
-        Que jeito de lutar diferente</strong><br>
-        <br>
-        Vou dizer<br>
-        <br>
-        <strong>Ê êê<br>
-        Capoeira é do povo é da gente</strong><br>
-        <br>
-        Vou dizer<br>
-        <br>
-        <strong>Ê êê<br>
-        Que jeito de lutar diferente</strong></td>
-        <td>Capoeira is the old black man<br>
-        Born in the time of slavery<br>
-        Capoeira took the black race<br>
-        On the way to your liberation<br>
-        <br>
-        I will tell you<br>
-        And I say from the bottom of my heart<br>
-        This fight this Brazilian dance<br>
-        It makes my body vibrate with emotion<br>
-        <br>
-        From New York to Mexico<br>
-        From Rio de Janeiro to Japan<br>
-        It's in the touch of the viola berimbau<br>
-        Whether Saint Benedict or Angola<br>
-        Let the body roll normally<br>
-        I will say<br>
-        <br>
-        Ê êê<br>
-        Capoeira belongs to the people and belongs to us<br>
-        <br>
-        I will say<br>
-        <br>
-        Ê êê<br>
-        What a different way to fight<br>
-        <br>
-        I will say<br>
-        <br>
-        Ê êê<br>
-        Capoeira belongs to the people and belongs to us<br>
-        <br>
-        I will say<br>
-        <br>
-        Ê êê<br>
-        What a different way to fight</td>
-    </tr>
-</table>
+---
+title: "Capoeira é do povo é da gente"
+date: "2020-11-01"
+categories: 
+  - "capoeira-songbook"
+tags: 
+  - "advanced"
+layout: "blog-post-layout.njk"
+---
+
+| Portuguese | English |
+| --- | --- |
+| Capoeira é manha de preto velho  
+Nascido no tempo da escravidão  
+Capoeira levou a raça negra  
+Ao caminho de sua libertação  
+  
+Eu vou dizer a você  
+E digo do fundo do coração  
+Essa luta essa dança brasileira  
+Faz meu corpo vibrar de emoção  
+  
+De Nova York ao Mexico  
+Do Rio de Janeiro até o Japão  
+É no toque do berimbau viola  
+Seja São bento grande ou angola  
+Deixa o corpo rolar normalmente  
+Vou dizer  
+  
+**Ê êê  
+Capoeira é do povo é da gente**  
+  
+Vou dizer  
+  
+**Ê êê  
+Que jeito de lutar diferente**  
+  
+Vou dizer  
+  
+**Ê êê  
+Capoeira é do povo é da gente  
+**  
+Vou dizer  
+  
+**Ê êê  
+Que jeito de lutar diferente** | Capoeira is the old black man  
+Born in the time of slavery  
+Capoeira took the black race  
+On the way to your liberation  
+  
+I will tell you  
+And I say from the bottom of my heart  
+This fight this Brazilian dance  
+It makes my body vibrate with emotion  
+  
+From New York to Mexico  
+From Rio de Janeiro to Japan  
+It's in the touch of the viola berimbau  
+Whether Saint Benedict or Angola  
+Let the body roll normally  
+I will say  
+  
+Ê êê  
+Capoeira belongs to the people and belongs to us  
+  
+I will say  
+  
+Ê êê  
+What a different way to fight  
+  
+I will say  
+  
+Ê êê  
+Capoeira belongs to the people and belongs to us  
+  
+I will say  
+  
+Ê êê  
+What a different way to fight |
 
 <figcaption>
+
 Author: Unknown (if you know, let us know in the comments!)
+
 </figcaption>

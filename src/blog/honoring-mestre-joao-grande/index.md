@@ -1,32 +1,56 @@
 ---
-title: "Honoring Mestre Joao Grande"
+title: "Honoring Mestre Joao Grande: A Capoeira Angola Legend"
 date: "2018-07-26"
-categories: 
+categories:
   - "capoeira101"
   - "history-culture-travel"
-tags: 
+tags:
   - "capoeira-angola"
   - "capoeira-mestre"
   - "greatest-capoeira-angola-mestre"
   - "mestre-joao-grande"
   - "mior-e-deus-grande-e-joao"
+  - "capoeira-biography"
 coverImage: "Screen-Shot-2018-07-26-at-2.01.32-PM.png"
 layout: "blog-post-layout.njk"
+
+# Add new SEO Fields:
+description: "Explore the life & legacy of Mestre Joao Grande, a cornerstone of Capoeira Angola. Discover his influence & contributions to this Afro-Brazilian art form."
+author: "Chris Calado Rodriguez"
+keywords:
+  - "Mestre Joao Grande biography"
+  - "Capoeira Angola history"
+  - "Capoeira Angola masters"
+  - "learn Capoeira Angola online"
+  - "Capoeira Angola philosophy"
+  - "Mestre Joao Grande influence on Capoeira"
+  - "Capoeira Angola movements and techniques"
+  - "history of Capoeira in Brazil"
+
+# Social Sharing:
+socialImage: "Screen-Shot-2018-07-26-at-2.01.32-PM.png"
+
+# Content Details:
+headline: "Honoring Mestre Joao Grande: Discover the Heart of Capoeira Angola"
+excerpt: "This article celebrates the extraordinary life and enduring legacy of Mestre Joao Grande, a pivotal figure in preserving and promoting the authentic traditions of Capoeira Angola."
+
+# Indexing:
+type: "blog-article"
 ---
 
-## "Maior e Deus, Grande e Joao.
+## “Maior e Deus, Grande e Joao.
 
-A recent video popped up on my Facebook feed about one of the (if not the oldest) living Mestre of Capoeira, Mestre Joao Grande on an [episode of Sesame street](https://www.youtube.com/watch?v=RxG0uh3SPw0&t=23s) (playing the berimbau). Capoeira has always been an obscure martial art so seeing  it on a popular kids TV show from the 80's or 90's was pretty surprising. You can see him playing the berimbau on the right. This man is a legend to Capoeiristas all over the world and I mention this because when Mestre Joao Grande did this episode of Sesame Street he was probably in his 60's. This year he turned 85.
+A recent video popped up on my Facebook feed about one of the (if not the oldest) living Mestre of Capoeira, Mestre Joao Grande on an [episode of Sesame street](https://www.youtube.com/watch?v=RxG0uh3SPw0&t=23s) (playing the berimbau). Capoeira has always been an obscure martial art so seeing  it on a popular kids TV show from the 80’s or 90’s was pretty surprising. You can see him playing the berimbau on the right. This man is a legend to Capoeiristas all over the world and I mention this because when Mestre Joao Grande did this episode of Sesame Street he was probably in his 60’s. This year he turned 85.
 
 I mention this because many mestres including [Mestre Pastinha](https://en.wikipedia.org/wiki/Vicente_Ferreira_Pastinha), a great Angola Mestre, died blind, poor, and with very little if any support. Interestingly some Capoeiristas decided do a [short video](https://www.youtube.com/watch?v=XZQgMZo0FBk&feature=youtu.be) explaining their desire to create a grassroots fundraiser for Mestre Joao Grande so that he can continue living comfortably and not suffer the same way other mestres have in the past. The Capoeiristas participating in this fundraiser will host rodas where the proceeds go to Mestre Joao Grande.
 
-_In their words, "the movement, "God is Great\[est\], Great is Joao" is a crowdfunding platform during 3 months where anyone who identifies with the cause can contribute online._ The collection of funds is born out respect for the life of Mestre Joao Grande"
+_In their words, “the movement, “God is Great\[est\], Great is Joao” is a crowdfunding platform during 3 months where anyone who identifies with the cause can contribute online._ The collection of funds is born out respect for the life of Mestre Joao Grande”
 
 I really love this idea in some ways because of course, our seniors depend on the next generation to care for them. Not only that, but for so many people, Mestre Joao Grande is a example and these rodas are a way to give back to him.
 
 ## HOW TO HELP
 
-If you're interested in contributing, you can contact the organizers of this project through instagram [here](https://www.instagram.com/maioredeusgrandeejoao/). There aren't too many details at the moment, but i think this is a great proof of concept and the video does a great job of reminding us about the critical importance that Mestre Joao Grande Plays in the world of Capoeira.  
+If you’re interested in contributing, you can contact the organizers of this project through instagram [here](https://www.instagram.com/maioredeusgrandeejoao/). There aren’t too many details at the moment, but i think this is a great proof of concept and the video does a great job of reminding us about the critical importance that Mestre Joao Grande Plays in the world of Capoeira.  
 
 ## CDO ALSO IN THE MIX
 

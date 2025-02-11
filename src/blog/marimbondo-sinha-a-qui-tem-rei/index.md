@@ -9,16 +9,29 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Aqui tem rei Marimbondo sinhá<br>Aqui tem rei<br><br><strong>Marimbondo sinhá (chorus)</strong><br><strong>Aqui tem rei</strong><br><strong>Marimbondo sinhá (chorus)</strong><br><strong>Tem rei</strong><br><strong>Marimbondo sinhá (chorus)</strong><br><strong>Aqui tem rei</strong><br><strong>Marimbondo sinhá (chorus)</strong><br><strong>Tem rei</strong></td>
-        <td>Here is a king, Marimbondo, miss<br>Here is a king<br><br>Marimbondo miss (chorus)<br>Here is a king<br>Sinhá wasp (chorus)<br>Here is a king<br>Sinhá wasp (chorus)<br>Here is a king<br>Sinhá wasp (chorus)<br>Here is a king</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Aqui tem rei Marimbondo sinhá  
+Aqui tem rei  
+  
+**Marimbondo sinhá (chorus)  
+**Aqui tem rei  
+**Marimbondo sinhá (chorus)  
+**Tem rei  
+**Marimbondo sinhá (chorus)  
+**Aqui tem rei  
+**Marimbondo sinhá (chorus)  
+**Tem rei | Here is a king, Marimbondo, miss  
+Here is a king  
+  
+Marimbondo miss (chorus)  
+Here is a king  
+Sinhá wasp (chorus)  
+Here is a king  
+Sinhá wasp (chorus)  
+Here is a king  
+Sinhá wasp (chorus)  
+Here is a king |
 
 <figcaption>
 

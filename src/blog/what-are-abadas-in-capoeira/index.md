@@ -1,15 +1,41 @@
 ---
-title: "What are Abadas in Capoeira?"
+title: "What are Abadas in Capoeira? A Complete Guide"
 date: "2024-03-31"
-categories: 
+categories:
   - "capoeira101"
   - "equipment-reviews"
-tags: 
+tags:
   - "abadas"
   - "capoeira-abadas"
   - "capoeira-uniform"
+  - "capoeira-clothing"
+  - "abada-sizes"
+  - "abada-colors"
 coverImage: "what-are-abadas-post-image-e1711925847437.jpg"
 layout: "blog-post-layout.njk"
+
+# Add new SEO Fields:
+description: "Discover the significance of abadas in Capoeira! Learn about colors, styles, and how to choose the perfect uniform. Your ultimate abada guide."
+author: "Chris Calado Rodriguez"
+keywords:
+  - "what are abadas in capoeira"
+  - "capoeira abada meaning and colors"
+  - "choosing the right capoeira uniform abada"
+  - "where to buy capoeira abadas online"
+  - "capoeira abada sizing guide for beginners"
+  - "history and tradition of capoeira abadas"
+  - "different types of capoeira pants abada"
+  - "best capoeira abada material for training"
+
+# Social Sharing:
+socialImage: "what-are-abadas-post-image-e1711925847437.jpg"
+
+# Content Details:
+headline: "Capoeira Abadas: Your Ultimate Guide to Understanding the Uniform"
+excerpt: "Abadas are the essential uniform in Capoeira, representing tradition, skill level, and providing freedom of movement for players."
+
+# Indexing:
+type: "blog-article"
 ---
 
 Abadas are the name of the capoeira uniform pants. Abadas are made of helanca (a polymide material) that is sturdy, elastic, and affordable. They also come with belt loops to hold the person's chord. Abadas are commonly worn in Regional and Contemporânea schools. Although some Angola schools also use Abadas and chords. Capoeira that include Abadas are a modern invention of Mestre Senna. Mestre Senna introduced the use of Abadas between between the 1950's and 1960's. Their use spread like wildfire. And Abadas are now ubiquitous with Capoeira schools around the world.

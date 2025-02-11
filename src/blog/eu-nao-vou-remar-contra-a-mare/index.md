@@ -8,17 +8,50 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Eu não vou remar contra a maré<br><strong>Eu não vou remar contra a maré</strong><br><br>Meu remo quebra<br><strong>Quebra</strong><br><br>Meu barco vira<br><strong>Vira</strong><br><br>Eu vou nadando<br><strong>No meio do mar</strong><br><br>Eu vou jogar<br><strong>No meio do mar</strong><br><br>Eu vou cantar<br><strong>No meio do mar</strong><br><br>Eu vou remar<br><strong>No meio do mar</strong></td>
-        <td>I will not paddle against the tide<br>I will not paddle against the tide<br><br>My paddle breaks<br>Breaks<br><br>My boat turns<br>Turns<br><br>I'm swimming<br>In the middle of the sea<br><br>I will play<br>In the middle of the sea<br><br>I will sing<br>In the middle of the sea<br><br>I'll row<br>In the middle of the sea</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Eu não vou remar contra a maré  
+**Eu não vou remar contra a maré**  
+  
+Meu remo quebra  
+**Quebra**  
+  
+Meu barco vira  
+**Vira**  
+  
+Eu vou nadando  
+**No meio do mar**  
+  
+Eu vou jogar  
+**No meio do mar**  
+  
+Eu vou cantar  
+**No meio do mar**  
+  
+Eu vou remar  
+**No meio do mar** | I will not paddle against the tide  
+I will not paddle against the tide  
+  
+My paddle breaks  
+Breaks  
+  
+My boat turns  
+Turns  
+  
+I'm swimming  
+In the middle of the sea  
+  
+I will play  
+In the middle of the sea  
+  
+I will sing  
+In the middle of the sea  
+  
+I'll row  
+In the middle of the sea |
 
 <figcaption>
+
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
+
 </figcaption>

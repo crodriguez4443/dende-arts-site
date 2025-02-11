@@ -1,9 +1,9 @@
 ---
 title: "How to Start Doing Capoeira"
 date: "2018-03-26"
-categories: 
+categories:
   - "capoeira101"
-tags: 
+tags:
   - "capoeira"
   - "capoeira-blog"
   - "capoeira-teacher-in-new-york"
@@ -17,21 +17,44 @@ tags:
   - "the-ginga"
 coverImage: "Chris-107.jpg"
 layout: "blog-post-layout.njk"
+
+# Add new SEO Fields:
+description: "Ready to begin capoeira? This guide covers everything beginners need to know, from finding a school to learning the ginga. Start your journey today!"
+author: "Chris Calado Rodriguez"
+keywords:
+  - "capoeira classes for beginners near me"
+  - "how to learn capoeira at home"
+  - "capoeira basic movements tutorial"
+  - "what to expect in your first capoeira class"
+  - "benefits of learning capoeira for fitness"
+  - "capoeira for adults in New York City"
+  - "capoeira schools with trial classes"
+  - "essential capoeira terms and vocabulary"
+
+# Social Sharing:
+socialImage: "Chris-107.jpg"
+
+# Content Details:
+headline: "How to Start Capoeira: Your Beginner's Guide"
+excerpt: "Discover the essential steps to start your capoeira journey, from finding the right school to mastering the fundamental movements."
+
+# Indexing:
+type: "blog-article"
 ---
 
 ## Dear those with doubts...
 
 This post is coming off the heels of [Red Bull Paranauê](https://dendearts.com/summary-red-bull-paranaue-2018/), a Capoeira competition held in Salvador, Bahia, a place many people feel is the holy grounds of Capoeira. Check the link to see a summary of the event.
 
-If you're like most people, when you see Capoeira, you think, "Oh crap that was pretty insane…". But like many people, the thought of actually doing Capoeira starts up a whole host of doubts and questions. Can I do this? Am I in good enough shape?
+If you’re like most people, when you see Capoeira, you think, “Oh crap that was pretty insane…”. But like many people, the thought of actually doing Capoeira starts up a whole host of doubts and questions. Can I do this? Am I in good enough shape?
 
 ## NO PREREQUISITES
 
-Don't worry about being too fat, too tall, too small, too this or that, I've heard it all and seen it all. People 6' 4" and up playing Capoeira, People severely overweight playing Capoeira, etc. Capoeira has no prerequisites, and like anything else, your body learns as it goes along. There are people who play into their 80's and and as young as 2.  If an old man of 84 can do it, someone half that age can as well. Don't let self doubt stop you from trying something you admire.
+Don’t worry about being too fat, too tall, too small, too this or that, I’ve heard it all and seen it all. People 6’ 4” and up playing Capoeira, People severely overweight playing Capoeira, etc. Capoeira has no prerequisites, and like anything else, your body learns as it goes along. There are people who play into their 80’s and and as young as 2.  If an old man of 84 can do it, someone half that age can as well. Don’t let self doubt stop you from trying something you admire.
 
 ## WHAT DO YOU WANT OUT OF CAPOEIRA?
 
-Defining what you personally want out of Capoeira is super important and can differ greatly person to person. There is no "proper" reason for doing Capoeira. Everyone's motivations are slightly different, and often times the motivation you come in with changes over time, so don't be afraid to leap at something you enjoy!
+Defining what you personally want out of Capoeira is super important and can differ greatly person to person. There is no “proper” reason for doing Capoeira. Everyone’s motivations are slightly different, and often times the motivation you come in with changes over time, so don’t be afraid to leap at something you enjoy!
 
 ## FIND A TEACHER
 

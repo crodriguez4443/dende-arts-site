@@ -1,14 +1,337 @@
-<table class="capoeira-table">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ser Capoeira É Bom Demais</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songbook</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">Ser Capoeira É Bom Demais</a>
+            </div>
+            <h1>Ser Capoeira É Bom Demais</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2021-03-30">
+                    March 29, 2021
+                </time>
+            </div>
+            
+            
+            
+            
+
+            <div class="blog-post-content">
+                <table class="capoeira-table">
     <tr class="header-row">
         <th>Portuguese</th>
         <th>English</th>
     </tr>
     <tr>
-        <td>A capoeira traçou o meu caminho<br>Sua história carreguei no coração<br>Entrelaçado pelo amor que tenho a ela<br>Eu vou seguindo sempre em sua direção<br><br><strong>É muito bom<br>É bom demais<br>Ser capoeira é bom demais</strong><br><br>Se me perguntam o valor da capoeira<br>Inestimável, não tem como descrever<br>Mais preciosa do que o ouro e diamante<br>Ar que eu respiro pra poder sobreviver<br><br><strong>É muito bom<br>É bom demais<br>Ser capoeira é bom demais</strong><br><br>Mas se um dia a vida vier dar uma rasteira<br>A capoeira te ajuda a levantar<br>A melodia que dá forças a seus passos<br>E o som do gunga que te faz acreditar<br><br><strong>É muito bom<br>É bom demais<br>Ser capoeira é bom demais</strong><br><br>Meu pensamento é voltado pra capoeira<br>Eu me dedico dia e noite sem parar<br>Na capoeira eu encontrei abrigo<br>E a tempestade não pode mais me alcançar<br><br><strong>É muito bom<br>É bom demais<br>Ser capoeira é bom demais</strong><br><br>Meu maior medo é perder a capoeira<br>Viver sem rumo, sem saber onde chegar<br>Ser como o sol e não poder brilhar<br>Ser como um pássaro e não ter asas pra voar<br><br><strong>É muito bom<br>É bom demais<br>Ser capoeira é bom demais</strong></td>
-        <td>Capoeira traced my path<br>Its story I carried in my heart<br>Entwined by the love I have for it<br>I'm always going in its direction<br><br>It is very good<br>Is too good<br>Being capoeira is too good<br><br>If you ask me the value of capoeira<br>Invaluable, there's no way to describe it<br>More precious than gold and diamond<br>Air I breathe to be able to survive<br><br>It is very good<br>Is too good<br>Being capoeira is too good<br><br>But if one day life comes to trip you<br>Capoeira helps you get up<br>The melody that strengthens your steps<br>And the sound of the gunga which makes you believe<br><br>It is very good<br>Is too good<br>Being capoeira is too good<br><br>My thinking is focused on capoeira<br>I dedicate myself day and night non-stop<br>In capoeira I found shelter<br>And the storm can't reach me anymore<br><br>It is very good<br>Is too good<br>Being capoeira is too good<br><br>My biggest fear is losing capoeira<br>Living aimlessly, not knowing where to go<br>Being like the sun and not being able to shine<br>Being like a bird and not having wings to fly<br><br>It is very good<br>Is too good<br>Being capoeira is too good</td>
+        <td>A capoeira traçou o meu caminho<br>
+Sua história carreguei no coração<br>
+Entrelaçado pelo amor que tenho a ela<br>
+Eu vou seguindo sempre em sua direção<br><br>
+<b>É muito bom<br>
+É bom demais<br>
+Ser capoeira é bom demais</b><br><br>
+Se me perguntam o valor da capoeira<br>
+Inestimável, não tem como descrever<br>
+Mais preciosa do que o ouro e diamante<br>
+Ar que eu respiro pra poder sobreviver<br><br>
+<b>É muito bom<br>
+É bom demais<br>
+Ser capoeira é bom demais</b><br><br>
+Mas se um dia a vida vier dar uma rasteira<br>
+A capoeira te ajuda a levantar<br>
+A melodia que dá forças a seus passos<br>
+E o som do gunga que te faz acreditar<br>
+<b><br>
+É muito bom<br>
+É bom demais<br>
+Ser capoeira é bom demais</b><br><br>
+Meu pensamento é voltado pra capoeira<br>
+Eu me dedico dia e noite sem parar<br>
+Na capoeira eu encontrei abrigo<br>
+E a tempestade não pode mais me alcançar<br><br>
+<b>É muito bom<br>
+É bom demais<br>
+Ser capoeira é bom demais</b><br><br>
+Meu maior medo é perder a capoeira<br>
+Viver sem rumo, sem saber onde chegar<br>
+Ser como o sol e não poder brilhar<br>
+Ser como um pássaro e não ter asas pra voar<br>
+<b><br>
+É muito bom<br>
+É bom demais<br>
+Ser capoeira é bom demais</b></td>
+        <td>Capoeira traced my path<br>
+Its story I carried in my heart<br>
+Entwined by the love I have for it<br>
+I'm always going in its direction<br><br>
+It is very good<br>
+Is too good<br>
+Being capoeira is too good<br><br>
+If you ask me the value of capoeira<br>
+Invaluable, there's no way to describe it<br>
+More precious than gold and diamond<br>
+Air I breathe to be able to survive<br><br>
+It is very good<br>
+Is too good<br>
+Being capoeira is too good<br><br>
+But if one day life comes to trip you<br>
+Capoeira helps you get up<br>
+The melody that strengthens your steps<br>
+And the sound of the gunga which makes you believe<br><br>
+It is very good<br>
+Is too good<br>
+Being capoeira is too good<br><br>
+My thinking is focused on capoeira<br>
+I dedicate myself day and night non-stop<br>
+In capoeira I found shelter<br>
+And the storm can't reach me anymore<br><br>
+It is very good<br>
+Is too good<br>
+Being capoeira is too good<br><br>
+My biggest fear is losing capoeira<br>
+Living aimlessly, not knowing where to go<br>
+Being like the sun and not being able to shine<br>
+Being like a bird and not having wings to fly<br><br>
+It is very good<br>
+Is too good<br>
+Being capoeira is too good</td>
     </tr>
 </table>
 <figcaption>
-Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
+<p>Author: Unknown (Do you know who wrote this song? Tell us in the comments!)</p>
 </figcaption>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2uKPqJ1-Ipo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+```
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+                <!-- Add this to your nav.njk -->
+                <div class="cart-indicator">
+                    <span id="cart-count" style="display: none">0</span>
+                </div>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    
+    
+</body>
+
+
+</html>

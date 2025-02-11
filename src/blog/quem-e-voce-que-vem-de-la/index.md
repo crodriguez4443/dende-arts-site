@@ -9,64 +9,59 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Quem é você, ô que vem de lá<br>
-<strong>Quem é você, ô que vem de lá</strong><br>
-<br>
-Quem é você, ô que vem de lá<br>
-<strong>Quem é você, ô que vem de lá</strong><br>
-<br>
-Eu vim da Bahia<br>
-Vim me apresentar<br>
-<br>
-<strong>Eu vim da Bahia<br>
-Vim me apresentar</strong><br>
-<br>
-É um arame, é um chocalho<br>
-É uma moeda, é um pedaco de pau<br>
-<br>
-Meu berimbau toca é assim<br>
-<strong>Meu berimbau toca é assim</strong><br>
-<br>
-Digi digi digi digi digi digi dom<br>
-<strong>Meu berimbau toca é assim</strong><br>
-<br>
-Dim dim dim don dim dim don<br>
-<strong>Meu berimbau toca é assim</strong></td>
-        <td>Who are you, who comes from there<br>
-Who are you, who comes from there<br>
-<br>
-Who are you, who comes from there<br>
-Who are you, who comes from there<br>
-<br>
-I came from Bahia<br>
-I came to introduce myself<br>
-<br>
-I came from Bahia<br>
-I came to introduce myself<br>
-<br>
-It's a wire, it's a rattle<br>
-It's a coin, it's a piece of wood<br>
-<br>
-My berimbau plays like this<br>
-My berimbau plays like this<br>
-<br>
-Digi digi digi digi digi digi sun<br>
-My berimbau plays like this<br>
-<br>
-Dim dim dim don dim dim don<br>
-My berimbau plays like this</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Quem é você, ô que vem de lá  
+**Quem é você, ô que vem de lá**  
+  
+Quem é você, ô que vem de lá  
+**Quem é você, ô que vem de lá**  
+  
+Eu vim da Bahia  
+Vim me apresentar  
+  
+**Eu vim da Bahia  
+Vim me apresentar**  
+  
+É um arame, é um chocalho  
+É uma moeda, é um pedaco de pau  
+  
+Meu berimbau toca é assim  
+**Meu berimbau toca é assim**  
+  
+Digi digi digi digi digi digi dom  
+**Meu berimbau toca é assim**  
+  
+Dim dim dim don dim dim don  
+**Meu berimbau toca é assim** | Who are you, who comes from there  
+Who are you, who comes from there  
+  
+Who are you, who comes from there  
+Who are you, who comes from there  
+  
+I came from Bahia  
+I came to introduce myself  
+  
+I came from Bahia  
+I came to introduce myself  
+  
+It's a wire, it's a rattle  
+It's a coin, it's a piece of wood  
+  
+My berimbau plays like this  
+My berimbau plays like this  
+  
+Digi digi digi digi digi digi sun  
+My berimbau plays like this  
+  
+Dim dim dim don dim dim don  
+My berimbau plays like this |
 
 <figcaption>
-Author: Mestre Suassuna<br>
+
+Author: Mestre Suassuna  
 Note: A lot of improvisation on the 'berimbau sounds', go on as long as the singer likes.
+
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u7jZeSDQ4TI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

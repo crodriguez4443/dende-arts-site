@@ -8,17 +8,66 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Saudade da minha terra<br>Saudade do meu amor<br>Se hoje estou bem longe<br>Berimbau me chamou<br><br>Lê lê lê lê lê lê<br>La la ê la<br><br><strong>Lê lê lê lê lê lê<br>La la ê la</strong><br><br>Berimbau me concedeu<br><strong>Ê la ê la</strong><br><br>Dois desejos nessa vida<br><strong>Ê la ê la</strong><br><br>Escolhi a capoeira<br><strong>Ê la ê la</strong><br><br>Como minha filosofia<br><strong>Ê la ê la</strong><br><br>Lê lê lê lê lê lê<br>La la ê la<br><br><strong>Lê lê lê lê lê lê<br>La la ê la</strong></td>
-        <td>I miss my land<br>I miss my love<br>If today I am far away<br>Berimbau called me<br><br>Lê lê lê lê lê lê<br>La la ê la<br><br>Lê lê lê lê lê lê<br>La la ê la<br><br>Berimbau granted me<br>Ê la ê la<br><br>Two wishes in this life<br>Ê la ê la<br><br>I chose capoeira<br>Ê la ê la<br><br>As my philosophy<br>Ê la ê la<br><br>Lê lê lê lê lê lê<br>La la ê la<br><br>Lê lê lê lê lê lê<br>La la ê la</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Saudade da minha terra  
+Saudade do meu amor  
+Se hoje estou bem longe  
+Berimbau me chamou  
+  
+Lê lê lê lê lê lê  
+La la ê la  
+  
+**Lê lê lê lê lê lê  
+La la ê la**  
+  
+Berimbau me concedeu  
+**Ê la ê la**  
+  
+Dois desejos nessa vida  
+**Ê la ê la**  
+  
+Escolhi a capoeira  
+**Ê la ê la**  
+  
+Como minha filosofia  
+**Ê la ê la**  
+  
+Lê lê lê lê lê lê  
+La la ê la  
+  
+**Lê lê lê lê lê lê  
+La la ê la** | I miss my land  
+I miss my love  
+If today I am far away  
+Berimbau called me  
+  
+Lê lê lê lê lê lê  
+La la ê la  
+  
+Lê lê lê lê lê lê  
+La la ê la  
+  
+Berimbau granted me  
+Ê la ê la  
+  
+Two wishes in this life  
+Ê la ê la  
+  
+I chose capoeira  
+Ê la ê la  
+  
+As my philosophy  
+Ê la ê la  
+  
+Lê lê lê lê lê lê  
+La la ê la  
+  
+Lê lê lê lê lê lê  
+La la ê la |
 
 <figcaption>
+
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
+
 </figcaption>

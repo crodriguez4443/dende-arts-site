@@ -9,221 +9,216 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Quero ver dendê<br>
-Quero ver dendê<br>
-Na roda de bamba, eu<br>
-Quero ver dendê<br>
-<br>
-<strong>Quero ver dendê<br>
-Quero ver dendê<br>
-Na roda de bamba, eu<br>
-Quero ver dendê</strong><br>
-<br>
-Agbá é àduní<br>
-Nagôs, malês e obás<br>
-É tata que adupé<br>
-Por que eu quero ver dendê<br>
-<br>
-<strong>Quero ver dendê<br>
-Quero ver dendê<br>
-Na roda de bamba, eu<br>
-Quero ver dendê</strong><br>
-<br>
-E pra quem quiser dizer, oi iáiá<br>
-Que essa língua não é minha<br>
-Preste atenção na cantiga<br>
-Que vosmicê vai me entender<br>
-Quero ver dendê<br>
-<br>
-<strong>Quero ver dendê<br>
-Quero ver dendê<br>
-Na roda de bamba, eu<br>
-Quero ver dendê</strong><br>
-<br>
-É banda lá no quimbundo<br>
-Cangerê que imbelecô<br>
-É mo jubá de oió<br>
-Por que eu quero ver dendê<br>
-<br>
-<strong>Quero ver dendê<br>
-Quero ver dendê<br>
-Na roda de bamba, eu<br>
-Quero ver dendê</strong><br>
-<br>
-É tempo que passa, é tempo<br>
-Ai meu Deus<br>
-Que esse povo veio de lá<br>
-É preciso entender<br>
-Um pouco do seu cantar<br>
-Quero ver dendê<br>
-<br>
-<strong>Quero ver dendê<br>
-Quero ver dendê<br>
-Na roda de bamba, eu<br>
-Quero ver dendê</strong><br>
-<br>
-Tem fome faz ageum<br>
-Tá triste é de calundú<br>
-Dinheiro me dê equé<br>
-Por que eu quero ver dendê<br>
-<br>
-<strong>Quero ver dendê<br>
-Quero ver dendê<br>
-Na roda de bamba, eu<br>
-Quero ver dendê</strong><br>
-<br>
-Outro dia escutei<br>
-Indaka de afofô<br>
-E fui procurar saber<br>
-Que é o tal do falador<br>
-<br>
-<strong>Quero ver dendê<br>
-Quero ver dendê<br>
-Na roda de bamba, eu<br>
-Quero ver dendê</strong><br>
-<br>
-Em toda a cantoria<br>
-Eu peço pra ver dendê<br>
-Do banto coisa excelente<br>
-Bom mesmo é ter dendê<br>
-<br>
-<strong>Quero ver dendê<br>
-Quero ver dendê<br>
-Na roda de bamba, eu<br>
-Quero ver dendê</strong><br>
-<br>
-Surpreso fiquei ao ver<br>
-Buscando no Iorubá<br>
-Que a frase para sempre<br>
-É a palavra àbádá<br>
-<br>
-<strong>Quero ver dendê<br>
-Quero ver dendê<br>
-Na roda de bamba, eu<br>
-Quero ver dendê</strong><br>
-<br>
-Pra oxalá de òrum<br>
-Eu peço minha àsálù<br>
-E na terra pros meus òrés<br>
-Eu peço pra ver dendê<br>
-<br>
-<strong>Quero ver dendê<br>
-Quero ver dendê<br>
-Na roda de bamba, eu<br>
-Quero ver dendê</strong></td>
-        <td>I want to see dendê<br>
-I want to see dendê<br>
-At the bamba's roda, I<br>
-Want to see dendê<br>
-<br>
-I want to see dendê<br>
-I want to see dendê<br>
-At the bamba's roda, I<br>
-Want to see dendê<br>
-<br>
-Agbá is àduní<br>
-Nagô, Malês and Obás<br>
-It's tata who adupé<br>
-Why do I want to see dendê<br>
-<br>
-I want to see dendê<br>
-I want to see dendê<br>
-At the bamba's roda, I<br>
-Want to see dendê<br>
-<br>
-And for those who want to say, oh iaiá<br>
-That this language is not mine<br>
-Pay attention to the song<br>
-And you will understand me<br>
-I want to see dendê<br>
-<br>
-I want to see dendê<br>
-I want to see dendê<br>
-At the bamba's roda, I<br>
-Want to see dendê<br>
-<br>
-It's banda there in the kimbundu<br>
-Cangerê that imbelecô<br>
-It's oró's mo jubá<br>
-Why do I want to see dendê<br>
-<br>
-I want to see dendê<br>
-I want to see dendê<br>
-At the bamba's roda, I<br>
-Want to see dendê<br>
-<br>
-It's time that passes, it's time<br>
-My goodness<br>
-That these people came from there<br>
-It is necessary to understand<br>
-A little bit of their singing<br>
-I want to see dendê<br>
-<br>
-I want to see dendê<br>
-I want to see dendê<br>
-At the bamba's roda, I<br>
-Want to see dendê<br>
-<br>
-If you're hungry, make ageum<br>
-If you're sad, calundú<br>
-Money give me equé<br>
-Why do I want to see dendê<br>
-<br>
-I want to see dendê<br>
-I want to see dendê<br>
-At the bamba's roda, I<br>
-Want to see dendê<br>
-<br>
-The other day I heard<br>
-Indaka of afofô<br>
-And I went to find out<br>
-Who is the talker<br>
-<br>
-I want to see dendê<br>
-I want to see dendê<br>
-At the bamba's roda, I<br>
-Want to see dendê<br>
-<br>
-In all the singing<br>
-I ask to see dendê<br>
-From bantu excellent thing<br>
-It's really good to have dendê<br>
-<br>
-I want to see dendê<br>
-I want to see dendê<br>
-At the bamba's roda, I<br>
-Want to see dendê<br>
-<br>
-I was surprised to see<br>
-Searching in Yoruba<br>
-That the phrase meaning forever<br>
-Is the word àbádá<br>
-<br>
-I want to see dendê<br>
-I want to see dendê<br>
-At the bamba's roda, I<br>
-Want to see dendê<br>
-<br>
-For òrum's oxalá<br>
-I ask for my àsálù<br>
-And on earth for my òrés<br>
-I ask to see dendê<br>
-<br>
-I want to see dendê<br>
-I want to see dendê<br>
-At the bamba's roda, I<br>
-Want to see dendê</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Quero ver dendê  
+Quero ver dendê  
+Na roda de bamba, eu  
+Quero ver dendê  
+  
+**Quero ver dendê  
+Quero ver dendê  
+Na roda de bamba, eu  
+Quero ver dendê**  
+  
+Agbá é àduní  
+Nagôs, malês e obás  
+É tata que adupé  
+Por que eu quero ver dendê  
+  
+**Quero ver dendê  
+Quero ver dendê  
+Na roda de bamba, eu  
+Quero ver dendê**  
+  
+E pra quem quiser dizer, oi iáiá  
+Que essa língua não é minha  
+Preste atenção na cantiga  
+Que vosmicê vai me entender  
+Quero ver dendê  
+  
+**Quero ver dendê  
+Quero ver dendê  
+Na roda de bamba, eu  
+Quero ver dendê**  
+  
+É banda lá no quimbundo  
+Cangerê que imbelecô  
+É mo jubá de oió  
+Por que eu quero ver dendê  
+  
+**Quero ver dendê  
+Quero ver dendê  
+Na roda de bamba, eu  
+Quero ver dendê**  
+  
+É tempo que passa, é tempo  
+Ai meu Deus  
+Que esse povo veio de lá  
+É preciso entender  
+Um pouco do seu cantar  
+Quero ver dendê  
+  
+**Quero ver dendê  
+Quero ver dendê  
+Na roda de bamba, eu  
+Quero ver dendê**  
+  
+Tem fome faz ageum  
+Tá triste é de calundú  
+Dinheiro me dê equé  
+Por que eu quero ver dendê  
+  
+**Quero ver dendê  
+Quero ver dendê  
+Na roda de bamba, eu  
+Quero ver dendê**  
+  
+Outro dia escutei  
+Indaka de afofô  
+E fui procurar saber  
+Que é o tal do falador  
+  
+**Quero ver dendê  
+Quero ver dendê  
+Na roda de bamba, eu  
+Quero ver dendê**  
+  
+Em toda a cantoria  
+Eu peço pra ver dendê  
+Do banto coisa excelente  
+Bom mesmo é ter dendê  
+  
+**Quero ver dendê  
+Quero ver dendê  
+Na roda de bamba, eu  
+Quero ver dendê**  
+  
+Surpreso fiquei ao ver  
+Buscando no Iorubá  
+Que a frase para sempre  
+É a palavra àbádá  
+  
+**Quero ver dendê  
+Quero ver dendê  
+Na roda de bamba, eu  
+Quero ver dendê**  
+  
+Pra oxalá de òrum  
+Eu peço minha àsálù  
+E na terra pros meus òrés  
+Eu peço pra ver dendê  
+  
+**Quero ver dendê  
+Quero ver dendê  
+Na roda de bamba, eu  
+Quero ver dendê** | I want to see dendê  
+I want to see dendê  
+At the bamba's roda, I  
+Want to see dendê  
+  
+I want to see dendê  
+I want to see dendê  
+At the bamba's roda, I  
+Want to see dendê  
+  
+Agbá is àduní  
+Nagô, Malês and Obás  
+It's tata who adupé  
+Why do I want to see dendê  
+  
+I want to see dendê  
+I want to see dendê  
+At the bamba's roda, I  
+Want to see dendê  
+  
+And for those who want to say, oh iaiá  
+That this language is not mine  
+Pay attention to the song  
+And you will understand me  
+I want to see dendê  
+  
+I want to see dendê  
+I want to see dendê  
+At the bamba's roda, I  
+Want to see dendê  
+  
+It's banda there in the kimbundu  
+Cangerê that imbelecô  
+It's oró's mo jubá  
+Why do I want to see dendê  
+  
+I want to see dendê  
+I want to see dendê  
+At the bamba's roda, I  
+Want to see dendê  
+  
+It's time that passes, it's time  
+My goodness  
+That these people came from there  
+It is necessary to understand  
+A little bit of their singing  
+I want to see dendê  
+  
+I want to see dendê  
+I want to see dendê  
+At the bamba's roda, I  
+Want to see dendê  
+  
+If you're hungry, make ageum  
+If you're sad, calundú  
+Money give me equé  
+Why do I want to see dendê  
+  
+I want to see dendê  
+I want to see dendê  
+At the bamba's roda, I  
+Want to see dendê  
+  
+The other day I heard  
+Indaka of afofô  
+And I went to find out  
+Who is the talker  
+  
+I want to see dendê  
+I want to see dendê  
+At the bamba's roda, I  
+Want to see dendê  
+  
+In all the singing  
+I ask to see dendê  
+From bantu excellent thing  
+It's really good to have dendê  
+  
+I want to see dendê  
+I want to see dendê  
+At the bamba's roda, I  
+Want to see dendê  
+  
+I was surprised to see  
+Searching in Yoruba  
+That the phrase meaning forever  
+Is the word àbádá  
+  
+I want to see dendê  
+I want to see dendê  
+At the bamba's roda, I  
+Want to see dendê  
+  
+For òrum's oxalá  
+I ask for my àsálù  
+And on earth for my òrés  
+I ask to see dendê  
+  
+I want to see dendê  
+I want to see dendê  
+At the bamba's roda, I  
+Want to see dendê |
 
 <figcaption>
+
 Author: Mestre Boa Voz
+
 </figcaption>
 
 As you can see, this song has a lot of words that aren't in Portuguese! In 2013, Maíra Gomes actually did all the legwork to find out what all these words mean and laid it out for everyone in her blog, which you can acess by clicking [here](http://capoeiradetodamaneira.blogspot.com/2013/08/voce-sabe-o-que-ta-cantando_26.html). Here all I've done is translated the definitions found on her blog.

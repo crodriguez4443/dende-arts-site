@@ -1,9 +1,9 @@
 ---
-title: "8 WEEK BRIDGE CHALLENGE"
+title: "8 Week Bridge Challenge: Capoeira Ponte Training"
 date: "2017-05-21"
-categories: 
+categories:
   - "capoeira101"
-tags: 
+tags:
   - "8-week-challenge"
   - "8weekchallenge"
   - "au-de-coluna"
@@ -18,6 +18,21 @@ tags:
   - "spinal-waves"
 coverImage: "farsai-c-232290.jpg"
 layout: "blog-post-layout.njk"
+
+# Add new SEO Fields:
+description: "Master the capoeira ponte in 8 weeks! This challenge improves flexibility & spinal movement for advanced techniques like au de coluna."
+author: "Chris Calado Rodriguez"
+keywords: "capoeira bridge training program, improve ponte flexibility, spinal wave exercises, au de coluna progression, capoeira backbend tutorial, 8 week flexibility challenge, ponte for capoeira beginners, capoeira spinal mobility"
+
+# Social Sharing:
+socialImage: "farsai-c-232290.jpg"
+
+# Content Details:
+headline: "8 Week Capoeira Bridge Challenge: Unlock Advanced Movements"
+excerpt: "Transform your capoeira game with this 8-week bridge challenge, designed to enhance flexibility, spinal mobility, and unlock advanced techniques like the au de coluna."
+
+# Indexing:
+type: "blog-article"
 ---
 
 ## YOU ARE AS OLD AS YOUR SPINE
@@ -30,13 +45,13 @@ For the next 8 weeks, I will be doing bridges every day as part of my #8weekbrid
 
 ## IT HURTS WHEN YOU DO A BRIDGE?
 
-Many people experience pain when they do a bridge, especially in their lower back, and they have no idea why. When the pain doesn't go away they think, "this isn't meant for me", but I can tell you, it's all in the method.
+Many people experience pain when they do a bridge, especially in their lower back, and they have no idea why. When the pain doesn't go away they think, “this isn't meant for me”, but I can tell you, it's all in the method.
 
-From my experience training and working with Capoeiristas, I have learned that VERY FEW people feel comfortable bending backwards. Most people feel discomfort/pain and in many cases this is because they don't warm up properly or because they bend from their lower (lumbar) spine, when they should be using their middle (thoracic) spine. The lower back hyperflexes when going backwards, meaning that it's bending further than it's supposed to, while the thoracic spine opens up beautifully when doing a bridge, as it's meant to.
+From my experience training and working with Capoeiristas, I have learned that VERY FEW people feel comfortable bending backwards. Most people feel discomfort/pain and in many cases this is because they don't warm up properly or because they bend from their lower (lumbar) spine, when they should be using their middle (thoracic) spine. The lower back hyperflexes when going backwards, meaning that it's bending further than it's supposed to, while the thoracic spine opens up beautifully when doing a bridge, as it’s meant to.
 
 ## HOW TO WARM UP YOUR SPINE
 
-Doing [spinal waves](https://www.youtube.com/watch?v=HBOTVWhB-S8) is a great tool to prepare your spine for any back bends. Clicking on the link, you might think, "well, that's the weirdest thing I've seen in a while". The point of doing spinal waves is to move each vertebra in your spine in all directions. This is a great warmup for your back and a tool to teach you how you feel about moving your spine.  
+Doing [spinal waves](https://www.youtube.com/watch?v=HBOTVWhB-S8) is a great tool to prepare your spine for any back bends. Clicking on the link, you might think, “well, that's the weirdest thing I've seen in a while”. The point of doing spinal waves is to move each vertebra in your spine in all directions. This is a great warmup for your back and a tool to teach you how you feel about moving your spine.  
 
 ## CAPOEIRA APPLICATION
 

@@ -8,34 +8,27 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Agora sim, que mataram o seu Besouro<br>
-        Depois de morto, Besourinho cordão de ouro<br>
-        <strong>Agora sim, que mataram o seu Besouro<br>
-        Depois de morto, Besourinho cordão de ouro</strong><br>
-        <br>
-        Besouro Besourinho<br>
-        Cordão de ouro<br>
-        <br>
-        Besouro Besourinho<br>
-        Cordão de uro</td>
-        <td>Now that they killed Besouro<br>
-        After death, Besourinho golden cord<br>
-        Now that they killed Besouro<br>
-        After death, Besourinho golden cord<br>
-        <br>
-        Besouro Besourinho<br>
-        Golden cord<br>
-        <br>
-        Besouro Besourinho<br>
-        Golden cord</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Agora sim, que mataram o seu Besouro  
+Depois de morto, Besourinho cordão de ouro  
+**Agora sim, que mataram o seu Besouro  
+Depois de morto, Besourinho cordão de ouro**  
+  
+Besouro Besourinho  
+Cordão de ouro  
+  
+Besouro Besourinho  
+Cordão de uro | Now that they killed Besouro  
+After death, Besourinho golden cord  
+Now that they killed Besouro  
+After death, Besourinho golden cord  
+  
+Besouro Besourinho  
+Golden cord  
+  
+Besouro Besourinho  
+Golden cord |
 
 <figcaption>
 

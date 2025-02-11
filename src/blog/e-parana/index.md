@@ -8,41 +8,60 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Ê Paraná<br><br>
-        Terra da boa madeira, Paraná<br><br>
-        <strong>Ê Paraná</strong><br><br>
-        Eu vim aqui aqui não vou voltar, Paraná<br><br>
-        <strong>Ê Paraná</strong><br><br>
-        Eu quero ver você jogar, Paraná<br><br>
-        <strong>Ê Paraná</strong><br><br>
-        Eu quero ver você cantar, Paraná<br><br>
-        <strong>Ê Paraná</strong><br><br>
-        Eu vim aqui aqui não vou voltar, Paraná<br><br>
-        <strong>Ê Paraná</strong><br><br>
-        Paraná, paranaué, Paraná<br><br>
-        <strong>Ê Paraná</strong></td>
-        <td>Ê Paraná<br><br>
-        Land of good wood, Paraná<br><br>
-        Ê Paraná<br><br>
-        I came here I will not return, Paraná<br><br>
-        Ê Paraná<br><br>
-        I want to see you play, Paraná<br><br>
-        Ê Paraná<br><br>
-        I want to see you sing, Paraná<br><br>
-        Ê Paraná<br><br>
-        I came here I will not return, Paraná<br><br>
-        Ê Paraná<br><br>
-        Paraná, Paranaué, Paraná<br><br>
-        Ê Paraná</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Ê Paraná  
+  
+Terra da boa madeira, Paraná  
+  
+**Ê Paraná**  
+  
+Eu vim aqui aqui não vou voltar, Paraná  
+**  
+Ê Paraná**  
+  
+Eu quero ver você jogar, Paraná  
+**  
+Ê Paraná**  
+  
+Eu quero ver você cantar, Paraná  
+  
+**Ê Paraná  
+**  
+Eu vim aqui aqui não vou voltar, Paraná  
+  
+**Ê Paraná**  
+  
+Paraná, paranaué, Paraná  
+  
+**Ê Paraná** | Ê Paraná  
+  
+Land of good wood, Paraná  
+  
+Ê Paraná  
+  
+I came here I will not return, Paraná  
+  
+Ê Paraná  
+  
+I want to see you play, Paraná  
+  
+Ê Paraná  
+  
+I want to see you sing, Paraná  
+  
+Ê Paraná  
+  
+I came here I will not return, Paraná  
+  
+Ê Paraná  
+  
+Paraná, Paranaué, Paraná  
+  
+Ê Paraná |
 
 <figcaption>
+
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
+
 </figcaption>

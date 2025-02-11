@@ -1,9 +1,9 @@
 ---
 title: "Capoeira Build 01"
 date: "2017-10-18"
-categories: 
+categories:
   - "capoeira101"
-tags: 
+tags:
   - "american-capoeira"
   - "capoeira"
   - "capoeira-article"
@@ -25,6 +25,21 @@ tags:
   - "what-is-capoeira"
 coverImage: "22563860_10159409612405557_1664354630_o.jpg"
 layout: "blog-post-layout.njk"
+
+# Add new SEO Fields:
+description: "Explore the fundamentals of Capoeira Build 01: essential movements, techniques, and the cultural significance of this Afro-Brazilian art form."
+author: "Chris Calado Rodriguez"
+keywords: "capoeira basics for beginners, learn capoeira techniques at home, cordao de ouro capoeira training, capoeira kicks and movements tutorial, what is capoeira and its origins, benefits of learning capoeira, berimbau instrument in capoeira, capoeira classes near me for adults"
+
+# Social Sharing:
+socialImage: "22563860_10159409612405557_1664354630_o.jpg"
+
+# Content Details:
+headline: "Capoeira Build 01: Your Foundation in Afro-Brazilian Martial Arts"
+excerpt: "Capoeira Build 01 unveils the essential building blocks of capoeira, providing a solid foundation for mastering this dynamic art form."
+
+# Indexing:
+type: "blog-article"
 ---
 
 \[embedyt\] https://www.youtube.com/watch?v=J0He3HamL-0\[/embedyt\]

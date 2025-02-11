@@ -1,14 +1,359 @@
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Sem capoeira eu não posso viver<br>Sou peixe fora do mar<br>Passarinho sem voar<br>Dia sem escurecer<br><br><strong>Sem capoeira eu não posso viver<br>Sou peixe fora do mar<br>Passarinho sem voar<br>Dia sem escurecer</strong><br><br>Mesmo rastejando eu vou<br>Agacho para jogar<br>Peço ao berimbau que toca<br>E a Deus pra me olhar<br><br><strong>Sem capoeira eu não posso viver<br>Sou peixe fora do mar<br>Passarinho sem voar<br>Dia sem escurecer</strong><br><br>Posso ficar sem comer<br>Nem água eu beberei<br>Sem capoeira não fico<br>Porque senão eu morrerei<br><br><strong>Sem capoeira eu não posso viver<br>Sou peixe fora do mar<br>Passarinho sem voar<br>Dia sem escurecer</strong><br><br>Peixe fora da água morre<br>O dia tem que escurecer<br>E eu sem capoeira<br>Não sei o que vou fazer<br><br><strong>Sem capoeira eu não posso viver<br>Sou peixe fora do mar<br>Passarinho sem voar<br>Dia sem escurecer</strong><br><br>Passarinho sem voar<br>Eu sem minha capoeira<br>Passarinho bateu asa<br>Eu fiquei nessa tristeza<br><br><strong>Sem capoeira eu não posso viver<br>Sou peixe fora do mar<br>Passarinho sem voar<br>Dia sem escurecer</strong></td>
-        <td>Without capoeira I can't live<br>I'm a fish out of the sea<br>A bird without flight<br>Day without nightfall<br><br>Without capoeira I can't live<br>I'm a fish out of the sea<br>A bird without flight<br>Day without nightfall<br><br>Even crawling I will<br>Squat to play<br>I ask the berimbau that plays<br>And God to look after me<br><br>Without capoeira I can't live<br>I'm a fish out of the sea<br>A bird without flight<br>Day without nightfall<br><br>I can go without eating<br>I won't even drink water<br>Without capoeira I can't stay<br>Because otherwise I will die<br><br>Without capoeira I can't live<br>I'm a fish out of the sea<br>A bird without flight<br>Day without nightfall<br><br>A fish out of water dies<br>The day has to get dark<br>And without capoeira<br>I don't know what I will do<br><br>Without capoeira I can't live<br>I'm a fish out of the sea<br>A bird without flight<br>Day without nightfall<br><br>Bird without flight<br>Me without my capoeira<br>Bird flapped its wing<br>I stayed in this sadness<br><br>Without capoeira I can't live<br>I'm a fish out of the sea<br>A bird without flight<br>Day without nightfall</td>
-    </tr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sem Capoeira Eu Não Posso Viver</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songbook</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">Sem Capoeira Eu Não Posso Viver</a>
+            </div>
+            <h1>Sem Capoeira Eu Não Posso Viver</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2021-03-30">
+                    March 29, 2021
+                </time>
+            </div>
+            
+            
+            
+            
+
+            <div class="blog-post-content">
+                <table>
+<thead>
+<tr>
+<th>Portuguese</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sem capoeira eu não posso viver</td>
+<td></td>
+</tr>
+<tr>
+<td>Sou peixe fora do mar</td>
+<td></td>
+</tr>
+<tr>
+<td>Passarinho sem voar</td>
+<td></td>
+</tr>
+<tr>
+<td>Dia sem escurecer</td>
+<td></td>
+</tr>
+</tbody>
 </table>
+<p><strong>Sem capoeira eu não posso viver<br>
+Sou peixe fora do mar<br>
+Passarinho sem voar<br>
+Dia sem escurecer</strong></p>
+<p>Mesmo rastejando eu vou<br>
+Agacho para jogar<br>
+Peço ao berimbau que toca<br>
+E a Deus pra me olhar<br>
+**<br>
+Sem capoeira eu não posso viver<br>
+Sou peixe fora do mar<br>
+Passarinho sem voar<br>
+Dia sem escurecer**</p>
+<p>Posso ficar sem comer<br>
+Nem água eu beberei<br>
+Sem capoeira não fico<br>
+Porque senão eu morrerei</p>
+<p><strong>Sem capoeira eu não posso viver<br>
+Sou peixe fora do mar<br>
+Passarinho sem voar<br>
+Dia sem escurecer</strong></p>
+<p>Peixe fora da água morre<br>
+O dia tem que escurecer<br>
+E eu sem capoeira<br>
+Não sei o que vou fazer</p>
+<p><strong>Sem capoeira eu não posso viver<br>
+Sou peixe fora do mar<br>
+Passarinho sem voar<br>
+Dia sem escurecer</strong></p>
+<p>Passarinho sem voar<br>
+Eu sem minha capoeira<br>
+Passarinho bateu asa<br>
+Eu fiquei nessa tristeza</p>
+<p><strong>Sem capoeira eu não posso viver<br>
+Sou peixe fora do mar<br>
+Passarinho sem voar<br>
+Dia sem escurecer</strong> | Without capoeira I can't live<br>
+I'm a fish out of the sea<br>
+A bird without flight<br>
+Day without nightfall</p>
+<p>Without capoeira I can't live<br>
+I'm a fish out of the sea<br>
+A bird without flight<br>
+Day without nightfall</p>
+<p>Even crawling I will<br>
+Squat to play<br>
+I ask the berimbau that plays<br>
+And God to look after me</p>
+<p>Without capoeira I can't live<br>
+I'm a fish out of the sea<br>
+A bird without flight<br>
+Day without nightfall</p>
+<p>I can go without eating<br>
+I won't even drink water<br>
+Without capoeira I can't stay<br>
+Because otherwise I will die</p>
+<p>Without capoeira I can't live<br>
+I'm a fish out of the sea<br>
+A bird without flight<br>
+Day without nightfall</p>
+<p>A fish out of water dies<br>
+The day has to get dark<br>
+And without capoeira<br>
+I don't know what I will do</p>
+<p>Without capoeira I can't live<br>
+I'm a fish out of the sea<br>
+A bird without flight<br>
+Day without nightfall</p>
+<p>Bird without flight<br>
+Me without my capoeira<br>
+Bird flapped its wing<br>
+I stayed in this sadness</p>
+<p>Without capoeira I can't live<br>
+I'm a fish out of the sea<br>
+A bird without flight<br>
+Day without nightfall |</p>
 <figcaption>
-Author: Mestre Charm
+<p>Author: Mestre Charm</p>
 </figcaption>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/U1o6NuZDSTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+                <!-- Add this to your nav.njk -->
+                <div class="cart-indicator">
+                    <span id="cart-count" style="display: none">0</span>
+                </div>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    
+    
+</body>
+
+
+</html>

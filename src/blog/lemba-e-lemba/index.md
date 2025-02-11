@@ -8,30 +8,23 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Lemba ê, Lemba<br>
-        Lemba do barro vermelho<br>
-        <br>
-        <strong>Lemba ê, Lemba</strong><br>
-        <br>
-        Lemba do vermelho barro<br>
-        <br>
-        <strong>Lemba ê, Lemba</strong></td>
-        <td>Lemba, Lemba<br>
-        Lemba of the red clay<br>
-        <br>
-        Lemba ê, Lemba<br>
-        <br>
-        Lemba of the red clay<br>
-        <br>
-        Lemba ê, Lemba</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Lemba ê, Lemba  
+Lemba do barro vermelho  
+  
+**Lemba ê, Lemba**  
+  
+Lemba do vermelho barro  
+  
+**Lemba ê, Lemba** | Lemba, Lemba  
+Lemba of the red clay  
+  
+Lemba ê, Lemba  
+  
+Lemba of the red clay  
+  
+Lemba ê, Lemba |
 
 <figcaption>
 

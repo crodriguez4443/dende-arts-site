@@ -1,9 +1,9 @@
 ---
 title: "THE BIOGRAPHY OF MESTRE SUASSUNA 2/3"
 date: "2018-01-08"
-categories: 
+categories:
   - "capoeira101"
-tags: 
+tags:
   - "blog-of-capoeira"
   - "capoeira"
   - "capoiera-blog"
@@ -15,9 +15,32 @@ tags:
   - "suassuna"
 coverImage: "biography-of-MS-23.png"
 layout: "blog-post-layout.njk"
+
+# Add new SEO Fields:
+description: "Explore the life of Mestre Suassuna, a pivotal figure in Capoeira Cordão de Ouro. Learn about his contributions and legacy. (155 characters)"
+author: "Chris Calado Rodriguez"
+keywords:
+  - "Mestre Suassuna biography Cordao de Ouro"
+  - "Capoeira Cordao de Ouro history"
+  - "Mestre Suassuna Capoeira techniques"
+  - "Cordao de Ouro capoeira style"
+  - "Capoeira Mestre Suassuna legacy"
+  - "History of Cordao de Ouro capoeira group"
+  - "Capoeira Angola vs Regional Cordao de Ouro"
+  - "Mestre Suassuna Capoeira influence"
+
+# Social Sharing:
+socialImage: "biography-of-MS-23.png"
+
+# Content Details:
+headline: "The Biography of Mestre Suassuna Part 2: Exploring His Capoeira Journey"
+excerpt: "Delve into the continuing story of Mestre Suassuna's profound impact on Capoeira Cordão de Ouro and his significant contributions to the art form."
+
+# Indexing:
+type: "blog-article"
 ---
 
-This is part 2 of the 3 part series summarizing the amazing book by  [M. Boca Rica](http://capoeiracdobarcelona.com/). The Biography of Mestre Suassuna.
+This is part 2 of the 3 part series summarizing the amazing book by  [M. Boca Rica](http://capoeiracdobarcelona.com/). The Biography of Mestre Suassuna.
 
 If you haven't seen the first part, here is a [link](https://youtu.be/urTvdvySimU). I encourage you to see the first part before watching part 2. Look out for part three next week where we'll look at the last chapter of this biography and we'll talk about the creation of CDO!
 

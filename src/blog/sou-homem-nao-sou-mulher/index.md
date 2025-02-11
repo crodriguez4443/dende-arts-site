@@ -1,16 +1,42 @@
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>O dende o dende<br>O dende de mare<br>sete dias no mar<br>e sete dias na mare<br>Eu vou dizer a dende<br><br><strong>Sou homem nao sou mulher</strong><br><br>Eu vou dizer a dende<br><br><strong>Sou homem nao sou mulher</strong></td>
-        <td>Oh dendê o dendê?<br>Oh dendê the sea<br>seven days at sea<br>and seven days at sea<br>I will tell to dendê<br><br>I'm a man I'm not a woman<br><br>I will tell to dendê<br><br>I'm a man I'm not a woman</td>
-    </tr>
-</table>
+---
+title: "Sou homem nao sou mulher"
+date: "2021-07-17"
+categories: 
+  - "capoeira-songbook"
+tags: 
+  - "beginner"
+  - "corrido"
+layout: "blog-post-layout.njk"
+---
+
+| Portuguese | English |
+| --- | --- |
+| O dende o dende  
+O dende de mare  
+sete dias no mar  
+e sete dias na mare  
+Eu vou dizer a dende  
+  
+**Sou homem nao sou mulher  
+**  
+Eu vou dizer a dende  
+  
+**Sou homem nao sou mulher** | Oh dendê o dend_ê_?  
+Oh dendê the sea  
+seven days at sea  
+and seven days at sea  
+I will tell to dendê  
+  
+I'm a man I'm not a woman  
+  
+I will tell to dendê  
+  
+I'm a man I'm not a woman |
 
 <figcaption>
+
 Author: Unknown (do you know the author? let us know!)
+
 </figcaption>
 
 Dendê is palm oil, but can also mean good energy.

@@ -1,30 +1,42 @@
 ---
 title: "RODA AT PALACE DES ARTS, MONTREAL"
 date: "2017-10-14"
-categories: 
+categories:
   - "capoeira101"
-tags: 
+tags:
   - "american-capoeira"
   - "capoeira"
   - "capoeira-article"
   - "capoeira-blog"
   - "capoeira-cdo"
   - "capoeira-in"
-  - "capoeira-in-new-jersey"
-  - "capoeira-in-new-york-city"
-  - "capoeira-kicks"
-  - "capoeira-near-me"
-  - "cdo"
-  - "cordao-de-ouro"
-  - "how-to-play-berimbau"
-  - "how-to-play-capoeira"
-  - "learn-capoeira"
-  - "learn-capoeira-movements"
-  - "mestre-suassuana"
-  - "what-is-a-berimbau"
-  - "what-is-capoeira"
+  - "capoeira-in-montreal"
+  - "capoeira-roda"
 coverImage: "Screen-Shot-2017-10-14-at-2.30.36-PM.png"
 layout: "blog-post-layout.njk"
+
+# Add new SEO Fields:
+description: "Experience the energy of a Capoeira Roda at the Palace des Arts in Montreal. A vibrant display of movement, music, and tradition!"
+author: "Chris Calado Rodriguez"
+keywords:
+  - "capoeira roda montreal palace des arts"
+  - "capoeira performance montreal"
+  - "cordao de ouro capoeira montreal"
+  - "learn capoeira in montreal"
+  - "capoeira cultural event montreal"
+  - "brazilian martial arts montreal"
+  - "capoeira demonstration montreal"
+  - "capoeira workshop montreal"
+
+# Social Sharing:
+socialImage: "Screen-Shot-2017-10-14-at-2.30.36-PM.png"
+
+# Content Details:
+headline: "Capoeira Roda Shakes the Palace des Arts, Montreal!"
+excerpt: "A captivating capoeira roda brought the vibrant energy of Brazilian martial arts to the Palace des Arts in Montreal, showcasing dynamic movements and rhythmic music."
+
+# Indexing:
+type: "blog-article"
 ---
 
 \[embedyt\] https://www.youtube.com/watch?v=aSOqzxgpfaw\[/embedyt\]

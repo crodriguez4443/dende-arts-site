@@ -8,49 +8,45 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Na Bahia tem um coco<br>
-        Que se chama coco de sinhá<br>
-        É precisa de duas quedas<br>
-        Pra esse coco se quebrar<br>
-        <br>
-        É o coco mironga que tem dendê<br>
-        É o coco que tem dendê<br>
-        <strong>É o coco mironga que tem dendê</strong><br>
-        Tem dendê, tem dendê<br>
-        <strong>É o coco mironga que tem dendê</strong><br>
-        <br>
-        A capoeira tem dendê colega velha<br>
-        <strong>É o coco mironga que tem dendê</strong><br>
-        <br>
-        O tem dendê meu camarada<br>
-        <strong>É o coco que tem dendê</strong></td>
-        <td>In Bahia there is a coconut<br>
-        Which is called coconut of sinhá<br>
-        It takes two falls<br>
-        For this coconut to break<br>
-        <br>
-        It's the mironga coconut that has palm oil<br>
-        It's the coconut that has palm oil<br>
-        It's the mironga coconut that has palm oil<br>
-        There's oil, there's oil<br>
-        It's the mironga coconut that has palm oil<br>
-        <br>
-        Capoeira has palm oil old friend<br>
-        It's the mironga coconut that has palm oil<br>
-        <br>
-        The berimbau has palm oil my friend<br>
-        It's the mironga coconut that has palm oil</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Na Bahia tem um coco  
+Que se chama coco de sinhá  
+É precisa de duas quedas  
+Pra esse coco se quebrar  
+  
+É o coco mironga que tem dendê  
+É o coco que tem dendê  
+**É o coco mironga que tem dendê**  
+Tem dendê, tem dendê  
+****É o coco mironga que tem dendê****  
+  
+A capoeira tem dendê colega velha  
+****É o coco mironga que tem dendê****  
+  
+O tem dendê meu camarada  
+**É o coco que tem dendê** | In Bahia there is a coconut  
+Which is called coconut of sinhá  
+It takes two falls  
+For this coconut to break  
+  
+It's the mironga coconut that has palm oil  
+It's the coconut that has palm oil  
+It's the mironga coconut that has palm oil  
+  
+There's oil, there's oil  
+It's the mironga coconut that has palm oil  
+  
+Capoeira has palm oil old friend  
+It's the mironga coconut that has palm oil  
+  
+The berimbau has palm oil my friend  
+It's the mironga coconut that has palm oil |
 
 <figcaption>
+
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
+
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_2knBGqZRzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

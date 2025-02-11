@@ -1,1 +1,414 @@
-<p>The document does not contain song lyrics, so I will not modify the text. The markdown document remains unchanged.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is the easiest way to do a cartwheel?</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songbook</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">What is the easiest way to do a cartwheel?</a>
+            </div>
+            <h1>What is the easiest way to do a cartwheel?</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2021-02-12">
+                    February 11, 2021
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <p>The easiest way to do a cartwheel is to try the &quot;V&quot; cartwheel. This is a regressed version of a cartwheel that the majority of people can do. This cartwheel is done by attempting your cartwheel in a &quot;V&quot; shape, instead of the traditional straight line. This will eliminate most of the mobility and coordination requirements that might prevent you from doing a normal cartwheel. The &quot;V&quot; Cartwheel is a great variation for people who feel comfortable bringing their hands down to the floor, but struggle to move laterally without feeling scared or losing their balance. Although this regression might not be straight or pretty, it is a good jumping off point for many people starting to learn.</p>
+<p>The cartwheel is a fun and simple acrobatic movement that almost anyone can do with some practice. Although there are many variations to the cartwheel, this variation is a great starting point gymnastics, calisthenics, and other bodyweight movements.</p>
+<h2><h2 id="the-v-cartwheel">The V Cartwheel</h2></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IODxXur_s98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>As mentioned earlier, the &quot;V&quot; cartwheel is one of the best places to get started if you want to do a cartwheel. This is not a &quot;hack&quot; or a shortcut. The &quot;V&quot; cartwheel is exactly what it sounds like. A cartwheel in the shape of a &quot;V&quot;. Moving in this shape, provides a lot more security. It feels less exposed or intense than a normal cartwheel. Get started by doing your &quot;V&quot; cartwheel in a very narrow &quot;V&quot; shape. Make the movement more difficult and more like a cartwheel by widening your &quot;V&quot;, until you are moving in a straight line.</p>
+<h3><h3 id="cartwheel-progress-listed-out">Cartwheel Progress listed out</h3></h3>
+<p>If this still feels too intense for you, consider starting with your hands on the floor and simply kicking your feet up into the air, side to side. The timeline below, along with the videos will give you an idea of how to increase the difficulty, until you are doing a &quot;V&quot; cartwheel.</p>
+<p>Beginner Cartwheel level 1</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z1ooYYx4JxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Beginner Cartwheel level 2</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i0zR_J8oIh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<ul>
+<li>Hands on the floor jumping side to side. Legs barely get off the ground</li>
+<li>Hands on the floor jumping side to side. Legs reach hip height</li>
+<li>Hands start hovering over the floor and jumping side to side. Legs reach hip or shoulder height</li>
+<li>Hands start 1 foot off the ground and jumping side to side. Legs reach head height</li>
+<li>Hands start at hip or shoulder height. Perform &quot;V&quot; cartwheel. Legs reach head height or higher</li>
+<li>Hands start at shoulder height. Perform wider &quot;V&quot; cartwheel. Legs are straight and almost over shoulder</li>
+<li>Start practicing normal cartwheel (moving laterally in a straight line)</li>
+</ul>
+<p>A normal cartwheel is done in a straight line. Most people lack the confidence to throw their legs over their bodies. The result is that the legs do not go as high as they can and making the cartwheel a little ugly. This is nothing to get bummed about. Practice makes perfect and slow progress is better than not trying.</p>
+<p>Once you feel that you have a strong grasp on a particular variation, then move onto the next one. Keep doing this until you think you're ready to do a full cartwheel.</p>
+<h3><h3 id="use-a-piece-of-tape-to-practice">Use a piece of tape to practice</h3></h3>
+<p>A useful bit of advice is to use a piece of tape (or rope) to monitor your progress. Lay the tape down on the ground in a &quot;V&quot; shape. Your goal will be to follow the tape and place all of your hands and feet on it as you do your cartwheel. As you get more comfortable, the goal will be to re-align the tape so that it's straighter and straighter each time you use it. After a bit of practice, you should be able to do your cartwheel on a relatively straight piece of tape.</p>
+<p>Using tape does two things for us. First, it helps us monitor our progress. This is so important for making sure we stay motivated. If you don't feel like you're improving, it's going to be a lot harder to stay focused. The second benefit is that it orients our cartwheels. Doing any skill where your head goes down and your feet go up can be really disorienting. Using tape is a good way of keeping track of where you are in space and not getting that disorientating feeling.</p>
+<h3><h3 id="bigger-cartwheels-are-more-stable-cartwheels">Bigger cartwheels are more stable cartwheels</h3></h3>
+<p>It might sound counterintuitive, but doing a larger cartwheel is more stable than doing a smaller one. Grab as much space as you can. The power and force in your cartwheel gives you balance as you do the movement.</p>
+<p>Doing a smaller cartwheel is much more difficult and considered an intermediate level skill. It might feel safer to do the cartwheel small, but in fact, you are making it harder on yourself.</p>
+<p>Make your cartwheel's bigger by taking a larger initial step and reach far with your hands. In order to do a bigger cartwheel, you will need power. Make sure you push hard off the forward leg as you start the cartwheel, and that the back leg kicks out hard to the side.</p>
+<h3><h3 id="kick-hard-with-the-back-leg">Kick hard with the back leg</h3></h3>
+<p>This is one of the most neglected parts of doing a cartwheel. The back leg needs to be kicked hard to the side. Without this power, it will be much harder to do a cartwheel of any kind. Kicking hard can feel scary at first, but it not only provides power to your cartwheel, but a lot of stability.</p>
+<p>You can practice this movement standing in front of a wall. Swinging your foot back and forth trying to generate as much power as you can.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ajLaXML8YLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3><h3 id="train-your-cartwheels-slow">Train your cartwheels slow</h3></h3>
+<p>Slowing down your cartwheels is a fun way to vary your training while focusing on skills that will help with more advanced variations. Doing a cartwheel slowly is considered a more advanced skill. The main benefit is that it teaches you how to control the movement. If you want your cartwheels to get to the next level, then try doing &quot;V&quot; cartwheels or normal cartwheels at half speed.</p>
+<h2><h2 id="a-common-fear-i-m-scared-of-hitting-my-face-on-the-floor">A common fear: I'm scared of hitting my face on the floor</h2></h2>
+<p>This is a very common fear. Most people feel as though their arms might give out, letting their faces come crashing down to the floor. I felt the same fear, but incredibly, this never happened to me or anyone that I've taught. If this is an overwhelming fear that you have, then the best way to overcome it is to make baby steps.</p>
+<p>If you feel comfortable when your hands are on the floor in the starting position, then try adding another layer of difficulty. Practice bringing feet moving a little higher in the air, and start with your hands hovering above the ground. By challenging yourself slightly above your comfort level, you'll improve your technique and slowly get rid of your fear.</p>
+<h2><h2 id="how-long-does-it-take-to-learn-a-cartwheel">How long does it take to learn a cartwheel?</h2></h2>
+<p>Learning a cartwheel can take as little as a few weeks to learn, up to a few months. This will depend on your current fitness level, flexibility, and coordination. For those who have better flexibility and coordination, it may take only a couple of weeks to develop a strong cartwheel. It is very common to see a great deal of progress after only a of couple practice sessions. After a practice session, the brain quickly goes to work figuring how to cartwheel more efficiently for your next attempts.</p>
+<p>The best way to measure your progress is to lay down a straight piece of tape and see if you can land your hands and feet on that piece of tape as you do your cartwheel. As you technique and coordination improve, your ability to keep your hands and feet on the tape will also improve.</p>
+<h2><h2 id="stretches-to-improve-your-cartwheels">Stretches to improve your cartwheels</h2></h2>
+<p>Stretches that improve flexibility in the hamstrings, lower back, and groin are very beneficial to improving your cartwheel.</p>
+<ul>
+<li>Hamstrings</li>
+<li>Groin</li>
+<li>lower back</li>
+<li>Overhead shoulders</li>
+</ul>
+<p>There are many ways to improve your flexibility in these areas. Here are a few stretches you can use.</p>
+<h3><h3 id="hamstring-stretches">Hamstring stretches</h3></h3>
+<p>We can dynamically stretch our hamstrings starting with our hands touching the floor. Keep your back straight and bend your knees enough so that you’re can touch the floor with your fingers (or entire palm). Straighten your legs as much as you can without losing contact with the floor. Once you reach the apex of your movement, come back to the start of the movement. Repeat at least 10 times and hold the last repetition.</p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/72e0fc7d-9849-4b09-affc-1b78a00d3708/Screen_Shot_2021-02-10_at_3.49.04_PM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210211%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20210211T235748Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=24070fb3f726f2819c270dacbe3bbb04076df42d35c5aca1e61e8af0d97d87ff&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Screen_Shot_2021-02-10_at_3.49.04_PM.png%22" alt=""></p>
+<h3><h3 id="dynamic-lateral-kicks-for-the-groin">Dynamic lateral kicks for the groin</h3></h3>
+<p>Hand on to a chair or wall for stability as you do your kicks. Point your heel in the direction of your kick. Swing the other leg laterally and make sure it is straight throughout the movement. As you kick raises up high, your upper body will naturally lower - this is good. Make sure to do this stretch on both sides. (yes, this is the same exercise as before! that's how important it is!)</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ajLaXML8YLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3><h3 id="lower-back-stretch">Lower Back Stretch</h3></h3>
+<p>stand with one leg crossed over the other. Reach your hands up in the air and clasp them together. Next, lean to one side. If you lean to the right, then you will be stretching your lower back on the left side. Intensify the stretch by increasing the lateral bend. Hold this position for about 10 seconds before switching sides.</p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6a346272-47e5-4638-b143-48d6aa7b8a3b/IMG_3962.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210211%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20210211T235753Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=615edce9e81adab7c7a1da20222ee6131b12e1bc9efd74fb72c09c2bec2eb10b&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22IMG_3962.png%22" alt=""></p>
+<h3><h3 id="overhead-shoulder-mobility">Overhead Shoulder Mobility</h3></h3>
+<p>Start by sitting against a wall, making sure your lower back is pressed against the wall. Point your forearms up and glue them to the wall. Begin sliding your forearms upwards, making sure to maintain contact with the wall for as long as you can. Once they are as high and as straight as you can make them, slide your forearms back to their starting position. Make sure to keep the lower back pressed to the wall throughout the duration of the movement.</p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0e826ad9-fb44-4e2b-9114-90db16d56dc1/IMG_4106.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210211%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20210211T235756Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=093368b9a3458e0b6168b3c054b6d272f6ea11c7ff94e835fb7025d287cf6f79&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22IMG_4106.png%22" alt=""></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6f1adc90-55a0-4e00-be6d-3e2057be65fa/IMG_4105.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210211%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20210211T235759Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=6f9d7ce091c442e5f6e7b9e8a34e258a86f82f2b0c64cb9f3d98070dd94eed85&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22IMG_4105.png%22" alt=""></p>
+<h2><h2 id="cartwheels-and-cartwheel-variations">Cartwheels and cartwheel variations</h2></h2>
+<p>Once you can do your cartwheels with straight legs and in a straight line, then you know you have some competency with the movement. Once you develop this skill, it's a great idea to move onto other variations, which roam into the realm of hand balancing. Au fechado (A cartwheel with your legs tucked into your chest), is one example.</p>
+<p>These cartwheel variations require a lot of control, coordination, and conditioning. Practicing your basic cartwheels is a great way to build the foundation needed for these other variations.</p>
+<p>If you're curious about other cartwheel variations, here is another article that goes through many cartwheel variations. Many you probably didn't even know existed.</p>
+<p>https://dendearts.com/list-of-cartwheel-progressions-from-beginner-to-hardcore/</p>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-2">
+                                <a href="#the-v-cartwheel">The V Cartwheel</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#cartwheel-progress-listed-out">Cartwheel Progress listed out</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#use-a-piece-of-tape-to-practice">Use a piece of tape to practice</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#bigger-cartwheels-are-more-stable-cartwheels">Bigger cartwheels are more stable cartwheels</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#kick-hard-with-the-back-leg">Kick hard with the back leg</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#train-your-cartwheels-slow">Train your cartwheels slow</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#a-common-fear-i-m-scared-of-hitting-my-face-on-the-floor">A common fear: I&#39;m scared of hitting my face on the floor</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#how-long-does-it-take-to-learn-a-cartwheel">How long does it take to learn a cartwheel?</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#stretches-to-improve-your-cartwheels">Stretches to improve your cartwheels</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#hamstring-stretches">Hamstring stretches</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#dynamic-lateral-kicks-for-the-groin">Dynamic lateral kicks for the groin</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#lower-back-stretch">Lower Back Stretch</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#overhead-shoulder-mobility">Overhead Shoulder Mobility</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#cartwheels-and-cartwheel-variations">Cartwheels and cartwheel variations</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+                <!-- Add this to your nav.njk -->
+                <div class="cart-indicator">
+                    <span id="cart-count" style="display: none">0</span>
+                </div>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    
+    
+</body>
+
+
+</html>

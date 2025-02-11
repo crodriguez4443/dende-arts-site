@@ -8,17 +8,68 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Nem tudo que reluz é ouro<br>Nem tudo que balança cai<br><br><strong>Nem tudo que reluz é ouro<br>Nem tudo que balança cai</strong><br><br>Cai cai cai cai<br>Capoeira balança mas não cai<br><br><strong>Cai cai cai cai</strong><br><br>Capoeira balança mas não cai<br><br><strong>Cai cai cai cai</strong><br><br>Foi voce quem me disse<br>Que filho de Bimba não cai<br><br><strong>Foi voce quem me disse<br>Que filho de Bimba não cai</strong><br><br>Cai cai cai cai<br>Capoeira balança mas não cai<br><br><strong>Cai cai cai cai</strong><br><br>Capoeira balança mas não cai<br><br><strong>Cai cai cai cai</strong></td>
-        <td>Not everything that shines is gold<br>Not everything that rocks [back and forth] falls<br><br>Not everything that shines is gold<br>Not everything that rocks falls<br><br>Fall, fall, fall, fall<br>Capoeira rocks but doesn't fall<br><br>Fall, fall, fall, fall<br><br>Capoeira rocks but doesn't fall<br><br>Fall, fall, fall, fall<br><br>You told me<br>That the son of Bimba does not fall<br><br>You told me<br>That the son of Bimba does not fall<br><br>Fall, fall, fall, fall<br>Capoeira rocks but doesn't fall<br><br>Fall, fall, fall, fall<br><br>Capoeira rocks but doesn't fall<br><br>Fall, fall, fall, fall</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Nem tudo que reluz é ouro  
+Nem tudo que balança cai  
+  
+**Nem tudo que reluz é ouro  
+Nem tudo que balança cai**  
+  
+Cai cai cai cai  
+Capoeira balança mas não cai  
+  
+**Cai cai cai cai  
+**  
+Capoeira balança mas não cai  
+  
+**Cai cai cai cai  
+**  
+Foi voce quem me disse  
+Que filho de Bimba não cai  
+  
+**Foi voce quem me disse  
+Que filho de Bimba não cai  
+**  
+Cai cai cai cai  
+Capoeira balança mas não cai  
+  
+**Cai cai cai cai  
+**  
+Capoeira balança mas não cai  
+  
+**Cai cai cai cai** | Not everything that shines is gold  
+Not everything that rocks \[back and forth\] falls  
+  
+Not everything that shines is gold  
+Not everything that rocks falls  
+  
+Fall, fall, fall, fall  
+Capoeira rocks but doesn't fall  
+  
+Fall, fall, fall, fall  
+  
+Capoeira rocks but doesn't fall  
+  
+Fall, fall, fall, fall  
+  
+You told me  
+That the son of Bimba does not fall  
+  
+You told me  
+That the son of Bimba does not fall  
+  
+Fall, fall, fall, fall  
+Capoeira rocks but doesn't fall  
+  
+Fall, fall, fall, fall  
+  
+Capoeira rocks but doesn't fall  
+  
+Fall, fall, fall, fall |
 
 <figcaption>
+
 Author: Unknown (do you know? If so, let us know in the comments!)
+
 </figcaption>

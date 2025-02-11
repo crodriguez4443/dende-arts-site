@@ -1,13 +1,27 @@
 ---
 title: "Escute o Tambor"
 date: "2020-12-12"
-categories: 
+categories:
   - "capoeira-songbook"
-tags: 
+tags:
   - "intermediate"
   - "mestre-toni-vargas"
 layout: "blog-post-layout.njk"
+
+# Add new SEO Fields:
+description: "Feel the rhythm of Capoeira with 'Escute o Tambor'! Learn this intermediate song by Mestre Toni Vargas and deepen your understanding of the roda."
+author: "Chris Calado Rodriguez"
+keywords: "capoeira song escute o tambor, mestre toni vargas song, intermediate capoeira song, capoeira songbook, capoeira music lyrics, roda de capoeira song, capoeira rhythm tutorial, learn capoeira song"
+
+# Social Sharing:
+socialImage:  #Assuming there isn't cover image already, to keep existing coverImage would be here
+headline: "Escute o Tambor: An Intermediate Capoeira Song"
+excerpt: "Discover the captivating rhythm of 'Escute o Tambor,' a powerful Capoeira song that enhances your connection to the game and its rich traditions."
+
+# Indexing:
+type: "song-post"
 ---
+
 
 <table class="capoeira-table">
     <tr class="header-row">
@@ -22,7 +36,7 @@ Escute o tambor no seu coração<br>
 <br>
 Escute o tambor<br>
 <br>
-<strong>Êee ôoo</strong><br>
+<b>Êee ôoo</b><br>
 <br>
 Escute o tambor<br>
 <br>
@@ -35,7 +49,7 @@ Chama pra luta de morte<br>
 <br>
 Escute o tambor<br>
 <br>
-<strong>Êee ôoo</strong><br>
+<b>Êee ôoo</b><br>
 <br>
 Escute o tambor<br>
 <br>
@@ -45,7 +59,8 @@ Grita, grita forte pela vida<br>
 Que a vida mora dentro do tambor<br>
 <br>
 Escute o tambor<br>
-<strong>Êee ôoo</strong><br>
+<br>
+<b>Êee ôoo</b><br>
 <br>
 Escute o tambor</td>
         <td>When the sky gets dark<br>
@@ -84,7 +99,7 @@ Listen to the drum<br>
 Listen to the drum</td>
     </tr>
 </table>
-
 <figcaption>
 Author: Mestre Toni Vargas
 </figcaption>
+```

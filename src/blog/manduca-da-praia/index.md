@@ -9,16 +9,29 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Que barulho é esse, é um tal de zum zum zum<br>Que barulho é esse, é um tal de zum zum zum<br><br>Foi o Manduca da Praia que acabou de matar um<br>Foi o Manduca da Praia que acabou de matar um<br><br>Quando a policia chegou foi um tal de auê auê<br>Quando a policia chegou foi um tal de auê auê<br><br>Vamos embora seu moço que essa briga é pra valer<br>Vamos embora seu moço que essa briga é pra valer</td>
-        <td>What a noise is this, this so-called buzz buzz buzz<br>What a noise this is, this so-called buzz buzz buzz<br><br>It was Manduca da Praia who just killed someone<br>It was Manduca da Praia who just killed someone<br><br>When the police arrived it was this ruckus<br>When the police arrived it was this ruckus<br><br>Let's go, man, this fight is for real<br>Let's go, man, this fight is for real</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Que barulho é esse, é um tal de zum zum zum  
+Que barulho é esse, é um tal de zum zum zum  
+  
+Foi o Manduca da Praia que acabou de matar um  
+Foi o Manduca da Praia que acabou de matar um  
+  
+Quando a policia chegou foi um tal de auê auê  
+Quando a policia chegou foi um tal de auê auê  
+  
+Vamos embora seu moço que essa briga é pra valer  
+Vamos embora seu moço que essa briga é pra valer | What a noise is this, this so-called buzz buzz buzz  
+What a noise this is, this so-called buzz buzz buzz  
+  
+It was Manduca da Praia who just killed someone  
+It was Manduca da Praia who just killed someone  
+  
+When the police arrived it was this ruckus  
+When the police arrived it was this ruckus  
+  
+Let's go, man, this fight is for real  
+Let's go, man, this fight is for real |
 
 <figcaption>
 

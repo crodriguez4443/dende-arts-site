@@ -8,16 +8,39 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Quem nunca viu venha ver<br><br>Licuri quebrar dendê<br><strong>Quem nunca viu venha ver</strong><br><br>Ô venha ver para aprender<br><strong>Quem nunca viu venha ver</strong><br><br>Ô venha ver, venha ver<br><strong>Quem nunca viu venha ver</strong><br><br>Ai meu Deus, licuri quebrar dendê<br><strong>Quem nunca viu venha ver</strong><br><br>Ai meu Deus na roda de capoeira<br><strong>Quem nunca viu venha ver</strong></td>
-        <td>If you never saw, come and see<br><br>Licuri breaking palm<br>If you never saw, come and see<br><br>Come and see to learn<br>If you never saw, come and see<br><br>Come and see, come and see<br>If you never saw, come and see<br><br>Oh my God, licuri breaking oil palm<br>If you never saw, come and see<br><br>Oh my God in the capoeira circle<br>If you never saw, come and see</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Quem nunca viu venha ver  
+  
+Licuri quebrar dendê  
+**Quem nunca viu venha ver**  
+  
+Ô venha ver para aprender  
+**Quem nunca viu venha ver**  
+  
+Ô venha ver, venha ver  
+**Quem nunca viu venha ver**  
+  
+Ai meu Deus, licuri quebrar dendê  
+**Quem nunca viu venha ver**  
+  
+Ai meu Deus na roda de capoeira  
+**Quem nunca viu venha ver** | If you never saw, come and see  
+  
+Licuri breaking palm  
+If you never saw, come and see  
+  
+Come and see to learn  
+If you never saw, come and see  
+  
+Come and see, come and see  
+If you never saw, come and see  
+  
+Oh my God, licuri breaking oil palm  
+If you never saw, come and see  
+  
+Oh my God in the capoeira circle  
+If you never saw, come and see |
 
 <figcaption>
 

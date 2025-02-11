@@ -1,13 +1,41 @@
-Since this document does not contain song lyrics, I will copy the markdown document as is without any modifications.
-
 ---
-title: "The best Capoeira warmup in 10 minutes"
+title: "The Best Capoeira Warmup in 10 Minutes: Get Ready to Move!"
 date: "2020-05-11"
-categories: 
+categories:
   - "capoeira101"
   - "movement-guides"
+tags:
+  - "capoeira warmup"
+  - "beginner capoeira"
+  - "capoeira exercises"
+  - "flexibility"
+  - "mobility"
+  - "movement prep"
 coverImage: "Screen-Shot-2020-05-11-at-4.34.28-PM.png"
 layout: "blog-post-layout.njk"
+
+# Add new SEO Fields:
+description: "A quick and effective 10-minute capoeira warmup routine to prepare your body for training, improve flexibility, and prevent injuries. Perfect for beginners!"
+author: "Chris Calado Rodriguez"
+keywords:
+  - "capoeira warmup routine for beginners"
+  - "10 minute capoeira warmup exercises"
+  - "capoeira flexibility training for beginners"
+  - "capoeira mobility drills for warm up"
+  - "best capoeira stretching exercises"
+  - "quick capoeira warmup before training"
+  - "capoeira injury prevention warmup"
+  - "capoeira joint mobility exercises"
+
+# Social Sharing:
+socialImage: "Screen-Shot-2020-05-11-at-4.34.28-PM.png"
+
+# Content Details:
+headline: "The Best Capoeira Warmup in 10 Minutes: Ready, Set, Move!"
+excerpt: "Get your body ready for capoeira with this efficient 10-minute warmup, designed to boost flexibility, improve mobility, and minimize the risk of injuries."
+
+# Indexing:
+type: "blog-article"
 ---
 
 A good warm up should increase your heart rate and get your blood pumping in anticipation for any activity. Next, it should improve circulation in the joints that will be seeing a lot of work. A warm up should also start up your nervous system and get it ready for the intensity you are about to expose it to.
@@ -52,14 +80,14 @@ Even if you don't plan on doing a lot of back bending movements, warming up the 
 
 Cat/cow is a very simple movements. To start, we want to be in a quadruped position, meaning our hands and knees are on the ground with our back straight. The "cat" part of this movement has us sucking our bellies in - as if to pull the stomach through our backs and towards the ceiling. Make sure to push the shoulders up(protraction), let the head come down, and tuck the tailbone in. By doing this, we flex all the segments of the spine at once. While maintaining this pose, we'll make sure to engage the core to help us flex each spinal segment. Once in this position, we want to lower down into the "cow" part of the movement. From having our back fully flexed, we want to extend the back as much as we can.
 
-![](https://lh3.googleusercontent.com/B5iChuECMB7N_txXlfhqxfwCFNSfKYbRStQ3qOGfnnCf8qCgkGrJhLxHz0MXvWDbdA9i95zKXJLiT5mLym63vbXMUpmlFYzmgqB6om7p5ViJ)
+![](https://lh3.googleusercontent.com/B5iChuECMB7N_txXlfhqxfwCFNSfKYbRStQ3qOGfnnCf8qCgkGrJhLxHz0MXvWDbdA9i95zKXJLiT5mLym0Dfj1zOMaoOY2V4SYkLrXlkk-yl63VvbXMUpmlFYzmgqB6om7p5ViJ)
 
 ![](https://lh6.googleusercontent.com/F3JwIrtfwTZko_haHPnROhPJiBrLsshP8RdqPGaSiwUNoT-EujCGW7XiRoz0siXMUlD68y8y-WcGM4raJrZ5lFWO2OcWDZ2mgHN0d-_DTERRkfQlQ0jMVALcZuFJnoar9Jv5f1NS)
 
 As you bring the spine down, imagine your heart is being pulled down towards the floor. The shoulders will come down(retraction) and the shoulder blades will come together. The hips will also rotate out in the opposite direction. The back muscles should begin to flex as you move into the cow position. While in the cow position, we want to make sure each spinal segment is fully extended. Take note of this before switching back to the cat position. Continue doing this about 20 times or until you feel you are ready.
 
 The advanced way to do this involves moving each segment of the spine one at a time. The spine consists of 31 different segments. 8 segments can be found in the cervical portion of the spine. This is the upper back to the neck. 12 segments are for the thoracic. This is the largest grouping of segments and runs from the upper to lower back. 5 segments comprise the lumbar. This consists of segments in the lower back. And lastly, 5 segments can be found in the sacral and 1 lonely segment is in the coccygeal section. The parts we are most concerned with are the cervic, thoracic, and lumbar portions of the spine.  
-![](https://lh5.googleusercontent.com/uHq-0XZ_ChuhdJp7NvFTRWAfBJVDAiDzEXdrQSgebUsD-i9X8t_3VeeCS1YTJxRcfmNCER5jyM3p3lbGZTpKpTYy0cTJanShsiSPSSbRB6Bmh)
+![](https://lh5.googleusercontent.com/uHq-0XZ_ChuhdJp7NvFTRWAfBJVDAiDzEXdrQSgebUsD-i9X8t_3VeeCS1YTJxRcfmNCER5jyM3p3lbGZTpKpTBHZpwWuCFXzlCwvcU6nKt2OoFtTYy0cTJanShsiSPSSbRB6Bmh)
 
 The starting position for this advanced method is the same quadruped position as the simpler version. You want to start from a neutral spine position and the first thing you'll do is tuck your tailbone in. The idea is to start flexing each segment of your spine starting from the lower-most segment. This means we'll start from about the sacral or lumbar segments and work our way up to the cervical portion. Keep your core tight and your belly button sucked in as you do this movement.
 
@@ -81,7 +109,7 @@ The shoulder is one of the most complex joints in the body. This is because your
 
 To start our warm up we'll start from a high plank position. Place both hands on the floor, fully extended as if you were about to do a push up. From here, we want to move the shoulders around in a circular motion. Note that if this is too difficult you can regress the movement by placing your knees on the ground.
 
-![](https://lh5.googleusercontent.com/oA0QlFgPhdggrVDnyE-yORiEJYzRiJFWRNN0ZQmnEA2B7wjuvB6uXDnyE-yORiEJYzRiJFWRNN0ZQmnEA2B7wjuvB6ukneeNgPJ_gvVN9_3L7RUuLW7Z)
+![](https://lh5.googleusercontent.com/oA0QlFgPhdggrVDnyE-yORiEJYzRiJFWRNN0ZQmnEA2B7wjuvB6uZG9rH9YNdILDbwQraLUKah3VJERJuYqyeTtJ7bSBAeMCZO8N8lL4eaCevHukneeNgPJ_gvVN9_3L7RUuLW7Z)
 
 The direction of the rotation does not matter much, but I advise doing rotations in both. About 10 rotations per direction should be sufficient. As you make these circles, aim to make the circles as big as you can. Start slow, and slowly work your way up until you're making circles as big as you can with your shoulders. This may take a lot of control and may not be that smooth at first. Give this exercise some time and you'll see that slowly you'll acquire more and more control.
 

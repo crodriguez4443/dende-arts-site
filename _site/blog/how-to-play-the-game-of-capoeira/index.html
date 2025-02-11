@@ -1,1 +1,352 @@
-<p>The document does not contain song lyrics, so I will not modify the text. The markdown document is left as is.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOW TO PLAY THE GAME OF CAPOEIRA</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                
+                // Initialize cart after Swell is ready
+                await initializeCart();
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+
+    <!-- layout.njk -->
+    <script>
+        // Initialize cart function
+        async function initializeCart() {
+            try {
+                const cart = await swell.cart.get();
+                if (cart?.item_count) {
+                    updateCartCount(cart.item_count);
+                }
+                console.log('Cart initialized:', cart);
+            } catch (error) {
+                console.error('Error initializing cart:', error);
+            }
+        }
+
+        // Update cart count function
+        function updateCartCount(count) {
+            const cartCount = document.getElementById('cart-count');
+            if (cartCount) {
+                cartCount.textContent = count.toString();
+                cartCount.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+
+        // Call initialization when document is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initializeSwell();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songbook</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <div class="cart-indicator">
+                        <span id="cart-count" style="display: none">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">HOW TO PLAY THE GAME OF CAPOEIRA</a>
+            </div>
+            <h1>HOW TO PLAY THE GAME OF CAPOEIRA</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2020-05-03">
+                    May 2, 2020
+                </time>
+            </div>
+            
+            
+            
+            
+
+            <div class="blog-post-content">
+                <table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Just like the game of chess or poker, there are certain rules that exist in the world of Capoeira. For example, there is very little grappling in a Capoeira roda. Another rule is that the instruments dictate the character of the Capoeira game played in the roda. At the same time, there is no official rule book and it is said that everything is allowed in the Capoeira roda. This might seem confusing, but this mix of custom and freedom is one of the things that makes Capoeira so unique. It can also make Capoeira a confusing thing to figure out!</td>
+        <td>Just like the game of chess or poker, there are certain rules that exist in the world of Capoeira. For example, there is very little grappling in a Capoeira roda. Another rule is that the instruments dictate the character of the Capoeira game played in the roda. At the same time, there is no official rule book and it is said that everything is allowed in the Capoeira roda. This might seem confusing, but this mix of custom and freedom is one of the things that makes Capoeira so unique. It can also make Capoeira a confusing thing to figure out!</td>
+    </tr>
+    <tr>
+        <td>When you’re brand new, you most likely start learning fundamental Capoeira movements. If you don’t know them, here is a list of [the most fundamental Capeoira movements](https://dendearts.com/list-of-fundamental-capoeira-movements/) that everyone should know.</td>
+        <td>When you’re brand new, you most likely start learning fundamental Capoeira movements. If you don’t know them, here is a list of [the most fundamental Capeoira movements](https://dendearts.com/list-of-fundamental-capoeira-movements/) that everyone should know.</td>
+    </tr>
+    <tr>
+        <td>
+            <figure>
+                [![fundamental capoeira moves](images/Ginga-normal.gif)](https://dendearts.com/list-of-fundamental-capoeira-movements/)
+                <figcaption>click gif to go to fundamental capoeira moves post</figcaption>
+            </figure>
+        </td>
+        <td>
+            <figure>
+                [![fundamental capoeira moves](images/Ginga-normal.gif)](https://dendearts.com/list-of-fundamental-capoeira-movements/)
+                <figcaption>click gif to go to fundamental capoeira moves post</figcaption>
+            </figure>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            ## Tips to play the game of Capoeira as a Beginner
+<p>### <strong>Comfort with the ginga:</strong></p>
+<p>The most important thing in your Capoeira game is the ginga. Ginga translates to swing from Portuguese and is the foundation for all Capoeira techniques. The subtlety of this point is often lost on beginners because sweeps and acrobatics are more obvious to see. But the masters appreciate a ginga that is self assured and expressive. If you feel comfort and confidence, it will show in the way you ginga. Likewise, if you’re timid and shy, it will show in your ginga. A Capoeiristas can ginga in the roda, not do anything else, and still have a beautiful game.</p>
+<p>There are many ways to practice the ginga. A great exercise is to imitate the people who’s game you like. If you like the way they play, then try to copy the way they ginga. Look at what they do with their hands, their head, their hips, and their feet. Notice the subtle movements that express or hide their intentions. Every Capoeirista has a unique ginga, like a thumbprint. Discovering how they move their body’s a method for you to learn how to move yours. This isn’t to say that you want to be a carbon copy of this other person. It also doesn’t mean this is the way you will ginga for the rest of your life, however it’s a great place to start.</p>
+<p>Another method that was very fascinating to me was to imitate animals while you ginga. Kids in particular take very well to this. Adults who are more afraid to express themselves can sometimes struggle. But thinking about how a snake or a monkey would ginga is a great way to get creative. It doesn’t even have to be an animal that moves smoothly. Think about any animal. A frog or a cow works as well. The trick here is to try everything and see what sticks. The spontaneity of ideas is what creates a beautiful ginga, and when it flows naturally in the game of Capoeira, everyone takes notice.
+</td>
+<td>
+## Tips to play the game of Capoeira as a Beginner</p>
+<p>### <strong>Comfort with the ginga:</strong></p>
+<p>The most important thing in your Capoeira game is the ginga. Ginga translates to swing from Portuguese and is the foundation for all Capoeira techniques. The subtlety of this point is often lost on beginners because sweeps and acrobatics are more obvious to see. But the masters appreciate a ginga that is self assured and expressive. If you feel comfort and confidence, it will show in the way you ginga. Likewise, if you’re timid and shy, it will show in your ginga. A Capoeiristas can ginga in the roda, not do anything else, and still have a beautiful game.</p>
+<p>There are many ways to practice the ginga. A great exercise is to imitate the people who’s game you like. If you like the way they play, then try to copy the way they ginga. Look at what they do with their hands, their head, their hips, and their feet. Notice the subtle movements that express or hide their intentions. Every Capoeirista has a unique ginga, like a thumbprint. Discovering how they move their body’s a method for you to learn how to move yours. This isn’t to say that you want to be a carbon copy of this other person. It also doesn’t mean this is the way you will ginga for the rest of your life, however it’s a great place to start.</p>
+<p>Another method that was very fascinating to me was to imitate animals while you ginga. Kids in particular take very well to this. Adults who are more afraid to express themselves can sometimes struggle. But thinking about how a snake or a monkey would ginga is a great way to get creative. It doesn’t even have to be an animal that moves smoothly. Think about any animal. A frog or a cow works as well. The trick here is to try everything and see what sticks. The spontaneity of ideas is what creates a beautiful ginga, and when it flows naturally in the game of Capoeira, everyone takes notice.
+</td>
+</tr>
+<tr>
+<td>
+### <strong>Don’t take your eyes off your opponent</strong></p>
+<p>It’s very common for beginners to be completely concerned with the movements they themselves are doing. And there is nothing inherently wrong with this. Capoeira movements can be difficult to do. At the same time, a roda is an organism with many moving parts. This includes the person whom you are playing with, the bateria (the band playing music), the crowd, the music. Etc. There are tons of things going on in the roda at the same time and it's difficult to pay attention to everything all at once.</p>
+<p>Your goal as a beginner is to think as little as possible on the movements you are doing. This way, you can give more attention to other things going on in the roda. For example, someone coming in to buy the game. This might seem like a herculean task at first, but there is a trick to this. Repetition. Repetition is your friend here. You want to repeat the movements you know as many times as you can until the movement becomes automatic. If you can do macaco blindfolded, then when the time comes that you need to do macaco, you won’t have to stand there analyzing if it’s a good time or not - you will just feel it. This is much easier said than done, so make sure to set aside time in your training to repeat the basics over and over again.
+</td>
+<td>
+### <strong>Don’t take your eyes off your opponent</strong></p>
+<p>It’s very common for beginners to be completely concerned with the movements they themselves are doing. And there is nothing inherently wrong with this. Capoeira movements can be difficult to do. At the same time, a roda is an organism with many moving parts. This includes the person whom you are playing with, the bateria (the band playing music), the crowd, the music. Etc. There are tons of things going on in the roda at the same time and it's difficult to pay attention to everything all at once.</p>
+<p>Your goal as a beginner is to think as little as possible on the movements you are doing. This way, you can give more attention to other things going on in the roda. For example, someone coming in to buy the game. This might seem like a herculean task at first, but there is a trick to this. Repetition. Repetition is your friend here. You want to repeat the movements you know as many times as you can until the movement becomes automatic. If you can do macaco blindfolded, then when the time comes that you need to do macaco, you won’t have to stand there analyzing if it’s a good time or not - you will just feel it. This is much easier said than done, so make sure to set aside time in your training to repeat the basics over and over again.
+</td>
+</tr>
+<tr>
+<td>
+### <strong>Lose your fear</strong></p>
+<p>A common problem beginners have is that they are afraid of getting into the roda. To be more accurate, most people are afraid of getting kicked in the head. You might be afraid to get in because the games are very fast or because the people playing seem like they want to take your head off. To a degree, your fear is actually a good thing. Your fear is what drives you to act fast. It’s a natural defensive response that helps keep you safe. At the same time, we don’t want our fear to dominate us, so here are some very easy ways to deal with this.</p>
+<p>- Play early on in the roda. Rodas are usually fast at the end, so make sure to play before things get too crazy. Enjoy the slow and medium paced games. Just don’t forget to train like you’ll be going in the fast rodas.
+- Use the basic esquivas. Believe it or not, esquivas like cocorinha are your best defense in most cases. If you feel unsure of what to do, you can default to this. As you gain more experience, you’ll start to understand what other esquivas you can try.
+- Use your ginga to move around the roda. It’s easier to kick you if you’re standing still. Move with role, ginga, and au around the roda. If you see a pocket of open space, moving towards it is a good rule of thumb.
+- Don’t try to win. Try to learn. Don’t think that you’re going to come into a Capoeira roda and kick everyone’s but in the first roda. That’s for anime nerds. Be humble and play the game, knowing full well that the first 100 times will be a complete struggle.
+- Play often, because the more you play, the more comfort you’ll have playing in the roda.
+</td>
+<td>
+### <strong>Lose your fear</strong></p>
+<p>A common problem beginners have is that they are afraid of getting into the roda. To be more accurate, most people are afraid of getting kicked in the head. You might be afraid to get in because the games are very fast or because the people playing seem like they want to take your head off. To a degree, your fear is actually a good thing. Your fear is what drives you to act fast. It’s a natural defensive response that helps keep you safe. At the same time, we don’t want our fear to dominate us, so here are some very easy ways to deal with this.</p>
+<p>- Play early on in the roda. Rodas are usually fast at the end, so make sure to play before things get too crazy. Enjoy the slow and medium paced games. Just don’t forget to train like you’ll be going in the fast rodas.
+- Use the basic esquivas. Believe it or not, esquivas like cocorinha are your best defense in most cases. If you feel unsure of what to do, you can default to this. As you gain more experience, you’ll start to understand what other esquivas you can try.
+- Use your ginga to move around the roda. It’s easier to kick you if you’re standing still. Move with role, ginga, and au around the roda. If you see a pocket of open space, moving towards it is a good rule of thumb.
+- Don’t try to win. Try to learn. Don’t think that you’re going to come into a Capoeira roda and kick everyone’s but in the first roda. That’s for anime nerds. Be humble and play the game, knowing full well that the first 100 times will be a complete struggle.
+- Play often, because the more you play, the more comfort you’ll have playing in the roda.
+</td>
+</tr>
+<tr>
+<td>
+### <strong>How to enter the Capoeira roda</strong></p>
+<p>When you are at the edge of the roda you have a decision in front of you. “Can I buy the game?” This is a prime example in Capoeira of the rules are not explicit. As easy as that would make our lives, Capoeira is simply not that rigid. To help, I created a quick graphic to help you understand if you should buy the game or not.</p>
+<p><img src="https://lh4.googleusercontent.com/iuM5S8Nw2t5xEBKPTMPGJuDBqeCI2xx7q9_XcJURT4JguSAyAozClZBRDLm-FT3m4Hn1c8WHE8krYEmWXI2PY99fvTcZrPf4r3JzguUjzFSqGmuio3mLVoSHBYqzC-JrDRrPcodR" alt=""></p>
+<p>There are many exceptions to this flow chart. For example, in some rodas, capoeiristas will go in two by two instead of one at a time. Another example of exceptions is a roda where only teachers are permitted to play. If there is a roda only for mestres, then anyone under the rank of mestre should not play. Another example is if a game is heating up, many teachers will stop anyone from buying the game so the game can continue. Although there are many cases where these rules might not apply, it's a good rule of thumb that you can use at the next roda you visit.
+</td>
+<td>
+### <strong>How to enter the Capoeira roda</strong></p>
+<p>When you are at the edge of the roda you have a decision in front of you. “Can I buy the game?” This is a prime example in Capoeira of the rules are not explicit. As easy as that would make our lives, Capoeira is simply not that rigid. To help, I created a quick graphic to help you understand if you should buy the game or not.</p>
+<p><img src="https://lh4.googleusercontent.com/iuM5S8Nw2t5xEBKPTMPGJuDBqeCI2xx7q9_XcJURT4JguSAyAozClZBRDLm-FT3m4Hn1c8WHE8krYEmWXI2PY99fvTcZrPf4r3JzguUjzFSqGmuio3mLVoSHBYqzC-JrDRrPcodR" alt=""></p>
+<p>There are many exceptions to this flow chart. For example, in some rodas, capoeiristas will go in two by two instead of one at a time. Another example of exceptions is a roda where only teachers are permitted to play. If there is a roda only for mestres, then anyone under the rank of mestre should not play. Another example is if a game is heating up, many teachers will stop anyone from buying the game so the game can continue. Although there are many cases where these rules might not apply, it's a good rule of thumb that you can use at the next roda you visit.
+</td>
+</tr>
+<tr>
+<td>
+### <strong>Practice Falling:</strong></p>
+<p>If you play Capoeira, you will fall. It’s not a question of if, but a question of when. That’s why it's important that you practice falling. If you don’t know how to fall, ask your teacher about training this. There is a saying, “Capoeira doesn’t fall, but when he falls, he falls well”.</p>
+<p>There are three main ways that a Capoeirista will fall, queda de quatro, queda de tres, and negativa de bimba. Queda de quatro is sitting back on your feet and hands while keeping your butt off the floor. Queda de tres is the same thing, but with one of your legs up in the air. Negativa de bimba looks like a pushup where one knee is by your chest, and the other is slipped between your opposite hand and foot. These three positions are used to absorb the impact of a fall and allow you to gently fall to the floor and quickly move. Although I won’t go over everything about how to fall in this post, there is a great exercise that you can use to practice falling.</p>
+<p><figure>
+<img src="images/IMG-1205-1024x468.jpg" alt="">
+<figcaption>Negativa de Bimba</figcaption>
+</figure></p>
+<p>To practice falling, you ideally want to have a partner. You’ll be asking your partner to sweep one of your legs while you stand. Start by spreading your legs apart so that it’s not easy to keep your balance. Staying very wide means we will be closer to the floor and the impact will be significantly less. Your partner will pick a foot and pull you forward</p>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+                <!-- Add this to your nav.njk -->
+                <div class="cart-indicator">
+                    <span id="cart-count" style="display: none">0</span>
+                </div>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    
+    
+</body>
+
+
+</html>

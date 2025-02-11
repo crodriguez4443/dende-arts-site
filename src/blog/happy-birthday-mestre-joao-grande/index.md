@@ -1,9 +1,9 @@
 ---
 title: "Happy Birthday Mestre Joao Grande"
 date: "2018-01-28"
-categories: 
+categories:
   - "capoeira101"
-tags: 
+tags:
   - "capoeira"
   - "capoeira-101-blog"
   - "capoeira-angola"
@@ -12,6 +12,29 @@ tags:
   - "mestre-joao-grande"
 coverImage: "IMG_1348.png"
 layout: "blog-post-layout.njk"
+
+# Add new SEO Fields:
+description: "Celebrate Mestre Joao Grande's birthday with a look at his impact on Capoeira Angola in NYC and beyond. Explore his legacy!"
+author: "Chris Calado Rodriguez"
+keywords:
+  - "Mestre Joao Grande birthday celebration"
+  - "Capoeira Angola NYC master"
+  - "Joao Grande Capoeira Angola legacy"
+  - "Capoeira Angola history and traditions"
+  - "Learning Capoeira Angola in New York"
+  - "Capoeira Angola community events"
+  - "Mestre Joao Grande Capoeira workshops"
+  - "Capoeira Angola movement and philosophy"
+
+# Social Sharing:
+socialImage: "IMG_1348.png"
+
+# Content Details:
+headline: "Happy Birthday Mestre Joao Grande: Celebrating a Capoeira Icon"
+excerpt: "Join us in celebrating Mestre Joao Grande's birthday and reflecting on his profound influence on Capoeira Angola, particularly within the vibrant New York City community."
+
+# Indexing:
+type: "blog-article"
 ---
 
 ## A LIFE OF CAPOEIRA
@@ -22,7 +45,7 @@ I won't be going over the history on this legend, that's for another time, but y
 
 ## VISITORS
 
-I wasn't sure what to expect, but everyone in the area came to pay their respects. Many capoeiristas live in and around New York and many of them came to say happy birthday. A lot of times we can get bogged down with life that we don't take the time out to go visit some of the legendary figures we have in Capoeira. It's kinda like visiting your grandparents. Do it! Because you won't be able to one day. In case you were curious, here is the information for Mestre João Grande's [academy](http://www.joaogrande.org/).
+I wasn't sure what to expect, but everyone in the area came to pay their respects. Many capoeiristas live in and around New York and many of them came to say happy birthday. A lot of times we can get bogged down with life that we don’t take the time out to go visit some of the legendary figures we have in Capoeira. It’s kinda like visiting your grandparents. Do it! Because you won’t be able to one day. In case you were curious, here is the information for Mestre João Grande’s [academy](http://www.joaogrande.org/).
 
 ## MESTRE JOÃO GRANDE
 
@@ -30,7 +53,7 @@ I don't really know what it's like to be so connected to a single purpose. MJG i
 
 ## BIRTHDAY PARTY
 
-Like any good birthday party, there was cake, food, and partying. By partying I mean capoeira of course. Even MJG got down, playing a game with one of the teachers. That was nuts to see. A man in his mid 80's moving and grooving.
+Like any good birthday party, there was cake, food, and partying. By partying I mean capoeira of course. Even MJG got down, playing a game with one of the teachers. That was nuts to see. A man in his mid 80’s moving and grooving.
 
 ## VISIT AGAIN
 
@@ -38,7 +61,7 @@ I had a great time visiting MJG academy and I hope to do so more in the future. 
 
 HAPPY BIRTHDAY MESTRE JOÃO GRANDE!!!
 
-![capoeira angola](images/IMG_1315-e1517156321215.jpg)![capoeira angola](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) ![Mestre Joao Grande's academy](images/IMG_1314-e1517156272118.jpg)![Mestre Joao Grande's academy](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) ![capoeira game](images/IMG_1328-2.jpg)![capoeira game](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) ![Capoeira angola roda](images/IMG_1320-2.jpg)![Capoeira angola roda](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) #mc\_embed\_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; } /\* Add your own MailChimp form style overrides in your site stylesheet or in this style block. We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. \*/
+![capoeira angola](images/IMG_1315-e1517156321215.jpg)![capoeira angola](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) ![Mestre Joao Grande’s academy](images/IMG_1314-e1517156272118.jpg)![Mestre Joao Grande’s academy](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) ![capoeira game](images/IMG_1328-2.jpg)![capoeira game](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) ![Capoeira angola roda](images/IMG_1320-2.jpg)![Capoeira angola roda](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) #mc\_embed\_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; } /\* Add your own MailChimp form style overrides in your site stylesheet or in this style block. We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. \*/
 
 ## Join us in the Roda!
 

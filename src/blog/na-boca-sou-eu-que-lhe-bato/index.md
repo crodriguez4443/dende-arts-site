@@ -1,58 +1,65 @@
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Na Bahia , na Bahia<br>
-        é na Bahia, na Bahia<br>
-        Não temos um doutor<br>
-        Robar a jóia do governador<br>
-        Sou eu cantador de harmonia,<br>
-        eu conheço a força do gado<br>
-        E o gado é que manda a lei<br>
-        a lei é que manda o gado<br>
-        Eu sambei com Maria Preta,<br>
-        no ano de 24<br>
-        E o resultado que eu tive<br>
-        eu perdi o pé meu de sapato<br>
-        <br>
-        Você vem pra me bater<br>
-        Coro<br>
-        <strong>Na boca sou eu quem lhe bato</strong><br>
-        <br>
-        Você pensa me bater<br>
-        <strong>Na boca sou eu quem lhe bato</strong><br>
-        <br>
-        Mas você pensa me bater<br>
-        <strong>Na boca sou eu quem lhe bato</strong></td>
-        <td>In Bahia, in Bahia<br>
-        It's in Bahia, in Bahia<br>
-        we have no doctor<br>
-        Stealing the governor's jewel<br>
-        I am a singer of harmony,<br>
-        I know the power of cattle<br>
-        And it is the cattle that dictate the law<br>
-        The law is what commands the cattle<br>
-        I danced samba with Maria Preta,<br>
-        in the year of '24<br>
-        And the result that I had<br>
-        I lost the sole of my shoe<br>
-        <br>
-        You come to hit me<br>
-        Chorus<br>
-        <strong>It is I who will hit you in the mouth</strong><br>
-        <br>
-        You think you're going to hit me<br>
-        <strong>It is I who will hit you in the mouth</strong><br>
-        <br>
-        But you think you're going to hit me<br>
-        <strong>It is I who will hit you in the mouth</strong></td>
-    </tr>
-</table>
+---
+title: "Na boca sou eu que lhe bato"
+date: "2024-03-11"
+categories: 
+  - "capoeira-songbook"
+tags: 
+  - "ananias"
+  - "corrido"
+  - "intermediate"
+layout: "blog-post-layout.njk"
+---
+
+| Portuguese | English |
+| --- | --- |
+| Na Bahia , na Bahia  
+é na Bahia, na Bahia  
+Não temos um doutor  
+Robar a jóia do governador  
+Sou eu cantador de harmonia,  
+eu conheço a força do gado  
+E o gado é que manda a lei  
+a lei é que manda o gado  
+Eu sambei com Maria Preta,  
+no ano de 24  
+E o resultado que eu tive  
+eu perdi o pé meu de sapato  
+  
+Você vem pra me bater  
+Coro  
+**Na boca sou eu quem lhe bato  
+**  
+Você pensa me bater  
+**Na boca sou eu quem lhe bato  
+**  
+Mas você pensa me bater  
+**Na boca sou eu quem lhe bato** | In Bahia, in Bahia  
+It's in Bahia, in Bahia  
+we have no doctor  
+Stealing the governor's jewel  
+I am a singer of harmony,  
+I know the power of cattle  
+And it is the cattle that dictate the law  
+The law is what commands the cattle  
+I danced samba with Maria Preta,  
+in the year of '24  
+And the result that I had  
+I lost the sole of my shoe  
+  
+You come to hit me  
+Chorus  
+**It is I who will hit you in the mouth  
+**  
+You think you're going to hit me  
+**It is I who will hit you in the mouth  
+**  
+But you think you're going to hit me  
+**It is I who will hit you in the mouth** |
 
 <figcaption>
+
 Song by Mestre Ananias
+
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eqbmSwW63Lk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

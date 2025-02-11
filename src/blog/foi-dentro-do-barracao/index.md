@@ -1,98 +1,104 @@
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Foi dentro do barracão<br>
-Que a roda rolava<br>
-O povo aclamava<br>
-Waldemar da Paixão<br>
-<br>
-<strong>Foi dentro do barracão<br>
-Que a roda rolava<br>
-O povo aclamava<br>
-Waldemar da Paixão</strong><br>
-<br>
-E o velho capoeira<br>
-Pedia proteção<br>
-E outro agaichado, sorrindo de lado<br>
-Lhe apertava a mão<br>
-Naquele tempo<br>
-<br>
-<strong>Foi dentro do barracão<br>
-Que a roda rolava<br>
-O povo aclamava<br>
-Waldemar da Paixão</strong><br>
-<br>
-Muita gente passava<br>
-O Berimbau chamava, jogar na roda eu vou<br>
-Mas me perdoe meu bem<br>
-Mas é que a capoeira<br>
-É o meu primeiro amor<br>
-Naquele tempo<br>
-<br>
-<strong>Foi dentro do barracão<br>
-Que a roda rolava<br>
-O povo aclamava<br>
-Waldemar da Paixão</strong><br>
-<br>
-Mas se eu podesse<br>
-Eu voltava pra ver<br>
-Pastinha na roda<br>
-Com Canjiquinha e seu Aberrê<br>
-Naquele tempo<br>
-<br>
-<strong>Foi dentro do barracão<br>
-Que a roda rolava<br>
-O povo aclamava<br>
-Waldemar da Paixão</strong></td>
-        <td>It was inside the shack<br>
-That the roda rolled<br>
-The people cheered<br>
-Waldemar da Paixão<br>
-<br>
-It was inside the shack<br>
-That the roda rolled<br>
-The people cheered<br>
-Waldemar da Paixão<br>
-<br>
-And the old capoeira<br>
-Asked for protection<br>
-And another crouched, smiling sideways<br>
-Shaking his hand<br>
-In that time<br>
-<br>
-It was inside the shack<br>
-That the roda rolled<br>
-The people cheered<br>
-Waldemar da Paixão<br>
-<br>
-Many people passed<br>
-Berimbau called, I'll play in the roda<br>
-But forgive me darling<br>
-But it's that capoeira<br>
-Is my first love<br>
-In that time<br>
-<br>
-It was inside the shack<br>
-That the roda rolled<br>
-The people cheered<br>
-Waldemar da Paixão<br>
-<br>
-But if I could<br>
-I would come back to see<br>
-Pastinha in the roda<br>
-With Canjiquinha and Mr. Aberrê<br>
-In that time<br>
-<br>
-It was inside the shack<br>
-That the roda rolled<br>
-The people cheered<br>
-Waldemar da Paixão</td>
-    </tr>
-</table>
+---
+title: "Foi Dentro do Barracão"
+date: "2020-11-26"
+categories: 
+  - "capoeira-songbook"
+tags: 
+  - "intermediate"
+  - "quadra"
+layout: "blog-post-layout.njk"
+---
+
+| Portuguese | English |
+| --- | --- |
+| Foi dentro do barracão  
+Que a roda rolava  
+O povo aclamava  
+Waldemar da Paixão  
+  
+**Foi dentro do barracão  
+Que a roda rolava  
+O povo aclamava  
+Waldemar da Paixão**  
+  
+E o velho capoeira  
+Pedia proteção  
+E outro agaichado, sorrindo de lado  
+Lhe apertava a mão  
+Naquele tempo  
+  
+**Foi dentro do barracão  
+Que a roda rolava  
+O povo aclamava  
+Waldemar da Paixão**  
+  
+Muita gente passava  
+O Berimbau chamava, jogar na roda eu vou  
+Mas me perdoe meu bem  
+Mas é que a capoeira  
+É o meu primeiro amor  
+Naquele tempo  
+  
+**Foi dentro do barracão  
+Que a roda rolava  
+O povo aclamava  
+Waldemar da Paixão**  
+  
+Mas se eu podesse  
+Eu voltava pra ver  
+Pastinha na roda  
+Com Canjiquinha e seu Aberrê  
+Naquele tempo  
+  
+**Foi dentro do barracão  
+Que a roda rolava  
+O povo aclamava  
+Waldemar da Paixão** | It was inside the shack  
+That the roda rolled  
+The people cheered  
+Waldemar da Paixão  
+  
+It was inside the shack  
+That the roda rolled  
+The people cheered  
+Waldemar da Paixão  
+  
+And the old capoeira  
+Asked for protection  
+And another crouched, smiling sideways  
+Shaking his hand  
+In that time  
+  
+It was inside the shack  
+That the roda rolled  
+The people cheered  
+Waldemar da Paixão  
+  
+Many people passed  
+Berimbau called, I'll play in the roda  
+But forgive me darling  
+But it's that capoeira  
+Is my first love  
+In that time  
+  
+It was inside the shack  
+That the roda rolled  
+The people cheered  
+Waldemar da Paixão  
+  
+But if I could  
+I would come back to see  
+Pastinha in the roda  
+With Canjiquinha and Mr. Aberrê  
+In that time  
+  
+It was inside the shack  
+That the roda rolled  
+The people cheered  
+Waldemar da Paixão |
 
 <figcaption>
+
 Author: Prancha
+
 </figcaption>

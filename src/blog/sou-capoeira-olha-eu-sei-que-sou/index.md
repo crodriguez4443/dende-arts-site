@@ -1,13 +1,29 @@
 ---
 title: "Sou Capoeira olha eu sei que sou"
 date: "2021-07-17"
-categories: 
+categories:
   - "capoeira-songbook"
-tags: 
+tags:
   - "advanced"
   - "quadra"
 layout: "blog-post-layout.njk"
+
+# Add new SEO Fields:
+description: "Explore the powerful quadra 'Sou Capoeira olha eu sei que sou'. Learn its meaning, history, and advanced techniques. Master this essential capoeira song!"
+author: "Chris Calado Rodriguez"
+keywords: "capoeira song, quadra capoeira, sou capoeira meaning, advanced capoeira techniques, capoeira song lyrics, learn capoeira songs, capoeira music translation, capoeira songbook quadra"
+
+# Social Sharing:
+socialImage:  # Assuming you have no coverImage, leave empty. Otherwise use it's value here.
+
+# Content Details:
+headline: "Sou Capoeira: Master This Powerful Quadra!"
+excerpt: "Dive into the heart of capoeira with 'Sou Capoeira olha eu sei que sou', unlocking its rich meaning and advanced techniques for your training."
+
+# Indexing:
+type: "song-post"
 ---
+
 
 <table class="capoeira-table">
     <tr class="header-row">
@@ -22,18 +38,15 @@ Quando toca me arrepiahoje é dia de jogar<br>
 E o Cantador solta a voz pro povo ouvir<br>
 Berimbau viola arma a roda e marca o som<br>
 A meia lua é ligeira e corta o vento<br>
-Capoeira joga dentro como o mestre me ensinou<br>
-<br>
+Capoeira joga dentro como o mestre me ensinou<br><br>
 Sou Capoeira olha eu sei que sou<br>
 Eu vim aqui foi para jogar<br>
 Faço bonito só porque tenho talento<br>
-E solto meus movimentos com a voz no coração<br>
-<br>
+E solto meus movimentos com a voz no coração<br><br>
 E o Capoeira é astuso e é velhaco<br>
 É inimigo do perigo e confusão<br>
 Mas ele sabe o valor de uma vida<br>
-Por isso corre de briga e quer mais é vadiar<br>
-<br>
+Por isso corre de briga e quer mais é vadiar<br><br>
 Sou Capoeira olha eu sei que sou<br>
 Eu vim aqui foi para jogar<br>
 Faço bonito só porque tenho talento<br>
@@ -45,27 +58,26 @@ When it touches [me] I get goosebumps, today it's a day to play<br>
 And the singer lets out his voice for the people to hear<br>
 Berimbau viola prepares the roda and sets the sound<br>
 The meia lua is fast and cuts the wind<br>
-Capoeira plays inside as the master taught me<br>
-<br>
+Capoeira plays inside as the master taught me<br><br>
 I'm Capoeira look I know I am<br>
 I came here to play<br>
 I do it pretty just because I have talent<br>
-And I release my movements with the voice in my heart<br>
-<br>
+And I release my movements with the voice in my heart<br><br>
 And Capoeira is clever and is a rogue<br>
 It is enemy of danger and confusion<br>
 But he knows the value of a life<br>
-That's why he runs a fight and wants more is to loiter<br>
-<br>
+That's why he runs a fight and wants more is to loiter<br><br>
 I'm Capoeira look I know I am<br>
 I came here to play<br>
 I do it pretty just because I have talent<br>
 And I release my movements with the voice in my heart</td>
     </tr>
 </table>
-
 <figcaption>
+
 Author: unknown (know the author of this song? let us know!)
+
 </figcaption>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0XAyjwLYFbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+```

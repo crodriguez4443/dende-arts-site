@@ -8,63 +8,58 @@ tags:
 layout: "blog-post-layout.njk"
 ---
 
-<table class="capoeira-table">
-    <tr class="header-row">
-        <th>Portuguese</th>
-        <th>English</th>
-    </tr>
-    <tr>
-        <td>Uma luta que era o maculelê<br>
-Virou dança para não morrer<br>
-Capoeira cruzeiro cerrado<br>
-Roda aberta pra quem quer jogar<br>
-O meu mestre quer ver<br>
-Você balançar<br>
-<br>
-O meu mestre quer ver<br>
-<br>
-<strong>O meu mestre quer ver<br>
-Você balançar</strong><br>
-<br>
-O meu mestre quer ver<br>
-<br>
-<strong>O meu mestre quer ver<br>
-Você balançar</strong><br>
-<br>
-Angola, angoleiro<br>
-Benguela e regional<br>
-Chamada para os camaradas<br>
-<br>
-<strong>Angola, angoleiro<br>
-Benguela e regional<br>
-Chamada para os camaradas</strong></td>
-        <td>A fight that was the maculelê<br>
-Became dance not to die<br>
-Capoeira cruise cerrado<br>
-Open roda for those who want to play<br>
-My master wants to see<br>
-You swing<br>
-<br>
-My master wants to see<br>
-<br>
-My master wants to see<br>
-You swing<br>
-<br>
-My master wants to see<br>
-<br>
-My master wants to see<br>
-You swing<br>
-<br>
-Angola, Angoleiro<br>
-Benguela and regional<br>
-Call for comrades<br>
-<br>
-Angola, Angoleiro<br>
-Benguela and regional<br>
-Call for comrades</td>
-    </tr>
-</table>
+| Portuguese | English |
+| --- | --- |
+| Uma luta que era o maculelê  
+Virou dança para não morrer  
+Capoeira cruzeiro cerrado  
+Roda aberta pra quem quer jogar  
+O meu mestre quer ver  
+Você balançar  
+  
+O meu mestre quer ver  
+  
+**O meu mestre quer ver  
+Você balançar**  
+  
+O meu mestre quer ver  
+  
+**O meu mestre quer ver  
+Você balançar**  
+  
+Angola, angoleiro  
+Benguela e regional  
+Chamada para os camaradas  
+  
+**Angola, angoleiro  
+Benguela e regional  
+Chamada para os camaradas** | A fight that was the maculelê  
+Became dance not to die  
+Capoeira cruise cerrado  
+Open roda for those who want to play  
+My master wants to see  
+You swing  
+  
+My master wants to see  
+  
+My master wants to see  
+You swing  
+  
+My master wants to see  
+  
+My master wants to see  
+You swing  
+  
+Angola, Angoleiro  
+Benguela and regional  
+Call for comrades  
+  
+Angola, Angoleiro  
+Benguela and regional  
+Call for comrades |
 
 <figcaption>
+
 Author: Unknown (Do you know who wrote this song? Tell us in the comments!)
+
 </figcaption>

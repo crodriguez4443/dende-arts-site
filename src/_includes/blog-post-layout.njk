@@ -50,9 +50,9 @@ layout: layout.njk
 
         
         <aside class="blog-post-sidebar">
-            <h3>Table of Contents</h3>
             {% set headings = content | getHeadings %}
             {% if headings.length > 0 %}
+            <h3 class="">Table of Contents</h3>
                 <div class="table-of-contents">
                     <nav class="toc-nav">
                         <ul>
