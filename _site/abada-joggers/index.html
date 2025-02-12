@@ -198,7 +198,7 @@
                 
 
                 
-                    <div class="features-container">
+                    <div class="features-container padding-bottom-1">
                         <div class="feature">
                             <div class="feature-image-container">
                                 <picture class="feature-icon">
@@ -246,34 +246,42 @@
                     </div>
                 
                 
-                
-                    <div class="options">
-                        
-                            <div class="option-group">
-                                <label for="Size">Size:</label>
-                                <select id="Size" name="Size">
-                                    
-                                        <option value="Extra-Small">Extra-Small</option>
-                                    
-                                        <option value="Small">Small</option>
-                                    
-                                        <option value="Medium">Medium</option>
-                                    
-                                        <option value="Large">Large</option>
-                                    
-                                        <option value="Extra-Large">Extra-Large</option>
-                                    
-                                </select>
-                            </div>
-                        
+                <div class="flex-box padding-bottom-2 ">
+                    
+                        <div class="options">
+                            
+                                <div class="option-group">
+                                    <label for="Size">Size:</label>
+                                    <select id="Size" name="Size">
+                                        
+                                            <option value="Extra-Small">Extra-Small</option>
+                                        
+                                            <option value="Small">Small</option>
+                                        
+                                            <option value="Medium">Medium</option>
+                                        
+                                            <option value="Large">Large</option>
+                                        
+                                            <option value="Extra-Large">Extra-Large</option>
+                                        
+                                    </select>
+                                </div>
+                            
+                        </div>
+                    
+                    
+                    <!-- Updated HTML -->
+                    <div class="quantity-control">
+                        <label for="quantity">Quantity:</label>
+                        <div class="quantity-wrapper">
+                            <button class="quantity-btn minus" type="button">-</button>
+                            <input type="number" id="quantity" name="quantity" value="1" min="1" readonly>
+                            <button class="quantity-btn plus" type="button">+</button>
+                        </div>
                     </div>
-                
-                
-                <div class="quantity">
-                    <label for="quantity">Quantity:</label>
-                    <input type="number" id="quantity" name="quantity" value="1" min="1">
                 </div>
-                <div class="flex-container-justify">
+
+                <div class="flex-box">
                     <button id="addToCart" 
                             onclick="addToCart('6796e8f527aea3001290a682')"
                             class="add-to-cart-button">
@@ -283,7 +291,7 @@
                     <button id="buyNow" 
                             onclick="buyNow('6796e8f527aea3001290a682')"
                             class="buy-now-button">
-                        Buy Now
+                        Checkout
                     </button>
                 </div>
             

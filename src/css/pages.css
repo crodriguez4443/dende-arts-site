@@ -342,6 +342,61 @@
     font-size: 1.125rem;
 }
 
+/* update on quantities */
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quantity-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-variant);
+    padding: .3rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.quantity-btn {
+    background-color: var(--title-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.2s;
+    border-radius: 20px;
+}
+
+.quantity-btn:hover {
+    background-color: var(--alt-action);
+}
+
+.quantity-btn:active {
+    background-color: var(--alt-action);
+}
+
+#quantity {
+    background-color: var(--background-beige);
+    width: 50px;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+    border-left: none;
+    border-right: none;
+    padding: 8px;
+    font-size: 1.2rem;
+    -moz-appearance: textfield; /* Firefox */
+}
+
+#quantity::-webkit-inner-spin-button,
+#quantity::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
 .option-group input {
     font-size: 1.125rem;
 }
@@ -353,11 +408,11 @@
 .option-group select {
     padding: 5px;
     margin-left: 10px;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
 }
 
 .option-group label {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
 }
 
 
@@ -478,4 +533,18 @@
         margin: 0 auto;
         margin-bottom: 5rem;
     }
+}
+
+
+
+/* ===============
+    MODIFIERS
+================ */
+
+.padding-bottom-1 {
+    padding-bottom: 1rem;
+}
+
+.padding-bottom-2 {
+    padding-bottom: 2rem;
 }

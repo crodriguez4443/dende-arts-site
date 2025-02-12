@@ -60,7 +60,7 @@ layout: layout.njk
                 {% endif %}
 
                 {% if product.name=='Abada Joggers' %}
-                    <div class="features-container">
+                    <div class="features-container padding-bottom-1">
                         <div class="feature">
                             <div class="feature-image-container">
                                 {% image "src/img/homepage/fabric-icon.svg", "4-way stretch material", "feature-icon", undefined, undefined, undefined, eager %}
@@ -88,26 +88,34 @@ layout: layout.njk
                     </div>
                 {% endif %}
                 
-                {% if product.options %}
-                    <div class="options">
-                        {% for option in product.options %}
-                            <div class="option-group">
-                                <label for="{{ option.name }}">{{ option.name }}:</label>
-                                <select id="{{ option.name }}" name="{{ option.name }}">
-                                    {% for value in option.values %}
-                                        <option value="{{ value.name }}">{{ value.name }}</option>
-                                    {% endfor %}
-                                </select>
-                            </div>
-                        {% endfor %}
+                <div class="flex-box padding-bottom-2 ">
+                    {% if product.options %}
+                        <div class="options">
+                            {% for option in product.options %}
+                                <div class="option-group">
+                                    <label for="{{ option.name }}">{{ option.name }}:</label>
+                                    <select id="{{ option.name }}" name="{{ option.name }}">
+                                        {% for value in option.values %}
+                                            <option value="{{ value.name }}">{{ value.name }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    
+                    <!-- Updated HTML -->
+                    <div class="quantity-control">
+                        <label for="quantity">Quantity:</label>
+                        <div class="quantity-wrapper">
+                            <button class="quantity-btn minus" type="button">-</button>
+                            <input type="number" id="quantity" name="quantity" value="1" min="1" readonly>
+                            <button class="quantity-btn plus" type="button">+</button>
+                        </div>
                     </div>
-                {% endif %}
-                
-                <div class="quantity">
-                    <label for="quantity">Quantity:</label>
-                    <input type="number" id="quantity" name="quantity" value="1" min="1">
                 </div>
-                <div class="flex-container-justify">
+
+                <div class="flex-box">
                     <button id="addToCart" 
                             onclick="addToCart('{{ product.id }}')"
                             class="add-to-cart-button">
@@ -117,7 +125,7 @@ layout: layout.njk
                     <button id="buyNow" 
                             onclick="buyNow('{{ product.id }}')"
                             class="buy-now-button">
-                        Buy Now
+                        Checkout
                     </button>
                 </div>
             {% endif %}
