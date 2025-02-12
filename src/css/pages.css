@@ -214,7 +214,6 @@
 }
 
 .abada-product-last-cta a {
-    padding: 1rem 2rem;
     align-self: center;
 }
 
@@ -265,6 +264,17 @@
 .product-sale-page {
     display: grid;
     gap: 1rem;
+}
+
+.product-page-title {
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+    font-size: 4rem;
+}
+
+.product-subtext {
+    margin: 0;
+    padding-bottom: 1.5rem;
 }
 
 .description {

@@ -27,7 +27,7 @@
 
 body {
 	margin: 0;
-	font-family: 'DM Sans', 'other-font';
+	font-family: 'DM Sans', 'Arial';
 	font-size: 16px; /* or 1.125rem */
 	font-weight: 400; 
 	line-height: 1.6; /* a normal default */
@@ -54,10 +54,19 @@ img {
     font-display: swap;
 }
 
+@font-face {
+    font-family: "DM Sans-Fallback";
+    src: local("Arial");
+    size-adjust: 100.722%;
+    ascent-override: 92.672%;
+    descent-override:24.0768%;
+    line-gap-override: 0%;
+}
+
 /* === typography styles === */
 
 h1,h2,h3 {
-	font-family: "DM Sans";
+	font-family: "DM Sans", "arial";
 	font-weight: 700;
     color: var(--title-color);
 	margin-top: 0; /* avoids added padding from flex boxes */
@@ -87,11 +96,18 @@ a {
     text-decoration: none;
 	}
 	
+button {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
 a:hover, 
 a:focus,
 button:focus,
 button:hover {
-	color: var(--alt-action);
+	color: var();
+
 }
 
 /* add other typography based styles below */
@@ -103,10 +119,14 @@ button:hover {
 .btn {
     /* cursor: pointer; */
     padding: 1.25rem 3rem;
+    transition: 1s ease-in-out;
+    display: inline-block;
+    position: relative;
 }
 
 .btn:active,
-.btn:focus {
+.btn:focus,
+.btn:hover {
     cursor: pointer;
 }
 
@@ -149,6 +169,33 @@ button:hover {
 .btn-very-dark {
     background-color: var(--title-color);
 }
+
+/* === Button Hover Animations === */
+.btn:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14%;
+    right: 60px;
+    transition: 0.5s;
+    color: white;
+    font-size: 2.2rem;
+  }
+
+.btn-blue:after {
+    color: var(--action-primary);
+}
+
+.btn:hover{
+    padding-right: 20px;
+    padding-left:8px;
+  }
+  
+.btn:hover:after {
+    opacity: 1;
+    right: 50px;
+  }
+
 
 strong {
     font-weight: 700;
@@ -470,7 +517,7 @@ strong {
     justify-content: space-between;
     align-items: top;
     position: relative;
-    padding-top: 3rem;
+    padding-top: 0rem;
     margin-top:3rem;
     }
 
@@ -503,10 +550,14 @@ strong {
       margin: 0 0 0 0px;
       opacity: 1;
       transform: none;
+      transition: ease-in-out .5s;
     }
 
+
+
     .nav-menu a:hover {
-      color: #666;
+      color: black;
+      border-bottom: 1px solid black;
     }
 
     .nav-content img {
@@ -542,7 +593,7 @@ strong {
 =============== */
 
 .hero {
-    background-image: url("/img/homepage/hero-bg-small.png");
+    background-image: url("/img/homepage/hero-bg-small.webp");
     background-position: center;    
     background-size: cover;
     background-repeat: no-repeat;
@@ -555,7 +606,6 @@ strong {
 
 .nav-content {
     grid-column: 2/4;
-    padding-top: 1.5rem;
 }
 
 .hero-content {
@@ -573,16 +623,10 @@ strong {
     /* margin-bottom: 1.5rem; */
 }
 
-.duo-button-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
 @media (min-width: 725px) {
 
     .hero {
-        background-image: url("/img/homepage/hero-bg.jpg");
+        background-image: url("/img/homepage/hero-bg.webp");
         background-position: right;    
     }
 
@@ -590,11 +634,6 @@ strong {
 
         grid-column: 2/4;
         width: 70%;
-    }
-
-    .duo-button-container {
-        flex-direction: row;
-        justify-content: flex-start;
     }
 }
 
@@ -718,7 +757,6 @@ strong {
 .featured-product-button {
     grid-area: button;
     justify-self: center;
-    padding: 1rem 0rem;
     margin-top: 6rem;
 }
 
@@ -799,12 +837,12 @@ strong {
 
 .guide-product-button {
     justify-self: center;
-    padding: 1rem 2.5rem;
 }
 
 @media (min-width: 725px) {
     .guide-title-content h2 {
         font-size: 2.8rem;
+        margin-bottom: 1rem;
     }
 
     .guide-title-content {
@@ -831,7 +869,6 @@ strong {
     }
 
     .guide-product-button {
-        width: 50%;
         margin: 0 auto;
     }
 }
@@ -883,10 +920,11 @@ strong {
     justify-content: space-between;
     gap: .5rem;
     margin-bottom: 1rem;
-    width: 200px;
+    width: 100px;
 }
 
 .social-icon:nth-child(1) {
+    padding-right: 1rem;
     border-right: 2px solid var(--title-color);
 }
 
@@ -1161,12 +1199,13 @@ strong {
 .footer-nav a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 .footer-nav a:hover,
 .footer-nav a:focus {
-    color: var(--secondary-color);
+    color: var(--action-primary);
+
 }
 
 /* Social Media Icons */
@@ -1289,6 +1328,13 @@ strong {
     display: block;
 }
 
+.flex-box {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem; 
+}
+
+ /* replace grid */
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -1324,10 +1370,13 @@ strong {
         grid-column: 3;
     }
 
+    .flex-box {
+        flex-direction: row;
+    }
+
     .flex-container {
         flex-direction: row;
         max-width: 1200px;
-        
     }
 
 }

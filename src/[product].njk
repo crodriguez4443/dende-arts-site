@@ -47,10 +47,10 @@ layout: layout.njk
         {% block content %}
         <div class="product-card">
             {% if product %}
-                <h1>{{ product.name }}</h1>
-                
+                <h1 class="product-page-title">{{ product.name }}</h1>
+                <p class="product-subtext">{{ product.content.subtext }}</p>
                 <div class="price">
-                    Price: $ {{ product.price }}
+                    Price: $ {{ product.price }} USD
                 </div>
 
                 {% if product.description %}
