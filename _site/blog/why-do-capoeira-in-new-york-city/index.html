@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Practice Capoeira in New York City?</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- OG meta descriptions -->
+    <meta property="og:title" content="Why Practice Capoeira in New York City?" />
+    <meta property="og:description" content="Discover the benefits of Capoeira in NYC: fitness, community, self-defense, and a unique cultural experience. Find classes and start your journey!" />
+    <meta property="og:image" content="jon-flobrant-4056-unsplash.jpg" />
+
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" ></script>
+    
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            console.log('Initializing Swell...');
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+
+                });
+                console.log('Swell initialized successfully');
+                // Get the cart and update the global variable
+                const cart = await swell.cart.get();
+                window.swellCartCount = cart?.itemQuantity || 0; // <-- CORRECTED PROPERTY
+                console.log("Cart count after init:", window.swellCartCount);
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+</head>
+<body onload="window.initializeSwell()">
+    <!-- _includes/cart-sidebar.njk -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button id="close-cart" class="close-cart">×</button>
+  </div>
+  <div id="cart-items" class="cart-items">
+    <!-- Cart items will be dynamically inserted here -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cart-total-amount"></span>
+    </div>
+    <button id="checkout-button" class="checkout-button">
+      Proceed to Checkout
+    </button>
+  </div>
+</div>
+<div id="cart-overlay" class="cart-overlay"></div>
+
+    <main> 
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songs</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <a href="#" class="cart-toggle flex-box" onclick="return false;">
+                        <picture class="cart-icon">
+            <source type="image/svg+xml" srcset="/img/optimized/kwK_MZKtPm-32.svg 32w" sizes="100vw">
+<source type="image/webp" srcset="/img/optimized/kwK_MZKtPm-32.webp 32w, /img/optimized/kwK_MZKtPm-400.webp 400w, /img/optimized/kwK_MZKtPm-800.webp 800w, /img/optimized/kwK_MZKtPm-1280.webp 1280w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/kwK_MZKtPm-32.jpeg 32w, /img/optimized/kwK_MZKtPm-400.jpeg 400w, /img/optimized/kwK_MZKtPm-800.jpeg 800w, /img/optimized/kwK_MZKtPm-1280.jpeg 1280w" sizes="100vw">
+            <img src="/img/optimized/kwK_MZKtPm-1280.webp" width="1280" height="1280" alt="Dende Arts Shopping Cart" loading="eager" decoding="async">
+        </picture>
+                        ()
+                    </a>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">Why Practice Capoeira in New York City?</a>
+            </div>
+            <h1>Why Practice Capoeira in New York City?</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2018-06-16">
+                    June 15, 2018
+                </time>
+            </div>
+            
+            
+            
+            
+
+            <div class="blog-post-content">
+                <table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td>If you’re new to New York city like me, you know how hard it is to do the following…<br><br>1. Make friends<br>2. Stay active<br><br>People in New York are always on a mission. Their mission is the be the next big dancer, a successful lawyer, or a business person. I personally always feel like I’m busy! But something that helps me is taking some sort of group fitness class that helps me meet people while staying active. For me, that thing is Capoeira!</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>WHAT IS CAPOEIRA?<br><br>If you don’t know what Capoeira is, it’s an afro-Brazilian martial art that combines dance, self defense, and a full body workout. Models like <a href="https://www.youtube.com/watch?v=S9egpYYtdNc">Adriana Lima</a> like it because it helps keeps them slim, fighters like <a href="https://youtu.be/O6hAm0LC7dA?t=25">Connor Mcgreggor</a> like it because it teaches them to move and flow, and I like it because it’s FUN and I get the chance to meet people from all over the world. You also don’t need any equipment, which is really convenient, and you can use it to show off to your friends, which makes you feel pretty cool!</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>The history of Capoeira goes back over 400 years to the times of slavery in Brazil. Africans were brought over by the Portuguese to work on their plantations. The slaves were not allowed to practice their native forms of self defense, so instead they devised a way to conceal their martial art as a dance. This tradition of disguising Capoeira lasted until the early 1900’s when a man named Manuel dos Reis Machado (Mestre Bimba) created a more structured form of Capoeira that serves as the foundation for what we practice today. Despite 400 years of oppression, today Capoeira is recognized as an <a href="https://ich.unesco.org/en/RL/capoeira-circle-00892">Intangible Cultural Heritage of Humanity</a> by UNESCO, which is a pretty cool Rags to Riches story.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>CAPOEIRA COMMUNITY<br><br>Today, Capoeira is found all over the world and that’s one of the things that makes it so cool. You can travel and find people with similar interests to you and become friends. I’ve tried Yoga, Taekwondo, gymnastics, and rock climbing - and I would say that the Capoeira community is the most welcoming, diverse, and willing to hang out with new people than any other I’ve found.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Fun, Friends, and Fitness… What else could you ask for in a group fitness class?<br><br>For information on classes in New York city reach out to <a href="mailto:dende.arts@gmail.com">dende.arts@gmail.com</a> or check out class times at <a href="https://dendearts.com/classes">dendearts.com/classes</a></td>
+    </tr>
+</table>
+```
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="/js/products/product-quantity.js" defer></script>
+    
+</body>
+
+
+</html>

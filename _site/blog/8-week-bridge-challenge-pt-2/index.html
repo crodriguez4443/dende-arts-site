@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Week Bridge Challenge for Capoeira: Part 2</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- OG meta descriptions -->
+    <meta property="og:title" content="8 Week Bridge Challenge for Capoeira: Part 2" />
+    <meta property="og:description" content="Master the Au de Coluna! Weeks 5-8 of our bridge challenge focuses on advanced backbend progressions for capoeira practitioners. Level up your game!" />
+    <meta property="og:image" content="aral-tasher-132320.jpg" />
+
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" ></script>
+    
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            console.log('Initializing Swell...');
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+
+                });
+                console.log('Swell initialized successfully');
+                // Get the cart and update the global variable
+                const cart = await swell.cart.get();
+                window.swellCartCount = cart?.itemQuantity || 0; // <-- CORRECTED PROPERTY
+                console.log("Cart count after init:", window.swellCartCount);
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+</head>
+<body onload="window.initializeSwell()">
+    <!-- _includes/cart-sidebar.njk -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button id="close-cart" class="close-cart">×</button>
+  </div>
+  <div id="cart-items" class="cart-items">
+    <!-- Cart items will be dynamically inserted here -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cart-total-amount"></span>
+    </div>
+    <button id="checkout-button" class="checkout-button">
+      Proceed to Checkout
+    </button>
+  </div>
+</div>
+<div id="cart-overlay" class="cart-overlay"></div>
+
+    <main> 
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songs</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <a href="#" class="cart-toggle flex-box" onclick="return false;">
+                        <picture class="cart-icon">
+            <source type="image/svg+xml" srcset="/img/optimized/kwK_MZKtPm-32.svg 32w" sizes="100vw">
+<source type="image/webp" srcset="/img/optimized/kwK_MZKtPm-32.webp 32w, /img/optimized/kwK_MZKtPm-400.webp 400w, /img/optimized/kwK_MZKtPm-800.webp 800w, /img/optimized/kwK_MZKtPm-1280.webp 1280w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/kwK_MZKtPm-32.jpeg 32w, /img/optimized/kwK_MZKtPm-400.jpeg 400w, /img/optimized/kwK_MZKtPm-800.jpeg 800w, /img/optimized/kwK_MZKtPm-1280.jpeg 1280w" sizes="100vw">
+            <img src="/img/optimized/kwK_MZKtPm-1280.webp" width="1280" height="1280" alt="Dende Arts Shopping Cart" loading="eager" decoding="async">
+        </picture>
+                        ()
+                    </a>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">8 Week Bridge Challenge for Capoeira: Part 2</a>
+            </div>
+            <h1>8 Week Bridge Challenge for Capoeira: Part 2</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2017-06-05">
+                    June 4, 2017
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <h2><h2 id="my-thoracic-what">My thoracic what!?</h2></h2>
+<h2><h2 id="thoracic-spine-ok-but-how">Thoracic spine, ok, but how!?</h2></h2>
+<p>After releasing my first post on using spinal waves to activate your spine, someone asked me how exactly are you supposed to activate your <a href="https://www.google.com/search?q=thoracic+spine&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjKrOj0waXUAhUg0IMKHS37CJIQ_AUICigB&amp;biw=1035&amp;bih=703#imgrc=xtd_ZzSs11dbSM:">thoracic spine</a> instead of your <a href="https://lowbackpainprogram.com/wp-content/uploads/2016/07/spine-diagram.jpg">lumbar spine</a> when doing a bridge/ponte. The bending in the bridge, or ponte, is primarily done in the thoracic spine and not the lumbar spine. This is an important difference because heavy bending in the lumbar spine can lead to injury.</p>
+<p>That person had a lot of difficulty understanding how to activate their thoracic spine and wanted some advice, so here it is!</p>
+<h2><h2 id="3-exercises-to-activate-your-thoracic-spine">3 Exercises to activate your thoracic Spine</h2></h2>
+<p>The first thing you can do to activate/stretch your thoracic spine is to use a foam roller and <a href="https://garagegymbuilder.com/wp-content/uploads/2016/08/Thoracic-Spine.jpg">place the roller under your thoracic spine</a>. This should be a little below armpit level. Try to bend using just your thoracic spine, keeping your core engaged to stabilize the lumbar spine, prevent bending (hyperflexion) in that region. Here’s a <a href="https://www.youtube.com/watch?v=khUFQseeMMc">video</a> describing using a foam roller to open up the thoracic spine from the perspective of a cross-fitter. A nifty trick that I use A LOT is wall bridges with my hands on the wall. This might sound super easy, but BRO, this will set up for success, so do it! <a href="https://www.youtube.com/watch?v=i4j7AKd_RjQ">Antranik</a>, does a wonderful job breaking down this exercise popularized for a lot of people by Ido Portal. As great a job as Antranik does, I will point out one thing for our discussion on the thoracic spine. JUST USE YOUR THORACIC SPINE. Don’t cheat! What this means is that you are not allowed to bend from your hips, your lumbar spine, or your knees. If there is a slight bend, that’s ok, but the focus is the thoracic spine. For you pros out there, too cool for the last couple progressions: Once you have some notion of how to activate your thoracic spine and have ample strength to hold yourself up during a ponte, <a href="https://www.youtube.com/watch?v=VNGyXg5jcCA">try this</a>. A bridge with elevated legs. This is something that I picked up from gymnastic bodies bridge route that is an absolute favorite of mine. The reason is it fiercely targets the thoracic spine and shoulders - big deficiencies in most people. Keep your core and butt engaged for this one and make sure you legs are at least 6 inches off the ground. Try to push forward with your legs to accentuate this motion, but be careful because you are working at your end range of motion - meaning the chance of injury is higher. This one is tough, but for you fearless people, there are some pretty cool variations you can do with this movement that will lead to much cooler stuff, like raiz, and <a href="https://www.youtube.com/watch?v=uQjXUGLpmmo&amp;t=114s">au de coluna</a>. This tutorial from Mussum is pretty cool, but as he says, the base for any inverted movements is the BRIDGE/PONTE, so work hard on that foundation).</p>
+<p>The key here is progressions, like anything else, nothing is gained without some commitment. Start slow, and work your way up. As much as it is a simple movement, the bridge is not easy.</p>
+<h2><h2 id="8-week-bridge-synopsis">8 WEEK BRIDGE SYNOPSIS</h2></h2>
+<p>I also want to do a 2-week synopsis on the eighth week bridge challenge. My back is on freaking fire. I recently cut down the amount I bridge in a given session to about 4 minutes because the 7 was too aggressive. My lumbar spine hasn't been hurting and I have mostly a lot of muscle soreness, which I expected. Later on, I’ll try to include more basic and advanced movements that include ponte/bridge as the base.</p>
+<p>Also! If you’re interested in winning a free shirt, I’m raffling a not yet released Dendê Arts T-shirt to those who use hashtag #8weekbridge. The point of the raffle is to promote bridges in your practice. Good luck and move well.</p>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-2">
+                                <a href="#my-thoracic-what">My thoracic what!?</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#thoracic-spine-ok-but-how">Thoracic spine, ok, but how!?</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#3-exercises-to-activate-your-thoracic-spine">3 Exercises to activate your thoracic Spine</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#8-week-bridge-synopsis">8 WEEK BRIDGE SYNOPSIS</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="/js/products/product-quantity.js" defer></script>
+    
+</body>
+
+
+</html>

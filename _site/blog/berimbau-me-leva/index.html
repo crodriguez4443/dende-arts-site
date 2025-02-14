@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berimbau me leva</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- OG meta descriptions -->
+    <meta property="og:title" content="Berimbau me leva" />
+    <meta property="og:description" content="Learn the meaning and lyrics of &#39;Berimbau me leva&#39;, a classic capoeira song. Understand its rhythm and history. Perfect for beginners!" />
+    <meta property="og:image" content="" />
+
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" ></script>
+    
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            console.log('Initializing Swell...');
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+
+                });
+                console.log('Swell initialized successfully');
+                // Get the cart and update the global variable
+                const cart = await swell.cart.get();
+                window.swellCartCount = cart?.itemQuantity || 0; // <-- CORRECTED PROPERTY
+                console.log("Cart count after init:", window.swellCartCount);
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+</head>
+<body onload="window.initializeSwell()">
+    <!-- _includes/cart-sidebar.njk -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button id="close-cart" class="close-cart">×</button>
+  </div>
+  <div id="cart-items" class="cart-items">
+    <!-- Cart items will be dynamically inserted here -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cart-total-amount"></span>
+    </div>
+    <button id="checkout-button" class="checkout-button">
+      Proceed to Checkout
+    </button>
+  </div>
+</div>
+<div id="cart-overlay" class="cart-overlay"></div>
+
+    <main> 
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songs</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <a href="#" class="cart-toggle flex-box" onclick="return false;">
+                        <picture class="cart-icon">
+            <source type="image/svg+xml" srcset="/img/optimized/kwK_MZKtPm-32.svg 32w" sizes="100vw">
+<source type="image/webp" srcset="/img/optimized/kwK_MZKtPm-32.webp 32w, /img/optimized/kwK_MZKtPm-400.webp 400w, /img/optimized/kwK_MZKtPm-800.webp 800w, /img/optimized/kwK_MZKtPm-1280.webp 1280w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/kwK_MZKtPm-32.jpeg 32w, /img/optimized/kwK_MZKtPm-400.jpeg 400w, /img/optimized/kwK_MZKtPm-800.jpeg 800w, /img/optimized/kwK_MZKtPm-1280.jpeg 1280w" sizes="100vw">
+            <img src="/img/optimized/kwK_MZKtPm-1280.webp" width="1280" height="1280" alt="Dende Arts Shopping Cart" loading="eager" decoding="async">
+        </picture>
+                        ()
+                    </a>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">Berimbau me leva</a>
+            </div>
+            <h1>Berimbau me leva</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2020-10-15">
+                    October 14, 2020
+                </time>
+            </div>
+            
+            
+            
+            
+
+            <div class="blog-post-content">
+                <table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Ê me leva<br>Pra jogar capoeira berimbau me leva<br>Ô me leva ê<br><br>**Ê me leva<br>Pra jogar capoeira berimbau me leva**<br><br>Me leva que é pra jogar miudinho<br>Leva que é pra fazer amizade<br>Pra seguir firme nesse caminho<br>E fazer minha vida feliz de verdade<br>Me leva ê…<br><br>**Ê me leva,<br>Pra jogar capoeira berimbau me leva.**<br><br>Ô, mas me leva ê<br><br>**Ê me leva<br>Pra jogar capoeira berimbau me leva**<br><br>Me leva pra uma roda de samba.<br>Leva que é pra comer feijoada.<br>Leva pra ver o meu Mestre que é bamba<br>Leva pra vadiar com meu camarada<br>Me leva ê<br><br>**Ê me leva<br>Pra jogar capoeira berimbau me leva**<br><br>Me leva pra conhecer a cultura<br>A arte que o negro deixou de herança<br>Pra fugir dessa vida que é dura<br>E viver com um pouquinho mais de esperança<br>Me leva ê<br><br>**Ê me leva<br>Pra jogar capoeira berimbau me leva**<br><br>Pra jogar capoeira<br>**Berimbau me leva**<br><br>Que é luta de bater com o pé<br>**Berimbau me leva**<br><br>Essa arte é tão faceira<br>**Berimbau me leva**<br><br>É pra menino e pra mulher<br>**Berimbau me leva**<br><br>Ê me leva<br>Pra jogar capoeira berimbau me leva</td>
+        <td>Take me<br>To play capoeira berimbau take me<br>Oh take me<br><br>Take me<br>To play capoeira berimbau take me<br><br>Take me to play miudinho<br>Take me to make friends<br>To stay firm on this path<br>And make my life truly happy<br>Take me...<br><br>Take me,<br>To play capoeira berimbau take me<br><br>Oh, but take me<br><br>Take me<br>To play capoeira berimbau take me<br><br>Take me to a samba circle<br>Take me to eat some feijoada<br>Take me to see my Master who is bamba<br>Take it me play with my friend<br>Take me<br><br>Take me<br>To play capoeira berimbau take me<br><br>Take me to learn about the culture<br>The art that blacks left behind<br>To escape this hard life<br>And live with a little more hope<br>Take me<br><br>Take me<br>To play capoeira berimbau take me<br><br>To play capoeira<br>Berimbau take me<br><br>Which is a fight with the foot<br>Berimbau take me<br><br>This art is so elegant<br>Berimbau take me<br><br>It's for boys and women<br>Berimbau take me<br><br>Take me<br>To play capoeira berimbau take me</td>
+    </tr>
+</table>
+<figcaption>Author: Pitoco</figcaption>
+```
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="/js/products/product-quantity.js" defer></script>
+    
+</body>
+
+
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Makes a Good Capoeira Teacher?</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- OG meta descriptions -->
+    <meta property="og:title" content="What Makes a Good Capoeira Teacher?" />
+    <meta property="og:description" content="Learn the key qualities of a good capoeira teacher: patience, skill, and cultural knowledge for effective martial arts instruction." />
+    <meta property="og:image" content="martial-arts-teacher.jpg" />
+
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" ></script>
+    
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            console.log('Initializing Swell...');
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+
+                });
+                console.log('Swell initialized successfully');
+                // Get the cart and update the global variable
+                const cart = await swell.cart.get();
+                window.swellCartCount = cart?.itemQuantity || 0; // <-- CORRECTED PROPERTY
+                console.log("Cart count after init:", window.swellCartCount);
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+</head>
+<body onload="window.initializeSwell()">
+    <!-- _includes/cart-sidebar.njk -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button id="close-cart" class="close-cart">×</button>
+  </div>
+  <div id="cart-items" class="cart-items">
+    <!-- Cart items will be dynamically inserted here -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cart-total-amount"></span>
+    </div>
+    <button id="checkout-button" class="checkout-button">
+      Proceed to Checkout
+    </button>
+  </div>
+</div>
+<div id="cart-overlay" class="cart-overlay"></div>
+
+    <main> 
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songs</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <a href="#" class="cart-toggle flex-box" onclick="return false;">
+                        <picture class="cart-icon">
+            <source type="image/svg+xml" srcset="/img/optimized/kwK_MZKtPm-32.svg 32w" sizes="100vw">
+<source type="image/webp" srcset="/img/optimized/kwK_MZKtPm-32.webp 32w, /img/optimized/kwK_MZKtPm-400.webp 400w, /img/optimized/kwK_MZKtPm-800.webp 800w, /img/optimized/kwK_MZKtPm-1280.webp 1280w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/kwK_MZKtPm-32.jpeg 32w, /img/optimized/kwK_MZKtPm-400.jpeg 400w, /img/optimized/kwK_MZKtPm-800.jpeg 800w, /img/optimized/kwK_MZKtPm-1280.jpeg 1280w" sizes="100vw">
+            <img src="/img/optimized/kwK_MZKtPm-1280.webp" width="1280" height="1280" alt="Dende Arts Shopping Cart" loading="eager" decoding="async">
+        </picture>
+                        ()
+                    </a>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">What Makes a Good Capoeira Teacher?</a>
+            </div>
+            <h1>What Makes a Good Capoeira Teacher?</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2021-01-10">
+                    January 9, 2021
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <p>There are five fundamentals elements that students can look for when deciding on learning from a martial arts teacher. These elements mxay not be clear during the first few classes, but every good teacher has some understanding of each one. The first is creating a safe classroom. The second is being able to engage their students in a fun teaching environment. The third is being connected to the greater community in their respective art. The fourth is the ability to inspire their students. And the last is encouraging the continued growth of their intermediate and advanced students.</p>
+<h2><h2 id="safety-is-always-first">Safety is always First</h2></h2>
+<p>Nobody likes getting injured. <strong>Injuries mean that you can't train, and that means you won't improve.</strong> A well prepared teacher understands this and will do whatever they can to prevent injuries in their students.</p>
+<p><strong>You might think, &quot;yes but this is a martial art&quot;. Not all injuries can be avoided (as I'll mention later). But a good martial arts instructor can tell when they are needlessly putting their students in harms way.</strong></p>
+<p>There are two kinds of injuries that you may encounter when doing martial arts. The first is a traumatic injury. This is the injury most people think of. A kick to the head or twisted ankle can cause an injury that prevents you from training. The second kind of injury we can encounter is an overuse injury. an example of this is doing a kick over and over again (probably not warmed up), causing a strain in the muscles or soft tissue.</p>
+<h3><h3 id="creating-a-safe-environment">Creating a Safe Environment</h3></h3>
+<p>This is essential for any martial arts space. Creating a safe environment means safety for the student's physical and mental wellbeing. Good warmups and regressed movement for those who might not be at the required level. These two things alone go a long way in helping to prevent students from receiving overuse or traumatic injuries.</p>
+<p><strong>When I was 6 years old, I got kicked in the face and lost a tooth in Taekwondo class...</strong></p>
+<p>I was holding a pad for a much older and bigger student. At some point, I dropped the pad too low and was hit square in the mouth. I was hit so hard, a loose tooth came completely out. There was blood, and tears. I sat down with my parents feeling a little down with ice pressed against my face. I was back in class within a few days, but this story could have ended very differently.</p>
+<p>The teacher could have paired me with someone closer to my size, or someone with enough experience to throw their kicks with control. Now, these are kids we're talking about so accidents do happen. However it's worth thinking about how any situation can be made safer to avoid these kinds of injuries. Had we both been adults, the consequences would have been much worse. Luckily for me, that was just a baby tooth.</p>
+<p><strong>Creating a safe environment DOES NOT mean creating an injury free zone. But it does mean approaching potentially dangerous material in an intelligent way.</strong></p>
+<h3><h3 id="understanding-the-risk-of-a-martial-art">Understanding the risk of a martial art</h3></h3>
+<p>Students should also have some understanding of the risks while joining a martial arts class. If the teacher does not make it clear what kind of risks there are, such as receiving strikes, you as a student should ask. Educating yourself is the best way of making sure your time training will be productive and enjoyable.</p>
+<p>Going back to my earlier example, my parents could have chosen to sue the Taekwondo school and take me out of the class. They could have chosen any reason. Physiological damages, physical damages, etc. The fact that this does happen is fortunate. My parents understood that this was an accident and my tooth would grow back.</p>
+<h3><h3 id="identifying-a-safe-environment">Identifying a safe environment</h3></h3>
+<p>Students looking at a new school should be aware if other students are getting injured frequently from what the instructor is teaching. Similarly, there are teachers who are verbally abusive to their students, and this of course is another sign of an environment that is not safe.</p>
+<p>As much as these things are important, doing martial arts takes courage. Students are the heroes and heroines of their own journeys. And just like any good story, not all lessons are sunshine and rainbows. You will feel frustration. Your ego will get bruised. And you'll probably take a few real bruises as well.</p>
+<h3><h3 id="dealing-with-injuries">Dealing with Injuries</h3></h3>
+<p><em>&quot;I got injured. I guess I wasn't meant to do X&quot;.</em></p>
+<p>I've heard this excuse many times. <strong>Injury doesn't mean a particular exercise or activity is not meant for you. If an exercise is painful or you don't feel safe doing it, this is your body trying to tell you to slow down.</strong></p>
+<p>Communicate with your instructor about what less intense alternatives there are to a particular movement. If you can't do X, then maybe you can Y instead.</p>
+<p>If you do have an injury, then the best advice would be to go to a medical professional. And that's not a copout. Seriously, go to a physical therapist. Many times, students with injuries visit their primary care doctor. Although there is nothing inherently wrong with this, <strong>physical therapists specialize in helping you recover from the kind of injuries you are most likely to receive from martial arts.</strong></p>
+<p>Here is an article on injuries in Capoeira</p>
+<p>https://dendearts.com/most-common-injuries-in-capoeira-and-why-we-get-them/</p>
+<h2><h2 id="keeps-students-coming-back-for-more">Keeps students coming back for more</h2></h2>
+<p>No matter how focused or dedicated you think you are, there will be times that you lack motivation.</p>
+<p><strong>Teachers who engage their students in a way that makes them look forward to training are a pleasure to learn from</strong>. Teachers do this in many different ways. Some do some by sheer force of will and charisma. Many others do this with creativity and an ability to make their classes fun. No matter the method, a teacher who engages their students is able to extract the maximal amount of effort from their students.</p>
+<h3><h3 id="good-teachers-use-games">Good teachers use Games</h3></h3>
+<p>Some of the best teachers I've seen have used the timeless framework of a game to get the most out of their students. &quot;Games&quot; within the realm of martial arts may seem strange to someone who doesn't do martial arts. Why &quot;play around&quot;?</p>
+<p>Games work with adults much in the same way that they work with children (not sure what this says about adults!). <strong>A good game brings you into the moment, and get you motivated</strong>. Crossfit uses a very simple game to motivate their clients. &quot;How many of X can you do in Y time?&quot;. Simple and effective.</p>
+<p><strong>Games do another thing, which is they activate the brain while you move the body.</strong> It takes a level of thinking to do the physical aspects of a game, while considering the rules and the opposite team. If you are able to apply what you know in a way that is effective and creative, then you really know your stuff.</p>
+<p>This is opposed to many fitness classes that have their students brainlessly plug away at a punching bag. Or martial arts classes that have students run through the same sequence of movements again and again. This kind of training is necessary, but not sufficient. Any martial artist needs to learn to be creative as they work. <strong>Games do a great job and encouraging creativity and problem solving.</strong></p>
+<h3><h3 id="knowing-what-motivates-a-student">Knowing what Motivates a Student</h3></h3>
+<p>A child does martial arts for a different reason than teenagers, or adults. Children want to play, while teenagers want to have fun and impress their peers. Understanding each student's motivations is part and parcel of keeping them engaged in the activity.</p>
+<p>The majority of adults (I won't delve into kids or teens in this article much) are most concerned with a few things. Some adults are very serious about training and hope to compete. Others are more interested in fun and the social aspect of a new hobby. <strong>A good martial arts teacher knows how to challenge the hardcore students, and at the same time, keeps things fun and engaging for the more casual crowd.</strong> This balancing act is far from easy!</p>
+<h3><h3 id="tell-your-teacher-if-you-wish-to-compete-or-want-to-lose-weight">Tell your teacher if you wish to compete or want to lose weight</h3></h3>
+<p>A good martial arts teacher will be willing to listen to you when you talk to them bout your goals for training with them. Be clear with them about your goals and expectations. And remember to have some patience.</p>
+<h2><h2 id="connection-with-the-greater-community">Connection with the greater community</h2></h2>
+<p>Martial arts instructor does not know everything. But they are connected to a larger community. <strong>Being part of a community supplements their knowledge as well as the knowledge of the group.</strong> We can look to Mix Martial Arts, which by its nature, constantly takes in new information. But it can only do this is their is a verifiable stream of good quality information. A good instructor seeks out these sources of information and is just as interested in learning as they are in teaching.</p>
+<p>Every instructor has their own teachers and mentors who they look up to and learn from. There are of course exceptions to this. There are very old masters who are at the top of the game. But even these people have confidants and people that they work with to develop their craft.</p>
+<p>Continued learning is critical for any martial arts teacher. If you run into a teacher who thinks they know it all, or has stopped looking for answers, then I would think twice about training with them. On the flip side, there are teachers who are still hungry. And take the time to learn take in new information and train it until they can verify if it is worth passing down or not.</p>
+<h2><h2 id="inspire-their-students">Inspire their students</h2></h2>
+<p>I remember seeing a teacher that I admired close their school for the night. But before he did so, he took a broom, swept the entire floor, and then took a mob and again went around the room. Good martial arts teachers lead by example. They train hard, care for the students, keep their place in god order, and everyone can see it. Their dedication is self-evident. Part of being a good teacher is to be someone others can aspire to.</p>
+<p>This means training. Teachers inspire their students by showing them what they can achieve through years of consistent practice. A martial artist who is diverse in their skills, intelligent in their approach, and works hard is a pleasure to practice under.</p>
+<h2><h2 id="traveling-continued-growth-beyond-the-classroom">Traveling: Continued growth beyond the classroom</h2></h2>
+<p>Not everything about a martial art is learned in the classroom. <strong>Part of becoming a more advanced practitioner means going out into the &quot;real world&quot; and applying what you know.</strong> Some things you learn in the classroom might not work, or you might not know how to apply them yet. As much as teachers enjoy having their students in class training with them, it's equally important for them to leave the nest from time to time and explore on their own.</p>
+<p>&quot;Traveling&quot; can mean different things for different martial arts. In Judo, this may mean going to other schools or attending tournaments. In any competitive setting, you'll quickly find out what in your skill set works, and what does not.</p>
+<p>In Jujitsu this could also mean attending seminars hosted by other schools. These events may involve learning another school's approach to a movement you already know and practice. The exposure provides perspective and can broaden your approach to the art.</p>
+<p>Traveling for Karate could mean visiting Okinawa, Japan and learning about the roots of Karate. Doing so could teach you about how training methods have changed over time and according to location.</p>
+<h3><h3 id="the-cycle-of-learning-training-and-applying">The Cycle of Learning, Training, and Applying</h3></h3>
+<p><strong>Training in a martial arts school means that you will be cycling over a constant process of learning new things, training them, and applying them</strong>. Today in class you will learn a new move. At home, you practice this move. Once you've practiced it enough, you'll visit a different school and apply what you have trained. You'll then take the lessons you've learned to refine what you know and see if you want to apply it again, or throw it out of your repertoire.</p>
+<p><strong>Any good teacher should understand the value of this system of consistent learning, training, and refining your skills.</strong> If you are brand new at a school, then you will likely stay in the first two steps for quite a long time. And even when you reach the level where you could travel outside of the school, you might not want to.</p>
+<p>There are people who train Judo for example and never compete. Some people don't want to compete. There is nothing wrong with that. But for the more advanced students traveling is a requirement if they want to continue developing their skills. If not, it will be all the more difficult to grow past a certain point.</p>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-2">
+                                <a href="#safety-is-always-first">Safety is always First</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#creating-a-safe-environment">Creating a Safe Environment</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#understanding-the-risk-of-a-martial-art">Understanding the risk of a martial art</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#identifying-a-safe-environment">Identifying a safe environment</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#dealing-with-injuries">Dealing with Injuries</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#keeps-students-coming-back-for-more">Keeps students coming back for more</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#good-teachers-use-games">Good teachers use Games</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#knowing-what-motivates-a-student">Knowing what Motivates a Student</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#tell-your-teacher-if-you-wish-to-compete-or-want-to-lose-weight">Tell your teacher if you wish to compete or want to lose weight</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#connection-with-the-greater-community">Connection with the greater community</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#inspire-their-students">Inspire their students</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#traveling-continued-growth-beyond-the-classroom">Traveling: Continued growth beyond the classroom</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#the-cycle-of-learning-training-and-applying">The Cycle of Learning, Training, and Applying</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="/js/products/product-quantity.js" defer></script>
+    
+</body>
+
+
+</html>

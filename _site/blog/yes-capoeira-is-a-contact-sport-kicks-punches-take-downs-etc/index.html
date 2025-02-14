@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes, Capoeira is a contact sport! (kicks, punches, take downs, etc.)</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- OG meta descriptions -->
+    <meta property="og:title" content="Yes, Capoeira is a contact sport! (kicks, punches, take downs, etc.)" />
+    <meta property="og:description" content="Explore Capoeira&#39;s dynamic nature as a contact sport. Learn about the kicks, punches, and takedowns that make it unique." />
+    <meta property="og:image" content="Screen-Shot-2020-10-28-at-7.46.38-PM.png" />
+
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" ></script>
+    
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            console.log('Initializing Swell...');
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+
+                });
+                console.log('Swell initialized successfully');
+                // Get the cart and update the global variable
+                const cart = await swell.cart.get();
+                window.swellCartCount = cart?.itemQuantity || 0; // <-- CORRECTED PROPERTY
+                console.log("Cart count after init:", window.swellCartCount);
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+</head>
+<body onload="window.initializeSwell()">
+    <!-- _includes/cart-sidebar.njk -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button id="close-cart" class="close-cart">×</button>
+  </div>
+  <div id="cart-items" class="cart-items">
+    <!-- Cart items will be dynamically inserted here -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cart-total-amount"></span>
+    </div>
+    <button id="checkout-button" class="checkout-button">
+      Proceed to Checkout
+    </button>
+  </div>
+</div>
+<div id="cart-overlay" class="cart-overlay"></div>
+
+    <main> 
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songs</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <a href="#" class="cart-toggle flex-box" onclick="return false;">
+                        <picture class="cart-icon">
+            <source type="image/svg+xml" srcset="/img/optimized/kwK_MZKtPm-32.svg 32w" sizes="100vw">
+<source type="image/webp" srcset="/img/optimized/kwK_MZKtPm-32.webp 32w, /img/optimized/kwK_MZKtPm-400.webp 400w, /img/optimized/kwK_MZKtPm-800.webp 800w, /img/optimized/kwK_MZKtPm-1280.webp 1280w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/kwK_MZKtPm-32.jpeg 32w, /img/optimized/kwK_MZKtPm-400.jpeg 400w, /img/optimized/kwK_MZKtPm-800.jpeg 800w, /img/optimized/kwK_MZKtPm-1280.jpeg 1280w" sizes="100vw">
+            <img src="/img/optimized/kwK_MZKtPm-1280.webp" width="1280" height="1280" alt="Dende Arts Shopping Cart" loading="eager" decoding="async">
+        </picture>
+                        ()
+                    </a>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">Yes, Capoeira is a contact sport! (kicks, punches, take downs, etc.)</a>
+            </div>
+            <h1>Yes, Capoeira is a contact sport! (kicks, punches, take downs, etc.)</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2020-10-28">
+                    October 27, 2020
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <p>Capoeira is a full contact martial art just like Muay Thai, Karate, and other martial arts. <strong>The difference is that the arena that Capoeiristas practice their full contact sparring, is the same as where they play. Kids and the baddest guys around might all play in the same roda, and even play together!</strong> The roda is a very flexible arena, which is why you see many Capoeira games with no contact at all, and other that can be violent if the conditions met below are met.</p>
+<h3><h3 id="misconceptions">Misconceptions</h3></h3>
+<p>Many of the misconceptions of Capoeira as a non-contact dance come from performances or staged interactions meant to awe a crowd. This is the difference between watching someone perform a cool looking &quot;Kata&quot; in Karate vs a Kumite match between two strong opponents. See below a performance by two Capoeriistas. It's clear that the take downs were planned and the other stuff they made up along the way.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cnIzInTyS-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3><h3 id="rules-for-contact-in-capoeira">Rules for Contact in Capoeira</h3></h3>
+<p>Capoeira does maintain some rules that apply to the majority of places you go to. <strong>One main tenant is that the way you play needs to fit within the music that is being played.</strong> If the tempo is fast, you play fast. If the music calls for beautiful movements, that's what you do. Many places also place a lot of importance on the person leading the &quot;roda&quot;. This is often a Mestre (master). If you play in a way the mestre does not like, you may be told to leave. If you're beating on a beginner, you will most likely be told to leave.</p>
+<h2><h2 id="why-is-capoeira-a-contact-sport">Why is Capoeira a contact sport?</h2></h2>
+<p><em>According to a study from the <a href="https://pdfs.semanticscholar.org/7935/e9a1739368e93183331ffff51f240371ae78.pdf">International Journal of Science and Research</a>, a contact sport is “a sport that emphasizes or requires physical contact between players.”</em> Capoeira is a martial art first, and this is why at any Capoeira event, you should expect a certain amount of contact. In a capoeira game there are strikes, take downs, and even some limited grappling that can occur. Training Capoeira means knowing how to defend yourself in any of these situations.</p>
+<h2><h2 id="avoiding-fight-club">Avoiding fight club</h2></h2>
+<p><img src="images/fight_club_brad_pitt-819x1024.jpg" alt=""></p>
+<p>In the 1980s, and 90s there was a large movement towards a more aggressive and &quot;fight&quot; oriented Capoeira. The violence was so crazy that any roda you went to had the potential of braking out into a brawl. It was not uncommon for capoeiristas to knock each other out with hand strikes, knees, kicks, or throws to the ground. Many masters protested over the violence. Over time, the brawling mostly stopped and gave way to a Capoeira concerned with technique and fluid movement.</p>
+<p>Today's Capoeira does not have anywhere near the savagery of the Capoeira 40 years ago. Most people who play Capoeira do so for fitness and fun, but that doesn't mean there isn't contact or the potential to hurt yourself. Anyone who practices a striking martial art will tell you that when you spar, you have to be very cautious, because you never know what can happen.</p>
+<h2><h2 id="making-contact-kicks-takedowns-palm-strikes-grappling">Making Contact (kicks, takedowns, palm strikes, grappling)</h2></h2>
+<p>There is a saying that in the roda &quot;Everything is allowed&quot;. As long as it fits within the music that is being played, yes, kicks and other ways of making contact are allowed. For this reason, you never want to let your guard down. Even if you are part of the audience, you are fair game! Being part of the roda means you are part of the fun. And if someone lets loose a kick, you need to be aware enough to move out of the way, even if you are not the intended target.</p>
+<h3><h3 id="capoeira-sparring-marking-strikes-instead-of-full-power">Capoeira sparring: Marking strikes instead of full power</h3></h3>
+<p>In most games you play, there is a gentleman (and woman's) agreement to not seriously hurt each other. What does this mean? This does not mean you can't get hurt or that someone won't take you down on the concrete floor. It means people with good manners will generally mark a strike instead of following through. When Capoeiristas mark a strike, it's their way of saying &quot;I got you&quot;, while not hurting you. This is very common in Muay Thai, boxing, and MMA, where sparring is done with kicks that mark your target or soft strikes.</p>
+<p>Joe Rogan and Firas Zahabi talk about this on one Joe Rogan podcast. The method of light sparring might look strange, but it's actually extremely prevalent in the fighting world. This is how fighters gain tons of experience without receiving excessive damage. It's a very smart choice.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ihhqb26pU5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Like I mentioned, the sparring, fighting, and playing can all be found in a Capoeria roda. So how do you know if the person you're playing with wants to fight or play? YOU DON'T. Meaning that you have to be ready for everything. Though a general rule of thumb is that you start the game at a low or moderate intensity. As it goes on you will each naturally push each other, ramping up the intensity of the game.</p>
+<h3><h3 id="street-rodas-vs-academies">Street rodas vs academies</h3></h3>
+<p>In the old days, there were no Capoeira academies. This is a fairly new idea created in the 1930's by Mestre Bimba. The academy had much wider appeal and is the main reason Capoeira has spread to almost every country in the world.</p>
+<p>In the academies, people the teacher has a higher standard of etiquette. For example, no poking the eyes, don't strike the groin, no striking opponents when they're not looking at you, etc. This make sense because nobody wants to train at a place where you think you'll be knocked out at every sparring session. Teachers maintain a bit of control in their academies to preserve the health of their students as well as the integrity of their schools.</p>
+<p>In a street roda there is nobody to cry to. If you get hurt, you have no one to blame but yourself. This is why the style and aggressiveness of a street roda is very different from an academy. The games can get really rough and as long as the person leading the roda is ok with it, the game will continue until the two players agree to end it or someone &quot;buys the game&quot; (entering the roda and taking someone's place).</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TzCvB5II6KM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3><h3 id="is-grappling-allowed-in-capoeira">Is grappling allowed in Capoeira?</h3></h3>
+<p>Light grappling is actually allowed in some cases.</p>
+<p>Capoeiristas follow the music being playing by the bateria (percussion band) and the leader of the roda. If the leader of the roda is ok with some light grappling, then the two players might do so before being broken up. In other cases, the leader of the roda will not abide by any grappling, stopping any games where any holds are made.</p>
+<p>People leading the roda will usually stop grappling by tapping on the cabaça, which makes a high pitched sound. Alternatively, the leader of the roda will call the two players to the foot of the berimbau to reset or end the game.</p>
+<h2><h2 id="what-happens-when-you-get-hit-or-taken-down">What happens when you get hit or taken down?</h2></h2>
+<p>Getting taken down is a normal thing in Capoeira, and something that everyone needs to train for. At some point in your Capoeira life, you will land flat on your butt and you should prepare for it. But just like in life, the game doesn't stop when you get knocked down. You're given a chance to get back at the person who put you on the floor. Although nobody keeps score, you might do so between yourself and your partner.</p>
+<p>The same thing happens more or less when you are hit with a strike. The highest levels of Capoeira have an element of danger to them. after all, Capoeira wouldn't be interesting if you weren't risking something. And by that I don't mean that you aim to hurt or to be hurt. But just like a football game or a karate match, you challenge yourself to dodge kicks at the last minute and respond to them accordingly. I've been thrown out of the roda with a push kick to the chest. I couldn't breathe, but it taught me to be ready for next time.</p>
+<p>Now, a teacher might see you as a total newbie take a hit, stop the roda, and tell everyone how they shouldn't be beating up on new people. This is a very new thing in Capoeira. In the older rodas, there would be no mercy for you. It wouldn't matter if you have 10 years experience or 10 days. Things have changed, and people generally challenge you to the level that you can handle.</p>
+<p>Nobody likes being hit o taken down. It hurts the ego and bruises the body... but you do learn from it.</p>
+<h2><h2 id="has-anyone-died-playing-capoeira">Has anyone died playing Capoeira?</h2></h2>
+<p>In 2002 <a href="https://brasil.estadao.com.br/noticias/geral,rapaz-morre-ao-receber-golpe-em-roda-de-capoeira,20020914p19781">a young man of 21 died after receiving a kick</a> to the neck. This occurred during a Capoeira competition with an opponent. It is very rare for these things to happen even in competition, but Capoeira is still a martial art. There is always some risk. The same can be said of boxing, baseball, football, etc. But again, however very rare and is by no means a normal thing.</p>
+<p>Nobody goes into a roda trying to kill... at least not these days. If you do feel a bit afraid, I can understand. Those kicks do look very scary. Our goal as someone playing Capoeira is to train in such a way that you feel confident you won't get hit.</p>
+<h2><h2 id="can-you-get-injured-sparring-playing-capoeira">Can you get injured sparring/playing Capoeira?</h2></h2>
+<p>Capoeira is a contact sport and you can injure yourself in any contact sport you practice. There are many ways to injure yourself in Capoeira. These include getting taken down, receiving a strike, but the most common injuries are ones you deal to yourself. Most people injure themselves from not warming up properly, and doing movement in a way they are not ready for.</p>
+<p>The injures you do to yourselves are the most common, but they're the ones we can avoid best. The two ways to avoid injury are to warm up and train on a consistent basis the thing you want to learn at a level that you can manage. There are people who want to bust out Au de Coluna on day 1, but you have to take things one step at a time. Some people have hurt their backs or shoulders doing this move, and its always because they didn't warm up or they didn't regress the movement to a level that was right for them.</p>
+<p>Interested in some cool Capoeira moves? Check out our list of Capoeira floreios!</p>
+<p>Check out Capoeira Floreios</p>
+<h2><h2 id="should-i-play-in-an-aggressive-roda">Should I play in an aggressive roda?</h2></h2>
+<p>When people talk about &quot;aggressive&quot; rodas, they usually refer to rodas that are either faster, or where players are more willing to use kicks and take downs withought holding back. Obviously, if you are a beginner you will be shying away from these games, but you don't have to. If you feel that you have the tools to play in these games, then there is nothing holding you back.</p>
+<h2><h2 id="what-is-too-aggressive">What is too aggressive?</h2></h2>
+<p>Here are some examples of what makes games more &quot;aggressive&quot;. This list is a bit subjective as different people will be more or less tolerant to different ways of playing the game of Capoeira. Another thing to keep in mind is that certain rhythms such as Sao Bento Grande de Regional DEMAND an aggressive game. Others such as Iuna, demand the opposite. A cooperative game.</p>
+<p>Aggressive game criteria.</p>
+<ul>
+<li>Very fast Kicks</li>
+<li>Kicks that do not hold back</li>
+<li>Lots of hand strikes</li>
+<li>Hard take downs</li>
+<li>Contact</li>
+<li>Grappling</li>
+</ul>
+<h3><h3 id="how-to-survive-playing-with-aggressive-players">How to survive playing with aggressive players</h3></h3>
+<p>Playing with someone who is faster, stronger, and has more experience can be very intimidating. Here are some strategies to keep safe playing people with more experience than you.</p>
+<ul>
+<li>Decide if you’re looking for a challenge</li>
+<li>Stick to the basics</li>
+<li>Only throw what you can receive</li>
+<li>Ginga low as you close the distance</li>
+<li>Take space where available</li>
+<li>Cover your face at all times</li>
+<li>Shake hands when you’ve had enough</li>
+</ul>
+<p>Playing with someone who is better than you shouldn't automatically be seen as a threat to your personal wellbeing. The vast majority of people who are better than you will choose to play a level or two above what they perceive you are capable of. This is great because playing someone who is better than you is the best way for you to improve. You can't get better by playing people who are a lower level than you.</p>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-3">
+                                <a href="#misconceptions">Misconceptions</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#rules-for-contact-in-capoeira">Rules for Contact in Capoeira</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#why-is-capoeira-a-contact-sport">Why is Capoeira a contact sport?</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#avoiding-fight-club">Avoiding fight club</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#making-contact-kicks-takedowns-palm-strikes-grappling">Making Contact (kicks, takedowns, palm strikes, grappling)</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#capoeira-sparring-marking-strikes-instead-of-full-power">Capoeira sparring: Marking strikes instead of full power</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#street-rodas-vs-academies">Street rodas vs academies</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#is-grappling-allowed-in-capoeira">Is grappling allowed in Capoeira?</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#what-happens-when-you-get-hit-or-taken-down">What happens when you get hit or taken down?</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#has-anyone-died-playing-capoeira">Has anyone died playing Capoeira?</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#can-you-get-injured-sparring-playing-capoeira">Can you get injured sparring/playing Capoeira?</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#should-i-play-in-an-aggressive-roda">Should I play in an aggressive roda?</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#what-is-too-aggressive">What is too aggressive?</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#how-to-survive-playing-with-aggressive-players">How to survive playing with aggressive players</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="/js/products/product-quantity.js" defer></script>
+    
+</body>
+
+
+</html>

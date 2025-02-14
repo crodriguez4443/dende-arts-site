@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How much do Capoeira classes cost?</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- OG meta descriptions -->
+    <meta property="og:title" content="How much do Capoeira classes cost?" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="/img/dende-arts-logo2.png" />
+
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" ></script>
+    
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            console.log('Initializing Swell...');
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+
+                });
+                console.log('Swell initialized successfully');
+                // Get the cart and update the global variable
+                const cart = await swell.cart.get();
+                window.swellCartCount = cart?.itemQuantity || 0; // <-- CORRECTED PROPERTY
+                console.log("Cart count after init:", window.swellCartCount);
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+</head>
+<body onload="window.initializeSwell()">
+    <!-- _includes/cart-sidebar.njk -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button id="close-cart" class="close-cart">×</button>
+  </div>
+  <div id="cart-items" class="cart-items">
+    <!-- Cart items will be dynamically inserted here -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cart-total-amount"></span>
+    </div>
+    <button id="checkout-button" class="checkout-button">
+      Proceed to Checkout
+    </button>
+  </div>
+</div>
+<div id="cart-overlay" class="cart-overlay"></div>
+
+    <main> 
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songs</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <a href="#" class="cart-toggle flex-box" onclick="return false;">
+                        <picture class="cart-icon">
+            <source type="image/svg+xml" srcset="/img/optimized/kwK_MZKtPm-32.svg 32w" sizes="100vw">
+<source type="image/webp" srcset="/img/optimized/kwK_MZKtPm-32.webp 32w, /img/optimized/kwK_MZKtPm-400.webp 400w, /img/optimized/kwK_MZKtPm-800.webp 800w, /img/optimized/kwK_MZKtPm-1280.webp 1280w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/kwK_MZKtPm-32.jpeg 32w, /img/optimized/kwK_MZKtPm-400.jpeg 400w, /img/optimized/kwK_MZKtPm-800.jpeg 800w, /img/optimized/kwK_MZKtPm-1280.jpeg 1280w" sizes="100vw">
+            <img src="/img/optimized/kwK_MZKtPm-1280.webp" width="1280" height="1280" alt="Dende Arts Shopping Cart" loading="eager" decoding="async">
+        </picture>
+                        ()
+                    </a>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">How much do Capoeira classes cost?</a>
+            </div>
+            <h1>How much do Capoeira classes cost?</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2021-07-27">
+                    July 26, 2021
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <p>In general, <strong>Capoeira classes for adults cost anywhere from $80 - $175 per month. For children, cost per month is approximately $60 - $125. The price per class will depend on how often you go to class, your location, and the price set by the owner.</strong></p>
+<p>When the monthly membership is higher, make sure to go to as many classes as possible to get the most for your money. You might be paying more in total, but per class you might actually be paying the same as the lower priced memberships!</p>
+<p>For example:</p>
+<p>Going to class twice a week with a monthly membership of $100 is $12.5 per class.</p>
+<p>Going to class three times a week with a monthly membership of $150 is also $12.5.</p>
+<p>Just like any activity, memberships are not the only cost. There are other things like events, clothing, and equipment to consider.</p>
+<h2><h2 id="does-more-expensive-mean-better-quality-classes">Does more expensive mean better quality classes?</h2></h2>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/07/thought-catalog-Xeo_7HSwYsA-unsplash-1-scaled.jpg"><img src="images/thought-catalog-Xeo_7HSwYsA-unsplash-1-1024x767.jpg" alt=""></a></p>
+<p>Expensive does not mean better quality. The most important thing to look into is if the teacher's instruction is clear, the class is safe, and you enjoy what you are learning. Teaching is a skill and cost is not always associated with being a better teacher.</p>
+<h3><h3 id="look-for-good-teachers-not-just-the-best-of-the-bunch">Look for good teachers not just the best of the bunch</h3></h3>
+<p>A common mistake people make is believing that the best or highest ranking Capoeirista is also the best teacher. There are many reasons why this might not be true. Reasons an amazing (or any) Capoeirista may not be a good teacher include:</p>
+<ul>
+<li>An inability to relate to new students</li>
+<li>Spending more time on personal development as a competitor and not as a teacher</li>
+<li>They do not break down the intricacies of movements/scenarios/etc.</li>
+<li>Inflated sense of other people's abilities</li>
+</ul>
+<p>If you are someone who learns quickly by watching, then this may not be an issue for you. However most people will benefit from instructors who have developed their skills as educators as well as Capoeiristas.</p>
+<h2><h2 id="how-much-does-a-capoeira-uniform-cost">How much does a Capoeira uniform cost?</h2></h2>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/07/abadas.jpg"><img src="images/abadas.jpg" alt=""></a></p>
+<ul>
+<li>$50 - $100: Uniform pants (Abadas)</li>
+<li>$60 - $100: non-uniform Capoeira pants</li>
+<li>$20 - 35: Uniform shirt</li>
+<li>$60 - $75 : Full uniform for kids</li>
+<li>$0 - Chords can not be bought, but they are given during the Batizado (graduation ceremony)</li>
+</ul>
+<p>A Capoeira uniform consists of a pair of pants, a shirt, and a chord. Schools differ on when wearing your uniform is required. Some schools require you wear your uniform at every practice. Others only require uniforms during only during special events. Others still do not require a uniform at all.</p>
+<h2><h2 id="where-to-buy-a-capoeira-uniform">Where to buy a Capoeira uniform</h2></h2>
+<p>Your school will sell their uniforms, so you will need to purchase your uniform from them. In most cases where uniforms are required, you will not be able to purchase any abadas (uniform pants) online and pass them off as the uniform pants of your school. This is because schools display their logos near the pockets of their pants. Abadas bought online will not include this logo.</p>
+<p>There are however some stores that do sell Capoeira clothing. Here a couple:</p>
+<p><a href="https://www.capoeirashop.fr/en/11-capoeira-clothing">Capoeira shop</a>: based out of France</p>
+<p><a href="https://zumzumcapoeirashop.com/?v=88588bacf0da">Zumzum Capoeir</a>a: Base of operations not given</p>
+<h2><h2 id="how-much-does-capoeira-gear-cost">How much does Capoeira gear cost?</h2></h2>
+<p>Capoeira is a martial art that requires minimal equipment. Training gear is not required, however it is highly recommended. There are plenty of small pieces of equipment that will improve your training and help you improve faster than you could alone.</p>
+<h3><h3 id="a-list-of-optional-training-gear">A list of optional training gear</h3></h3>
+<p>The reason I recommend this gear is because of it has the potential to improve your Capoeira in almost every regard.</p>
+<p><a href="https://dendearts.com/resources/">Check out our list of the best Capoeira gear, here!</a></p>
+<ul>
+<li>pullup bar - Balance pulling strength against pushing strength</li>
+<li>yoga block - Regression many different stretches</li>
+<li>leg bands - Great for glute activation</li>
+<li>accuracy pads - Train eye-foot coordination</li>
+<li>Heavy bag - Train kicking power</li>
+<li>Kettlebell (5-10% bodyweight) - Short range exercises for legs</li>
+</ul>
+<h3><h3 id="should-you-weight-lift-for-capoeira">Should you weight lift for Capoeira</h3></h3>
+<p>Lifting weights is a useful for Capoeira, however the way you lift makes a big different.</p>
+<p>Lifting will benefit your Capoeira by giving you more general strength. However, after a certain amount of training, you will see diminishing returns on your Capoeira related improvement. Being able to squat 3x your body weight will not directly result in better Capoeira skills. Therefore it's important to lift an amount that is beneficial and lift in a way that most benefits you.</p>
+<h3><h3 id="best-weight-lifting-exercises-for-capoeira">Best weight lifting exercises for Capoeira</h3></h3>
+<p>Lifts that see the most benefit for Capoeiristas are the split squat, weighted standing knee raise, Incline back squat, tibialis raises (weighted), and weighted dips. A pattern you can see from these lifts is that they prioritize function and range of motion. Meaning that if you do not have the range of motion, you have no business doing these lifts.</p>
+<p>There are regressions to these lifts such as the Peterson step up and bodyweight split squat. Yes, weight lifting is beneficial for Capoeira, however working on your range of motion is going to come before loading up with added weight.</p>
+<h2><h2 id="cost-of-events">Cost of events</h2></h2>
+<p>There are two kinds of events in Capoeira. 1. Batizados. and 2. Rodas. The latter is the smaller of the two and usually takes place within a few hours. Batizados are often multi-day graduation ceremonies for the hosting group.</p>
+<h3><h3 id="rodas-and-their-cost">Rodas and their cost</h3></h3>
+<p>A roda is a gathering where people play Capoeira. <strong>A more expensive roda of $25 or$30 may have a workshop beforehand held by a teacher. The average cost of a roda is between $10 and $20.</strong> The money gathered from the event goes to pay for the space rented and the rest is gathered by the hosting teacher(s).</p>
+<h3><h3 id="cost-of-a-batizado">Cost of a Batizado</h3></h3>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/Screen-Shot-2021-04-27-at-9.48.08-AM.png"><img src="images/Screen-Shot-2021-04-27-at-9.48.08-AM-1024x640.png" alt=""></a></p>
+<p>A batizado is a graduation ceremony, also referred to a <a href="https://dendearts.com/the-capoeira-belt-system-explained-by-a-capoeira-teacher/">&quot;troca de cordoes&quot; where students graduate to the next cord.</a> <strong>The cost of a batizado can vary wildly from $60 - $250. Single day events often cost under $100. Other teachers host multi-day events with many activities throughout the week and these can reach upwards of $200 for the full week.</strong> If you are not able to attend a full week of events, the price is often scaled so you only pay for the activities you attend.</p>
+<p>A Batizados often have several invited teachers who are sometimes flown in from other countries and give workshops. The vast majority of funds collected go towards these expenses.</p>
+<p>Batizados can be expensive to attend as you may also need to make accommodations, pay for transportation, and for food. This is especially true for multi-day events. Take this into account when planning a batizado trip.</p>
+<h2><h2 id="how-can-i-save-money-on-capoeira-classes">How can I save money on Capoeira classes?</h2></h2>
+<p>There are several ways to save money if you're interested in Capoeira classes.</p>
+<h3><h3 id="family-discount">Family discount</h3></h3>
+<p>The most common method is to train Capoeira with 1 or more family members. There are many teachers who teach siblings and give some sort of discount for having a family member in the class. This usually does not extend to cousins, and is most common for kids taking classes. But this is something you can ask the head instructor about.</p>
+<h3><h3 id="student-discounts">Student discounts</h3></h3>
+<p>Students may also get a discount on classes. If you are a university or high school student paying for your classes, some schools will offer discounts to make it easier for you to afford classes. Monthly dues might not be a lot for an adult with good salary, but it can be a lot for students. If you're a student interested in classes, then make sure to reach out to the head instructor about student discounts.</p>
+<h3><h3 id="labor-in-exchange-for-classes">Labor in exchange for classes</h3></h3>
+<p>The last way you can save on Capoeira classes is to trade your time for classes. Ask your teacher if you can trade your time for classes. Martial arts spaces are normally short handed and run by a single person. Getting a helping hand can go a long way, especially if you have any technical skills</p>
+<p>Website building, social media, video editing, photography, even writing, etc. are all highly in demand. But if you don't know these things, martial arts academies can always use help being kept clean!</p>
+<h2><h2 id="are-capoeira-classes-worth-the-money">Are Capoeira classes worth the money?</h2></h2>
+<p>In person martial arts classes are not cheap. The cost of instruction can be expensive, but if you have a good instructor who knows how to develop you into a high performance machine, <strong>then they are worth the cost</strong>. That cost might be $100 per month or more, but quality instruction can potentially save you years of time wasted and much more money spent on low quality instruction.</p>
+<p>This alone makes paying for their time worth the money.</p>
+<h2><h2 id="how-do-i-know-if-a-capoeira-class-is-good-quality">How do I know if a Capoeira class is good quality?</h2></h2>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/07/gabriel-rodrigues-4Cc0rs9pWI8-unsplash-1.jpg"><img src="images/gabriel-rodrigues-4Cc0rs9pWI8-unsplash-1-1024x683.jpg" alt=""></a></p>
+<p>A good class should be safe, instructive, and fun.</p>
+<p>your safety is the teacher's primary responsibility. If everyone in class comes wearing knee sleeves and wrist braces you might have an idea of what to be in for. In any martial art there is a risk of injury, however a primary responsibility of teachers is to keep their students training. If students are injured, then it will be harder to train.</p>
+<h3><h3 id="look-at-the-longest-training-students">Look at the longest training students</h3></h3>
+<p>knowing whether a class is instructive is not always easy to see. The best way to know if a teacher provides quality instruction is to look at the students who have been there the longest. Quality instruction often (not always) breeds quality students. There are exceptions! Some students will reach the highest levels of ability no matter the instruction. But if you see that students who have trained with their teacher for 4-6 years have a high level of proficiency, then you can safely assume the teacher has a method to get their students to that high level.</p>
+<h3><h3 id="are-you-even-having-fun">Are you even having fun?!</h3></h3>
+<p>The last is fun. and this is pretty self explanatory. If you feel like you're being engaged and are having fun, then it's gong to be easier to stick with your training. Some people don't care about fun and just want the instruction. Others really need fun to stay interested.</p>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-2">
+                                <a href="#does-more-expensive-mean-better-quality-classes">Does more expensive mean better quality classes?</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#look-for-good-teachers-not-just-the-best-of-the-bunch">Look for good teachers not just the best of the bunch</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#how-much-does-a-capoeira-uniform-cost">How much does a Capoeira uniform cost?</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#where-to-buy-a-capoeira-uniform">Where to buy a Capoeira uniform</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#how-much-does-capoeira-gear-cost">How much does Capoeira gear cost?</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#a-list-of-optional-training-gear">A list of optional training gear</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#should-you-weight-lift-for-capoeira">Should you weight lift for Capoeira</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#best-weight-lifting-exercises-for-capoeira">Best weight lifting exercises for Capoeira</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#cost-of-events">Cost of events</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#rodas-and-their-cost">Rodas and their cost</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#cost-of-a-batizado">Cost of a Batizado</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#how-can-i-save-money-on-capoeira-classes">How can I save money on Capoeira classes?</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#family-discount">Family discount</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#student-discounts">Student discounts</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#labor-in-exchange-for-classes">Labor in exchange for classes</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#are-capoeira-classes-worth-the-money">Are Capoeira classes worth the money?</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#how-do-i-know-if-a-capoeira-class-is-good-quality">How do I know if a Capoeira class is good quality?</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#look-at-the-longest-training-students">Look at the longest training students</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#are-you-even-having-fun">Are you even having fun?!</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="/js/products/product-quantity.js" defer></script>
+    
+</body>
+
+
+</html>

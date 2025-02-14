@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAN ANYONE DO CAPOEIRA? Yes! How fit do you need to be?</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- OG meta descriptions -->
+    <meta property="og:title" content="CAN ANYONE DO CAPOEIRA? Yes! How fit do you need to be?" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="/img/dende-arts-logo2.png" />
+
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" ></script>
+    
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            console.log('Initializing Swell...');
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+
+                });
+                console.log('Swell initialized successfully');
+                // Get the cart and update the global variable
+                const cart = await swell.cart.get();
+                window.swellCartCount = cart?.itemQuantity || 0; // <-- CORRECTED PROPERTY
+                console.log("Cart count after init:", window.swellCartCount);
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+</head>
+<body onload="window.initializeSwell()">
+    <!-- _includes/cart-sidebar.njk -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button id="close-cart" class="close-cart">×</button>
+  </div>
+  <div id="cart-items" class="cart-items">
+    <!-- Cart items will be dynamically inserted here -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cart-total-amount"></span>
+    </div>
+    <button id="checkout-button" class="checkout-button">
+      Proceed to Checkout
+    </button>
+  </div>
+</div>
+<div id="cart-overlay" class="cart-overlay"></div>
+
+    <main> 
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songs</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <a href="#" class="cart-toggle flex-box" onclick="return false;">
+                        <picture class="cart-icon">
+            <source type="image/svg+xml" srcset="/img/optimized/kwK_MZKtPm-32.svg 32w" sizes="100vw">
+<source type="image/webp" srcset="/img/optimized/kwK_MZKtPm-32.webp 32w, /img/optimized/kwK_MZKtPm-400.webp 400w, /img/optimized/kwK_MZKtPm-800.webp 800w, /img/optimized/kwK_MZKtPm-1280.webp 1280w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/kwK_MZKtPm-32.jpeg 32w, /img/optimized/kwK_MZKtPm-400.jpeg 400w, /img/optimized/kwK_MZKtPm-800.jpeg 800w, /img/optimized/kwK_MZKtPm-1280.jpeg 1280w" sizes="100vw">
+            <img src="/img/optimized/kwK_MZKtPm-1280.webp" width="1280" height="1280" alt="Dende Arts Shopping Cart" loading="eager" decoding="async">
+        </picture>
+                        ()
+                    </a>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">CAN ANYONE DO CAPOEIRA? Yes! How fit do you need to be?</a>
+            </div>
+            <h1>CAN ANYONE DO CAPOEIRA? Yes! How fit do you need to be?</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2020-10-01">
+                    September 30, 2020
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <p>Can everyone really do Capoeira? <strong>Yes. To reach a high level of Capoeira takes years, however you do not need a certain level of physical fitness to practice.</strong> Those with the least physical ability have the most to benefit as Capoeira is a very wholistic martial art that improves a broad range of physical fitness. In Capoeira, are many powerful strikes, hand balancing, fluid movement on the floor, and acrobatics. <strong>Below I'll break down what is necessary, what is recommended, and what is &quot;nice to have&quot; when training Capoeira.</strong></p>
+<h2><h2 id="needed-what-is-essential-to-capoeira">NEEDED: What is essential to Capoeira?</h2></h2>
+<p>If you look up &quot;Best Capoeira video&quot; you will see a lot of things that are considered extra and are not necessarily essential. The essentials to Capoeira at mostly the things you will learn in your first few classes. Concepts like the ginga, round kicks, straight kicks, and basic esquivas are the foundations of Capoeira. If you don't know what these moves look like, you can check out some of them in a previous post about fundamental Capoeira moves.</p>
+<p>https://dendearts.com/list-of-fundamental-capoeira-movements/</p>
+<h2><h2 id="recommended-what-kind-of-capoeira-do-i-want-to-learn">RECOMMENDED: What kind of Capoeira do I want to learn?</h2></h2>
+<p>Depending on the elements of Capoeira that you find most interesting will determine what is recommended to have.</p>
+<h3><h3 id="an-emphasis-on-tradition-and-music">An emphasis on tradition and music</h3></h3>
+<p>There are schools that emphasize the traditions of Capoeira, focusing less on the martial aspects and much more on the music. Capoeira Angola schools are an example of this. In Capoeira Angola, there is a big emphasis on music, which makes it clear why so many people who come from this tradition end up learning a lot about music, rhythm, etc.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bvs9L1Tjd0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3><h3 id="emphasis-on-self-defense">Emphasis on self defense</h3></h3>
+<p>If you're more interested in the martial aspects of Capoeira for self-defense or competitive reasons, you might consider a school that focuses on these aspects. Capoeira axe famously trained Marcus Aurelio and Capoeira Nago is the school where Andre Guzmao teaches. Both of these competitors have had some success in the world of Mixed martial arts and their schools both focus on these elements of Capoeira.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3K3Jy6Nz8Q4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3><h3 id="an-emphasis-on-movements-and-fluidity">An emphasis on movements and fluidity</h3></h3>
+<p>The last big group of Capoeira schools are the ones that focus on the movement. There are schools like Cordao de Ouro, which are pioneers in developing an enormous movement vocabulary. Many movements you see in a Cordao de Ouro school you won't see in other schools. Many movement and callisthenic lovers have taken inspiration from these movements. Ido Portal is a good example of this.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/foAOe_gu1Yc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3><h3 id="a-blend-of-everything">A blend of everything</h3></h3>
+<p>Lastly, there are groups that take a little of each focus and try to blend them in a way to defines their style. Capoeira Brasil for example does enjoy diverse movement, however they enjoy a larger emphasis on the martial side of Capoeira. FICA is an Angola group that is very serious about preserving Capoeira tradition, but they also have a martial aspect to their style. There are literally thousands of groups that all have their own unique flavor, and the only way to understand what they are about is to visit them.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rQpri4MZM44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2><h2 id="extra-stuff-do-you-need-to-do-acrobatics-in-capoeira">EXTRA STUFF: Do you need to do acrobatics in Capoeira?</h2></h2>
+<p>Acrobatics, although look great, ARE NOT REQUIRED in any way. They are fun to do, and many Capoeira practitioners enjoy learning them, but they are not required. When I started Capoeira, I thought everyone at some point learned to do a backflip. I vowed never to learn because I was scared of falling on my head. After a couple of weeks of practicing, I realized nobody was doing backflips and most acrobatics are reserved for shows and demos.</p>
+<p>There are floreios, which translate into beautiful movement, but these are very different from what you would see in a tricking competition. Floreios can be simple acrobatics or they can be tricky floor movements, meant to distract, feint, and confuse your opponent.</p>
+<h2><h2 id="how-can-i-improve-my-capoeira-technique">How can I improve my Capoeira technique?</h2></h2>
+<p><strong>There are three ways to improve your Capoeira</strong>. <strong>The first is to train in class on a regular basis.</strong> Under the guidance of a good teacher, you'll have the opportunity to show what you are learning and be corrected by your teacher. <strong>The second way is to train what you learned in class, at home.</strong> The mother of skill is repetition, and part of doing Capoeira is repeating over and over again what you know. The more you repeat a movement the easier it is to do and apply. <strong>The last way to improve is to visit other schools during their events.</strong> Events always close with a &quot;roda&quot;. A roda is where Capoeira takes place. Capoeiristas play Capoeira in the roda and this is where they apply their capoeira lessons. The more you apply what you learn, the better you'll learn what works and what doesn't.</p>
+<h2><h2 id="getting-fit-with-capoeira">Getting fit with Capoeira</h2></h2>
+<p>Capoeira is a great way to have fun while getting fit. The aerobic movement alone is an amazing benefit for someone looking for an alternative to running. The other benefit is to your overall conditioning. <strong>Capoeira is a full body workout and works out all the muscles you can think of, and then a ton more muscles that you didn't even know you had.</strong> There have been many times that I would train so hard, that I would have a hard time going down stairs the next day.</p>
+<p>The best thing about getting fit with Capoeira is that it's not boring. Every class is something fresh and any time you go to an event, you'll be going all out with a bunch of people who over time become part of our tribe. I've made tons of friends through Capoeira, and it's always been as we're moving, sweating, and working hard.</p>
+<h2><h2 id="improving-cardio-to-play-longer">Improving cardio to play longer</h2></h2>
+<p>I've gone back and forth about improving cardio to play longer. When I say longer I mean anywhere from 5-10 minutes. Remember when I mentioned traditional Capoeira schools? <strong>Many of them have games that will last 5, 10, or even 20 minutes long!</strong> There are people who play for more than that, and having good aerobic capacity is very important for that. The best way to improve your Capoeira cardio is to play long practice games with other students. At first this might be for just one minute, but over time you'll increase that number to 3, then 5, and so on. You could run... but Capoeira is much more fun than running.</p>
+<h2><h2 id="exploring-music">Exploring Music</h2></h2>
+<p>This is where I lose a lot of people. Music is essential to Capoeira and everyone plays a small part in making the music. <strong>Think about a DJ, they set the atmosphere of the party. In Capoeira everyone does their small part in setting the atmosphere.</strong> If you're new, then you just need to clap and sing the chorus to whatever song is being sung. And as strange as that sounds, it's a great feeling when everyone is working together to create a vibe. Not everyone who does Capoeira is a musician, you don't have to be. But contributing your energy and your voice goes a long way in creating a positive atmosphere.</p>
+<h2><h2 id="learn-by-watching-others">Learn by watching others</h2></h2>
+<p>The way the old school of Capoeiristas learned was from going to a roda that would be held in a public square and watching the best people play. Today we have the huge benefit of youtube, and hundreds if not thousands of videos uploaded all the time with incredible capoeiristas playing at a very high level. There is a big advantage here and two disadvantages.</p>
+<h3><h3 id="advantage-of-watching-videos-on-youtube">Advantage of watching videos on Youtube.</h3></h3>
+<p>The main advantage is the sheer volume of games you can watch. Some of my favorite times in college were looking up capoeira videos of some of my favorite people. Mestre Cobra Mansa, Espirro Mirim, Eberson, Kibe, and many others. Watching their games was incredibly instructional, and I learned a lot just by watching them.</p>
+<h3><h3 id="disadvantages-of-watching-videos-on-youtube">Disadvantages of watching videos on Youtube</h3></h3>
+<p>One disadvantage is that if you're always watching the very best, it can be hard for you to get a feel for what people at your level look like playing. I ran into this problem, comparing myself to the best when I was still very new. There is no need to compare, and it can be damaging to some people's mentality, especially if they are sensitive to these kinds of things.</p>
+<p>The other disadvantage is that there is a difference between seeing things live vs on youtube. I remember seeing Mestre Xuxo play for the first time in person. I was totally blown away because even though you could see his skill and ability on youtube, it did not give his abilities justice. In real life, the subtleties of his game were easier to identify and made me appreciate him even more as a master of Capoeira.</p>
+<h2><h2 id="how-about-you">How about you?</h2></h2>
+<p>Are you worried about your athletic abilities or wonder if you're &quot;fit&quot; enough to do Capoeira? Leave a comment below and check out some other great Capoeira related content below. <a href="http://www.dendearts.com/blog">www.dendearts.com/blog</a></p>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-2">
+                                <a href="#needed-what-is-essential-to-capoeira">NEEDED: What is essential to Capoeira?</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#recommended-what-kind-of-capoeira-do-i-want-to-learn">RECOMMENDED: What kind of Capoeira do I want to learn?</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#an-emphasis-on-tradition-and-music">An emphasis on tradition and music</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#emphasis-on-self-defense">Emphasis on self defense</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#an-emphasis-on-movements-and-fluidity">An emphasis on movements and fluidity</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#a-blend-of-everything">A blend of everything</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#extra-stuff-do-you-need-to-do-acrobatics-in-capoeira">EXTRA STUFF: Do you need to do acrobatics in Capoeira?</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#how-can-i-improve-my-capoeira-technique">How can I improve my Capoeira technique?</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#getting-fit-with-capoeira">Getting fit with Capoeira</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#improving-cardio-to-play-longer">Improving cardio to play longer</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#exploring-music">Exploring Music</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#learn-by-watching-others">Learn by watching others</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#advantage-of-watching-videos-on-youtube">Advantage of watching videos on Youtube.</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#disadvantages-of-watching-videos-on-youtube">Disadvantages of watching videos on Youtube</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#how-about-you">How about you?</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="/js/products/product-quantity.js" defer></script>
+    
+</body>
+
+
+</html>

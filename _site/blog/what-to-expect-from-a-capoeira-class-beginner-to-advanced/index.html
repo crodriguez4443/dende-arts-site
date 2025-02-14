@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What to Expect from a Capoeira Class: Beginner to Advanced</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- OG meta descriptions -->
+    <meta property="og:title" content="What to Expect from a Capoeira Class: Beginner to Advanced" />
+    <meta property="og:description" content="Explore the journey from beginner to advanced in capoeira classes. Learn what to expect in terms of skills, techniques, and challenges at each level." />
+    <meta property="og:image" content="IMG_9985-scaled-scaled.jpg" />
+
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" ></script>
+    
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            console.log('Initializing Swell...');
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+
+                });
+                console.log('Swell initialized successfully');
+                // Get the cart and update the global variable
+                const cart = await swell.cart.get();
+                window.swellCartCount = cart?.itemQuantity || 0; // <-- CORRECTED PROPERTY
+                console.log("Cart count after init:", window.swellCartCount);
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+</head>
+<body onload="window.initializeSwell()">
+    <!-- _includes/cart-sidebar.njk -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button id="close-cart" class="close-cart">×</button>
+  </div>
+  <div id="cart-items" class="cart-items">
+    <!-- Cart items will be dynamically inserted here -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cart-total-amount"></span>
+    </div>
+    <button id="checkout-button" class="checkout-button">
+      Proceed to Checkout
+    </button>
+  </div>
+</div>
+<div id="cart-overlay" class="cart-overlay"></div>
+
+    <main> 
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songs</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <a href="#" class="cart-toggle flex-box" onclick="return false;">
+                        <picture class="cart-icon">
+            <source type="image/svg+xml" srcset="/img/optimized/kwK_MZKtPm-32.svg 32w" sizes="100vw">
+<source type="image/webp" srcset="/img/optimized/kwK_MZKtPm-32.webp 32w, /img/optimized/kwK_MZKtPm-400.webp 400w, /img/optimized/kwK_MZKtPm-800.webp 800w, /img/optimized/kwK_MZKtPm-1280.webp 1280w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/kwK_MZKtPm-32.jpeg 32w, /img/optimized/kwK_MZKtPm-400.jpeg 400w, /img/optimized/kwK_MZKtPm-800.jpeg 800w, /img/optimized/kwK_MZKtPm-1280.jpeg 1280w" sizes="100vw">
+            <img src="/img/optimized/kwK_MZKtPm-1280.webp" width="1280" height="1280" alt="Dende Arts Shopping Cart" loading="eager" decoding="async">
+        </picture>
+                        ()
+                    </a>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">What to Expect from a Capoeira Class: Beginner to Advanced</a>
+            </div>
+            <h1>What to Expect from a Capoeira Class: Beginner to Advanced</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2020-12-25">
+                    December 24, 2020
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <p>Capoeira classes differ greatly in the clothing required, movements learned, cost, and atmosphere. Although the best way to learn about a Capoeira school is to attend class, here are a few factors that will help you understand what to expect from your first Capoeira class.</p>
+<h2><h2 id="picking-a-school-will-greatly-impact-your-experience">Picking a School will greatly impact your experience</h2></h2>
+<p><strong>Capoeira schools vary greatly in terms of what they teach.</strong> This is in large part because there are three main genres or styles of Capoeira to choose from. And within each genre are many groups that are not centrally controlled by a governing body or authority. What this means is that classes in the same group (or franchise) can be wildly different depending on the teacher.</p>
+<p>Soooooo....</p>
+<p>There is a hierarchy of things to consider when asking what your Capoeira class will look like. First is the genre of Capoeira you're interested in, second groups available in your region, and the last is the teacher.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/huge-removebg-preview.png"><img src="images/huge-removebg-preview.png" alt=""></a></p>
+<h3><h3 id="picking-a-genre-or-style">Picking a Genre or Style</h3></h3>
+<p>Generally speaking, there are three major genre's or styles of Capoeira available today. The three are Angola, Regional, and Contemporânea.</p>
+<p>Angola generally puts a heavy focus on music and tradition, in addition to the movement aspects of Capoeira. Tradition is the key word here. And this general outlook on the importance of tradition extends to the movements and ways of training.</p>
+<p>Regional is a style developed in the 1920s and 30s by Mestre Bimba who wanted Capoeira to be a more combat oriented art. These schools focus heavily on strong and fast movements. There are less flowery moves, and a stronger focus on an objective training methods.</p>
+<p>Contemporânea developed around the 1960s and 70s. The pioneers of this style took elements of Regional and Angola and fused them together. Today the label of Contemporânea applies to any style that does not strictly follow the teachings of Angola or Regional. Contemporânea is by far the biggest style by far in terms of the number of students. Despite the differences, there is a lot of acceptance between the different styles and for the most part, everyone comes together during events.</p>
+<h3><h3 id="picking-a-group">Picking a Group</h3></h3>
+<p>Within any style of Capoeira, there many schools that use different styles of teaching, graduation, etc. Each school is slightly different from the other even though they all come from the same &quot;style&quot;. A great way of seeing if you want to be part of a Capoeira group, is to go on youtube and look up them up. There might not be videos of the teachers or schools you are looking at, but there are probably videos of other practitioners from that group. This will give you an idea of what to expect.</p>
+<h3><h3 id="picking-a-teacher">Picking a teacher</h3></h3>
+<p>This goes hand in hand with picking a group. There are many Capoeira teachers who are phenomenal at their jobs. There are great teachers who put their heart and soul into their students. Your goal as a students should be to find a teacher that can guide you as you learn Capoeira. The best way to do this is to talk to them. Don't be shy. Teachers are busy, but if you have questions for them, they'll make time to answer them. Just be patient, because teachers have the difficult task of working with a large number of people, and there is only 1 of them.</p>
+<h2><h2 id="uniforms-in-capoeira">Uniforms in Capoeira</h2></h2>
+<p><strong>Like many martial arts, some Capoeira schools require a uniform</strong>. These uniforms consist of a pair of <em>Abadas</em> a kind of flexible white pants, and a white shirt. This is true for the majority of schools that consider themselves to be Regional or Contemporânea. Pants and shirts can all be purchase from the academy/school you attend. You probably won't be able to buy them online as the logo needs to be on your pants and shirt.</p>
+<p><strong>Practitioners of Angola actually wear pants, shoes, and sometimes a group shirt</strong>. These things, you can buy at a department store - minus the shirt. Although this does not apply for 100% of Angola schools, it is true for the vast majority.</p>
+<p>Most groups will say on their website if they have a dress code. If you can't find any information about it, don't sweat it. You won't be required to wear anything specific on the first day. Everyone understands that you didn't get the memo yet.</p>
+<h3><h3 id="shoes-vs-barefoot">Shoes vs. Barefoot</h3></h3>
+<p>Where you do have some flexibility is whether you wear shoes or not. Except in Angola schools. The vast majority do require shoes. In a Contemporânea or Regional school, you are free to go barefoot, or wear some kind of athletic shoes. If you're not sure about what shoe to wear, I did write an article about the best shoes for Capoeira.</p>
+<p>https://dendearts.com/the-best-shoes-for-capoeira/</p>
+<p>I<strong>n case you're curious, barefoot is best.</strong> Unless you're outside on a very rough surface that will tear up your feet, I recommend going barefoot. If you have sensitive feet, then shoes might be good to start out. Over time, you want to strengthen the muscles in your feet, and an easy way to do this is by walking around the house barefoot. This has tons of benefits, such as improved proprioception and coordination.</p>
+<h3><h3 id="belts-or-as-we-say-chords">Belts (or as we say, chords)</h3></h3>
+<p>Capoeira uses chords instead of belts. Chords are made of yarn, but can also be made of cotton and dyed to the intended color. In many schools, beginners do not have a chord. This is different from some martial arts, where beginners start with a white belt. I<strong>n Capoeira, the first belt (which can be different colors depending on the group) is often received at the Batizado</strong>. the Batizado is a belt ceremony where students receive workshops from different teachers and play in the roda. The roda is where capoeiristas play Capoeira.</p>
+<p>If you're unfamiliar with the Capoeira graduation system, below is a link to another article that explains the system in full detail.</p>
+<p>https://dendearts.com/the-capoeira-belt-system-explained-by-a-capoeira-teacher/</p>
+<p>It's not uncommon for graduated students to lead the warmup or teach some classes. Graduated students is a term used for more advanced students. What defines a graduated student will vary from school to school. But in general this means that the teacher trusts the student enough to have a leadership role.</p>
+<h2><h2 id="time-commitment-and-cost-to-learning-capoeira">Time commitment and cost to learning Capoeira</h2></h2>
+<p>The majority of classes these days run for an hour and cost anywhere from about $15-25 dollars each. This varies greatly across the United States, and will differ if you live in the United Kingdom, Australia, etc. Most groups offer some discount if you pay per month or do some sort of yearly contract.</p>
+<p>Schools vary in how many classes per week they give. Some schools do weekly classes, while others have up to 5 classes available throughout the week. <strong>For beginners, going three times a week is advised. Just as important as coming to class is practicing what you learn at home</strong>. If you can sprinkle a few 30 minute practice sessions at home, this will go a LONG way in your development.</p>
+<p>More advanced students 6+ years will still train at their teaches academy, but training at home will become a major part of their regiment. visiting other groups more regularly, attending events, rodas, and training at home is how they will continue their development. At the more advanced levels, training 2 or 3 times a week at the academy alone is insufficient to continue improving.</p>
+<h3><h3 id="perception-of-time">Perception of time</h3></h3>
+<p>In Latin America, time does not work the say way it works in places like Germany and the United States. It's common for people to come late to meetings or events, and this (unfortunately) extends to some Capoeira groups. A class starting about 5 minutes late is no big deal, but more than 10 minutes should be a red flag. If you run into this, you should tell the head teacher, as you would be doing them a great favor by being honest.</p>
+<h2><h2 id="outline-of-a-class">Outline of a class</h2></h2>
+<p>The majority of classes follow a pretty simple format...</p>
+<ul>
+<li>Warm up</li>
+<li>Isolated movements (repeating kicks, moves, sweeps, etc.)</li>
+<li>Sequence</li>
+<li>Roda</li>
+</ul>
+<p><strong>The classes in general build up to a sequence.</strong> The isolated moves you do such as Au, Meia lua de Compasso, etc. All these moves add up into a combination that you do with a partner. The teacher will likely have you do that combination a few times. They might also add or remove certain things depending on your level and ability. <strong>At the end of class, most teachers will do a roda</strong>, where you are free to play and use the movements you learned in class. If you don't know what a roda looks like, here is an example of two teachers playing...</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BgOnP03zcwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>More advanced students will likely be challenged to do more difficult variations to test their abilities. This might involve faster movements, more realistic take-downs, or more demanding variations. <strong>Beginners on the other end of the spectrum will be given easier variations to do. The speed will be slower, the take-downs more gentle, and the variations more basic.</strong></p>
+<p>Here is an example of a normal cartwheel that a beginner could feasibly practice.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KFpGbWHE6OE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Here is a cartwheel you might see at a higher level.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pKFeTsPxVAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3><h3 id="build-your-observational-skills">Build your observational skills</h3></h3>
+<p><strong>Capoeira traditionally was learned by watching others play and then copying them. This tradition spills into the classes.</strong> If you ask a teacher for help on a movement, they'll happily do so, but correction are limited.</p>
+<p>You might think this lack of corrections is a detriment, but there is a lot of research that proves less immediate feedback is much better for long term motor learning. Following the teacher will take a lot of attention, so get ready to be challenged mentally as well as physically.</p>
+<p>If you don't believe me, there is some good research on Peter Brown's Book &quot;Make it Stick&quot;. Here is a summary with a section on delayed feedback.</p>
+<p><a href="https://medium.com/@jgelnar7/how-to-make-it-stick-learning-that-lasts-part-2-a4267e7a17b5">https://medium.com/@jgelnar7/how-to-make-it-stick-learning-that-lasts-part-2-a4267e7a17b5</a></p>
+<h2><h2 id="do-s-and-don-ts-of-capoeira">Do's and Don'ts of Capoeira</h2></h2>
+<p>Capoeira is a traditional martial art in the sense that there are some rules. Here is a list that you can do make the most of your first Capoeira classes!</p>
+<h3><h3 id="do-s-of-your-first-capoeira-class">Do's of your first Capoeira class</h3></h3>
+<ul>
+<li>Keep an open mind about the movements and techniques, you probably won't be familiar with most of them.</li>
+<li>Greet students and the teacher. Give them a chance to get to know you.</li>
+<li>If the teacher makes a roda, focus on clapping in unison with the rest of the class.</li>
+<li>Be present while the teacher gives instruction to the class.</li>
+<li>Understand that the first time you do a move, it might seem impossible. Your body needs time to build the mind-body connection.</li>
+<li>Play in the roda as much as you can! This is the best place to learn.</li>
+<li>Ask when the next class is and GO!</li>
+</ul>
+<h3><h3 id="don-ts-of-your-first-capoeira-class">Don'ts of your first Capoeira class</h3></h3>
+<ul>
+<li>Don't talk during the roda (that ist he circle where two capoeiristas play)</li>
+<li>Don't be shy. Brazilians are less shy than Americans.</li>
+<li>Be humble with your expectations. Don't think you'll be doing splits and high kicks on the first day</li>
+<li>Don't come to class with a superiority complex</li>
+<li>In the roda, don't dish out anything that you can't take yourself.</li>
+<li>Don't worry about backflips. That's not really something Capoeiristas train in class.</li>
+</ul>
+<h2><h2 id="the-value-of-being-a-beginner">The value of being a beginner</h2></h2>
+<p>In the beginning the people, the movements, and the instruction are new and exciting. As awesome as this rush feels in the beginning, you want to focus on loving to learn new things. The scope of Capoeira movements is immense. <strong>In the early 1900's many people referred to Capoeira as Brazilian Gymnastics. The misnomer is understandable.</strong> There are a countless number of movements on the ground, on your feet, on your hands, in the air, etc.</p>
+<p>Capoeira is by far the most fun martial art to learn. Capoeira attracts people who enjoy using their brains and bodies to solve complicated movement problems at record speed. If a foot is coming towards you, you have to practice enough that your instincts can carry you through safely. Capoeiristas defend themselves with creativity, and that is a really cool muscle that at the higher levels, is developed to a monstrous level.</p>
+<p>here are some examples of very high level escapes from what looks like certain doom...</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bmgqMLtetbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-2">
+                                <a href="#picking-a-school-will-greatly-impact-your-experience">Picking a School will greatly impact your experience</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#picking-a-genre-or-style">Picking a Genre or Style</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#picking-a-group">Picking a Group</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#picking-a-teacher">Picking a teacher</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#uniforms-in-capoeira">Uniforms in Capoeira</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#shoes-vs-barefoot">Shoes vs. Barefoot</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#belts-or-as-we-say-chords">Belts (or as we say, chords)</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#time-commitment-and-cost-to-learning-capoeira">Time commitment and cost to learning Capoeira</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#perception-of-time">Perception of time</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#outline-of-a-class">Outline of a class</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#build-your-observational-skills">Build your observational skills</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#do-s-and-don-ts-of-capoeira">Do&#39;s and Don&#39;ts of Capoeira</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#do-s-of-your-first-capoeira-class">Do&#39;s of your first Capoeira class</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#don-ts-of-your-first-capoeira-class">Don&#39;ts of your first Capoeira class</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#the-value-of-being-a-beginner">The value of being a beginner</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="/js/products/product-quantity.js" defer></script>
+    
+</body>
+
+
+</html>

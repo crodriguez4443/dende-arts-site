@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Myth of Perfect Technique: Invite Variability in Capoeira</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- OG meta descriptions -->
+    <meta property="og:title" content="The Myth of Perfect Technique: Invite Variability in Capoeira" />
+    <meta property="og:description" content="Embrace variability in capoeira! Discover why striving for &#39;perfect&#39; technique hinders growth and how adaptability unlocks true mastery." />
+    <meta property="og:image" content="berstein-blacksmith.jpeg" />
+
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" ></script>
+    
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            console.log('Initializing Swell...');
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+
+                });
+                console.log('Swell initialized successfully');
+                // Get the cart and update the global variable
+                const cart = await swell.cart.get();
+                window.swellCartCount = cart?.itemQuantity || 0; // <-- CORRECTED PROPERTY
+                console.log("Cart count after init:", window.swellCartCount);
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+</head>
+<body onload="window.initializeSwell()">
+    <!-- _includes/cart-sidebar.njk -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button id="close-cart" class="close-cart">×</button>
+  </div>
+  <div id="cart-items" class="cart-items">
+    <!-- Cart items will be dynamically inserted here -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cart-total-amount"></span>
+    </div>
+    <button id="checkout-button" class="checkout-button">
+      Proceed to Checkout
+    </button>
+  </div>
+</div>
+<div id="cart-overlay" class="cart-overlay"></div>
+
+    <main> 
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songs</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <a href="#" class="cart-toggle flex-box" onclick="return false;">
+                        <picture class="cart-icon">
+            <source type="image/svg+xml" srcset="/img/optimized/kwK_MZKtPm-32.svg 32w" sizes="100vw">
+<source type="image/webp" srcset="/img/optimized/kwK_MZKtPm-32.webp 32w, /img/optimized/kwK_MZKtPm-400.webp 400w, /img/optimized/kwK_MZKtPm-800.webp 800w, /img/optimized/kwK_MZKtPm-1280.webp 1280w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/kwK_MZKtPm-32.jpeg 32w, /img/optimized/kwK_MZKtPm-400.jpeg 400w, /img/optimized/kwK_MZKtPm-800.jpeg 800w, /img/optimized/kwK_MZKtPm-1280.jpeg 1280w" sizes="100vw">
+            <img src="/img/optimized/kwK_MZKtPm-1280.webp" width="1280" height="1280" alt="Dende Arts Shopping Cart" loading="eager" decoding="async">
+        </picture>
+                        ()
+                    </a>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">The Myth of Perfect Technique: Invite Variability in Capoeira</a>
+            </div>
+            <h1>The Myth of Perfect Technique: Invite Variability in Capoeira</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2023-12-24">
+                    December 23, 2023
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <p>In 1922, Nicola Bernstein, a Soviet scientist, embarked on a study that would fundamentally challenge our understanding of skill mastery. His subject of study? Expert blacksmiths. The assumption at the time, and indeed a common belief even today, is that perfect technique in any skill is achieved by replicating a precise, unvarying motion every single time. <strong>Bernstein's findings, however, painted a very different picture of what mastery truly looks like.</strong></p>
+<h2><strong><h2 id="discovering-the-fluidity-of-expertise">Discovering the Fluidity of Expertise</h2></strong></h2>
+<p>Bernstein observed that these blacksmiths, renowned for their expertise, displayed a significant degree of variability in their movements. Each strike of the hammer, while aimed at the same location, was executed with subtle differences. This led Bernstein to coin the insightful phrase “repetition without repetition.” It wasn’t about robotic uniformity, but rather about a dynamic, adaptive process.</p>
+<figure>
+<p><a href="https://dendearts.com/wp-content/uploads/2023/12/berstein-blacksmith.jpeg"><img src="images/berstein-blacksmith-300x202.jpeg" alt=""></a></p>
+<figcaption>
+<p>Bernstein's expert blacksmith</p>
+</figcaption>
+</figure>
+<h2><strong><h2 id="unconscious-adjustment-the-core-of-true-mastery">Unconscious Adjustment: The Core of True Mastery</h2></strong></h2>
+<p>The concept of “repetition without repetition” implies that while the blacksmiths consistently hit the same spot, the path to each strike varied. Their joints and muscles fluidly adjusted the trajectory of the hammer in real-time, accommodating various external factors and internal conditions. This phenomenon is crucial to understanding mastery: it's less about following a rigid, prescribed pattern and more about our body's ability to make unconscious, micro-adjustments to achieve desired outcomes.</p>
+<h2><strong><h2 id="applying-bernstein-s-insight-to-your-training">Applying Bernstein’s Insight to Your Training</h2></strong></h2>
+<p>This revelation has profound implications for how we approach learning and training. Rather than striving for the illusion of perfect, static technique, our focus should shift to mimic real-world conditions as closely as possible. In martial arts like Capoeira, the idea of drilling a movement in isolation is meant to provide a foundation, but it has limited application in the fluid, unpredictable environment of a roda or combat.</p>
+<p>An easy example of this is a class where you drill a technique or sequence of movements and afterward try to apply the concept to a live game. Given the time you spent learning this sequence, you might think the technique is easier to apply, but more often students are left feeling puzzled, without comprehension about how to apply the technique.</p>
+<h2><strong><h2 id="embracing-imperfection-in-practice">Embracing Imperfection in Practice</h2></strong></h2>
+<p>When training, especially in disciplines like martial arts or dance, it's crucial to move beyond the quest for the perfect angle or movement. Such step-by-step instruction toward perfection is a mirage, particularly when transitioning from practice to application. The dynamic nature of real-world scenarios demands adaptability and responsiveness, traits that rigid replication of techniques cannot foster.</p>
+<h2><strong><h2 id="simulating-real-world-scenarios">Simulating Real-World Scenarios</h2></strong></h2>
+<p>For solo practitioners, replicating real-world conditions can be challenging, but it's not impossible. If you don’t have a partner, use a stand-in object like a chair to kick over and move around. Imagine that this chair is a partner that changes orientation, distance, level, and attacks you. These small adjustments can significantly enhance the effectiveness of your training. <strong>This approach helps to develop not just the physical aspects of the technique but also the perceptual and adaptive skills necessary for application in varied and unpredictable circumstances</strong>.</p>
+<h2><strong><h2 id="a-new-paradigm-of-mastery">A New Paradigm of Mastery</h2></strong></h2>
+<p>The myth of perfect technique is just that—a myth. Bernstein’s work invites us to embrace variability and adaptability as essential components of mastery. In doing so, we not only align our training more closely with the realities of application but also cultivate a more holistic and resilient form of expertise. Whether in Capoeira, other martial arts, or any skill-based endeavor, the journey to mastery is one of continuous adaptation, learning, and growth.</p>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-2">
+                                <a href="#discovering-the-fluidity-of-expertise">Discovering the Fluidity of Expertise</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#unconscious-adjustment-the-core-of-true-mastery">Unconscious Adjustment: The Core of True Mastery</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#applying-bernstein-s-insight-to-your-training">Applying Bernstein’s Insight to Your Training</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#embracing-imperfection-in-practice">Embracing Imperfection in Practice</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#simulating-real-world-scenarios">Simulating Real-World Scenarios</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#a-new-paradigm-of-mastery">A New Paradigm of Mastery</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="/js/products/product-quantity.js" defer></script>
+    
+</body>
+
+
+</html>

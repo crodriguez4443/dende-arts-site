@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Guide to the Capoeira Roda and how to Participate</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- OG meta descriptions -->
+    <meta property="og:title" content="A Guide to the Capoeira Roda and how to Participate" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="/img/dende-arts-logo2.png" />
+
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" ></script>
+    
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            console.log('Initializing Swell...');
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+
+                });
+                console.log('Swell initialized successfully');
+                // Get the cart and update the global variable
+                const cart = await swell.cart.get();
+                window.swellCartCount = cart?.itemQuantity || 0; // <-- CORRECTED PROPERTY
+                console.log("Cart count after init:", window.swellCartCount);
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+</head>
+<body onload="window.initializeSwell()">
+    <!-- _includes/cart-sidebar.njk -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button id="close-cart" class="close-cart">×</button>
+  </div>
+  <div id="cart-items" class="cart-items">
+    <!-- Cart items will be dynamically inserted here -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cart-total-amount"></span>
+    </div>
+    <button id="checkout-button" class="checkout-button">
+      Proceed to Checkout
+    </button>
+  </div>
+</div>
+<div id="cart-overlay" class="cart-overlay"></div>
+
+    <main> 
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songs</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <a href="#" class="cart-toggle flex-box" onclick="return false;">
+                        <picture class="cart-icon">
+            <source type="image/svg+xml" srcset="/img/optimized/kwK_MZKtPm-32.svg 32w" sizes="100vw">
+<source type="image/webp" srcset="/img/optimized/kwK_MZKtPm-32.webp 32w, /img/optimized/kwK_MZKtPm-400.webp 400w, /img/optimized/kwK_MZKtPm-800.webp 800w, /img/optimized/kwK_MZKtPm-1280.webp 1280w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/kwK_MZKtPm-32.jpeg 32w, /img/optimized/kwK_MZKtPm-400.jpeg 400w, /img/optimized/kwK_MZKtPm-800.jpeg 800w, /img/optimized/kwK_MZKtPm-1280.jpeg 1280w" sizes="100vw">
+            <img src="/img/optimized/kwK_MZKtPm-1280.webp" width="1280" height="1280" alt="Dende Arts Shopping Cart" loading="eager" decoding="async">
+        </picture>
+                        ()
+                    </a>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">A Guide to the Capoeira Roda and how to Participate</a>
+            </div>
+            <h1>A Guide to the Capoeira Roda and how to Participate</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2019-08-28">
+                    August 27, 2019
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <p>If you’ve started training Capoeira, then you’re goal is to one day play an amazing Capoeira game with someone in a roda. But the roda can be intimidating and you might not always know how to navigate it. Knowing how to enter, who to look to for instruction, when to go in and when to get out are all important things that there is no manual for - until now!</p>
+<p><strong>Here are the rules of the roda:</strong> The first rule of the roda is that you should get to know the roda by observing the participants and what they do. When in Rome, do as the Romans do. The second rule of the roda is that you should make sure the person leading the roda knows you’re there. The third rule is to be polite as you make your way to the foot of the berimbau. The fourth rule is to look to the person with the gunga or the oldest mestre (go back to step one if you don’t know who’s who) to ask if you can go in. Rule five is to play your heart out and exit with attention to your surroundings. Rule six is the most important rule of them all! Contribute to back to the energy of the roda by singing, clapping, or playing an instrument.</p>
+<h2><h2 id="rule-1-get-to-know-the-roda-before-you-jump-in">Rule 1: Get to know the roda before you jump in.</h2></h2>
+<p>The roda is a living and breathing entity. When you go to a roda, you might not be familiar with how things are done. Like going to a dinner party, you might be expected to wear certain clothes, pay your respects to certain people, contribute in a certain way, etc. If you attend a roda of a another group it’s important that you get familiar with the roda before you go running to the foot of the berimbau to play a game. You can always ask people who are participating what the rules are. You can can ask things like…</p>
+<h3><strong><h3 id="questions-you-can-ask">Questions you can ask</h3></strong></h3>
+<p>“Are people entering the roda two by two?”</p>
+<p>“Are students allowed to play?”</p>
+<p>“Who is leading the roda?”</p>
+<p>“Do the games get really aggressive?”</p>
+<p>These kinds of question let you get a feel for the kind of roda that you’re getting into. For example, if the person tells you that the roda is for teachers or for mestres only, then you know that as a student, you should not jump in. Knowing who the leader of the roda is also very important because they will usually have the final word on who plays and who doesn’t. This first step is probably the most important step, because it deals in part with your safety and informs you about what kind of experience you’re in for.</p>
+<h3><strong><h3 id="your-teacher-can-give-you-an-idea">Your Teacher can Give you an Idea</h3></strong></h3>
+<p>A hack for knowing what kind of roda you’re in for is to ask your teacher. It’s likely that if the school hosting the roda is local, you’re teacher will have an idea of how the group plays. And even if the group is from far away, your teacher may know the person leading the roda. If they have a good relationship, then it’s likely that the roda will be a good one for you to attend. On the other hand, if your teacher tells you to be careful when going to a roda, he’s probably doing so for a good reason and you should enter with caution.</p>
+<h2><h2 id="rule-two-introduce-yourself-to-the-leader-of-the-roda">Rule two: Introduce yourself to the leader of the roda.</h2></h2>
+<p>Back to the dinner party example - you want to make sure you introduce yourself to the person leading the roda. This is especially true if you don’t know the person. If they are playing in the bateria, try to catch their eye and let them be aware of your presence before entering into the roda. Another tip that will help you is reaching out beforehand to the leader of the group or one of their students to ask what this teacher expects of people coming to their roda. It’s almost universal that you wear your school uniform at a roda, not doing so is considered bad manners to the person leading the roda and to your teacher. But this isn’t always the case, and sometimes teachers explicitly ask that you do not wear your school uniform to the roda. Although this is rare, the point is that it’s good to have an idea of what the person leading the roda expects before you arrive.</p>
+<h2><h2 id="rule-three-make-your-way-to-the-foot-of-the-berimbau-in-a-respectful-way">Rule three: Make your way to the foot of the Berimbau in a respectful way.</h2></h2>
+<p>This rule is not 100% clear, and that is because in Capoeira, instructions are not always definitive and many rules have exceptions. For example, some teachers will tell you that they do not want you cutting in line to get into the roda. Sometimes they will let everyone know at the beginning of the roda if this is expected, and if you don’t know, go back to step 1. In other rodas, it’s almost expected that if you want to play, you have to fight for it. This mean moving towards the entrance of the roda and cutting people in line. If you do have to cut people in line, try to ask permission to the people in front of you to the extent that you can. This isn't always an option, but it’s always better to be respectful to those who are in line ahead of you. Most rodas work like this. If you want to play, you have to put in a little work to navigate the roda and be a little aggressive to get to the front. This doesn’t mean shoving people and cutting everyone in line, but it does mean being firm and directed with your intention to go play.</p>
+<h3><strong><h3 id="cutting-the-line">Cutting the line</h3></strong></h3>
+<p>One more thing on “cutting in line”. It is very common to see a group of beginners at the far end of the roda, nervous about going in to play. This is totally normal because some people don’t feel ready to play, and it’s up to them whether they want to go into the roda or not. In some cases the teacher will ask them to move directly to the foot of the berimbau to play with someone. If this happens to you, take the opportunity! The mestres who do this, do it to include more people in the roda and give everyone a chance to play.</p>
+<figure>
+<p><img src="https://lh6.googleusercontent.com/_wnjpbuEqCQsZuiWHTuKcsFleHk1feybM6H4t7-CVh33P1xuy6QeTLe5RArGYb-LQgtAkjtY6LMU9uT9cqQJor-XP4dqsb4a-JgEzG3OnOWTZIzjrlfukBfRDw9G_ITPE9I0keET" alt=""></p>
+<figcaption>
+<p>Entrances are at the two ends of the bateria</p>
+</figcaption>
+</figure>
+<h2><h2 id="rule-4-look-to-the-mestre-leader-of-the-roda-before-entering">Rule 4: Look to the Mestre/leader of the roda before entering</h2></h2>
+<p>Another rule that requires that you follow step 1! If you go to the roda, but don’t know who is leading the roda, figure that out immediately. You will look silly when you ask the wrong person to go inside the roda or go in at the wrong time. The leader of the roda is almost always on the gunga, but that is not always the case. Mestre João Grande, one of the most (if not THE most) respected mestres in the world, often plays the pandeiro and lets his students take over the responsibility of playing the berimbaus. Although the berimbaus traditionally command the roda and its participants, it might be the case that the teacher leads the roda from another instrument.</p>
+<h3><strong><h3 id="pay-attention-to-the-game-and-the-person-leading-the-roda">Pay Attention to the Game and the Person Leading the Roda</h3></strong></h3>
+<p>Once you arrive at the foot of the berimbau, you’ll probably be watching the two people playing and thinking of when you can buy the game. However! The other thing you should be paying attention to is the person who’s leading the bateria. If you look at them and they shake their head, you can’t go in yet. Signs to let you know that you can’t go in vary. They might include a shaking of the head, putting their foot out to block you, or blocking you with the instrument they’re playing. However if you do get a nod, then that means it’s time to buy the game!</p>
+<h3><strong><h3 id="don-t-break-the-energy-of-the-game">Don’t Break the Energy of the Game</h3></strong></h3>
+<p>Not all leaders of the roda give explicit direction on whether you can buy the game or not. Many times teachers will allow people to buy the game without their explicit approval. If you notice this, your goal as someone buying the game is to not break the energy of the Roda. If the game being played is very good, then you let people play. If there is a lull in the game, you can buy. If the energy of the roda is calm, you can reset the energy and the game by starting at the foot of the berimbau. But if the energy is really high, then you can buy and start playing right away. Remember that the goal for anyone participating in a roda is to contribute to the energy in the roda. It might not be clear what this means, but you gain a sensitivity to it over time.</p>
+<h2><h2 id="rule-5-buy-the-game-pay-your-heart-out-and-exit-safely">Rule 5: Buy the game, pay your heart out, and exit safely</h2></h2>
+<p>So you made it to the roda, you navigated your way to the entrance, you asked permission to go in, and now it’s time to buy the game. Awesome! Start at the foot of the berimbau and reaching your hand out between the two people playing. Face the person you intent to play with. This is either the last person who bought the game or if there is a person with the rank of professor or higher, you buy the game with them. This rule does a few things. It keeps the roda changing without messing with the flow of the games too much. Also, keeping the teachers playing gives the students a chance to play with them, which is a great learning experience. Sometimes this backfires and only teachers end up playing each other, so if you’re a student, you’ll need to be patient.</p>
+<h3><strong><h3 id="make-yourself-seen">Make yourself seen</h3></strong></h3>
+<p>Sometimes when you try to buy the game, you have to fight to get the attention of the two people playing. In a case like this, move around and make sure you can be seen. No need to run around the roda or anything, but make sure you’re intention to buy is clear to everyone in the roda. For the sake of preserving the energy in the roda, stay close to the entrance of the roda, and buy the game when there is a lull in the game.</p>
+<h3><strong><h3 id="learn-to-read-the-energy-and-pace-of-the-roda">Learn to Read the Energy and Pace of the Roda</h3></strong></h3>
+<p>If you buy the game and the two people stop playing, you have to make one last decision before starting to play. Do you reset things by starting a game at the foot of the berimbau? Or do you start to ginga and continue the game that was just being played. This can be tricky for some people to understand because they don’t have a feel for the energy and pace of the roda. The rule of thumb for buying a game is that you don’t want to mess with the energy of the roda.</p>
+<p>Let’s say the roda is getting started and the games are still calm. In this case, you can reset the game by asking your opponent to start playing from the foot of the gunga. The mellow energy of the roda won’t change very much and this is a reasonable thing to do. On the other hand, if you have a very fast paced game, it would be a big shift in the energy to have two people flying through the air, and then stop everything to start a new game at the foot of the gunga. If the goal is to not disrupt the energy of the roda, the best thing to do in this case would be to buy the game and continue the game being played. You should think about this because if the last game being played was tough with a lot of aggressive energy, that is the game you will be buying in to.</p>
+<p>In a middle paced game you have some flexibility, and so you have a choice. Do you want to reset the game and the energy of the roda by starting at the foot of the gunga? Or do you want to stay in the energy that is in the roda and continue the game?</p>
+<h3><strong><h3 id="the-leader-of-the-roda-has-the-last-say">The Leader of the Roda has the Last Say</h3></strong></h3>
+<p>Sometimes the leader of the roda will ask people to buy in two by two. This is usually done with them calling two people to play, requesting those people stop playing, and again asking two new people to play. Be aware of this so you don’t try to buy the game when this is happening. After a while, the leader of the roda will stop calling people to play or will verbally say something, letting you know that anyone can start buying the game.</p>
+<figure>
+<p><img src="https://lh3.googleusercontent.com/kQFE_gL7wqpGySzHJ-vuF0tf3DWU21YyNQWsLrvreIqtntjGMNJNuHiM8t9nnudFIYe6OClbNZQ68g5PEkRM2T0fycqwWKvvmRZ5u4FVS1RxtH-0xRSW8AAygiYTKcRi6UyGckCF" alt=""></p>
+<figcaption>
+<p>Once you're in the roda, show what you got!!!</p>
+</figcaption>
+</figure>
+<h3><strong><h3 id="once-you-buy-the-game-play-your-heart-out-simple">Once you buy the game, play your heart out! Simple.</h3></strong></h3>
+<p>When you’re done playing or you are bought out, you can sometimes high five the person you played and thank them for the game. It’s a nice gesture, but isn’t always possible. Again, don’t mess up the energy in the roda! When you exit do not just turn around and run outside the roda. This is a very common mistake and can be very dangerous considering the two new people who are throwing kicks at each other. Exit while facing the new people playing.</p>
+<h2><h2 id="rule-6-give-back-to-the-roda">Rule 6: Give back to the roda</h2></h2>
+<figure>
+<p><img src="https://lh3.googleusercontent.com/jwxs_stCSlcyRAqGY035gRdqw1KfXWOurVBgBmIX3hujb7oWgmfuF0H7woBxCPomcCGvPCmmoaxwT5UB4VrzMgrMveSg83IxbLKmmEEVXRhe2eCPMN2e8v8kmM8KyuX96nH5jvQK" alt=""></p>
+<figcaption>
+<p>Clap, sing, and play instruments to give back</p>
+</figcaption>
+</figure>
+<p>The last thing you should be doing when participating a roda is to give back! This means three things. Clap, sing, and play instruments. Don’t be the person at the dinner party who didn’t bring anything and is eating all the food. Bring something! Bring your voice, you’re knowledge of playing an instrument, or your clapping. If you don’t know the words to a song, you can ask whoever is next to you. They can tell you, and if you still don’t know, mumble the song (this is serious advice) and figure out the lyrics later. If you can play the pandeiro or the Agogo, play those instruments. If you don’t know how to play an instrument, then don’t worry about it. Just make sure that you’re clapping, singing, and giving your energy to the roda.</p>
+<p>If you do want to play an instrument, make sure that you’re confident and competent with the instrument. You don’t need to be an aficionado, but you do need to recognize the rhythms and how to play their most basic forms. When taking someone’s instrument or giving yours to someone else, try to do so in a way that disrupts the energy least. This usually means you can switch instruments when someone new buys the game and both players come back to the foot of the berimbau.</p>
+<p>Use this advice and be confident when you enter the roda. Sometimes people talk about the roda as though it’s a mystical thing. The energy you feel from the roda feels supernatural, but I’ve tried to demystify this idea and provide six rules that you can follow to have success in the roda.</p>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-2">
+                                <a href="#rule-1-get-to-know-the-roda-before-you-jump-in">Rule 1: Get to know the roda before you jump in.</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#questions-you-can-ask">Questions you can ask</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#your-teacher-can-give-you-an-idea">Your Teacher can Give you an Idea</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#rule-two-introduce-yourself-to-the-leader-of-the-roda">Rule two: Introduce yourself to the leader of the roda.</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#rule-three-make-your-way-to-the-foot-of-the-berimbau-in-a-respectful-way">Rule three: Make your way to the foot of the Berimbau in a respectful way.</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#cutting-the-line">Cutting the line</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#rule-4-look-to-the-mestre-leader-of-the-roda-before-entering">Rule 4: Look to the Mestre/leader of the roda before entering</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#pay-attention-to-the-game-and-the-person-leading-the-roda">Pay Attention to the Game and the Person Leading the Roda</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#don-t-break-the-energy-of-the-game">Don’t Break the Energy of the Game</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#rule-5-buy-the-game-pay-your-heart-out-and-exit-safely">Rule 5: Buy the game, pay your heart out, and exit safely</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#make-yourself-seen">Make yourself seen</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#learn-to-read-the-energy-and-pace-of-the-roda">Learn to Read the Energy and Pace of the Roda</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#the-leader-of-the-roda-has-the-last-say">The Leader of the Roda has the Last Say</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#once-you-buy-the-game-play-your-heart-out-simple">Once you buy the game, play your heart out! Simple.</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#rule-6-give-back-to-the-roda">Rule 6: Give back to the roda</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="/js/products/product-quantity.js" defer></script>
+    
+</body>
+
+
+</html>

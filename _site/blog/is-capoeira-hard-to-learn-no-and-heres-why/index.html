@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is Capoeira Hard to Learn? A Beginner&#39;s Guide</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- OG meta descriptions -->
+    <meta property="og:title" content="Is Capoeira Hard to Learn? A Beginner&#39;s Guide" />
+    <meta property="og:description" content="Discover why capoeira is surprisingly accessible for beginners. Learn about its unique blend of martial arts, dance, and music." />
+    <meta property="og:image" content="IMG_1411.jpg" />
+
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" ></script>
+    
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            console.log('Initializing Swell...');
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+
+                });
+                console.log('Swell initialized successfully');
+                // Get the cart and update the global variable
+                const cart = await swell.cart.get();
+                window.swellCartCount = cart?.itemQuantity || 0; // <-- CORRECTED PROPERTY
+                console.log("Cart count after init:", window.swellCartCount);
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+</head>
+<body onload="window.initializeSwell()">
+    <!-- _includes/cart-sidebar.njk -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button id="close-cart" class="close-cart">×</button>
+  </div>
+  <div id="cart-items" class="cart-items">
+    <!-- Cart items will be dynamically inserted here -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cart-total-amount"></span>
+    </div>
+    <button id="checkout-button" class="checkout-button">
+      Proceed to Checkout
+    </button>
+  </div>
+</div>
+<div id="cart-overlay" class="cart-overlay"></div>
+
+    <main> 
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songs</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <a href="#" class="cart-toggle flex-box" onclick="return false;">
+                        <picture class="cart-icon">
+            <source type="image/svg+xml" srcset="/img/optimized/kwK_MZKtPm-32.svg 32w" sizes="100vw">
+<source type="image/webp" srcset="/img/optimized/kwK_MZKtPm-32.webp 32w, /img/optimized/kwK_MZKtPm-400.webp 400w, /img/optimized/kwK_MZKtPm-800.webp 800w, /img/optimized/kwK_MZKtPm-1280.webp 1280w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/kwK_MZKtPm-32.jpeg 32w, /img/optimized/kwK_MZKtPm-400.jpeg 400w, /img/optimized/kwK_MZKtPm-800.jpeg 800w, /img/optimized/kwK_MZKtPm-1280.jpeg 1280w" sizes="100vw">
+            <img src="/img/optimized/kwK_MZKtPm-1280.webp" width="1280" height="1280" alt="Dende Arts Shopping Cart" loading="eager" decoding="async">
+        </picture>
+                        ()
+                    </a>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">Is Capoeira Hard to Learn? A Beginner&#39;s Guide</a>
+            </div>
+            <h1>Is Capoeira Hard to Learn? A Beginner&#39;s Guide</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2020-05-25">
+                    May 24, 2020
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <p>Is Capoeira hard to learn? If you know what you want to learn from it, then the answer is no! If you saw Capoeira in a show or movie, you might be blown away from the amazing moves. But not every capoeirista reaches the same level, just like not every gymnast reaches the olympics. If you have a clear goal in mind for what you want to learn, then it will be much easier to progress. Here are some tips on where to direct your focus and how to improve quickly.</p>
+<h2><h2 id="what-are-the-most-challenging-elements-of-capoeira">What are the most challenging elements of Capoeira</h2></h2>
+<p>Before people even start training Capoeira, many of them are afraid that they’re not strong enough, not coordinated enough, or not flexible enough. The truth is that the majority of people who start capoeira face the same challenges. We’re more alike in our struggle to learn Capoeira and the more you’re able to realize this, the easier it will be to progress. Here are some of the elements that people love about Capoeira and train hard to achieve.</p>
+<h3><h3 id="mobility">Mobility</h3></h3>
+<p><h3 id="mobility">Mobility</h3> is a combination of strength while in a flexible position. Examples of this are bridges (wheel pose), high kicks, and low squats. Many people who do the low squat for the first time feel like they’re going to fall over, and this has a lot do with the lack of flexibility in their hips and ankles, as well as a lack of strength in the musculature surrounding those areas. Capoeira is a great way to build mobility, but this is a place that everyone struggles with.</p>
+<h3><h3 id="musicality">Musicality</h3></h3>
+<p><h3 id="musicality">Musicality</h3> might seem like a strange ingredient to find in a martial art, but elements of rhythm and timing are very common in boxing, mma, and kung fu. You just need to look at a couple fights from Mohammud Ali to see how important they can be.</p>
+<p>If you’re never played an instrument before or have trouble following a beat, then some of the musical elements may be challenging for you. The fortunate thing is that for the vast majority of people, rhythm is not given at birth. Rhythm, pitch, and timing are all things you need to learn by a steady exposure to music. Capoeira is a great tool to do so, but it does take time and a willingness to step out of your comfort zone.</p>
+<h3><h3 id="coordination-proprioception">Coordination/Proprioception</h3></h3>
+<p>Try to close your eyes and extend your arm to the side. Now try to touch your nose. You might not get it the first time!</p>
+<p>Proprioception is understanding where your body is in space. People who are poorly coordinated like have poor proprioception. Doing something like a cartwheel is a test for your proprioception. When I started Capoeira, I had a hard time doing a cartwheel and part of the reason is because as soon as I got upside down I got lost and felt like I completely lost track of where I was. This is very common for many people, and many of the movements in Capoeira help build your body awareness as you move through space.</p>
+<h3><h3 id="improvisation-and-flow">Improvisation and flow</h3></h3>
+<p><h3 id="improvisation-and-flow">Improvisation and flow</h3> in Capoeira is very difficult because unlike other arts that you do alone, Capoeira is improvised with another person. There are tons of videos that show Capoeiristas doing different flow sequences on their own. And as impressive as they can be, it’s 100x more impressive when done with a partner. This isn’t something anyone can do walking into their first class, but you’ll be amazed with yourself the first time you feel a game with someone else that flows.</p>
+<h2><h2 id="how-to-choose-a-school-to-train-with">How to choose a school to train with</h2></h2>
+<p>There are currently three major schools of Capoeira that exist for you to train with. Those schools are Angola, Regional, and Contemporanea. Contemporanea is by far the largest of the three schools, but each category has its own strengths that you will take into account while choosing a school. If you’re excited to start training Capoeira, but are not sure what school to start with, here is an infographic that may help you make your decision.</p>
+<p><strong>FREE DOWNLOADABLE PDF</strong> <strong>TO FIND A SCHOOL THAT FITS YOUR GOALS:</strong> <a href="https://bit.ly/2TBXfHP">https://bit.ly/2TBXfHP</a></p>
+<h3><h3 id="capoeira-angola">Capoeira Angola</h3></h3>
+<p>Capoeira is always evolving, however <h3 id="capoeira-angola">Capoeira Angola</h3> is a style that tries to maintain the traditions of Capoeira as it existed 100+ years ago. There is a very meticulous eye placed on music, understanding the history of Capoeira, and following the traditions placed down by masters over the last century. Angola is a wonderful style that emphasizes flow, low movement, tradition, and a cultural expression over things like self defense and explosive movements.</p>
+<p><h3 id="capoeira-angola">Capoeira Angola</h3> is less physically demanding than the other two Capoeira styles. This might be good for people who are more advanced in age or who have certain physical disabilities. There is still a strong physical demand on your body, however it is not nearly as explosive or acrobatic. In the video below you can see how the game flows. The pace is slower in most cases, however the big difference is that the game is much lower to the ground. Angola is a beautiful art form and many people who play other styles of Capoeira love its beauty and appreciation for traditional Capoeira.</p>
+<p>Below is an example of an Angola game. Note the expression of movement of the two people playing. Also note the duration of the game. Over 6 minutes, which you won’t find in the other two styles.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WBqNRC2ZFYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3><h3 id="capoeira-regional">Capoeira Regional</h3></h3>
+<p>If you want real <h3 id="capoeira-regional">Capoeira Regional</h3>, then your best bet is to go to Salvador, Brazil. This is the place where Mestre Bimba created the style of regional in the 1920’s. His reason for creating regional was to create a form of Capoeira that could be used as an effective form of self defense. In order to do this, he included many elements to Capoeira that are not seen in Angola. Hand strikes, throws, and knife defense are just a few of those elements.</p>
+<p>Today, regional has meshed a lot with movements from contemporanea, the most modern style of Capoeira, making the difference less obvious. However the root of regional is the need to be an effective martial art. Many of the schools that teach regional emphasize this with strong kicks and solid defensive options. Some schools will include elements of mma or jiu-jitsu to supplement these concepts. Although some people question the use of Capoeira in MMA, there have been many people who have used Capoeira moves in mixed martial arts competitions. I discussed this at length in a video, reacting to an MMA coach’s thought on the use of Capoeira in MMA.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5zRv5akCYYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Here is an example of a Regional roda. Note the powerful moves, fast movement, and guarded stances.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KYwnjLzJpmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3><h3 id="capoeira-contemporanea">Capoeira Contemporanea</h3></h3>
+<p>If you’re someone who enjoys experimenting with a great variety of movements and are not as concerned with self defense, then you might enjoy contemporanea.</p>
+<p>Contemporanea or “contemporary” Capoeira, is a combination of the two styles that came before it (Regional and Angola). There is great variety within the category of contemporanea. Some schools cater more to the traditions of Angola and some cater to the strengths of Regional. One of the distinguishing factors of contemporanea is the variety of movements is much greater than the other two styles.</p>
+<p>Many schools learn from each other and have over time built an incredible library of movements that you won’t find anywhere else. The flow is very impressive, but can also be very challenging.</p>
+<p>In this Contemporanea roda, you can see the emphasis on movement, flow, and creativity. The style is very flexible and can work within the context of regional and angola.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AHir-wOh4Uk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2><h2 id="tips-on-getting-better-and-staying-consistent">Tips on getting better and staying consistent</h2></h2>
+<h3><h3 id="hang-out">Hang out</h3></h3>
+<p>If you want to get started with Capoeira then good for you! Just like any challenge you take on, there will be times when things are challenging, but here are some tips to persevere. First, make sure to invite people to hang out after class. Don’t even worry about training for now. Just spend some time with the people in class. Making that connection is very important and will encourage everyone to train with each other outside of class.</p>
+<h3><h3 id="train-at-home">Train at home</h3></h3>
+<p><h3 id="train-at-home">Train at home</h3>! Many people don’t know where to start with this. If you’re not sure where to get started, check out the movement section of my <a href="https://dendearts.com/blog/movement-guides/">blog</a> and check out my <a href="https://www.youtube.com/channel/UCxiwDy2xQUf_B5KkONrrzGg">youtube channel</a> for training inspiration.</p>
+<h3><h3 id="write-things-down">Write things down</h3></h3>
+<p><h3 id="write-things-down">Write things down</h3>! Make sure that whatever workout you want to do today or tomorrow, that you record it. You don’t need any fancy notebook, just a pen and a piece of paper. The more you write down, the more you will understand about what training methods work better for you, or don’t work as well. You can make small adjustments and over time, you can make a workout schema that will help you develop.</p>
+<h3><h3 id="ask-for-advice-from-your-teacher">Ask for advice from your teacher</h3></h3>
+<p>Ask your teacher for feedback. Your teacher is more than willing to give you feedback if you ask for it. Feel free to send them videos and ask them questions. Maybe this goes without saying, but your teacher is a source of information. If you’ve thought about a problem yourself and after some thought, you really don’t understand, never feel weird about asking for help.</p>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-2">
+                                <a href="#what-are-the-most-challenging-elements-of-capoeira">What are the most challenging elements of Capoeira</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#mobility">Mobility</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#musicality">Musicality</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#coordination-proprioception">Coordination/Proprioception</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#improvisation-and-flow">Improvisation and flow</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#how-to-choose-a-school-to-train-with">How to choose a school to train with</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#capoeira-angola">Capoeira Angola</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#capoeira-regional">Capoeira Regional</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#capoeira-contemporanea">Capoeira Contemporanea</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#tips-on-getting-better-and-staying-consistent">Tips on getting better and staying consistent</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#hang-out">Hang out</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#train-at-home">Train at home</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#write-things-down">Write things down</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#ask-for-advice-from-your-teacher">Ask for advice from your teacher</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="/js/products/product-quantity.js" defer></script>
+    
+</body>
+
+
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is the difference between passive and active stretching?</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- OG meta descriptions -->
+    <meta property="og:title" content="What is the difference between passive and active stretching?" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="/img/dende-arts-logo2.png" />
+
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" ></script>
+    
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            console.log('Initializing Swell...');
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+
+                });
+                console.log('Swell initialized successfully');
+                // Get the cart and update the global variable
+                const cart = await swell.cart.get();
+                window.swellCartCount = cart?.itemQuantity || 0; // <-- CORRECTED PROPERTY
+                console.log("Cart count after init:", window.swellCartCount);
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+</head>
+<body onload="window.initializeSwell()">
+    <!-- _includes/cart-sidebar.njk -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button id="close-cart" class="close-cart">×</button>
+  </div>
+  <div id="cart-items" class="cart-items">
+    <!-- Cart items will be dynamically inserted here -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cart-total-amount"></span>
+    </div>
+    <button id="checkout-button" class="checkout-button">
+      Proceed to Checkout
+    </button>
+  </div>
+</div>
+<div id="cart-overlay" class="cart-overlay"></div>
+
+    <main> 
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songs</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <a href="#" class="cart-toggle flex-box" onclick="return false;">
+                        <picture class="cart-icon">
+            <source type="image/svg+xml" srcset="/img/optimized/kwK_MZKtPm-32.svg 32w" sizes="100vw">
+<source type="image/webp" srcset="/img/optimized/kwK_MZKtPm-32.webp 32w, /img/optimized/kwK_MZKtPm-400.webp 400w, /img/optimized/kwK_MZKtPm-800.webp 800w, /img/optimized/kwK_MZKtPm-1280.webp 1280w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/kwK_MZKtPm-32.jpeg 32w, /img/optimized/kwK_MZKtPm-400.jpeg 400w, /img/optimized/kwK_MZKtPm-800.jpeg 800w, /img/optimized/kwK_MZKtPm-1280.jpeg 1280w" sizes="100vw">
+            <img src="/img/optimized/kwK_MZKtPm-1280.webp" width="1280" height="1280" alt="Dende Arts Shopping Cart" loading="eager" decoding="async">
+        </picture>
+                        ()
+                    </a>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">What is the difference between passive and active stretching?</a>
+            </div>
+            <h1>What is the difference between passive and active stretching?</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2021-04-19">
+                    April 18, 2021
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <p>Passive flexibility refers to an external force moving you into a stretch. This can be a tool, a partner, or gravity. Active flexibility refers to your own musculature bringing you into a stretch position. This may also involve the use of tools, a partner, or gravity, however the emphasis is on activating your muscles to pull you into a stretch, rather than relaxing them and letting external forces do the work for you.</p>
+<p>For athletes, stretching should never be 100% passive. Athletes like a first baseman will need to work on their front splits actively to ensure they do not injure their hamstrings or hip-flexors as they quickly enter that position. The only people who benefit from 100% passive stretching are those who are trying to be flexible for show. For example, if you want to do a split, but have no intention of using it in any athletic pursuit can use passive stretching to achieve their goals. This does not mean that first baseman do not passively stretch, however the majority of their practice will consist of active exercises to increase flexibility.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/split-1st-baseman.png"><img src="images/split-1st-baseman-1024x576.png" alt=""></a></p>
+<h2><h2 id="how-to-make-a-stretch-quot-active-quot">How to make a stretch &quot;Active&quot;</h2></h2>
+<p>A forward fold is a good example of how to change a stretch from passive, to active. Traditionally a forward fold is done with the butt on the floor and the hands reaching towards the feet. Many inflexible people have difficulty tilting their hips, meaning that when they sit in an &quot;L&quot; shape, they fall backwards. The other problem is that when people reach for their feet, they do so by bending their backs. When we do a forward fold, we want to target the hamstrings, not the back.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/IMG_4876-1-scaled.jpg"><img src="images/IMG_4876-1-1024x768.jpg" alt=""></a></p>
+<p><strong>1.</strong> If you can not sit at 90 degrees comfortably, then the first thing we do is place a yoga block or stack of books under the butt so that you can at least sit comfortably in 90 degrees. If you can't do that, then there won't be a way for us to make the stretch active. For some people this may require 1 or even 2 yoga blocks.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/IMG_4868-1-scaled.jpg"><img src="images/IMG_4868-1-1024x768.jpg" alt=""></a></p>
+<p><strong>2.</strong> The second step is to place another yoga block or book between our chest and our thighs and squeezing the block with 30-70% effort. While we activate the hip-flexors to compress, our hamstrings react to this exertion of force by releasing neurological inhibition and increasing our range of motion. This allows us to sink deeper into the stretch!</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/IMG_4848-1-scaled.jpg"><img src="images/IMG_4848-1-1024x768.jpg" alt=""></a></p>
+<h3><h3 id="what-you-should-avoid">What you should avoid</h3></h3>
+<p>This method differs greatly from the method you will see on social media where a hoard of yoga instructors will tell you to get straps and pull yourself into the stretch. If your goal is passive flexibility, then this is a fine method, however if you want active flexibility, then this will not do.</p>
+<p>In order to make a stretch active, you need some force to resist against. In the example above, the resisting force is the yoga, which you fight against, but squishing it between your chest and thigh.</p>
+<h2><h2 id="active-stretching-mobility-passive-stretching-flexibility">Active stretching = mobility, Passive stretching = flexibility</h2></h2>
+<p>The difference between mobility and flexibility is the same as the difference between active stretching and passive stretching. <strong>If you are &quot;flexible&quot; that means that you need an external force to bring you into whatever stretch you are trying to do</strong>. For example, if you are very flexible, you can do a leg raise, but pulling your leg into the position with your hand. <strong>Mobility means that you have neurological control over a range of motion. Meaning that you can produce the force needed to enter bring your leg into a leg raise position.</strong></p>
+<figure>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/passive-flexible.png"><img src="images/passive-flexible.png" alt=""></a></p>
+<figcaption>
+<p>Flexibility</p>
+</figcaption>
+</figure>
+<figure>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/active-flexible.png"><img src="images/active-flexible.png" alt=""></a></p>
+<figcaption>
+<p>Mobility</p>
+</figcaption>
+</figure>
+<h3><h3 id="advantages-of-mobility">Advantages of mobility</h3></h3>
+<p>The advantage of mobility over flexibility is that having control over a range of motion means you are less prone to injury and are able to perform better in that range of motion. This is particularly important for athletes who need to be strong in many different ranges of motion. Many dancers have incredible strength in their quadriceps that they can bring their leg above their head and balance there. This is not just a a feat of mobility, but also shows incredible proprioception and coordination.</p>
+<h2><h2 id="what-are-the-benefits-of-active-stretching">What are the benefits of Active stretching</h2></h2>
+<p>Active stretching can be used to increase your range of motion and flatten the strength curve (more on this later). The latter is not done by passive stretching, and is the main reason you should choose to stretch actively over passively is you are involved in any athletic pursuits.</p>
+<h3><h3 id="increase-your-joint-range-of-motion">Increase your joint range of motion</h3></h3>
+<p>Stretching of any kind will increase your range of motion. Let's look at the hip socket while doing our forward fold. By stretching increases our range of motion. And we can do this in more than one way. A forward fold is one way, while a side split is another way. Your hip socket is a fairly complicated joint and can be moved on three different planes.</p>
+<ul>
+<li>Sagittally - Think, seated forward fold</li>
+<li>Coronal - Think, leg raise or side split</li>
+<li>Transverse - Think, internal and external rotation of the femur</li>
+</ul>
+<p>By improving the range of motion in our hip, we improve the flexibility of the muscles surrounding it. Increasing the sagittal range of motion in our hip improves the flexibility in our posterior chain. This includes the hamstrings, calf, lower back, etc.</p>
+<p>Active stretching not only increases range of motion, but also increases strength at the end ranges of motion.</p>
+<h3><h3 id="what-is-your-end-range-of-motion">What is your end range of motion?</h3></h3>
+<p>In a movement like a like a bicep curl, you start with the arm straight and the bicep lengthened. As you lift the weight, the bicep shortens until you reach the top position, where the bicep is at its shortest. Your muscles will always be stronger in the middle area of this range and weakest at the end ranges. The end ranges are when the muscles is at its longest and shortest.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/image.png"><img src="images/image.png" alt="Bicep Curl Cartoon Instruction (Page 1) - Line.17QQ.com"></a></p>
+<h3><h3 id="flatten-the-strength-curve">Flatten the strength curve</h3></h3>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/strength-curve-1.png"><img src="images/strength-curve-1.png" alt=""></a></p>
+<p>Flattening the strength curve means getting stronger at your end ranges, so there is less of a disparity between where you are strongest and where you are weakest. This means we can exert more force and absorb more impact at our end ranges with less fear of injury.</p>
+<p>A good example is Jujitsu, where you submit opponents by cranking their joints. If you have greater range of motion, and more strength within that range, then it means more more work for your opponents to tap you. Not only that but increased mobility will mean you can operate your limbs with greater dexterity and control.</p>
+<p>Here is a cheesy early 2000's video of Jujitsu monster Ryan Hall explaining how &quot;flexibility&quot; plays a role in Jujitsu.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qeA9Z76deDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2><h2 id="tools-for-active-stretching">Tools for active stretching</h2></h2>
+<p>The most common tools for active stretching are...</p>
+<ul>
+<li>Yoga blocks</li>
+<li>Resistance bands</li>
+<li>A tennis or lacrosse ball</li>
+<li>Ankle weight 1-5lb</li>
+</ul>
+<h3><h3 id="how-to-use-yoga-blocks-when-stretching">How to use yoga blocks when stretching</h3></h3>
+<p>Yoga blocks have three uses.</p>
+<p>The first is to elevate our hips and other body parts as explained with the seated forward fold example. Some people are so restricted, that they can not properly perform the exercise unless their hips are elevated. Other exercises are enhanced by the use of yoga blocks.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/IMG_4868-3-scaled.jpg"><img src="images/IMG_4868-3-1024x768.jpg" alt=""></a></p>
+<p>The second way to use yoga blocks is to use it as something to resist against. In the case of a seated forward fold, we place a yoga block between the chest and thigh and squeeze it. The yoga block provides resistance and makes it easier for us to make our stretches as active as possible.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/IMG_4848-3-scaled.jpg"><img src="images/IMG_4848-3-1024x768.jpg" alt=""></a></p>
+<p>The last use of yoga blocks is to orient the direction of our stretches. In the case of a pancake, we can place a yoga block in front of us, promoting a forward moving stretch. Most people when they stretch, they aim for the floor or their feet, but this might not be the best way to direct your stretches. Having a reference point is very helpful at more advanced stretching levels.</p>
+<p><a href="https://dendearts.com/wp-content/uploads/2021/04/IMG_4850-1-scaled.jpg"><img src="images/IMG_4850-1-1024x768.jpg" alt=""></a></p>
+<h3><h3 id="how-to-use-resistance-bands-for-stretching">How to use Resistance bands for stretching</h3></h3>
+<p>Resistance bands serve two functions at the same time, which makes them useful for certain stretches. The first is resistance, which depending on the exercise and your own flexibility, might be required. The other is orientation - which was explained in the yoga block section. Pulling against the resistance band lets you know in what direction you should orient your stretch. A resistance band used during a seated forward fold orients you to stretch forwards instead of towards the floor.</p>
+<p>Make sure to use low resistance bands. When working at your end ranges of motion, you do not need a lot of weight. A couple pounds of resistance at the end of your stretch is all the resistance you need.</p>
+<h3><h3 id="how-to-use-ankle-weights-for-stretching">how to use ankle weights for stretching</h3></h3>
+<p>Those small two pound weights people wear when power walking are excellent for providing resistance at end ranges of motion. Two pounds might not sound like a lot of weight, but remember that at the end ranges, there is much less strength available to exert. An example of an ankle weight being used is while practicing leg raises or side kicks.</p>
+<p>Get within 80% of your maximum and from there, pump the leg upwards towards the sky. pushing for the last 20% of your range of motion is going to be much more difficult with a small weight adding resistance. This is a very common exercise in martial arts such as Taekwondo where increasing range of motion and power are critical.</p>
+<p>If you're just getting started you probably do not need ankle weight, however they are great to supplement and help produce power while increasing range of motion.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/92p0muBPtmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2><h2 id="when-to-include-active-stretching-in-my-fitness-routine">When to include active stretching in my fitness routine</h2></h2>
+<p>Active can be included before or after your workout routine. Prior to your workout routine, active stretching should be less intense, while afterwards it can be more intense. This is due to neurological fatigue. Neurological fatigue is when the nervous system is tired from sending messages to your muscles telling them to contract and relax. All exercises place some demand on your nervous system depending on their intensity. This is why when you do your most intense work near the beginning of your workout to make sure your nervous system is not already fatigued.</p>
+<p>Another way to include active stretching into your routine is to do more of this work on deloading weeks or on days that you have lighter workout days. Remember that active stretching does produce fatigue so do not follow up an intense leg day with an intense active stretching day. This will only increase your fatigue.</p>
+<h3><h3 id="active-stretching-will-fatigue-you">Active stretching will fatigue you</h3></h3>
+<p>Similar to any other workout, being active means you are challenging your muscular and nervous system. Doing this is tiring. So don't be surprised when you wake up the next morning after an intense stretching session feeling sore or worn out.</p>
+<p>This is important because you don't want to tire out prior to your workout. For example, you don't want to do an intense active stretching session for your glutes prior to doing an intense set of squats. Best would be to do a normal warm up, do your workout, and then after continue with your active stretching routine.</p>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-2">
+                                <a href="#how-to-make-a-stretch-quot-active-quot">How to make a stretch &amp;quot;Active&amp;quot;</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#what-you-should-avoid">What you should avoid</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#active-stretching-mobility-passive-stretching-flexibility">Active stretching = mobility, Passive stretching = flexibility</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#advantages-of-mobility">Advantages of mobility</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#what-are-the-benefits-of-active-stretching">What are the benefits of Active stretching</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#increase-your-joint-range-of-motion">Increase your joint range of motion</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#what-is-your-end-range-of-motion">What is your end range of motion?</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#flatten-the-strength-curve">Flatten the strength curve</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#tools-for-active-stretching">Tools for active stretching</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#how-to-use-yoga-blocks-when-stretching">How to use yoga blocks when stretching</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#how-to-use-resistance-bands-for-stretching">How to use Resistance bands for stretching</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#how-to-use-ankle-weights-for-stretching">how to use ankle weights for stretching</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#when-to-include-active-stretching-in-my-fitness-routine">When to include active stretching in my fitness routine</a>
+                            </li>
+                        
+                            <li class="toc-level-3">
+                                <a href="#active-stretching-will-fatigue-you">Active stretching will fatigue you</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="/js/products/product-quantity.js" defer></script>
+    
+</body>
+
+
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Hand strikes in Capoeira: Godeme, Galopante, Dedeira...</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- OG meta descriptions -->
+    <meta property="og:title" content="7 Hand strikes in Capoeira: Godeme, Galopante, Dedeira..." />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="/img/dende-arts-logo2.png" />
+
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+
+    <!-- load swell.js first -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" ></script>
+    
+    <!-- swell js integration -->
+    <script>
+        // Create a global initialization function
+        window.initializeSwell = async function() {
+            console.log('Initializing Swell...');
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+
+                });
+                console.log('Swell initialized successfully');
+                // Get the cart and update the global variable
+                const cart = await swell.cart.get();
+                window.swellCartCount = cart?.itemQuantity || 0; // <-- CORRECTED PROPERTY
+                console.log("Cart count after init:", window.swellCartCount);
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
+</head>
+<body onload="window.initializeSwell()">
+    <!-- _includes/cart-sidebar.njk -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button id="close-cart" class="close-cart">×</button>
+  </div>
+  <div id="cart-items" class="cart-items">
+    <!-- Cart items will be dynamically inserted here -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cart-total-amount"></span>
+    </div>
+    <button id="checkout-button" class="checkout-button">
+      Proceed to Checkout
+    </button>
+  </div>
+</div>
+<div id="cart-overlay" class="cart-overlay"></div>
+
+    <main> 
+        
+<div class="main-grid">
+    <div class="nav-content">
+            <!-- use shortcode for these image -->
+            <div class="logo-link-container">
+                <a href="/">
+                    <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                    <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- use shortcode for these image -->
+            <div class="nav-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="overlay"></div>
+                <nav class="nav-menu">
+                    <a href="/">Home</a>
+                    
+                    <a href="/abada-joggers-landing/">Abadas</a>
+                    <a href="/songbook/">Songs</a>
+                    
+                    <a href="/blog/">Blog</a>
+                    <a href="/bulk-orders/">Bulk Orders</a>
+                    <!-- Add this to your nav.njk -->
+                    <a href="#" class="cart-toggle flex-box" onclick="return false;">
+                        <picture class="cart-icon">
+            <source type="image/svg+xml" srcset="/img/optimized/kwK_MZKtPm-32.svg 32w" sizes="100vw">
+<source type="image/webp" srcset="/img/optimized/kwK_MZKtPm-32.webp 32w, /img/optimized/kwK_MZKtPm-400.webp 400w, /img/optimized/kwK_MZKtPm-800.webp 800w, /img/optimized/kwK_MZKtPm-1280.webp 1280w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/kwK_MZKtPm-32.jpeg 32w, /img/optimized/kwK_MZKtPm-400.jpeg 400w, /img/optimized/kwK_MZKtPm-800.jpeg 800w, /img/optimized/kwK_MZKtPm-1280.jpeg 1280w" sizes="100vw">
+            <img src="/img/optimized/kwK_MZKtPm-1280.webp" width="1280" height="1280" alt="Dende Arts Shopping Cart" loading="eager" decoding="async">
+        </picture>
+                        ()
+                    </a>
+                </nav>
+            </div>
+        </div>
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/">7 Hand strikes in Capoeira: Godeme, Galopante, Dedeira...</a>
+            </div>
+            <h1>7 Hand strikes in Capoeira: Godeme, Galopante, Dedeira...</h1>
+
+            
+            
+            
+            
+            <div class="blog-post-meta">
+                <time datetime="2019-07-11">
+                    July 10, 2019
+                </time>
+            </div>
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <div class="blog-post-content">
+                <p>When you watch a Capoeira game, you might notice that almost every interaction involves a kick from one of the people playing. In fact, kicks are so prevalent in Capoeira, that you might be curious about how hand strikes can be used or if they’re used at all.</p>
+<p>So, does Capoeira have hand strikes? Yes, Capoeira has several hand strikes that can be used in the game of capoeira. Although many of these hand strikes see little use in the Roda (circle where capoeira is played), some strikes do see regular use. Hand strikes have many uses. They can be used to damage, disorientate, to feint, or even to teach.</p>
+<p>I will list out the strikes, explain how they are performed and their connect with the game of Capoeira, and after I’ll go over their practical application. This will include uses in other martial arts and mixed martial arts competition, which I see as the ultimate proving ground for the usefulness of a technique - at least in terms of self defense.</p>
+<h2><h2 id="galopante">Galopante</h2></h2>
+<p><h2 id="galopante">Galopante</h2> is one of the most widely used hand strikes in Capoeira. This strike is delivered with an open palm to the face and uses the base of the palm. This differs from other striking arts, such as boxing, which places a large emphasis on a closed fist to deliver a blow. It is not clear specifically why an open palm is used as opposed to a closed fist. One reason might have to do with the high probability of wrists breaking when punching someone in the face. There are many cases of examples of punches to the head leading to cracked or broken bones in the hand. This occurs in MMA and boxing, and is prone to happen in street fights as well. The hand is much softer than the head and in Capoeira, head butts are normal a normal thing. Punching someone’s face might not seem scary, but Imagine punching someone on the top of their head! MMA legend Bas Ruten has an entertaining story about this.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UduTUNi-E8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><h2 id="galopante">Galopante</h2> is a strike that is used in one of Mestre Bimba’s 8 sequences. These sequences were meant for beginners to learn the fundamentals of Capoeira, and this attack is found in the fourth sequence.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8nk4esw3cco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>In the third section of this sequence, person A throws galopante by swinging their open palm towards their opponent. Person B dicks underneath the strike and takes down person A. Mestre Bimba, understood that his students would face these kinds of strikes in the streets and therefore trained them to confront them. In typical Capoeira fashion, the reaction here is to dodge, or esquiva the blow. However, it is also possible to block with attack before counterattacking.</p>
+<h2><h2 id="cutuvelo-elbow-strike">Cutuvelo (elbow strike)</h2></h2>
+<p>Cutuvelo is not technically a hand strike, it’s an elbow strike. Elbow strikes can come from various angles, including up, to the side, and down. The angle of the strike depends on the position of your opponent. Elbow strikes are used to good effect at very close distances. Headbutts are a common attack in Capoeira at short distances.  If the opponent uses a headbutt, it is possible to use the elbow to counter a headbutt to the face or abdomen. In case of a take down attempt, Capoeiristas can rain elbows down on their opponent’s back to dissuade further take down attempts.</p>
+<p>In the UFC, elbows are a very commonly used tool when at an unorthodox angle or close distance. John Jones, UFC light-heavyweight champion, uses elbows to great effect in several of his matches. During several of his matches in the UFC, Jon Jones used his elbows to devastate his opponents. Here is a <a href="https://youtu.be/CWeQlSoj09k">compilation video</a>, showing some of Jone’s techniques and uses. Interestingly, in the UFC, downward elbow strikes (from the 12 o’clock position to the 6 o’clock position) are illegal, but it’s not clear why.</p>
+<h2><h2 id="asfixiante-asphyxiate">Asfixiante (asphyxiate)</h2></h2>
+<p>Asfixiante is a closed fisted blow to the throat. This is one of the few closed fisted strikes and maybe not so surprisingly is aimed at one of the softer parts of a person’s body. Although the throat is defended in part by the chin and the shoulder, punching this area would do a lot of damage. In the short term, breathing would be difficult and in the long term, the opponent could die from asfixiation. Asfixiante is not really used in the game of Capoeira for the risks associated with the blow. The blow is rarely used and is reserved for use in a real life case of self defense.</p>
+<p>The larynx and trachea are just some of the soft tissue that can be easily damaged or destroyed by a blow. It’s for this reason that intentional blows to the throat are not allowed in the UFC under the unified MMA rule set. This makes it very difficult to know how effective a throat strike is in the “real world”. It is by no means an easy strike to land. As already mentioned, the chin and the shoulders do a decent job defending the area. If you accidentally hit the chin, it’s possible to break your hand. Speculation aside, it’s easy to say that if you did successfully use this strike, it’s possible to do critical damage to someone.</p>
+<h2><h2 id="godeme-back-fist">Godeme (back fist)</h2></h2>
+<p>Godeme is another hand strike that is more commonly used in the roda. Unlike other hand strikes in Capoeira, Godeme uses the back of the fist to hit. This movement also makes up the first part of the 4th Mestre Bimba sequence that includes <h2 id="galopante">Galopante</h2>. In this part of the sequence, the first person will step forward and use godeme. The other person will block with their forearms and hands in front of their face. The strike is performed twice with both hands and is designed to be a drill that will teach students how to defend against this attack.</p>
+<p>This Attack might be difficult to spot for two reasons. The first is that it is not widely used as compared to leg strikes. The second reason is that Godeme is not wiped around like some of the leg strikes. The movement is a little more subtle and can serve many different purposes. If a player wishes to attack their opponent, they aim the strike to the face. Sometimes a strike like this is seen as having little grace, subtlety, or class. For this reason, the attack is sometimes used as a feint that will lead to another attack. The emphasis being on tricking your opponent and gracefully leading them into a hidden attack. The last reason this attack is most commonly used is by teachers who want to remind their students to protect their faces. It’s not uncommon to see teachers “gently” backfisting their students to “encourage” them to protect their faces. As mean as this sounds in our modern and squishy society, I’ve always liked this idea because this is almost never done with ill intent and instead serves as a learning moment for the student without injuring them.</p>
+<p>In a fighting context, a back fist is not a common form of attack. The move is rarely used, but has been applied by fighters in very rare occasions. There are some videos about knockouts with back fists, but that’s about it.  In summary, back fists do not have the same breath of applications in as jabs do. They are inherently riskier moves and serve more to surprise your opponent if you pull them off correctly.</p>
+<h2><h2 id="telefone-strike-to-the-temples">Telefone (strike to the temples)</h2></h2>
+<p>Telefone is a really cool looking move, like something out of kung fu movie. The move is essentially doing galopante with both hands at the same time at an opponent's temples. The move is used primarily to disorientate the opponent. You’re not going to knock anyone out with this move (I don’t think), but you can definitely knock them off balance. Striking the temples damages the vestibular system, which controls our balance. If delivered correctly, you’re opponent will have a difficult time standing, striking,  etc. In Capoeira this is a huge deal as our balance is what allows us to move fluidly.</p>
+<p>In the world of MMA, this strike is not seen. The lack of its use leads us to two possibilities. The first is that this movement is not practical or can be substituted by something else. Instead of open palm striking to the temples with both hands, perhaps it would be more useful to do so with a hook to the temples. The movement might also be seen as too open. Attacking with both hands does leave you without much defense. The other possible reason for Telefone’s lack of use in mixed martial arts could be that it is not a well understood movement that has not yet seen anyone willing to apply it to a fight. This is very unlikely, but who knows, the fight game is always developing and perhaps new movements will be added to the meta-game of fighting.</p>
+<h2><h2 id="escala-open-palm-strike">Escala (open palm strike)</h2></h2>
+<p>Escala is another open palm strike that is found in Capoeira. The strike aimed for the nose and pushes up forcing the head up. Anyone who’s ever been hit in the nose, understands that your eyes start to water and it becomes difficult to see. Although this strike could be used to knock somebody out, the most common use is to distract them and continue with a leg strike. In a game of Capoeira, this strike sees less use for the same reasons as godeme or Asfixiant. This move can cause damage in a way that does not add anything to the game of Capoeira other than watery eyes and a bruised nose. If you want to continue playing, it helps to have everyone’s noses and eyes in tact.</p>
+<p>On the self defense side, this strike looks like you find a your local “women’s self defense class”. the reality is that an open palm strike can be very effective. Similarly to <h2 id="galopante">Galopante</h2>, an open palm strike can actually seriously hurt your opponent and protect your hand from breaking on someone’s skull or chin. In the UFC, open palm strikes are rarely seen because the padding on the fighters’s gloves provides sufficient protection to the fighters hands. Hands are less likely to break if your knuckles are padded. However during earlier forms of MMA competition known and Pancreas, open palm strikes were very common and were often used to take down an opponent.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uiGQIh-6Kdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2><h2 id="dederia-eye-gouging">Dederia (eye gouging)</h2></h2>
+<p>The eye poke! It may be hard to believe, but in Capoeira, this is a move that people use. Deideria is if done “correctly”, can cause all kinds of permanent damage to a person’s vision. This move is usually only done in a case of self defense and you intend to hurt the other person. That being said, within the context of Capoeira, this move is used to distract or re-direct the attention of the person you’re playing with. Capoeiristas play with this movement a lot. They pretend to poke each other’s eyes‍, usually once someone’s been tricked into looking somewhere else, or to remind someone to keep their face protected. Its usually in good fun and helps add to the creative spirit of Capoeira.</p>
+<p>This movement’s effectiveness is very difficult to assess because there is no eye poking in MMA, it’s an illegal move. If you poke an opponent in the UFC, you can have points taken from your score card. If we can’t look at mixed martial arts, then another place that comes to mind is Bruce Lee.</p>
+<p><img src="images/Screen-Shot-2019-07-11-at-12.47.18-AM-1024x905.png" alt=""></p>
+<p>Bruce Lee is often considered the father of mixed martial arts and was a big proponent of the eye jab. In the Tao of Jeet Kun Do, Bruce Lee writes, “Like a fencer’s sword that is always in line, the leading finger jab is a constant threat to your opponent… basically it is Western sword fencing without a sword and the primary target is your opponent’s eyes.”. Unlike the system of Jeet Kun Do, Capoeira has not systematized the use of this technique. Instead, it has been used in jest and as a game to enhance the game of Capoeira. Although the concept is there, and could be used in a self defense setting, for a Capoeirista, that may not be the primary concern when applying this technique.</p>
+<h2><h2 id="when-to-use-hand-strikes-in-the-roda">When to use hand strikes in the roda</h2></h2>
+<p>Hand strikes in Capoeira are nowhere as popular as striking with the feet. However, these strikes to exist and they do see some usage in the roda. If you’re looking to apply these strikes to your game, make sure to ask your teacher how they work and when is the best time to use them. Many people consider using certain hand strikes against teachers as rude and disrespectful. It’s best to learn the subtleties of the attacks before you go out and start casually trying to poke people’s eyes. To help you understand how “rude” or “not rude” these attacks are (for lack of a better phrase), I made a list below that you can refer to. The lest goes from least offensive to most offensive. The might vary a bit based on your group, however this can act a set of guidelines until you ask your teacher.</p>
+<p><h2 id="galopante">Galopante</h2> —&gt; Godeme —&gt; Escala —&gt; Cutuvelo —&gt; Telefone —&gt; Dederia —&gt; Asfixiante</p>
+
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            
+            
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        
+                            <li class="toc-level-2">
+                                <a href="#galopante">Galopante</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#cutuvelo-elbow-strike">Cutuvelo (elbow strike)</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#asfixiante-asphyxiate">Asfixiante (asphyxiate)</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#godeme-back-fist">Godeme (back fist)</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#telefone-strike-to-the-temples">Telefone (strike to the temples)</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#escala-open-palm-strike">Escala (open palm strike)</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#dederia-eye-gouging">Dederia (eye gouging)</a>
+                            </li>
+                        
+                            <li class="toc-level-2">
+                                <a href="#when-to-use-hand-strikes-in-the-roda">When to use hand strikes in the roda</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+            
+
+            
+        </aside>
+        
+        
+    </div>        
+</div>
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Solstice Web Studio LLC | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="/js/products/product-quantity.js" defer></script>
+    
+</body>
+
+
+</html>
