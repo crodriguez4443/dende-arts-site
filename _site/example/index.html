@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swell Cart Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js"></script>
+    <style>
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .cart-item img {
+            width: 50px;
+            margin-right: 10px;
+        }
+        .quantity-control {
+            display: flex;
+            align-items: center;
+        }
+        .quantity-control button {
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Your Cart</h1>
+
+    <div id="cart-items">
+        <template data-swell-cart-item>
+            <div class="cart-item">
+                <img data-swell-cart-item-image src="" alt="">
+                <div class="cart-item-details">
+                    <h3 data-swell-cart-item-name></h3>
+                    <div class="quantity-control">
+                        <button type="button" data-swell-cart-item-quantity-decrement>-</button>
+                        <input type="number" data-swell-cart-item-quantity readonly>
+                        <button type="button" data-swell-cart-item-quantity-increment>+</button>
+                    </div>
+                    <p>Price: $<span data-swell-cart-item-price></span></p>
+                    <p>Total: $<span data-swell-cart-item-line-total></span></p>
+                </div>
+            </div>
+        </template>
+    </div>
+
+    <p>Subtotal: $<span data-swell-cart-subtotal></span></p>
+    <p>Total: $<span data-swell-cart-total></span></p>
+
+    <button onclick="clearCart()">Clear Cart</button>
+
+    <script>
+        swell.init('your-store-id', 'your-public-key', {
+            useCamelCase: true,
+            persist: 'localstorage',
+            cache: false
+        });
+
+        async function clearCart() {
+            try {
+                await swell.cart.clear();
+                console.log('Cart cleared successfully');
+            } catch (error) {
+                console.error('Error clearing cart:', error);
+            }
+        }
+    </script>
+
+</body>
+</html>

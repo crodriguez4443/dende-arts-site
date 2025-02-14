@@ -46,11 +46,14 @@
                 console.log('Swell initialized successfully');
                 // Get the cart and update the global variable
                 const cart = await swell.cart.get();
-                window.swellCartCount = cart?.itemQuantity || 0; // <-- CORRECTED PROPERTY
+                window.swellCartCount = cart?.itemQuantity || 0;
+                window.swellCheckoutURL = cart?.checkoutURL || '';
                 console.log("Cart count after init:", window.swellCartCount);
             } catch (error) {
                 console.error('Swell initialization error:', error);
             }
+
+            updateCartCount();
         };
     </script>
 </head>
@@ -62,7 +65,7 @@
     <button id="close-cart" class="close-cart">×</button>
   </div>
   <div id="cart-items" class="cart-items">
-    <!-- Cart items will be dynamically inserted here -->
+  <!-- Cart items will be dynamically inserted here -->
   </div>
   <div class="cart-footer">
     <div class="cart-total">
@@ -121,11 +124,30 @@
 <source type="image/jpeg" srcset="/img/optimized/kwK_MZKtPm-32.jpeg 32w, /img/optimized/kwK_MZKtPm-400.jpeg 400w, /img/optimized/kwK_MZKtPm-800.jpeg 800w, /img/optimized/kwK_MZKtPm-1280.jpeg 1280w" sizes="100vw">
             <img src="/img/optimized/kwK_MZKtPm-1280.webp" width="1280" height="1280" alt="Dende Arts Shopping Cart" loading="eager" decoding="async">
         </picture>
-                        ()
+                        (<span id="cart-count">0</span>)
                     </a>
                 </nav>
             </div>
         </div>
+
+
+
+<!-- Inline script to update the cart count -->
+<script>
+  // Function to update the cart count in the nav bar
+  function updateCartCount() {
+    const cartCountElement = document.getElementById('cart-count');
+    if (cartCountElement) {
+      cartCountElement.innerText = window.swellCartCount;
+    }
+  }
+
+  // Once Swell is initialized, update the cart count in the nav
+  window.initializeSwell().then(() => {
+    updateCartCount();
+    updateCartDisplay();
+  });
+</script>
     <div class="blog-post-container blog-post-grid">
         <article class="blog-post">
             
@@ -354,8 +376,8 @@ Author: Mestre Boa Voz
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
     <script src="https://unpkg.com/lunr/lunr.js" defer></script>
     <script src="/js/search.js" defer></script>
-    <script src="/js/products/product-quantity.js" defer></script>
-    
+    <script src="/js/product-quantity.js" defer></script>
+    <script src="/js/cart-display.js" defer></script>
 </body>
 
 

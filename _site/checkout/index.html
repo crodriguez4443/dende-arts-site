@@ -46,11 +46,14 @@
                 console.log('Swell initialized successfully');
                 // Get the cart and update the global variable
                 const cart = await swell.cart.get();
-                window.swellCartCount = cart?.itemQuantity || 0; // <-- CORRECTED PROPERTY
+                window.swellCartCount = cart?.itemQuantity || 0;
+                window.swellCheckoutURL = cart?.checkoutURL || '';
                 console.log("Cart count after init:", window.swellCartCount);
             } catch (error) {
                 console.error('Swell initialization error:', error);
             }
+
+            updateCartCount();
         };
     </script>
 </head>
@@ -62,7 +65,7 @@
     <button id="close-cart" class="close-cart">×</button>
   </div>
   <div id="cart-items" class="cart-items">
-    <!-- Cart items will be dynamically inserted here -->
+  <!-- Cart items will be dynamically inserted here -->
   </div>
   <div class="cart-footer">
     <div class="cart-total">
@@ -181,8 +184,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
     <script src="https://unpkg.com/lunr/lunr.js" defer></script>
     <script src="/js/search.js" defer></script>
-    <script src="/js/products/product-quantity.js" defer></script>
-    
+    <script src="/js/product-quantity.js" defer></script>
+    <script src="/js/cart-display.js" defer></script>
 </body>
 
 

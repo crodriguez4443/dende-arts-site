@@ -46,11 +46,14 @@
                 console.log('Swell initialized successfully');
                 // Get the cart and update the global variable
                 const cart = await swell.cart.get();
-                window.swellCartCount = cart?.itemQuantity || 0; // <-- CORRECTED PROPERTY
+                window.swellCartCount = cart?.itemQuantity || 0;
+                window.swellCheckoutURL = cart?.checkoutURL || '';
                 console.log("Cart count after init:", window.swellCartCount);
             } catch (error) {
                 console.error('Swell initialization error:', error);
             }
+
+            updateCartCount();
         };
     </script>
 </head>
@@ -114,8 +117,8 @@
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
     <script src="https://unpkg.com/lunr/lunr.js" defer></script>
     <script src="/js/search.js" defer></script>
-    <script src="/js/products/product-quantity.js" defer></script>
-    {# <script src="/js/products/cart.js"></script> #}
+    <script src="/js/product-quantity.js" defer></script>
+    <script src="/js/cart-display.js" defer></script>
 </body>
 
 

@@ -85,7 +85,6 @@ function displayResults(results, type) {
                     <h3 class="blog-card-title">
                         <a href="${post.url}">${post.title}</a>
                     </h3>
-                    ${post.excerpt ? `<p class="blog-card-excerpt">${post.excerpt}</p>` : ''}
                     <a href="${post.url}" class="read-more">Read More</a>
                 </div>
             </article>
