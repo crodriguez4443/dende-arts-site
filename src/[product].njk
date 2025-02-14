@@ -104,7 +104,7 @@ layout: layout.njk
                         </div>
                     {% endif %}
                     
-                    <!-- Updated HTML -->
+                    <!-- Quantity Control -->
                     <div class="quantity-control">
                         <label for="quantity">Quantity:</label>
                         <div class="quantity-wrapper">
@@ -136,6 +136,7 @@ layout: layout.njk
 <script>
 async function addToCart(productId) {
     const quantity = document.getElementById('quantity').value;
+    const button = document.getElementById('addToCart');
     const options = {};
     
     // Gather selected options if they exist
@@ -143,90 +144,34 @@ async function addToCart(productId) {
         options[select.name] = select.value;
     });
 
-    const button = document.getElementById('addToCart');
     button.disabled = true;
     button.textContent = 'Adding...';
 
     try {
-        // First, make sure swell is initialized
-        if (!window.swell) {
-            throw new Error('Swell is not initialized');
-        }
-
-        const result = await swell.cart.addItem({
+        await swell.cart.addItem({
             product_id: productId,
             quantity: quantity,
             options: options
         });
 
-        console.log('Add to cart result:', result);
-
         button.textContent = 'Added to Cart!';
+
         setTimeout(() => {
             button.disabled = false;
             button.textContent = 'Add to Cart';
         }, 2000);
 
-        // Update cart count
-        if (result?.item_count) {
-            updateCartCount(result.item_count);
-        }
-
-        return true; // Indicate success
-
     } catch (error) {
         console.error('Add to cart error:', error);
         button.disabled = false;
-        button.textContent = 'Add to Cart';
+        button.textContent = 'Add to Cart'; 
         alert('Error adding to cart: ' + error.message);
         
-        return false; // Indicate failure
     }
 }
 
-//validate the cart state function
 
-async function validateCart() {
-    try {
-        const cart = await swell.cart.get();
-        console.log('Validating cart state:', {
-            hasCart: !!cart,
-            cartId: cart?.id,
-            checkoutId: cart?.checkout_id,
-            checkoutUrl: cart?.checkoutUrl,
-            itemCount: cart?.items?.length || 0,
-            total: cart?.grand_total || 0
-        });
-        return cart;
-    } catch (error) {
-        console.error('Cart validation error:', error);
-        return null;
-    }
-}
-
-// Add this to your DOMContentLoaded event
-document.addEventListener('DOMContentLoaded', async () => {
-    try {
-        // Validate Swell initialization
-        if (!window.swell) {
-            console.error('Swell is not initialized');
-            return;
-        }
-        
-        // Validate cart state
-        const initialCart = await validateCart();
-        console.log('Initial cart state:', initialCart);
-        
-        if (initialCart?.item_count) {
-            updateCartCount(initialCart.item_count);
-        }
-    } catch (error) {
-        console.error('Initialization error:', error);
-    }
-});
-
-
-// Buy Now
+// Buy Now --> actually check out button now
 
 async function buyNow(productId) {
     const button = document.getElementById('buyNow');
@@ -276,32 +221,6 @@ async function buyNow(productId) {
         alert('Error processing checkout: ' + error.message);
     }
 }
-
-
-
-// MODIFIED: Update cart count function to work with Swell's cart data
-function updateCartCount(count) {
-    const cartCount = document.getElementById('cart-count');
-    if (cartCount) {
-        cartCount.textContent = count.toString();
-        cartCount.style.display = count > 0 ? 'block' : 'none';
-    }
-}
-
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', async () => {
-    try {
-        const cart = await swell.cart.get();
-        console.log('Current cart:', cart);
-        if (cart?.item_count) {
-            updateCartCount(cart.item_count);
-        }
-    } catch (error) {
-        console.error('Error fetching cart:', error);
-    }
-});
-
-
 
     // Store all product images data
 const productImages = JSON.parse('{{ product.images | dump | safe }}');

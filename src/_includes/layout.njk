@@ -31,58 +31,32 @@
 
     <!-- load swell.js first -->
 
-    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" ></script>
+    
     <!-- swell js integration -->
     <script>
         // Create a global initialization function
         window.initializeSwell = async function() {
+            console.log('Initializing Swell...');
             try {
                 await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
                     useCamelCase: true,
-                    cache: false
+
                 });
                 console.log('Swell initialized successfully');
-                
-                // Initialize cart after Swell is ready
-                await initializeCart();
+                // Get the cart and update the global variable
+                const cart = await swell.cart.get();
+                window.swellCartCount = cart?.itemQuantity || 0; // <-- CORRECTED PROPERTY
+                console.log("Cart count after init:", window.swellCartCount);
             } catch (error) {
                 console.error('Swell initialization error:', error);
             }
         };
     </script>
-
-    <!-- layout.njk -->
-    <script>
-        // Initialize cart function
-        async function initializeCart() {
-            try {
-                const cart = await swell.cart.get();
-                if (cart?.item_count) {
-                    updateCartCount(cart.item_count);
-                }
-                console.log('Cart initialized:', cart);
-            } catch (error) {
-                console.error('Error initializing cart:', error);
-            }
-        }
-
-        // Update cart count function
-        function updateCartCount(count) {
-            const cartCount = document.getElementById('cart-count');
-            if (cartCount) {
-                cartCount.textContent = count.toString();
-                cartCount.style.display = count > 0 ? 'block' : 'none';
-            }
-        }
-
-        // Call initialization when document is loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            window.initializeSwell();
-        });
-    </script>
 </head>
-<body>
-    <main>
+<body onload="window.initializeSwell()">
+    {% include "cart-sidebar.njk" %}
+    <main> 
         {{ content | safe }}
     </main>
     <footer class="footer main-grid">
@@ -115,10 +89,6 @@
                 {# <a href="/">Learn</a> #}
                 <a href="/blog/">Blog</a>
                 <a href="/bulk-orders/">Bulk Orders</a>
-                <!-- Add this to your nav.njk -->
-                <div class="cart-indicator">
-                    <span id="cart-count" style="display: none">0</span>
-                </div>
             </nav>
 
             <!-- Social Media Icons -->
@@ -144,8 +114,8 @@
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
     <script src="https://unpkg.com/lunr/lunr.js" defer></script>
     <script src="/js/search.js" defer></script>
-    {# <script src="/js/testimonials-carousel.js"></script> #}
-    {# <script src="js/ecommerce.js" defer></script> #}
+    <script src="/js/products/product-quantity.js" defer></script>
+    {# <script src="/js/products/cart.js"></script> #}
 </body>
 
 

@@ -20,7 +20,7 @@ permalink: "songbook/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNu
 
     {# Blog Grid #}
     <!-- blog-grid.njk -->
-    <div class="blog-grid" id="blog-grid">
+    <div class="blog-grid" id="songbook-grid">
         {% for post in songbookPosts %}
             <article class="songbook-card">
                 {% if post.data.coverImage %}
@@ -35,11 +35,6 @@ permalink: "songbook/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNu
                     <h3 class="blog-card-title">
                         <a href="{{ post.url }}">{{ post.data.title }}</a>
                     </h3>
-                    {#}
-                    {% if post.data.excerpt %}
-                        <p class="blog-card-excerpt">{{ post.data.excerpt }}</p>
-                    {% endif %}
-                    #}
                     <a href="{{ post.url }}" class="read-more">Read More</a>
                 </div>
             </article>

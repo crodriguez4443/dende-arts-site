@@ -350,6 +350,10 @@
     gap: 1rem;
 }
 
+.quantity-control label {
+    font-size: 1.5rem;
+}
+
 .quantity-wrapper {
     display: flex;
     align-items: center;
@@ -408,7 +412,7 @@
 .option-group select {
     padding: 5px;
     margin-left: 10px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .option-group label {
