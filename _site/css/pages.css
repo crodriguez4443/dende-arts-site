@@ -275,6 +275,7 @@
 .product-subtext {
     margin: 0;
     padding-bottom: 1.5rem;
+    font-style:italic;
 }
 
 .description {
@@ -350,6 +351,7 @@
     gap: 1rem;
 }
 
+
 .quantity-control label {
     font-size: 1.5rem;
 }
@@ -357,15 +359,25 @@
 .quantity-wrapper {
     display: flex;
     align-items: center;
-    background-color: var(--background-variant);
+    /* background-color: var(--background-variant); */
     padding: .3rem;
     border-radius: 20px;
     overflow: hidden;
+    border: 1px solid var(--text-color);
 }
 
+.quantity-wrapper input {
+    text-align: center;
+    max-width: 75px;
+    border: none;
+    background-color: transparent; 
+    font-size: 1.3rem;
+    margin-left: .8rem;
+}
+
+
 .quantity-btn {
-    background-color: var(--title-color);
-    color: white;
+    color: var(--text-color);
     border: none;
     padding: 8px 16px;
     cursor: pointer;
@@ -374,21 +386,15 @@
     border-radius: 20px;
 }
 
-.quantity-btn:hover {
-    background-color: var(--alt-action);
-}
-
+.quantity-btn:hover,
 .quantity-btn:active {
-    background-color: var(--alt-action);
+    background-color: var(--title-color);
+    color: white;
 }
 
 #quantity {
-    background-color: var(--background-beige);
     width: 50px;
     text-align: center;
-    border: 1px solid #e5e7eb;
-    border-left: none;
-    border-right: none;
     padding: 8px;
     font-size: 1.2rem;
     -moz-appearance: textfield; /* Firefox */

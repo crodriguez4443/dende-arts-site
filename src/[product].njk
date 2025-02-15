@@ -156,6 +156,11 @@ async function addToCart(productId) {
 
         button.textContent = 'Added to Cart!';
 
+        // Update the cart count *after* adding the item
+        const cart = await swell.cart.get(); // Fetch updated cart
+        window.swellCartCount = cart?.itemQuantity || 0;
+        updateCartCount(); // Call updateCartCount in navigation
+
         setTimeout(() => {
             button.disabled = false;
             button.textContent = 'Add to Cart';

@@ -19,34 +19,38 @@ async function updateCartDisplay() {
       // Build the HTML for each cart item.
       let itemsHTML = '';
       cart.items.forEach(item => {
-        // Get the URL for the product image (if available).
-        const imageUrl = item.product.images[0]?.file?.url || '';
-        // Get the variation information. Adjust the property name as needed.
-        const variation = item.options && item.options.size ? item.options.size : 'Standard';
+        const imageUrl = item.product.images[0]?.file?.url || ''; //get product image
+        const variation = (item.options && item.options.length > 0) ? item.options[0].value : 'Standard'; // get size / variation
   
         itemsHTML += `
           <div class="cart-item">
-            <img src="${imageUrl}" alt="${item.product.name}">
-            <div class="cart-item-details">
-              <h3>${item.product.name}</h3>
-              <p>Variation: ${variation}</p>
+            <div class="flex-box">
+              <img class="cart-item-image" src="${imageUrl}" alt="${item.product.name}">
+              <div class="cart-item-details">
+                <p>Total: $${(item.price * item.quantity).toFixed(2)}</p>
+                <h3>${item.product.name}</h3>
+                <p>Size: ${variation}</p>
+                <label for="quantity-${item.id}">Quantity: ${item.quantity}</label>
+              </div>
+            </div>
+            <div class="flex-box">
               <div class="quantity-control">
-                <label for="quantity-${item.id}">Quantity:</label>
                 <div class="quantity-wrapper">
                   <button class="quantity-btn minus" type="button" data-item-id="${item.id}">-</button>
                   <input type="number" id="quantity-${item.id}" name="quantity" value="${item.quantity}" min="1" readonly>
                   <button class="quantity-btn plus" type="button" data-item-id="${item.id}">+</button>
                 </div>
               </div>
-              <button class="delete-item" data-item-id="${item.id}">Delete</button>
+              <button class="delete-item" data-item-id="${item.id}">
+                <img src="/img/trash-icon.svg" alt="Delete item from cart">
+                <span class="deleting-text">Deleting...</span>
+              </button>
             </div>
-            <p>Total: $${(item.price * item.quantity).toFixed(2)}</p>
           </div>
         `;
       });
+
       cartItemsContainer.innerHTML = itemsHTML;
-      
-      // Use the camelCase property for the sub-total.
       if (cartTotalAmount) {
         cartTotalAmount.textContent = `$${(cart.subTotal).toFixed(2)}`;
       }
@@ -98,16 +102,24 @@ async function updateCartDisplay() {
       button.addEventListener('click', async (e) => {
         e.preventDefault();
         const itemId = e.target.getAttribute('data-item-id');
-        await swell.cart.removeItem(itemId);
-        updateCartDisplay();
+        button.classList.add('deleting');
+        try {
+          await swell.cart.removeItem(itemId);
+        } catch (error) {
+          console.error("Error deleting item:", error);
+          alert("There was an error deleting the item. Please try again.");
+        } finally {
+          button.classList.remove('deleting');
+          updateCartDisplay();
+        }
       });
-    });
+    });    
   }
   
   // For example, if you want to update the cart display when the cart sidebar is opened, you could use:
   document.addEventListener('DOMContentLoaded', () => {
     // Optionally, update the cart display right away.
-    // updateCartDisplay();
+    updateCartDisplay();
   
     // If you have a cart toggle in your navigation,
     // call updateCartDisplay() whenever the sidebar is shown.
