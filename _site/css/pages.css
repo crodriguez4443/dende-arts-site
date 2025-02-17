@@ -43,7 +43,7 @@
     display: grid;
     padding-top:2.5rem;
     padding-bottom: 3rem;
-    gap: 2rem; /* Consistent spacing */
+    gap: 1.2rem;
     
     /* Desktop: 4 columns */
     grid-template-columns: repeat(4, 1fr);
@@ -305,31 +305,14 @@
     background-color: var(--action-primary);
 }
 
-.add-to-cart-button,
-.buy-now-button {
-    padding: 10px 20px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
 .add-to-cart-button {
     background-color: var(--title-color);
     color: white;
-    width: 45%;
-    font-size: 1.5rem;
-    border-radius: 20px;
-    margin-right: 1rem;
 }
 
 .buy-now-button {
     background-color: var(--action-primary);
     color: white;
-    width: 45%;
-    font-size: 1.5rem;
-    border-radius: 20px;
 }
 
 .quantity {
