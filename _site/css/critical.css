@@ -1,0 +1,71 @@
+
+/* === typography styles === */
+
+h1,h2,h3 {
+	font-family: "DM Sans", "arial";
+	font-weight: 700;
+    color: var(--title-color);
+	margin-top: 0; /* avoids added padding from flex boxes */
+	}
+
+h1 {
+    font-size: 3.25rem;
+    line-height: 4.3rem;
+}
+
+/* ============= 
+      Hero 
+=============== */
+
+.hero {
+    background-image: url("/img/homepage/hero-bg-small.webp");
+    background-position: center;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 5rem;
+}
+
+.hero > * {
+    grid-column: 2/4;
+}
+
+.nav-content {
+    grid-column: 2/4;
+}
+
+.hero-content {
+    grid-column: 2/4;
+    padding-top: 3rem;
+    padding-bottom: 4.4rem;
+}
+
+.hero-subtitle {
+    font-size: 1.375rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--title-color);
+    padding-bottom: 4.5rem;
+    /* margin-bottom: 1.5rem; */
+}
+
+@media (min-width: 725px) {
+
+    .hero {
+        background-image: url("/img/homepage/hero-bg.webp");
+        background-position: right;    
+    }
+
+    .hero-content {
+
+        grid-column: 2/4;
+        width: 70%;
+    }
+}
+
+@media (min-width: 1100px){
+
+    .hero-content {
+        grid-column: 2/4;
+        width: 60%;
+    }
+}
