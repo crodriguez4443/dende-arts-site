@@ -998,6 +998,24 @@ strong {
      Testimonial Section 
 ====================== */
 
+.home-testimonial-card {
+    padding: 1rem 1.5rem;
+}
+
+.testimonial-rating .star{
+    color: var(--alt-action);
+    font-size: 2rem;
+
+}
+
+.testimonial-author {
+    text-transform: uppercase;
+}
+
+.testimonial-relationship {
+    font-weight: 300;
+    font-size: 1rem;
+}
 
 .home-testimonials {
     background-color: var(--background-light);

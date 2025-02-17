@@ -9,7 +9,6 @@
     <link rel="preload" href="/css/critical.css" as="style">
 
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/testimonials.css">
     <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/pages.css"> 
 
@@ -31,42 +30,6 @@
     <!-- Load Flavicon -->
 
     <link rel="icon" type="img" href="/img/dende-arts-logo.png">
-
-
-    <!-- load swell.js  -->
-
-    
-    
-    <!-- swell js integration -->
-    <script>
-        window.swellCartCount = 0; // Initialize global cart count
-        window.swellInitialized = false; // Flag to track initialization
-
-        window.initializeSwell = async function() {
-            if (window.swellInitialized) {
-                console.log("Swell already initialized.");
-                return; // Don't re-initialize
-            }
-
-            try {
-                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
-                    useCamelCase: true,
-                    persist: 'localstorage',
-                    cache: false
-                });
-                console.log('Swell initialized successfully');
-                window.swellInitialized = true; // Set the flag
-
-                // Get the cart and update the global variable
-                const cart = await swell.cart.get();
-                window.swellCartCount = cart?.itemQuantity || 0;
-                console.log("Cart count after init:", window.swellCartCount);
-
-            } catch (error) {
-                console.error('Swell initialization error:', error);
-            }
-        };
-    </script>
 
 </head>
 <body onload="window.initializeSwell()">
@@ -434,11 +397,50 @@
 
     <script src="/js/nav.js" defer></script>
     <!-- script to update copyright year -->
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js"></script>
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
     <script src="https://unpkg.com/lunr/lunr.js" defer></script>
     <script src="/js/search.js" defer></script>
     <script src="/js/product-quantity.js" defer></script>
     <script src="/js/cart-display.js" defer></script>
+
+    <!-- Initialize Swell.js After a Slight Delay -->
+    <script>
+        setTimeout(() => {
+            window.initializeSwell();
+        }, 500);
+    </script>
+    
+        <!-- swell js integration -->
+    <script>
+        window.swellCartCount = 0; // Initialize global cart count
+        window.swellInitialized = false; // Flag to track initialization
+
+        window.initializeSwell = async function() {
+            if (window.swellInitialized) {
+                console.log("Swell already initialized.");
+                return; // Don't re-initialize
+            }
+
+            try {
+                await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                    useCamelCase: true,
+                    persist: 'localstorage',
+                    cache: false
+                });
+                console.log('Swell initialized successfully');
+                window.swellInitialized = true; // Set the flag
+
+                // Get the cart and update the global variable
+                const cart = await swell.cart.get();
+                window.swellCartCount = cart?.itemQuantity || 0;
+                console.log("Cart count after init:", window.swellCartCount);
+
+            } catch (error) {
+                console.error('Swell initialization error:', error);
+            }
+        };
+    </script>
 </body>
 
 
