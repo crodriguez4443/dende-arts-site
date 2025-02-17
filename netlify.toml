@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.processing]
+  skip_processing = true
+
+[build.optimization]
+  bundle = true
+  minify = true
