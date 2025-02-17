@@ -2,6 +2,7 @@
 // Cart Display and Editing
 // =====================
 
+
 async function updateCartDisplay() {
     try {
       // Fetch cart data using Swell SDK.
@@ -62,8 +63,16 @@ async function updateCartDisplay() {
       console.error('Error updating cart display:', error);
       document.getElementById('cart-items').innerHTML = '<p>Error loading cart</p>';
     }
-  }
-  
+}
+/*************  ✨ Codeium Command ⭐  *************/
+  /**
+   * Attach event listeners to the cart items for updating quantity and deleting items.
+   *
+   * Listeners are attached to the minus, plus, and delete buttons.
+   * When a button is clicked, the corresponding cart item is updated
+   * and the cart display is updated.
+   */
+/******  db4a885e-8a7f-44a1-ad43-bd1838b99c8e  *******/
   function addCartListeners() {
     // Attach listeners for the minus and plus buttons.
     const minusButtons = document.querySelectorAll('.quantity-btn.minus');
@@ -80,6 +89,11 @@ async function updateCartDisplay() {
           currentQty--;
           input.value = currentQty;
           await swell.cart.updateItem(itemId, { quantity: currentQty });
+          // Update cart count
+          const cart = await swell.cart.get();
+          window.swellCartCount = cart?.itemQuantity || 0;
+          updateCartCount();
+          
           updateCartDisplay();
         }
       });
@@ -94,6 +108,12 @@ async function updateCartDisplay() {
         currentQty++;
         input.value = currentQty;
         await swell.cart.updateItem(itemId, { quantity: currentQty });
+
+        // Update cart count
+        const cart = await swell.cart.get();
+        window.swellCartCount = cart?.itemQuantity || 0;
+        updateCartCount();
+
         updateCartDisplay();
       });
     });
@@ -105,6 +125,10 @@ async function updateCartDisplay() {
         button.classList.add('deleting');
         try {
           await swell.cart.removeItem(itemId);
+          const cart = await swell.cart.get();
+          window.swellCartCount = cart?.itemQuantity || 0;
+          updateCartCount(); //update cart count in header (globally)
+
         } catch (error) {
           console.error("Error deleting item:", error);
           alert("There was an error deleting the item. Please try again.");
@@ -115,6 +139,39 @@ async function updateCartDisplay() {
       });
     });    
   }
+
+  // Add the checkout button handler
+  document.addEventListener('DOMContentLoaded', () => {
+    updateCartDisplay();
+
+    const cartToggle = document.querySelector('.cart-toggle');
+    if (cartToggle) {
+      cartToggle.addEventListener('click', () => {
+        setTimeout(updateCartDisplay, 100);
+      });
+    }
+
+    const checkoutButton = document.getElementById('checkout-button');
+    if (checkoutButton) {
+      checkoutButton.addEventListener('click', async (e) => {
+        e.preventDefault();
+        checkoutButton.textContent = 'Processing...';
+        checkoutButton.disabled = true;
+
+        try {
+          await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulate checkout process
+          console.log('Redirecting to checkout...');
+          // window.location.href = '/checkout'; // Uncomment to redirect
+        } catch (error) {
+          console.error('Error during checkout:', error);
+          alert('There was an error during checkout. Please try again.');
+        } finally {
+          checkoutButton.textContent = 'Proceed to Checkout';
+          checkoutButton.disabled = false;
+        }
+      });
+    }
+  });
   
   // For example, if you want to update the cart display when the cart sidebar is opened, you could use:
   document.addEventListener('DOMContentLoaded', () => {

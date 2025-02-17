@@ -1304,6 +1304,10 @@ strong {
         CART
 ================== */
 
+.cart-toggle {
+    align-items: center;
+}
+
 .cart-toggle img {
     height: 30px;
     width: 30px;
@@ -1318,14 +1322,21 @@ strong {
 #cart-sidebar {
     position: fixed;
     top: 0;
-    right: -500px; /* Start off-screen */
-    width: 500px;
+    right: -100%; /* Start off-screen */
+    width: 100%;
     height: 100vh;
     background: white;
     box-shadow: -2px 0 8px rgba(0,0,0,0.1);
     transition: right 0.3s ease-in-out;
     z-index: 2000;
     padding: 20px;
+  }
+
+  @media (min-width: 725px) {
+    #cart-sidebar {
+        width: 500px;
+        right: -500px;
+    }
   }
   
   #cart-sidebar.active {
@@ -1469,6 +1480,11 @@ strong {
 
 .hide-desktop {
     display: block;
+}
+
+.flex-row {
+    display: flex;
+    gap: 0.5rem;
 }
 
 .flex-box {
