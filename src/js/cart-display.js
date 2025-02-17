@@ -64,15 +64,6 @@ async function updateCartDisplay() {
       document.getElementById('cart-items').innerHTML = '<p>Error loading cart</p>';
     }
 }
-/*************  ✨ Codeium Command ⭐  *************/
-  /**
-   * Attach event listeners to the cart items for updating quantity and deleting items.
-   *
-   * Listeners are attached to the minus, plus, and delete buttons.
-   * When a button is clicked, the corresponding cart item is updated
-   * and the cart display is updated.
-   */
-/******  db4a885e-8a7f-44a1-ad43-bd1838b99c8e  *******/
   function addCartListeners() {
     // Attach listeners for the minus and plus buttons.
     const minusButtons = document.querySelectorAll('.quantity-btn.minus');
