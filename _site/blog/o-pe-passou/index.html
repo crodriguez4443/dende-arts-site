@@ -32,7 +32,7 @@
     <link rel="icon" type="img" href="/img/dende-arts-logo.png">
 
 </head>
-<body onload="window.initializeSwell()">
+<body>
     <!-- _includes/cart-sidebar.njk -->
 <div id="cart-sidebar" class="cart-sidebar">
   <div class="cart-header flex-row">
@@ -270,7 +270,7 @@ It's capoeira Brazil</td>
 
     <script src="/js/nav.js" defer></script>
     <!-- script to update copyright year -->
-    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" async></script>
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
     <script src="https://unpkg.com/lunr/lunr.js" defer></script>
     <script src="/js/search.js" defer></script>
@@ -283,7 +283,7 @@ It's capoeira Brazil</td>
             window.initializeSwell();
         }, 500);
     </script>
-    
+
         <!-- swell js integration -->
     <script>
         window.swellCartCount = 0; // Initialize global cart count
