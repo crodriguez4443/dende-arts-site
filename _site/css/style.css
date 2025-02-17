@@ -49,7 +49,7 @@ img {
 
 @font-face {
     font-family: 'DM Sans';
-    src: url('/fonts/DMSans-Variable.woff2') format('woff2-variations');
+    src: url('/fonts/DMSans-Variable.woff2') format('woff2');
     font-weight: 100 1000;  /* This covers the entire weight range */
     font-display: swap;
 }

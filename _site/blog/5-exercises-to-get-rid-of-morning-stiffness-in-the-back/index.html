@@ -29,9 +29,9 @@
     <link rel="icon" type="img" href="/img/dende-arts-logo.png">
 
 
-    <!-- load swell.js first -->
+    <!-- load swell.js  -->
 
-    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js"></script>
     
     <!-- swell js integration -->
     <script>
@@ -63,6 +63,7 @@
             }
         };
     </script>
+
 </head>
 <body onload="window.initializeSwell()">
     <!-- _includes/cart-sidebar.njk -->
@@ -449,7 +450,7 @@
         </div>
     </footer>
 
-    <script src="/js/nav.js"></script>
+    <script src="/js/nav.js" defer></script>
     <!-- script to update copyright year -->
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
     <script src="https://unpkg.com/lunr/lunr.js" defer></script>
