@@ -288,19 +288,13 @@ Capoeira has to swing |</p>
     <script src="/js/product-quantity.js" defer></script>
     <script src="/js/cart-display.js" defer></script>
 
-    <!-- Initialize Swell.js After a Slight Delay -->
-    <script>
-        setTimeout(() => {
-            window.initializeSwell();
-        }, 1000);
-    </script>
 
         <!-- swell js integration -->
     <script>
         window.swellCartCount = 0; // Initialize global cart count
         window.swellInitialized = false; // Flag to track initialization
 
-        window.initializeSwell = async function() {
+        document.addEventListener('DOMContentLoaded', async function() {
             if (window.swellInitialized) {
                 console.log("Swell already initialized.");
                 return; // Don't re-initialize
@@ -323,8 +317,10 @@ Capoeira has to swing |</p>
             } catch (error) {
                 console.error('Swell initialization error:', error);
             }
-        };
+        });
+
     </script>
+
 </body>
 
 
