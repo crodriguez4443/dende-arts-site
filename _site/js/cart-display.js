@@ -84,7 +84,6 @@ async function updateCartDisplay() {
           const cart = await swell.cart.get();
           window.swellCartCount = cart?.itemQuantity || 0;
           updateCartCount();
-          
           updateCartDisplay();
         }
       });
@@ -165,18 +164,18 @@ async function updateCartDisplay() {
   });
   
   // For example, if you want to update the cart display when the cart sidebar is opened, you could use:
-  document.addEventListener('DOMContentLoaded', () => {
-    // Optionally, update the cart display right away.
-    updateCartDisplay();
+  // document.addEventListener('DOMContentLoaded', () => {
+  //   // Optionally, update the cart display right away.
+  //   // updateCartDisplay();
   
-    // If you have a cart toggle in your navigation,
-    // call updateCartDisplay() whenever the sidebar is shown.
-    const cartToggle = document.querySelector('.cart-toggle');
-    if (cartToggle) {
-      cartToggle.addEventListener('click', () => {
-        // Delay a bit to ensure the sidebar is visible, then update:
-        setTimeout(updateCartDisplay, 100);
-      });
-    }
-  });
+  //   // If you have a cart toggle in your navigation,
+  //   // call updateCartDisplay() whenever the sidebar is shown.
+  //   const cartToggle = document.querySelector('.cart-toggle');
+  //   if (cartToggle) {
+  //     cartToggle.addEventListener('click', () => {
+  //       // Delay a bit to ensure the sidebar is visible, then update:
+  //       setTimeout(updateCartDisplay, 100);
+  //     });
+  //   }
+  // });
   

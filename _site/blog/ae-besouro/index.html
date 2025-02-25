@@ -299,8 +299,7 @@ Magnagá Gold Cord</td>
 <source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
             <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
         </picture>
-                </a>
-                
+                </a>  
             </div>
     
             <!-- Copyright -->
@@ -312,12 +311,14 @@ Magnagá Gold Cord</td>
 
     <script src="/js/nav.js" defer></script>
     <!-- script to update copyright year -->
-    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" async></script>
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
     <script src="https://unpkg.com/lunr/lunr.js" defer></script>
     <script src="/js/search.js" defer></script>
     <script src="/js/product-quantity.js" defer></script>
     <script src="/js/cart-display.js" defer></script>
+
+    <!-- initialize swell SDK async -->
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" async></script>
 
 
     <!-- swell js integration -->
@@ -328,7 +329,7 @@ Magnagá Gold Cord</td>
         document.addEventListener('DOMContentLoaded', async function() {
             if (window.swellInitialized) {
                 console.log("Swell already initialized.");
-                return; // Don't re-initialize
+                return; 
             }
 
             try {
@@ -344,6 +345,8 @@ Magnagá Gold Cord</td>
                 const cart = await swell.cart.get();
                 window.swellCartCount = cart?.itemQuantity || 0;
                 console.log("Cart count after init:", window.swellCartCount);
+                //update cart icon count
+                updateCartCount();
 
             } catch (error) {
                 console.error('Swell initialization error:', error);
