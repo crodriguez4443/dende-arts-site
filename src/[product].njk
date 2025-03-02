@@ -122,7 +122,7 @@ layout: layout.njk
                         Add to Cart
                     </button>
                     
-                    <!-- remove buy now button 
+                    <!-- remove buy now button
                     <button id="buyNow" 
                             onclick="buyNow('{{ product.id }}')"
                             class="buy-now-button">
@@ -146,35 +146,54 @@ async function addToCart(productId) {
         options[select.name] = select.value;
     });
 
+    // Show immediate feedback
     button.disabled = true;
     button.textContent = 'Adding...';
-
+    
+    // Open cart sidebar immediately for better UX - better perceived performance
+    const cartSidebar = document.getElementById('cart-sidebar');
+    const cartOverlay = document.getElementById('cart-overlay');
+    if (cartSidebar && cartOverlay) {
+        cartSidebar.classList.add('active');
+        cartOverlay.classList.add('active');
+    }
+    
+    // Show loading state on the cart
+    const cartItems = document.getElementById('cart-items');
+    if (cartItems) {
+        cartItems.classList.add('loading');
+    }
+    
     try {
-        await swell.cart.addItem({
+        // Use optimistic UI update - immediately show a temporary item in cart
+        // This makes the cart feel more responsive while API call happens in background
+        if (window.swellCartCount === undefined) {
+            window.swellCartCount = 0;
+        }
+        window.swellCartCount += parseInt(quantity);
+        updateCartCount();
+        
+        // Use our cached cart system
+        await swell.cachedCart.addItem({
             product_id: productId,
-            quantity: quantity,
+            quantity: parseInt(quantity),
             options: options
         });
 
+        // Show success feedback
         button.textContent = 'Added to Cart!';
-
-        // Update the cart count *after* adding the item
-        const cart = await swell.cart.get(); // Fetch updated cart
-        window.swellCartCount = cart?.itemQuantity || 0;
-        updateCartCount(); // Call updateCartCount in navigation
-
-        // open cart sidebar
-        const cartSidebar = document.getElementById('cart-sidebar');
-        const cartOverlay = document.getElementById('cart-overlay');
-        if (cartSidebar && cartOverlay) {
-            cartSidebar.classList.add('active');
-            cartOverlay.classList.add('active');
+        
+        // Update the cart display with actual items
+        const updateCartDisplayFn = window.updateCartDisplay;
+        if (typeof updateCartDisplayFn === 'function') {
+            updateCartDisplayFn();
         }
-
+        
+        // Reset button after a short delay
         setTimeout(() => {
             button.disabled = false;
             button.textContent = 'Add to Cart';
-        }, 000);
+        }, 1500);
 
     } catch (error) {
         console.error('Add to cart error:', error);
@@ -182,6 +201,15 @@ async function addToCart(productId) {
         button.textContent = 'Add to Cart'; 
         alert('Error adding to cart: ' + error.message);
         
+        // Remove loading state
+        if (cartItems) {
+            cartItems.classList.remove('loading');
+        }
+        
+        // Update cart count based on actual value
+        const cart = await swell.cachedCart.get();
+        window.swellCartCount = cart?.itemQuantity || 0;
+        updateCartCount();
     }
 }
 

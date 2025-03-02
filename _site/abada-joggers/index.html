@@ -292,7 +292,7 @@
                         Add to Cart
                     </button>
                     
-                    <!-- remove buy now button 
+                    <!-- remove buy now button
                     <button id="buyNow" 
                             onclick="buyNow('6796e8f527aea3001290a682')"
                             class="buy-now-button">
@@ -316,35 +316,54 @@ async function addToCart(productId) {
         options[select.name] = select.value;
     });
 
+    // Show immediate feedback
     button.disabled = true;
     button.textContent = 'Adding...';
-
+    
+    // Open cart sidebar immediately for better UX - better perceived performance
+    const cartSidebar = document.getElementById('cart-sidebar');
+    const cartOverlay = document.getElementById('cart-overlay');
+    if (cartSidebar && cartOverlay) {
+        cartSidebar.classList.add('active');
+        cartOverlay.classList.add('active');
+    }
+    
+    // Show loading state on the cart
+    const cartItems = document.getElementById('cart-items');
+    if (cartItems) {
+        cartItems.classList.add('loading');
+    }
+    
     try {
-        await swell.cart.addItem({
+        // Use optimistic UI update - immediately show a temporary item in cart
+        // This makes the cart feel more responsive while API call happens in background
+        if (window.swellCartCount === undefined) {
+            window.swellCartCount = 0;
+        }
+        window.swellCartCount += parseInt(quantity);
+        updateCartCount();
+        
+        // Use our cached cart system
+        await swell.cachedCart.addItem({
             product_id: productId,
-            quantity: quantity,
+            quantity: parseInt(quantity),
             options: options
         });
 
+        // Show success feedback
         button.textContent = 'Added to Cart!';
-
-        // Update the cart count *after* adding the item
-        const cart = await swell.cart.get(); // Fetch updated cart
-        window.swellCartCount = cart?.itemQuantity || 0;
-        updateCartCount(); // Call updateCartCount in navigation
-
-        // open cart sidebar
-        const cartSidebar = document.getElementById('cart-sidebar');
-        const cartOverlay = document.getElementById('cart-overlay');
-        if (cartSidebar && cartOverlay) {
-            cartSidebar.classList.add('active');
-            cartOverlay.classList.add('active');
+        
+        // Update the cart display with actual items
+        const updateCartDisplayFn = window.updateCartDisplay;
+        if (typeof updateCartDisplayFn === 'function') {
+            updateCartDisplayFn();
         }
-
+        
+        // Reset button after a short delay
         setTimeout(() => {
             button.disabled = false;
             button.textContent = 'Add to Cart';
-        }, 000);
+        }, 1500);
 
     } catch (error) {
         console.error('Add to cart error:', error);
@@ -352,6 +371,15 @@ async function addToCart(productId) {
         button.textContent = 'Add to Cart'; 
         alert('Error adding to cart: ' + error.message);
         
+        // Remove loading state
+        if (cartItems) {
+            cartItems.classList.remove('loading');
+        }
+        
+        // Update cart count based on actual value
+        const cart = await swell.cachedCart.get();
+        window.swellCartCount = cart?.itemQuantity || 0;
+        updateCartCount();
     }
 }
 
@@ -479,44 +507,121 @@ document.addEventListener('DOMContentLoaded', () => {
     <script src="https://unpkg.com/lunr/lunr.js" defer></script>
     <script src="/js/search.js" defer></script>
     <script src="/js/product-quantity.js" defer></script>
+    
+    <!-- Add our new cart utils -->
+    <script src="/js/cart-utils.js" defer></script>
     <script src="/js/cart-display.js" defer></script>
 
-    <!-- initialize swell SDK async -->
-    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" async></script>
+    <!-- Load Swell SDK with defer to not block rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
 
-
-    <!-- swell js integration -->
-    <script>
+    <!-- Initialize Swell after page loads -->
+    <script defer>
         window.swellCartCount = 0; // Initialize global cart count
         window.swellInitialized = false; // Flag to track initialization
 
-        document.addEventListener('DOMContentLoaded', async function() {
+        // Wait for window load to ensure this runs after all critical rendering
+        window.addEventListener('load', async function() {
             if (window.swellInitialized) {
                 console.log("Swell already initialized.");
                 return; 
             }
 
             try {
+                // Initialize with improved options
                 await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
                     useCamelCase: true,
                     persist: 'localstorage',
-                    cache: false
+                    cache: true,           // Enable caching
+                    timeout: 5000          // Reasonable timeout
                 });
                 console.log('Swell initialized successfully');
-                window.swellInitialized = true; // Set the flag
-
+                window.swellInitialized = true;
+                
+                // Set up the cached cart system after Swell is initialized
+                setupCachedCart();
+                
                 // Get the cart and update the global variable
-                const cart = await swell.cart.get();
+                const cart = await swell.cachedCart.get();
                 window.swellCartCount = cart?.itemQuantity || 0;
-                console.log("Cart count after init:", window.swellCartCount);
-                //update cart icon count
                 updateCartCount();
-
             } catch (error) {
                 console.error('Swell initialization error:', error);
             }
         });
-
+        
+        // Setup the cached cart system
+        function setupCachedCart() {
+            swell.cachedCart = {
+                data: null,
+                lastFetched: 0,
+                ttl: 60000, // 1 minute TTL
+                
+                async get() {
+                    const now = Date.now();
+                    if (!this.data || now - this.lastFetched > this.ttl) {
+                        this.data = await swell.cart.get();
+                        this.lastFetched = now;
+                    }
+                    return this.data;
+                },
+                
+                async updateItem(id, data) {
+                    // Try to update local cache optimistically
+                    if (this.data && this.data.items) {
+                        const itemIndex = this.data.items.findIndex(item => item.id === id);
+                        if (itemIndex >= 0) {
+                            // Apply the update to our local cache
+                            const updatedItem = { ...this.data.items[itemIndex], ...data };
+                            this.data.items[itemIndex] = updatedItem;
+                            
+                            // Recalculate totals if quantity changed
+                            if (data.quantity) {
+                                let itemQuantity = 0;
+                                this.data.items.forEach(item => {
+                                    itemQuantity += item.quantity;
+                                });
+                                this.data.itemQuantity = itemQuantity;
+                            }
+                        }
+                    }
+                    
+                    // Perform the actual API call
+                    const result = await swell.cart.updateItem(id, data);
+                    this.data = result;
+                    this.lastFetched = Date.now();
+                    return result;
+                },
+                
+                async removeItem(id) {
+                    // Try to update local cache optimistically
+                    if (this.data && this.data.items) {
+                        const itemIndex = this.data.items.findIndex(item => item.id === id);
+                        if (itemIndex >= 0) {
+                            // Remove the item from our local array
+                            const removedItem = this.data.items[itemIndex];
+                            this.data.items.splice(itemIndex, 1);
+                            
+                            // Update the item count
+                            this.data.itemQuantity -= removedItem.quantity;
+                        }
+                    }
+                    
+                    // Perform the actual API call
+                    const result = await swell.cart.removeItem(id);
+                    this.data = result;
+                    this.lastFetched = Date.now();
+                    return result;
+                },
+                
+                async addItem(data) {
+                    const result = await swell.cart.addItem(data);
+                    this.data = result;
+                    this.lastFetched = Date.now();
+                    return result;
+                }
+            };
+        }
     </script>
     
 </body>

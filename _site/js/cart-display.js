@@ -4,16 +4,25 @@
 
 
 async function updateCartDisplay() {
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cartTotalAmount = document.getElementById('cart-total-amount');
+    
     try {
-      // Fetch cart data using Swell SDK.
-      const cart = await swell.cart.get();
-      const cartItemsContainer = document.getElementById('cart-items');
-      const cartTotalAmount = document.getElementById('cart-total-amount');
+      // Show loading state
+      if (cartItemsContainer) {
+        cartItemsContainer.classList.add('loading');
+      }
+      
+      // Use the cached cart system to reduce API calls
+      const cart = await swell.cachedCart.get();
   
       // If there is no cart or no items, display an "empty" message.
       if (!cart || !cart.items || cart.items.length === 0) {
         cartItemsContainer.innerHTML = '<p>Your cart is empty</p>';
-        cartTotalAmount.textContent = '$0.00';
+        if (cartTotalAmount) {
+          cartTotalAmount.textContent = '$0.00';
+        }
+        cartItemsContainer.classList.remove('loading');
         return;
       }
   
@@ -24,7 +33,7 @@ async function updateCartDisplay() {
         const variation = (item.options && item.options.length > 0) ? item.options[0].value : 'Standard'; // get size / variation
   
         itemsHTML += `
-          <div class="cart-item">
+          <div class="cart-item" data-item-id="${item.id}">
             <div class="flex-box">
               <img class="cart-item-image" src="${imageUrl}" alt="${item.product.name}">
               <div class="cart-item-details">
@@ -61,7 +70,14 @@ async function updateCartDisplay() {
       
     } catch (error) {
       console.error('Error updating cart display:', error);
-      document.getElementById('cart-items').innerHTML = '<p>Error loading cart</p>';
+      if (cartItemsContainer) {
+        cartItemsContainer.innerHTML = '<p>Error loading cart</p>';
+      }
+    } finally {
+      // Always remove loading state when done
+      if (cartItemsContainer) {
+        cartItemsContainer.classList.remove('loading');
+      }
     }
 }
   function addCartListeners() {
@@ -78,13 +94,35 @@ async function updateCartDisplay() {
         let currentQty = parseInt(input.value);
         if (currentQty > 1) {
           currentQty--;
+          
+          // Optimistic UI update - update UI before API call completes
           input.value = currentQty;
-          await swell.cart.updateItem(itemId, { quantity: currentQty });
-          // Update cart count
-          const cart = await swell.cart.get();
-          window.swellCartCount = cart?.itemQuantity || 0;
-          updateCartCount();
-          updateCartDisplay();
+          
+          // Update the price display optimistically
+          const cartItem = document.querySelector(`.cart-item[data-item-id="${itemId}"]`);
+          if (cartItem) {
+            const priceElement = cartItem.querySelector('.cart-item-details p:first-child');
+            const cart = await swell.cachedCart.get();
+            const item = cart.items.find(item => item.id === itemId);
+            if (item && priceElement) {
+              priceElement.textContent = `Total: $${(item.price * currentQty).toFixed(2)}`;
+            }
+          }
+          
+          try {
+            // Use the cached cart update method
+            await swell.cachedCart.updateItem(itemId, { quantity: currentQty });
+            
+            // Update cart count using cached data
+            const updatedCart = await swell.cachedCart.get();
+            window.swellCartCount = updatedCart?.itemQuantity || 0;
+            updateCartCount();
+          } catch (error) {
+            console.error('Error updating quantity:', error);
+            // Revert the optimistic update on error
+            input.value = currentQty + 1;
+            updateCartDisplay();
+          }
         }
       });
     });
@@ -96,35 +134,80 @@ async function updateCartDisplay() {
         const input = document.getElementById(`quantity-${itemId}`);
         let currentQty = parseInt(input.value);
         currentQty++;
+        
+        // Optimistic UI update
         input.value = currentQty;
-        await swell.cart.updateItem(itemId, { quantity: currentQty });
-
-        // Update cart count
-        const cart = await swell.cart.get();
-        window.swellCartCount = cart?.itemQuantity || 0;
-        updateCartCount();
-
-        updateCartDisplay();
+        
+        // Update the price display optimistically
+        const cartItem = document.querySelector(`.cart-item[data-item-id="${itemId}"]`);
+        if (cartItem) {
+          const priceElement = cartItem.querySelector('.cart-item-details p:first-child');
+          const cart = await swell.cachedCart.get();
+          const item = cart.items.find(item => item.id === itemId);
+          if (item && priceElement) {
+            priceElement.textContent = `Total: $${(item.price * currentQty).toFixed(2)}`;
+          }
+        }
+        
+        try {
+          // Use the cached cart update method
+          await swell.cachedCart.updateItem(itemId, { quantity: currentQty });
+          
+          // Update cart count using cached data
+          const updatedCart = await swell.cachedCart.get();
+          window.swellCartCount = updatedCart?.itemQuantity || 0;
+          updateCartCount();
+        } catch (error) {
+          console.error('Error updating quantity:', error);
+          // Revert the optimistic update on error
+          input.value = currentQty - 1;
+          updateCartDisplay();
+        }
       });
     });
   
     deleteButtons.forEach(button => {
       button.addEventListener('click', async (e) => {
         e.preventDefault();
-        const itemId = e.target.getAttribute('data-item-id');
+        const itemId = button.getAttribute('data-item-id');
+        
+        // Optimistic UI update - hide the item immediately
+        const cartItem = button.closest('.cart-item');
+        if (cartItem) {
+          cartItem.style.opacity = '0.5';
+          cartItem.style.pointerEvents = 'none';
+        }
+        
         button.classList.add('deleting');
+        
         try {
-          await swell.cart.removeItem(itemId);
-          const cart = await swell.cart.get();
-          window.swellCartCount = cart?.itemQuantity || 0;
-          updateCartCount(); //update cart count in header (globally)
-
+          // Use the cached cart remove method that we'll add to the cart cache layer
+          await swell.cachedCart.removeItem(itemId);
+          
+          // Update cart count using cached data
+          const updatedCart = await swell.cachedCart.get();
+          window.swellCartCount = updatedCart?.itemQuantity || 0;
+          updateCartCount();
+          
+          // Remove the item from DOM completely
+          if (cartItem) {
+            cartItem.remove();
+          }
+          
+          // If cart is empty after this removal, update the display
+          if (updatedCart.items.length === 0) {
+            updateCartDisplay();
+          }
+          
         } catch (error) {
           console.error("Error deleting item:", error);
-          alert("There was an error deleting the item. Please try again.");
-        } finally {
+          // Restore the item on error
+          if (cartItem) {
+            cartItem.style.opacity = '1';
+            cartItem.style.pointerEvents = 'auto';
+          }
           button.classList.remove('deleting');
-          updateCartDisplay();
+          alert("There was an error deleting the item. Please try again.");
         }
       });
     });    
@@ -163,19 +246,4 @@ async function updateCartDisplay() {
     }
   });
   
-  // For example, if you want to update the cart display when the cart sidebar is opened, you could use:
-  // document.addEventListener('DOMContentLoaded', () => {
-  //   // Optionally, update the cart display right away.
-  //   // updateCartDisplay();
-  
-  //   // If you have a cart toggle in your navigation,
-  //   // call updateCartDisplay() whenever the sidebar is shown.
-  //   const cartToggle = document.querySelector('.cart-toggle');
-  //   if (cartToggle) {
-  //     cartToggle.addEventListener('click', () => {
-  //       // Delay a bit to ensure the sidebar is visible, then update:
-  //       setTimeout(updateCartDisplay, 100);
-  //     });
-  //   }
-  // });
-  
+  window.updateCartDisplay = updateCartDisplay;
