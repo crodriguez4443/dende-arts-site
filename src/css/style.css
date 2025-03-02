@@ -635,7 +635,7 @@ strong {
     font-size: 1.375rem;
     font-weight: 500;
     line-height: 2rem;
-    color: var(--title-color);
+    color: var(--text-color);
     padding-bottom: 4.5rem;
     /* margin-bottom: 1.5rem; */
 }
@@ -924,7 +924,7 @@ strong {
 }
 
 .home-about-content {
-    color: var(--title-color);
+    color: var(--text-color);
 }
 
 .home-about-calado-name {
