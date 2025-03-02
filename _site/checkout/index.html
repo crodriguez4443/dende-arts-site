@@ -168,11 +168,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         window.swellCartCount = 0; // Initialize global cart count
         window.swellInitialized = false; // Flag to track initialization
 
-        // Wait for window load to ensure this runs after all critical rendering
-        window.addEventListener('load', async function() {
+        // Define the function for global access
+        window.initializeSwell = async function() {
             if (window.swellInitialized) {
-                console.log("Swell already initialized.");
-                return; 
+                console.log("Swell already initialized");
+                return swell; 
             }
 
             try {
@@ -193,9 +193,17 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const cart = await swell.cachedCart.get();
                 window.swellCartCount = cart?.itemQuantity || 0;
                 updateCartCount();
+                
+                return swell;
             } catch (error) {
                 console.error('Swell initialization error:', error);
+                return null;
             }
+        };
+        
+        // Wait for window load to ensure this runs after all critical rendering
+        window.addEventListener('load', function() {
+            window.initializeSwell();
         });
         
         // Setup the cached cart system

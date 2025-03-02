@@ -71,7 +71,7 @@ async function updateCartDisplay() {
     } catch (error) {
       console.error('Error updating cart display:', error);
       if (cartItemsContainer) {
-        cartItemsContainer.innerHTML = '<p>Error loading cart</p>';
+        cartItemsContainer.innerHTML = '<p>...Loading cart</p>';
       }
     } finally {
       // Always remove loading state when done
@@ -98,14 +98,28 @@ async function updateCartDisplay() {
           // Optimistic UI update - update UI before API call completes
           input.value = currentQty;
           
-          // Update the price display optimistically
+          // Update the price display and quantity label optimistically
           const cartItem = document.querySelector(`.cart-item[data-item-id="${itemId}"]`);
           if (cartItem) {
             const priceElement = cartItem.querySelector('.cart-item-details p:first-child');
+            const quantityLabel = cartItem.querySelector(`.cart-item-details label[for="quantity-${itemId}"]`);
             const cart = await swell.cachedCart.get();
             const item = cart.items.find(item => item.id === itemId);
             if (item && priceElement) {
               priceElement.textContent = `Total: $${(item.price * currentQty).toFixed(2)}`;
+            }
+            if (quantityLabel) {
+              quantityLabel.textContent = `Quantity: ${currentQty}`;
+            }
+            
+            // Update the grand total optimistically
+            const cartTotalAmount = document.getElementById('cart-total-amount');
+            if (cartTotalAmount && cart) {
+              // Calculate the new subtotal by subtracting the original item total and adding the new item total
+              const originalItemTotal = item.price * (currentQty + 1); // Original quantity before decrease
+              const newItemTotal = item.price * currentQty;
+              const newSubtotal = cart.subTotal - (originalItemTotal - newItemTotal);
+              cartTotalAmount.textContent = `$${newSubtotal.toFixed(2)}`;
             }
           }
           
@@ -138,14 +152,28 @@ async function updateCartDisplay() {
         // Optimistic UI update
         input.value = currentQty;
         
-        // Update the price display optimistically
+        // Update the price display and quantity label optimistically
         const cartItem = document.querySelector(`.cart-item[data-item-id="${itemId}"]`);
         if (cartItem) {
           const priceElement = cartItem.querySelector('.cart-item-details p:first-child');
+          const quantityLabel = cartItem.querySelector(`.cart-item-details label[for="quantity-${itemId}"]`);
           const cart = await swell.cachedCart.get();
           const item = cart.items.find(item => item.id === itemId);
           if (item && priceElement) {
             priceElement.textContent = `Total: $${(item.price * currentQty).toFixed(2)}`;
+          }
+          if (quantityLabel) {
+            quantityLabel.textContent = `Quantity: ${currentQty}`;
+          }
+          
+          // Update the grand total optimistically
+          const cartTotalAmount = document.getElementById('cart-total-amount');
+          if (cartTotalAmount && cart) {
+            // Calculate the new subtotal by subtracting the original item total and adding the new item total
+            const originalItemTotal = item.price * (currentQty - 1); // Original quantity before increase
+            const newItemTotal = item.price * currentQty;
+            const newSubtotal = cart.subTotal - (originalItemTotal - newItemTotal);
+            cartTotalAmount.textContent = `$${newSubtotal.toFixed(2)}`;
           }
         }
         

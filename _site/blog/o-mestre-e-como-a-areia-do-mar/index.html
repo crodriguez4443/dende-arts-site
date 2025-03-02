@@ -54,69 +54,51 @@
         
 <div class="main-grid">
     <div class="nav-content">
-            <!-- use shortcode for these image -->
-            <div class="logo-link-container">
-                <a href="/">
-                    <picture class="logo-link">
+    <!-- use shortcode for these image -->
+    <div class="logo-link-container">
+        <a href="/">
+            <picture class="logo-link">
             <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
 <source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
 <source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
             <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
         </picture>
-                    <picture class="logo-link-lg">
+            <picture class="logo-link-lg">
             <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
 <source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
 <source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
             <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
         </picture>
+        </a>
+    </div>
+    <!-- use shortcode for these image -->
+    <div class="nav-container">
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="overlay"></div>
+        <nav class="nav-menu">
+            <a href="/">Home</a>
+            
+            <a href="/abada-joggers-landing/">Abadas</a>
+            <a href="/songbook/">Songs</a>
+            
+            <a href="/blog/">Blog</a>
+            <a href="/bulk-orders/">Bulk Orders</a>
+            <div class="flex-box">
+                <a href="#" class="cart-toggle flex-row" onclick="return false;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                    </svg>
+                    (<span class="cart-count">0</span>)
                 </a>
-            </div>
-            <!-- use shortcode for these image -->
-            <div class="nav-container">
-                <button class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="overlay"></div>
-                <nav class="nav-menu">
-                    <a href="/">Home</a>
-                    
-                    <a href="/abada-joggers-landing/">Abadas</a>
-                    <a href="/songbook/">Songs</a>
-                    
-                    <a href="/blog/">Blog</a>
-                    <a href="/bulk-orders/">Bulk Orders</a>
-                    <div class="flex-box">
-                      <a href="#" class="cart-toggle flex-row" onclick="return false;">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
-                          </svg>
-                          (<span id="cart-count">0</span>)
-                      </a>
-                    </div>  
-                </nav>
-            </div>
-        </div>
+            </div>  
+        </nav>
+    </div>
+</div>
 
-
-
-<!-- Inline script to update the cart count -->
-<script>
-  // Function to update the cart count in the nav bar
-  function updateCartCount() {
-    const cartCountElement = document.getElementById('cart-count');
-    if (cartCountElement) {
-      cartCountElement.innerText = window.swellCartCount;
-    }
-  }
-
-  // Once Swell is initialized, update the cart count in the nav
-  window.initializeSwell().then(() => {
-    updateCartCount();
-    updateCartDisplay();
-  });
-</script>
     <div class="blog-post-container blog-post-grid">
         <article class="blog-post">
             
@@ -307,11 +289,11 @@ The wave crashes and the sand stays in place</td>
         window.swellCartCount = 0; // Initialize global cart count
         window.swellInitialized = false; // Flag to track initialization
 
-        // Wait for window load to ensure this runs after all critical rendering
-        window.addEventListener('load', async function() {
+        // Define the function for global access
+        window.initializeSwell = async function() {
             if (window.swellInitialized) {
-                console.log("Swell already initialized.");
-                return; 
+                console.log("Swell already initialized");
+                return swell; 
             }
 
             try {
@@ -332,9 +314,17 @@ The wave crashes and the sand stays in place</td>
                 const cart = await swell.cachedCart.get();
                 window.swellCartCount = cart?.itemQuantity || 0;
                 updateCartCount();
+                
+                return swell;
             } catch (error) {
                 console.error('Swell initialization error:', error);
+                return null;
             }
+        };
+        
+        // Wait for window load to ensure this runs after all critical rendering
+        window.addEventListener('load', function() {
+            window.initializeSwell();
         });
         
         // Setup the cached cart system
