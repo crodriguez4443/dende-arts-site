@@ -123,7 +123,7 @@
             
                 
                       
-                        <img src="https://cdn.swell.store/dendearts/67c46e9bba78b10012c1a9ed/332457b5fed18f5179c3be524d5c17a6/8.png" 
+                        <img src="https://cdn.swell.store/dendearts/67c47956b788af0012696e18/332457b5fed18f5179c3be524d5c17a6/8.png" 
                             alt="Abada Joggers - Featured Image 1"
                             class="thumbnail-image active"
                             loading="lazy"
@@ -134,7 +134,7 @@
                     
                 
                       
-                        <img src="https://cdn.swell.store/dendearts/67c46e9bba78b10012c1a9ed/332457b5fed18f5179c3be524d5c17a6/8.png" 
+                        <img src="https://cdn.swell.store/dendearts/67c4795e84e7ab0012bbef38/7a0683f8ef1330f44ee2120706b5ecee/Lena%20model.png" 
                             alt="Abada Joggers - Additional Image 2"
                             class="thumbnail-image "
                             loading="lazy"
@@ -145,7 +145,7 @@
                     
                 
                       
-                        <img src="https://cdn.swell.store/dendearts/67c4706b55fb29001259dc0c/7a0683f8ef1330f44ee2120706b5ecee/Lena%20model.png" 
+                        <img src="https://cdn.swell.store/dendearts/67c47964dbb06a00121f50c2/3ee4e2be3f870a887b7569248b4bfa27/10.png" 
                             alt="Abada Joggers - Additional Image 3"
                             class="thumbnail-image "
                             loading="lazy"
@@ -156,7 +156,7 @@
                     
                 
                       
-                        <img src="https://cdn.swell.store/dendearts/67c46e5422a8aa001217c22c/3ee4e2be3f870a887b7569248b4bfa27/10.png" 
+                        <img src="https://cdn.swell.store/dendearts/67977eafff0ff4001200d6c9/9937040028c24e9ac58805e9cd6e3b71/8.png" 
                             alt="Abada Joggers - Additional Image 4"
                             class="thumbnail-image "
                             loading="lazy"
@@ -168,19 +168,13 @@
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
             
         </div>
 
         <!-- Primary image container -->
         <div class="left-half-img-container product-feature-image">
             
-                <img src="https://cdn.swell.store/dendearts/67c46e9bba78b10012c1a9ed/332457b5fed18f5179c3be524d5c17a6/8.png" 
+                <img src="https://cdn.swell.store/dendearts/67c47956b788af0012696e18/332457b5fed18f5179c3be524d5c17a6/8.png" 
                     alt="Abada Joggers"
                     class="main-product-image"
                     id="mainImage"
@@ -297,12 +291,14 @@
                             class="add-to-cart-button">
                         Add to Cart
                     </button>
-
+                    
+                    <!-- remove buy now button 
                     <button id="buyNow" 
                             onclick="buyNow('6796e8f527aea3001290a682')"
                             class="buy-now-button">
                         Checkout
                     </button>
+                    -->
                 </div>
             
         </div>
@@ -337,10 +333,18 @@ async function addToCart(productId) {
         window.swellCartCount = cart?.itemQuantity || 0;
         updateCartCount(); // Call updateCartCount in navigation
 
+        // open cart sidebar
+        const cartSidebar = document.getElementById('cart-sidebar');
+        const cartOverlay = document.getElementById('cart-overlay');
+        if (cartSidebar && cartOverlay) {
+            cartSidebar.classList.add('active');
+            cartOverlay.classList.add('active');
+        }
+
         setTimeout(() => {
             button.disabled = false;
             button.textContent = 'Add to Cart';
-        }, 2000);
+        }, 000);
 
     } catch (error) {
         console.error('Add to cart error:', error);
@@ -354,57 +358,10 @@ async function addToCart(productId) {
 
 // Buy Now --> actually check out button now
 
-async function buyNow(productId) {
-    const button = document.getElementById('buyNow');
-    button.disabled = true;
-    button.textContent = 'Processing...';
 
-    try {
-        // Get current cart state
-        const currentCart = await swell.cart.get();
-        
-        // Detailed cart logging
-        console.log('Full cart object:', currentCart);
-        console.log('Cart ID:', currentCart?.id);
-        console.log('Cart currency:', currentCart?.currency);
-        console.log('Checkout ID:', currentCart?.checkout_id);
-        console.log('Items in cart:', currentCart?.items?.length || 0);
-        console.log('Checkout URL:', currentCart?.checkoutUrl);
-
-        // Check if cart is empty
-        if (!currentCart?.items || currentCart.items.length === 0) {
-            button.disabled = false;
-            button.textContent = 'Buy Now';
-            alert('Your cart is empty. Please add items before checkout.');
-            return;
-        }
-
-        // Double check we have a checkout URL
-        if (!currentCart?.checkoutUrl) {
-            // Try to construct the checkout URL if we have a checkout_id
-            if (currentCart?.checkout_id) {
-                const checkoutUrl = `https://dendearts.swell.store/checkout/${currentCart.checkout_id}`;
-                console.log('Constructed checkout URL:', checkoutUrl);
-                window.location.href = checkoutUrl;
-                return;
-            }
-            throw new Error('Unable to generate checkout URL');
-        }
-
-        // If we have a direct checkoutUrl, use it
-        console.log('Redirecting to checkout:', currentCart.checkoutUrl);
-        window.location.href = currentCart.checkoutUrl;
-
-    } catch (error) {
-        console.error('Buy now error:', error);
-        button.disabled = false;
-        button.textContent = 'Buy Now';
-        alert('Error processing checkout: ' + error.message);
-    }
-}
 
     // Store all product images data
-const productImages = JSON.parse('[{"id":"67977f16d47a330012afab26","file":{"height":1080,"md5":"332457b5fed18f5179c3be524d5c17a6","url":"https://cdn.swell.store/dendearts/67c46e9bba78b10012c1a9ed/332457b5fed18f5179c3be524d5c17a6/8.png","width":1080}},{"id":"67977f16d47a330012afab27","file":{"height":1080,"md5":"332457b5fed18f5179c3be524d5c17a6","url":"https://cdn.swell.store/dendearts/67c46e9bba78b10012c1a9ed/332457b5fed18f5179c3be524d5c17a6/8.png","width":1080}},{"id":"67977f16d47a330012afab27","file":{"height":1080,"md5":"7a0683f8ef1330f44ee2120706b5ecee","url":"https://cdn.swell.store/dendearts/67c4706b55fb29001259dc0c/7a0683f8ef1330f44ee2120706b5ecee/Lena%20model.png","width":1080}},{"id":"67977f16d47a330012afab27","file":{"height":1080,"md5":"3ee4e2be3f870a887b7569248b4bfa27","url":"https://cdn.swell.store/dendearts/67c46e5422a8aa001217c22c/3ee4e2be3f870a887b7569248b4bfa27/10.png","width":1080}},{"id":"67977f16d47a330012afab27","file":{"height":1080,"md5":"9937040028c24e9ac58805e9cd6e3b71","url":"https://cdn.swell.store/dendearts/67977eafff0ff4001200d6c9/9937040028c24e9ac58805e9cd6e3b71/8.png","width":1080}},{"id":"67c46a18b68e7f00124df40b","file":{"height":768,"md5":"6407db69ca698a8cb2af207bc7980c8f","url":"https://cdn.swell.store/dendearts/67c4699422a8aa001217bb1b/6407db69ca698a8cb2af207bc7980c8f/Abada-jogger-sizing-chart.png","width":2304}},{"id":"67c46a18b68e7f00124df40b","file":{"height":768,"md5":"6407db69ca698a8cb2af207bc7980c8f","url":"https://cdn.swell.store/dendearts/67c4699422a8aa001217bb1b/6407db69ca698a8cb2af207bc7980c8f/Abada-jogger-sizing-chart.png","width":2304}},{"id":"67c46e67e734aa001150c0ae","file":{"height":768,"md5":"6407db69ca698a8cb2af207bc7980c8f","url":"https://cdn.swell.store/dendearts/67c4699422a8aa001217bb1b/6407db69ca698a8cb2af207bc7980c8f/Abada-jogger-sizing-chart.png","width":2304}}]');
+const productImages = JSON.parse('[{"id":"67977f16d47a330012afab26","file":{"height":1080,"md5":"332457b5fed18f5179c3be524d5c17a6","url":"https://cdn.swell.store/dendearts/67c47956b788af0012696e18/332457b5fed18f5179c3be524d5c17a6/8.png","width":1080}},{"id":"67977f16d47a330012afab27","file":{"height":1080,"md5":"7a0683f8ef1330f44ee2120706b5ecee","url":"https://cdn.swell.store/dendearts/67c4795e84e7ab0012bbef38/7a0683f8ef1330f44ee2120706b5ecee/Lena%20model.png","width":1080}},{"id":"67977f16d47a330012afab27","file":{"height":1080,"md5":"3ee4e2be3f870a887b7569248b4bfa27","url":"https://cdn.swell.store/dendearts/67c47964dbb06a00121f50c2/3ee4e2be3f870a887b7569248b4bfa27/10.png","width":1080}},{"id":"67977f16d47a330012afab27","file":{"height":1080,"md5":"9937040028c24e9ac58805e9cd6e3b71","url":"https://cdn.swell.store/dendearts/67977eafff0ff4001200d6c9/9937040028c24e9ac58805e9cd6e3b71/8.png","width":1080}},{"id":"67c46a18b68e7f00124df40b","file":{"height":768,"md5":"6407db69ca698a8cb2af207bc7980c8f","url":"https://cdn.swell.store/dendearts/67c4699422a8aa001217bb1b/6407db69ca698a8cb2af207bc7980c8f/Abada-jogger-sizing-chart.png","width":2304}}]');
 
 function swapImages(thumbnailElement) {
     const mainImage = document.getElementById('mainImage');

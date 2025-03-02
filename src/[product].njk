@@ -121,12 +121,14 @@ layout: layout.njk
                             class="add-to-cart-button">
                         Add to Cart
                     </button>
-
+                    
+                    <!-- remove buy now button 
                     <button id="buyNow" 
                             onclick="buyNow('{{ product.id }}')"
                             class="buy-now-button">
                         Checkout
                     </button>
+                    -->
                 </div>
             {% endif %}
         </div>
@@ -161,10 +163,18 @@ async function addToCart(productId) {
         window.swellCartCount = cart?.itemQuantity || 0;
         updateCartCount(); // Call updateCartCount in navigation
 
+        // open cart sidebar
+        const cartSidebar = document.getElementById('cart-sidebar');
+        const cartOverlay = document.getElementById('cart-overlay');
+        if (cartSidebar && cartOverlay) {
+            cartSidebar.classList.add('active');
+            cartOverlay.classList.add('active');
+        }
+
         setTimeout(() => {
             button.disabled = false;
             button.textContent = 'Add to Cart';
-        }, 2000);
+        }, 000);
 
     } catch (error) {
         console.error('Add to cart error:', error);
@@ -178,7 +188,7 @@ async function addToCart(productId) {
 
 // Buy Now --> actually check out button now
 
-async function buyNow(productId) {
+{# async function buyNow(productId) {
     const button = document.getElementById('buyNow');
     button.disabled = true;
     button.textContent = 'Processing...';
@@ -225,7 +235,7 @@ async function buyNow(productId) {
         button.textContent = 'Buy Now';
         alert('Error processing checkout: ' + error.message);
     }
-}
+} #}
 
     // Store all product images data
 const productImages = JSON.parse('{{ product.images | dump | safe }}');
