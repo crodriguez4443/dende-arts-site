@@ -6,7 +6,7 @@
 
 :root {
     --title-color: #4f646f;
-    --action-primary: #67BAC8;
+    --action-primary: #0F8095;
     --alt-action: #FFB92D;
     --text-color: #434343;
     --text-form: #b4b4b4;
@@ -165,8 +165,8 @@ button:hover {
 }
 
 .btn-light {
-    border: 2px solid white;
-    color: white;
+    border: 2px solid var(--action-primary);
+    color: var(--action-primary);
 }
 
 .btn-blue {
@@ -183,7 +183,7 @@ button:hover {
     content: '»';
     position: absolute;
     opacity: 0;  
-    top: 14%;
+    top: 10%;
     right: 60px;
     transition: 0.5s;
     color: white;
@@ -405,6 +405,10 @@ strong {
     object-fit: contain;
 }
 
+.logo-link img {
+    margin-top: 1rem;
+}
+
 .logo-link {
     display: inline-block;
     width: 64px;
@@ -463,8 +467,8 @@ strong {
     align-items: center;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.5s ease;
     z-index: 1;
+    gap: 2rem;
   }
 
   .nav-menu a {
@@ -547,7 +551,8 @@ strong {
       height: auto;
       flex-direction: row;
       background: none;
-      gap: 3rem;
+      gap: 2.5rem;
+      transform: ease-in-out 1s;
     }
 
     .nav-menu a {
@@ -585,6 +590,12 @@ strong {
     .logo-link {
       display: none;
     }
+  }
+
+  @media (min-width: 850px) {
+    .nav-menu {
+      gap: 3rem;
+      }
   }
 
   @media (min-width: 1200px) {
