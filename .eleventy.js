@@ -183,6 +183,30 @@ module.exports = function(eleventyConfig) {
     });
 
 
+    // == Create a collection for the abada reviews
+
+    eleventyConfig.addCollection("abadaReviews", function(collectionApi) {
+        const jsonFilePath = path.join(__dirname, 'src/_data/abada-reviews.json');
+        const reviewData = require(jsonFilePath);
+
+        // Make sure the 'abada-reviews' property contains an array
+        if (!reviewData['abada-reviews'] || !Array.isArray(reviewData['abada-reviews'])) {
+          console.error(`Error: ${jsonFilePath} does not contain an array in property 'abada-reviews'.`);
+          return []; // Return an empty array to prevent errors
+        }
+        
+        // Add the data as a collection
+        return reviewData['abada-reviews'].map((item, index) => {
+          const id = item.id || index; // Gives each item a unique ID
+          return {
+            ...item,
+            date: item.date ? new Date(item.date) : new Date(), // Example
+            inputPath: jsonFilePath, // Add a path, useful for debugging
+            filePathStem: `/abada-review-${id}`, // Create a unique file path stem
+          };
+        });
+    });
+
     
     // === ADD LUNR SEARCH ===
 

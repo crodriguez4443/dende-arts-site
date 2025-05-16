@@ -7,6 +7,9 @@ pagination:
 permalink: "/{{ product.slug | slugify }}/"
 layout: layout.njk
 
+product_title: Abada Joggers 
+
+
 ---
 
 <section class="main-grid product-sale-page">
@@ -122,24 +125,234 @@ layout: layout.njk
                             class="add-to-cart-button">
                         Add to Cart
                     </button>
-                    
-                    <!-- remove buy now button
-                    <button id="buyNow" 
-                            onclick="buyNow('{{ product.id }}')"
-                            class="buy-now-button">
-                        Checkout
-                    </button>
-                    -->
                 </div>
             {% endif %}
         </div>
     </div>
-    <div class="yotpo-widget-instance" data-yotpo-instance-id="1088850"></div>
-      
+
+    {# ----- START: REVIEWS SECTION ----- #}
+    <div class="product-reviews-section">
+        {# Calculate review statistics #}
+        {% set totalReviews = 0 %}
+        {% set sumOfScores = 0 %}
+        {% set averageRating = 0 %}
+
+        {% if collections.abadaReviews and collections.abadaReviews.length > 0 %}
+            {% set totalReviews = collections.abadaReviews.length %}
+            {% for review in collections.abadaReviews %}
+                {% set sumOfScores = sumOfScores + review.review_score %}
+            {% endfor %}
+            {% if totalReviews > 0 %}
+                {% set averageRating = (sumOfScores / totalReviews) | round(1) %}
+            {% endif %}
+        {% endif %}
+
+        <div class="product-review-header">
+            <h2 class="product-review-header__title">Customer Reviews</h2>
+            {% if totalReviews > 0 %}
+            <div class="product-review-header__summary">
+                <div class="product-review-header__average-stars">
+                    {% for i in range(1, 6) %}
+                        {% if i <= averageRating %}
+                            <span class="star filled">&#9733;</span>
+                        {% elif i - 0.5 <= averageRating %}
+                            <span class="star half-filled"><span class="star-inner">&#9733;</span>&#9734;</span>
+                        {% else %}
+                            <span class="star empty">&#9734;</span>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <span class="review-average">{{ averageRating }} / 5</span>
+                <span class="review-count">({{ totalReviews }} review{% if totalReviews != 1 %}s{% endif %})</span>
+            </div>
+            {% endif %}
+        </div>
+
+        {% if collections.abadaReviews and collections.abadaReviews.length > 0 %}
+            <ul class="reviews-list">
+                {% for review in collections.abadaReviews %}
+                <li class="review-item">
+                    <div class="review-item__stars">
+                        {% for i in range(1, 6) %} {# Loop 1 to 5 #}
+                            {% if i <= review.review_score %}
+                                <span class="star filled">&#9733;</span> {# Filled star HTML entity ★ #}
+                            {% else %}
+                                <span class="star empty">&#9734;</span> {# Empty star HTML entity ☆ #}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <h3 class="review-item__title">{{ review.review_title }}</h3>
+                    <p class="review-item__meta">
+                        <span class="review-item__author-name">By: {{ review.author }} - </span>
+                        <span class="review-item__author">{{ review.user_type }}</span>
+                        {# DATE REMOVED FROM HERE #}
+                    </p>
+                    <p class="review-item__content">{{ review.review_content }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="no-reviews-message">Be the first to review this product!</p>
+        {% endif %}
+    </div>
+    {# ----- END: REVIEWS SECTION ----- #}
+
 </section>
 
+<style>
 
-<script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/hkdxOHpNSoL9mUi2CASOsZFdXsMLCVc5ZXTHOlLP" async></script>
+    .product-reviews-section {
+        grid-column: 1 / -1; /* Make it full width in your main-grid if needed */
+        padding: 2rem 0; /* Add some vertical spacing */
+        margin-top: 2rem;
+        border-top: 1px solid #eee;
+        margin: 0 1rem;
+    }
+
+    .product-review-header {
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        align-items: center;
+        justify-content: center;
+        gap: 0rem;
+        margin-bottom: 1.5rem;
+        padding: 0 1rem; /* Add some padding if section isn't full bleed */
+    }
+
+
+    .product-review-header__title {
+        font-size: 1.8rem; 
+        margin-right: 1rem; 
+        margin-bottom: 0.5rem; 
+    }
+
+    .product-review-header__summary {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem; 
+    }
+    
+    .product-review-header__average-stars .star {
+        font-size: 1.2rem; 
+        color: #ccc; 
+    }
+    .product-review-header__average-stars .star.filled,
+    .product-review-header__average-stars .star.half-filled .star-inner {
+        color: var(--action-primary);
+    }
+    .product-review-header__average-stars .star.half-filled {
+        position: relative; 
+    }
+    .product-review-header__average-stars .star.half-filled .star-inner {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%; 
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .review-average {
+        font-size: 1.2rem; 
+    }
+
+    .review-count {
+        font-weight: 300;
+        font-size: 1rem; 
+        color: #555;
+    }
+
+    .reviews-list {
+        padding: 0;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    li {
+        list-style: none;
+        margin-bottom: 1.5rem;
+    }
+
+    .review-item:hover,
+    .review-item:focus {
+        transform: none !important;
+        margin: 0 0 1.5rem 0 !important;
+        list-style: none;
+    }
+
+    .reviews-item:hover,
+    .reviews-item:focus {
+        transform: none !important;
+        margin: 0 !important;
+    }
+
+    .review-item {
+        /* background-color: #f9f9f9; */
+        border: 1px solid var(--text-form);
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 2px solid var(--action-primary);
+    }
+
+    .review-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .review-item__stars {
+        margin-bottom: 0.5rem;
+        font-size: 1.25rem; 
+    }
+
+    .review-item__stars .star.filled {
+        color: var(--action-primary);
+    }
+
+    .review-item__stars .star.empty {
+        color: #ccc; 
+    }
+
+    .review-item__title {
+        font-size: 1.25rem;
+        margin-top: 0;
+        margin-bottom: 0.25rem;
+        /* color: #333; */
+    }
+
+    .review-item__meta {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 0.75rem;
+    }
+
+    .review-item__author {
+        font-weight: bold;
+    }
+
+    /* .review-item__date { REMOVED AS DATE IS NOT DISPLAYED
+        font-style: italic;
+    } */
+
+    .review-item__content {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #444;
+        margin-bottom: 0;
+    }
+    .no-reviews-message {
+        text-align: center;
+        font-style: italic;
+        color: #777;
+        padding: 2rem;
+    }
+
+    @media (min-width: 768px) {
+        .product-review-header {
+            gap: 2rem;
+        }
+    }
+</style>
 
 <script>
 async function addToCart(productId) {
@@ -147,16 +360,13 @@ async function addToCart(productId) {
     const button = document.getElementById('addToCart');
     const options = {};
     
-    // Gather selected options if they exist
     document.querySelectorAll('.option-group select').forEach(select => {
         options[select.name] = select.value;
     });
 
-    // Show immediate feedback
     button.disabled = true;
     button.textContent = 'Adding...';
     
-    // Open cart sidebar immediately for better UX - better perceived performance
     const cartSidebar = document.getElementById('cart-sidebar');
     const cartOverlay = document.getElementById('cart-overlay');
     if (cartSidebar && cartOverlay) {
@@ -164,38 +374,31 @@ async function addToCart(productId) {
         cartOverlay.classList.add('active');
     }
     
-    // Show loading state on the cart
     const cartItems = document.getElementById('cart-items');
     if (cartItems) {
         cartItems.classList.add('loading');
     }
     
     try {
-        // Use optimistic UI update - immediately show a temporary item in cart
-        // This makes the cart feel more responsive while API call happens in background
         if (window.swellCartCount === undefined) {
             window.swellCartCount = 0;
         }
         window.swellCartCount += parseInt(quantity);
         updateCartCount();
         
-        // Use our cached cart system
         await swell.cachedCart.addItem({
             product_id: productId,
             quantity: parseInt(quantity),
             options: options
         });
 
-        // Show success feedback
         button.textContent = 'Added to Cart!';
         
-        // Update the cart display with actual items
         const updateCartDisplayFn = window.updateCartDisplay;
         if (typeof updateCartDisplayFn === 'function') {
             updateCartDisplayFn();
         }
         
-        // Reset button after a short delay
         setTimeout(() => {
             button.disabled = false;
             button.textContent = 'Add to Cart';
@@ -207,90 +410,29 @@ async function addToCart(productId) {
         button.textContent = 'Add to Cart'; 
         alert('Error adding to cart: ' + error.message);
         
-        // Remove loading state
         if (cartItems) {
             cartItems.classList.remove('loading');
         }
         
-        // Update cart count based on actual value
         const cart = await swell.cachedCart.get();
         window.swellCartCount = cart?.itemQuantity || 0;
         updateCartCount();
     }
 }
 
-
-// Buy Now --> actually check out button now
-
-{# async function buyNow(productId) {
-    const button = document.getElementById('buyNow');
-    button.disabled = true;
-    button.textContent = 'Processing...';
-
-    try {
-        // Get current cart state
-        const currentCart = await swell.cart.get();
-        
-        // Detailed cart logging
-        console.log('Full cart object:', currentCart);
-        console.log('Cart ID:', currentCart?.id);
-        console.log('Cart currency:', currentCart?.currency);
-        console.log('Checkout ID:', currentCart?.checkout_id);
-        console.log('Items in cart:', currentCart?.items?.length || 0);
-        console.log('Checkout URL:', currentCart?.checkoutUrl);
-
-        // Check if cart is empty
-        if (!currentCart?.items || currentCart.items.length === 0) {
-            button.disabled = false;
-            button.textContent = 'Buy Now';
-            alert('Your cart is empty. Please add items before checkout.');
-            return;
-        }
-
-        // Double check we have a checkout URL
-        if (!currentCart?.checkoutUrl) {
-            // Try to construct the checkout URL if we have a checkout_id
-            if (currentCart?.checkout_id) {
-                const checkoutUrl = `https://dendearts.swell.store/checkout/${currentCart.checkout_id}`;
-                console.log('Constructed checkout URL:', checkoutUrl);
-                window.location.href = checkoutUrl;
-                return;
-            }
-            throw new Error('Unable to generate checkout URL');
-        }
-
-        // If we have a direct checkoutUrl, use it
-        console.log('Redirecting to checkout:', currentCart.checkoutUrl);
-        window.location.href = currentCart.checkoutUrl;
-
-    } catch (error) {
-        console.error('Buy now error:', error);
-        button.disabled = false;
-        button.textContent = 'Buy Now';
-        alert('Error processing checkout: ' + error.message);
-    }
-} #}
-
-    // Store all product images data
 const productImages = JSON.parse('{{ product.images | dump | safe }}');
 
 function swapImages(thumbnailElement) {
     const mainImage = document.getElementById('mainImage');
     const thumbnails = document.querySelectorAll('.thumbnail-image');
     
-    // Remove active class from all thumbnails
     thumbnails.forEach(thumb => thumb.classList.remove('active'));
-    
-    // Add active class to clicked thumbnail
     thumbnailElement.classList.add('active');
 
-    // Get the index of clicked thumbnail
     const thumbnailIndex = parseInt(thumbnailElement.dataset.index);
     
-    // Add fade out effect
     mainImage.style.opacity = '0';
     
-    // Update main image after a brief delay (for transition effect)
     setTimeout(() => {
         mainImage.src = productImages[thumbnailIndex].file.url;
         mainImage.alt = productImages[thumbnailIndex].alt;
@@ -299,7 +441,6 @@ function swapImages(thumbnailElement) {
     }, 300);
 }
 
-// Initialize the first thumbnail as active
 document.addEventListener('DOMContentLoaded', () => {
     const firstThumbnail = document.querySelector('.thumbnail-image');
     if (firstThumbnail) {
