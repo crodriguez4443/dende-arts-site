@@ -1,14 +1,14 @@
-{# src/_includes/contact-form.njk #}
+{# src/_includes/bulk-order-form.njk #}
 <div class="contact-page-form">
     <form class="contact-form" 
-        name="contact" 
+        name="bulk-order" 
         method="POST" 
         data-netlify="true" 
         netlify-honeypot="bot-field"
         action="/Thank-you/"
     >
         {# Hidden fields #}
-        <input type="hidden" name="form-name" value="contact">
+        <input type="hidden" name="form-name" value="bulk-order">
         <input type="hidden" name="subject" value="Nuevo mensaje de contacto">
 
         {# Honeypot field #}
