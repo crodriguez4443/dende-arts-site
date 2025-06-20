@@ -1,14 +1,14 @@
 {% set currentReview = review %}
 <div class="home-testimonial-card">
     <div class="testimonial-rating">
-        {% for i in range(0, currentReview.rating) %}
+        {% for i in range(0, currentReview.review_score) %}
             <span class="star">★</span>
         {% endfor %}
-        {% for i in range(currentReview.rating, 5) %}
+        {% for i in range(currentReview.review_score, 5) %}
             <span class="star star-empty">☆</span>
         {% endfor %}
     </div>
-    <p class="testimonial-text">{{ currentReview.text }}</p>
+    <h3 class="abada-testimonial-title">{{ currentReview.review_title }}</h3>
+    <p class="testimonial-text">{{ currentReview.review_content }}</p>
     <p class="testimonial-author">{{ currentReview.author }}</p>
-    <p class="testimonial-relation">{{ currentReview.relationship }}</p>
 </div>

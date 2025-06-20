@@ -455,13 +455,40 @@
 
 .bulk-title {
     text-align: center;
-
+    font-size: 3rem;
+    line-height: 4rem;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .bulk-form-container {
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 5rem;
+}
+
+.bulk-page-content {
+    position: relative;
+    padding: 3rem 0 6rem;
+    margin-bottom: 8rem;
+    background-image: url("/img/bulk-orders/bulk-order-abadas.png");
+    z-index: 0;
+}
+
+.bulk-page-content::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0; */
+    background: #fff;
+    opacity: 0.75; /* Adjust for desired darkness */
+    z-index: 1;
+    pointer-events: none; /* Allows clicks to pass through */
+}
+
+.bulk-page-content > * {
+    position: relative;
+    z-index: 2;
 }
 
 .bulk-page-content p {

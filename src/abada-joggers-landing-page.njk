@@ -172,9 +172,9 @@ type: "product"
 <section class="product-testimonials main-grid">
     <h2 class="section-title">People loving their Abada Joggers!</h2>
     <div class="testimonial-grid">
-        {% for review in reviews.reviews %}
-            {% if loop.index0 < 4 %}
-                {% include "testimonial-card.njk" %}
+        {% for review in collections.abadaReviews %}
+            {% if loop.index0 < 12 and review.review_content.length >= 100 %}
+                {% include "abada-review-card.njk"%}
             {% endif %}
         {% endfor %}
     </div>
