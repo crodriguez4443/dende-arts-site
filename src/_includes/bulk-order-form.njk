@@ -39,17 +39,22 @@
                         <option value="" selected disabled>Uniform Type</option>
                         <option value="Adults">Adults</option>
                         <option value="Kids">Kids</option>
-                        <option value="Adults and Kids">Adults and Kids</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <select name="quantity-range" required>
-                        <option value="" selected disabled>Quantity Range</option>
-                        <option value="50 - 99">50 - 99</option>
-                        <option value="100 - 299">100 - 299</option>
-                        <option value="300 - 499">300 - 499</option>
-                        <option value="500+">500+</option>
+                    <input type="num" name="quantity" placeholder="minimums for adults = 30" required>
+                </div>
+            </div>
+            <div class="selectors-container">
+                <div class="form-group">
+                    <select name="uniform-type" required>
+                        <option value="" selected disabled>Uniform Type</option>
+                        <option value="Adults">Adults</option>
+                        <option value="Kids">Kids</option>
                     </select>
+                </div>
+                <div class="form-group">
+                    <input type="num" name="quantity" placeholder="minimums for kids = 100" optional>
                 </div>
             </div>
             <div class="form-group full-width">

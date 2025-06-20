@@ -124,6 +124,10 @@
                     <input type="number" id="kids-qty" name="kids-quantity" min="0" value="0">
                     <span class="unit-price">$<span id="kids-unit-price">36</span> each</span>
                 </div>
+                <div class="">
+                    <p class="discount-info">Adults discounts at 50, 100, 300, and 500</p>
+                    <p class="discount-info">Kids discounts at 100, 300, and 500</p>
+                </div>
             </div>
             
             <div class="pricing-summary">
@@ -391,17 +395,22 @@ The Abada Joggers are definitely a game changer and bravo Calado for the profess
                         <option value="" selected disabled>Uniform Type</option>
                         <option value="Adults">Adults</option>
                         <option value="Kids">Kids</option>
-                        <option value="Adults and Kids">Adults and Kids</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <select name="quantity-range" required>
-                        <option value="" selected disabled>Quantity Range</option>
-                        <option value="50 - 99">50 - 99</option>
-                        <option value="100 - 299">100 - 299</option>
-                        <option value="300 - 499">300 - 499</option>
-                        <option value="500+">500+</option>
+                    <input type="num" name="quantity" placeholder="minimums for adults = 30" required>
+                </div>
+            </div>
+            <div class="selectors-container">
+                <div class="form-group">
+                    <select name="uniform-type" required>
+                        <option value="" selected disabled>Uniform Type</option>
+                        <option value="Adults">Adults</option>
+                        <option value="Kids">Kids</option>
                     </select>
+                </div>
+                <div class="form-group">
+                    <input type="num" name="quantity" placeholder="minimums for kids = 100" optional>
                 </div>
             </div>
             <div class="form-group full-width">
@@ -425,18 +434,18 @@ const PRICING = {
         base: 38,
         tiers: [
             { min: 50, discount: 0.05 },   // 5% off 50+
-            { min: 100, discount: 0.10 },  // 10% off 100+
-            { min: 300, discount: 0.15 },  // 15% off 300+
-            { min: 500, discount: 0.20 }   // 20% off 500+
+            { min: 100, discount: 0.075 },  // 7.5% off 100+
+            { min: 300, discount: 0.10 },  // 10% off 300+
+            { min: 500, discount: 0.15 }   // 20% off 500+
         ]
     },
     kids: {
         base: 36,
         tiers: [
-            { min: 50, discount: 0.05 },
-            { min: 100, discount: 0.10 },
-            { min: 300, discount: 0.15 },
-            { min: 500, discount: 0.20 }
+            { min: 50, discount: 0.00 },
+            { min: 100, discount: 0.05 },
+            { min: 300, discount: 0.075 },
+            { min: 500, discount: 0.12 }
         ]
     }
 };
@@ -444,17 +453,21 @@ const PRICING = {
 function calculatePricing() {
     const adultQty = parseInt(document.getElementById('adult-qty').value) || 0;
     const kidsQty = parseInt(document.getElementById('kids-qty').value) || 0;
-    const totalQty = adultQty + kidsQty;
     
-    // Determine discount rate based on total quantity
-    let discountRate = 0;
-    const allTiers = [...PRICING.adult.tiers, ...PRICING.kids.tiers];
-    const uniqueTiers = [...new Set(allTiers.map(t => t.min))].sort((a, b) => b - a);
+    // Determine discount rate for adults based on adult quantity only
+    let adultDiscountRate = 0;
+    for (const tier of PRICING.adult.tiers.sort((a, b) => b.min - a.min)) {
+        if (adultQty >= tier.min) {
+            adultDiscountRate = tier.discount;
+            break;
+        }
+    }
     
-    for (const minQty of uniqueTiers) {
-        if (totalQty >= minQty) {
-            const tier = PRICING.adult.tiers.find(t => t.min === minQty);
-            discountRate = tier ? tier.discount : 0;
+    // Determine discount rate for kids based on kids quantity only
+    let kidsDiscountRate = 0;
+    for (const tier of PRICING.kids.tiers.sort((a, b) => b.min - a.min)) {
+        if (kidsQty >= tier.min) {
+            kidsDiscountRate = tier.discount;
             break;
         }
     }
@@ -463,8 +476,8 @@ function calculatePricing() {
     const adultBase = adultQty * PRICING.adult.base;
     const kidsBase = kidsQty * PRICING.kids.base;
     
-    const adultDiscount = adultBase * discountRate;
-    const kidsDiscount = kidsBase * discountRate;
+    const adultDiscount = adultBase * adultDiscountRate;
+    const kidsDiscount = kidsBase * kidsDiscountRate;
     
     const adultSubtotal = adultBase - adultDiscount;
     const kidsSubtotal = kidsBase - kidsDiscount;
@@ -486,16 +499,16 @@ function calculatePricing() {
     const kidsDiscountLine = document.getElementById('kids-discount-line');
     const savingsMessage = document.getElementById('savings-message');
     
-    if (discountRate > 0 && adultQty > 0) {
-        document.getElementById('adult-discount-percent').textContent = (discountRate * 100).toFixed(0);
+    if (adultDiscountRate > 0 && adultQty > 0) {
+        document.getElementById('adult-discount-percent').textContent = (adultDiscountRate * 100).toFixed(0);
         document.getElementById('adult-discount-amount').textContent = adultDiscount.toFixed(0);
         adultDiscountLine.style.display = 'flex';
     } else {
         adultDiscountLine.style.display = 'none';
     }
     
-    if (discountRate > 0 && kidsQty > 0) {
-        document.getElementById('kids-discount-percent').textContent = (discountRate * 100).toFixed(0);
+    if (kidsDiscountRate > 0 && kidsQty > 0) {
+        document.getElementById('kids-discount-percent').textContent = (kidsDiscountRate * 100).toFixed(0);
         document.getElementById('kids-discount-amount').textContent = kidsDiscount.toFixed(0);
         kidsDiscountLine.style.display = 'flex';
     } else {
@@ -503,7 +516,7 @@ function calculatePricing() {
     }
     
     // Show savings message if any discount applies
-    if (discountRate > 0 && totalQty > 0) {
+    if ((adultDiscountRate > 0 && adultQty > 0) || (kidsDiscountRate > 0 && kidsQty > 0)) {
         document.getElementById('total-savings').textContent = totalDiscount.toFixed(0);
         savingsMessage.style.display = 'block';
     } else {
@@ -547,6 +560,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     .value-props {
         display: flex;
+        justify-content: center;
         gap: 2rem;
         flex-wrap: wrap;
         margin-bottom: 2rem;
@@ -659,6 +673,12 @@ document.addEventListener('DOMContentLoaded', function() {
         font-size: 0.9rem;
         color: #666;
         margin-top: 1rem;
+    }
+
+    .discount-info {
+        font-style: italic;
+        color: var(--action-primary);
+        font-size: .9rem;
     }
 
     @media (max-width: 768px) {
