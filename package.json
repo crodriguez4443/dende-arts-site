@@ -11,12 +11,21 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy": "^3.1.2",
     "outdent": "^0.8.0"
   },
   "dependencies": {
     "@11ty/eleventy-img": "^5.0.0",
     "lunr": "^2.3.9",
     "swell-js": "^4.2.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crodriguez4443/dende-arts-site.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/crodriguez4443/dende-arts-site/issues"
+  },
+  "homepage": "https://github.com/crodriguez4443/dende-arts-site#readme"
 }

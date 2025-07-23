@@ -130,6 +130,12 @@ product_title: Abada Joggers
         </div>
     </div>
 
+    {# ----- Review request form ------- #}
+    {# <div class="review-form-section"> #}
+
+    {# </div> #}
+    {# ----- End Review Request form ----#}
+
     {# ----- START: REVIEWS SECTION ----- #}
     <div class="product-reviews-section">
         {# Calculate review statistics #}
@@ -168,6 +174,64 @@ product_title: Abada Joggers
             {% endif %}
         </div>
 
+        {# --- Review Request --- #}
+        <button id="toggleReviewFormBtn" class="review-toggle-btn">
+            Write a Review
+            <span class="arrow-down"></span>
+        </button>
+        <div id="reviewFormContainer" class="review-form-collapsible">
+            <div class="bulk-form-container">
+                <form id="reviewForm" class="contact-form" action="YOUR_FORM_ENDPOINT" method="POST">
+                    
+                    <div class="selectors-container">
+                        <div class="form-group">
+                            <label for="reviewAuthor">Name</label>
+                            <input type="text" id="reviewAuthor" name="author" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reviewEmail">Email</label>
+                            <input type="email" id="reviewEmail" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reviewUserType">I am a...</label>
+                        <select id="reviewUserType" name="user_type" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="First-time Buyer">First-time Buyer</option>
+                            <option value="Returning Customer">Returning Customer</option>
+                            <option value="Capoeirista">Capoeirista</option>
+                            <option value="Gift Giver">Gift Giver</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Rating</label>
+                        <div class="star-rating">
+                            <input type="radio" id="rating-5" name="review_score" value="5" required/><label for="rating-5" title="5 stars">★</label>
+                            <input type="radio" id="rating-4" name="review_score" value="4" /><label for="rating-4" title="4 stars">★</label>
+                            <input type="radio" id="rating-3" name="review_score" value="3" /><label for="rating-3" title="3 stars">★</label>
+                            <input type="radio" id="rating-2" name="review_score" value="2" /><label for="rating-2" title="2 stars">★</label>
+                            <input type="radio" id="rating-1" name="review_score" value="1" /><label for="rating-1" title="1 star">★</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reviewTitle">Review Title</label>
+                        <input type="text" id="reviewTitle" name="review_title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reviewContent">Review</label>
+                        <textarea id="reviewContent" name="review_content" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-very-dark btn-form">Submit Review</button>
+                </form>
+            </div>
+        </div>
+        {# --- End Review Request --- #}
+
         {% if collections.abadaReviews and collections.abadaReviews.length > 0 %}
             <ul class="reviews-list">
                 {% for review in collections.abadaReviews %}
@@ -200,7 +264,131 @@ product_title: Abada Joggers
 </section>
 
 <style>
+    .review-form-section {
+        grid-column: 1 / -1;
+        padding: 4rem 1rem;
+        margin-top: 2rem;
+        border-top: 1px solid #eee;
+        max-width: 800px;
+        margin: 2rem auto 0;
+    }
 
+    /* .review-toggle-btn {
+        width: 100%;
+        padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--title-color);
+        background-color: var(--background-variant);
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        transition: background-color 0.3s ease;
+    } */
+
+    .review-toggle-btn {
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+        color: var(--title-color);
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        gap: 1rem;
+        border-bottom: 1.5px solid var(--action-primary);
+        padding: 0.5rem;
+        border-radius: 4px;
+        transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .review-toggle-btn:hover {
+        color: var(--action-primary);
+    }
+
+    .arrow-down {
+        border: solid var(--title-color);
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 4px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .review-toggle-btn.active .arrow-down {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+    }
+
+    .review-form-collapsible {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+    }
+    .review-form-collapsible.active {
+        max-height: 1000px; /* Adjust as needed, should be larger than the form's height */
+    }
+
+    /* Add padding to form container when it's open */
+    .review-form-collapsible .bulk-form-container {
+        padding-top: 2rem;
+    }
+
+    .contact-form .form-group {
+        margin-bottom: 1.5rem;
+    }
+    .contact-form label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: var(--title-color);
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        width: 100%;
+        padding: 1rem;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 1rem;
+        background-color: #f8f8f8;
+        border: none;
+        border-radius: 10px;
+        color: #000;
+        transition: border-color 0.3s ease;
+    }
+    .contact-form textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+    /* Star Rating CSS */
+    .star-rating {
+        display: flex;
+        flex-direction: row-reverse; /* This is crucial for the hover effect */
+        justify-content: flex-end;
+        gap: 0.2rem;
+    }
+    .star-rating input[type="radio"] {
+        display: none;
+    }
+    .star-rating label {
+        color: #ccc;
+        cursor: pointer;
+        font-size: 2.5rem;
+        transition: color 0.2s;
+        margin-bottom: 0; /* Override default label margin */
+        line-height: 1;
+    }
+    .star-rating label:hover,
+    .star-rating label:hover ~ label {
+        color: var(--alt-action);
+    }
+    .star-rating input[type="radio"]:checked ~ label {
+        color: var(--alt-action);
+    }
+
+    /* Existing Review Display Styles */
     .product-reviews-section {
         grid-column: 1 / -1; /* Make it full width in your main-grid if needed */
         padding: 2rem 0; /* Add some vertical spacing */
@@ -208,7 +396,6 @@ product_title: Abada Joggers
         border-top: 1px solid #eee;
         margin: 0 1rem;
     }
-
     .product-review-header {
         display: flex;
         flex-wrap: wrap; /* Allow wrapping on smaller screens */
@@ -218,20 +405,16 @@ product_title: Abada Joggers
         margin-bottom: 1.5rem;
         padding: 0 1rem; /* Add some padding if section isn't full bleed */
     }
-
-
     .product-review-header__title {
         font-size: 1.8rem; 
         margin-right: 1rem; 
         margin-bottom: 0.5rem; 
     }
-
     .product-review-header__summary {
         display: flex;
         align-items: center;
         gap: 0.75rem; 
     }
-    
     .product-review-header__average-stars .star {
         font-size: 1.2rem; 
         color: #ccc; 
@@ -251,17 +434,14 @@ product_title: Abada Joggers
         overflow: hidden;
         white-space: nowrap;
     }
-
     .review-average {
         font-size: 1.2rem; 
     }
-
     .review-count {
         font-weight: 300;
         font-size: 1rem; 
         color: #555;
     }
-
     .reviews-list {
         padding: 0;
         margin-left: 1rem;
@@ -273,20 +453,17 @@ product_title: Abada Joggers
         list-style: none;
         margin-bottom: 1.5rem;
     }
-
     .review-item:hover,
     .review-item:focus {
         transform: none !important;
         margin: 0 0 1.5rem 0 !important;
         list-style: none;
     }
-
     .reviews-item:hover,
     .reviews-item:focus {
         transform: none !important;
         margin: 0 !important;
     }
-
     .review-item {
         /* background-color: #f9f9f9; */
         border: 1px solid var(--text-form);
@@ -295,45 +472,33 @@ product_title: Abada Joggers
         margin-bottom: 1.5rem;
         border-bottom: 2px solid var(--action-primary);
     }
-
     .review-item:last-child {
         margin-bottom: 0;
     }
-
     .review-item__stars {
         margin-bottom: 0.5rem;
         font-size: 1.25rem; 
     }
-
     .review-item__stars .star.filled {
         color: var(--action-primary);
     }
-
     .review-item__stars .star.empty {
         color: #ccc; 
     }
-
     .review-item__title {
         font-size: 1.25rem;
         margin-top: 0;
         margin-bottom: 0.25rem;
         /* color: #333; */
     }
-
     .review-item__meta {
         font-size: 0.9rem;
         color: #666;
         margin-bottom: 0.75rem;
     }
-
     .review-item__author {
         font-weight: bold;
     }
-
-    /* .review-item__date { REMOVED AS DATE IS NOT DISPLAYED
-        font-style: italic;
-    } */
-
     .review-item__content {
         font-size: 1rem;
         line-height: 1.6;
@@ -346,7 +511,6 @@ product_title: Abada Joggers
         color: #777;
         padding: 2rem;
     }
-
     @media (min-width: 768px) {
         .product-review-header {
             gap: 2rem;
@@ -442,9 +606,21 @@ function swapImages(thumbnailElement) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Image thumbnail handler
     const firstThumbnail = document.querySelector('.thumbnail-image');
     if (firstThumbnail) {
         firstThumbnail.classList.add('active');
+    }
+
+    // Review form toggle handler
+    const toggleBtn = document.getElementById('toggleReviewFormBtn');
+    const formContainer = document.getElementById('reviewFormContainer');
+
+    if (toggleBtn && formContainer) {
+        toggleBtn.addEventListener('click', () => {
+            toggleBtn.classList.toggle('active');
+            formContainer.classList.toggle('active');
+        });
     }
 });
 
