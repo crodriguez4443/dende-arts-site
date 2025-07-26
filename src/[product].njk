@@ -176,7 +176,17 @@ product_title: Abada Joggers
         </button>
         <div id="reviewFormContainer" class="review-form-collapsible">
             <div class="bulk-form-container">
-                <form id="reviewForm" class="contact-form" action="YOUR_FORM_ENDPOINT" method="POST">
+                <form id="reviewForm" class="contact-form" 
+                    name="review-form"
+                    method="POST"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                    action="/Thank-you/" 
+                >
+                    {# Honeypot field #}
+                    <p hidden>
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
                     
                     <div class="selectors-container">
                         <div class="form-group">
