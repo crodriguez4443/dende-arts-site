@@ -1,0 +1,33 @@
+---
+title: "Capoeira é do povo é da gente"
+date: "2020-11-01"
+categories:
+  - "capoeira-songbook"
+tags:
+  - "advanced"
+layout: "song-post-layout.njk"
+description: "Learn to sing Capoeira é do povo é da gente with english and portuguese translations along with a video to help you learn."
+author: "Chris Calado Rodriguez"
+headline: "Capoeira é do povo é da gente"
+excerpt: "Capoeira é manha de preto velho Nascido no tempo da escravidão"
+type: "song-post"
+---
+
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Capoeira é manha de preto velho<br>Nascido no tempo da escravidão<br>Capoeira levou a raça negra<br>Ao caminho de sua libertação<br><br>Eu vou dizer a você<br>E digo do fundo do coração<br>Essa luta essa dança brasileira<br>Faz meu corpo vibrar de emoção<br><br>De Nova York ao Mexico<br>Do Rio de Janeiro até o Japão<br>É no toque do berimbau viola<br>Seja São bento grande ou angola<br>Deixa o corpo rolar normalmente<br>Vou dizer<br><br><strong>Ê êê<br>Capoeira é do povo é da gente</strong><br><br>Vou dizer<br><br><strong>Ê êê<br>Que jeito de lutar diferente</strong><br><br>Vou dizer<br><br><strong>Ê êê<br>Capoeira é do povo é da gente<br></strong><br>Vou dizer<br><br><strong>Ê êê<br>Que jeito de lutar diferente</strong>
+        </td>
+        <td>
+            Capoeira is the old black man<br>Born in the time of slavery<br>Capoeira took the black race<br>On the way to your liberation<br><br>I will tell you<br>And I say from the bottom of my heart<br>This fight this Brazilian dance<br>It makes my body vibrate with emotion<br><br>From New York to Mexico<br>From Rio de Janeiro to Japan<br>It's in the touch of the viola berimbau<br>Whether Saint Benedict or Angola<br>Let the body roll normally<br>I will say<br><br>Ê êê<br>Capoeira belongs to the people and belongs to us<br><br>I will say<br><br>Ê êê<br>What a different way to fight<br><br>I will say<br><br>Ê êê<br>Capoeira belongs to the people and belongs to us<br><br>I will say<br><br>Ê êê<br>What a different way to fight
+        </td>
+    </tr>
+</table>
+
+<figcaption>
+Author: Unknown
+</figcaption>

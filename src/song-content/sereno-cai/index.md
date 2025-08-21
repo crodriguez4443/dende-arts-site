@@ -1,0 +1,64 @@
+---
+title: "Sereno Cai"
+date: "2021-03-30"
+categories:
+  - "capoeira-songbook"
+tags:
+  - "beginner"
+layout: "song-post-layout.njk"
+description: "Learn to sing Sereno Cai with english and portuguese translations along with a video to help you learn."
+author: "Chris Calado Rodriguez"
+headline: "Sereno Cai"
+excerpt: "Sereno cai Eu ralo tanto no cumbuco do balaio"
+type: "song-post"
+---
+
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Sereno cai<br>
+Eu ralo tanto no cumbuco do balaio<br><br>
+<strong>Sereno cai<br>
+Eu ralo tanto no cumbuco do balaio</strong><br><br>
+Eu quero papai, quero mamae, quero dindinha<br>
+Eu quero anel, quero dedo, quero linha<br>
+Sou rapaz não tenho dinheiro<br>
+Uma moça que garante os cabelos<br><br>
+Cascavel de vareta<br>
+É danado pra bater chocalho<br>
+Papai tu corta caminhos<br>
+Que hoje vai cair orvalho<br><br>
+Aê, aê, aê<br>
+Aê, aê, aê, aô<br><br>
+<strong>Aê, aê, aê<br>
+Aê, aê, aê, aô</strong>
+</td>
+        <td>Dew falls<br>
+I work so much in the cumbuco of the hamper<br><br>
+<strong>Dew falls<br>
+I work so much in the cumbuco of the hamper</strong><br><br>
+I want daddy, I want mommy, I want godmother<br>
+I want a ring, I want a finger, I want a line<br>
+I'm a boy I don't have money<br>
+A woman that guarantees her hair<br><br>
+Rattlesnake<br>
+It's prone to rattle<br>
+Dad you cut paths<br>
+'Cause today dew will fall<br><br>
+Aê, aê, aê<br>
+Aê, aê, aê, aô<br><br>
+<strong>Aê, aê, aê<br>
+Aê, aê, aê, aô</strong>
+</td>
+    </tr>
+</table>
+
+<figcaption>
+Author: Unknown  
+Note: I looked up 'cumbuco' and written/said like that, it apparently means a bull or a cow. 'Cumbuca' means a bowl or vase. I am not sure how it fits in the song, so I left in untranslated. If you know what that means, please let us know in the comments!
+</figcaption>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dCZt7IvMquw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

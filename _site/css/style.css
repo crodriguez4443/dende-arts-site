@@ -1935,6 +1935,27 @@ li:focus {
     color: var(--action-primary);
 }
 
+/* ===== Universal Blog Stylings ====== */
+
+.tags {
+    margin: 10px 0;
+}   
+
+.tag {
+    display: inline-block;
+    background: var(--background-light);
+    color: var(--text-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 8px;
+    margin-bottom: 4px;
+}
+
+
+
+
+
 
 /* ======
 Remove when Guide is ready

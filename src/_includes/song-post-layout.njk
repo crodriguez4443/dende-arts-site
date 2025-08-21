@@ -1,0 +1,124 @@
+---
+layout: layout.njk
+---
+
+<div class="main-grid">
+    {% include "nav.njk" %}
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            {# Add IDs to your headings #}
+            <nav class="breadcrumb">
+                <a href="/songbook">&larr; Back to Song List</a>
+            </nav>
+            <header>
+                <h1>{{ title }}</h1>
+                {% if author %}
+                    <p class="author">by {{ author }}</p>
+                {% endif %}
+                {% if date %}
+                    <p class="date">{{ date }}</p>
+                {% endif %}
+                {% if tags %}
+                    <div class="tags">
+                        {% for tag in tags %}
+                            <span class="tag">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </header>
+            <div class="song-content">
+                {{ content | safe }}
+            </div>
+        </article>
+    </div>
+</div>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f5f5f5;
+        line-height: 1.6;
+    }
+    
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .breadcrumb {
+        margin-bottom: 20px;
+    }
+    
+    .breadcrumb a {
+        color: #666;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    
+    .breadcrumb a:hover {
+        color: #333;
+        text-decoration: underline;
+    }
+    
+    .author {
+        color: #666;
+        margin: 5px 0;
+        font-style: italic;
+    }
+    
+    .date {
+        color: #999;
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    
+
+    
+    .song-content {
+        margin-top: 30px;
+    }
+    
+    .capoeira-table {
+        max-width: 1000px;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    
+    .capoeira-table th,
+    .capoeira-table td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+        vertical-align: top;
+    }
+    
+    .capoeira-table th {
+        background-color: #f5f5f5;
+        font-weight: bold;
+    }
+    
+    .capoeira-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    
+    iframe {
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        margin: 20px 0;
+    }
+    
+    figcaption {
+        font-style: italic;
+        color: #666;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+</style>

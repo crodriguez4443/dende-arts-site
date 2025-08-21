@@ -1,0 +1,69 @@
+---
+title: "Nego Nego Negrada"
+date: "2021-02-23"
+categories:
+  - "capoeira-songbook"
+tags:
+  - "intermediate"
+layout: "song-post-layout.njk"
+description: "Learn to sing Nego Nego Negrada with english and portuguese translations along with a video to help you learn."
+headline: "Nego Nego Negrada"
+excerpt: "Nego nego nego êee nego nego negrada Nego nego nego êee nego nego negrada"
+---
+
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Nego nego nego êee nego nego negrada<br>
+            <strong>Nego nego nego êee nego nego negrada</strong><br><br>
+            A capoeira nasceu lá nos quilombos<br>
+            Nos guetos, nas Senzalas<br>
+            Hoje em dia no mundo inteiro<br>
+            A capoeira é praticada<br>
+            Eu agradeço aos escravos<br>
+            Pela herança deixada, êee<br><br>
+            <strong>Nego nego nego êee nego nego negrada</strong><br><br>
+            O negro lutou firme e forte<br>
+            Contra sua escravidão<br>
+            Com força e restência<br>
+            Por sua libertaçao êee<br><br>
+            <strong>Nego nego nego êee nego nego negrada</strong><br><br>
+            Cada um tem sua reza<br>
+            Cada um sua oração<br>
+            Eu agradeço a luz do dia<br>
+            Que Deus nos deu irmão êee<br><br>
+            <strong>Nego nego nego êee nego nego negrada</strong>
+        </td>
+        <td>
+            Nego nego nego nego nego nego negrada<br>
+            <strong>Nego nego nego nego nego nego negrada</strong><br><br>
+            Capoeira was born there in the quilombos<br>
+            In the ghettos, in the Senzalas<br>
+            Nowadays all over the world<br>
+            Capoeira is practised<br>
+            I thank the slaves<br>
+            For the inheritance left<br><br>
+            <strong>Nego nego nego nego nego nego negrada</strong><br><br>
+            The black people fought hard and strong<br>
+            Against their enslavement<br>
+            With strength and endurance<br>
+            For their release<br><br>
+            <strong>Nego nego nego nego nego nego negrada</strong><br><br>
+            Each has their prayers<br>
+            Each their prayer<br>
+            I thank the daylight<br>
+            That God gave us brother<br><br>
+            <strong>Nego nego nego nego nego nego negrada</strong>
+        </td>
+    </tr>
+</table>
+
+<figcaption>
+
+Author: Gia-Gia
+
+</figcaption>

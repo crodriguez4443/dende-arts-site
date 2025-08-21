@@ -1,0 +1,1226 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descritpion" content="">
+    <title>The number 1 Capoeira blog online</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/pages.css"> 
+
+    <!-- OG meta descriptions -->
+    <meta property="og:title" content="The number 1 Capoeira blog online" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="/img/dende-arts-logo2.png" />
+
+    <!-- Primary font -->
+    <link 
+        rel="preload" 
+        href="/fonts/DMSans-Variable.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossorigin
+    >
+
+    <!-- Load Flavicon -->
+    <link rel="icon" type="img" href="/img/dende-arts-logo.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7Q1NGPMNT"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+
+        gtag('config', 'G-V7Q1NGPMNT');
+    </script>
+</head>
+<body>
+    <!-- _includes/cart-sidebar.njk -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header flex-row">
+    <h3>Your Cart</h3>
+    <button id="close-cart" class="close-cart">×</button>
+  </div>
+  <div id="cart-items" class="cart-items">
+  <!-- Cart items will be dynamically inserted here -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cart-total-amount"></span>
+    </div>
+    <button id="checkout-button" class="checkout-button">
+      Proceed to Checkout
+    </button>
+  </div>
+</div>
+<div id="cart-overlay" class="cart-overlay"></div>
+
+    <main> 
+        
+<!-- src/_includes/layouts/songbook.njk -->
+<div class="blog-page-container main-grid">
+    <div class="nav-content">
+    <!-- use shortcode for these image -->
+    <div class="logo-link-container">
+        <a href="/">
+            <picture class="logo-link">
+            <source type="image/webp" srcset="/img/optimized/XEkAbwk2b4-400.webp 400w, /img/optimized/XEkAbwk2b4-450.webp 450w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/XEkAbwk2b4-400.jpeg 400w, /img/optimized/XEkAbwk2b4-450.jpeg 450w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/XEkAbwk2b4-400.png 400w, /img/optimized/XEkAbwk2b4-450.png 450w" sizes="100vw">
+            <img src="/img/optimized/XEkAbwk2b4-450.webp" width="450" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+            <picture class="logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/YxXHLNTgsJ-400.webp 400w, /img/optimized/YxXHLNTgsJ-654.webp 654w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/YxXHLNTgsJ-400.jpeg 400w, /img/optimized/YxXHLNTgsJ-654.jpeg 654w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/YxXHLNTgsJ-400.png 400w, /img/optimized/YxXHLNTgsJ-654.png 654w" sizes="100vw">
+            <img src="/img/optimized/YxXHLNTgsJ-654.webp" width="654" height="139" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+        </a>
+    </div>
+    <!-- use shortcode for these image -->
+    <div class="nav-container">
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="overlay"></div>
+        <nav class="nav-menu">
+            <a href="/">Home</a>
+            
+            <a href="/abada-joggers-landing/">Abadas</a>
+            <a href="/songbook/">Songs</a>
+            
+            <a href="/blog/">Blog</a>
+            <a href="/bulk-orders/">Bulk Orders</a>
+            <div class="flex-box">
+                <a href="#" class="cart-toggle flex-row" onclick="return false;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                    </svg>
+                    (<span class="cart-count">0</span>)
+                </a>
+            </div>  
+        </nav>
+    </div>
+</div>
+
+    <h1 class="blog-page-title"><strong>We are the biggest online capoeira community!</strong> Find thoughts, resources and recommendations.</h1>
+
+    <!-- Add search bar for songs -->
+    <div class="search-container">
+        <input class="searchInput" type="text" id="songbookSearchInput" placeholder="Search Capoeira Songs...">
+    </div>
+
+    
+    <!-- blog-grid.njk -->
+    <div class="blog-grid" id="songbook-grid">
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/escute-o-tambor/">Escute o Tambor</a>
+                    </h3>
+                    <a href="/blog/escute-o-tambor/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/camaradae/">Camaradaê</a>
+                    </h3>
+                    <a href="/blog/camaradae/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/e-legal-e-legal/">É legal, é legal</a>
+                    </h3>
+                    <a href="/blog/e-legal-e-legal/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/e-mare-que-vem/">Ê Maré Que Vem</a>
+                    </h3>
+                    <a href="/blog/e-mare-que-vem/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/e-marinheiro/">Ê Marinheiro</a>
+                    </h3>
+                    <a href="/blog/e-marinheiro/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/na-aruanda/">Na Aruanda</a>
+                    </h3>
+                    <a href="/blog/na-aruanda/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/e-de-couro-e-madeira-que-faz-tambor/">É de Couro e Madeira Que Faz Tambor</a>
+                    </h3>
+                    <a href="/blog/e-de-couro-e-madeira-que-faz-tambor/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/e-de-ioio-e-de-iaia/">É de ioiô, é de iaiá</a>
+                    </h3>
+                    <a href="/blog/e-de-ioio-e-de-iaia/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/e-de-madeira-boa/">É de Madeira Boa</a>
+                    </h3>
+                    <a href="/blog/e-de-madeira-boa/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/e-e-e-viola-toca-que-eu-quero-jogar-viola/">Ê ê ê viola, toca que eu quero jogar, viola</a>
+                    </h3>
+                    <a href="/blog/e-e-e-viola-toca-que-eu-quero-jogar-viola/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/e-hora-de-se-benzer/">É Hora de Se Benzer</a>
+                    </h3>
+                    <a href="/blog/e-hora-de-se-benzer/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/e-idalina-e-idalina/">Ê Idalina, ê Idalina</a>
+                    </h3>
+                    <a href="/blog/e-idalina-e-idalina/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/e-jogo-praticado-na-terra-de-sao-salvador/">É Jogo Praticado na terra de São Salvador</a>
+                    </h3>
+                    <a href="/blog/e-jogo-praticado-na-terra-de-sao-salvador/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/e-la-la-e-la-e/">Ê la la ê la ê</a>
+                    </h3>
+                    <a href="/blog/e-la-la-e-la-e/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/e-la-vou-eu/">E Lá Vou Eu</a>
+                    </h3>
+                    <a href="/blog/e-la-vou-eu/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/eu-fui-na-mata/">Eu Fui Na Mata</a>
+                    </h3>
+                    <a href="/blog/eu-fui-na-mata/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/e-a-magia-do-meu-berimbau-dende/">É a Magia do Meu Berimbau, Dendê</a>
+                    </h3>
+                    <a href="/blog/e-a-magia-do-meu-berimbau-dende/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/e-angola-vem/">Ê Angola Vem</a>
+                    </h3>
+                    <a href="/blog/e-angola-vem/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/e-cantador-como-vai-voce/">Ê Cantador Como Vai Você</a>
+                    </h3>
+                    <a href="/blog/e-cantador-como-vai-voce/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/e-capoeira-e-capoeira/">Ê Capoeira, Ê Capoeirá</a>
+                    </h3>
+                    <a href="/blog/e-capoeira-e-capoeira/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/e-de-bamba-e-de-bamba-e/">É de Bamba, É de Bamba Ê</a>
+                    </h3>
+                    <a href="/blog/e-de-bamba-e-de-bamba-e/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/fogo-de-palha-capoeira-mandingueiro/">Fogo de Palha (Capoeira Mandingueiro)</a>
+                    </h3>
+                    <a href="/blog/fogo-de-palha-capoeira-mandingueiro/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/foi-de-luanda-que-eu-vim/">Foi de Luanda Que Eu Vim</a>
+                    </h3>
+                    <a href="/blog/foi-de-luanda-que-eu-vim/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/foi-dende/">Foi Dendê</a>
+                    </h3>
+                    <a href="/blog/foi-dende/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/foi-dentro-do-barracao/">Foi Dentro do Barracão</a>
+                    </h3>
+                    <a href="/blog/foi-dentro-do-barracao/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/foi-na-lapa/">Foi na Lapa</a>
+                    </h3>
+                    <a href="/blog/foi-na-lapa/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/foi-no-clarao-da-lua/">Foi no Clarão da Lua</a>
+                    </h3>
+                    <a href="/blog/foi-no-clarao-da-lua/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/folha-seca/">Folha Seca - Capoeira Song &amp; Movement Tutorial</a>
+                    </h3>
+                    <a href="/blog/folha-seca/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/forca-das-aguas/">Força das Águas</a>
+                    </h3>
+                    <a href="/blog/forca-das-aguas/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/fui-la-na-bahia-buscar-coco-de-dende/">Fui Lá na Bahia Buscar Coco de Dendê</a>
+                    </h3>
+                    <a href="/blog/fui-la-na-bahia-buscar-coco-de-dende/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/fuzue/">Fuzuê</a>
+                    </h3>
+                    <a href="/blog/fuzue/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/faca-de-tucum-mator-besouro-manganga/">Faca de Tucum Mator Besouro Mangangá</a>
+                    </h3>
+                    <a href="/blog/faca-de-tucum-mator-besouro-manganga/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/falso-capoeira/">Falso Capoeira</a>
+                    </h3>
+                    <a href="/blog/falso-capoeira/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/familia-de-ouro/">Família de Ouro</a>
+                    </h3>
+                    <a href="/blog/familia-de-ouro/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/filho-de-bimba-nao-pode-cair/">Filho de Bimba Não Pode Cair</a>
+                    </h3>
+                    <a href="/blog/filho-de-bimba-nao-pode-cair/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/filho-de-ogum/">Filho de Ogum</a>
+                    </h3>
+                    <a href="/blog/filho-de-ogum/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/foge-pra-camugere/">Foge pra Camugerê</a>
+                    </h3>
+                    <a href="/blog/foge-pra-camugere/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/fogo-de-palha-devagar-se-chega-la/">Fogo de Palha (Devagar Se Chega Lá)</a>
+                    </h3>
+                    <a href="/blog/fogo-de-palha-devagar-se-chega-la/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/da-da-da-no-nego/">Dá dá dá no nego</a>
+                    </h3>
+                    <a href="/blog/da-da-da-no-nego/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/dedicacao-e-leala-lele-o/">Dedicação (Ê lealá, lelê ô)</a>
+                    </h3>
+                    <a href="/blog/dedicacao-e-leala-lele-o/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/dende-do-ceu/">Dendê do Céu</a>
+                    </h3>
+                    <a href="/blog/dende-do-ceu/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/dende-mare-e-ae-ae-ae-dende-mare/">Dendê Maré (ê, aê, aê, aê, dendê maré)</a>
+                    </h3>
+                    <a href="/blog/dende-mare-e-ae-ae-ae-dende-mare/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/dende-mare-o-dende-dende-mare/">Dendê maré (Ô dendê, dendê maré)</a>
+                    </h3>
+                    <a href="/blog/dende-mare-o-dende-dende-mare/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/dende-o-dende-2/">Dendê ô dendê</a>
+                    </h3>
+                    <a href="/blog/dende-o-dende-2/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/dende-o-dende/">Dendê, ô dendê</a>
+                    </h3>
+                    <a href="/blog/dende-o-dende/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/dona-alice-nao-me-pegue-nao/">Dona Alice não me pegue não</a>
+                    </h3>
+                    <a href="/blog/dona-alice-nao-me-pegue-nao/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/dona-maria-cade-ioio/">Dona Maria cadê ioiô</a>
+                    </h3>
+                    <a href="/blog/dona-maria-cade-ioio/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/dona-maria-como-vai-voce/">Dona Maria como vai você?</a>
+                    </h3>
+                    <a href="/blog/dona-maria-como-vai-voce/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/dona-maria-do-camboata/">Dona Maria do Camboatá</a>
+                    </h3>
+                    <a href="/blog/dona-maria-do-camboata/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/dono-das-tres-marias/">Dono das Três Marias</a>
+                    </h3>
+                    <a href="/blog/dono-das-tres-marias/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/o-dende-o-danda/">Ô dendê ô danda</a>
+                    </h3>
+                    <a href="/blog/o-dende-o-danda/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/da-galha-do-cajueiro/">Da Galha do Cajueiro</a>
+                    </h3>
+                    <a href="/blog/da-galha-do-cajueiro/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/das-aboboras-do-caldeirao-da-serra/">Das Abóboras do Caldeirão da Serra</a>
+                    </h3>
+                    <a href="/blog/das-aboboras-do-caldeirao-da-serra/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/deixa-navegar-meu-barco/">Deixa Navegar Meu Barco</a>
+                    </h3>
+                    <a href="/blog/deixa-navegar-meu-barco/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/deixa-o-nego-vadiar/">Deixa o nego vadiar</a>
+                    </h3>
+                    <a href="/blog/deixa-o-nego-vadiar/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/dia-de-festa/">Dia de Festa</a>
+                    </h3>
+                    <a href="/blog/dia-de-festa/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/caminhador/">Caminhador</a>
+                    </h3>
+                    <a href="/blog/caminhador/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/camugere/">Camugerê</a>
+                    </h3>
+                    <a href="/blog/camugere/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/canarinho-da-alemnaha/">Canarinho da Alemanha: Capoeira Song &amp; Lyrics</a>
+                    </h3>
+                    <a href="/blog/canarinho-da-alemnaha/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/canavie-canavie-corta-cana-pro-feitor/">Canaviê Canaviê Corta cana pro feitor</a>
+                    </h3>
+                    <a href="/blog/canavie-canavie-corta-cana-pro-feitor/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/canto-da-sereia/">Canto da Sereia</a>
+                    </h3>
+                    <a href="/blog/canto-da-sereia/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/capineiro-de-ioio-capineiro-de-iaia/">Capineiro de ioiô capineiro de iaia</a>
+                    </h3>
+                    <a href="/blog/capineiro-de-ioio-capineiro-de-iaia/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/capoeira-balanca-mas-nao-cai-nem-tudo-que-reluz-e-ouro/">Capoeira balança mas não cai (nem tudo que reluz e ouro)</a>
+                    </h3>
+                    <a href="/blog/capoeira-balanca-mas-nao-cai-nem-tudo-que-reluz-e-ouro/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/capoeira-da-sao-salvador/">Capoeira da São Salvador</a>
+                    </h3>
+                    <a href="/blog/capoeira-da-sao-salvador/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/capoeira-e-da-nossa-cor-aue-aue-aue-e/">Capoeira É da nossa cor (Aue, aue, aue ê)</a>
+                    </h3>
+                    <a href="/blog/capoeira-e-da-nossa-cor-aue-aue-aue-e/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/capoeira-e-defesa-ataque/">Capoeira e defesa ataque</a>
+                    </h3>
+                    <a href="/blog/capoeira-e-defesa-ataque/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/capoeira-e-do-povo-e-da-gente/">Capoeira é do povo é da gente</a>
+                    </h3>
+                    <a href="/blog/capoeira-e-do-povo-e-da-gente/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/capoeira-e-ligeira/">Capoeira e Ligeira</a>
+                    </h3>
+                    <a href="/blog/capoeira-e-ligeira/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/capoeira-e-luta-e-danca/">Capoeira é luta é dança</a>
+                    </h3>
+                    <a href="/blog/capoeira-e-luta-e-danca/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/capoeira-e-pra-homem-menino-e-mulher/">Capoeira é pra homem, menino e mulher</a>
+                    </h3>
+                    <a href="/blog/capoeira-e-pra-homem-menino-e-mulher/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/19557-2/">Bem-te-vi Jogou</a>
+                    </h3>
+                    <a href="/blog/19557-2/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/baleiro/">Baleiro</a>
+                    </h3>
+                    <a href="/blog/baleiro/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/berimbau-de-mestre-waldemar/">Berimbau de Mestre Waldemar</a>
+                    </h3>
+                    <a href="/blog/berimbau-de-mestre-waldemar/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/berimbau-de-ouro/">Berimbau de Ouro</a>
+                    </h3>
+                    <a href="/blog/berimbau-de-ouro/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+            <article class="songbook-card">
+                
+                
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">
+                        <a href="/blog/berimbau-viola/">Berimbau Viola</a>
+                    </h3>
+                    <a href="/blog/berimbau-viola/" class="read-more">Read More</a>
+                </div>
+            </article>
+        
+    </div>
+
+
+    
+    <nav class="pagination" aria-label="Pagination">
+        
+            <a href="/old-songbook/page-4/" class="pagination-link">Previous</a>
+        
+
+        
+            
+            
+                <a href="/songbook/" 
+                class="pagination-link">
+                    1
+                </a>
+            
+        
+            
+            
+                <a href="/songbook/page-2/" 
+                class="pagination-link">
+                    2
+                </a>
+            
+        
+            
+            
+                <a href="/songbook/page-3/" 
+                class="pagination-link">
+                    3
+                </a>
+            
+        
+            
+            
+                <a href="/songbook/page-4/" 
+                class="pagination-link">
+                    4
+                </a>
+            
+        
+            
+            
+                <span class="pagination-link current">5</span>
+            
+        
+            
+            
+                <a href="/songbook/page-6/" 
+                class="pagination-link">
+                    6
+                </a>
+            
+        
+            
+            
+                <a href="/songbook/page-7/" 
+                class="pagination-link">
+                    7
+                </a>
+            
+        
+
+        
+            <a href="/old-songbook/page-6/" class="pagination-link">Next</a>
+        
+    </nav>
+</div>
+
+
+    </main>
+    <footer class="footer main-grid">
+        <div class="footer-top-content">
+        <!-- Logo/Title Section -->
+            <div class="footer-logo-link-container">
+                <a href="/">
+                    <picture class="footer-logo-link-lg">
+            <source type="image/webp" srcset="/img/optimized/Cxrmjr60ac-400.webp 400w, /img/optimized/Cxrmjr60ac-800.webp 800w, /img/optimized/Cxrmjr60ac-900.webp 900w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/Cxrmjr60ac-400.jpeg 400w, /img/optimized/Cxrmjr60ac-800.jpeg 800w, /img/optimized/Cxrmjr60ac-900.jpeg 900w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/Cxrmjr60ac-400.png 400w, /img/optimized/Cxrmjr60ac-800.png 800w, /img/optimized/Cxrmjr60ac-900.png 900w" sizes="100vw">
+            <img src="/img/optimized/Cxrmjr60ac-900.webp" width="900" height="450" alt="dende arts logo" loading="eager" decoding="async">
+        </picture>
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-social-large"> 
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                
+                <a href="/abada-joggers-landing/">Abadas</a>
+                <a href="/songbook/">Songbook</a>
+                
+                <a href="/blog/">Blog</a>
+                <a href="/bulk-orders/">Bulk Orders</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-small">
+                <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+                    <picture class="instagram-logo">
+            <source type="image/webp" srcset="/img/optimized/9Wae6hdbqR-25.webp 25w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/9Wae6hdbqR-25.jpeg 25w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/9Wae6hdbqR-25.png 25w" sizes="100vw">
+            <img src="/img/optimized/9Wae6hdbqR-25.webp" width="25" height="24" alt="instagram logo" loading="lazy" decoding="async">
+        </picture>
+                </a>
+                <a href="https://https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+                    <picture class="youtube-logo">
+            <source type="image/webp" srcset="/img/optimized/4492VL5Ckk-26.webp 26w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/4492VL5Ckk-26.jpeg 26w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/4492VL5Ckk-26.png 26w" sizes="100vw">
+            <img src="/img/optimized/4492VL5Ckk-26.webp" width="26" height="24" alt="youtube logo" loading="lazy" decoding="async">
+        </picture>
+                </a>  
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © <span id="current-year"></span> Dendê Arts LLC | <a href="https://solsticewebstudio.com" style="color:white;">Powered by Solstice Web Studio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js" defer></script>
+    <!-- script to update copyright year -->
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="/js/product-quantity.js" defer></script>
+    
+    <!-- Add our new cart utils -->
+    <script src="/js/cart-utils.js" defer></script>
+    <script src="/js/cart-display.js" defer></script>
+
+    <!-- Load Swell SDK with defer to not block rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+
+    <!-- Initialize Swell after page loads -->
+     <script defer>
+         window.swellCartCount = 0; // Initialize global cart count
+         window.swellInitialized = false; // Flag to track initialization
+ 
+         // Define the function for global access
+         window.initializeSwell = async function() {
+             if (window.swellInitialized) {
+                 console.log("Swell already initialized");
+                 return swell; 
+             }
+ 
+             try {
+                 // Initialize with improved options
+                 await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+                     useCamelCase: true,
+                     persist: 'localstorage',
+                     cache: true,           // Enable caching
+                     timeout: 5000          // Reasonable timeout
+                 });
+                 console.log('Swell initialized successfully');
+                 window.swellInitialized = true;
+                 
+                 // Set up the cached cart system after Swell is initialized
+                 setupCachedCart();
+                 
+                 // Get the cart and update the global variable
+                 const cart = await swell.cachedCart.get();
+                 window.swellCartCount = cart?.itemQuantity || 0;
+                 updateCartCount();
+                 
+                 return swell;
+             } catch (error) {
+                 console.error('Swell initialization error:', error);
+                 return null;
+             }
+         };
+         
+         // Wait for window load to ensure this runs after all critical rendering
+         window.addEventListener('load', function() {
+             window.initializeSwell();
+         });
+         
+         // Setup the cached cart system
+         function setupCachedCart() {
+             swell.cachedCart = {
+                 data: null,
+                 lastFetched: 0,
+                 ttl: 60000, // 1 minute TTL
+                 
+                 async get() {
+                     const now = Date.now();
+                     if (!this.data || now - this.lastFetched > this.ttl) {
+                         this.data = await swell.cart.get();
+                         this.lastFetched = now;
+                     }
+                     return this.data;
+                 },
+                 
+                 async updateItem(id, data) {
+                     // Try to update local cache optimistically
+                     if (this.data && this.data.items) {
+                         const itemIndex = this.data.items.findIndex(item => item.id === id);
+                         if (itemIndex >= 0) {
+                             // Apply the update to our local cache
+                             const updatedItem = { ...this.data.items[itemIndex], ...data };
+                             this.data.items[itemIndex] = updatedItem;
+                             
+                             // Recalculate totals if quantity changed
+                             if (data.quantity) {
+                                 let itemQuantity = 0;
+                                 this.data.items.forEach(item => {
+                                     itemQuantity += item.quantity;
+                                 });
+                                 this.data.itemQuantity = itemQuantity;
+                             }
+                         }
+                     }
+                     
+                     // Perform the actual API call
+                     const result = await swell.cart.updateItem(id, data);
+                     this.data = result;
+                     this.lastFetched = Date.now();
+                     return result;
+                 },
+                 
+                 async removeItem(id) {
+                     // Try to update local cache optimistically
+                     if (this.data && this.data.items) {
+                         const itemIndex = this.data.items.findIndex(item => item.id === id);
+                         if (itemIndex >= 0) {
+                             // Remove the item from our local array
+                             const removedItem = this.data.items[itemIndex];
+                             this.data.items.splice(itemIndex, 1);
+                             
+                             // Update the item count
+                             this.data.itemQuantity -= removedItem.quantity;
+                         }
+                     }
+                     
+                     // Perform the actual API call
+                     const result = await swell.cart.removeItem(id);
+                     this.data = result;
+                     this.lastFetched = Date.now();
+                     return result;
+                 },
+                 
+                 async addItem(data) {
+                     const result = await swell.cart.addItem(data);
+                     this.data = result;
+                     this.lastFetched = Date.now();
+                     return result;
+                 }
+             };
+         }
+     </script>
+    
+</body>
+</html>

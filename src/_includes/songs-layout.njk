@@ -1,0 +1,86 @@
+---
+layout: layout.njk
+---
+
+<div class="main-grid">
+    {% include "nav.njk" %}
+    <div class="blog-post-container blog-post-grid">
+        <article class="blog-post">
+            {# Add IDs to your headings #}
+            <div class="breadcrumb-container">
+                <a href="/">Home/</a>
+                <a href="/blog">Blog/</a>
+                <a href="/blog/{{ slug }}">{{ title }}</a>
+            </div>
+            <h1>{{ title }}</h1>
+
+            {# <div class="blog-info">
+                <p>Author: {{ author }} | Category: {{ category }}</p>
+            </div> #}
+            
+            {% if featured %}
+                <div class="blog-post-featured-image">
+                    {% image 
+                        featured, 
+                        title, 
+                        "blog-featured-image" 
+                    %}
+                </div>
+            {% endif %}
+            
+            <div class="blog-post-meta">
+                <time datetime="{{ date | htmlDateString }}">
+                    {{ date | readableDate }}
+                </time>
+            </div>
+            
+            {% set headings = content | getHeadings %}
+            {% set contentWithIds = content %}
+            {% for heading in headings %}
+                {% set contentWithIds = contentWithIds | replace(
+                    heading.text,
+                    '<h' + heading.level + ' id="' + heading.slug + '">' + heading.text + '</h' + heading.level + '>'
+                ) %}
+            {% endfor %}
+
+            <div class="blog-post-content">
+                {{ contentWithIds | safe }}
+            </div>
+        </article>
+
+        
+        <aside class="blog-post-sidebar">
+            {% set headings = content | getHeadings %}
+            {% if headings.length > 0 %}
+            <h3 class="">Table of Contents</h3>
+                <div class="table-of-contents">
+                    <nav class="toc-nav">
+                        <ul>
+                        {% for heading in headings %}
+                            <li class="toc-level-{{ heading.level }}">
+                                <a href="#{{ heading.slug }}">{{ heading.text }}</a>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            {% endif %}
+
+            {# <div class="related-posts">
+                <p>Related posts</p>
+            </div>
+            <div class="popular-posts">
+                <p>Popular posts</p>
+            </div>
+            <div class="popular songs">
+                <p>Popular songs</p>
+            </div>
+            <div class="ads space">
+                <p>Ad space</p>
+                <p>Ad space</p>
+            </div> #}
+        </aside>
+        
+        
+    </div>        
+</div>

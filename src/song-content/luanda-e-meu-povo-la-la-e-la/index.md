@@ -1,0 +1,158 @@
+---
+title: "Luanda Ê Meu Povo (La La Ê La)"
+date: "2021-01-24"
+categories:
+  - "capoeira-songbook"
+tags:
+  - "beginner"
+layout: "song-post-layout.njk"
+description: "Learn to sing Luanda Ê Meu Povo (La La Ê La) with english and portuguese translations along with a video to help you learn."
+author: "Chris Calado Rodriguez"
+headline: "Luanda Ê Meu Povo (La La Ê La)"
+excerpt: "Luanda ê, meu povo Luanda em Pará"
+type: "song-post"
+---
+
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Luanda ê, meu povo<br>
+Luanda em Pará<br>
+Teresa samba deitada<br>
+Marina samba de pé<br>
+E lá no cais da Bahia<br>
+Não tem lelê, não tem lá<br>
+Oh, não tem lelê nem lalá<br><br>
+
+Oh, la ê la de la<br>
+<strong>Oh lê lê</strong><br><br>
+
+Oh, la la ê la de la<br>
+<strong>Oh lê lê</strong><br><br>
+
+Oh, la ê la de la<br>
+<strong>Oh lê lê</strong><br><br>
+
+Oh, la ê la de la<br>
+<strong>Oh lê lê</strong><br><br>
+
+Luanda ê, meu boi<br>
+Luanda em Mará<br>
+Teresa samba deitada<br>
+Oh Marina samba de pé<br>
+E lá no cais da Bahia<br>
+Não tem lelê, não tem nada<br>
+Oh, não tem lelê nem lalá<br><br>
+
+Oh, la ê la de la<br>
+<strong>Oh lê lê</strong><br><br>
+
+Oh, la la ê la de la<br>
+<strong>Oh le lê</strong><br><br>
+
+Oh, la ê la ê la<br>
+<strong>Oh lê lê</strong><br><br>
+
+Oh la la ê, la la la ê la la ê la<br>
+Oh la la ê, la la la ê la la ê la<br><br>
+
+Oh, laê<br>
+<strong>La la ê la</strong><br><br>
+
+Oh, laê<br>
+<strong>La la ê la</strong><br><br>
+
+Oh, la la ê<br>
+<strong>La la ê la</strong><br><br>
+
+Oh, laê<br>
+<strong>La la ê la</strong><<br>
+
+Oh, laê<br>
+<strong>La la ê la</strong><br><br>
+
+Oh, laê<br>
+<strong>La la ê la</strong><br><br>
+
+Oh la la ê, la la la ê la la ê la<br>
+Oh la la ê, la la la ê la la ê la<br><br>
+
+Oh, laê<br>
+<strong>La la ê la</strong><br><br>
+
+Oh, laê<br>
+<strong>La la ê la</strong></td>
+        <td>Luanda, my people<br>
+Luanda in Pará<br>
+Teresa sambas lying down<br>
+Marina sambas standing<br>
+And there on the pier in Bahia<br>
+There's no lele, there's none there<br>
+Oh, there’s no lele nor lala<br><br>
+
+Oh, la ê la de la<br>
+Oh lê lê<br><br>
+
+Oh, la la ê la de la<br>
+Oh lê lê<br><br>
+
+Oh, la ê la de la<br>
+Oh lê lê<br><br>
+
+Oh, la ê la de la<br>
+Oh lê lê<br><br>
+
+Luanda hey, my ox<br>
+Luanda in Mará<br>
+Teresa sambas lying down<br>
+Marina sambas standing<br>
+And there on the pier in Bahia<br>
+There's no lele, there's nothing<br>
+Oh, there’s no lele nor lala<br><br>
+
+Oh, la ê la de la<br>
+Oh lê lê<br><br>
+
+Oh, la la ê la de la<br>
+Oh le lê<br><br>
+
+Oh, la ê la ê la<br>
+Oh lê lê<br><br>
+
+Oh la la ê, la la la ê la la ê la<br>
+Oh la la ê, la la la ê la la ê la<br><br>
+
+Oh, laê<br>
+La la ê la<br><br>
+
+Oh, laê<br>
+La la ê la<br><br>
+
+Oh, la la ê<br>
+La la ê la<br><br>
+
+Oh, laê<br>
+La la ê la<br><br>
+
+Oh, laê<br>
+La la ê la<br><br>
+
+Oh, laê<br>
+La la ê la<br><br>
+
+Oh la la ê, la la la ê la la ê la<br>
+Oh la la ê, la la la ê la la ê la<br><br>
+
+Oh, laê<br>
+La la ê la<br><br>
+
+Oh, laê<br>
+La la ê la</td>
+    </tr>
+</table>
+<figcaption>
+Author: Unknown
+</figcaption>

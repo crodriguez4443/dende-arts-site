@@ -1,0 +1,115 @@
+---
+title: "Meu Carinho"
+date: "2021-01-29"
+categories:
+  - "capoeira-songbook"
+tags:
+  - "advanced"
+layout: "song-post-layout.njk"
+description: "Learn to sing Meu Carinho with english and portuguese translations along with a video to help you learn."
+headline: "Meu Carinho"
+excerpt: "Hoje o sol não brilhou A lua não apareceu"
+---
+
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>
+            Hoje o sol não brilhou<br>
+            A lua não apareceu<br>
+            E as estrelas perderam o brilho<br>
+            Mas hoje o dia está tão triste<br>
+            Nem mesmo o galo cantou<br>
+            E até meu berimbau<br>
+            A corda arrebentou<br>
+            A cabaça caiu no chão<br>
+            E também espatifou<br><br>
+            Era um lamento profundo<br>
+            De sofrimento e solidão<br>
+            Aqui dentro do meu peito<br>
+            Sufocando o coração<br>
+            Lágrimas caíram dos olhos<br>
+            Banhando todo meu leito<br>
+            Minha alma que gritava<br>
+            Aqui dentro do meu peito<br>
+            Estou perdido nos encantos<br>
+            De uma jovem capoeira<br>
+            Olha, na roda da vida<br>
+            Ela meu deu uma rasteira<br><br>
+            <strong>Chora Chora<br>
+            Bem baixinho<br>
+            Oh meu amor, oh meu carinho</strong><br><br>
+            <strong>Chora Chora<br>
+            Bem baixinho<br>
+            Oh meu amor, oh meu carinho</strong><br><br>
+            Vou levantar dessa rasteira<br>
+            Para o jogo continuar<br>
+            Vou tocar meu berimbau<br>
+            Para a vida alegrar<br>
+            Vou te ensinar a capoeira<br>
+            Com todo meu coração<br>
+            Olha, apesar de tudo<br>
+            Ódio eu não sinto não<br>
+            Você é meu arco íris<br>
+            Minha vida, minha paixão<br><br>
+            <strong>Chora Chora<br>
+            Bem baixinho<br>
+            Oh meu amor, oh meu carinho</strong><br><br>
+            <strong>Chora Chora<br>
+            Bem baixinho<br>
+            Oh meu amor, oh meu carinho</strong>
+        </td>
+        <td>
+            Today the sun didn't shine<br>
+            The moon did not appear<br>
+            And the stars have lost their shine<br>
+            But today the day is so sad<br>
+            Not even the rooster crowed<br>
+            And even my berimbau<br>
+            The string snapped<br>
+            The gourd fell to the ground<br>
+            And it also broke<br><br>
+            It was a deep cry<br>
+            Of suffering and loneliness<br>
+            Here inside my chest<br>
+            Choking my heart<br>
+            Tears fell from my eyes<br>
+            Bathing my bed<br>
+            My screaming soul<br>
+            Here inside my chest<br>
+            I'm lost in the charms<br>
+            Of a young capoeira<br>
+            Look, in the roda of life<br>
+            She gave me a rasteira<br><br>
+            <strong>Cry Cry<br>
+            Very quietly<br>
+            Oh my love, oh my affection</strong><br><br>
+            <strong>Cry Cry<br>
+            Very quietly<br>
+            Oh my love, oh my affection</strong><br><br>
+            I'll get up<br>
+            For to continue with the game<br>
+            I'll play my berimbau<br>
+            For brighten life<br>
+            I'll teach you capoeira<br>
+            With all my heart<br>
+            Look, despite everything<br>
+            I don't feel any hate<br>
+            You are my rainbow<br>
+            My life, my passion<br><br>
+            <strong>Cry Cry<br>
+            Very quietly<br>
+            Oh my love, oh my affection</strong><br><br>
+            <strong>Cry Cry<br>
+            Very quietly<br>
+            Oh my love, oh my affection</strong>
+        </td>
+    </tr>
+</table>
+
+<figcaption>
+Author: Unknown
+</figcaption>

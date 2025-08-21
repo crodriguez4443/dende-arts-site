@@ -1,11 +1,11 @@
 let regularIndex;
 let regularData;
-let songbookIndex;
-let songbookData;
+let songsIndex;
+let songsData;
 let blogGrid;
-let songbookGrid;
+let songsGrid;
 let originalBlogContent;
-let originalSongbookContent;
+let originalSongsContent;
 
 // Fetch the search indices
 async function initSearch() {
@@ -17,15 +17,15 @@ async function initSearch() {
         regularIndex = lunr.Index.load(data.regular.index);
         regularData = data.regular.posts;
         
-        // Initialize songbook search
-        songbookIndex = lunr.Index.load(data.songbook.index);
-        songbookData = data.songbook.posts;
+        // Initialize songs search
+        songsIndex = lunr.Index.load(data.songs.index);
+        songsData = data.songs.posts;
         
         // Store original content
         blogGrid = document.getElementById('blog-grid');
-        songbookGrid = document.getElementById('songbook-grid');
+        songsGrid = document.getElementById('songs-grid');
         if (blogGrid) originalBlogContent = blogGrid.innerHTML;
-        if (songbookGrid) originalSongbookContent = songbookGrid.innerHTML;
+        if (songsGrid) originalSongsContent = songsGrid.innerHTML;
     } catch (error) {
         console.error('Error initializing search:', error);
     }
@@ -35,14 +35,14 @@ function performSearch(query, type) {
     if (!query) {
         if (type === 'regular' && blogGrid) {
             blogGrid.innerHTML = originalBlogContent;
-        } else if (type === 'songbook' && songbookGrid) {
-            songbookGrid.innerHTML = originalSongbookContent;
+        } else if (type === 'songs' && songsGrid) {
+            songsGrid.innerHTML = originalSongsContent;
         }
         return;
     }
 
     // Use fuzzy matching for search
-    const searchIndex = type === 'regular' ? regularIndex : songbookIndex;
+    const searchIndex = type === 'regular' ? regularIndex : songsIndex;
     const results = searchIndex.query(function(q) {
         // Split the query into individual terms
         query.split(/\s+/).forEach(function(term) {
@@ -60,8 +60,8 @@ function performSearch(query, type) {
 }
 
 function displayResults(results, type) {
-    const grid = type === 'regular' ? blogGrid : songbookGrid;
-    const data = type === 'regular' ? regularData : songbookData;
+    const grid = type === 'regular' ? blogGrid : songsGrid;
+    const data = type === 'regular' ? regularData : songsData;
     
     if (!grid) return;
 
@@ -73,22 +73,34 @@ function displayResults(results, type) {
     let html = '';
     results.forEach(result => {
         const post = data[parseInt(result.ref)];
-        html += `
-            <article class="${type === 'regular' ? 'blog-card' : 'songbook-card'}">
-                ${post.coverImage ? 
-                    `<img src="${post.coverImage}" 
-                         class="blog-featured-image" 
-                         alt="${post.title}"
-                         loading="eager">` 
-                    : ''}
-                <div class="blog-card-content">
-                    <h3 class="blog-card-title">
-                        <a href="${post.url}">${post.title}</a>
-                    </h3>
-                    <a href="${post.url}" class="read-more">Read More</a>
-                </div>
-            </article>
-        `;
+        
+        if (type === 'songs') {
+            // Songs have different structure - match the songbook layout
+            html += `
+                <a href="${post.url}" class="song-card">
+                    <h3 class="song-title">${post.title}</h3>
+                    <p class="song-excerpt">${post.excerpt}</p>
+                </a>
+            `;
+        } else {
+            // Regular posts
+            html += `
+                <article class="blog-card">
+                    ${post.coverImage ? 
+                        `<img src="${post.coverImage}" 
+                             class="blog-featured-image" 
+                             alt="${post.title}"
+                             loading="eager">` 
+                        : ''}
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="${post.url}">${post.title}</a>
+                        </h3>
+                        <a href="${post.url}" class="read-more">Read More</a>
+                    </div>
+                </article>
+            `;
+        }
     });
     grid.innerHTML = html;
 }
@@ -98,9 +110,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initSearch();
     
     const regularSearchInput = document.getElementById('regularSearchInput');
-    const songbookSearchInput = document.getElementById('songbookSearchInput');
+    const songsSearchInput = document.getElementById('songsSearchInput');
     let regularDebounceTimeout;
-    let songbookDebounceTimeout;
+    let songsDebounceTimeout;
     
     if (regularSearchInput) {
         regularSearchInput.addEventListener('input', (e) => {
@@ -116,15 +128,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    if (songbookSearchInput) {
-        songbookSearchInput.addEventListener('input', (e) => {
-            clearTimeout(songbookDebounceTimeout);
-            songbookDebounceTimeout = setTimeout(() => {
+    if (songsSearchInput) {
+        songsSearchInput.addEventListener('input', (e) => {
+            clearTimeout(songsDebounceTimeout);
+            songsDebounceTimeout = setTimeout(() => {
                 const query = e.target.value;
                 if (query.length >= 2) {
-                    performSearch(query, 'songbook');
+                    performSearch(query, 'songs');
                 } else {
-                    songbookGrid.innerHTML = originalSongbookContent;
+                    songsGrid.innerHTML = originalSongsContent;
                 }
             }, 300);
         });

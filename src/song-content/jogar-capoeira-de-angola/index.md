@@ -1,0 +1,116 @@
+---
+title: "Jogar Capoeira de Angola"
+date: "2021-01-14"
+categories:
+  - "capoeira-songbook"
+tags:
+  - "beginner"
+layout: "song-post-layout.njk"
+description: "Learn to sing Jogar Capoeira de Angola with english and portuguese translations along with a video to help you learn."
+author: "Chris Calado Rodriguez"
+headline: "Jogar Capoeira de Angola"
+excerpt: "Jogar capoeira de Angola Não é brincadeira"
+type: "song-post"
+---
+
+<table class="capoeira-table">
+    <tr class="header-row">
+        <th>Portuguese</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td>Jogar capoeira de Angola<br>
+Não é brincadeira<br>
+Menino vem ver, lelê<br>
+Com a cabeça no chão<br>
+Vai saindo de aú<br>
+Completando rolê<br><br>
+<strong>Jogar capoeira de Angola<br>
+Não é brincadeira<br>
+Menino vem ver, lelê<br>
+Com a cabeça no chão<br>
+Vai saindo de aú<br>
+Completando rolê</strong><br><br>
+Eu fui lá no cais da Bahia<br>
+Jogar capoeira<br>
+Lembrei de Pastinha de seu Aberrê<br>
+Lelê, capoeira de Angola<br>
+Não é brincadeira<br>
+Menino vem ver<br><br>
+<strong>Jogar capoeira de Angola<br>
+Não é brincadeira<br>
+Menino vem ver, lelê<br>
+Com a cabeça no chão<br>
+Vai saindo de aú<br>
+Completando rolê</strong><br><br>
+Meu mestre sempre me falou<br>
+Solte o corpo, menino<br>
+Deixe ele falar<br>
+Tem que ter sentimento<br>
+Para Capoeira de Angola jogar<br><br>
+<strong>Jogar capoeira de Angola<br>
+Não é brincadeira<br>
+Menino vem ver, lelê<br>
+Com a cabeça no chão<br>
+Vai saindo de aú<br>
+Completando rolê</strong><br><br>
+Você diz que entra na roda<br>
+Com ginga de corpo, sabe balançar<br>
+Tem que ser mandingueiro<br>
+Para capoeira de Angola jogar<br><br>
+<strong>Jogar capoeira de Angola<br>
+Não é brincadeira<br>
+Menino vem ver, lelê<br>
+Com a cabeça no chão<br>
+Vai saindo de aú<br>
+Completando rolê</strong></td>
+        <td>To play capoeira Angola<br>
+Is no joke<br>
+Boy come see, lele<br>
+With the head on the ground<br>
+Get out with an aú<br>
+Completing with rolê<br><br>
+To play capoeira Angola<br>
+Is no joke<br>
+Boy come see, lele<br>
+With the head on the ground<br>
+Get out with an aú<br>
+Completing with rolê<br><br>
+I went there over to Bahia pier<br>
+To play capoeira<br>
+I remembered Pastinha and Mr. Aberrê<br>
+Lelê, Angola capoeira<br>
+It's no joke<br>
+Boy come see<br><br>
+To play capoeira Angola<br>
+Is no joke<br>
+Boy come see, lele<br>
+With the head on the ground<br>
+Get out with an aú<br>
+Completing with rolê<br><br>
+My master always told me<br>
+Release your body, boy<br>
+Let it speak<br>
+You have to have feeling<br>
+To play capoeira de Angola<br><br>
+To play capoeira Angola<br>
+Is no joke<br>
+Boy come see, lele<br>
+With the head on the ground<br>
+Get out with an aú<br>
+Completing with rolê<br><br>
+You say you get in the wheel<br>
+With body swing, you know how to swing<br>
+You need to be a mandingueiro<br>
+To play capoeira de Angola<br><br>
+To play capoeira Angola<br>
+Is no joke<br>
+Boy come see, lele<br>
+With the head on the ground<br>
+Get out with an aú<br>
+Completing with rolê</td>
+    </tr>
+</table>
+<figcaption>
+Author: Unknown
+</figcaption>

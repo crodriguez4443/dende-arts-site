@@ -1,3 +1,4 @@
+const fs = require('fs');
 const Image = require('@11ty/eleventy-img');
 const markdownIt = require('markdown-it');
 const md = new markdownIt({
@@ -182,6 +183,54 @@ module.exports = function(eleventyConfig) {
         return str.substring(0, length) + '...';
     });
 
+    // == Create Songbook Collection from Markdown files
+
+    eleventyConfig.addCollection("songs", function(collectionApi) {
+    const songsDir = "./src/song-content";
+    const songs = [];
+    
+    if (fs.existsSync(songsDir)) {
+      const songDirs = fs.readdirSync(songsDir);
+      
+      songDirs.forEach(songDir => {
+        const songPath = path.join(songsDir, songDir);
+        const indexPath = path.join(songPath, "index.md");
+        
+        if (fs.existsSync(indexPath)) {
+          const content = fs.readFileSync(indexPath, 'utf8');
+          const matter = require('gray-matter');
+          const parsed = matter(content);
+          
+          songs.push({
+            slug: songDir,
+            data: parsed.data,
+            content: parsed.content,
+            inputPath: indexPath
+          });
+        }
+      });
+    }
+    
+    return songs;
+    });
+    
+    // Helper to get song data by slug
+    eleventyConfig.addFilter("getSongBySlug", function(songs, slug) {
+        return songs.find(song => song.slug === slug);
+    });
+
+    // Set up permalink for song content files
+    eleventyConfig.addGlobalData("permalink", function() {
+        return function(data) {
+        if (data.page.inputPath.includes('/song-content/')) {
+            const slug = path.basename(path.dirname(data.page.inputPath));
+            return `/songbook/${slug}/`;
+        }
+        // Return undefined instead of false to allow default permalink behavior for other files
+        return undefined;
+        };
+    });
+
 
     // == Create a collection for the abada reviews
 
@@ -275,26 +324,49 @@ module.exports = function(eleventyConfig) {
         })
     );
 
-    // Process songbook posts similarly...
-    const songbookPosts = allPosts.filter(post => {
-        const categories = post.data.categories || [];
-        return categories.includes('capoeira-songbook');
-    });
 
-    // Create songbook index
-    const songbookIndex = lunr(function() {
+    // Process songs collection - manually build from files like the original collection
+    const songs = [];
+    const songsDir = "./src/song-content";
+    
+    if (fs.existsSync(songsDir)) {
+        const songDirs = fs.readdirSync(songsDir);
+        const matter = require('gray-matter');
+        
+        songDirs.forEach(songDir => {
+            const songPath = path.join(songsDir, songDir);
+            const indexPath = path.join(songPath, "index.md");
+            
+            if (fs.existsSync(indexPath)) {
+                const content = fs.readFileSync(indexPath, 'utf8');
+                const parsed = matter(content);
+                
+                songs.push({
+                    slug: songDir,
+                    data: parsed.data,
+                    content: parsed.content,
+                    inputPath: indexPath
+                });
+            }
+        });
+    }
+
+    // Create songs index
+    const songsIndex = lunr(function() {
         this.ref('id');
-        this.field(('title'), {boost: 10});
+        this.field('title', {boost: 10});
         this.field('excerpt');
-        this.field('categories');
+        this.field('content');
+        this.field('tag', {boost: 5});
 
-        songbookPosts.forEach((post, idx) => {
+        songs.forEach((song, idx) => {
             const doc = {
                 id: idx,
-                title: post.data.title || '',
-                excerpt: post.data.excerpt || '',
-                categories: post.data.categories || [],
-                url: post.url
+                title: song.data.title || '',
+                excerpt: song.data.excerpt || '',
+                content: song.content || '',
+                tags: (song.data.tags || []).join(' '), // tags in an array
+                url: `/songbook/${song.slug}/`
             };
             this.add(doc);
         });
@@ -306,14 +378,15 @@ module.exports = function(eleventyConfig) {
             index: regularIndex.toJSON(),
             posts: processedRegularPosts
         },
-        songbook: {
-            index: songbookIndex.toJSON(),
-            posts: songbookPosts.map((post, idx) => ({
+        songs: {
+            index: songsIndex.toJSON(),
+            posts: songs.map((song, idx) => ({
                 id: idx,
-                title: post.data.title || '',
-                excerpt: post.data.excerpt || '',
-                categories: post.data.categories || [],
-                url: post.url
+                title: song.data.title || '',
+                excerpt: song.data.excerpt || '',
+                content: song.content || '',
+                tags: song.data.tag || [],
+                url: `/songbook/${song.slug}/`
             }))
         }
     };
