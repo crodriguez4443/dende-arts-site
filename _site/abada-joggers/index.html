@@ -241,39 +241,97 @@
                     </div>
                 
                 
-                <div class="flex-box padding-bottom-2 ">
+                <div class="flex-box-column padding-bottom-2 ">
                     
-                        <div class="options">
-                            
-                                <div class="option-group">
-                                    <label for="Size">Size:</label>
-                                    <select id="Size" name="Size">
-                                        
-                                            <option value="Extra-Small">Extra-Small</option>
-                                        
-                                            <option value="Small">Small</option>
-                                        
-                                            <option value="Medium">Medium</option>
-                                        
-                                            <option value="Large">Large</option>
-                                        
-                                            <option value="Extra-Large">Extra-Large</option>
-                                        
-                                    </select>
-                                </div>
-                            
+                        <!-- LOCATION 2: Stock Alert Banner (conditionally shown) -->
+                        <div id="stockAlert" class="stock-alert-banner" style="display: none;">
+                            <svg class="alert-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM11 15H9V13H11V15ZM11 11H9V5H11V11Z" fill="currentColor"/>
+                            </svg>
+                            <span id="stockAlertText">Only <strong id="stockCount">0</strong> left in stock - Order soon!</span>
                         </div>
+                        <!-- Size Selection -->
+                        <div class="options">
+                        
+                        <div class="option-group">
+                            <div class="size-selector-header">
+                            <label class="size-selector-label">Select your Size</label>
+                            </div>
+                            
+                            <div class="size-boxes-container" role="radiogroup" aria-label="Size">
+                            
+                                <button 
+                                type="button"
+                                class="size-box"
+                                data-size="Extra-Small"
+                                data-option-id="6796e8f40b162d69e8683755"
+                                data-option-name="Size"
+                                role="radio"
+                                aria-checked="false"
+                                onclick="selectSize(this)">
+                                Extra-Small
+                                </button>
+                            
+                                <button 
+                                type="button"
+                                class="size-box"
+                                data-size="Small"
+                                data-option-id="6796e8f40b162d69e8683756"
+                                data-option-name="Size"
+                                role="radio"
+                                aria-checked="false"
+                                onclick="selectSize(this)">
+                                Small
+                                </button>
+                            
+                                <button 
+                                type="button"
+                                class="size-box"
+                                data-size="Medium"
+                                data-option-id="6796e8f40b162d69e8683757"
+                                data-option-name="Size"
+                                role="radio"
+                                aria-checked="false"
+                                onclick="selectSize(this)">
+                                Medium
+                                </button>
+                            
+                                <button 
+                                type="button"
+                                class="size-box"
+                                data-size="Large"
+                                data-option-id="6796e8f40b162d69e8683758"
+                                data-option-name="Size"
+                                role="radio"
+                                aria-checked="false"
+                                onclick="selectSize(this)">
+                                Large
+                                </button>
+                            
+                                <button 
+                                type="button"
+                                class="size-box"
+                                data-size="Extra-Large"
+                                data-option-id="6796e8f40b162d69e8683759"
+                                data-option-name="Size"
+                                role="radio"
+                                aria-checked="false"
+                                onclick="selectSize(this)">
+                                Extra-Large
+                                </button>
+                            
+                            </div>
+                            
+                            <!-- Hidden input starts empty -->
+                            <input type="hidden" id="Size" name="Size" value="">
+                        </div>
+                        
+                    </div>
+
                     
                     
                     <!-- Quantity Control -->
-                    <div class="quantity-control">
-                        <label for="quantity">Quantity:</label>
-                        <div class="quantity-wrapper">
-                            <button class="quantity-btn minus" type="button">-</button>
-                            <input type="number" id="quantity" name="quantity" value="1" min="1" readonly>
-                            <button class="quantity-btn plus" type="button">+</button>
-                        </div>
-                    </div>
+                    
                 </div>
 
                 <div class="flex-box">
@@ -1312,16 +1370,499 @@ The fit is excellent—snug at the waist without being restrictive, and the tape
             gap: 2rem;
         }
     }
+
+    /* ========================================
+   STOCK ALERT & OUT OF STOCK STYLES
+   ======================================== */
+
+    /* Stock Alert Banner (Location 2) */
+    .stock-alert-banner {
+        width: 100%;
+        background-color: #FFF4E6;
+        border: 1px solid #FFB84D;
+        border-left: 4px solid #FF8C00;
+        border-radius: 6px;
+        padding: 12px 16px;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 0.95rem;
+        color: #8B4513;
+        animation: slideDown 0.3s ease-out;
+    }
+
+    .stock-alert-banner.show {
+        display: flex !important;
+    }
+
+    .stock-alert-banner .alert-icon {
+        flex-shrink: 0;
+        color: #FF8C00;
+    }
+
+    .stock-alert-banner strong {
+        color: #D2691E;
+        font-weight: 600;
+    }
+
+    /* Out of Stock Button (Location 3) */
+    .add-to-cart-button.out-of-stock {
+        background-color: #6c757d;
+        cursor: not-allowed;
+        opacity: 0.6;
+        border: 2px solid #5a6268;
+    }
+
+    .add-to-cart-button.out-of-stock:hover {
+        background-color: #6c757d;
+        transform: none;
+    }
+
+    .add-to-cart-button:disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+
+    /* Animations */
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .stock-alert-banner {
+            padding: 10px 12px;
+            font-size: 0.9rem;
+        }
+        
+        .select-wrapper.out-of-stock::after {
+            right: 2.5rem;
+            font-size: 1.3rem;
+        }
+    }
+
+    /* ========================================
+    SIZE SELECTOR BOXES 
+    ======================================== */
+
+    .size-selector-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .size-selector-label {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--title-color, #333);
+        margin: 0;
+    }
+
+    .size-guide-btn {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: none;
+        border: none;
+        color: var(--text-color, #666);
+        font-size: 0.95rem;
+        cursor: pointer;
+        padding: 0.25rem 0.5rem;
+        transition: color 0.3s ease;
+        text-decoration: underline;
+    }
+
+    .size-guide-btn:hover {
+        color: var(--action-primary, #000);
+    }
+
+    .size-guide-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .size-boxes-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .size-box {
+        /* Box styling */
+        min-width: 80px;
+        padding: 0.875rem 1.25rem;
+        background-color: #fff;
+        border: 2px solid #d1d5db; /* Grey outline - adjust to your system color */
+        border-radius: 8px; /* Slightly rounded corners */
+        
+        /* Text styling */
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--text-color, #333);
+        text-align: center;
+        
+        /* Interaction */
+        cursor: pointer;
+        transition: all 0.2s ease;
+        
+        /* Remove button defaults */
+        font-family: inherit;
+        user-select: none;
+    }
+
+    .size-box:hover:not(.disabled):not(.out-of-stock) {
+        border-color: var(--action-primary, #000);
+        transform: translateY(-2px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .size-box:active:not(.disabled):not(.out-of-stock) {
+        transform: translateY(0);
+    }
+
+    /* Selected state */
+    .size-box.selected {
+        border-color: var(--action-primary, #000);
+        border-width: 2px;
+        background-color: var(--action-primary, #000);
+        color: #fff;
+    }
+
+    .size-box.selected:hover {
+        background-color: var(--action-primary, #000);
+        opacity: 0.9;
+    }
+
+    /* Out of stock state */
+    .size-box.out-of-stock {
+        position: relative;
+        background-color: #f3f4f6;
+        border-color: #e5e7eb;
+        color: #9ca3af;
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+
+    .size-box.out-of-stock::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        right: 10%;
+        height: 2px;
+        background-color: #dc2626;
+        transform: translateY(-50%) rotate(-15deg);
+    }
+
+    .size-box.out-of-stock::after {
+        content: 'OUT OF STOCK';
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.7rem;
+        color: #dc2626;
+        font-weight: 600;
+        white-space: nowrap;
+        letter-spacing: 0.5px;
+    }
+
+    .size-box.out-of-stock:hover {
+        transform: none;
+        box-shadow: none;
+        background-color: #f3f4f6;
+    }
+
+    /* Low stock badge */
+    .size-box.low-stock::after {
+        content: 'LOW STOCK';
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background-color: #FF8C00;
+        color: white;
+        font-size: 0.65rem;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    /* Responsive sizing */
+    @media (max-width: 768px) {
+        .size-box {
+            min-width: 70px;
+            padding: 0.75rem 1rem;
+            font-size: 0.95rem;
+        }
+        
+        .size-boxes-container {
+            gap: 0.5rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .size-box {
+            min-width: 60px;
+            padding: 0.65rem 0.85rem;
+            font-size: 0.9rem;
+        }
+    }
+
+
 </style>
 
 <script>
+// ========================================
+// PRODUCT IMAGE HANDLING
+// ========================================
+const productImages = JSON.parse('[{"id":"67977f16d47a330012afab26","file":{"height":1080,"md5":"332457b5fed18f5179c3be524d5c17a6","url":"https://cdn.swell.store/dendearts/67c47956b788af0012696e18/332457b5fed18f5179c3be524d5c17a6/8.png","width":1080}},{"id":"67977f16d47a330012afab27","file":{"height":1080,"md5":"7a0683f8ef1330f44ee2120706b5ecee","url":"https://cdn.swell.store/dendearts/67c4795e84e7ab0012bbef38/7a0683f8ef1330f44ee2120706b5ecee/Lena%20model.png","width":1080}},{"id":"67977f16d47a330012afab27","file":{"height":1080,"md5":"3ee4e2be3f870a887b7569248b4bfa27","url":"https://cdn.swell.store/dendearts/67c47964dbb06a00121f50c2/3ee4e2be3f870a887b7569248b4bfa27/10.png","width":1080}},{"id":"67977f16d47a330012afab27","file":{"height":1080,"md5":"9937040028c24e9ac58805e9cd6e3b71","url":"https://cdn.swell.store/dendearts/67977eafff0ff4001200d6c9/9937040028c24e9ac58805e9cd6e3b71/8.png","width":1080}},{"id":"67c46a18b68e7f00124df40b","file":{"height":768,"md5":"6407db69ca698a8cb2af207bc7980c8f","url":"https://cdn.swell.store/dendearts/67c4699422a8aa001217bb1b/6407db69ca698a8cb2af207bc7980c8f/Abada-jogger-sizing-chart.png","width":2304}}]');
+
+function swapImages(thumbnailElement) {
+    const mainImage = document.getElementById('mainImage');
+    const thumbnails = document.querySelectorAll('.thumbnail-image');
+    
+    thumbnails.forEach(thumb => thumb.classList.remove('active'));
+    thumbnailElement.classList.add('active');
+
+    const thumbnailIndex = parseInt(thumbnailElement.dataset.index);
+    
+    mainImage.style.opacity = '0';
+    
+    setTimeout(() => {
+        mainImage.src = productImages[thumbnailIndex].file.url;
+        mainImage.alt = productImages[thumbnailIndex].alt;
+        mainImage.dataset.index = thumbnailIndex;
+        mainImage.style.opacity = '1';
+    }, 300);
+}
+
+// ========================================
+// STOCK MANAGEMENT - MOCK DATA
+// ========================================
+// TEMPORARY: Mock data for testing - REMOVE AFTER TESTING
+
+
+// When using real Swell data, replace above with this line:
+const variantData = JSON.parse('{"page":1,"count":5,"results":[{"id":"6796e8f527aea3001290a689","currency":"USD","name":"Large","optionValueIds":["6796e8f40b162d69e8683758"],"price":69.5,"sku":"1103","stockLevel":95,"stockStatus":"in_stock"},{"id":"6796e8f527aea3001290a688","currency":"USD","name":"Extra-Large","optionValueIds":["6796e8f40b162d69e8683759"],"price":69.5,"sku":"1101","stockLevel":0,"stockStatus":"out_of_stock"},{"id":"6796e8f527aea3001290a687","currency":"USD","name":"Medium","optionValueIds":["6796e8f40b162d69e8683757"],"price":69.5,"sku":"1104","stockLevel":91,"stockStatus":"in_stock"},{"id":"6796e8f527aea3001290a686","currency":"USD","name":"Small","optionValueIds":["6796e8f40b162d69e8683756"],"price":69.5,"sku":"1105","stockLevel":96,"stockStatus":"in_stock"},{"id":"6796e8f527aea3001290a685","currency":"USD","name":"Extra-Small","optionValueIds":["6796e8f40b162d69e8683755"],"price":69.5,"sku":"1102","stockLevel":12,"stockStatus":"in_stock"}],"pageCount":1,"limit":15}') || {};
+const productVariants = variantData.results || [];
+console.log('🔍 DEBUG: Product variants:', productVariants);
+
+const LOW_STOCK_THRESHOLD = 15;
+
+// ========================================
+// STOCK CHECKING FUNCTIONS
+// ========================================
+
+// Check stock level for currently selected variant
+function checkStockForVariant() {
+    console.log('🔍 Checking stock...');
+    
+    const selectedOptions = {};
+    
+    // Get selected values from hidden inputs (updated by selectSize function)
+    document.querySelectorAll('.option-group input[type="hidden"]').forEach(input => {
+        selectedOptions[input.name] = input.value;
+    });
+
+    console.log('Selected options:', selectedOptions);
+    console.log('Available variants:', productVariants);
+
+    // Find matching variant by size name
+    const sizeValue = selectedOptions['Size'];
+    const variant = productVariants.find(v =>
+        v.name.toLowerCase() === sizeValue.toLowerCase()
+    );
+    console.log('Found variant:', variant);
+    
+    const stockAlert = document.getElementById('stockAlert');
+    const stockCount = document.getElementById('stockCount');
+    const addToCartBtn = document.getElementById('addToCart');
+    const selectWrapper = document.querySelector('.select-wrapper');
+    const quantityInput = document.getElementById('quantity');
+
+    if (!variant) {
+        console.log('⚠️ No variant found, hiding alerts');
+        stockAlert.style.display = 'none';
+        enableAddToCart(addToCartBtn, selectWrapper);
+        return;
+    }
+
+    const stockLevel = variant.stockLevel || 0;
+    const stockTracking = variant.stockTracking !== false;
+
+    console.log(`📦 Stock level: ${stockLevel}, Tracking: ${stockTracking}`);
+
+    if (!stockTracking) {
+        stockAlert.style.display = 'none';
+        enableAddToCart(addToCartBtn, selectWrapper);
+        return;
+    }
+
+    // Out of stock
+    if (stockLevel <= 0) {
+        console.log('❌ OUT OF STOCK');
+        stockAlert.style.display = 'none';
+        disableAddToCart(addToCartBtn, selectWrapper);
+    }
+    // Low stock
+    else if (stockLevel <= LOW_STOCK_THRESHOLD) {
+        console.log('⚠️ LOW STOCK:', stockLevel);
+        stockCount.textContent = stockLevel;
+        stockAlert.style.display = 'flex';
+        stockAlert.classList.add('show');
+        enableAddToCart(addToCartBtn, selectWrapper);
+    }
+    // Normal stock
+    else {
+        console.log('✅ Normal stock:', stockLevel);
+        stockAlert.style.display = 'none';
+        enableAddToCart(addToCartBtn, selectWrapper);
+    }
+}
+
+// ========================================
+// SIZE BOX SELECTION HANDLER
+// ========================================
+function selectSize(buttonElement) {
+    console.log('📦 Size selected:', buttonElement.dataset.size);
+    
+    // Don't allow selection of out of stock sizes
+    if (buttonElement.classList.contains('out-of-stock')) {
+        console.log('❌ Cannot select out of stock size');
+        return;
+    }
+    
+    const container = buttonElement.closest('.size-boxes-container');
+    const optionName = buttonElement.dataset.optionName;
+    const selectedSize = buttonElement.dataset.size;
+    
+    // Remove 'selected' class from all size boxes in this group
+    container.querySelectorAll('.size-box').forEach(box => {
+        box.classList.remove('selected');
+        box.setAttribute('aria-checked', 'false');
+    });
+    
+    // Add 'selected' class to clicked box
+    buttonElement.classList.add('selected');
+    buttonElement.setAttribute('aria-checked', 'true');
+    
+    // Update hidden input value
+    const hiddenInput = document.getElementById(optionName);
+    if (hiddenInput) {
+        hiddenInput.value = selectedSize;
+    }
+    
+    // Check stock for newly selected variant
+    checkStockForVariant();
+}
+
+
+// ========================================
+// UPDATE SIZE BOXES WITH STOCK STATUS
+// ========================================
+function updateSizeBoxStockStatus() {
+    console.log('🔄 Updating size box stock status...');
+    
+    document.querySelectorAll('.size-box').forEach(sizeBox => {
+        const sizeName = sizeBox.dataset.size;
+        const optionName = sizeBox.dataset.optionName;
+        
+        // Create a temporary selectedOptions object for this specific size
+        const testOptions = { [optionName]: sizeName };
+        
+        // Find variant for this size
+        const variant = productVariants.find(v => 
+            v.name.toLowerCase() === sizeName.toLowerCase()
+        );
+        
+        if (!variant) {
+            console.log(`⚠️ No variant found for size: ${sizeName}`);
+            return;
+        }
+        
+        const stockLevel = variant.stockLevel || 0;
+        
+        // Remove existing status classes
+        sizeBox.classList.remove('out-of-stock', 'low-stock');
+        
+        // Apply appropriate class based on stock
+        if (stockLevel <= 0) {
+            sizeBox.classList.add('out-of-stock');
+            sizeBox.disabled = true;
+            console.log(`❌ ${sizeName}: OUT OF STOCK`);
+        } else if (stockLevel <= LOW_STOCK_THRESHOLD) {
+            sizeBox.classList.add('low-stock');
+            console.log(`⚠️ ${sizeName}: LOW STOCK (${stockLevel})`);
+        } else {
+            console.log(`✅ ${sizeName}: In stock (${stockLevel})`);
+        }
+    });
+}
+
+// Disable add to cart for out of stock items
+function disableAddToCart(button, selectWrapper) {
+    if (!button) return;
+    
+    button.textContent = 'Out of Stock';
+    button.disabled = true;
+    button.classList.add('out-of-stock');
+    button.setAttribute('onclick', ''); // Remove onclick handler
+    
+    if (selectWrapper) {
+        selectWrapper.classList.add('out-of-stock');
+    }
+}
+
+// Enable add to cart
+function enableAddToCart(button, selectWrapper) {
+    if (!button) return;
+    
+    button.textContent = 'Add to Cart';
+    button.disabled = false;
+    button.classList.remove('out-of-stock');
+    // Onclick is already in HTML, no need to re-add
+    
+    if (selectWrapper) {
+        selectWrapper.classList.remove('out-of-stock');
+    }
+}
+
+// ========================================
+// ADD TO CART FUNCTION
+// ========================================
 async function addToCart(productId) {
-    const quantity = document.getElementById('quantity').value;
+    const quantity = 1; // Fixed quantity - users select size and add one at a time
     const button = document.getElementById('addToCart');
     const options = {};
-    
-    document.querySelectorAll('.option-group select').forEach(select => {
-        options[select.name] = select.value;
+
+    // Check if button is disabled (out of stock)
+    if (button.disabled && button.classList.contains('out-of-stock')) {
+        console.log('❌ Cannot add out of stock item');
+        return;
+    }
+
+    document.querySelectorAll('.option-group input[type="hidden"]').forEach(input => {
+        options[input.name] = input.value;
     });
 
     button.disabled = true;
@@ -1344,19 +1885,26 @@ async function addToCart(productId) {
             window.swellCartCount = 0;
         }
         window.swellCartCount += parseInt(quantity);
-        updateCartCount();
         
-        await swell.cachedCart.addItem({
-            product_id: productId,
-            quantity: parseInt(quantity),
-            options: options
-        });
+        if (typeof updateCartCount === 'function') {
+            updateCartCount();
+        }
+        
+        // Only call Swell if it's available
+        if (typeof swell !== 'undefined' && swell.cachedCart) {
+            await swell.cachedCart.addItem({
+                product_id: productId,
+                quantity: parseInt(quantity),
+                options: options
+            });
+        } else {
+            console.log('ℹ️ Swell not available (expected in local dev with mock data)');
+        }
 
         button.textContent = 'Added to Cart!';
         
-        const updateCartDisplayFn = window.updateCartDisplay;
-        if (typeof updateCartDisplayFn === 'function') {
-            updateCartDisplayFn();
+        if (typeof updateCartDisplay === 'function') {
+            updateCartDisplay();
         }
         
         setTimeout(() => {
@@ -1374,34 +1922,22 @@ async function addToCart(productId) {
             cartItems.classList.remove('loading');
         }
         
-        const cart = await swell.cachedCart.get();
-        window.swellCartCount = cart?.itemQuantity || 0;
-        updateCartCount();
+        if (typeof swell !== 'undefined' && swell.cachedCart) {
+            const cart = await swell.cachedCart.get();
+            window.swellCartCount = cart?.itemQuantity || 0;
+            if (typeof updateCartCount === 'function') {
+                updateCartCount();
+            }
+        }
     }
 }
 
-const productImages = JSON.parse('[{"id":"67977f16d47a330012afab26","file":{"height":1080,"md5":"332457b5fed18f5179c3be524d5c17a6","url":"https://cdn.swell.store/dendearts/67c47956b788af0012696e18/332457b5fed18f5179c3be524d5c17a6/8.png","width":1080}},{"id":"67977f16d47a330012afab27","file":{"height":1080,"md5":"7a0683f8ef1330f44ee2120706b5ecee","url":"https://cdn.swell.store/dendearts/67c4795e84e7ab0012bbef38/7a0683f8ef1330f44ee2120706b5ecee/Lena%20model.png","width":1080}},{"id":"67977f16d47a330012afab27","file":{"height":1080,"md5":"3ee4e2be3f870a887b7569248b4bfa27","url":"https://cdn.swell.store/dendearts/67c47964dbb06a00121f50c2/3ee4e2be3f870a887b7569248b4bfa27/10.png","width":1080}},{"id":"67977f16d47a330012afab27","file":{"height":1080,"md5":"9937040028c24e9ac58805e9cd6e3b71","url":"https://cdn.swell.store/dendearts/67977eafff0ff4001200d6c9/9937040028c24e9ac58805e9cd6e3b71/8.png","width":1080}},{"id":"67c46a18b68e7f00124df40b","file":{"height":768,"md5":"6407db69ca698a8cb2af207bc7980c8f","url":"https://cdn.swell.store/dendearts/67c4699422a8aa001217bb1b/6407db69ca698a8cb2af207bc7980c8f/Abada-jogger-sizing-chart.png","width":2304}}]');
-
-function swapImages(thumbnailElement) {
-    const mainImage = document.getElementById('mainImage');
-    const thumbnails = document.querySelectorAll('.thumbnail-image');
-    
-    thumbnails.forEach(thumb => thumb.classList.remove('active'));
-    thumbnailElement.classList.add('active');
-
-    const thumbnailIndex = parseInt(thumbnailElement.dataset.index);
-    
-    mainImage.style.opacity = '0';
-    
-    setTimeout(() => {
-        mainImage.src = productImages[thumbnailIndex].file.url;
-        mainImage.alt = productImages[thumbnailIndex].alt;
-        mainImage.dataset.index = thumbnailIndex;
-        mainImage.style.opacity = '1';
-    }, 300);
-}
-
+// ========================================
+// DOM READY INITIALIZATION
+// ========================================
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('🚀 Page loaded, initializing...');
+    
     // Image thumbnail handler
     const firstThumbnail = document.querySelector('.thumbnail-image');
     if (firstThumbnail) {
@@ -1418,9 +1954,40 @@ document.addEventListener('DOMContentLoaded', () => {
             formContainer.classList.toggle('active');
         });
     }
-});
+    
+    // Quantity controls
+    const quantityInput = document.getElementById('quantity');
+    const plusBtn = document.querySelector('.quantity-btn.plus');
+    const minusBtn = document.querySelector('.quantity-btn.minus');
 
+    if (plusBtn) {
+        plusBtn.addEventListener('click', () => {
+            const currentVal = parseInt(quantityInput.value);
+            const maxVal = parseInt(quantityInput.max) || 999;
+            if (currentVal < maxVal) {
+                quantityInput.value = currentVal + 1;
+            }
+        });
+    }
+
+    if (minusBtn) {
+        minusBtn.addEventListener('click', () => {
+            const currentVal = parseInt(quantityInput.value);
+            if (currentVal > 1) {
+                quantityInput.value = currentVal - 1;
+            }
+        });
+    }
+
+    // Check initial stock on page load
+    console.log('📦 Initializing stock status...');
+    updateSizeBoxStockStatus();
+    
+    // Check initial stock on page load
+    checkStockForVariant();
+});
 </script>
+
 
 
     </main>
