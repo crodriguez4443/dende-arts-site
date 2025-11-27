@@ -12,10 +12,30 @@ product_title: Abada Joggers
 
 ---
 
- <!-- Discount Banner -->
-  <section style="width: 100%; background-color: var(--action-primary); padding: 12px 20px; text-align: center; color: white; font-weight: 600; margin-bottom;">
-      🎉 SPECIAL OFFER: Get 15% OFF your order! Use code: BACK2TRAIN
-  </section>
+<!-- Discount Banner -->
+<section id="discount-banner" style="width: 100%; background-color: var(--action-primary); padding: 12px 20px; text-align: center; color: white; font-weight: 600; margin-bottom: 0;">
+    🎉 SPECIAL OFFER: Get 15% OFF your order! Use code: BACK2TRAIN
+</section>
+
+<script>
+// Adjust nav position to account for banner height
+document.addEventListener('DOMContentLoaded', function() {
+    const banner = document.getElementById('discount-banner');
+    const navContainer = document.querySelector('.nav-container');
+    const overlay = document.querySelector('.overlay');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (banner && navContainer) {
+        const bannerHeight = banner.offsetHeight;
+        const originalTop = 30; // Original top value from CSS
+        const newTop = originalTop + bannerHeight;
+
+        navContainer.style.top = newTop + 'px';
+        if (overlay) overlay.style.top = (35 + bannerHeight) + 'px';
+        if (navMenu) navMenu.style.top = newTop + 'px';
+    }
+});
+</script>
 
 <section class="main-grid product-sale-page">
     {% include "nav.njk" %}
