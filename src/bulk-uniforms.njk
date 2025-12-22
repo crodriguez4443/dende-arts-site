@@ -105,9 +105,87 @@ permalink: /bulk-orders/
             </div>
         </div>
     </div>
+</section>
 
+<!-- Bulk order process -->
+
+
+
+<section class="main-grid extra-padding py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 extra-padding">
+        
+        <h2 class="text-3xl md:text-4xl font-extrabold text-[var(--text-color)] text-center mb-16">
+            How does Bulk Ordering work?
+        </h2>
+
+        <div class="relative grid grid-cols-1 md:grid-cols-4 gap-8">
+            
+            <div class="hidden md:block absolute top-6 left-0 w-full h-0.5 bg-gray-200 -z-0" aria-hidden="true"></div>
+
+            <div class="relative flex flex-col items-center text-center group">
+                <div class="w-12 h-12 rounded-full bg-[var(--action-primary)] text-white flex items-center justify-center text-lg font-bold mb-6 z-10 ring-4 ring-white shadow-sm">
+                    1
+                </div>
+                <h3 class="text-lg font-bold text-[var(--text-color)] mb-2">
+                    Submit Your Request
+                </h3>
+                <p class="text-[var(--text-color)] text-sm leading-relaxed">
+                    Fill out the form below to let us know how many Abadas you need, the specific sizes, your deadline, and if you need a logo included.
+                </p>
+            </div>
+
+            <div class="relative flex flex-col items-center text-center group">
+                <div class="w-12 h-12 rounded-full bg-[var(--action-primary)] text-white flex items-center justify-center text-lg font-bold mb-6 z-10 ring-4 ring-white shadow-sm">
+                    2
+                </div>
+                <h3 class="text-lg font-bold text-[var(--text-color)] mb-2">
+                    Confirmation
+                </h3>
+                <p class="text-[var(--text-color)] text-sm leading-relaxed">
+                    We want this to be smooth. We'll reach out via phone or email to confirm your specific needs and ensure you get the best care possible.
+                </p>
+            </div>
+
+            <div class="relative flex flex-col items-center text-center group">
+                <div class="w-12 h-12 rounded-full bg-[var(--action-primary)] text-white flex items-center justify-center text-lg font-bold mb-6 z-10 ring-4 ring-white shadow-sm">
+                    3
+                </div>
+                <h3 class="text-lg font-bold text-[var(--text-color)] mb-2">
+                    Production
+                </h3>
+                <p class="text-[var(--text-color)] text-sm leading-relaxed">
+                    Once details are set, we start production immediately! Our typical fulfillment time for bulk orders is about 6 - 8 weeks.
+                </p>
+            </div>
+
+            <div class="relative flex flex-col items-center text-center group">
+                <div class="w-12 h-12 rounded-full bg-[var(--action-primary)] text-white flex items-center justify-center text-lg font-bold mb-6 z-10 ring-4 ring-white shadow-sm">
+                    4
+                </div>
+                <h3 class="text-lg font-bold text-[var(--text-color)] mb-2">
+                    Delivery
+                </h3>
+                <p class="text-[var(--text-color)] text-sm leading-relaxed">
+                    Your Abadas get shipped wherever you are in the world. Shipping costs are already included in your initial cost estimate.
+                </p>
+            </div>
+
+        </div>
+    </div>
     <div class="rating-container">
         <a href="#bulk-order-form" class="btn btn-dark">Get Started with Your Bulk Order</a>
+    </div>
+</section>
+
+<!-- Reviews Section -->
+<section class="main-grid extra-padding">
+    <h2 class="section-title">Why your students will love our Abadas</h2>
+    <div class="testimonial-grid">
+        {% for review in collections.abadaReviews %}
+            {% if loop.index0 < 12 and review.review_content.length >= 100 %}
+                {% include "abada-review-card.njk"%}
+            {% endif %}
+        {% endfor %}
     </div>
 </section>
 
@@ -170,17 +248,6 @@ permalink: /bulk-orders/
 </section>
 
 <section class="main-grid extra-padding">
-    <h2 class="section-title">Why your students will love our Abadas</h2>
-    <div class="testimonial-grid">
-        {% for review in collections.abadaReviews %}
-            {% if loop.index0 < 12 and review.review_content.length >= 100 %}
-                {% include "abada-review-card.njk"%}
-            {% endif %}
-        {% endfor %}
-    </div>
-</section>
-
-<section class="main-grid extra-padding">
     <h2 class="section-title">What makes our Abadas different</h2>
     <p class="section-subtitle-centered">I'v been praticing and teaching Capoeira since 2007. I noticed Abadas didn't fit anyone right!.
     But Iwanted people to feel great while thy move. So I decided to produce my own abadas for the community. </p>
@@ -229,18 +296,19 @@ permalink: /bulk-orders/
     <h2 class="">How does Bulk Ordering work?</h2>
     <div>
         <!-- You fill out the form below. -->
-        <!-- larger orders can be made on their own. small ones are combined with other orders to help with cost -->
+        <!-- You can let us know how many Abadas you need, sizes, by when and if you need a logo included -->
     </div>
     <div>
         <!-- we confirm details with you over phone or email -->
-        <!-- need a logo? how many of each size? by when? -->
+        <!-- We want this to be smooth. We'll reach out to confirm you needs and give you the best care possible.  -->
     </div>
     <div>
         <!-- Once set, we start up production! -->
         <!-- Fulfillment time is about 6 - 8 weeks -->
     </div>
     <div>
-        <!-- Your abadas get shipped direct to you whever in the world that is -->
+        <!-- Get your Abadas shipped to you -->
+        <!-- shipping is included in your cost estimates. And Your abadas get shipped wherever you are in the world -->
     </div> 
 </section> #}
 
@@ -252,12 +320,13 @@ permalink: /bulk-orders/
     </div>
 </section> #}
 
+
 <section class="main-grid extra-padding">
     <h2 id="bulk-order-form" class="section-title">Get my Premium Capoeira Abadas!</h2>
     <div class="value-props">
         <div class="value-prop">
             <span class="check">✓</span>
-            <span>Superior quality vs. Brazilian imports</span>
+            <span>Superior quality</span>
         </div>
         <div class="value-prop">
             <span class="check">✓</span>
