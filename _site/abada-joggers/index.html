@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="descritpion" content="">
     <title></title>
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/pages.css"> 
@@ -62,29 +63,7 @@
     <main> 
         
 <!-- Discount Banner -->
-<section id="discount-banner" style="width: 100%; background-color: var(--action-primary); padding: 12px 20px; text-align: center; color: white; font-weight: 600; margin-bottom: 0;">
-    🎉 SPECIAL OFFER: Get 15% OFF your order! Use code: BACK2TRAIN
-</section>
 
-<script>
-// Adjust nav position to account for banner height
-document.addEventListener('DOMContentLoaded', function() {
-    const banner = document.getElementById('discount-banner');
-    const navContainer = document.querySelector('.nav-container');
-    const overlay = document.querySelector('.overlay');
-    const navMenu = document.querySelector('.nav-menu');
-
-    if (banner && navContainer) {
-        const bannerHeight = banner.offsetHeight;
-        const originalTop = 30; // Original top value from CSS
-        const newTop = originalTop + bannerHeight;
-
-        navContainer.style.top = newTop + 'px';
-        if (overlay) overlay.style.top = (35 + bannerHeight) + 'px';
-        if (navMenu) navMenu.style.top = newTop + 'px';
-    }
-});
-</script>
 
 <section class="main-grid product-sale-page">
     <div class="nav-content">
@@ -675,7 +654,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <h3 class="review-item__title">Amazing Capoeira Pants!</h3>
                     <p class="review-item__meta">
-                        <span class="review-item__author-name">By: Austina Rastelli - </span>
+                        <span class="review-item__author-name">By: Agustina Rastelli - </span>
                         <span class="review-item__author">Verified Buyer</span>
                         
                     </p>
@@ -1688,7 +1667,7 @@ function swapImages(thumbnailElement) {
 
 
 // When using real Swell data, replace above with this line:
-const variantData = JSON.parse('{"page":1,"count":5,"results":[{"id":"6796e8f527aea3001290a689","currency":"USD","name":"Large","optionValueIds":["6796e8f40b162d69e8683758"],"price":69.5,"sku":"1103","stockLevel":119,"stockStatus":"in_stock"},{"id":"6796e8f527aea3001290a688","currency":"USD","name":"Extra-Large","optionValueIds":["6796e8f40b162d69e8683759"],"price":69.5,"sku":"1101","stockLevel":0,"stockStatus":"out_of_stock"},{"id":"6796e8f527aea3001290a687","currency":"USD","name":"Medium","optionValueIds":["6796e8f40b162d69e8683757"],"price":69.5,"sku":"1104","stockLevel":119,"stockStatus":"in_stock"},{"id":"6796e8f527aea3001290a686","currency":"USD","name":"Small","optionValueIds":["6796e8f40b162d69e8683756"],"price":69.5,"sku":"1105","stockLevel":70,"stockStatus":"in_stock"},{"id":"6796e8f527aea3001290a685","currency":"USD","name":"Extra-Small","optionValueIds":["6796e8f40b162d69e8683755"],"price":69.5,"sku":"1102","stockLevel":9,"stockStatus":"in_stock"}],"pageCount":1,"limit":15}') || {};
+const variantData = JSON.parse('{"page":1,"count":5,"results":[{"id":"6796e8f527aea3001290a689","currency":"USD","name":"Large","optionValueIds":["6796e8f40b162d69e8683758"],"price":69.5,"sku":"1103","stockLevel":117,"stockStatus":"in_stock"},{"id":"6796e8f527aea3001290a688","currency":"USD","name":"Extra-Large","optionValueIds":["6796e8f40b162d69e8683759"],"price":69.5,"sku":"1101","stockLevel":0,"stockStatus":"out_of_stock"},{"id":"6796e8f527aea3001290a687","currency":"USD","name":"Medium","optionValueIds":["6796e8f40b162d69e8683757"],"price":69.5,"sku":"1104","stockLevel":117,"stockStatus":"in_stock"},{"id":"6796e8f527aea3001290a686","currency":"USD","name":"Small","optionValueIds":["6796e8f40b162d69e8683756"],"price":69.5,"sku":"1105","stockLevel":69,"stockStatus":"in_stock"},{"id":"6796e8f527aea3001290a685","currency":"USD","name":"Extra-Small","optionValueIds":["6796e8f40b162d69e8683755"],"price":69.5,"sku":"1102","stockLevel":8,"stockStatus":"in_stock"}],"pageCount":1,"limit":15}') || {};
 const productVariants = variantData.results || [];
 console.log('🔍 DEBUG: Product variants:', productVariants);
 

@@ -5035,12 +5035,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://dendearts.com/bulk-orders/</loc>
-    <lastmod>2025-07-04</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://dendearts.com/checkout/</loc>
     <lastmod>2025-07-04</lastmod>
     <priority>0.5</priority>
@@ -5091,6 +5085,12 @@
   <url>
     <loc>https://dendearts.com/abada-joggers/</loc>
     <lastmod>2025-11-27</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://dendearts.com/bulk-orders/</loc>
+    <lastmod>2025-12-22</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>

@@ -27,10 +27,10 @@ function stringifyAttributes(attributesObj) {
 module.exports = function(eleventyConfig) {
 
     // Existing passthrough copy configurations
-    eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addPassthroughCopy("src/img");
     eleventyConfig.addPassthroughCopy("src/js");
     eleventyConfig.addPassthroughCopy("src/fonts");
+    eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addPassthroughCopy("src/ads.txt"); // move text adds to root domain/ads.txt
 
     

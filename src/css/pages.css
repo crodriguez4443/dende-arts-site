@@ -497,6 +497,18 @@
     color: var(--action-primary);
 }
 
+.section-subtitle-centered {
+    text-align: centered;
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 725px) {
+    .section-subtitle-centered {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
 /* Flex container for selectors */
 .selectors-container {
     display: flex;

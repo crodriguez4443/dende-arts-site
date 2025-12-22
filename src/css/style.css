@@ -841,6 +841,14 @@ strong {
     padding: 2rem 1rem;
 }
 
+.guide-card-light {
+    border: 0px solid;
+    border-radius: 20px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); 
+    padding: 2rem 1rem;
+}
+
 .guide-card-content {
     display: flex;
     align-items: flex-start;
