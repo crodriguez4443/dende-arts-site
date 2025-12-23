@@ -741,6 +741,14 @@ video {
   border-width: 1px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-\[color\:var\(--action-primary\)\] {
+  border-color: var(--action-primary);
+}
+
 .bg-\[\#d2e9ef\] {
   --tw-bg-opacity: 1;
   background-color: rgb(210 233 239 / var(--tw-bg-opacity, 1));
@@ -823,6 +831,10 @@ video {
 
 .text-\[var\(--text-color\)\] {
   color: var(--text-color);
+}
+
+.text-\[var\(--title-color\)\] {
+  color: var(--title-color);
 }
 
 .text-white {

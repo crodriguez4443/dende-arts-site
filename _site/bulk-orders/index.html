@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descritpion" content="">
+    <meta name="description" content="Bulk order Abadas for Capoeira groups | Wholesale Capoeira pants for Batizados, events, and groups">
     <title>Bulk Order Abadas for Capoeira Groups | Wholesale Capoeira Pants – Dende Arts</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -12,7 +12,7 @@
 
     <!-- OG meta descriptions -->
     <meta property="og:title" content="Bulk Order Abadas for Capoeira Groups | Wholesale Capoeira Pants – Dende Arts" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="Bulk order Abadas for Capoeira groups | Wholesale Capoeira pants for Batizados, events, and groups" />
     <meta property="og:image" content="/img/dende-arts-logo2.png" />
 
     <!-- Primary font -->
@@ -111,12 +111,11 @@
 
     <div class="bulk-page-content">
         <h1 class="bulk-title">Finally!</br>Easy Bulk Order Abadas for Capoeira Schools &amp; Groups</h1>
-        <p class="bulk-page-text">Fill out the form. We'll be in touch about getting your order set up!</p>
+        <p class="bulk-page-text">We have <strong class="border-b-2 border-[color:var(--action-primary)]">no minimums</strong> and clear pricing to support Capoeira teachers</p>
         <div class="rating-container">
             <a href="#bulk-order-form" class="btn btn-dark">Get Bulk Abadas</a>
         </div>
     </div>
-
 </section>
 
 <section class="main-grid extra-padding">
@@ -195,7 +194,7 @@
                 </div>
                 <div>
                     <h3 class="pb-4">Simple, All-Inclusive Pricing</h3>
-                    <p>Use our calculator above to see your exact cost—shipping included, no hidden fees, no surprises. What you see is what you pay.</p>
+                    <p>Use our price calculator to see your exact cost—shipping included, no hidden fees, no surprises. What you see is what you pay.</p>
                 </div>
             </div>
         </div>
@@ -230,7 +229,7 @@
 <section class="main-grid extra-padding py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 extra-padding">
         
-        <h2 class="text-3xl md:text-4xl font-extrabold text-[var(--text-color)] text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-[var(--title-color)] text-center mb-16">
             How does Bulk Ordering work?
         </h2>
 
@@ -289,7 +288,7 @@
         </div>
     </div>
     <div class="rating-container">
-        <a href="#bulk-order-form" class="btn btn-dark">Get Started with Your Bulk Order</a>
+        <a href="#bulk-order-form" class="btn btn-dark ">Get Started with Your Bulk Order</a>
     </div>
 </section>
 
@@ -476,12 +475,26 @@ The Abada Joggers are definitely a game changer and bravo Calado for the profess
                 <div class="input-group">
                     <label for="adult-qty">Adult Pants Quantity</label>
                     <input type="number" id="adult-qty" name="adult-quantity" min="0" value="0">
-                    <span class="unit-price">$<span id="adult-unit-price">38</span> each</span>
+                    
+                    <div class="unit-price">
+                        $<span id="adult-unit-price">38</span> each. 
+                        <label for="adult-logo" style="cursor: pointer; color: var(--action-primary);">
+                            Add a custom logo for $1.50 
+                            <input type="checkbox" id="adult-logo" name="adult-logo">
+                        </label>
+                    </div>
                 </div>
                 <div class="input-group">
                     <label for="kids-qty">Kids Pants Quantity</label>
                     <input type="number" id="kids-qty" name="kids-quantity" min="0" value="0">
-                    <span class="unit-price">$<span id="kids-unit-price">36</span> each</span>
+                    
+                    <div class="unit-price">
+                        $<span id="kids-unit-price">36</span> each. 
+                        <label for="kids-logo" style="cursor: pointer; color: var(--action-primary);">
+                            Add a custom logo for $1.50 
+                            <input type="checkbox" id="kids-logo" name="kids-logo">
+                        </label>
+                    </div>
                 </div>
                 <div class="">
                     <p class="discount-info">Adults discounts at 50, 100, 300, and 500</p>
@@ -590,9 +603,6 @@ The Abada Joggers are definitely a game changer and bravo Calado for the profess
 
 
 
-
-
-
 <section class="main-grid extra-padding">
     <h2 id="bulk-order-form" class="section-title">Get my Premium Capoeira Abadas!</h2>
     <div class="value-props">
@@ -688,6 +698,7 @@ The Abada Joggers are definitely a game changer and bravo Calado for the profess
 const PRICING = {
     adult: {
         base: 38,
+        logo: 1.50,
         tiers: [
             { min: 50, discount: 0.05 },   // 5% off 50+
             { min: 100, discount: 0.075 },  // 7.5% off 100+
@@ -697,6 +708,7 @@ const PRICING = {
     },
     kids: {
         base: 36,
+        logo: 1.50,
         tiers: [
             { min: 50, discount: 0.00 },
             { min: 100, discount: 0.05 },
@@ -709,7 +721,9 @@ const PRICING = {
 function calculatePricing() {
     const adultQty = parseInt(document.getElementById('adult-qty').value) || 0;
     const kidsQty = parseInt(document.getElementById('kids-qty').value) || 0;
-    
+    const adultLogo = document.getElementById('adult-logo').checked;
+    const kidsLogo = document.getElementById('kids-logo').checked;
+
     // Determine discount rate for adults based on adult quantity only
     let adultDiscountRate = 0;
     for (const tier of PRICING.adult.tiers.sort((a, b) => b.min - a.min)) {
@@ -718,7 +732,7 @@ function calculatePricing() {
             break;
         }
     }
-    
+
     // Determine discount rate for kids based on kids quantity only
     let kidsDiscountRate = 0;
     for (const tier of PRICING.kids.tiers.sort((a, b) => b.min - a.min)) {
@@ -727,17 +741,20 @@ function calculatePricing() {
             break;
         }
     }
-    
-    // Calculate base prices and individual discounts
-    const adultBase = adultQty * PRICING.adult.base;
-    const kidsBase = kidsQty * PRICING.kids.base;
-    
+
+    // Calculate base prices (including logo cost if selected)
+    const adultUnitPrice = PRICING.adult.base + (adultLogo ? PRICING.adult.logo : 0);
+    const kidsUnitPrice = PRICING.kids.base + (kidsLogo ? PRICING.kids.logo : 0);
+
+    const adultBase = adultQty * adultUnitPrice;
+    const kidsBase = kidsQty * kidsUnitPrice;
+
     const adultDiscount = adultBase * adultDiscountRate;
     const kidsDiscount = kidsBase * kidsDiscountRate;
-    
+
     const adultSubtotal = adultBase - adultDiscount;
     const kidsSubtotal = kidsBase - kidsDiscount;
-    
+
     const subtotal = adultBase + kidsBase;
     const totalDiscount = adultDiscount + kidsDiscount;
     const total = subtotal - totalDiscount;
@@ -789,7 +806,9 @@ function calculatePricing() {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('adult-qty').addEventListener('input', calculatePricing);
     document.getElementById('kids-qty').addEventListener('input', calculatePricing);
-    
+    document.getElementById('adult-logo').addEventListener('change', calculatePricing);
+    document.getElementById('kids-logo').addEventListener('change', calculatePricing);
+
     // Initial calculation
     calculatePricing();
 });
@@ -864,7 +883,8 @@ document.addEventListener('DOMContentLoaded', function() {
         color: #2c3e50;
     }
 
-    .input-group input {
+    /* Only apply full width to the number input */
+    .input-group input[type="number"] {
         width: 100%;
         padding: 0.75rem;
         border: 1px solid #ddd;
@@ -872,11 +892,20 @@ document.addEventListener('DOMContentLoaded', function() {
         font-size: 1.1rem;
     }
 
+    /* Make sure the checkbox stays small and inline */
+    .input-group input[type="checkbox"] {
+        width: auto;
+        display: inline-block;
+        margin-left: 8px; /* Adds a little space between text and box */
+        transform: scale(1.2); /* Optional: makes the checkbox slightly easier to click */
+    }
+
     .unit-price {
         font-size: 0.9rem;
         color: #666;
         margin-top: 0.25rem;
-        display: block;
+        /* Changed from flex to block to allow text flow */
+        display: block; 
     }
 
     .pricing-summary {
