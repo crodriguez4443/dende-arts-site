@@ -1923,8 +1923,8 @@ strong {
 }
 
 
-li:hover,
-li:focus {
+.toc-nav li:hover,
+.toc-nav li:focus {
   transform: scale(1.1);
   margin: 1rem 0;
 }

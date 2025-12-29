@@ -18,6 +18,20 @@ permalink: "songbook/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNu
         <input class="searchInput" type="text" id="songsSearchInput" placeholder="Search Songs...">
     </div>
     
+    <div class="bg-[var(--background-light)] min-h-12 px-4 py-4 mb-4">
+        <div class="flex flex-col md:flex-row items-center gap-4 md: justify-center">
+            <a href="https://dendearts.com/abada-joggers" class="block h-[3rem] w-[3rem] mb-[1rem] md:h-[5rem] md:w-[5rem] md:flex md:justify-end md:pr-4">
+                {% image "src/img/products/abadas-stars.png", "buy abada joggers", "h-full w-full object-contain", undefined, undefined, undefined %}
+            </a>
+            <div class="md:pl-4">
+                <a href="https://dendearts.com/abada-joggers" class="btn btn-dark md:!px-[6rem] md:!py-[1rem]" >
+                    <h3 class="text-lg font-bold mb-1 text-white">Click to order your Abada Joggers</h3>
+                </a>
+            </div>
+        </div>
+        {# <p class="pt-[1.5rem] text-sm text-center">Click to order our high quality, well fitting Abadas</p> #}
+    </div>
+    
     <!-- FILTER BY TAGS -->
     {# <div class="filter-section">
         <h3>Filter</h3>
