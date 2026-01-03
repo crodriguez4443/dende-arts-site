@@ -1,0 +1,188 @@
+
+    <div class="bg-[var(--background-light)] min-h-12 px-4 py-4 mb-4">
+        <div class="flex flex-col items-center gap-4 md: justify-center">
+             <!-- Star Rating (No Image) -->
+             <div>
+                <div class="flex items-center justify-center gap-1 !text-[var(--action-primary)]">
+                  <span class="display-object inline-flex items-center h-[3.5rem] w-auto">
+                    {% image "src/img/products/abadas-stars.png", "buy abada joggers", "!h-[3.5rem] w-auto pl-4", undefined, undefined, undefined %}
+                  </span>
+                  <span class="star filled !text-[1.75rem]">★</span>
+                  <span class="star filled !text-[1.75rem]">★</span>
+                  <span class="star filled !text-[1.75rem]">★</span>
+                  <span class="star filled !text-[1.75rem]">★</span>
+                  <span class="star filled !text-[1.75rem]">★</span>
+                </div>
+                {# <p class="">Built for the Roda. Tested in Training</p> #}
+            </div>
+            <!-- scrolling reviews -->
+            <div
+              class="review-rotator text-center max-w-2xl mx-auto !text-[2.2rem] font-medium"
+              data-reviews='[
+                "performance, style AND comfort!",
+                "The fit is perfect!!",
+                "Best capoeira pants I’ve played in.",
+                "I wear these everywhere!",
+                "A step above everything else.",
+                "Will definitely be purchasing more.",
+                "Great cut, it’s very flattering.",
+                "Definitely a game changer!",
+                "I feel confident with these.",
+                "Had my eye on these for a while!"
+              ]'
+            >
+              <div class="perspective-wrapper">
+                <p class="review-text italic"></p>
+              </div>
+            </div>
+
+            {# <a href="https://dendearts.com/abada-joggers" class="block h-[3rem] w-[3rem] mb-[1rem] md:h-[5rem] md:w-[5rem] md:flex md:justify-end md:pr-4">
+                {% image "src/img/products/abadas-stars.png", "buy abada joggers", "h-full w-full object-contain", undefined, undefined, undefined %}
+            </a> #}
+            <div class="md: mb-4">
+                <a href="https://dendearts.com/abada-joggers-landing" class="btn btn-dark !px-[4rem] !py-[1rem]" >
+                    <p class="">View Abada Joggers</p>
+                </a>
+            </div>
+        </div>
+        {# <p class="pt-[1.5rem] text-sm text-center">Click to order our high quality, well fitting Abadas</p> #}
+    </div>
+
+
+<style>
+  /* Force image inside display-object to respect parent height */
+  .display-object img,
+  .display-object picture {
+    height: 100% !important;
+    width: auto !important;
+  }
+
+  /* 1. Container Setup */
+  .review-rotator {
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* CRITICAL: Perspective gives the 3D depth to the flip */
+    perspective: 1000px; 
+    overflow: hidden; /* Keeps the animation inside the box */
+  }
+
+  .review-text {
+    display: inline-block; /* Transforms require block-level rendering */
+    opacity: 0; /* Hidden by default until JS adds a class */
+    backface-visibility: hidden; /* Makes the text look cleaner during flip */
+  }
+
+  /* 2. The Animation Classes (Triggered by JS) */
+  
+  /* I removed 'infinite' and the '3s' delay so JS controls the timing exactly */
+  .flip-in-hor-bottom {
+    -webkit-animation: flip-in-hor-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: flip-in-hor-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  .flip-out-hor-bottom {
+    -webkit-animation: flip-out-hor-bottom 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: flip-out-hor-bottom 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+
+  /* 3. The Keyframes (Provided by you) */
+  @-webkit-keyframes flip-in-hor-bottom {
+    0% {
+      -webkit-transform: rotateX(80deg);
+      transform: rotateX(80deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0);
+      transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes flip-in-hor-bottom {
+    0% {
+      -webkit-transform: rotateX(80deg);
+      transform: rotateX(80deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0);
+      transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes flip-out-hor-bottom {
+    0% {
+      -webkit-transform: rotateX(0);
+      transform: rotateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotateX(-70deg);
+      transform: rotateX(-70deg);
+      opacity: 0;
+    }
+  }
+  @keyframes flip-out-hor-bottom {
+    0% {
+      -webkit-transform: rotateX(0);
+      transform: rotateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotateX(-70deg);
+      transform: rotateX(-70deg);
+      opacity: 0;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    // Select the rotator container
+    const rotator = document.querySelector('.review-rotator');
+    if (!rotator) return;
+
+    const reviews = JSON.parse(rotator.dataset.reviews);
+    const textEl = rotator.querySelector(".review-text");
+
+    let index = 0;
+    let timer;
+
+    function runSequence() {
+      // 1. Set the text
+      textEl.textContent = `“${reviews[index]}”`;
+      
+      // 2. Add the ENTER animation, remove EXIT animation
+      textEl.classList.remove("flip-out-hor-bottom");
+      textEl.classList.add("flip-in-hor-bottom");
+
+      // 3. Wait for reading time (e.g., 3.5 seconds)
+      timer = setTimeout(() => {
+        
+        // 4. Add the EXIT animation
+        textEl.classList.remove("flip-in-hor-bottom");
+        textEl.classList.add("flip-out-hor-bottom");
+
+        // 5. Wait for the exit animation to finish (0.6s), then restart
+        timer = setTimeout(() => {
+          index = (index + 1) % reviews.length;
+          runSequence();
+        }, 600); // This matches the .6s duration of flip-out
+
+      }, 3500); // This is how long the text stays visible
+    }
+
+    // Start the loop
+    runSequence();
+
+    // Pause on hover
+    rotator.addEventListener("mouseenter", () => clearTimeout(timer));
+    rotator.addEventListener("mouseleave", () => {
+        // Immediate restart or calculate remaining time (simple restart shown here)
+        runSequence(); 
+    });
+  })();
+</script>

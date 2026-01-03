@@ -5047,30 +5047,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://dendearts.com/songbook/</loc>
-    <lastmod>2025-12-28</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://dendearts.com/songbook/page-2/</loc>
-    <lastmod>2025-12-28</lastmod>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://dendearts.com/songbook/page-3/</loc>
-    <lastmod>2025-12-28</lastmod>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://dendearts.com/songbook/page-4/</loc>
-    <lastmod>2025-12-28</lastmod>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://dendearts.com/blog/</loc>
     <lastmod>2025-12-29</lastmod>
     <priority>0.8</priority>
@@ -5098,6 +5074,30 @@
     <loc>https://dendearts.com/blog/page-5/</loc>
     <lastmod>2025-12-29</lastmod>
     <priority>0.4</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://dendearts.com/songbook/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://dendearts.com/songbook/page-2/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://dendearts.com/songbook/page-3/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://dendearts.com/songbook/page-4/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>

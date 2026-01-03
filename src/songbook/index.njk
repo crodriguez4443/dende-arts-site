@@ -1,4 +1,12 @@
 ---
+reviews:
+  - "Most of the people I know have abadas that fit very poorly. This jogger has great cut, it's very flattering."
+  - "The Abada Joggers are definitely a game changer and bravo, Calado for the professional service in ordering a pair! Thank you."
+  - "These pants are great quality and balance between being just loose and fitting. I recommend them!!!"
+  - "I wear these everywhere! Not only can they take a beating but they are also extremely comfortable."
+  - "These really are a step above everything else I've seen in 15 years of capoeira. No more running to the tailor with Abadás."
+  - "Had my eye on these for a while &amp; finally purchased! Will definitely be purchasing more."
+  - "I feel much better wearing these to an event knowing that everyone won't be able to see right through the pants I'm wearing"
 layout: layout.njk 
 title: "Capoeira Songbook with translation and video"
 pagination: 
@@ -7,6 +15,7 @@ pagination:
     alias: paginatedPosts
     addAllPagesToCollections: true 
 permalink: "songbook/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+
 ---
 
 <div class="blog-page-container main-grid">
@@ -17,34 +26,10 @@ permalink: "songbook/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNu
     <div class="search-container">
         <input class="searchInput" type="text" id="songsSearchInput" placeholder="Search Songs...">
     </div>
-    
-    <div class="bg-[var(--background-light)] min-h-12 px-4 py-4 mb-4">
-        <div class="flex flex-col md:flex-row items-center gap-4 md: justify-center">
-            <a href="https://dendearts.com/abada-joggers" class="block h-[3rem] w-[3rem] mb-[1rem] md:h-[5rem] md:w-[5rem] md:flex md:justify-end md:pr-4">
-                {% image "src/img/products/abadas-stars.png", "buy abada joggers", "h-full w-full object-contain", undefined, undefined, undefined %}
-            </a>
-            <div class="md:pl-4">
-                <a href="https://dendearts.com/abada-joggers" class="btn btn-dark md:!px-[6rem] md:!py-[1rem]" >
-                    <h3 class="text-lg font-bold mb-1 text-white">Click to order your Abada Joggers</h3>
-                </a>
-            </div>
-        </div>
-        {# <p class="pt-[1.5rem] text-sm text-center">Click to order our high quality, well fitting Abadas</p> #}
-    </div>
-    
-    <!-- FILTER BY TAGS -->
-    {# <div class="filter-section">
-        <h3>Filter</h3>
-        <div class="category-buttons">
-            <button class="btn btn-blue active" data-tag="all">All Tags</button>
-            {% set filterTags = ["beginner", "intermediate", "advanced", "quadra", "corrido", "ladainha"] %}
-            {% for tag in filterTags %}
-                <button class="btn btn-blue" data-tag="{{ tag }}">{{ tag | title }}</button>
-            {% endfor %}
-        </div>
-    </div> #}
 
-    <!-- Improved FILTER by tag 2 -->
+    {% include "abada-banner.njk" %}
+
+    <!-- Improved FILTER by tag -->
     <div class="">
         <div class="category-buttons">
             <button class="tag active" data-tag="all">All Songs</button>
