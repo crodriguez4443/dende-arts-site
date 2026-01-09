@@ -4993,12 +4993,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://dendearts.com/abada-joggers-landing/</loc>
-    <lastmod>2025-07-04</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://dendearts.com/old-songbook/</loc>
     <lastmod>2025-07-04</lastmod>
     <priority>0.5</priority>
@@ -5098,6 +5092,12 @@
     <loc>https://dendearts.com/songbook/page-4/</loc>
     <lastmod>2026-01-01</lastmod>
     <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://dendearts.com/abada-joggers-landing/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>

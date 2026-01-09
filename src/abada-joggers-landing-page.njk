@@ -338,6 +338,45 @@ type: "product"
     </div>
 </section>
 
+<!-- Video showcase test -->
+
+<section class="product-video-showcase main-grid pb-20 overflow-hidden">
+    <div class="col-span-full pb-8">
+        <div class="carousel-viewport">
+            <div class="video-carousel">
+                <div class="carousel-item active" data-index="0">
+                    <video muted loop playsinline autoplay>
+                        <source src="/img/abadas-landing/marquinha-abadas-1.1.webm" type="video/webm">
+                    </video>
+                    <a href="" class="">Marquinha</a>
+                    <p>Marquinha</p>
+                </div>
+                <div class="carousel-item next" data-index="1">
+                    <video muted loop playsinline>
+                        <source src="/img/abadas-landing/malandro-abadas-1.1.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="carousel-item hidden-right" data-index="2">
+                    <video muted loop playsinline>
+                        <source src="/img/abadas-landing/dende-abadas-1.1.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="carousel-item prev" data-index="3">
+                    <video muted loop playsinline>
+                        <source src="/img/abadas-landing/muito-abadas-1.1.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <p class="text-center mt-12 font-bold text-[var(--title-color)] pb-4">Tested and loved by the Capoeira community.</p>
+        <div class="flex flex-wrap gap-x-4 gap-y-2 justify-center max-w-md m-auto">
+            <a href="https://www.instagram.com/danielimarquinha/" class="credit">@Danielimarquinha</a>
+            <a href="https://www.instagram.com/malandro_da_lua/" class="credit">@Malandro_da_lua</a>
+            <a href="https://www.instagram.com/dendearteeraca/" class="credit">@Dendearteeraca</a>
+            <a href="https://www.instagram.com/mmuitotempo/" class="credit">@Mmuitotempo</a>
+        </div>
+</section>
+
 <section class="product-last-cta">
     <div class="flex-container abada-product-last-cta">
     <h2>Buy your Abadas 2.0 now and start a new chapter in your capoeira journey</h2>
@@ -530,7 +569,147 @@ type: "product"
     .comparison-row:nth-child(even) {
         background-color: rgb(from var(--background-light) r g b / 0.3); 
     }
+
+    /* video showcase */
+
+    .credit {
+    position: relative;
+    color: var(--action-primary);
+    text-decoration: none;
+    }
+
+    .credit::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--action-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 200ms ease;
+    }
+
+    .credit:hover::after,
+    .credit:active::after {
+    transform: scaleX(1);
+    }
+
+
+    .product-video-showcase {
+        background-color: var(--background-variant);
+        perspective: 1000px; /* Gives the 3D depth effect */
+    }
+
+    .carousel-viewport {
+        position: relative;
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    @media (min-width: 768px) {
+        .carousel-viewport { height: 80vh; }
+    }
+
+    .video-carousel {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-item {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 40px;
+        overflow: hidden;
+        background: #000;
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    .carousel-item video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none; /* Allows click to pass to parent div */
+    }
+
+    /* ACTIVE (Center) */
+    .carousel-item.active {
+        z-index: 10;
+        transform: scale(1) translateX(0);
+        opacity: 1;
+        border-color: rgba(255,255,255,0.2);
+    }
+
+    /* PREVIOUS (Left) */
+    .carousel-item.prev {
+        z-index: 5;
+        transform: scale(0.7) translateX(-110%);
+        opacity: 0.6;
+    }
+
+    /* NEXT (Right) */
+    .carousel-item.next {
+        z-index: 5;
+        transform: scale(0.7) translateX(110%);
+        opacity: 0.6;
+    }
+
+    /* HIDDEN (Back) */
+    .carousel-item.hidden-right, .carousel-item.hidden-left {
+        z-index: 1;
+        transform: scale(0.5) translateX(0);
+        opacity: 0;
+    }
+
+    @media (max-width: 768px) {
+        .carousel-item.prev { transform: scale(0.7) translateX(-70%); }
+        .carousel-item.next { transform: scale(0.7) translateX(70%); }
+    }
+
 </style>
 
+<script>
+document.querySelectorAll('.carousel-item').forEach(item => {
+    item.addEventListener('click', () => {
+        const items = Array.from(document.querySelectorAll('.carousel-item'));
+        const clickedIndex = parseInt(item.getAttribute('data-index'));
+        const total = items.length;
 
+        // Update classes based on clicked index
+        items.forEach((el, i) => {
+            el.classList.remove('active', 'prev', 'next', 'hidden-right', 'hidden-left');
+            
+            const video = el.querySelector('video');
+            
+            if (i === clickedIndex) {
+                el.classList.add('active');
+                video.play();
+                video.muted = false; // Optional: unmute on selection
+            } else if (i === (clickedIndex - 1 + total) % total) {
+                el.classList.add('prev');
+                video.pause();
+            } else if (i === (clickedIndex + 1) % total) {
+                el.classList.add('next');
+                video.pause();
+            } else {
+                el.classList.add('hidden-right');
+                video.pause();
+            }
+        });
+    });
+});
+</script>
 
