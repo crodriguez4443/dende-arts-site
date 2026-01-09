@@ -180,6 +180,211 @@ T/L: 'Terreiro' is a specific religious space in many Afro-Brazilian religions. 
 </figcaption>
             </div>
         </article>
+        <div>
+            <div class="vertical-abada-banner bg-[var(--background-light)] p-4 pb-12 rounded-lg sticky top-4 m-auto mb-8">
+    <div class="flex flex-col items-center gap-8">
+        <!-- Star Rating -->
+        <div class="flex flex-col items-center pb-8 pt-4">
+            <div class="flex items-center justify-center gap-1 !text-[var(--action-primary)]">
+                <span class="star filled !text-[1.4rem]">★</span>
+                <span class="star filled !text-[1.4rem]">★</span>
+                <span class="star filled !text-[1.4rem]">★</span>
+                <span class="star filled !text-[1.4rem]">★</span>
+                <span class="star filled !text-[1.4rem]">★</span>
+            </div>
+        </div>
+
+        <!-- Product Image -->
+        <a href="https://dendearts.com/abada-joggers-landing" class="">
+            <div class="w-[10rem]">
+                <picture class="w-full h-auto">
+            <source type="image/webp" srcset="/img/optimized/huh-9Sg9L--368.webp 368w" sizes="100vw">
+<source type="image/jpeg" srcset="/img/optimized/huh-9Sg9L--368.jpeg 368w" sizes="100vw">
+<source type="image/png" srcset="/img/optimized/huh-9Sg9L--368.png 368w" sizes="100vw">
+            <img src="/img/optimized/huh-9Sg9L--368.webp" width="368" height="500" alt="buy abada joggers" loading="lazy" decoding="async">
+        </picture>
+            </div>            
+        </a>
+
+
+        <!-- Scrolling Reviews -->
+        <div
+            class="review-rotator-vertical text-center max-w-full  font-medium px-2"
+            data-reviews='[
+                "performance, style AND comfort!",
+                "The fit is perfect!!",
+                "Best capoeira pants Ive played in.",
+                "I wear these everywhere!",
+                "A step above everything else.",
+                "Will definitely be purchasing more.",
+                "Great cut, its very flattering.",
+                "Definitely a game changer!",
+                "I feel confident with these.",
+                "Had my eye on these for a while!"
+            ]'
+        >
+            <div class="perspective-wrapper">
+                <p class="review-text-vertical italic"></p>
+            </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="w-full pb-4">
+            <a href="https://dendearts.com/abada-joggers-landing" class="btn-vertical">
+                <p>View Abada Joggers</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Vertical Banner Specific Styles */
+    .btn-vertical {
+        /* cursor: pointer; */
+        padding: 1.25rem 3rem;
+        transition: 1s ease-in-out;
+        display: inline-block;
+        position: relative;
+        color: white;
+        font-weight: 500;
+        font-size: 1.25rem;
+        margin: 0 auto;
+        padding: 1.2rem 2.5rem;
+        width: 100%;
+        text-align: center;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 1.25rem;
+        font-weight: 500;
+        transform: all 0.3s ease-in-out;
+        background-color: var(--action-primary);
+    }
+
+    .vertical-abada-banner {
+        min-width: 200px;
+        max-width: 250px;
+    }
+
+    /* Review Rotator */
+    .review-rotator-vertical {
+        padding-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        perspective: 1000px;
+        overflow: hidden;
+        min-height: 60px;
+    }
+
+    .review-text-vertical {
+        display: inline-block;
+        opacity: 0;
+        backface-visibility: hidden;
+    }
+
+    /* Animation Classes */
+    .flip-in-hor-bottom-vertical {
+        -webkit-animation: flip-in-hor-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: flip-in-hor-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    .flip-out-hor-bottom-vertical {
+        -webkit-animation: flip-out-hor-bottom 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: flip-out-hor-bottom 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+
+    @-webkit-keyframes flip-in-hor-bottom {
+        0% {
+            -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes flip-in-hor-bottom {
+        0% {
+            -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes flip-out-hor-bottom {
+        0% {
+            -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: rotateX(-70deg);
+            transform: rotateX(-70deg);
+            opacity: 0;
+        }
+    }
+
+    @keyframes flip-out-hor-bottom {
+        0% {
+            -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: rotateX(-70deg);
+            transform: rotateX(-70deg);
+            opacity: 0;
+        }
+    }
+</style>
+
+<script>
+    (function () {
+        const rotator = document.querySelector('.review-rotator-vertical');
+        if (!rotator) return;
+
+        const reviews = JSON.parse(rotator.dataset.reviews);
+        const textEl = rotator.querySelector(".review-text-vertical");
+
+        let index = 0;
+        let timer;
+
+        function runSequence() {
+            textEl.textContent = `"${reviews[index]}"`;
+
+            textEl.classList.remove("flip-out-hor-bottom-vertical");
+            textEl.classList.add("flip-in-hor-bottom-vertical");
+
+            timer = setTimeout(() => {
+                textEl.classList.remove("flip-in-hor-bottom-vertical");
+                textEl.classList.add("flip-out-hor-bottom-vertical");
+
+                timer = setTimeout(() => {
+                    index = (index + 1) % reviews.length;
+                    runSequence();
+                }, 600);
+
+            }, 3500);
+        }
+
+        runSequence();
+
+        rotator.addEventListener("mouseenter", () => clearTimeout(timer));
+        rotator.addEventListener("mouseleave", () => {
+            runSequence();
+        });
+    })();
+</script>
+
+        </div>
     </div>
 </div>
 
