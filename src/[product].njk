@@ -887,7 +887,7 @@ const variantData = JSON.parse('{{ product.variants | dump | safe }}') || {};
 const productVariants = variantData.results || [];
 console.log('🔍 DEBUG: Product variants:', productVariants);
 
-const LOW_STOCK_THRESHOLD = 15;
+const LOW_STOCK_THRESHOLD = 6;
 
 // ========================================
 // STOCK CHECKING FUNCTIONS
