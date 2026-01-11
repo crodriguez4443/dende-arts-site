@@ -1157,7 +1157,22 @@ async function addToCart(productId) {
 // ========================================
 document.addEventListener('DOMContentLoaded', () => {
     console.log('🚀 Page loaded, initializing...');
-    
+
+    // Google Analytics - view_item event
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'view_item', {
+            currency: 'USD',
+            value: {{ product.price }},
+            items: [{
+                item_id: '{{ product.id }}',
+                item_name: '{{ product.name }}',
+                {% if product.content.category %}item_category: '{{ product.content.category }}',{% endif %}
+                price: {{ product.price }}
+            }]
+        });
+        console.log('✅ GA4 view_item event fired for {{ product.name }}');
+    }
+
     // Image thumbnail handler
     const firstThumbnail = document.querySelector('.thumbnail-image');
     if (firstThumbnail) {

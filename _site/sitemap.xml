@@ -5023,12 +5023,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://dendearts.com/abada-joggers/</loc>
-    <lastmod>2025-11-27</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://dendearts.com/bulk-orders/</loc>
     <lastmod>2025-12-23</lastmod>
     <priority>0.8</priority>
@@ -5097,6 +5091,12 @@
   <url>
     <loc>https://dendearts.com/abada-joggers-landing/</loc>
     <lastmod>2026-01-09</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://dendearts.com/abada-joggers/</loc>
+    <lastmod>2026-01-11</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
