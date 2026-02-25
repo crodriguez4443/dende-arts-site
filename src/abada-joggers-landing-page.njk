@@ -377,9 +377,11 @@ type: "product"
         </div>
 </section>
 
+{% include "fit-finder.njk" %}
+
 <section class="product-last-cta">
     <div class="flex-container abada-product-last-cta">
-    <h2>Buy your Abadas 2.0 now and start a new chapter in your capoeira journey</h2>
+    <h2>Buy your Abadas now and start a new chapter in your capoeira journey</h2>
     <a class="btn btn-very-dark" href="/abada-joggers">Shop Abadas!</a>
     </div>
 </section>
@@ -682,22 +684,18 @@ type: "product"
 </style>
 
 <script>
-document.querySelectorAll('.carousel-item').forEach(item => {
-    item.addEventListener('click', () => {
-        const items = Array.from(document.querySelectorAll('.carousel-item'));
-        const clickedIndex = parseInt(item.getAttribute('data-index'));
-        const total = items.length;
+(function() {
+    const items = Array.from(document.querySelectorAll('.carousel-item'));
+    const total = items.length;
 
-        // Update classes based on clicked index
+    function goToIndex(clickedIndex) {
         items.forEach((el, i) => {
             el.classList.remove('active', 'prev', 'next', 'hidden-right', 'hidden-left');
-            
             const video = el.querySelector('video');
-            
             if (i === clickedIndex) {
                 el.classList.add('active');
                 video.play();
-                video.muted = false; // Optional: unmute on selection
+                video.muted = false;
             } else if (i === (clickedIndex - 1 + total) % total) {
                 el.classList.add('prev');
                 video.pause();
@@ -709,7 +707,40 @@ document.querySelectorAll('.carousel-item').forEach(item => {
                 video.pause();
             }
         });
+    }
+
+    function getActiveIndex() {
+        const active = document.querySelector('.carousel-item.active');
+        return active ? parseInt(active.getAttribute('data-index')) : 0;
+    }
+
+    // Click to select
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            goToIndex(parseInt(item.getAttribute('data-index')));
+        });
     });
-});
+
+    // Touch swipe support
+    const viewport = document.querySelector('.carousel-viewport');
+    let touchStartX = 0;
+
+    viewport.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+
+    viewport.addEventListener('touchend', (e) => {
+        const delta = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(delta) < 40) return; // ignore small movements
+        const current = getActiveIndex();
+        if (delta < 0) {
+            // Swipe left → next
+            goToIndex((current + 1) % total);
+        } else {
+            // Swipe right → previous
+            goToIndex((current - 1 + total) % total);
+        }
+    }, { passive: true });
+})();
 </script>
 

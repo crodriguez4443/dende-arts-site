@@ -26,6 +26,9 @@ function stringifyAttributes(attributesObj) {
 
 module.exports = function(eleventyConfig) {
 
+    // Suppress verbose build messages
+    eleventyConfig.setQuietMode(true);
+
     // Existing passthrough copy configurations
     eleventyConfig.addPassthroughCopy("src/img");
     eleventyConfig.addPassthroughCopy("src/js");

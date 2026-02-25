@@ -1,0 +1,233 @@
+<!-- _includes/fit-finder.njk — Inline Fit Finder Section -->
+<section class="fit-finder-section main-grid" id="fit-finder">
+    <div class="ff-container">
+        <div class="ff-intro">
+            <h2 class="section-title">Find Your Perfect Fit</h2>
+            <p class="ff-subtitle">Answer 2 quick questions and we'll recommend your size</p>
+        </div>
+
+        <!-- Screen 1: Waist Input -->
+        <div class="ff-screen active" id="ff-screen-waist">
+            <div class="ff-card">
+                <div class="ff-slider-group">
+                    <label for="ff-waist-slider" class="ff-slider-label">
+                        What is your waist size?
+                    </label>
+                    <div class="ff-slider-value-display">
+                        <span id="ff-waist-value">30</span>"
+                    </div>
+                    <input
+                        type="range"
+                        id="ff-waist-slider"
+                        min="26"
+                        max="40"
+                        step="0.5"
+                        value="30"
+                        class="ff-range-slider"
+                    >
+                    <div class="ff-slider-labels">
+                        <span>26"</span>
+                        <span>40"</span>
+                    </div>
+                </div>
+
+                <details class="ff-tip">
+                    <summary>I don't know my waist size</summary>
+                    <p>Wrap a measuring tape around your natural waistline (the narrowest part of your torso, usually just above the belly button). Keep the tape snug but not tight. The number where the tape meets is your waist measurement in inches.</p>
+                </details>
+
+                <button class="ff-btn ff-btn-next" id="ff-next-btn">Next</button>
+            </div>
+        </div>
+
+        <!-- Screen 2: Fit Preference -->
+        <div class="ff-screen" id="ff-screen-preference">
+            <div class="ff-card">
+                <p class="ff-step-label">How do you like your fit?</p>
+
+                <div class="ff-preference-cards">
+                    <button class="ff-pref-card" data-preference="snug">
+                        <span class="ff-pref-icon">&#9650;</span>
+                        <div>
+                            <span class="ff-pref-name">Snug</span>
+                            <span class="ff-pref-desc">Close to the body, athletic feel</span>
+                        </div>
+                    </button>
+                    <button class="ff-pref-card" data-preference="just-right">
+                        <span class="ff-pref-icon">&#9644;</span>
+                        <div>
+                            <span class="ff-pref-name">Just Right</span>
+                            <span class="ff-pref-desc">Balanced comfort and movement</span>
+                        </div>
+                    </button>
+                    <button class="ff-pref-card" data-preference="relaxed">
+                        <span class="ff-pref-icon">&#9660;</span>
+                        <div>
+                            <span class="ff-pref-name">Relaxed</span>
+                            <span class="ff-pref-desc">Loose and flowy, extra room</span>
+                        </div>
+                    </button>
+                </div>
+
+                <button class="ff-btn-back" id="ff-back-btn">&larr; Back</button>
+            </div>
+        </div>
+
+        <!-- Screen 3: Result -->
+        <div class="ff-screen" id="ff-screen-result">
+            <div class="ff-card ff-result-card">
+                <p class="ff-result-label">Your Recommended Size</p>
+                <div class="ff-result-size" id="ff-result-size">M</div>
+                <p class="ff-result-proof">Most customers with a similar waist choose this size</p>
+                <a href="/abada-joggers" class="btn btn-dark ff-shop-btn">Shop Abadas</a>
+                <button class="ff-btn-back" id="ff-start-over">Start Over</button>
+            </div>
+        </div>
+
+        <!-- Size Chart (always visible) -->
+        <div class="ff-size-chart">
+            <h3 class="ff-size-chart-title">Full Size Chart</h3>
+            <div class="ff-size-chart-table-wrap">
+                <table class="ff-size-chart-table">
+                    <thead>
+                        <tr>
+                            <th>Size</th>
+                            <th>Waist (in)</th>
+                            <th>Hip Width</th>
+                            <th>Thigh</th>
+                            <th>Rising</th>
+                            <th>Bottom</th>
+                            <th>Inseam</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>XS</td><td>26–28.5</td><td>35.5</td><td>11.5</td><td>10</td><td>4.5</td><td>26.5</td></tr>
+                        <tr><td>S</td><td>26.5–30</td><td>37.5</td><td>12</td><td>10.5</td><td>5</td><td>27.5</td></tr>
+                        <tr><td>M</td><td>30–33</td><td>40</td><td>13</td><td>11</td><td>5.5</td><td>28.5</td></tr>
+                        <tr><td>L</td><td>33–36</td><td>42.5</td><td>13.5</td><td>11</td><td>5.5</td><td>29</td></tr>
+                        <tr><td>XL</td><td>36–39.5</td><td>45.5</td><td>14.5</td><td>11.5</td><td>6</td><td>30.5</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Fit Finder — Inline Section Logic
+(function () {
+    var SIZES = [
+        { name: 'XS', waistMin: 26, waistMax: 28.5 },
+        { name: 'S',  waistMin: 26.5, waistMax: 30 },
+        { name: 'M',  waistMin: 30, waistMax: 33 },
+        { name: 'L',  waistMin: 33, waistMax: 36 },
+        { name: 'XL', waistMin: 36, waistMax: 39.5 }
+    ];
+
+    var STORAGE_KEY = 'dendeFitResult';
+
+    function calculateSize(waist, preference) {
+        var matches = SIZES.filter(function (s) {
+            return waist >= s.waistMin && waist <= s.waistMax;
+        });
+
+        if (matches.length === 0) {
+            if (waist < SIZES[0].waistMin) return SIZES[0].name;
+            if (waist > SIZES[SIZES.length - 1].waistMax) return SIZES[SIZES.length - 1].name;
+            var closest = SIZES[0];
+            var closestDist = Infinity;
+            SIZES.forEach(function (s) {
+                var dist = Math.min(Math.abs(waist - s.waistMin), Math.abs(waist - s.waistMax));
+                if (dist < closestDist) { closestDist = dist; closest = s; }
+            });
+            return closest.name;
+        }
+        if (matches.length === 1) return matches[0].name;
+        if (preference === 'relaxed') return matches[matches.length - 1].name;
+        return matches[0].name;
+    }
+
+    function saveResult(size, waist, preference) {
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify({ size: size, waist: waist, preference: preference })); }
+        catch (e) { /* silent */ }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var screenWaist = document.getElementById('ff-screen-waist');
+        var screenPref = document.getElementById('ff-screen-preference');
+        var screenResult = document.getElementById('ff-screen-result');
+        var waistSlider = document.getElementById('ff-waist-slider');
+        var waistValue = document.getElementById('ff-waist-value');
+        var resultSize = document.getElementById('ff-result-size');
+
+        if (!screenWaist) return;
+
+        function showScreen(screen) {
+            screenWaist.classList.remove('active');
+            screenPref.classList.remove('active');
+            screenResult.classList.remove('active');
+            screen.classList.add('active');
+            // Scroll to fit finder section
+            document.getElementById('fit-finder').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        waistSlider.addEventListener('input', function () {
+            waistValue.textContent = this.value;
+        });
+
+        document.getElementById('ff-next-btn').addEventListener('click', function () {
+            showScreen(screenPref);
+        });
+
+        document.getElementById('ff-back-btn').addEventListener('click', function () {
+            showScreen(screenWaist);
+        });
+
+        document.querySelectorAll('.ff-pref-card').forEach(function (card) {
+            card.addEventListener('click', function () {
+                var waist = parseFloat(waistSlider.value);
+                var preference = this.dataset.preference;
+                var size = calculateSize(waist, preference);
+                resultSize.textContent = size;
+                showScreen(screenResult);
+                saveResult(size, waist, preference);
+
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'fit_finder_complete', {
+                        recommended_size: size,
+                        waist_measurement: waist,
+                        fit_preference: preference
+                    });
+                }
+            });
+        });
+
+        document.getElementById('ff-start-over').addEventListener('click', function () {
+            showScreen(screenWaist);
+        });
+
+        // If there's a saved result, pre-populate on product pages
+        try {
+            var saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+            if (saved) {
+                var sizeBoxes = document.querySelectorAll('.size-box');
+                if (sizeBoxes.length > 0) {
+                    var container = document.querySelector('.size-boxes-container');
+                    if (container && !document.getElementById('ff-recommendation-text')) {
+                        var rec = document.createElement('div');
+                        rec.id = 'ff-recommendation-text';
+                        rec.className = 'ff-product-recommendation';
+                        rec.textContent = 'Recommended for you: ' + saved.size;
+                        container.parentNode.insertBefore(rec, container);
+                    }
+                    sizeBoxes.forEach(function (box) {
+                        if (box.dataset.size === saved.size && !box.classList.contains('out-of-stock')) {
+                            box.classList.add('ff-recommended');
+                        }
+                    });
+                }
+            }
+        } catch (e) { /* silent */ }
+    });
+})();
+</script>
