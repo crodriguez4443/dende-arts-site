@@ -15,7 +15,6 @@
 }
 
 .rating-container-hero {
-    display: flex;
     align-items: center;
     justify-content: left;
 }
@@ -204,20 +203,24 @@
 }
 
 .abada-product-last-cta {
-    padding-top: 7rem;
+    padding-top: 5rem;
     padding-bottom: 7rem;
     margin: 0 auto;
 }
 
 .abada-product-last-cta h2 {
-    margin-right: 3rem;
+    text-align: center;
+    padding-bottom: 2rem;
+
+    @media (min-width:725px) {
+        margin-right: 3rem;
+        text-align:start;
+    }
 }
 
 .abada-product-last-cta a {
     align-self: center;
 }
-
-
 
 
 /* =======================
@@ -586,15 +589,17 @@
 ================== */
 
 .fit-finder-section {
-    padding: 6rem 0;
+    padding: 6rem 0 0 0;
     background-color: var(--background-light);
 }
 
 .ff-container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
+    @media (min-width:725px) {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+} 
 
 .ff-subtitle {
     text-align: center;
@@ -834,6 +839,7 @@
 }
 
 .ff-size-chart-title {
+    text-align: center;
     font-weight: 600;
     color: var(--title-color);
     font-size: 1rem;
@@ -853,8 +859,8 @@
 
 .ff-size-chart-table th,
 .ff-size-chart-table td {
-    padding: 0.5rem 0.4rem;
-    border: 1px solid #e5e7eb;
+    padding: 0.5rem 0.25rem;
+    border: 1px solid white;
     text-align: center;
 }
 

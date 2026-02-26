@@ -956,7 +956,6 @@ strong {
 }
 
 .social-icon:nth-child(1) {
-    padding-right: 1rem;
     border-right: 2px solid var(--title-color);
 }
 
@@ -1197,7 +1196,7 @@ strong {
 
 .footer {
     background-color: var(--title-color);
-    padding: 4rem 0;
+    padding: 4rem 2rem 2rem 2rem;
     color: rgb(255, 255, 255);
 }
 
@@ -1209,6 +1208,7 @@ strong {
     display: flex;
     justify-content:space-between;
     flex-direction: row;
+    transform: translateX(-5px);
 }
 
 .footer-logo-link-container {
@@ -1223,7 +1223,7 @@ strong {
     width: auto;
     height: auto;
     object-fit: contain;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
 
 }
 
@@ -1231,7 +1231,7 @@ strong {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    align-items: baseline;
+    /* align-items: baseline; */
 }
 
 /* Navigation Links */
@@ -1261,9 +1261,10 @@ strong {
 /* Social Media Icons */
 .footer-social-small {
     display: flex;
-    justify-content: center;
+    align-self: start;
+    /* justify-content: center; */
     gap: 2rem;
-    margin: 0 2em;
+    /* margin: 0 2em; */
     padding-bottom: 2em;
     fill: #fff;
 }
@@ -1285,6 +1286,7 @@ strong {
 
 /* Copyright */
 .footer-copyright {
+    display:inline-flex;
     font-weight: 400;
     border-top:  1px solid rgba(255, 255, 255, 0.4);
     padding-top: 1rem;
@@ -1306,9 +1308,10 @@ strong {
     }
 
     .footer-bottom-content {
-        flex-direction: row;
+        padding-top: 1.5rem;
+        flex-direction: column;
         border-top:  1px solid rgba(255, 255, 255, 0.4);
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .footer-social-small {
@@ -1326,7 +1329,7 @@ strong {
         flex-direction: row;
         justify-content: space-between;
         gap: 1.5rem;
-        margin-bottom: .5rem;
+        margin-bottom: 1rem;
         width: auto;
         align-items: flex-end;
     }
@@ -1336,8 +1339,10 @@ strong {
         }
 
     .footer-copyright {
-        padding-top: 3rem;
         border-top:  none;
+        display:flex;
+        align-self:center;
+        padding-top:0;
     }
     /* Optional: Different layout for larger screens */
     .footer {
