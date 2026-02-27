@@ -256,6 +256,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p hidden>
                         <label>Don't fill this out if you're human: <input name="bot-field" /></label>
                     </p>
+                    <input type="hidden" name="product_title" value="{{ product.slug | slugify }}">
                     
                     <div class="selectors-container">
                         <div class="form-group">
