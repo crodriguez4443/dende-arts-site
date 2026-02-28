@@ -1,42 +1,30 @@
-const crypto = require("crypto");
-
-// Netlify Background Functions must export a handler
 exports.handler = async function (event) {
   // Only accept POST
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
 
-  // --- Signature verification ---
-  const secret = process.env.NETLIFY_WEBHOOK_SECRET;
-  if (secret) {
-    const signature = event.headers["x-webhook-signature"] || "";
-    const expected =
-      "sha256=" +
-      crypto
-        .createHmac("sha256", secret)
-        .update(event.body || "")
-        .digest("hex");
-    if (
-      !crypto.timingSafeEqual(
-        Buffer.from(signature),
-        Buffer.from(expected)
-      )
-    ) {
-      return { statusCode: 401, body: "Unauthorized" };
-    }
+  // --- Parse the webhook payload ---
+  // Netlify outgoing webhooks send JSON with form data inside a "data" property
+  let formData;
+  try {
+    const payload = JSON.parse(event.body || "{}");
+    formData = payload.data || payload;
+    console.log("Received form data keys:", Object.keys(formData));
+  } catch (e) {
+    console.error("Failed to parse body:", e.message);
+    return { statusCode: 400, body: "Invalid JSON body" };
   }
 
-  // --- Parse form-encoded body ---
-  const params = new URLSearchParams(event.body || "");
-  const author = (params.get("author") || "").trim();
-  const reviewScore = parseInt(params.get("review_score") || "0", 10);
-  const reviewTitle = (params.get("review_title") || "").trim();
-  const reviewContent = (params.get("review_content") || "").trim();
-  const productTitle = (params.get("product_title") || "abada-joggers").trim();
+  const author = (formData.author || "").trim();
+  const reviewScore = parseInt(formData.review_score || "0", 10);
+  const reviewTitle = (formData.review_title || "").trim();
+  const reviewContent = (formData.review_content || "").trim();
+  const productTitle = (formData.product_title || "abada-joggers").trim();
 
   // Basic validation
   if (!author || !reviewScore || !reviewTitle || !reviewContent) {
+    console.error("Missing fields:", { author, reviewScore, reviewTitle, reviewContent: reviewContent.substring(0, 20) });
     return { statusCode: 400, body: "Missing required fields" };
   }
   if (reviewScore < 1 || reviewScore > 5) {
@@ -59,8 +47,15 @@ exports.handler = async function (event) {
   const token = process.env.GITHUB_TOKEN;
   const owner = process.env.GITHUB_OWNER;
   const repo = process.env.GITHUB_REPO;
+
+  if (!token || !owner || !repo) {
+    console.error("Missing env vars:", { hasToken: !!token, owner, repo });
+    return { statusCode: 500, body: "Server misconfiguration: missing env vars" };
+  }
+
   const filePath = "src/_data/abada-reviews.json";
   const apiBase = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
+  console.log("GitHub API URL:", apiBase);
 
   const headers = {
     Authorization: `Bearer ${token}`,
@@ -73,7 +68,8 @@ exports.handler = async function (event) {
   // Fetch current file
   const getRes = await fetch(apiBase, { headers });
   if (!getRes.ok) {
-    console.error("GitHub GET failed:", await getRes.text());
+    const errText = await getRes.text();
+    console.error("GitHub GET failed:", getRes.status, errText);
     return { statusCode: 502, body: "Failed to fetch reviews file" };
   }
   const fileData = await getRes.json();
@@ -101,7 +97,8 @@ exports.handler = async function (event) {
   });
 
   if (!putRes.ok) {
-    console.error("GitHub PUT failed:", await putRes.text());
+    const errText = await putRes.text();
+    console.error("GitHub PUT failed:", putRes.status, errText);
     return { statusCode: 502, body: "Failed to commit review" };
   }
 
