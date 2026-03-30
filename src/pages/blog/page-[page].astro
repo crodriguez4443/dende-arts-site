@@ -1,0 +1,77 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import AbadaBanner from '../../components/AbadaBanner.astro';
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+
+function getSlug(id: string) { return id.split('/')[0]; }
+
+export async function getStaticPaths() {
+  const PAGE_SIZE = 30;
+  const allPosts = await getCollection('blog', ({ data }) =>
+    !data.categories.includes('capoeira-songbook')
+  );
+  const sorted = allPosts.sort(
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+  );
+  const totalPages = Math.ceil(sorted.length / PAGE_SIZE);
+  const paths = [];
+  for (let i = 2; i <= totalPages; i++) {
+    const start = (i - 1) * PAGE_SIZE;
+    paths.push({
+      params: { page: String(i) },
+      props: {
+        posts: sorted.slice(start, start + PAGE_SIZE),
+        currentPage: i,
+        totalPages,
+        prevUrl: i === 2 ? '/blog/' : `/blog/page-${i - 1}/`,
+        nextUrl: i < totalPages ? `/blog/page-${i + 1}/` : null,
+      },
+    });
+  }
+  return paths;
+}
+
+const { posts, currentPage, totalPages, prevUrl, nextUrl } = Astro.props;
+---
+<Layout title={`Capoeira Blog – Page ${currentPage}`}>
+  <div class="blog-page-container main-grid">
+    <Nav />
+    <h1 class="blog-page-title"><strong>A Capoeira community blog!</strong> Thoughts, resources, and recommendations.</h1>
+
+    <AbadaBanner />
+
+    <div class="search-container">
+      <input class="searchInput" type="text" id="regularSearchInput" placeholder="Search Capoeira Articles..." />
+    </div>
+
+    <div class="blog-grid" id="blog-grid">
+      {posts.map((post: any) => (
+        <article class="blog-card">
+          {post.data.coverImage && (
+            <Image src={post.data.coverImage} alt={post.data.title} class="blog-featured-image" />
+          )}
+          <div class="blog-card-content">
+            <h3 class="blog-card-title">
+              <a href={`/blog/${getSlug(post.id)}/`}>{post.data.title}</a>
+            </h3>
+            <a href={`/blog/${getSlug(post.id)}/`} class="read-more">Read More</a>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <nav class="pagination" aria-label="Pagination">
+      {prevUrl && <a href={prevUrl} class="pagination-link">Previous</a>}
+      {Array.from({ length: totalPages }).map((_, i) => {
+        const pageNum = i + 1;
+        const href = pageNum === 1 ? '/blog/' : `/blog/page-${pageNum}/`;
+        return pageNum === currentPage
+          ? <span class="pagination-link current">{pageNum}</span>
+          : <a href={href} class="pagination-link">{pageNum}</a>;
+      })}
+      {nextUrl && <a href={nextUrl} class="pagination-link">Next</a>}
+    </nav>
+  </div>
+</Layout>

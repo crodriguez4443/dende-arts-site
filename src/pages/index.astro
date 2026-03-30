@@ -1,0 +1,184 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import ContactForm from '../components/ContactForm.astro';
+import TestimonialCard from '../components/TestimonialCard.astro';
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+
+import fabricIcon from '../assets/img/homepage/fabric-icon.svg';
+import taperIcon from '../assets/img/homepage/taper.svg';
+import waistbandIcon from '../assets/img/homepage/waistband.svg';
+import zipperIcon from '../assets/img/homepage/zipper.svg';
+import abadaProduct from '../assets/img/products/abada-jogger-product-hero.webp';
+import guideImg from '../assets/img/homepage/guide-img.webp';
+import checkCircle from '../assets/img/homepage/check-circle.png';
+import caladoAbout from '../assets/img/homepage/calado-about.webp';
+import instagramIcon from '../assets/img/homepage/instagram-icon.svg';
+import youtubeIcon from '../assets/img/homepage/youtube-icon.svg';
+
+import reviewsData from '../data/reviews.json';
+
+function getSlug(id: string) { return id.split('/')[0]; }
+
+// Latest 3 blog posts for homepage
+const allBlogPosts = await getCollection('blog', ({ data }) =>
+  !data.categories.includes('capoeira-songbook')
+);
+const latestPosts = allBlogPosts
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .slice(0, 3);
+
+const topReviews = reviewsData.reviews.slice(0, 4);
+---
+<Layout
+  title="The hub of Capoeira education, uniforms, and quality products"
+  description="Training resources and high-quality Capoeira equipment like abadas and bulk order uniforms."
+  socialImage="/img/dende-arts-logo2.png"
+>
+  <link rel="preload" href="/img/hero-bg.jpg" as="image" slot="head" />
+  <section class="hero">
+    <div class="main-grid">
+      <Nav />
+      <div class="hero-content">
+        <h1>Elevate your Capoeira journey</h1>
+        <p class="hero-subtitle">Ever felt lost without proper guidance? Tired of uniforms that hinder your performance? Unlock your potential with premium gear and expert guidance.</p>
+        <div class="flex-box">
+          <a href="/abada-joggers" class="btn btn-dark margin-reset ribbon-button">Shop Abadas</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHNVnfSLuo2fnv5cyEEl6lEICCMOdCzT4H3kbCdizZBpuBbQ/viewform?usp=sharing" class="btn btn-light margin-reset">Guide Waitlist</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-info-section">
+    <div class="product-grid">
+      <div class="product-title-content">
+        <h2 class="section-title">Your Journey Reinvented</h2>
+        <p class="section-subtitle">Abadas that combine style, comfort, and performance.<br /> Elevate your Capoeira game with gear that works as hard as you do.</p>
+      </div>
+      <div class="product-feature">
+        <div class="feature-image-container">
+          <Image src={fabricIcon} alt="4-way stretch" class="feature-icon" />
+        </div>
+        <h3>4-WAY STRETCH</h3>
+        <p>Expands in both directions, ensuring the abadas move with your body, no matter how extreme the movement. It provides comfort that lasts from your first ginga to your last esquiva.</p>
+      </div>
+      <div class="product-feature">
+        <div class="feature-image-container">
+          <Image src={taperIcon} alt="tapered fit" class="feature-icon" />
+        </div>
+        <h3>TAPERED FIT</h3>
+        <p>Expands in both directions, ensuring the abadas move with your body, no matter how extreme the movement. It provides comfort that lasts from your first ginga to your last esquiva.</p>
+      </div>
+      <div class="product-image">
+        <Image src={abadaProduct} alt="abada jogger" class="abada-image" />
+      </div>
+      <div class="product-feature">
+        <div class="feature-image-container">
+          <Image src={waistbandIcon} alt="elastic waistband" class="feature-icon" />
+        </div>
+        <h3>ELASTIC WAISTBAND</h3>
+        <p>Expands in both directions, ensuring the abadas move with your body, no matter how extreme the movement. It provides comfort that lasts from your first ginga to your last esquiva.</p>
+      </div>
+      <div class="product-feature">
+        <div class="feature-image-container">
+          <Image src={zipperIcon} alt="zippered pocket" class="feature-icon" />
+        </div>
+        <h3>ZIPPERED POCKET</h3>
+        <p><strong>Keeps you dry</strong> during long training sessions and <strong>reduces chaffing</strong> and discomfort caused by sweat. Our fabric <strong>keeps you feeling fresh</strong>, allowing you to focus on your game.</p>
+      </div>
+      <a href="/abada-joggers" class="btn btn-dark featured-product-button">Shop Abadas</a>
+    </div>
+  </section>
+
+  <section class="featured-guide main-grid">
+    <div class="guide-title-content">
+      <h2 class="section-title">Capoeira playbook</h2>
+      <p class="section-subtitle">This online Capoeira training guide was made using over 20 years of experience, countless books, workshops, and courses. Take charge of your Capoeira training.</p>
+    </div>
+    <div class="half-pg-img-container">
+      <Image src={guideImg} alt="capoeira playbook" class="capoeira-playbook" />
+    </div>
+    <div class="guide-card-container">
+      <div class="guide-card">
+        <div class="guide-card-content">
+          <Image src={checkCircle} alt="check icon" class="guide-icon" />
+          <h3>Foundations</h3>
+        </div>
+        <p>Foundations covers the understanding of basic movements and basic training concepts. These are supplemented with lessons on anatomy, ecological dynamics and constraints lead learning.</p>
+      </div>
+      <div class="guide-card">
+        <div class="guide-card-content">
+          <Image src={checkCircle} alt="check icon" class="guide-icon" />
+          <h3>Acceleration</h3>
+        </div>
+        <p>We will focus on building speed, strength, and mobility to enhance our physical foundation. This training will allow us to access and execute challenging movement variations with greater ease and precision.</p>
+      </div>
+      <div class="guide-card">
+        <div class="guide-card-content">
+          <Image src={checkCircle} alt="check icon" class="guide-icon" />
+          <h3>Improvisation</h3>
+        </div>
+        <p>Capoeira is about improvising movement and expressing yourself in the game. In the final section, we'll learn how to train in a way that mirrors the dynamic game of Capoeira and to move seamlessly in the roda.</p>
+      </div>
+    </div>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHNVnfSLuo2fnv5cyEEl6lEICCMOdCzT4H3kbCdizZBpuBbQ/viewform?usp=sharing" class="btn btn-blue guide-product-button">Join Waitlist!</a>
+  </section>
+
+  <section class="home-about main-grid">
+    <h2 class="section-title">The story of Dendê Arts</h2>
+    <div class="home-about-image">
+      <Image src={caladoAbout} alt="Calado, founder of dende arts" class="dende-arts-about" />
+    </div>
+    <div class="home-about-content">
+      <h3 class="home-about-calado-name">Chris "Calado" Rodriguez</h3>
+      <p class="home-about-calado-title">Capoeira Teacher</p>
+      <p>I started training in 2007 and fell in love with the super-human movement, the flow, and the excitement of playing in the roda. Although I work as a Web Developer, I've poured countless hours into creating an environment where people who work – like me – can integrate Capoeira into their lives. My goal has always been to grow the capoeira community and improve their experience. That's why I've created a blog, Youtube channel, Instagram account, made several courses, taught in person and manufactured capoeira gear.</p>
+      <div class="home-about-social">
+        <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+          <Image src={instagramIcon} alt="instagram logo" class="instagram-logo" />
+        </a>
+        <a href="https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+          <Image src={youtubeIcon} alt="youtube logo" class="youtube-logo" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-blog-section main-grid">
+    <div class="home-blog-title-container">
+      <h2 class="section-title">Latest from the blog</h2>
+      <p>Don't miss the number one capoeira blog on the internet. Articles touch on<br /> movement, music, culture, community, education and more.</p>
+    </div>
+    <div class="featured-blog-container">
+      {latestPosts.map(post => (
+        <article class="blog-card">
+          {post.data.coverImage && (
+            <Image src={post.data.coverImage} alt={post.data.title} class="blog-featured-image" />
+          )}
+          <div class="blog-card-content">
+            <h3 class="blog-card-title">
+              <a href={`/blog/${getSlug(post.id)}/`}>{post.data.title}</a>
+            </h3>
+            <a href={`/blog/${getSlug(post.id)}/`} class="read-more">Read More</a>
+          </div>
+        </article>
+      ))}
+    </div>
+    <a href="/blog" class="btn btn-dark">View all posts</a>
+  </section>
+
+  <section class="home-testimonials main-grid">
+    <h2 class="section-title">What people are saying</h2>
+    <div class="testimonial-grid">
+      {topReviews.map(review => <TestimonialCard review={review} />)}
+    </div>
+  </section>
+
+  <section class="home-contact main-grid">
+    <h2 class="section-title">Get in touch!</h2>
+    <p>Buy pants, partner with us, grab the guide, or ask about Capoeira. Fill out the form below, and we'll get back to you soon!</p>
+    <ContactForm />
+  </section>
+</Layout>

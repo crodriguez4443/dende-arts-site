@@ -1,0 +1,91 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import { Image } from 'astro:assets';
+import fabricIcon from '../assets/img/homepage/fabric-icon.svg';
+import taperIcon from '../assets/img/homepage/taper.svg';
+import waistbandIcon from '../assets/img/homepage/waistband.svg';
+import zipperIcon from '../assets/img/homepage/zipper.svg';
+import abadaProduct from '../assets/img/products/abada-jogger-product-hero.webp';
+import abadaReviewsData from '../data/abada-reviews.json';
+
+const reviews = (abadaReviewsData['abada-reviews'] || []).slice(0, 8);
+---
+<Layout
+  title="Capoeira Abadas and Pants Online | Abada Joggers for Capoeira Training and performance"
+  description="Shop high-quality Capoeira Abadas and pants online - high quality Abadas with a 4-way stretch, tapered fit, and zippered pocket. Fast shipping & beloved comfort"
+  socialImage="/img/dende-arts-logo2.png"
+>
+  <section class="product-hero main-grid">
+    <Nav />
+    <div class="left-half-content align-content-top">
+      <div class="rating-container-top">
+        <span class="star">★</span>
+        <span class="star">★</span>
+        <span class="star">★</span>
+        <span class="star">★</span>
+        <span class="star">★</span>
+      </div>
+      <h1 class="product-title">Abada Joggers</h1>
+      <p class="product-subtitle">Elevate your capoeira performance with <strong>the best capoeira abadas</strong> online... or offline.</p>
+      <p class="hide-mobile">Abada Jogger is here to offer you an alternative to the mob of unflattering capoeira uniforms out there.</p>
+      <p>Made with the most luxurious <span class="highlight-text">4-way stretch polyester</span>, Abada Jogger is <strong>mid-rise</strong> and <strong>tapered fit</strong> that bring comfort and style to your capoeira journey.</p>
+      <div class="features-container">
+        <div class="feature">
+          <div class="feature-image-container">
+            <Image src={fabricIcon} alt="4-way stretch material" class="feature-icon" loading="eager" />
+          </div>
+          <p>4-WAY STRETCH</p>
+        </div>
+        <div class="feature">
+          <div class="feature-image-container">
+            <Image src={waistbandIcon} alt="elastic waistband" class="feature-icon" loading="eager" />
+          </div>
+          <p>Elastic Waistband</p>
+        </div>
+        <div class="feature">
+          <div class="feature-image-container">
+            <Image src={taperIcon} alt="tapered fit" class="feature-icon" loading="eager" />
+          </div>
+          <p>Tapered Fit</p>
+        </div>
+        <div class="feature">
+          <div class="feature-image-container">
+            <Image src={zipperIcon} alt="zippered pocket" class="feature-icon" loading="eager" />
+          </div>
+          <p>Zippered Pocket</p>
+        </div>
+      </div>
+      <a href="/abada-joggers" class="btn btn-dark">Shop Now</a>
+    </div>
+    <div class="right-half-content">
+      <Image src={abadaProduct} alt="Abada Joggers" class="product-hero-image" loading="eager" />
+    </div>
+  </section>
+
+  {reviews.length > 0 && (
+    <section class="main-grid extra-padding" id="reviews">
+      <h2 class="section-title">What our customers are saying</h2>
+      <div class="testimonial-grid">
+        {reviews.map((review: any) => (
+          <div class="home-testimonial-card">
+            <div class="testimonial-rating">
+              {Array.from({ length: review.review_score }).map(() => <span class="star">★</span>)}
+            </div>
+            <p class="testimonial-text">{review.review_content}</p>
+            <p class="testimonial-author">{review.author}</p>
+            <p class="testimonial-relation">{review.user_type}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="main-grid extra-padding" id="fit-finder">
+    <h2 class="section-title">Find Your Size</h2>
+    <p class="section-subtitle">Use our fit finder to find the perfect size for you.</p>
+    <div class="fit-finder-container">
+      <a href="/abada-joggers" class="btn btn-dark">Shop Abada Joggers</a>
+    </div>
+  </section>
+</Layout>

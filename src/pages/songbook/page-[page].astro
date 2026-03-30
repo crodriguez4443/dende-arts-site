@@ -1,0 +1,74 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import AbadaBanner from '../../components/AbadaBanner.astro';
+import { getCollection } from 'astro:content';
+
+function getSlug(id: string) { return id.split('/')[0]; }
+
+export async function getStaticPaths() {
+  const PAGE_SIZE = 60;
+  const allSongs = await getCollection('songs');
+  const sorted = allSongs.sort((a, b) => a.data.title.localeCompare(b.data.title));
+  const totalPages = Math.ceil(sorted.length / PAGE_SIZE);
+  const paths = [];
+  for (let i = 2; i <= totalPages; i++) {
+    const start = (i - 1) * PAGE_SIZE;
+    paths.push({
+      params: { page: String(i) },
+      props: {
+        songs: sorted.slice(start, start + PAGE_SIZE),
+        currentPage: i,
+        totalPages,
+        prevUrl: i === 2 ? '/songbook/' : `/songbook/page-${i - 1}/`,
+        nextUrl: i < totalPages ? `/songbook/page-${i + 1}/` : null,
+      },
+    });
+  }
+  return paths;
+}
+
+const { songs, currentPage, totalPages, prevUrl, nextUrl } = Astro.props;
+---
+<Layout title={`Capoeira Songbook – Page ${currentPage}`}>
+  <div class="blog-page-container main-grid">
+    <Nav />
+    <div style="padding-top:2rem">
+      <h1>Learn Capoeira music with translations and video</h1>
+
+      <div class="search-container">
+        <input class="searchInput" type="text" id="songsSearchInput" placeholder="Search Songs..." />
+      </div>
+
+      <AbadaBanner />
+
+      <div class="song-grid" id="songs-grid">
+        {songs.map((song: any) => (
+          <a
+            href={`/songbook/${getSlug(song.id)}/`}
+            class="song-card"
+            data-tags={song.data.tags ? song.data.tags.join(',') : ''}
+          >
+            <h3 class="song-title">{song.data.title}</h3>
+            {song.data.excerpt && <p class="song-excerpt">{song.data.excerpt}</p>}
+            <div class="tags">
+              {song.data.tags && song.data.tags.map((tag: string) => <p class="tag">{tag}</p>)}
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <nav class="pagination" aria-label="Pagination">
+        {prevUrl && <a href={prevUrl} class="pagination-link">Previous</a>}
+        {Array.from({ length: totalPages }).map((_, i) => {
+          const pageNum = i + 1;
+          const href = pageNum === 1 ? '/songbook/' : `/songbook/page-${pageNum}/`;
+          return pageNum === currentPage
+            ? <span class="pagination-link current">{pageNum}</span>
+            : <a href={href} class="pagination-link">{pageNum}</a>;
+        })}
+        {nextUrl && <a href={nextUrl} class="pagination-link">Next</a>}
+      </nav>
+    </div>
+  </div>
+</Layout>

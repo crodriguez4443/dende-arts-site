@@ -1,0 +1,65 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import AbadaBanner from '../../components/AbadaBanner.astro';
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+
+const PAGE_SIZE = 30;
+
+// In Astro 6 Content Layer, entry.id = 'slug/index' → derive slug via split
+function getSlug(id: string) { return id.split('/')[0]; }
+
+const allPosts = await getCollection('blog', ({ data }) =>
+  !data.categories.includes('capoeira-songbook')
+);
+const sorted = allPosts.sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+
+const posts = sorted.slice(0, PAGE_SIZE);
+const totalPages = Math.ceil(sorted.length / PAGE_SIZE);
+---
+<Layout title="The number 1 Capoeira blog online">
+  <div class="blog-page-container main-grid">
+    <Nav />
+    <h1 class="blog-page-title"><strong>A Capoeira community blog!</strong> Thoughts, resources, and recommendations.</h1>
+
+    <AbadaBanner />
+
+    <div class="search-container">
+      <input class="searchInput" type="text" id="regularSearchInput" placeholder="Search Capoeira Articles..." />
+    </div>
+
+    <div class="blog-grid" id="blog-grid">
+      {posts.map(post => (
+        <article class="blog-card">
+          {post.data.coverImage && (
+            <Image src={post.data.coverImage} alt={post.data.title} class="blog-featured-image" />
+          )}
+          <div class="blog-card-content">
+            <h3 class="blog-card-title">
+              <a href={`/blog/${getSlug(post.id)}/`}>{post.data.title}</a>
+            </h3>
+            <a href={`/blog/${getSlug(post.id)}/`} class="read-more">Read More</a>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <nav class="pagination" aria-label="Pagination">
+      {totalPages > 1 && (
+        <>
+          {Array.from({ length: totalPages }).map((_, i) => {
+            const pageNum = i + 1;
+            const href = pageNum === 1 ? '/blog/' : `/blog/page-${pageNum}/`;
+            return pageNum === 1
+              ? <span class="pagination-link current">{pageNum}</span>
+              : <a href={href} class="pagination-link">{pageNum}</a>;
+          })}
+          <a href="/blog/page-2/" class="pagination-link">Next</a>
+        </>
+      )}
+    </nav>
+  </div>
+</Layout>

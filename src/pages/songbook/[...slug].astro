@@ -1,0 +1,59 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import AbadaBannerVertical from '../../components/AbadaBannerVertical.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const songs = await getCollection('songs');
+  return songs.map(song => ({
+    params: { slug: song.id.split('/')[0] },
+    props: { song },
+  }));
+}
+
+const { song } = Astro.props;
+const { Content } = await render(song);
+---
+<Layout title={song.data.title} description={song.data.description}>
+  <div class="main-grid">
+    <Nav />
+    <div class="blog-post-container blog-post-grid">
+      <article class="blog-post">
+        <nav class="breadcrumb">
+          <a href="/songbook/">&larr; Back to Song List</a>
+        </nav>
+        <header>
+          <h1>{song.data.title}</h1>
+          {song.data.author && <p class="author">by {song.data.author}</p>}
+          {song.data.tags && song.data.tags.length > 0 && (
+            <div class="tags">
+              {song.data.tags.map(tag => <span class="tag">{tag}</span>)}
+            </div>
+          )}
+        </header>
+        <div class="song-content">
+          <Content />
+        </div>
+      </article>
+      <div>
+        <AbadaBannerVertical />
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .breadcrumb { margin-bottom: 20px; }
+  .breadcrumb a { color: #666; text-decoration: none; font-size: 14px; }
+  .breadcrumb a:hover { color: #333; text-decoration: underline; }
+  .author { color: #666; margin: 5px 0; font-style: italic; }
+  .song-content { margin-top: 30px; }
+  :global(.capoeira-table) { max-width: 1000px; border-collapse: collapse; margin: 20px 0; }
+  :global(.capoeira-table th),
+  :global(.capoeira-table td) { border: 1px solid #ddd; padding: 12px; text-align: left; vertical-align: top; }
+  :global(.capoeira-table th) { background-color: #f5f5f5; font-weight: bold; }
+  :global(.capoeira-table tr:nth-child(even)) { background-color: #f9f9f9; }
+  :global(iframe) { max-width: 100%; height: auto; aspect-ratio: 16/9; margin: 20px 0; }
+  :global(figcaption) { font-style: italic; color: #666; font-size: 14px; margin-top: 10px; }
+</style>

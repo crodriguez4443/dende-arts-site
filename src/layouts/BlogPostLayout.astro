@@ -1,0 +1,76 @@
+---
+import Layout from './Layout.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  date?: Date;
+  slug?: string;
+  content?: string;
+}
+
+const { title, description, date, slug, content = '' } = Astro.props;
+
+// Extract h2/h3 headings from rendered HTML (mirrors .eleventy.js getHeadings filter)
+function getHeadings(html: string) {
+  const headings: { level: string; text: string; slug: string }[] = [];
+  const regex = /<h([2-3])[^>]*?>(.*?)<\/h\1>/gs;
+  let match;
+  while ((match = regex.exec(html)) !== null) {
+    const level = match[1];
+    const text = match[2].replace(/<[^>]*>/g, '').trim();
+    const slug = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+    headings.push({ level, text, slug });
+  }
+  return headings;
+}
+
+const headings = getHeadings(content);
+
+const readableDate = date
+  ? new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+  : '';
+const isoDate = date ? new Date(date).toISOString().split('T')[0] : '';
+---
+<Layout title={title} description={description}>
+  <div class="main-grid">
+    <!-- Nav is rendered via Layout slot, but we need it at top of main-grid -->
+    <slot name="nav" />
+    <div class="blog-post-container blog-post-grid">
+      <article class="blog-post">
+        <div class="breadcrumb-container">
+          <a href="/">Home/</a>
+          <a href="/blog">Blog/</a>
+          <a href={`/blog/${slug}`}>{title}</a>
+        </div>
+        <h1>{title}</h1>
+        <slot name="featured-image" />
+        <div class="blog-post-meta">
+          <time datetime={isoDate}>{readableDate}</time>
+        </div>
+        <div class="blog-post-content">
+          <slot />
+        </div>
+      </article>
+
+      <aside class="blog-post-sidebar">
+        {headings.length > 0 && (
+          <>
+            <h3>Table of Contents</h3>
+            <div class="table-of-contents">
+              <nav class="toc-nav">
+                <ul>
+                  {headings.map(h => (
+                    <li class={`toc-level-${h.level}`}>
+                      <a href={`#${h.slug}`}>{h.text}</a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
+          </>
+        )}
+      </aside>
+    </div>
+  </div>
+</Layout>

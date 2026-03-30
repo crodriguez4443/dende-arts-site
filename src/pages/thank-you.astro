@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+---
+<Layout title="Thank You for Your Support - Dende Arts">
+  <section class="main-grid">
+    <Nav />
+    <div class="thank-you-page-content">
+      <h1 class="thank-you-title">Thank you for your support!</h1>
+      <div class="thank-you-buttons">
+        <a href="/" class="btn btn-dark">Send me home</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .thank-you-page-content {
+    text-align: center;
+    padding: 6rem 0 8rem;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  .thank-you-title { margin-bottom: 4rem; color: var(--title-color); }
+  .thank-you-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+    .thank-you-buttons { flex-direction: row; max-width: 600px; }
+    .thank-you-buttons .btn { flex: 1; min-width: 250px; }
+  }
+</style>

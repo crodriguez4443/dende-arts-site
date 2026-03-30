@@ -1,0 +1,275 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import { Image } from 'astro:assets';
+import fabricIcon from '../assets/img/homepage/fabric-icon.svg';
+import taperIcon from '../assets/img/homepage/taper.svg';
+import waistbandIcon from '../assets/img/homepage/waistband.svg';
+import zipperIcon from '../assets/img/homepage/zipper.svg';
+import abadaReviewsData from '../data/abada-reviews.json';
+
+export async function getStaticPaths() {
+  try {
+    // Dynamically import swell-js for build-time product fetching
+    const swellModule = await import('swell-js');
+    const swell = swellModule.default || swellModule;
+    await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+      useCamelCase: true,
+    });
+    const result = await swell.products.list({ limit: 100, expand: ['variants', 'categories'] });
+    const products = result?.results || [];
+    return products.map((product: any) => ({
+      params: { product: product.slug },
+      props: { product },
+    }));
+  } catch (err) {
+    console.error('Could not fetch Swell products at build time:', err);
+    return [];
+  }
+}
+
+const { product } = Astro.props;
+const reviews = abadaReviewsData['abada-reviews'] || [];
+const totalReviews = reviews.length;
+const averageRating = totalReviews > 0
+  ? Math.round((reviews.reduce((sum: number, r: any) => sum + r.review_score, 0) / totalReviews) * 10) / 10
+  : 0;
+---
+<Layout title={product?.name || 'Product'} description={product?.description || ''}>
+  <section class="main-grid product-sale-page">
+    <Nav />
+    <div class="product-image-wrapper">
+      <div class="additional-photos-container" id="thumbnailContainer">
+        {product?.images && product.images.slice(0, 4).map((img: any, idx: number) => (
+          <img
+            src={img.file.url}
+            alt={`${product.name} - ${idx === 0 ? 'Featured' : 'Additional'} Image ${idx + 1}`}
+            class={`thumbnail-image${idx === 0 ? ' active' : ''}`}
+            loading="lazy"
+            width="80"
+            height="80"
+            data-index={idx}
+            onclick="swapImages(this)"
+          />
+        ))}
+      </div>
+
+      <div class="left-half-img-container product-feature-image">
+        {product?.images && product.images[0] && (
+          <img
+            src={product.images[0].file.url}
+            alt={product.name}
+            class="main-product-image"
+            id="mainImage"
+            data-index="0"
+            width="400"
+            height="400"
+          />
+        )}
+      </div>
+    </div>
+
+    <div class="right-half-content product-sale-content">
+      <div class="product-card">
+        {product && (
+          <>
+            <h1 class="product-page-title">{product.name}</h1>
+            {product.content?.subtext && <p class="product-subtext">{product.content.subtext}</p>}
+            <div class="price">Price: $ {product.price} USD</div>
+
+            {product.description && (
+              <div class="description" set:html={product.description} />
+            )}
+
+            {product.name === 'Abada Joggers' && (
+              <div class="features-container padding-bottom-1">
+                <div class="feature">
+                  <div class="feature-image-container">
+                    <Image src={fabricIcon} alt="4-way stretch material" class="feature-icon" loading="eager" />
+                  </div>
+                  <p>4-WAY STRETCH</p>
+                </div>
+                <div class="feature">
+                  <div class="feature-image-container">
+                    <Image src={taperIcon} alt="tapered fit" class="feature-icon" loading="eager" />
+                  </div>
+                  <p>Tapered Fit</p>
+                </div>
+                <div class="feature">
+                  <div class="feature-image-container">
+                    <Image src={waistbandIcon} alt="elastic waistband" class="feature-icon" loading="eager" />
+                  </div>
+                  <p>Elastic Waistband</p>
+                </div>
+                <div class="feature">
+                  <div class="feature-image-container">
+                    <Image src={zipperIcon} alt="zippered pocket" class="feature-icon" loading="eager" />
+                  </div>
+                  <p>Zippered Pocket</p>
+                </div>
+              </div>
+            )}
+
+            {product.options && (
+              <div class="flex-box-column padding-bottom-2">
+                <div id="stockAlert" class="stock-alert-banner" style="display: none;">
+                  <svg class="alert-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM11 15H9V13H11V15ZM11 11H9V5H11V11Z" fill="currentColor"/>
+                  </svg>
+                  <span id="stockAlertText">Only <strong id="stockCount">0</strong> left in stock - Order soon!</span>
+                </div>
+
+                <details class="group border-t border-gray-200 mb-6">
+                  <summary class="flex justify-between items-center py-4 list-none cursor-pointer [&::-webkit-details-marker]:hidden">
+                    <span class="font-medium text-[var(--title-color)]">Shipping & Returns</span>
+                    <span class="transition-transform duration-300 group-open:rotate-180 text-[var(--title-color)]">
+                      <svg width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div class="pb-4 text-base text-[var(--text-color)] space-y-2">
+                    <p>Standard shipping for all orders. Estimated shipping 4–7 business days</p>
+                    <p>Returns available within 30 days of purchase.</p>
+                    <a href="/return-policy/" target="_blank" class="underline decoration-1 underline-offset-2 hover:text-[var(--action-primary)]">View Policy</a>
+                  </div>
+                </details>
+
+                <div class="options">
+                  {product.options.map((option: any) => (
+                    <div class="option-group">
+                      <div class="size-selector-header">
+                        <label class="size-selector-label">Select your Size</label>
+                        <a href="/abada-joggers-landing/#fit-finder" class="ff-inline-trigger">Find Your Size</a>
+                      </div>
+                      <div class="size-boxes-container" role="radiogroup" aria-label={option.name}>
+                        {option.values && option.values.map((value: any) => (
+                          <button
+                            type="button"
+                            class="size-box"
+                            data-size={value.name}
+                            data-option-id={value.id}
+                            data-option-name={option.name}
+                            role="radio"
+                            aria-checked="false"
+                            onclick="selectSize(this)"
+                          >
+                            {value.name}
+                          </button>
+                        ))}
+                      </div>
+                      <input type="hidden" id={option.name} name={option.name} value="" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <div class="flex-box">
+              <button
+                id="addToCart"
+                onclick={`addToCart('${product.id}')`}
+                class="add-to-cart-button"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </>
+        )}
+      </div>
+    </div>
+
+    {/* Reviews Section */}
+    <div class="product-reviews-section">
+      <div class="product-review-header">
+        <h2 class="product-review-header__title">Customer Reviews</h2>
+        {totalReviews > 0 && (
+          <div class="product-review-header__summary">
+            <div class="product-review-header__average-stars">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <span class={`star ${i + 1 <= averageRating ? 'filled' : 'empty'}`}>
+                  {i + 1 <= averageRating ? '★' : '☆'}
+                </span>
+              ))}
+            </div>
+            <span class="review-average">{averageRating} / 5</span>
+            <span class="review-count">({totalReviews} review{totalReviews !== 1 ? 's' : ''})</span>
+          </div>
+        )}
+      </div>
+
+      <button id="toggleReviewFormBtn" class="review-toggle-btn">
+        Click to Write a Review <span class="arrow-down"></span>
+      </button>
+      <div id="reviewFormContainer" class="review-form-collapsible">
+        <div class="bulk-form-container">
+          <form
+            id="reviewForm"
+            class="contact-form"
+            name="review-form"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="/Thank-you/"
+          >
+            <p hidden><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+            <input type="hidden" name="product_title" value={product?.slug || ''} />
+            <div class="selectors-container">
+              <div class="form-group">
+                <label for="reviewAuthor">Name</label>
+                <input type="text" id="reviewAuthor" name="author" required />
+              </div>
+              <div class="form-group">
+                <label for="reviewEmail">Email</label>
+                <input type="email" id="reviewEmail" name="email" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Rating</label>
+              <div class="star-rating">
+                <input type="radio" id="rating-5" name="review_score" value="5" required /><label for="rating-5" title="5 stars">★</label>
+                <input type="radio" id="rating-4" name="review_score" value="4" /><label for="rating-4" title="4 stars">★</label>
+                <input type="radio" id="rating-3" name="review_score" value="3" /><label for="rating-3" title="3 stars">★</label>
+                <input type="radio" id="rating-2" name="review_score" value="2" /><label for="rating-2" title="2 stars">★</label>
+                <input type="radio" id="rating-1" name="review_score" value="1" /><label for="rating-1" title="1 star">★</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="reviewTitle">Review Title</label>
+              <input type="text" id="reviewTitle" name="review_title" required />
+            </div>
+            <div class="form-group">
+              <label for="reviewContent">Review</label>
+              <textarea id="reviewContent" name="review_content" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-very-dark btn-form">Submit Review</button>
+          </form>
+        </div>
+      </div>
+
+      {reviews.length > 0 ? (
+        <ul class="reviews-list">
+          {reviews.map((review: any) => (
+            <li class="review-item">
+              <div class="review-item__stars">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <span class={`star ${i + 1 <= review.review_score ? 'filled' : 'empty'}`}>
+                    {i + 1 <= review.review_score ? '★' : '☆'}
+                  </span>
+                ))}
+              </div>
+              <h3 class="review-item__title">{review.review_title}</h3>
+              <p class="review-item__meta">
+                <span class="review-item__author-name">By: {review.author} - </span>
+                <span class="review-item__author">{review.user_type}</span>
+              </p>
+              <p class="review-item__content">{review.review_content}</p>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="no-reviews-message">Be the first to review this product!</p>
+      )}
+    </div>
+  </section>
+</Layout>

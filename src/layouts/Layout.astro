@@ -1,0 +1,197 @@
+---
+import { Image } from 'astro:assets';
+import Nav from '../components/Nav.astro';
+import CartSidebar from '../components/CartSidebar.astro';
+import logoWhite from '../assets/img/dende-logo-white.png';
+import instagramWhite from '../assets/img/homepage/instagram-icon-white.png';
+import youtubeWhite from '../assets/img/homepage/youtube-icon-white.png';
+
+interface Props {
+  title: string;
+  description?: string;
+  socialImage?: string;
+}
+
+const {
+  title,
+  description = '',
+  socialImage = '/img/dende-arts-logo2.png',
+} = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <title>{title}</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/contact.css" />
+  <link rel="stylesheet" href="/css/pages.css" />
+
+  <!-- OG meta -->
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={socialImage} />
+
+  <!-- Primary font -->
+  <link
+    rel="preload"
+    href="/fonts/DMSans-Variable.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+
+  <!-- Favicon -->
+  <link rel="icon" type="img" href="/img/dende-arts-logo.png" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7Q1NGPMNT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(...args: any[]) { window.dataLayer.push(args); }
+    gtag('js', new Date());
+    gtag('config', 'G-V7Q1NGPMNT');
+  </script>
+</head>
+<body>
+  <CartSidebar />
+  <main>
+    <slot />
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top-content">
+      <div class="footer-logo-link-container">
+        <a href="/">
+          <Image src={logoWhite} alt="dende arts logo" class="footer-logo-link-lg" loading="eager" />
+        </a>
+      </div>
+      <div class="footer-social-large">
+        <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+          <Image src={instagramWhite} alt="instagram logo" class="instagram-logo" />
+        </a>
+        <a href="https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+          <Image src={youtubeWhite} alt="youtube logo" class="youtube-logo" />
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom-content">
+      <nav class="footer-nav">
+        <a href="/">Home</a>
+        <a href="/abada-joggers-landing/">Abadas</a>
+        <a href="/songbook/">Songbook</a>
+        <a href="/blog/">Blog</a>
+        <a href="/bulk-orders/">Bulk Orders</a>
+      </nav>
+      <div class="footer-social-small">
+        <a href="https://www.instagram.com/dende_arts/" target="_blank" class="social-icon">
+          <Image src={instagramWhite} alt="instagram logo" class="instagram-logo" />
+        </a>
+        <a href="https://www.youtube.com/@Dendearts/videos" target="_blank" class="social-icon">
+          <Image src={youtubeWhite} alt="youtube logo" class="youtube-logo" />
+        </a>
+      </div>
+      <div class="footer-copyright" style="display: flex-wrap">
+        <p>Copyright © <span id="current-year"></span> Dendê Arts LLC | <a href="https://solsticewebstudio.com" style="color:white;">by Solstice Web Studio</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/nav.js" defer></script>
+  <script>document.getElementById('current-year').textContent = String(new Date().getFullYear());</script>
+  <script src="https://unpkg.com/lunr/lunr.js" defer></script>
+  <script src="/js/search.js" defer></script>
+  <script src="/js/product-quantity.js" defer></script>
+  <script src="/js/cart-utils.js" defer></script>
+  <script src="/js/cart-display.js" defer></script>
+
+  <!-- Swell SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
+  <script defer>
+    window.swellCartCount = 0;
+    window.swellInitialized = false;
+
+    window.initializeSwell = async function() {
+      if (window.swellInitialized) return swell;
+      try {
+        await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
+          useCamelCase: true,
+          persist: 'localstorage',
+          cache: true,
+          timeout: 5000
+        });
+        window.swellInitialized = true;
+        setupCachedCart();
+        const cart = await swell.cachedCart.get();
+        window.swellCartCount = cart?.itemQuantity || 0;
+        updateCartCount();
+        return swell;
+      } catch (error) {
+        console.error('Swell initialization error:', error);
+        return null;
+      }
+    };
+
+    window.addEventListener('load', function() {
+      window.initializeSwell();
+    });
+
+    function setupCachedCart() {
+      swell.cachedCart = {
+        data: null,
+        lastFetched: 0,
+        ttl: 60000,
+        async get() {
+          const now = Date.now();
+          if (!this.data || now - this.lastFetched > this.ttl) {
+            this.data = await swell.cart.get();
+            this.lastFetched = now;
+          }
+          return this.data;
+        },
+        async updateItem(id, data) {
+          if (this.data && this.data.items) {
+            const itemIndex = this.data.items.findIndex(item => item.id === id);
+            if (itemIndex >= 0) {
+              this.data.items[itemIndex] = { ...this.data.items[itemIndex], ...data };
+              if (data.quantity) {
+                let itemQuantity = 0;
+                this.data.items.forEach(item => { itemQuantity += item.quantity; });
+                this.data.itemQuantity = itemQuantity;
+              }
+            }
+          }
+          const result = await swell.cart.updateItem(id, data);
+          this.data = result;
+          this.lastFetched = Date.now();
+          return result;
+        },
+        async removeItem(id) {
+          if (this.data && this.data.items) {
+            const itemIndex = this.data.items.findIndex(item => item.id === id);
+            if (itemIndex >= 0) {
+              const removedItem = this.data.items[itemIndex];
+              this.data.items.splice(itemIndex, 1);
+              this.data.itemQuantity -= removedItem.quantity;
+            }
+          }
+          const result = await swell.cart.removeItem(id);
+          this.data = result;
+          this.lastFetched = Date.now();
+          return result;
+        },
+        async addItem(data) {
+          const result = await swell.cart.addItem(data);
+          this.data = result;
+          this.lastFetched = Date.now();
+          return result;
+        }
+      };
+    }
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7282401045549668" crossorigin="anonymous"></script>
+</body>
+</html>

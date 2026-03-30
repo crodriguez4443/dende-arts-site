@@ -1,0 +1,180 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import { Image } from 'astro:assets';
+import fabricIcon from '../assets/img/bulk-orders/fabric-icon.png';
+import customPatchIcon from '../assets/img/bulk-orders/custom-patch-icon.png';
+import deliveryIcon from '../assets/img/bulk-orders/delivery-icon.png';
+import pricingIcon from '../assets/img/bulk-orders/pricing-icon.png';
+import satisfactionIcon from '../assets/img/bulk-orders/satisfaction100-icon.png';
+import abadaReviewsData from '../data/abada-reviews.json';
+
+const reviews = (abadaReviewsData['abada-reviews'] || [])
+  .filter((r: any) => r.review_content && r.review_content.length >= 100)
+  .slice(0, 12);
+---
+<Layout
+  title="Bulk Order Abadas for Capoeira Groups | Wholesale Capoeira Pants – Dende Arts"
+  description="Bulk order Abadas for Capoeira groups | Wholesale Capoeira pants for Batizados, events, and groups"
+>
+  <section class="main-grid">
+    <Nav />
+    <div class="bulk-page-content">
+      <h1 class="bulk-title">Finally!<br />Easy Bulk Order Abadas for Capoeira Schools &amp; Groups</h1>
+      <p class="bulk-page-text">We have <strong class="border-b-2 border-[color:var(--action-primary)]">no minimums</strong> and clear pricing to support Capoeira teachers</p>
+      <div class="rating-container">
+        <a href="#bulk-order-form" class="btn btn-dark">Get Bulk Abadas</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-grid extra-padding">
+    <h2 class="section-title">Why order capoeira abadas in bulk from Dende Arts?</h2>
+    <p class="section-subtitle-centered">We make bulk ordering simple, predictable, and stress-free for capoeira schools and groups worldwide.</p>
+
+    <div class="grid md:grid-cols-2 gap-8 pb-8">
+      {[
+        { icon: fabricIcon, alt: 'high quality fabric', title: 'High-Quality Materials & Build', desc: "Premium, durable fabric that won't see through or wear out. Built to last through countless rodas and training sessions." },
+        { icon: customPatchIcon, alt: 'customized abadas with logo', title: 'Custom Logo Options', desc: "Make your group stand out. We can customize abadas with your school's logo, creating a unified professional look for your students." },
+        { icon: deliveryIcon, alt: 'fast and easy delivery', title: 'Predictable Delivery Times', desc: "Know exactly when your order will arrive. No surprises or waiting around wondering where your abadas are—just reliable, on-time delivery." },
+        { icon: pricingIcon, alt: 'transparent bulk order pricing', title: 'Simple, All-Inclusive Pricing', desc: "Use our price calculator to see your exact cost—shipping included, no hidden fees, no surprises. What you see is what you pay." },
+        { icon: satisfactionIcon, alt: 'satisfaction guaranteed', title: 'Satisfaction Guaranteed', desc: "We stand behind our abadas. If you're not completely satisfied with your bulk order, we'll make it right." },
+      ].map(card => (
+        <div class="guide-card-light">
+          <div class="guide-card-content">
+            <div class="w-16 h-16 rounded-full bg-[#d2e9ef] flex items-center justify-center flex-shrink-0">
+              <div class="w-12 h-12">
+                <Image src={card.icon} alt={card.alt} class="w-full h-full object-contain" />
+              </div>
+            </div>
+            <div>
+              <h3 class="pb-4">{card.title}</h3>
+              <p>{card.desc}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="main-grid extra-padding py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 extra-padding">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-[var(--title-color)] text-center mb-16">
+        How does Bulk Ordering work?
+      </h2>
+      <div class="relative grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="hidden md:block absolute top-6 left-0 w-full h-0.5 bg-gray-200 -z-0" aria-hidden="true"></div>
+        {[
+          { step: 1, title: 'Submit Your Request', desc: 'Fill out the form below to let us know how many Abadas you need, the specific sizes, your deadline, and if you need a logo included.' },
+          { step: 2, title: 'Confirmation', desc: "We'll reach out via phone or email to confirm your specific needs and ensure you get the best care possible." },
+          { step: 3, title: 'Production', desc: 'Once details are set, we start production immediately! Our typical fulfillment time for bulk orders is about 6–8 weeks.' },
+          { step: 4, title: 'Delivery', desc: 'Your Abadas get shipped wherever you are in the world. Shipping costs are already included in your initial cost estimate.' },
+        ].map(({ step, title, desc }) => (
+          <div class="relative flex flex-col items-center text-center group">
+            <div class="w-12 h-12 rounded-full bg-[var(--action-primary)] text-white flex items-center justify-center text-lg font-bold mb-6 z-10 ring-4 ring-white shadow-sm">
+              {step}
+            </div>
+            <h3 class="text-lg font-bold text-[var(--text-color)] mb-2">{title}</h3>
+            <p class="text-[var(--text-color)] text-sm leading-relaxed">{desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+    <div class="rating-container">
+      <a href="#bulk-order-form" class="btn btn-dark">Get Started with Your Bulk Order</a>
+    </div>
+  </section>
+
+  {reviews.length > 0 && (
+    <section class="main-grid extra-padding">
+      <h2 class="section-title">Why your students will love our Abadas</h2>
+      <div class="testimonial-grid">
+        {reviews.map((review: any) => (
+          <div class="home-testimonial-card">
+            <div class="testimonial-rating">
+              {Array.from({ length: review.review_score }).map(() => <span class="star">★</span>)}
+              {Array.from({ length: 5 - review.review_score }).map(() => <span class="star star-empty">☆</span>)}
+            </div>
+            <p class="testimonial-text">{review.review_content}</p>
+            <p class="testimonial-author">{review.author}</p>
+            <p class="testimonial-relation">{review.user_type}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- Pricing Calculator -->
+  <section class="main-grid">
+    <h2 class="section-title">Calculate Your Order Cost</h2>
+    <div class="pricing-calculator">
+      <div class="calculator-grid">
+        <div class="quantity-inputs">
+          <div class="input-group">
+            <label for="adult-qty">Adult Pants Quantity</label>
+            <input type="number" id="adult-qty" name="adult-quantity" min="0" value="0" />
+            <div class="unit-price">
+              $<span id="adult-unit-price">38</span> each.
+              <label for="adult-logo" style="cursor: pointer; color: var(--action-primary);">
+                Add a custom logo for $1.50 <input type="checkbox" id="adult-logo" name="adult-logo" />
+              </label>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="kids-qty">Kids Pants Quantity</label>
+            <input type="number" id="kids-qty" name="kids-quantity" min="0" value="0" />
+            <div class="unit-price">
+              $<span id="kids-unit-price">36</span> each.
+              <label for="kids-logo" style="cursor: pointer; color: var(--action-primary);">
+                Add a custom logo for $1.50 <input type="checkbox" id="kids-logo" name="kids-logo" />
+              </label>
+            </div>
+          </div>
+          <div>
+            <p class="discount-info">Adults discounts at 50, 100, 300, and 500</p>
+            <p class="discount-info">Kids discounts at 100, 300, and 500</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bulk Order Form -->
+  <section id="bulk-order-form" class="main-grid extra-padding">
+    <h2 class="section-title">Get Your Custom Quote</h2>
+    <div class="bulk-form-container contact-page-form">
+      <form
+        class="contact-form"
+        name="bulk-order"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        action="/Thank-you/"
+      >
+        <input type="hidden" name="form-name" value="bulk-order" />
+        <p hidden><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+        <div class="form-grid">
+          <div class="form-group"><input type="text" name="test" placeholder="Name" required /></div>
+          <div class="form-group"><input type="email" name="email" placeholder="Email" required /></div>
+          <div class="form-group"><input type="tel" name="phone" placeholder="Telephone number" /></div>
+          <div class="form-group"><input type="text" name="businessname" placeholder="Business Name" required /></div>
+          <div class="form-group"><input type="text" name="location" placeholder="Location (City, State, Country)" required /></div>
+          <div class="selectors-container">
+            <div class="form-group">
+              <select name="uniform-type" required>
+                <option value="" selected disabled>Uniform Type</option>
+                <option value="Adults">Adults</option>
+                <option value="Kids">Kids</option>
+              </select>
+            </div>
+            <div class="form-group"><input type="number" name="quantity" placeholder="minimums for adults = 30" required /></div>
+          </div>
+          <div class="form-group full-width">
+            <textarea name="message" placeholder="Write your message here..." required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn-dark btn-form full-width">Get my custom quote</button>
+      </form>
+    </div>
+  </section>
+</Layout>
