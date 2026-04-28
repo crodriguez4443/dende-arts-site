@@ -6,6 +6,7 @@ import TestimonialCard from '../components/TestimonialCard.astro';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 
+import heroBg from '../assets/img/hero-bg.jpg';
 import fabricIcon from '../assets/img/homepage/fabric-icon.svg';
 import taperIcon from '../assets/img/homepage/taper.svg';
 import waistbandIcon from '../assets/img/homepage/waistband.svg';
@@ -21,13 +22,13 @@ import reviewsData from '../data/reviews.json';
 
 function getSlug(id: string) { return id.split('/')[0]; }
 
-// Latest 3 blog posts for homepage
+// Latest featured blog post for homepage
 const allBlogPosts = await getCollection('blog', ({ data }) =>
   !data.categories.includes('capoeira-songbook')
 );
 const latestPosts = allBlogPosts
   .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
-  .slice(0, 3);
+  .slice(0, 1);
 
 const topReviews = reviewsData.reviews.slice(0, 4);
 ---
@@ -38,6 +39,7 @@ const topReviews = reviewsData.reviews.slice(0, 4);
 >
   <link rel="preload" href="/img/hero-bg.jpg" as="image" slot="head" />
   <section class="hero">
+    <Image src={heroBg} alt="hero background" class="hero-background" />
     <div class="main-grid">
       <Nav />
       <div class="hero-content">

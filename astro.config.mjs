@@ -1,11 +1,10 @@
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://dendearts.com',
   integrations: [
-    tailwind(),
     sitemap(),
   ],
   output: 'static',
@@ -16,6 +15,7 @@ export default defineConfig({
   },
   vite: {
     plugins: [
+      tailwindcss(),
       (() => {
         // Astro 6 Content Layer incorrectly tries to resolve external image URLs
         // as virtual module imports. This plugin handles them gracefully.

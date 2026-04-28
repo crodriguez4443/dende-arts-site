@@ -53,7 +53,7 @@ exports.handler = async function (event) {
     return { statusCode: 500, body: "Server misconfiguration: missing env vars" };
   }
 
-  const filePath = "src/_data/abada-reviews.json";
+  const filePath = "src/data/abada-reviews.json";
   const apiBase = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
   console.log("GitHub API URL:", apiBase);
 

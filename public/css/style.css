@@ -418,7 +418,7 @@ strong {
 .logo-link-lg {
     display: none;
     width: 184px;
-    height: 50px;
+    height: auto;
 }
 
   .hamburger {
@@ -577,7 +577,7 @@ strong {
     }
 
     .logo-link-container {
-        width: 135px;
+        /* width: 135px; */
         height: 64px;
       }
 
@@ -585,7 +585,7 @@ strong {
       display: inline;
       min-width: 184px;
       min-height: 50px;
-      margin-top: 2rem;
+      /* margin-top: 2rem; */
     }
     .logo-link {
       display: none;
@@ -610,11 +610,19 @@ strong {
 =============== */
 
 .hero {
-    background-image: url("/img/homepage/hero-bg-small.webp");
-    background-position: center;    
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: relative;
     padding-bottom: 5rem;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .hero > * {
@@ -642,13 +650,7 @@ strong {
 
 @media (min-width: 725px) {
 
-    .hero {
-        background-image: url("/img/homepage/hero-bg.webp");
-        background-position: right;    
-    }
-
     .hero-content {
-
         grid-column: 2/4;
         width: 70%;
     }
@@ -949,23 +951,28 @@ strong {
 
 .home-about-social {
     display: flex;
-    justify-content: space-between;
-    gap: .5rem;
+    justify-content: center;
+    gap: 1rem;
     margin-bottom: 1rem;
     width: 100px;
 }
 
+.social-icon {
+    padding: 0 0.5rem;
+}
+
 .social-icon:nth-child(1) {
     border-right: 2px solid var(--title-color);
+    padding-right: 0.75rem;
 }
 
 .social-icon:nth-child(2) {
-    margin-left: auto;
+    padding-left: 0.75rem;
 }
 
 
 .social-icon,
-.social-icon img { 
+.social-icon img {
     font-size: 1rem;
     height: 2rem;
     width: auto;
@@ -1012,8 +1019,32 @@ strong {
     margin-bottom: 1rem;
 }
 
-/* ==================== 
-     Testimonial Section 
+.featured-blog-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.featured-blog-container .blog-card {
+    position: relative;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.featured-blog-container .blog-card::before {
+    content: '';
+    position: absolute;
+    top: -55px;
+    left: -55px;
+    right: -55px;
+    bottom: -55px;
+    background: radial-gradient(circle, var(--action-primary) 5%, transparent 70%);
+    border-radius: .625rem;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* ====================
+     Testimonial Section
 ====================== */
 
 .home-testimonial-card {
