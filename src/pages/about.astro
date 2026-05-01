@@ -1,0 +1,235 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import { Image } from 'astro:assets';
+import heroImg from '../assets/img/about/hero-capoeira.jpg';
+---
+
+<Layout
+  title="About Dendê Arts | Capoeira Community"
+  description="Learn about Dendê Arts, founded by Chris 'Calado' Rodriguez. Discover our mission to grow the Capoeira community for all ages and skill levels."
+>
+  <div class="about-page">
+    <div class="main-grid">
+      <Nav />
+    </div>
+
+    <div class="about-hero-wrapper">
+      <Image
+        src={heroImg}
+        alt="A group of capoeira practitioners performing a synchronized movement in a vibrant outdoor setting"
+        class="about-hero-img"
+        width={1087}
+        height={505}
+      />
+    </div>
+
+    <section class="about-content-section">
+      <div class="about-inner">
+        <h1 class="about-heading">About Dendê Arts</h1>
+
+        <div class="about-vision-mission">
+          <div class="about-col">
+            <h2 class="about-col-title">The vision</h2>
+            <p>Capoeira is more than flips and kicks – it's about connection, creativity, and self-expression. At Calado A Dende Arts, we're breaking down barriers to make this incredible art form accessible to all ages, all skill levels, and all walks of life.</p>
+          </div>
+          <div class="about-col">
+            <h2 class="about-col-title">The mission</h2>
+            <p>At Dende Arts, our mission is to grow the Capoeira community and enhance the experience for practitioners of all levels. We believe that Capoeira is more than just a martial art – it's a way of life that fosters physical fitness, mental resilience, and cultural appreciation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-calado-section">
+      <div class="about-inner">
+        <h3 class="about-calado-title">Meet Calado: Your Guide to Capoeira</h3>
+
+        <div class="about-bio">
+          <p>Dendê Arts was founded in New Jersey by Chris "Calado" Rodriguez. A passionate Capoeira teacher, web developer, and social media power-house. Since 2007, Calado has dedicated himself to the art of Capoeira.</p>
+
+          <p>Calado's training started in High School when his cousin invited him to a Brazilian martial arts class. In 2012 Calado started training with Mestre Cebolinha former of Cordão de Ouro. This creative and dynamic style – a combination of Regional and Angola is the hallmark of Calado's style. He also learned from great teachers like Professor Rob Grey, Dr. Andrea Spina, and Mestre Cueca.</p>
+
+          <p>In 2016, Calado started teaching in California at the Google Complex in Mountainview. A year later he moved back to the East Coast and started teaching in Astoria, New York City and later he began teaching classes in Newark, NJ.</p>
+
+          <p>Calado's teaching methodology is a combination of traditional Capoeira training methods and modern skills training. The traditions learned from incredible talents like Mestres Xuxo, Cueca, João Grande, Brasilia, Cebolinha, Cabelo, and many more.</p>
+
+          <p>Calado knows what it's like to juggle work, life, and passion. That's why he built Dendê Arts as a way to integrate the joy of learning and doing Capoeira into your daily routine.</p>
+
+          <p>Calado's innovative approach includes:</p>
+
+          <ul class="about-list">
+            <li><strong>Online Resources:</strong> A wealth of tutorials, tips, and insights available through his blog, YouTube channel, and social media platforms.</li>
+            <li><strong>In-Person Classes:</strong> Hands-on training sessions designed to help students master the art of Capoeira in a supportive environment.</li>
+            <li><strong>Capoeira Gear:</strong> High-quality, handcrafted equipment to enhance your practice and performance.</li>
+            <li><strong>Community Building:</strong> A commitment to fostering connections among Capoeira enthusiasts, creating a global network of like-minded individuals.</li>
+          </ul>
+
+          <p>Calado's vision is that more people learn the joy of Capoeira. The joy of moving, flipping, kicking, playing music, and interacting with a global community.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-cta-section">
+      <div class="about-cta-inner">
+        <h2 class="about-cta-heading">Ready to start a new chapter in your capoeira journey?</h2>
+        <a href="/abada-joggers" class="btn about-cta-btn">Shop Abadas Today!</a>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .about-page {
+    background-color: #d2eaef;
+    min-height: 100vh;
+  }
+
+  .about-hero-wrapper {
+    max-width: 1087px;
+    margin: 3rem auto 0;
+    padding: 0 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .about-hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    aspect-ratio: 1087 / 505;
+  }
+
+  .about-content-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .about-inner {
+    max-width: 956px;
+    margin: 0 auto;
+  }
+
+  .about-heading {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 3.625rem;
+    font-weight: 700;
+    line-height: 1.21;
+    letter-spacing: -0.06rem;
+    color: #1d221b;
+    margin-bottom: 2rem;
+  }
+
+  .about-vision-mission {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+
+  @media (min-width: 700px) {
+    .about-vision-mission {
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+  }
+
+  .about-col-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: #1d221b;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-col p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    color: #1d221b;
+    margin: 0;
+  }
+
+  .about-calado-section {
+    padding: 0 1.5rem 4rem;
+  }
+
+  .about-calado-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.625rem;
+    color: #1d221b;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-bio p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    color: #1d221b;
+    margin-bottom: 1rem;
+  }
+
+  .about-list {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    color: #1d221b;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-list li {
+    margin-bottom: 0.5rem;
+  }
+
+  .about-cta-section {
+    background-color: white;
+    padding: 5rem 1.5rem;
+  }
+
+  .about-cta-inner {
+    max-width: 1090px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .about-cta-heading {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.625rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    letter-spacing: -0.025rem;
+    color: #434343;
+    max-width: 580px;
+    margin: 0;
+  }
+
+  .about-cta-btn {
+    background-color: #0f8095;
+    color: white;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+  }
+
+  .about-cta-btn:hover {
+    background-color: #0a6b7d;
+  }
+</style>

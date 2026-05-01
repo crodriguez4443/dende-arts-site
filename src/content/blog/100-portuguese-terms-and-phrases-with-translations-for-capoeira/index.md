@@ -489,15 +489,3 @@ type: "blog-article"
         <td>Look at the fish jump out of the sea, <br> Look at the fish jump out of the sea.<br> The sea rose.<br> Sea Rises.<br> The sea descends.<br> Sea descends</td>
     </tr>
 </table>
-```
-
-This HTML code will:
-
-1.  **Include CSS:**  The `<style>` block at the beginning defines CSS rules to style the table.  This makes it look cleaner and more readable.
-2.  **Create Tables:**  Each section (Common Phrases, Parts of the Body, etc.) is now in its own `<table>` element.
-3.  **Use `<thead>`:**  Each table has a `<thead>` section containing the `<tr>` with the `<th>` (table header) elements "Portuguese" and "English".  This is semantically correct and helps with accessibility.
-4.  **Use `<tbody>`:** The table data is enclosed in a `<tbody>` tag.
-5.  **Structure Rows and Cells:** Each phrase and its translation are in a `<tr>` (table row) with two `<td>` (table data) cells.
-6.  **Line Breaks:** The `<br>` tag is used within the `<td>` cells to create line breaks where needed, especially in the song example.
-7.  **CSS Styling:** The CSS provides basic styling for borders, padding, background colors, and text alignment to make the tables more visually appealing.
-8.  **Added H2 Headers:** Added H2 headers to each table to make it easier to read.

@@ -17,6 +17,8 @@ import checkCircle from '../assets/img/homepage/check-circle.png';
 import caladoAbout from '../assets/img/homepage/calado-about.webp';
 import instagramIcon from '../assets/img/homepage/instagram-icon.svg';
 import youtubeIcon from '../assets/img/homepage/youtube-icon.svg';
+import arrow1 from '../assets/img/homepage/arrow-1.svg';
+import arrow2 from '../assets/img/homepage/arrow-2.svg';
 
 import reviewsData from '../data/reviews.json';
 
@@ -54,9 +56,11 @@ const topReviews = reviewsData.reviews.slice(0, 4);
   </section>
 
   <section class="product-info-section">
+    <Image src={arrow1} alt="" aria-hidden="true" class="journey-arrow journey-arrow-1" />
+    <Image src={arrow2} alt="" aria-hidden="true" class="journey-arrow journey-arrow-2" />
     <div class="product-grid">
       <div class="product-title-content">
-        <h2 class="section-title">Your Journey Reinvented</h2>
+        <h2 class="section-title">Your journey reinvented</h2>
         <p class="section-subtitle">Abadas that combine style, comfort, and performance.<br /> Elevate your Capoeira game with gear that works as hard as you do.</p>
       </div>
       <div class="product-feature">
@@ -70,8 +74,8 @@ const topReviews = reviewsData.reviews.slice(0, 4);
         <div class="feature-image-container">
           <Image src={taperIcon} alt="tapered fit" class="feature-icon" />
         </div>
-        <h3>TAPERED FIT</h3>
-        <p>Expands in both directions, ensuring the abadas move with your body, no matter how extreme the movement. It provides comfort that lasts from your first ginga to your last esquiva.</p>
+        <h3>TAPERED JOGGER FIT</h3>
+        <p>Brings a sleek, contemporary silhouette that flatters your form. A perfect blend of style, practicality, and performance-enhancing benefits.</p>
       </div>
       <div class="product-image">
         <Image src={abadaProduct} alt="abada jogger" class="abada-image" />
@@ -150,7 +154,7 @@ const topReviews = reviewsData.reviews.slice(0, 4);
 
   <section class="home-blog-section main-grid">
     <div class="home-blog-title-container">
-      <h2 class="section-title">Latest from the blog</h2>
+      <h2 class="section-title">Our recent blog</h2>
       <p>Don't miss the number one capoeira blog on the internet. Articles touch on<br /> movement, music, culture, community, education and more.</p>
     </div>
     <div class="featured-blog-container">
@@ -172,15 +176,48 @@ const topReviews = reviewsData.reviews.slice(0, 4);
   </section>
 
   <section class="home-testimonials main-grid">
-    <h2 class="section-title">What people are saying</h2>
+    <h2 class="section-title">Testimonials</h2>
     <div class="testimonial-grid">
       {topReviews.map(review => <TestimonialCard review={review} />)}
     </div>
   </section>
 
   <section class="home-contact main-grid">
-    <h2 class="section-title">Get in touch!</h2>
+    <h2 class="section-title">Get in touch today</h2>
     <p>Buy pants, partner with us, grab the guide, or ask about Capoeira. Fill out the form below, and we'll get back to you soon!</p>
     <ContactForm />
   </section>
 </Layout>
+
+<style>
+  .product-info-section {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .journey-arrow {
+    position: absolute;
+    width: 54px;
+    height: auto;
+    pointer-events: none;
+    display: none;
+  }
+
+  @media (min-width: 850px) {
+    .journey-arrow {
+      display: block;
+    }
+
+    .journey-arrow-1 {
+      left: 29%;
+      top: 70%;
+      transform: rotate(-110deg);
+    }
+
+    .journey-arrow-2 {
+      left: 59%;
+      top: 28%;
+      transform: rotate(114.91deg);
+    }
+  }
+</style>

@@ -1,5 +1,5 @@
 ---
-title: "Bate Palmas Pra Ele (Menino É Bom): Capoeira Song & Lyrics"
+title: "Bate Palmas Pra Ele (Menino É Bom)"
 date: "2020-10-22"
 categories:
   - "capoeira-songbook"

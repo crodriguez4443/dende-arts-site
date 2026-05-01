@@ -1,5 +1,5 @@
 ---
-title: "Berimbau Chamou: An Intermediate Capoeira Quadra"
+title: "Berimbau Chamou"
 date: "2020-10-21"
 categories:
   - "capoeira-songbook"

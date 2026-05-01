@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import { Image } from 'astro:assets';
+import bulkHero from '../assets/img/bulk-orders/bulk-order-abadas.png';
 import fabricIcon from '../assets/img/bulk-orders/fabric-icon.png';
 import customPatchIcon from '../assets/img/bulk-orders/custom-patch-icon.png';
 import deliveryIcon from '../assets/img/bulk-orders/delivery-icon.png';
@@ -20,6 +21,8 @@ const reviews = (abadaReviewsData['abada-reviews'] || [])
   <section class="main-grid">
     <Nav />
     <div class="bulk-page-content">
+      <Image src={bulkHero} alt="bulk order kids and adults capoeira pants" class="bulk-hero-img" loading="eager" />
+      <div class="bulk-hero-overlay"></div>
       <h1 class="bulk-title">Finally!<br />Easy Bulk Order Abadas for Capoeira Schools &amp; Groups</h1>
       <p class="bulk-page-text">We have <strong class="border-b-2 border-[color:var(--action-primary)]">no minimums</strong> and clear pricing to support Capoeira teachers</p>
       <div class="rating-container">
@@ -135,6 +138,39 @@ const reviews = (abadaReviewsData['abada-reviews'] || [])
             <p class="discount-info">Kids discounts at 100, 300, and 500</p>
           </div>
         </div>
+
+        <div class="pricing-summary">
+          <h3>Order Summary</h3>
+          <div class="price-breakdown">
+            <div class="price-line">
+              <span>Adult Pants (<span id="adult-calc-qty">0</span>×)</span>
+              <span>$<span id="adult-subtotal">0</span></span>
+            </div>
+            <div class="price-line">
+              <span>Kids Pants (<span id="kids-calc-qty">0</span>×)</span>
+              <span>$<span id="kids-subtotal">0</span></span>
+            </div>
+            <div class="price-line subtotal">
+              <span>Subtotal</span>
+              <span>$<span id="order-subtotal">0</span></span>
+            </div>
+            <div id="adult-discount-line" class="price-line discount" style="display: none;">
+              <span>Adult discount (<span id="adult-discount-percent">0</span>% off)</span>
+              <span>−$<span id="adult-discount-amount">0</span></span>
+            </div>
+            <div id="kids-discount-line" class="price-line discount" style="display: none;">
+              <span>Kids discount (<span id="kids-discount-percent">0</span>% off)</span>
+              <span>−$<span id="kids-discount-amount">0</span></span>
+            </div>
+            <div class="price-line total">
+              <span><strong>Total (shipping included)</strong></span>
+              <span><strong>$<span id="order-total">0</span></strong></span>
+            </div>
+          </div>
+          <div id="savings-message" class="savings-message" style="display: none;">
+            You're saving $<span id="total-savings">0</span> with bulk pricing!
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -152,6 +188,9 @@ const reviews = (abadaReviewsData['abada-reviews'] || [])
         action="/Thank-you/"
       >
         <input type="hidden" name="form-name" value="bulk-order" />
+        <input type="hidden" id="form-total" name="calculated-total" value="0" />
+        <input type="hidden" id="form-adult-qty" name="adult-qty" value="0" />
+        <input type="hidden" id="form-kids-qty" name="kids-qty" value="0" />
         <p hidden><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
         <div class="form-grid">
           <div class="form-group"><input type="text" name="test" placeholder="Name" required /></div>
@@ -178,3 +217,315 @@ const reviews = (abadaReviewsData['abada-reviews'] || [])
     </div>
   </section>
 </Layout>
+
+<script>
+const PRICING = {
+    adult: {
+        base: 38,
+        logo: 1.50,
+        tiers: [
+            { min: 50, discount: 0.05 },
+            { min: 100, discount: 0.075 },
+            { min: 300, discount: 0.10 },
+            { min: 500, discount: 0.15 }
+        ]
+    },
+    kids: {
+        base: 36,
+        logo: 1.50,
+        tiers: [
+            { min: 50, discount: 0.00 },
+            { min: 100, discount: 0.05 },
+            { min: 300, discount: 0.075 },
+            { min: 500, discount: 0.12 }
+        ]
+    }
+};
+
+function el<T extends HTMLElement>(id: string): T {
+    return document.getElementById(id) as T;
+}
+
+function setText(id: string, value: string) {
+    el(id).textContent = value;
+}
+
+function calculatePricing() {
+    const adultQty = parseInt(el<HTMLInputElement>('adult-qty').value) || 0;
+    const kidsQty = parseInt(el<HTMLInputElement>('kids-qty').value) || 0;
+    const adultLogo = el<HTMLInputElement>('adult-logo').checked;
+    const kidsLogo = el<HTMLInputElement>('kids-logo').checked;
+
+    let adultDiscountRate = 0;
+    for (const tier of [...PRICING.adult.tiers].sort((a, b) => b.min - a.min)) {
+        if (adultQty >= tier.min) { adultDiscountRate = tier.discount; break; }
+    }
+
+    let kidsDiscountRate = 0;
+    for (const tier of [...PRICING.kids.tiers].sort((a, b) => b.min - a.min)) {
+        if (kidsQty >= tier.min) { kidsDiscountRate = tier.discount; break; }
+    }
+
+    const adultUnitPrice = PRICING.adult.base + (adultLogo ? PRICING.adult.logo : 0);
+    const kidsUnitPrice = PRICING.kids.base + (kidsLogo ? PRICING.kids.logo : 0);
+
+    const adultBase = adultQty * adultUnitPrice;
+    const kidsBase = kidsQty * kidsUnitPrice;
+    const adultDiscount = adultBase * adultDiscountRate;
+    const kidsDiscount = kidsBase * kidsDiscountRate;
+    const subtotal = adultBase + kidsBase;
+    const totalDiscount = adultDiscount + kidsDiscount;
+    const total = subtotal - totalDiscount;
+
+    setText('adult-calc-qty', String(adultQty));
+    setText('kids-calc-qty', String(kidsQty));
+    setText('adult-subtotal', adultBase.toFixed(0));
+    setText('kids-subtotal', kidsBase.toFixed(0));
+    setText('order-subtotal', subtotal.toFixed(0));
+    setText('order-total', total.toFixed(0));
+
+    const adultDiscountLine = el('adult-discount-line');
+    const kidsDiscountLine = el('kids-discount-line');
+    const savingsMessage = el('savings-message');
+
+    if (adultDiscountRate > 0 && adultQty > 0) {
+        setText('adult-discount-percent', (adultDiscountRate * 100).toFixed(0));
+        setText('adult-discount-amount', adultDiscount.toFixed(0));
+        adultDiscountLine.style.display = 'flex';
+    } else {
+        adultDiscountLine.style.display = 'none';
+    }
+
+    if (kidsDiscountRate > 0 && kidsQty > 0) {
+        setText('kids-discount-percent', (kidsDiscountRate * 100).toFixed(0));
+        setText('kids-discount-amount', kidsDiscount.toFixed(0));
+        kidsDiscountLine.style.display = 'flex';
+    } else {
+        kidsDiscountLine.style.display = 'none';
+    }
+
+    if ((adultDiscountRate > 0 && adultQty > 0) || (kidsDiscountRate > 0 && kidsQty > 0)) {
+        setText('total-savings', totalDiscount.toFixed(0));
+        savingsMessage.style.display = 'block';
+    } else {
+        savingsMessage.style.display = 'none';
+    }
+
+    el<HTMLInputElement>('form-total').value = total.toFixed(2);
+    el<HTMLInputElement>('form-adult-qty').value = String(adultQty);
+    el<HTMLInputElement>('form-kids-qty').value = String(kidsQty);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    el('adult-qty').addEventListener('input', calculatePricing);
+    el('kids-qty').addEventListener('input', calculatePricing);
+    el('adult-logo').addEventListener('change', calculatePricing);
+    el('kids-logo').addEventListener('change', calculatePricing);
+    calculatePricing();
+});
+</script>
+
+<style>
+
+    .bulk-page-content {
+        position: relative;
+        padding: 3rem 0 6rem;
+        margin-bottom: 8rem;
+        overflow: hidden;
+    }
+
+    .bulk-hero-img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        z-index: 0;
+    }
+
+    .bulk-hero-overlay {
+        position: absolute;
+        inset: 0;
+        opacity: 0.75;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .bulk-page-content > *:not(.bulk-hero-img):not(.bulk-hero-overlay) {
+        position: relative;
+        z-index: 2;
+    }
+
+    .bulk-page-text {
+        margin-bottom:4rem;
+    }
+    .extra-padding {
+        margin-bottom: 6rem;
+    }
+
+    .form-header {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .form-header h2 {
+        color: #2c3e50;
+        margin-bottom: 1rem;
+    }
+
+    .value-props {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+
+    .value-prop {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .check {
+        color: #27ae60;
+        font-weight: bold;
+    }
+
+    .pricing-calculator {
+        padding: 2rem;
+        border-radius: 8px;
+        margin-bottom: 8rem;
+        border: 2px solid var(--action-primaryy);
+    }
+
+    .pricing-calculator h3 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: #2c3e50;
+    }
+
+    .calculator-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .input-group {
+        margin-bottom: 1rem;
+    }
+
+    .input-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: #2c3e50;
+    }
+
+    /* Only apply full width to the number input */
+    .input-group input[type="number"] {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1.1rem;
+    }
+
+    /* Make sure the checkbox stays small and inline */
+    .input-group input[type="checkbox"] {
+        width: auto;
+        display: inline-block;
+        margin-left: 8px; /* Adds a little space between text and box */
+        transform: scale(1.2); /* Optional: makes the checkbox slightly easier to click */
+    }
+
+    .unit-price {
+        font-size: 0.9rem;
+        color: #666;
+        margin-top: 0.25rem;
+        /* Changed from flex to block to allow text flow */
+        display: block; 
+    }
+
+    .pricing-summary {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .price-breakdown {
+        margin-bottom: 1rem;
+    }
+
+    .price-line {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+        padding: 0.25rem 0;
+    }
+
+    .price-line.subtotal {
+        border-top: 1px solid #eee;
+        padding-top: 0.75rem;
+        margin-top: 0.75rem;
+    }
+
+    .price-line.discount {
+        color: #27ae60;
+        font-weight: 600;
+    }
+
+    .price-line.total {
+        border-top: 2px solid #2c3e50;
+        padding-top: 0.75rem;
+        margin-top: 0.75rem;
+        font-size: 1.1rem;
+    }
+
+    .savings-message {
+        background: #d4edda;
+        color: #155724;
+        padding: 0.75rem;
+        border-radius: 4px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .form-disclaimer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #666;
+        margin-top: 1rem;
+    }
+
+    .discount-info {
+        font-style: italic;
+        color: var(--action-primary);
+        font-size: .9rem;
+    }
+
+    @media (max-width: 768px) {
+        .calculator-grid {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        
+        .value-props {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    }
+    @media (min-width: 850px) {
+
+    .guide-card-container {
+        grid-column: 2/4;
+    }
+    .guide-card {
+        width: 60%;
+        margin: auto;
+    }
+    }
+</style>    

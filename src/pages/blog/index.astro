@@ -1,13 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/Nav.astro';
-import AbadaBanner from '../../components/AbadaBanner.astro';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 
 const PAGE_SIZE = 30;
+const CURRENT_PAGE = 1;
+const BASE_URL = '/blog/';
 
-// In Astro 6 Content Layer, entry.id = 'slug/index' → derive slug via split
 function getSlug(id: string) { return id.split('/')[0]; }
 
 const allPosts = await getCollection('blog', ({ data }) =>
@@ -17,49 +17,392 @@ const sorted = allPosts.sort(
   (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
 );
 
-const posts = sorted.slice(0, PAGE_SIZE);
-const totalPages = Math.ceil(sorted.length / PAGE_SIZE);
+const sliceStart = (CURRENT_PAGE - 1) * PAGE_SIZE;
+const sliceEnd = sliceStart + PAGE_SIZE;
+const totalPages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
+const pageUrl = (p: number) => (p === 1 ? BASE_URL : `${BASE_URL}page-${p}/`);
+
+const categories = ['Latest', 'Music', 'Movements', 'Culture', 'Gear'];
 ---
 <Layout title="The number 1 Capoeira blog online">
-  <div class="blog-page-container main-grid">
-    <Nav />
-    <h1 class="blog-page-title"><strong>A Capoeira community blog!</strong> Thoughts, resources, and recommendations.</h1>
-
-    <AbadaBanner />
-
-    <div class="search-container">
-      <input class="searchInput" type="text" id="regularSearchInput" placeholder="Search Capoeira Articles..." />
+  <div class="blog-index-page">
+    <div class="blog-index-nav main-grid">
+      <Nav />
     </div>
 
-    <div class="blog-grid" id="blog-grid">
-      {posts.map(post => (
-        <article class="blog-card">
-          {post.data.coverImage && (
-            <Image src={post.data.coverImage} alt={post.data.title} class="blog-featured-image" />
-          )}
-          <div class="blog-card-content">
-            <h3 class="blog-card-title">
-              <a href={`/blog/${getSlug(post.id)}/`}>{post.data.title}</a>
-            </h3>
-            <a href={`/blog/${getSlug(post.id)}/`} class="read-more">Read More</a>
-          </div>
-        </article>
-      ))}
-    </div>
+    <header class="blog-index-header">
+      <h1 class="blog-index-heading">
+        <strong>We are the biggest online capoeira community!</strong>{' '}
+        Find thoughts, resources and recommendations.
+      </h1>
+    </header>
 
-    <nav class="pagination" aria-label="Pagination">
-      {totalPages > 1 && (
-        <>
-          {Array.from({ length: totalPages }).map((_, i) => {
-            const pageNum = i + 1;
-            const href = pageNum === 1 ? '/blog/' : `/blog/page-${pageNum}/`;
-            return pageNum === 1
-              ? <span class="pagination-link current">{pageNum}</span>
-              : <a href={href} class="pagination-link">{pageNum}</a>;
-          })}
-          <a href="/blog/page-2/" class="pagination-link">Next</a>
-        </>
-      )}
-    </nav>
+    <div class="blog-index-main">
+      <div class="category-tabs" role="tablist">
+        {categories.map((cat, i) => (
+          <button
+            class={`cat-tab${i === 0 ? ' active' : ''}`}
+            data-category={cat.toLowerCase()}
+            role="tab"
+            aria-selected={i === 0 ? 'true' : 'false'}
+            type="button"
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
+      <div
+        class="blog-index-grid"
+        id="blog-grid"
+        data-page-size={PAGE_SIZE}
+        data-initial-page={CURRENT_PAGE}
+        data-base-url={BASE_URL}
+      >
+        {sorted.map((post, i) => (
+          <article
+            class="blog-index-card"
+            data-categories={post.data.categories ? post.data.categories.join(',').toLowerCase() : ''}
+            hidden={i < sliceStart || i >= sliceEnd}
+          >
+            {post.data.coverImage && (
+              <div class="card-image-wrap">
+                <Image
+                  src={post.data.coverImage}
+                  alt={post.data.title}
+                  class="card-image"
+                  width={370}
+                  height={228}
+                />
+              </div>
+            )}
+            <div class="card-body">
+              <h2 class="card-title">
+                <a href={`/blog/${getSlug(post.id)}/`}>{post.data.title}</a>
+              </h2>
+              {post.data.excerpt && (
+                <p class="card-excerpt">{post.data.excerpt}</p>
+              )}
+              <a href={`/blog/${getSlug(post.id)}/`} class="card-read-more">View full article</a>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <nav class="pagination" aria-label="Pagination" id="pagination">
+        {totalPages > 1 && (
+          <>
+            {CURRENT_PAGE > 1 && (
+              <a href={pageUrl(CURRENT_PAGE - 1)} class="pagination-link" data-page={CURRENT_PAGE - 1}>← Previous</a>
+            )}
+            {Array.from({ length: totalPages }).map((_, idx) => {
+              const p = idx + 1;
+              return p === CURRENT_PAGE
+                ? <span class="pagination-link current">{p}</span>
+                : <a href={pageUrl(p)} class="pagination-link" data-page={p}>{p}</a>;
+            })}
+            {CURRENT_PAGE < totalPages && (
+              <a href={pageUrl(CURRENT_PAGE + 1)} class="pagination-link" data-page={CURRENT_PAGE + 1}>Next →</a>
+            )}
+          </>
+        )}
+      </nav>
+    </div>
   </div>
 </Layout>
+
+<style>
+  .blog-index-page {
+    background: white;
+    min-height: 100vh;
+  }
+
+  .blog-index-nav {
+    background: white;
+  }
+
+  .blog-index-header {
+    padding: 3rem 2rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .blog-index-heading {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(2rem, 4vw, 3.625rem);
+    font-weight: 400;
+    line-height: 1.21;
+    letter-spacing: -0.06rem;
+    color: #000;
+    margin: 0;
+  }
+
+  .blog-index-heading strong {
+    font-weight: 700;
+  }
+
+  .blog-index-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+  }
+
+  /* ─── Category tabs ─── */
+  .category-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+    border: 1px solid #0f8095;
+    border-radius: 30px;
+    overflow: hidden;
+    width: fit-content;
+    margin: 1rem auto 2.5rem;
+  }
+
+  .cat-tab {
+    background: none;
+    border: none;
+    padding: 0.65rem 1.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #434343;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    white-space: nowrap;
+  }
+
+  .cat-tab.active {
+    background: #0f8095;
+    color: white;
+    border-radius: 30px;
+  }
+
+  .cat-tab:hover:not(.active) {
+    background: #f0f8fa;
+  }
+
+  /* ─── Card grid ─── */
+  .blog-index-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  @media (min-width: 600px) {
+    .blog-index-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 900px) {
+    .blog-index-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .blog-index-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-index-card[hidden] {
+    display: none;
+  }
+
+  .card-image-wrap {
+    aspect-ratio: 370 / 228;
+    overflow: hidden;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .blog-index-card:hover .card-image {
+    transform: scale(1.03);
+  }
+
+  .card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.5rem;
+  }
+
+  .card-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #232233;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .card-title a:hover {
+    color: #0f8095;
+  }
+
+  .card-excerpt {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    color: #6c6c72;
+    line-height: 1.625;
+    margin: 0;
+    flex: 1;
+  }
+
+  .card-read-more {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: #0f8095;
+    text-decoration: underline;
+    margin-top: 0.5rem;
+    display: inline-block;
+  }
+
+  .card-read-more:hover {
+    color: #0a6b7d;
+  }
+
+  /* ─── Pagination ─── */
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 3rem;
+  }
+
+  .pagination-link {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #0f8095;
+    text-decoration: none;
+    padding: 0.4rem 0.85rem;
+    border: 1px solid #0f8095;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .pagination-link:hover {
+    background: #0f8095;
+    color: white;
+  }
+
+  .pagination-link.current {
+    background: #0f8095;
+    color: white;
+    cursor: default;
+  }
+</style>
+
+<script>
+  const grid = document.getElementById('blog-grid') as HTMLElement;
+  const PAGE_SIZE = Number(grid.dataset.pageSize) || 30;
+  const INITIAL_PAGE = Number(grid.dataset.initialPage) || 1;
+  const BASE_URL = grid.dataset.baseUrl || '/blog/';
+  const DEFAULT_FILTER = 'latest';
+  const tabs = document.querySelectorAll<HTMLButtonElement>('.cat-tab');
+  const cards = Array.from(document.querySelectorAll<HTMLElement>('.blog-index-card'));
+  const pagination = document.getElementById('pagination') as HTMLElement;
+
+  let activeFilter = DEFAULT_FILTER;
+  let currentPage = INITIAL_PAGE;
+
+  function isFiltered() {
+    return activeFilter !== DEFAULT_FILTER;
+  }
+
+  function getFiltered() {
+    if (!isFiltered()) return cards;
+    return cards.filter(card => (card.dataset.categories || '').includes(activeFilter));
+  }
+
+  function urlForPage(page: number) {
+    if (isFiltered()) return `#page=${page}`;
+    return page === 1 ? BASE_URL : `${BASE_URL}page-${page}/`;
+  }
+
+  function render() {
+    const filtered = getFiltered();
+    const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+
+    cards.forEach(c => { c.hidden = true; });
+
+    const start = (currentPage - 1) * PAGE_SIZE;
+    filtered.slice(start, start + PAGE_SIZE).forEach(c => { c.hidden = false; });
+
+    renderPagination(totalPages);
+  }
+
+  function renderPagination(totalPages: number) {
+    if (totalPages <= 1) {
+      pagination.innerHTML = '';
+      return;
+    }
+    const parts: string[] = [];
+    if (currentPage > 1) {
+      parts.push(`<a href="${urlForPage(currentPage - 1)}" class="pagination-link" data-page="${currentPage - 1}">← Previous</a>`);
+    }
+    for (let p = 1; p <= totalPages; p++) {
+      if (p === currentPage) {
+        parts.push(`<span class="pagination-link current">${p}</span>`);
+      } else {
+        parts.push(`<a href="${urlForPage(p)}" class="pagination-link" data-page="${p}">${p}</a>`);
+      }
+    }
+    if (currentPage < totalPages) {
+      parts.push(`<a href="${urlForPage(currentPage + 1)}" class="pagination-link" data-page="${currentPage + 1}">Next →</a>`);
+    }
+    pagination.innerHTML = parts.join('');
+
+    if (isFiltered()) {
+      pagination.querySelectorAll<HTMLAnchorElement>('a[data-page]').forEach(a => {
+        a.addEventListener('click', e => {
+          e.preventDefault();
+          currentPage = Number(a.dataset.page);
+          const hash = currentPage === 1 ? '' : `#page=${currentPage}`;
+          history.replaceState(null, '', window.location.pathname + hash);
+          render();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      });
+    }
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+      activeFilter = (tab.dataset.category || DEFAULT_FILTER).toLowerCase();
+      currentPage = isFiltered() ? 1 : INITIAL_PAGE;
+      history.replaceState(null, '', window.location.pathname);
+      render();
+    });
+  });
+
+  const hashMatch = window.location.hash.match(/page=(\d+)/);
+  if (hashMatch) currentPage = Number(hashMatch[1]);
+  render();
+</script>

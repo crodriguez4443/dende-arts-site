@@ -14,46 +14,314 @@ export async function getStaticPaths() {
 
 const { song } = Astro.props;
 const { Content } = await render(song);
+
+const VISIBLE_TAGS = ['beginner', 'intermediate', 'advanced', 'ladainha'];
+
+const category = song.data.categories && song.data.categories.length > 0
+  ? song.data.categories[0]
+  : null;
+
+const visibleTags = song.data.tags
+  ? song.data.tags.filter((t: string) => VISIBLE_TAGS.includes(t.toLowerCase()))
+  : [];
+
+const pageUrl = Astro.url.href;
+const encodedUrl = encodeURIComponent(pageUrl);
+const encodedTitle = encodeURIComponent(song.data.title);
 ---
 <Layout title={song.data.title} description={song.data.description}>
-  <div class="main-grid">
-    <Nav />
-    <div class="blog-post-container blog-post-grid">
-      <article class="blog-post">
-        <nav class="breadcrumb">
-          <a href="/songbook/">&larr; Back to Song List</a>
+  <div class="song-page">
+    <div class="song-page-nav main-grid">
+      <Nav />
+    </div>
+
+    <div class="song-page-body">
+      <main class="song-main">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <a href="/songbook/">Songbook</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>{song.data.title}</span>
         </nav>
-        <header>
-          <h1>{song.data.title}</h1>
-          {song.data.author && <p class="author">by {song.data.author}</p>}
-          {song.data.tags && song.data.tags.length > 0 && (
-            <div class="tags">
-              {song.data.tags.map(tag => <span class="tag">{tag}</span>)}
-            </div>
+
+        <h1 class="song-title">{song.data.title}</h1>
+
+        <div class="song-meta">
+          {song.data.author && (
+            <span class="song-author">{song.data.author}</span>
           )}
-        </header>
+          {song.data.author && category && <span class="meta-divider" aria-hidden="true"></span>}
+          {category && (
+            <span class="song-category">{category}</span>
+          )}
+          {visibleTags.length > 0 && (
+            <span class="song-tags">
+              {visibleTags.map((tag: string) => (
+                <span class="song-tag">{tag}</span>
+              ))}
+            </span>
+          )}
+        </div>
+
         <div class="song-content">
           <Content />
         </div>
-      </article>
-      <div>
+
+        <div class="song-share">
+          <span class="share-label">Share this</span>
+          <div class="share-icons">
+            <a
+              href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Share on Facebook"
+              class="share-icon"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24V15.563H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.514c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073Z" fill="#434343"/>
+              </svg>
+            </a>
+            <a
+              href={`https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Share on Twitter"
+              class="share-icon"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.857L1.025 2.25H8.08l4.253 5.622 5.91-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" fill="#434343"/>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/dende_arts/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow on Instagram"
+              class="share-icon"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069ZM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0Zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881Z" fill="#434343"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <aside class="song-sidebar">
         <AbadaBannerVertical />
-      </div>
+      </aside>
     </div>
   </div>
 </Layout>
 
 <style>
-  .breadcrumb { margin-bottom: 20px; }
-  .breadcrumb a { color: #666; text-decoration: none; font-size: 14px; }
-  .breadcrumb a:hover { color: #333; text-decoration: underline; }
-  .author { color: #666; margin: 5px 0; font-style: italic; }
-  .song-content { margin-top: 30px; }
-  :global(.capoeira-table) { max-width: 1000px; border-collapse: collapse; margin: 20px 0; }
-  :global(.capoeira-table th),
-  :global(.capoeira-table td) { border: 1px solid #ddd; padding: 12px; text-align: left; vertical-align: top; }
-  :global(.capoeira-table th) { background-color: #f5f5f5; font-weight: bold; }
-  :global(.capoeira-table tr:nth-child(even)) { background-color: #f9f9f9; }
-  :global(iframe) { max-width: 100%; height: auto; aspect-ratio: 16/9; margin: 20px 0; }
-  :global(figcaption) { font-style: italic; color: #666; font-size: 14px; margin-top: 10px; }
+  .song-page {
+    background: white;
+    min-height: 100vh;
+  }
+
+  .song-page-nav {
+    background: white;
+  }
+
+  .song-page-body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 2rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  @media (min-width: 900px) {
+    .song-page-body {
+      grid-template-columns: 1fr 280px;
+      align-items: start;
+    }
+  }
+
+  /* ─── Breadcrumb ─── */
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-bottom: 1.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9375rem;
+    color: #434343;
+  }
+
+  .breadcrumb a {
+    color: #0f8095;
+    text-decoration: none;
+  }
+
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+
+  .breadcrumb-sep {
+    color: #434343;
+    padding: 0 0.1rem;
+  }
+
+  /* ─── Title ─── */
+  .song-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.045rem;
+    color: #1d221b;
+    margin: 0 0 1.25rem;
+  }
+
+  /* ─── Author / Category bar ─── */
+  .song-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+
+  .song-author {
+    color: #f5a623;
+  }
+
+  .meta-divider {
+    display: inline-block;
+    width: 1px;
+    height: 1.25em;
+    background: #434343;
+    flex-shrink: 0;
+  }
+
+  .song-category {
+    color: #0f8095;
+    text-transform: capitalize;
+  }
+
+  .song-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    align-items: center;
+  }
+
+  .song-tag {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #434343;
+    border: 1px solid #434343;
+    border-radius: 4px;
+    padding: 1px 6px;
+    white-space: nowrap;
+    text-transform: capitalize;
+  }
+
+  /* ─── Song content: reorder iframe → table → figcaption ─── */
+  .song-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  :global(.song-content iframe) {
+    order: 1;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 2.5rem;
+  }
+
+  :global(.song-content .capoeira-table) {
+    order: 2;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: #1d221b;
+  }
+
+  :global(.song-content .capoeira-table .header-row th) {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1d221b;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 2px solid #0f8095;
+    background: none;
+  }
+
+  :global(.song-content .capoeira-table td) {
+    padding: 1rem;
+    border: 1px solid #e5e5e5;
+    vertical-align: top;
+    width: 50%;
+  }
+
+  :global(.song-content .capoeira-table tr:nth-child(even) td) {
+    background-color: #f9fbfc;
+  }
+
+  :global(.song-content figcaption) {
+    order: 3;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9375rem;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ─── Share section ─── */
+  .song-share {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .share-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #434343;
+  }
+
+  .share-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .share-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: opacity 0.2s;
+  }
+
+  .share-icon:hover {
+    opacity: 0.7;
+  }
+
+  /* ─── Sidebar ─── */
+  .song-sidebar {
+    position: sticky;
+    top: 2rem;
+  }
 </style>

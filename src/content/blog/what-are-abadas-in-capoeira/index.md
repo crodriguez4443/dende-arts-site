@@ -62,6 +62,6 @@ The way we look matters to us. Of course. It's clear everyone is looking for bet
 
 ## Abadas (my shameless pitch)
 
-[![](images/Capoeira.jpeg)](https://dendearts.com/product/abada-joggers-unisex/)
+[![](images/Capoeira.jpeg)](https://dendearts.com/product/abada-joggers/)
 
-These are all things anyone who's practiced Capoeira more than a few months will have noticed. This is why I got started producing high quality Capoeira Abadas. The idea was to combine high-end materials with a flattering fit. I want you to love your abadas so much, you wear them proudly in public. I used to hate wearing my abadas in public because they looked so cheap. You DO NOT have to go through what I did. Anyways, I'm rambling now. [so here is the link to my abadas.](https://dendearts.com/product/abada-joggers-unisex/) If you do Capoeira, you'll love them. I hope they're your favorite pair.
+These are all things anyone who's practiced Capoeira more than a few months will have noticed. This is why I got started producing high quality Capoeira Abadas. The idea was to combine high-end materials with a flattering fit. I want you to love your abadas so much, you wear them proudly in public. I used to hate wearing my abadas in public because they looked so cheap. You DO NOT have to go through what I did. Anyways, I'm rambling now. [so here is the link to my abadas.](https://dendearts.com/product/abada-jogger/) If you do Capoeira, you'll love them. I hope they're your favorite pair.

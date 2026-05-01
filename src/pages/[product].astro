@@ -10,7 +10,6 @@ import abadaReviewsData from '../data/abada-reviews.json';
 
 export async function getStaticPaths() {
   try {
-    // Dynamically import swell-js for build-time product fetching
     const swellModule = await import('swell-js');
     const swell = swellModule.default || swellModule;
     await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', {
@@ -34,242 +33,1039 @@ const totalReviews = reviews.length;
 const averageRating = totalReviews > 0
   ? Math.round((reviews.reduce((sum: number, r: any) => sum + r.review_score, 0) / totalReviews) * 10) / 10
   : 0;
+
+const ratingCounts = [5, 4, 3, 2, 1].map(star => ({
+  star,
+  count: reviews.filter((r: any) => r.review_score === star).length,
+}));
 ---
 <Layout title={product?.name || 'Product'} description={product?.description || ''}>
-  <section class="main-grid product-sale-page">
-    <Nav />
-    <div class="product-image-wrapper">
-      <div class="additional-photos-container" id="thumbnailContainer">
+  <section class="product-sale-page">
+    <div class="product-page-nav main-grid">
+      <Nav />
+    </div>
+
+    <div class="product-main-layout">
+      <!-- Thumbnail strip -->
+      <div class="thumbnail-strip" id="thumbnailContainer">
         {product?.images && product.images.slice(0, 4).map((img: any, idx: number) => (
-          <img
-            src={img.file.url}
-            alt={`${product.name} - ${idx === 0 ? 'Featured' : 'Additional'} Image ${idx + 1}`}
-            class={`thumbnail-image${idx === 0 ? ' active' : ''}`}
-            loading="lazy"
-            width="80"
-            height="80"
+          <button
+            class={`thumbnail-btn${idx === 0 ? ' active' : ''}`}
             data-index={idx}
             onclick="swapImages(this)"
-          />
+            type="button"
+            aria-label={`View image ${idx + 1}`}
+          >
+            <img
+              src={img.file.url}
+              alt={`${product.name} - image ${idx + 1}`}
+              loading="lazy"
+              width="85"
+              height="85"
+            />
+          </button>
         ))}
       </div>
 
-      <div class="left-half-img-container product-feature-image">
+      <!-- Main product image -->
+      <div class="product-main-image-wrap">
         {product?.images && product.images[0] && (
           <img
             src={product.images[0].file.url}
             alt={product.name}
             class="main-product-image"
             id="mainImage"
-            data-index="0"
-            width="400"
-            height="400"
+            width="442"
+            height="449"
           />
         )}
       </div>
-    </div>
 
-    <div class="right-half-content product-sale-content">
-      <div class="product-card">
+      <!-- Product details -->
+      <div class="product-details-col">
         {product && (
           <>
-            <h1 class="product-page-title">{product.name}</h1>
-            {product.content?.subtext && <p class="product-subtext">{product.content.subtext}</p>}
-            <div class="price">Price: $ {product.price} USD</div>
+            <h1 class="product-name">{product.name}</h1>
+            {product.content?.subtext && <p class="product-subline">{product.content.subtext}</p>}
+            {!product.content?.subtext && product.name === 'Abada Joggers' && (
+              <p class="product-subline"><em>Unisex Mid-rise 2.0</em></p>
+            )}
+
+            <p class="product-price-tag">${product.price} USD</p>
+
+            {totalReviews > 0 && (
+              <div class="product-stars-row">
+                <div class="stars-inline">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <span class={`star ${i < Math.round(averageRating) ? 'filled' : 'empty'}`}>
+                      {i < Math.round(averageRating) ? '★' : '☆'}
+                    </span>
+                  ))}
+                </div>
+                <span class="stars-count">({totalReviews})</span>
+              </div>
+            )}
 
             {product.description && (
-              <div class="description" set:html={product.description} />
+              <div class="product-description" set:html={product.description} />
             )}
 
             {product.name === 'Abada Joggers' && (
-              <div class="features-container padding-bottom-1">
-                <div class="feature">
-                  <div class="feature-image-container">
-                    <Image src={fabricIcon} alt="4-way stretch material" class="feature-icon" loading="eager" />
-                  </div>
-                  <p>4-WAY STRETCH</p>
+              <div class="product-features-row">
+                <div class="product-feature-item">
+                  <Image src={fabricIcon} alt="4-way stretch" class="product-feature-icon" />
+                  <span>4-Way Stretch</span>
                 </div>
-                <div class="feature">
-                  <div class="feature-image-container">
-                    <Image src={taperIcon} alt="tapered fit" class="feature-icon" loading="eager" />
-                  </div>
-                  <p>Tapered Fit</p>
+                <div class="product-feature-item">
+                  <Image src={waistbandIcon} alt="elastic waistband" class="product-feature-icon" />
+                  <span>Elastic Waistband</span>
                 </div>
-                <div class="feature">
-                  <div class="feature-image-container">
-                    <Image src={waistbandIcon} alt="elastic waistband" class="feature-icon" loading="eager" />
-                  </div>
-                  <p>Elastic Waistband</p>
+                <div class="product-feature-item">
+                  <Image src={taperIcon} alt="tapered fit" class="product-feature-icon" />
+                  <span>Tapered Fit</span>
                 </div>
-                <div class="feature">
-                  <div class="feature-image-container">
-                    <Image src={zipperIcon} alt="zippered pocket" class="feature-icon" loading="eager" />
-                  </div>
-                  <p>Zippered Pocket</p>
+                <div class="product-feature-item">
+                  <Image src={zipperIcon} alt="zippered pocket" class="product-feature-icon" />
+                  <span>Zippered Pocket</span>
                 </div>
               </div>
             )}
 
             {product.options && (
-              <div class="flex-box-column padding-bottom-2">
-                <div id="stockAlert" class="stock-alert-banner" style="display: none;">
-                  <svg class="alert-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM11 15H9V13H11V15ZM11 11H9V5H11V11Z" fill="currentColor"/>
-                  </svg>
-                  <span id="stockAlertText">Only <strong id="stockCount">0</strong> left in stock - Order soon!</span>
-                </div>
-
-                <details class="group border-t border-gray-200 mb-6">
-                  <summary class="flex justify-between items-center py-4 list-none cursor-pointer [&::-webkit-details-marker]:hidden">
-                    <span class="font-medium text-[var(--title-color)]">Shipping & Returns</span>
-                    <span class="transition-transform duration-300 group-open:rotate-180 text-[var(--title-color)]">
-                      <svg width="12" height="7" viewBox="0 0 12 7" fill="none">
-                        <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </span>
-                  </summary>
-                  <div class="pb-4 text-base text-[var(--text-color)] space-y-2">
-                    <p>Standard shipping for all orders. Estimated shipping 4–7 business days</p>
-                    <p>Returns available within 30 days of purchase.</p>
-                    <a href="/return-policy/" target="_blank" class="underline decoration-1 underline-offset-2 hover:text-[var(--action-primary)]">View Policy</a>
-                  </div>
-                </details>
-
-                <div class="options">
-                  {product.options.map((option: any) => (
-                    <div class="option-group">
-                      <div class="size-selector-header">
-                        <label class="size-selector-label">Select your Size</label>
-                        <a href="/abada-joggers-landing/#fit-finder" class="ff-inline-trigger">Find Your Size</a>
-                      </div>
-                      <div class="size-boxes-container" role="radiogroup" aria-label={option.name}>
-                        {option.values && option.values.map((value: any) => (
-                          <button
-                            type="button"
-                            class="size-box"
-                            data-size={value.name}
-                            data-option-id={value.id}
-                            data-option-name={option.name}
-                            role="radio"
-                            aria-checked="false"
-                            onclick="selectSize(this)"
-                          >
-                            {value.name}
-                          </button>
-                        ))}
-                      </div>
-                      <input type="hidden" id={option.name} name={option.name} value="" />
+              <div class="product-options">
+                {product.options.map((option: any) => (
+                  <div class="option-group">
+                    <div class="size-selector-header">
+                      <label class="size-label">Select your Size</label>
+                      <a href="/abada-joggers-landing/#fit-finder" class="size-guide-link">Size guide</a>
                     </div>
-                  ))}
+                    <div class="size-boxes" role="radiogroup" aria-label={option.name}>
+                      {option.values && option.values.map((value: any) => (
+                        <button
+                          type="button"
+                          class="size-box"
+                          data-size={value.name}
+                          data-option-id={value.id}
+                          data-option-name={option.name}
+                          role="radio"
+                          aria-checked="false"
+                          onclick="selectSize(this)"
+                        >
+                          {value.name}
+                        </button>
+                      ))}
+                    </div>
+                    <input type="hidden" id={option.name} name={option.name} value="" />
+                  </div>
+                ))}
+
+                <div class="quantity-row">
+                  <span class="quantity-label">Quantity:</span>
+                  <div class="quantity-selector">
+                    <button type="button" class="qty-btn" onclick="changeQty(-1)">−</button>
+                    <span class="qty-value" id="qtyValue">1</span>
+                    <button type="button" class="qty-btn" onclick="changeQty(1)">+</button>
+                  </div>
                 </div>
               </div>
             )}
 
-            <div class="flex-box">
-              <button
-                id="addToCart"
-                onclick={`addToCart('${product.id}')`}
-                class="add-to-cart-button"
-              >
-                Add to Cart
-              </button>
+            <div id="stockAlert" class="stock-alert-banner" style="display: none;">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM11 15H9V13H11V15ZM11 11H9V5H11V11Z" fill="currentColor"/>
+              </svg>
+              <span>Only <strong id="stockCount">0</strong> left in stock - Order soon!</span>
             </div>
+
+            <button
+              id="addToCart"
+              onclick={`addToCart('${product.id}')`}
+              class="add-to-cart-btn"
+            >
+              ADD TO CART
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 18C15.89 18 15 18.89 15 20C15 20.5304 15.2107 21.0391 15.5858 21.4142C15.9609 21.7893 16.4696 22 17 22C17.5304 22 18.0391 21.7893 18.4142 21.4142C18.7893 21.0391 19 20.5304 19 20C19 18.89 18.1 18 17 18M1 2H3L3.73 5.97M5 14H19L23 6H7.25L8.27 11H18.5M5 14L3.73 5.97M5 14L3 16H19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
           </>
         )}
       </div>
     </div>
 
-    {/* Reviews Section */}
+    <!-- Reviews Section -->
     <div class="product-reviews-section">
-      <div class="product-review-header">
-        <h2 class="product-review-header__title">Customer Reviews</h2>
-        {totalReviews > 0 && (
-          <div class="product-review-header__summary">
-            <div class="product-review-header__average-stars">
+      <div class="reviews-header-row">
+        <h2 class="reviews-heading">Customer Reviews</h2>
+        <button class="leave-review-btn" onclick="openReviewModal()">Leave a review</button>
+      </div>
+
+      {totalReviews > 0 && (
+        <div class="reviews-summary">
+          <div class="reviews-score-block">
+            <p class="score-number">{averageRating.toFixed(2)}</p>
+            <div class="stars-inline">
               {Array.from({ length: 5 }).map((_, i) => (
-                <span class={`star ${i + 1 <= averageRating ? 'filled' : 'empty'}`}>
-                  {i + 1 <= averageRating ? '★' : '☆'}
+                <span class={`star ${i < Math.round(averageRating) ? 'filled' : 'empty'}`}>
+                  {i < Math.round(averageRating) ? '★' : '☆'}
                 </span>
               ))}
             </div>
-            <span class="review-average">{averageRating} / 5</span>
-            <span class="review-count">({totalReviews} review{totalReviews !== 1 ? 's' : ''})</span>
+            <p class="score-total">{totalReviews} reviews</p>
           </div>
-        )}
-      </div>
-
-      <button id="toggleReviewFormBtn" class="review-toggle-btn">
-        Click to Write a Review <span class="arrow-down"></span>
-      </button>
-      <div id="reviewFormContainer" class="review-form-collapsible">
-        <div class="bulk-form-container">
-          <form
-            id="reviewForm"
-            class="contact-form"
-            name="review-form"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            action="/Thank-you/"
-          >
-            <p hidden><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
-            <input type="hidden" name="product_title" value={product?.slug || ''} />
-            <div class="selectors-container">
-              <div class="form-group">
-                <label for="reviewAuthor">Name</label>
-                <input type="text" id="reviewAuthor" name="author" required />
+          <div class="rating-bars">
+            {ratingCounts.map(({ star, count }) => (
+              <div class="rating-bar-row">
+                <span class="rating-bar-label">{star}</span>
+                <div class="rating-bar-track">
+                  <div
+                    class={`rating-bar-fill ${star === 5 ? 'bar-amber' : 'bar-gray'}`}
+                    style={`width: ${totalReviews > 0 ? (count / totalReviews) * 100 : 0}%`}
+                  />
+                </div>
               </div>
-              <div class="form-group">
-                <label for="reviewEmail">Email</label>
-                <input type="email" id="reviewEmail" name="email" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label>Rating</label>
-              <div class="star-rating">
-                <input type="radio" id="rating-5" name="review_score" value="5" required /><label for="rating-5" title="5 stars">★</label>
-                <input type="radio" id="rating-4" name="review_score" value="4" /><label for="rating-4" title="4 stars">★</label>
-                <input type="radio" id="rating-3" name="review_score" value="3" /><label for="rating-3" title="3 stars">★</label>
-                <input type="radio" id="rating-2" name="review_score" value="2" /><label for="rating-2" title="2 stars">★</label>
-                <input type="radio" id="rating-1" name="review_score" value="1" /><label for="rating-1" title="1 star">★</label>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="reviewTitle">Review Title</label>
-              <input type="text" id="reviewTitle" name="review_title" required />
-            </div>
-            <div class="form-group">
-              <label for="reviewContent">Review</label>
-              <textarea id="reviewContent" name="review_content" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-very-dark btn-form">Submit Review</button>
-          </form>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
+
+      <hr class="reviews-divider" />
 
       {reviews.length > 0 ? (
         <ul class="reviews-list">
           {reviews.map((review: any) => (
             <li class="review-item">
-              <div class="review-item__stars">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <span class={`star ${i + 1 <= review.review_score ? 'filled' : 'empty'}`}>
-                    {i + 1 <= review.review_score ? '★' : '☆'}
-                  </span>
-                ))}
+              <div class="review-avatar">
+                <span class="review-avatar-initials">
+                  {review.author ? review.author.charAt(0).toUpperCase() : '?'}
+                </span>
               </div>
-              <h3 class="review-item__title">{review.review_title}</h3>
-              <p class="review-item__meta">
-                <span class="review-item__author-name">By: {review.author} - </span>
-                <span class="review-item__author">{review.user_type}</span>
-              </p>
-              <p class="review-item__content">{review.review_content}</p>
+              <div class="review-body">
+                <div class="review-meta-row">
+                  <span class="review-author">{review.author?.toUpperCase()}</span>
+                  <span class="review-verified">✓ Verified Buyer</span>
+                </div>
+                <div class="stars-inline review-stars">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <span class={`star ${i < review.review_score ? 'filled' : 'empty'}`}>
+                      {i < review.review_score ? '★' : '☆'}
+                    </span>
+                  ))}
+                </div>
+                <h3 class="review-title">{review.review_title}</h3>
+                <p class="review-content">{review.review_content}</p>
+              </div>
+              <hr class="review-divider" />
             </li>
           ))}
         </ul>
       ) : (
-        <p class="no-reviews-message">Be the first to review this product!</p>
+        <p class="no-reviews">Be the first to review this product!</p>
       )}
     </div>
   </section>
+
+  <!-- Review Modal -->
+  <div id="reviewModal" class="modal-overlay" aria-modal="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeReviewModal()" aria-label="Close review form">✕</button>
+      <h2 id="modalTitle" class="modal-form-title">Write a Review</h2>
+      <form
+        id="reviewForm"
+        class="review-modal-form"
+        name="review-form"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        action="/Thank-you/"
+      >
+        <p hidden><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+        <input type="hidden" name="product_title" value={product?.slug || ''} />
+        <div class="form-row">
+          <div class="form-group">
+            <label for="reviewAuthor">Name *</label>
+            <input type="text" id="reviewAuthor" name="author" required />
+          </div>
+          <div class="form-group">
+            <label for="reviewEmail">Email *</label>
+            <input type="email" id="reviewEmail" name="email" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Rating *</label>
+          <div class="star-rating">
+            <input type="radio" id="rating-5" name="review_score" value="5" required /><label for="rating-5" title="5 stars">★</label>
+            <input type="radio" id="rating-4" name="review_score" value="4" /><label for="rating-4" title="4 stars">★</label>
+            <input type="radio" id="rating-3" name="review_score" value="3" /><label for="rating-3" title="3 stars">★</label>
+            <input type="radio" id="rating-2" name="review_score" value="2" /><label for="rating-2" title="2 stars">★</label>
+            <input type="radio" id="rating-1" name="review_score" value="1" /><label for="rating-1" title="1 star">★</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="reviewTitle">Review Title *</label>
+          <input type="text" id="reviewTitle" name="review_title" required />
+        </div>
+        <div class="form-group">
+          <label for="reviewContent">Your Review *</label>
+          <textarea id="reviewContent" name="review_content" rows={5} required></textarea>
+        </div>
+        <button type="submit" class="submit-review-btn">Submit Review</button>
+      </form>
+    </div>
+  </div>
 </Layout>
+
+<style>
+  /* ─── Page wrapper ─── */
+  .product-sale-page {
+    background: #d2eaef;
+    min-height: 100vh;
+  }
+
+  .product-page-nav {
+    background: #d2eaef;
+  }
+
+  /* ─── Main product layout ─── */
+  .product-main-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem 1.5rem 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #d2eaef;
+  }
+
+  @media (min-width: 900px) {
+    .product-main-layout {
+      grid-template-columns: 100px 1fr 1fr;
+      align-items: start;
+      padding: 3rem 2rem;
+    }
+  }
+
+  /* ─── Thumbnail strip ─── */
+  .thumbnail-strip {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    overflow-x: auto;
+  }
+
+  @media (min-width: 900px) {
+    .thumbnail-strip {
+      flex-direction: column;
+      overflow-x: visible;
+    }
+  }
+
+  .thumbnail-btn {
+    background: #f8f8f8;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 4px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    flex-shrink: 0;
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .thumbnail-btn.active,
+  .thumbnail-btn:hover {
+    border-color: #0f8095;
+  }
+
+  .thumbnail-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* ─── Main image ─── */
+  .product-main-image-wrap {
+    background: #f8f8f8;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    min-height: 320px;
+  }
+
+  .main-product-image {
+    width: 100%;
+    height: auto;
+    max-height: 449px;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* ─── Product details ─── */
+  .product-details-col {
+    padding: 0.5rem 0;
+  }
+
+  .product-name {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #434343;
+    margin: 0 0 0.25rem;
+    line-height: 1.3;
+  }
+
+  .product-subline {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.375rem;
+    font-style: italic;
+    color: #434343;
+    margin: 0 0 0.75rem;
+  }
+
+  .product-price-tag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #434343;
+    margin: 0 0 0.5rem;
+  }
+
+  .product-stars-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .stars-inline {
+    display: flex;
+    gap: 2px;
+  }
+
+  .star.filled { color: #f5a623; font-size: 1.1rem; }
+  .star.empty  { color: #d9d9d9; font-size: 1.1rem; }
+
+  .stars-count {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .product-description {
+    font-size: 1rem;
+    color: #434343;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  /* ─── Feature icons row ─── */
+  .product-features-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .product-feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.8rem;
+    color: #434343;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .product-feature-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+  }
+
+  /* ─── Size selector ─── */
+  .option-group {
+    margin-bottom: 1.25rem;
+  }
+
+  .size-selector-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .size-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #434343;
+  }
+
+  .size-guide-link {
+    font-size: 0.85rem;
+    color: #434343;
+    text-decoration: underline;
+  }
+
+  .size-boxes {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .size-box {
+    background: #f8f8f8;
+    border: 1.5px solid transparent;
+    border-radius: 15px;
+    width: 40px;
+    height: 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #434343;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .size-box.selected,
+  .size-box[aria-checked="true"] {
+    border-color: #0f8095;
+  }
+
+  /* ─── Quantity ─── */
+  .quantity-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .quantity-label {
+    font-size: 0.875rem;
+    color: #434343;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #0f8095;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+  }
+
+  .qty-btn {
+    background: none;
+    border: none;
+    padding: 0.4rem 0.75rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #434343;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .qty-value {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.875rem;
+    font-family: 'DM Sans', sans-serif;
+    min-width: 24px;
+    text-align: center;
+  }
+
+  /* ─── Stock alert ─── */
+  .stock-alert-banner {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #fff3cd;
+    border: 1px solid #ffc107;
+    color: #856404;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* ─── Add to cart button ─── */
+  .add-to-cart-btn {
+    width: 100%;
+    background: #4f646f;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 1.1rem 2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition: background-color 0.2s;
+    letter-spacing: 0.05em;
+  }
+
+  .add-to-cart-btn:hover {
+    background: #3d5059;
+  }
+
+  /* ─── Reviews section ─── */
+  .product-reviews-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+    background-color: white;
+  }
+
+  .reviews-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .reviews-heading {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.625rem;
+    font-weight: 700;
+    color: #434343;
+    letter-spacing: -0.025rem;
+    margin: 0;
+  }
+
+  .leave-review-btn {
+    background: #f5a623;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 0.9rem 2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+  }
+
+  .leave-review-btn:hover {
+    background: #e09620;
+  }
+
+  /* ─── Rating summary ─── */
+  .reviews-summary {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .reviews-score-block {
+    text-align: center;
+    min-width: 100px;
+  }
+
+  .score-number {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 3.625rem;
+    font-weight: 700;
+    color: #434343;
+    line-height: 1;
+    margin: 0 0 0.25rem;
+  }
+
+  .score-total {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    color: #434343;
+    margin: 0.25rem 0 0;
+  }
+
+  .rating-bars {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 200px;
+    max-width: 300px;
+  }
+
+  .rating-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .rating-bar-label {
+    font-size: 0.9rem;
+    color: #434343;
+    width: 1rem;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  .rating-bar-track {
+    flex: 1;
+    height: 9px;
+    background: #d9d9d9;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .rating-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+  }
+
+  .bar-amber { background: #f5a623; }
+  .bar-gray  { background: #d9d9d9; }
+
+  .reviews-divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 1.5rem 0;
+  }
+
+  /* ─── Review list ─── */
+  .reviews-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .review-item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 1rem;
+    position: relative;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .review-avatar {
+    width: 70px;
+    height: 70px;
+    background: #d2eaef;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .review-avatar-initials {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4f646f;
+  }
+
+  .review-body {
+    grid-column: 2;
+  }
+
+  .review-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .review-author {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #002228;
+    letter-spacing: 0.125rem;
+  }
+
+  .review-verified {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    color: #0f8095;
+  }
+
+  .review-stars {
+    margin-bottom: 0.25rem;
+  }
+
+  .review-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #434343;
+    margin: 0 0 0.4rem;
+  }
+
+  .review-content {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #434343;
+    margin: 0;
+  }
+
+  .review-divider {
+    grid-column: 1 / -1;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 0;
+  }
+
+  .no-reviews {
+    color: #666;
+    font-style: italic;
+  }
+
+  /* ─── Modal ─── */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .modal-overlay.open {
+    display: flex;
+  }
+
+  .modal-content {
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: #666;
+    line-height: 1;
+    padding: 0.25rem;
+  }
+
+  .modal-form-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #434343;
+    margin: 0 0 1.5rem;
+  }
+
+  .review-modal-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .review-modal-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .review-modal-form label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #434343;
+  }
+
+  .review-modal-form input,
+  .review-modal-form textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0.6rem 0.75rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    color: #434343;
+    transition: border-color 0.2s;
+  }
+
+  .review-modal-form input:focus,
+  .review-modal-form textarea:focus {
+    outline: none;
+    border-color: #0f8095;
+  }
+
+  /* Star rating input */
+  .star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: baseline;
+    gap: 4px;
+    font-size: 1.75rem;
+  }
+
+  .star-rating input { 
+    display: none; 
+  }
+
+  .star-rating label {
+    color: #d9d9d9;
+    cursor: pointer;
+    font-weight: normal;
+    transition: color 0.15s;
+    font-size: 2rem;
+  }
+
+  .star-rating input:checked ~ label,
+  .star-rating label:hover,
+  .star-rating label:hover ~ label {
+    color: #f5a623;
+  }
+
+  .submit-review-btn {
+    width: 100%;
+    background: #0f8095;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 0.9rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 0.5rem;
+  }
+
+  .submit-review-btn:hover {
+    background: #0a6b7d;
+  }
+</style>
+
+<script>
+  // ── Image swap ──
+  function swapImages(el: HTMLElement) {
+    const img = document.getElementById('mainImage') as HTMLImageElement | null;
+    const thumbImg = el.querySelector('img') as HTMLImageElement | null;
+    if (img && thumbImg) {
+      img.src = thumbImg.src;
+    }
+    document.querySelectorAll('.thumbnail-btn').forEach(btn => btn.classList.remove('active'));
+    el.classList.add('active');
+  }
+
+  // ── Size selection ──
+  function selectSize(el: HTMLElement) {
+    const name = el.dataset.optionName || '';
+    document.querySelectorAll(`.size-box[data-option-name="${name}"]`).forEach(btn => {
+      btn.classList.remove('selected');
+      btn.setAttribute('aria-checked', 'false');
+    });
+    el.classList.add('selected');
+    el.setAttribute('aria-checked', 'true');
+    const hiddenInput = document.getElementById(name) as HTMLInputElement | null;
+    if (hiddenInput) hiddenInput.value = el.dataset.optionId || '';
+    checkStock(el);
+  }
+
+  function checkStock(el: HTMLElement) {
+    const alert = document.getElementById('stockAlert');
+    const count = document.getElementById('stockCount');
+    if (!alert || !count) return;
+    const optionId = el.dataset.optionId;
+    if (!optionId) return;
+    alert.style.display = 'none';
+  }
+
+  // ── Quantity ──
+  let qty = 1;
+  function changeQty(delta: number) {
+    qty = Math.max(1, qty + delta);
+    const el = document.getElementById('qtyValue');
+    if (el) el.textContent = String(qty);
+  }
+
+  // ── Review modal ──
+  function openReviewModal() {
+    const modal = document.getElementById('reviewModal');
+    if (modal) {
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeReviewModal() {
+    const modal = document.getElementById('reviewModal');
+    if (modal) {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  }
+
+  document.getElementById('reviewModal')?.addEventListener('click', (e) => {
+    if (e.target === document.getElementById('reviewModal')) closeReviewModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeReviewModal();
+  });
+
+  // ── Swell add to cart ──
+  async function addToCart(productId: string) {
+    try {
+      const swellModule = await import('swell-js');
+      const swell = swellModule.default || swellModule;
+      await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', { useCamelCase: true });
+
+      const options: Record<string, string> = {};
+      document.querySelectorAll('.size-box.selected').forEach((btn: Element) => {
+        const el = btn as HTMLElement;
+        if (el.dataset.optionName && el.dataset.optionId) {
+          options[el.dataset.optionName] = el.dataset.optionId;
+        }
+      });
+
+      await swell.cart.addItem({
+        product_id: productId,
+        quantity: qty,
+        options,
+      });
+
+      const btn = document.getElementById('addToCart') as HTMLButtonElement | null;
+      if (btn) {
+        const orig = btn.innerHTML;
+        btn.textContent = 'Added!';
+        setTimeout(() => { btn.innerHTML = orig; }, 2000);
+      }
+    } catch (err) {
+      console.error('Could not add to cart:', err);
+    }
+  }
+
+  // expose globally for onclick handlers
+  (window as any).swapImages = swapImages;
+  (window as any).selectSize = selectSize;
+  (window as any).changeQty = changeQty;
+  (window as any).openReviewModal = openReviewModal;
+  (window as any).closeReviewModal = closeReviewModal;
+  (window as any).addToCart = addToCart;
+</script>

@@ -1,5 +1,5 @@
 ---
-title: "Canarinho da Alemanha: Capoeira Song & Lyrics"
+title: "Canarinho da Alemanha"
 date: "2020-11-01"
 categories:
   - "capoeira-songbook"

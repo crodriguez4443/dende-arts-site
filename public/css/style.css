@@ -411,8 +411,9 @@ strong {
 
 .logo-link {
     display: inline-block;
-    width: 64px;
-    height: 64px;
+    width: 55px;
+    height: 55px;
+    margin-top: 1.2rem;
 }
 
 .logo-link-lg {
@@ -551,7 +552,7 @@ strong {
       height: auto;
       flex-direction: row;
       background: none;
-      gap: 2.5rem;
+      gap: 1.2rem;
       transform: ease-in-out 1s;
     }
 
@@ -594,13 +595,13 @@ strong {
 
   @media (min-width: 850px) {
     .nav-menu {
-      gap: 3rem;
+      gap: 2.2rem;
       }
   }
 
   @media (min-width: 1200px) {
     .nav-menu {
-      gap: 3.5rem;
+      gap: 3rem;
       }
   }
 
@@ -631,6 +632,7 @@ strong {
 
 .nav-content {
     grid-column: 2/4;
+    align-items: baseline;
 }
 
 .hero-content {

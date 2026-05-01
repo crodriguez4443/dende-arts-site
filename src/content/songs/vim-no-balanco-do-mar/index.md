@@ -35,34 +35,27 @@ type: "song-post"
             Vim no balanço do mar la da Guiné<br>
             Vim no balanço do mar de Moçambique<br>
             Só quem veio sabe como é</strong><br><br>
-
             <strong>Vim no balanço do mar la de Angola<br>
             Vim no balanço do mar la da Guiné<br>
             Vim no balanço do mar de Moçambique<br>
             Só quem veio sabe como é</strong><br><br>
-
             Vim no navio negreiro<br>
             Com uma corrente no pé<br>
             Trabalhar como escravo<br>
             Na colheita do café<br><br>
-
             <strong>Vim no balanço do mar la de Angola<br>
             Vim no balanço do mar la da Guiné<br>
             Vim no balanço do mar de Moçambique<br>
             Só quem veio sabe como é</strong><br><br>
-
             Hoje sou negro liberto<br>
             A escravidão acabou<br>
             Hoje eu sinto saudades<br>
             Da terra que la ficou<br><br>
-
             <strong>Vim no balanço do mar la de Angola<br>
             Vim no balanço do mar la da Guiné<br>
             Vim no balanço do mar de Moçambique<br>
             Só quem veio sabe como é</strong><br><br>
-
             <strong>Só quem veio sabe como é</strong><br><br>
-
             <strong>Só quem veio sabe como é</strong>
         </td>
         <td>
@@ -70,34 +63,27 @@ type: "song-post"
             I came on the swinging of the sea in Guinea<br>
             I came on the swinging of the sea of ​​Mozambique<br>
             Only those who came know how it is</strong><br><br>
-
             <strong>I came on the swinging of the sea la de Angola<br>
             I came on the swinging of the sea in Guinea<br>
             I came on the swinging of the sea of ​​Mozambique<br>
             Only those who came know how it is</strong><br><br>
-
             I came on the slave ship<br>
             With a chain on your foot<br>
             work like a slave<br>
             In the coffee harvest<br><br>
-
             <strong>I came on the swinging of the sea la de Angola<br>
             I came on the swinging of the sea in Guinea<br>
             I came on the swinging of the sea of ​​Mozambique<br>
             Only those who came know how it is</strong><br><br>
-
             Today I am free black man<br>
             slavery is over<br>
             Today I feel nostalgia<br>
             From the land that there remained<br><br>
-
             <strong>I came on the swinging of the sea la de Angola<br>
             I came on the swinging of the sea in Guinea<br>
             I came on the swinging of the sea of ​​Mozambique<br>
             Only those who came know how it is</strong><br><br>
-
             <strong>Only those who came know how it is</strong><br><br>
-
             <strong>Only those who came know how it is</strong>
         </td>
     </tr>
