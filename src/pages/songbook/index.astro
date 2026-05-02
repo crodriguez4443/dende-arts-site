@@ -1,0 +1,375 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import { getCollection } from 'astro:content';
+
+const PAGE_SIZE = 60;
+const CURRENT_PAGE = 1;
+const BASE_URL = '/songbook/';
+
+function getSlug(id: string) { return id.split('/')[0]; }
+
+const VISIBLE_TAGS = ['beginner', 'intermediate', 'advanced', 'ladainha'];
+
+const allSongs = await getCollection('songs');
+const sorted = allSongs.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const sliceStart = (CURRENT_PAGE - 1) * PAGE_SIZE;
+const sliceEnd = sliceStart + PAGE_SIZE;
+const totalPages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
+const pageUrl = (p: number) => (p === 1 ? BASE_URL : `${BASE_URL}page-${p}/`);
+
+const filterTabs = ['All', 'Beginner', 'Intermediate', 'Advanced', 'Ladainha'];
+---
+<Layout
+  title="Capoeira Songbook with translation and video"
+  description="Learn Capoeira music with Portuguese and English translations."
+>
+  <div class="songbook-index-page">
+    <div class="songbook-index-nav main-grid">
+      <Nav />
+    </div>
+
+    <header class="songbook-index-header">
+      <h1 class="songbook-index-heading">
+        <strong>Find songs,</strong>{' '}
+        learn the meaning and practice on your own!
+      </h1>
+    </header>
+
+    <div class="songbook-index-main">
+      <div class="category-tabs" role="tablist">
+        {filterTabs.map((tab, i) => (
+          <button
+            class={`cat-tab${i === 0 ? ' active' : ''}`}
+            data-category={tab.toLowerCase()}
+            role="tab"
+            aria-selected={i === 0 ? 'true' : 'false'}
+            type="button"
+          >
+            {tab}
+          </button>
+        ))}
+      </div>
+
+      <div
+        class="songs-two-col"
+        id="songs-grid"
+        data-page-size={PAGE_SIZE}
+        data-initial-page={CURRENT_PAGE}
+        data-base-url={BASE_URL}
+      >
+        {sorted.map((song, i) => {
+          const visibleTags = song.data.tags
+            ? song.data.tags.filter((t: string) => VISIBLE_TAGS.includes(t.toLowerCase()))
+            : [];
+          const onThisPage = i >= sliceStart && i < sliceEnd;
+          return (
+            <a
+              href={`/songbook/${getSlug(song.id)}/`}
+              class="song-list-item"
+              data-tags={visibleTags.map((t: string) => t.toLowerCase()).join(',')}
+              hidden={!onThisPage}
+            >
+              <span class="song-number">{onThisPage ? `${i + 1}.` : ''}</span>
+              <span class="song-list-title">{song.data.title}</span>
+              {visibleTags.length > 0 && (
+                <span class="song-tags">
+                  {visibleTags.map((tag: string) => <span class="song-tag">{tag}</span>)}
+                </span>
+              )}
+            </a>
+          );
+        })}
+      </div>
+
+      <nav class="pagination" aria-label="Pagination" id="pagination">
+        {totalPages > 1 && (
+          <>
+            {CURRENT_PAGE > 1 && (
+              <a href={pageUrl(CURRENT_PAGE - 1)} class="pagination-link" data-page={CURRENT_PAGE - 1}>← Previous</a>
+            )}
+            {Array.from({ length: totalPages }).map((_, idx) => {
+              const p = idx + 1;
+              return p === CURRENT_PAGE
+                ? <span class="pagination-link current">{p}</span>
+                : <a href={pageUrl(p)} class="pagination-link" data-page={p}>{p}</a>;
+            })}
+            {CURRENT_PAGE < totalPages && (
+              <a href={pageUrl(CURRENT_PAGE + 1)} class="pagination-link" data-page={CURRENT_PAGE + 1}>Next →</a>
+            )}
+          </>
+        )}
+      </nav>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .songbook-index-page {
+    background: white;
+    min-height: 100vh;
+  }
+
+  .songbook-index-nav {
+    background: white;
+  }
+
+  .songbook-index-header {
+    padding: 3rem 2rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .songbook-index-heading {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(2rem, 4vw, 3.625rem);
+    font-weight: 400;
+    line-height: 1.21;
+    letter-spacing: -0.06rem;
+    color: #000;
+    margin: 0;
+  }
+
+  .songbook-index-heading strong {
+    font-weight: 700;
+  }
+
+  .songbook-index-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 2rem 4rem;
+  }
+
+  /* ─── Two-column numbered song list ─── */
+  .songs-two-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  @media (min-width: 700px) {
+    .songs-two-col {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 3rem;
+    }
+  }
+
+  .song-list-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.35rem 0;
+    text-decoration: none;
+    color: #000;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+    transition: color 0.2s;
+  }
+
+  .song-list-item:hover {
+    color: #0f8095;
+  }
+
+  .song-number {
+    font-variant-numeric: tabular-nums;
+    min-width: 2rem;
+    color: #434343;
+    flex-shrink: 0;
+  }
+
+  .song-list-title {
+    text-decoration: underline;
+  }
+
+  .song-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    align-items: center;
+    margin-left: 0.25rem;
+  }
+
+  .song-tag {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    padding: 1px 6px;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+
+  /* ─── Category tabs ─── */
+  .category-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+    border: 1px solid #0f8095;
+    border-radius: 30px;
+    overflow: hidden;
+    width: fit-content;
+    margin: 0 auto 2.5rem;
+  }
+
+  .cat-tab {
+    background: none;
+    border: none;
+    padding: 0.65rem 1.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #434343;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    white-space: nowrap;
+  }
+
+  .cat-tab.active {
+    background: #0f8095;
+    color: white;
+    border-radius: 30px;
+  }
+
+  .cat-tab:hover:not(.active) {
+    background: #f0f8fa;
+  }
+
+  .song-list-item[hidden] {
+    display: none;
+  }
+
+  /* ─── Pagination ─── */
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 3rem;
+  }
+
+  .pagination-link {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #0f8095;
+    text-decoration: none;
+    padding: 0.4rem 0.85rem;
+    border: 1px solid #0f8095;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .pagination-link:hover {
+    background: #0f8095;
+    color: white;
+  }
+
+  .pagination-link.current {
+    background: #0f8095;
+    color: white;
+    cursor: default;
+  }
+</style>
+
+<script>
+  const grid = document.getElementById('songs-grid') as HTMLElement;
+  const PAGE_SIZE = Number(grid.dataset.pageSize) || 60;
+  const INITIAL_PAGE = Number(grid.dataset.initialPage) || 1;
+  const BASE_URL = grid.dataset.baseUrl || '/songbook/';
+  const DEFAULT_FILTER = 'all';
+  const tabs = document.querySelectorAll<HTMLButtonElement>('.cat-tab');
+  const items = Array.from(document.querySelectorAll<HTMLAnchorElement>('.song-list-item'));
+  const pagination = document.getElementById('pagination') as HTMLElement;
+
+  let activeFilter = DEFAULT_FILTER;
+  let currentPage = INITIAL_PAGE;
+
+  function isFiltered() {
+    return activeFilter !== DEFAULT_FILTER;
+  }
+
+  function getFiltered() {
+    if (!isFiltered()) return items;
+    return items.filter(it => (it.dataset.tags || '').split(',').includes(activeFilter));
+  }
+
+  function urlForPage(page: number) {
+    if (isFiltered()) return `#page=${page}`;
+    return page === 1 ? BASE_URL : `${BASE_URL}page-${page}/`;
+  }
+
+  function render() {
+    const filtered = getFiltered();
+    const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+
+    items.forEach(it => { it.hidden = true; });
+
+    const start = (currentPage - 1) * PAGE_SIZE;
+    const slice = filtered.slice(start, start + PAGE_SIZE);
+    slice.forEach((it, i) => {
+      it.hidden = false;
+      const num = it.querySelector('.song-number');
+      if (num) num.textContent = `${start + i + 1}.`;
+    });
+
+    renderPagination(totalPages);
+  }
+
+  function renderPagination(totalPages: number) {
+    if (totalPages <= 1) {
+      pagination.innerHTML = '';
+      return;
+    }
+    const parts: string[] = [];
+    if (currentPage > 1) {
+      parts.push(`<a href="${urlForPage(currentPage - 1)}" class="pagination-link" data-page="${currentPage - 1}">← Previous</a>`);
+    }
+    for (let p = 1; p <= totalPages; p++) {
+      if (p === currentPage) {
+        parts.push(`<span class="pagination-link current">${p}</span>`);
+      } else {
+        parts.push(`<a href="${urlForPage(p)}" class="pagination-link" data-page="${p}">${p}</a>`);
+      }
+    }
+    if (currentPage < totalPages) {
+      parts.push(`<a href="${urlForPage(currentPage + 1)}" class="pagination-link" data-page="${currentPage + 1}">Next →</a>`);
+    }
+    pagination.innerHTML = parts.join('');
+
+    if (isFiltered()) {
+      pagination.querySelectorAll<HTMLAnchorElement>('a[data-page]').forEach(a => {
+        a.addEventListener('click', e => {
+          e.preventDefault();
+          currentPage = Number(a.dataset.page);
+          const hash = currentPage === 1 ? '' : `#page=${currentPage}`;
+          history.replaceState(null, '', window.location.pathname + hash);
+          render();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      });
+    }
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+      activeFilter = (tab.dataset.category || DEFAULT_FILTER).toLowerCase();
+      currentPage = isFiltered() ? 1 : INITIAL_PAGE;
+      history.replaceState(null, '', window.location.pathname);
+      render();
+    });
+  });
+
+  const hashMatch = window.location.hash.match(/page=(\d+)/);
+  if (hashMatch) currentPage = Number(hashMatch[1]);
+  render();
+</script>

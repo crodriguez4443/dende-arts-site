@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+---
+<Layout title="Search - Dende Arts">
+  <div class="main-grid">
+    <Nav />
+    <div class="search-page-container">
+      <h1>Search</h1>
+      <div class="search-container">
+        <input type="text" id="mainSearchInput" class="searchInput" placeholder="Search articles and songs..." />
+      </div>
+      <div id="search-results" class="search-results"></div>
+    </div>
+  </div>
+</Layout>

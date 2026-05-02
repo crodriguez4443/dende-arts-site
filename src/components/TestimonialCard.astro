@@ -1,0 +1,20 @@
+---
+interface Props {
+  review: {
+    author: string;
+    rating: number;
+    text: string;
+    relationship?: string;
+  };
+}
+const { review } = Astro.props;
+---
+<div class="home-testimonial-card">
+  <div class="testimonial-rating">
+    {Array.from({ length: review.rating }).map(() => <span class="star">★</span>)}
+    {Array.from({ length: 5 - review.rating }).map(() => <span class="star star-empty">☆</span>)}
+  </div>
+  <p class="testimonial-text">{review.text}</p>
+  <p class="testimonial-author">{review.author}</p>
+  {review.relationship && <p class="testimonial-relation">{review.relationship}</p>}
+</div>

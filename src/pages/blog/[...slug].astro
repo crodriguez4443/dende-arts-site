@@ -1,0 +1,450 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import { Image } from 'astro:assets';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.id.split('/')[0] },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content, headings: astroHeadings } = await render(post);
+
+const readableDate = post.data.date
+  ? new Date(post.data.date).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    })
+  : '';
+const isoDate = post.data.date
+  ? new Date(post.data.date).toISOString().split('T')[0]
+  : '';
+
+const tocHeadings = astroHeadings.filter(h => h.depth === 2 || h.depth === 3);
+
+const category = post.data.categories && post.data.categories.length > 0
+  ? post.data.categories[0]
+  : null;
+
+const pageUrl = Astro.url.href;
+const encodedUrl = encodeURIComponent(pageUrl);
+const encodedTitle = encodeURIComponent(post.data.title);
+---
+<Layout
+  title={post.data.title}
+  description={post.data.description ?? undefined}
+  socialImage={post.data.socialImage ?? undefined}
+>
+  <div class="blog-post-page">
+    <div class="blog-post-nav main-grid">
+      <Nav />
+    </div>
+
+    <div class="blog-post-body">
+      <main class="blog-post-main">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <a href="/blog/">Blog</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>{post.data.title}</span>
+        </nav>
+
+        <h1 class="blog-post-title">{post.data.title}</h1>
+
+        <div class="blog-post-meta">
+          {post.data.author && (
+            <span class="meta-author">{post.data.author}</span>
+          )}
+          {post.data.author && category && <span class="meta-divider" aria-hidden="true"></span>}
+          {category && (
+            <span class="meta-category">{category}</span>
+          )}
+          {readableDate && (
+            <>
+              {(post.data.author || category) && <span class="meta-divider" aria-hidden="true"></span>}
+              <time class="meta-date" datetime={isoDate}>{readableDate}</time>
+            </>
+          )}
+        </div>
+
+        {post.data.coverImage && (
+          <div class="blog-post-cover">
+            <Image
+              src={post.data.coverImage}
+              alt={post.data.title}
+              class="blog-cover-image"
+              width={860}
+              height={480}
+            />
+          </div>
+        )}
+
+        <div class="blog-post-content">
+          <Content />
+        </div>
+
+        <div class="blog-post-share">
+          <span class="share-label">Share this</span>
+          <div class="share-icons">
+            <a
+              href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Share on Facebook"
+              class="share-icon"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24V15.563H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.514c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073Z" fill="#434343"/>
+              </svg>
+            </a>
+            <a
+              href={`https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Share on Twitter"
+              class="share-icon"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.857L1.025 2.25H8.08l4.253 5.622 5.91-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" fill="#434343"/>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/dende_arts/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow on Instagram"
+              class="share-icon"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069ZM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0Zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881Z" fill="#434343"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <aside class="blog-post-sidebar">
+        {tocHeadings.length > 0 && (
+          <div class="toc-box">
+            <h3 class="toc-heading">Table of Contents</h3>
+            <nav class="toc-nav" aria-label="Table of contents">
+              <ul class="toc-list">
+                {tocHeadings.map(h => (
+                  <li class={`toc-item toc-level-${h.depth}`}>
+                    <a href={`#${h.slug}`}>{h.text}</a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+        )}
+      </aside>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .blog-post-page {
+    background: white;
+    min-height: 100vh;
+  }
+
+  .blog-post-nav {
+    background: white;
+  }
+
+  .blog-post-body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 2rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  @media (min-width: 900px) {
+    .blog-post-body {
+      grid-template-columns: 1fr 260px;
+    }
+  }
+
+  /* ─── Breadcrumb ─── */
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-bottom: 1.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9375rem;
+    color: #434343;
+  }
+
+  .breadcrumb a {
+    color: #0f8095;
+    text-decoration: none;
+  }
+
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+
+  .breadcrumb-sep {
+    color: #434343;
+    padding: 0 0.1rem;
+  }
+
+  /* ─── Title ─── */
+  .blog-post-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.04rem;
+    color: #1d221b;
+    margin: 0 0 1.25rem;
+  }
+
+  /* ─── Meta bar ─── */
+  .blog-post-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.75rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .meta-author {
+    color: #f5a623;
+  }
+
+  .meta-divider {
+    display: inline-block;
+    width: 1px;
+    height: 1.1em;
+    background: #434343;
+    flex-shrink: 0;
+  }
+
+  .meta-category {
+    color: #0f8095;
+    text-transform: capitalize;
+  }
+
+  .meta-date {
+    color: #666;
+  }
+
+  /* ─── Cover image ─── */
+  .blog-post-cover {
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .blog-cover-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 860 / 480;
+    object-fit: cover;
+  }
+
+  /* ─── Article content ─── */
+  :global(.blog-post-content) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: #1d221b;
+  }
+
+  :global(.blog-post-content h2) {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.625rem;
+    font-weight: 700;
+    color: #1d221b;
+    margin: 2.5rem 0 1rem;
+    line-height: 1.25;
+  }
+
+  :global(.blog-post-content h3) {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1d221b;
+    margin: 2rem 0 0.75rem;
+    line-height: 1.3;
+  }
+
+  :global(.blog-post-content p) {
+    margin-bottom: 1.375rem;
+  }
+
+  :global(.blog-post-content a) {
+    color: #0f8095;
+    text-decoration: underline;
+  }
+
+  :global(.blog-post-content a:hover) {
+    color: #0a6b7d;
+  }
+
+  :global(.blog-post-content ul),
+  :global(.blog-post-content ol) {
+    padding-left: 1.75rem;
+    margin-bottom: 1.375rem;
+  }
+
+  :global(.blog-post-content li) {
+    margin-bottom: 0.4rem;
+  }
+
+  :global(.blog-post-content img) {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+  }
+
+  :global(.blog-post-content blockquote) {
+    border-left: 4px solid #0f8095;
+    padding: 0.75rem 1.25rem;
+    margin: 1.5rem 0;
+    background: #f0f8fa;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: #434343;
+  }
+
+  :global(.blog-post-content table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.9375rem;
+  }
+
+  :global(.blog-post-content th),
+  :global(.blog-post-content td) {
+    border: 1px solid #e5e5e5;
+    padding: 0.65rem 1rem;
+    text-align: left;
+  }
+
+  :global(.blog-post-content th) {
+    background: #f0f8fa;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  :global(.blog-post-content iframe) {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+  }
+
+  /* ─── Share section ─── */
+  .blog-post-share {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .share-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #434343;
+  }
+
+  .share-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .share-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: opacity 0.2s;
+  }
+
+  .share-icon:hover {
+    opacity: 0.7;
+  }
+
+  /* ─── TOC Sidebar ─── */
+  .blog-post-sidebar {
+    position: sticky;
+    top: 2rem;
+  }
+
+  .toc-box {
+    background: #f9fbfc;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .toc-heading {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1d221b;
+    margin: 0 0 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .toc-item a {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9375rem;
+    color: #434343;
+    text-decoration: none;
+    line-height: 1.4;
+    display: block;
+    transition: color 0.2s;
+  }
+
+  .toc-item a:hover {
+    color: #0f8095;
+  }
+
+  .toc-level-3 {
+    padding-left: 1rem;
+  }
+
+  .toc-level-3 a {
+    font-size: 0.875rem;
+    color: #666;
+  }
+</style>
