@@ -4,6 +4,7 @@ date: "2017-11-05"
 categories:
   - "capoeira101"
   - "history-culture-travel"
+  - "culture"
 tags:
   - "american-capoeira"
   - "berimbau"

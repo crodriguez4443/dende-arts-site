@@ -4,6 +4,7 @@ date: "2020-06-02"
 categories:
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 tags:
   - "cartwheels"
   - "how-to-do-cartwheels"

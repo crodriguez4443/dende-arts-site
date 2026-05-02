@@ -3,6 +3,7 @@ title: "Capoeira: Playing Honestly"
 date: "2018-07-02"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "capoeira-deception"
   - "capoeira-mind-games"

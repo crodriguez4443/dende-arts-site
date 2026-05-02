@@ -4,6 +4,7 @@ date: "2024-04-03"
 categories:
   - "capoeira101"
   - "equipment-reviews"
+  - "gear"
 tags:
   - "abadas"
   - "capoeira-uniforms"

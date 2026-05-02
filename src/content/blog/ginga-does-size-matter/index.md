@@ -3,6 +3,7 @@ title: "GINGA: DOES SIZE MATTER?"
 date: "2018-04-22"
 categories: 
   - "capoeira101"
+  - "movements"
 tags: 
   - "capoeira"
   - "capoeira-basics"

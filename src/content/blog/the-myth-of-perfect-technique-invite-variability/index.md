@@ -4,6 +4,7 @@ date: "2023-12-24"
 categories:
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 tags:
   - "technique"
   - "variability"

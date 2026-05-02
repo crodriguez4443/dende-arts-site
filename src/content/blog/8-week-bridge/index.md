@@ -3,6 +3,7 @@ title: "8 Week Bridge Challenge: Capoeira Ponte Training"
 date: "2017-05-21"
 categories:
   - "capoeira101"
+  - "movements"
 tags:
   - "8-week-challenge"
   - "8weekchallenge"

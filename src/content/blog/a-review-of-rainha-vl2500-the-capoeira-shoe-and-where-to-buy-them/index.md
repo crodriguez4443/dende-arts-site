@@ -4,6 +4,7 @@ date: "2021-10-14"
 categories: 
   - "capoeira101"
   - "equipment-reviews"
+  - "gear"
 coverImage: "./images/Review-of-Rainhas.png"
 layout: "blog-post-layout.njk"
 ---

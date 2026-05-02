@@ -4,6 +4,7 @@ date: "2020-10-19"
 categories:
   - "capoeira101"
   - "capoeira-music"
+  - "music"
 tags:
   - "capoeira-phrases"
   - "portuguese-phrases"

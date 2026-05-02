@@ -1472,6 +1472,7 @@ strong {
   .cart-item-image {
     max-width: 200px;
     height: 200px;
+    margin-bottom:1.5rem;
   }
 
   .cart-item-details {

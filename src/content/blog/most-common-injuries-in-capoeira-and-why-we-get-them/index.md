@@ -4,6 +4,7 @@ date: "2019-07-25"
 categories: 
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 coverImage: "./images/harlie-raethel-ouyjDk-KdfY-unsplash.jpg"
 layout: "blog-post-layout.njk"
 ---

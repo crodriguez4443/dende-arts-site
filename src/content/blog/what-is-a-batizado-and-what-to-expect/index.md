@@ -3,6 +3,7 @@ title: "What is a Batizado and What to Expect in Capoeira!"
 date: "2022-05-30"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "capoeira initiation"
   - "batizado ceremony"

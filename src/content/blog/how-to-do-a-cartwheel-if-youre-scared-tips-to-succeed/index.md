@@ -4,6 +4,7 @@ date: "2020-11-14"
 categories: 
   - "beginners-capoeira"
   - "capoeira101"
+  - "movements"
 coverImage: "./images/Au-Beginner-2.gif"
 layout: "blog-post-layout.njk"
 ---

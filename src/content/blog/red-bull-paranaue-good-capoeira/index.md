@@ -3,6 +3,7 @@ title: "RED BULL PARANAUE GOOD FOR CAPOEIRA? A Critical Analysis"
 date: "2018-02-04"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "bahia"
   - "capoeira-blog"

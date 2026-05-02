@@ -3,6 +3,7 @@ title: "RODA AT PALACE DES ARTS, MONTREAL"
 date: "2017-10-14"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "american-capoeira"
   - "capoeira"

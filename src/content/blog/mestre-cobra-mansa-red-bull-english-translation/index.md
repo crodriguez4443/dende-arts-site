@@ -3,6 +3,7 @@ title: "Mestre Cobra Mansa on Red Bull (English Translation)"
 date: "2018-03-18"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "brazil"
   - "capoeira"

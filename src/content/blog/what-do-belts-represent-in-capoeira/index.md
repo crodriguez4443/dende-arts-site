@@ -3,6 +3,7 @@ title: "What Do Capoeira Belts Represent? Understanding Cordões in Capoeira"
 date: "2018-05-12"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "capoeira-belts"
   - "cordao-de-ouro-belts"

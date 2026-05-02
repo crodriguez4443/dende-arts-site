@@ -1031,6 +1031,12 @@ const ratingCounts = [5, 4, 3, 2, 1].map(star => ({
 
   // ── Swell add to cart ──
   async function addToCart(productId: string) {
+    const btn = document.getElementById('addToCart') as HTMLButtonElement | null;
+    if (!btn) return;
+    const orig = btn.innerHTML;
+    btn.textContent = '... adding to cart';
+    btn.disabled = true;
+
     try {
       const swellModule = await import('swell-js');
       const swell = swellModule.default || swellModule;
@@ -1050,14 +1056,12 @@ const ratingCounts = [5, 4, 3, 2, 1].map(star => ({
         options,
       });
 
-      const btn = document.getElementById('addToCart') as HTMLButtonElement | null;
-      if (btn) {
-        const orig = btn.innerHTML;
-        btn.textContent = 'Added!';
-        setTimeout(() => { btn.innerHTML = orig; }, 2000);
-      }
+      btn.textContent = 'Added!';
+      setTimeout(() => { btn.innerHTML = orig; btn.disabled = false; }, 2000);
     } catch (err) {
       console.error('Could not add to cart:', err);
+      btn.innerHTML = orig;
+      btn.disabled = false;
     }
   }
 

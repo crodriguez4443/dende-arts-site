@@ -4,6 +4,7 @@ date: "2019-10-19"
 categories:
   - "beginners-capoeira"
   - "capoeira101"
+  - "culture"
 tags:
   - "capoeira-belts"
   - "capoeira-ranking-system"

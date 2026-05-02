@@ -4,6 +4,7 @@ date: "2023-04-04"
 categories:
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 tags:
   - "wrist-pain"
   - "capoeira wrist injury"

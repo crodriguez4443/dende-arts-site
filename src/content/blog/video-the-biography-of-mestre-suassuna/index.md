@@ -3,6 +3,7 @@ title: "VIDEO: The Inspiring Biography of Mestre Suassuna"
 date: "2017-12-31"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "biography"
   - "mestre suassuna biography"

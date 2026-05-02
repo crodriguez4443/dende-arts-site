@@ -4,6 +4,7 @@ date: "2024-03-31"
 categories:
   - "capoeira101"
   - "equipment-reviews"
+  - "gear"
 tags:
   - "abadas"
   - "capoeira-abadas"

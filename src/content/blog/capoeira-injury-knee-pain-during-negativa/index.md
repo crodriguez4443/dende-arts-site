@@ -4,6 +4,7 @@ date: "2019-08-15"
 categories: 
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 coverImage: "./images/Screen-Shot-2019-08-15-at-12.02.25-AM.png"
 layout: "blog-post-layout.njk"
 ---

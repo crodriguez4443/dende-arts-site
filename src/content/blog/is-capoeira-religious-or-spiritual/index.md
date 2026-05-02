@@ -4,6 +4,7 @@ date: "2019-07-13"
 categories: 
   - "capoeira101"
   - "history-culture-travel"
+  - "culture"
 coverImage: "./images/Screen-Shot-2019-07-13-at-1.14.12-PM.png"
 layout: "blog-post-layout.njk"
 ---

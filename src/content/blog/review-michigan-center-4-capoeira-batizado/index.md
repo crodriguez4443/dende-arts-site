@@ -3,6 +3,7 @@ title: "REVIEW: Michigan Center 4 Capoeira Batizado - A Weekend of Movement and 
 date: "2017-09-03"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "american-capoeira"
   - "berimbau"

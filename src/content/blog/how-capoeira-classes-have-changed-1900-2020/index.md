@@ -4,6 +4,7 @@ date: "2020-12-17"
 categories: 
   - "capoeira101"
   - "history-culture-travel"
+  - "culture"
 coverImage: "./images/M.-Leopoldina.jpg"
 layout: "blog-post-layout.njk"
 ---

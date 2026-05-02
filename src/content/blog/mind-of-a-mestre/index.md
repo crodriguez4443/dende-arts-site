@@ -4,6 +4,7 @@ date: "2018-02-18"
 categories:
   - "capoeira101"
   - "history-culture-travel"
+  - "culture"
 tags:
   - "capoeira-blog"
   - "capoeira-new-york"

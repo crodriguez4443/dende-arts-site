@@ -4,6 +4,7 @@ date: "2022-02-10"
 categories: 
   - "capoeira101"
   - "history-culture-travel"
+  - "culture"
 coverImage: "./images/Mestre-No.jpeg"
 layout: "blog-post-layout.njk"
 ---

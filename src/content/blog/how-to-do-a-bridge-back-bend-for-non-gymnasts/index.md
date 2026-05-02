@@ -4,6 +4,7 @@ date: "2020-09-29"
 categories:
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 tags:
   - "backbend"
   - "bridge"

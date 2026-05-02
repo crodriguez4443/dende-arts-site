@@ -5,6 +5,7 @@ categories:
   - "beginners-capoeira"
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 coverImage: "./images/Screen-Shot-2021-04-27-at-3.42.44-PM.png"
 layout: "blog-post-layout.njk"
 ---

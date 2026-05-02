@@ -3,6 +3,7 @@ title: "PT. 3 HOW TO BRIDGE: Capoeira Bridge Tutorial"
 date: "2017-07-31"
 categories:
   - "capoeira101"
+  - "movements"
 tags:
   - "8-week-bridge"
   - "8-week-challenge"

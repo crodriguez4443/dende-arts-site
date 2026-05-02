@@ -3,6 +3,7 @@ title: "The Biography of Mestre Suassuna Part 3: Life and Legacy"
 date: "2018-01-14"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "biography-of-mestre-suassuna"
   - "blog-of-capoeira"

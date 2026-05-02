@@ -4,6 +4,7 @@ date: "2021-07-26"
 categories: 
   - "capoeira101"
   - "history-culture-travel"
+  - "culture"
 coverImage: "./images/felipe-simo-4Ls_AHROkAA-unsplash.jpg"
 layout: "blog-post-layout.njk"
 ---

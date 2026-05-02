@@ -3,6 +3,7 @@ title: "5 Exercises to get rid of morning stiffness in the back"
 date: "2021-01-31"
 categories: 
   - "capoeira101"
+  - "movements"
 coverImage: "./images/7.jpg"
 layout: "blog-post-layout.njk"
 ---

@@ -3,6 +3,7 @@ title: "Sexual Misconduct: Doing Something Pt. 2"
 date: "2018-06-12"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "bill-cosby"
   - "capoeira-girls"

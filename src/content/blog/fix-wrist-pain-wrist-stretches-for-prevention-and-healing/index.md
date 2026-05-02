@@ -4,6 +4,7 @@ date: "2020-04-22"
 categories: 
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 coverImage: "./images/extensor-flexor-wrist-tendons.png"
 layout: "blog-post-layout.njk"
 ---

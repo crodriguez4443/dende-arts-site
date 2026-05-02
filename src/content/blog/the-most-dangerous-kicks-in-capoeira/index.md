@@ -4,6 +4,7 @@ date: "2019-08-21"
 categories:
   - "beginners-capoeira"
   - "capoeira101"
+  - "movements"
 tags:
   - "capoeira"
   - "most-effective-capoeira-kicks"

@@ -4,6 +4,7 @@ date: "2020-02-20"
 categories:
   - "capoeira101"
   - "history-culture-travel"
+  - "culture"
 tags:
   - "capoeira training"
   - "brazil"

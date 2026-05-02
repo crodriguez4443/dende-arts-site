@@ -3,6 +3,7 @@ title: "Cartwheels and News from the World of Capoeira"
 date: "2018-05-28"
 categories:
   - "capoeira101"
+  - "movements"
 tags:
   - "capoeira-tournament"
   - "cartwheel"

@@ -3,6 +3,7 @@ title: "What is the strongest kick in martial arts"
 date: "2021-05-20"
 categories: 
   - "capoeira101"
+  - "movements"
 coverImage: "./images/rose-kick.jpeg"
 layout: "blog-post-layout.njk"
 ---

@@ -3,6 +3,7 @@ title: "East vs West Coast Capoeira Styles: Differences and Benefits"
 date: "2017-03-23"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "capoeira"
   - "east-coast-capoeira"

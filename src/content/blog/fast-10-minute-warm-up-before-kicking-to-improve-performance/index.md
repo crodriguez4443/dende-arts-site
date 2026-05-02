@@ -4,6 +4,7 @@ date: "2020-12-19"
 categories: 
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 coverImage: "./images/queixada-load-arrow.png"
 layout: "blog-post-layout.njk"
 ---

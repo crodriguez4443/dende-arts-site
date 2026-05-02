@@ -4,6 +4,7 @@ date: "2018-05-21"
 categories:
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 tags:
   - "deal-with-pain"
   - "healing"

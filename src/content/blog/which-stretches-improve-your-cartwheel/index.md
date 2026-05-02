@@ -3,6 +3,7 @@ title: "Which stretches improve your cartwheel"
 date: "2021-09-08"
 categories: 
   - "capoeira101"
+  - "movements"
 coverImage: "./images/IMG_6445.jpg"
 layout: "blog-post-layout.njk"
 ---

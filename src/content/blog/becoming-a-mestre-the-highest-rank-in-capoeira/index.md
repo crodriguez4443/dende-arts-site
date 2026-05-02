@@ -4,6 +4,7 @@ date: "2019-07-22"
 categories:
   - "capoeira101"
   - "history-culture-travel"
+  - "culture"
 tags:
   - "capoeira mestre"
   - "capoeira ranks"

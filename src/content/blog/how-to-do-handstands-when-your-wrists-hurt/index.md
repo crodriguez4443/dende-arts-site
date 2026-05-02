@@ -3,6 +3,7 @@ title: "The reasons why handstands hurt your wrists, and solutions"
 date: "2021-05-16"
 categories: 
   - "capoeira101"
+  - "movements"
 coverImage: "./images/IMG_4990.png"
 layout: "blog-post-layout.njk"
 ---

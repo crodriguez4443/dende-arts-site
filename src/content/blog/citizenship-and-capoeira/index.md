@@ -3,6 +3,7 @@ title: "Citizenship and Capoeira"
 date: "2018-04-22"
 categories: 
   - "capoeira101"
+  - "culture"
 tags: 
   - "american-dream"
   - "capoeira"

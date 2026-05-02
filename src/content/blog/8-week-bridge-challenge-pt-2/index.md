@@ -3,6 +3,7 @@ title: "8 Week Bridge Challenge for Capoeira: Part 2"
 date: "2017-06-05"
 categories:
   - "capoeira101"
+  - "movements"
 tags:
   - "au-de-coluna"
   - "backbend"

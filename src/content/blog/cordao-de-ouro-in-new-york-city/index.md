@@ -3,6 +3,7 @@ title: "Cordão de Ouro in New York City: Capoeira Culture"
 date: "2018-05-07"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "calado"
   - "capoeira-in-new-york"

@@ -4,6 +4,7 @@ date: "2020-09-28"
 categories:
   - "capoeira101"
   - "equipment-reviews"
+  - "gear"
 tags:
   - "calisthenics-shoes"
   - "feiyues"

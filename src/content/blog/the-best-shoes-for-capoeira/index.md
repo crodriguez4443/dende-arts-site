@@ -4,6 +4,7 @@ date: "2019-09-30"
 categories: 
   - "capoeira101"
   - "equipment-reviews"
+  - "gear"
 coverImage: "./images/IMG_6093-scaled-scaled.jpg"
 layout: "blog-post-layout.njk"
 ---

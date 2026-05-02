@@ -3,6 +3,7 @@ title: "50 Years of CDO: A Capoeira Cordão de Ouro Celebration"
 date: "2017-08-21"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "american-capoeira"
   - "berimbau"

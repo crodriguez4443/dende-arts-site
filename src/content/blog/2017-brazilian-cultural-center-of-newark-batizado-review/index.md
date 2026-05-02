@@ -3,6 +3,7 @@ title: "2017 BCC of NEWARK Batizado Review: A Capoeira Celebration"
 date: "2017-07-17"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "batizado"
   - "capoeira"

@@ -3,6 +3,7 @@ title: "Anatomy of the Roda"
 date: "2018-01-21"
 categories:
   - "capoeira101"
+  - "music"
 tags:
   - "anatomy-of-the-roda"
   - "capoeira"

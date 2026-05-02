@@ -3,6 +3,7 @@ title: "A BRIEF HISTORY OF CAPOEIRA"
 date: "2017-11-13"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "american-capoeira"
   - "berimbau"

@@ -3,6 +3,7 @@ title: "Happy Birthday Mestre Joao Grande"
 date: "2018-01-28"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "capoeira"
   - "capoeira-101-blog"

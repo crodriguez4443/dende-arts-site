@@ -3,6 +3,7 @@ title: "What is the difference between passive and active stretching?"
 date: "2021-04-19"
 categories: 
   - "capoeira101"
+  - "movements"
 coverImage: "./images/IMG_4848-3-scaled.jpg"
 layout: "blog-post-layout.njk"
 ---

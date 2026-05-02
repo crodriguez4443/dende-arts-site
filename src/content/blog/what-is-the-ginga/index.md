@@ -3,6 +3,7 @@ title: "WHAT IS THE GINGA?"
 date: "2017-04-24"
 categories:
   - "capoeira101"
+  - "movements"
 tags:
   - "ginga"
 coverImage: "./images/marion-michele-66097.jpg"

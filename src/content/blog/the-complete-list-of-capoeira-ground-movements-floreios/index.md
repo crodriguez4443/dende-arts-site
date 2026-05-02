@@ -4,6 +4,7 @@ date: "2020-06-10"
 categories:
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 tags:
   - "capoeira-floreios"
   - "capoeira-movements"

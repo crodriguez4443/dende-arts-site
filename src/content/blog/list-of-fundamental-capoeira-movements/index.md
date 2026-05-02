@@ -4,6 +4,7 @@ date: "2020-03-11"
 categories: 
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 coverImage: "./images/IMG_9610.jpg"
 layout: "blog-post-layout.njk"
 ---

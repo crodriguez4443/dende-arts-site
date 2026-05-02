@@ -3,6 +3,7 @@ title: "How to move your pinky toe independently and its benefits"
 date: "2021-01-20"
 categories: 
   - "capoeira101"
+  - "movements"
 coverImage: "./images/IMG_3498-scaled.jpg"
 layout: "blog-post-layout.njk"
 ---

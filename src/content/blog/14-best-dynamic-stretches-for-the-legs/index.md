@@ -4,6 +4,7 @@ date: "2021-02-11"
 categories: 
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 coverImage: "./images/karsten-winegeart-CnEEF5eJemQ-unsplash.jpg"
 layout: "blog-post-layout.njk"
 ---

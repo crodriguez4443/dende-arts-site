@@ -3,6 +3,7 @@ title: "THE BIOGRAPHY OF MESTRE SUASSUNA 2/3"
 date: "2018-01-08"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "blog-of-capoeira"
   - "capoeira"

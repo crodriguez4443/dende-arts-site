@@ -4,6 +4,7 @@ date: "2018-07-26"
 categories:
   - "capoeira101"
   - "history-culture-travel"
+  - "culture"
 tags:
   - "capoeira-angola"
   - "capoeira-mestre"

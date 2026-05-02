@@ -3,6 +3,7 @@ title: "I Can't Even do a Cartwheel"
 date: "2017-04-10"
 categories:
   - "capoeira101"
+  - "movements"
 tags:
   - "brasil"
   - "brazil"

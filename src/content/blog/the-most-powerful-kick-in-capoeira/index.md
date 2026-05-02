@@ -4,6 +4,7 @@ date: "2019-06-29"
 categories: 
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 coverImage: "./images/ckick.png"
 layout: "blog-post-layout.njk"
 ---

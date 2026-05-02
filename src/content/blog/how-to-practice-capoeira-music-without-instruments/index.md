@@ -4,6 +4,7 @@ date: "2021-01-02"
 categories: 
   - "capoeira101"
   - "capoeira-music"
+  - "music"
 coverImage: "./images/holding-things-with-pinky-scaled.jpg"
 layout: "blog-post-layout.njk"
 ---

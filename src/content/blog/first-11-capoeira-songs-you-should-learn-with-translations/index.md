@@ -4,6 +4,7 @@ date: "2019-09-10"
 categories: 
   - "capoeira101"
   - "capoeira-music"
+  - "music"
 coverImage: "./images/image3.jpeg"
 layout: "blog-post-layout.njk"
 ---

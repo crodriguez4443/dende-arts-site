@@ -4,6 +4,7 @@ date: "2020-11-15"
 categories: 
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 coverImage: "./images/Screen-Shot-2021-02-15-at-2.18.39-AM.png"
 layout: "blog-post-layout.njk"
 ---

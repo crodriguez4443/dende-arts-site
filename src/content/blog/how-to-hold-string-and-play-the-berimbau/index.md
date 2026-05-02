@@ -4,6 +4,7 @@ date: "2020-05-20"
 categories: 
   - "capoeira101"
   - "capoeira-music"
+  - "music"
 coverImage: "./images/string-berimbau.png"
 layout: "blog-post-layout.njk"
 ---

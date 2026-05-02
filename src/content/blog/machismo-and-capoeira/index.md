@@ -3,6 +3,7 @@ title: "MACHISMO AND CAPOEIRA"
 date: "2017-06-26"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "machismo"
   - "roda"

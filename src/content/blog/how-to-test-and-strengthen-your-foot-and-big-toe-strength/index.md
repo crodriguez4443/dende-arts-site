@@ -3,6 +3,7 @@ title: "How to test and strengthen your foot and big toe strength"
 date: "2021-10-15"
 categories: 
   - "capoeira101"
+  - "movements"
 coverImage: "./images/feet-photo-kid.jpeg"
 layout: "blog-post-layout.njk"
 ---

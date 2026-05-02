@@ -4,6 +4,7 @@ date: "2020-05-11"
 categories:
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 tags:
   - "capoeira warmup"
   - "beginner capoeira"

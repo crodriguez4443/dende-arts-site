@@ -3,6 +3,7 @@ title: "CAPOEIRA: RED BULL PARANAUÊ"
 date: "2017-05-02"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "bahia"
   - "brasil"

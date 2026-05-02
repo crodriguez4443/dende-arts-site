@@ -4,6 +4,7 @@ date: "2020-08-24"
 categories:
   - "capoeira101"
   - "history-culture-travel"
+  - "culture"
 tags:
   - "military-police"
   - "police-assault"

@@ -4,6 +4,7 @@ date: "2020-11-25"
 categories:
   - "capoeira101"
   - "equipment-reviews"
+  - "gear"
 tags:
   - "capoeira training at home"
   - "home workout space"

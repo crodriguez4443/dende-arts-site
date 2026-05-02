@@ -4,6 +4,7 @@ date: "2019-07-01"
 categories: 
   - "capoeira101"
   - "equipment-reviews"
+  - "gear"
 coverImage: "./images/Chris-43.jpg"
 layout: "blog-post-layout.njk"
 ---

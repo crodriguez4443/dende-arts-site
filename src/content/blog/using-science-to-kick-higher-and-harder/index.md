@@ -4,6 +4,7 @@ date: "2020-09-14"
 categories:
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 tags:
   - "kick-harder"
   - "kick-higher"

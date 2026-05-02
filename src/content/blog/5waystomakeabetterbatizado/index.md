@@ -3,6 +3,7 @@ title: "5 Ways to Make a Better Batizado"
 date: "2017-04-02"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "batizado"
   - "capoeira"

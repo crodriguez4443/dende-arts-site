@@ -4,6 +4,7 @@ date: "2019-08-31"
 categories: 
   - "capoeira101"
   - "equipment-reviews"
+  - "gear"
 coverImage: "./images/arun-sharma-lo1VlfLE-Sk-unsplash.jpg"
 layout: "blog-post-layout.njk"
 ---

@@ -4,6 +4,7 @@ date: "2020-07-18"
 categories: 
   - "capoeira101"
   - "movement-guides"
+  - "movements"
 coverImage: "./images/ezgif.com-video-to-gif-15.gif"
 layout: "blog-post-layout.njk"
 ---

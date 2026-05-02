@@ -3,6 +3,7 @@ title: "Amore e Capoeira Review"
 date: "2019-02-10"
 categories: 
   - "capoeira101"
+  - "music"
 coverImage: "./images/Screen-Shot-2019-02-10-at-2.12.36-PM.png"
 layout: "blog-post-layout.njk"
 ---

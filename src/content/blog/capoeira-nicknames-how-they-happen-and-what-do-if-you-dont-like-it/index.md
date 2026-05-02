@@ -4,6 +4,7 @@ date: "2020-05-29"
 categories: 
   - "capoeira101"
   - "history-culture-travel"
+  - "culture"
 coverImage: "./images/Word-Art.png"
 layout: "blog-post-layout.njk"
 ---

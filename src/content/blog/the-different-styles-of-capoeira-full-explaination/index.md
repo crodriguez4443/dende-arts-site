@@ -5,6 +5,7 @@ categories:
   - "beginners-capoeira"
   - "capoeira101"
   - "history-culture-travel"
+  - "culture"
 tags:
   - "capoeira styles"
   - "angola"

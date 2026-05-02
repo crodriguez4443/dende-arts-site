@@ -3,6 +3,7 @@ title: "What is the role of a Master in martial arts? and how it can change!"
 date: "2024-02-12"
 categories: 
   - "history-culture-travel"
+  - "culture"
 coverImage: "./images/what-is-a-master-thumbnail.webp"
 layout: "blog-post-layout.njk"
 ---

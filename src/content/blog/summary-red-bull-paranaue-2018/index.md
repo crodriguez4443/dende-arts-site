@@ -3,6 +3,7 @@ title: "SUMMARY: RED BULL PARANAUÊ 2018"
 date: "2018-03-12"
 categories:
   - "capoeira101"
+  - "culture"
 tags:
   - "capoeira"
   - "capoeira-blog"
