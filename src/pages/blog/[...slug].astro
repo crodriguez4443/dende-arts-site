@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/Nav.astro';
 import { Image } from 'astro:assets';
 import { getCollection, render } from 'astro:content';
+import AbadaBanner from '../../components/AbadaBanner.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -88,6 +89,10 @@ const encodedTitle = encodeURIComponent(post.data.title);
 
         <div class="blog-post-content">
           <Content />
+        </div>
+
+        <div>
+          <AbadaBanner />
         </div>
 
         <div class="blog-post-share">
