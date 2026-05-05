@@ -17,6 +17,7 @@
     "tailwindcss": "^4.0.0"
   },
   "dependencies": {
+    "@astrojs/mdx": "^5.0.4",
     "gray-matter": "^4.0.3",
     "lunr": "^2.3.9",
     "swell-js": "^4.2.5"
