@@ -9,6 +9,28 @@ import heroImg from '../assets/img/about/hero-capoeira.jpg';
   title="About Dendê Arts | Capoeira Community"
   description="Learn about Dendê Arts, founded by Chris 'Calado' Rodriguez. Discover our mission to grow the Capoeira community for all ages and skill levels."
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'AboutPage',
+      name: 'About Dendê Arts',
+      url: 'https://dendearts.com/about/',
+      description: "Learn about Dendê Arts, founded by Chris 'Calado' Rodriguez, and our mission to grow the Capoeira community.",
+      mainEntity: {
+        '@type': 'Person',
+        name: 'Chris "Calado" Rodriguez',
+        jobTitle: 'Capoeira Teacher & Founder',
+        worksFor: {
+          '@type': 'Organization',
+          name: 'Dendê Arts',
+        },
+        sameAs: [
+          'https://www.instagram.com/dende_arts/',
+          'https://www.youtube.com/@Dendearts',
+        ],
+      },
+    })} />
+  </Fragment>
   <div class="about-page">
     <div class="main-grid">
       <Nav />

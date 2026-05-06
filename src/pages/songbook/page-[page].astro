@@ -32,9 +32,22 @@ const pageUrl = (p: number) => (p === 1 ? BASE_URL : `${BASE_URL}page-${p}/`);
 const filterTabs = ['All', 'Beginner', 'Intermediate', 'Advanced', 'Ladainha'];
 ---
 <Layout
-  title={`Capoeira Songbook with translation and video – Page ${currentPage}`}
-  description="Learn Capoeira music with Portuguese and English translations."
+  title={`Capoeira Songbook – Page ${currentPage}`}
+  description={`Page ${currentPage} of the Dendê Arts Capoeira Songbook — hundreds of corridos, ladainhas, and quadras with Portuguese lyrics, English translations, and videos.`}
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: `Dendê Arts Capoeira Songbook – Page ${currentPage}`,
+      url: `https://dendearts.com/songbook/page-${currentPage}/`,
+      isPartOf: {
+        '@type': 'WebSite',
+        name: 'Dendê Arts',
+        url: 'https://dendearts.com/',
+      },
+    })} />
+  </Fragment>
   <div class="songbook-index-page">
     <div class="songbook-index-nav main-grid">
       <Nav />

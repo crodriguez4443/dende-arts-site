@@ -38,8 +38,62 @@ const ratingCounts = [5, 4, 3, 2, 1].map(star => ({
   star,
   count: reviews.filter((r: any) => r.review_score === star).length,
 }));
+
+const productPlainDescription = (product?.description || '').replace(/<[^>]*>/g, '').trim() || `Shop ${product?.name || 'Capoeira gear'} from Dendê Arts — premium Capoeira training apparel built for performance and comfort.`;
+
+const productImageUrl = product?.images?.[0]?.file?.url
+  ? new URL(product.images[0].file.url, Astro.site).href
+  : 'https://dendearts.com/img/dende%20arts%20intro.webp';
+
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: product?.name,
+  description: productPlainDescription,
+  image: productImageUrl,
+  url: Astro.url.href,
+  brand: { '@type': 'Brand', name: 'Dendê Arts' },
+  ...(product?.id && { sku: product.id }),
+  ...(product?.price && {
+    offers: {
+      '@type': 'Offer',
+      price: product.price,
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      url: Astro.url.href,
+    },
+  }),
+  ...(totalReviews > 0 && {
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: averageRating,
+      reviewCount: totalReviews,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    review: reviews.slice(0, 5).map((r: any) => ({
+      '@type': 'Review',
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: r.review_score,
+        bestRating: 5,
+        worstRating: 1,
+      },
+      author: { '@type': 'Person', name: r.author || 'Verified Buyer' },
+      name: r.review_title,
+      reviewBody: r.review_content,
+    })),
+  }),
+};
 ---
-<Layout title={product?.name || 'Product'} description={product?.description || ''}>
+<Layout
+  title={product?.name || 'Product'}
+  description={productPlainDescription.slice(0, 160)}
+  ogImage={productImageUrl}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(productSchema)} />
+  </Fragment>
   <section class="product-sale-page">
     <div class="product-page-nav main-grid">
       <Nav />

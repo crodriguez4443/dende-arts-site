@@ -21,10 +21,32 @@ const allReviews = abadaReviewsData['abada-reviews'] || [];
 const reviews = allReviews.filter((r: any) => r.review_content.length >= 100).slice(0, 12);
 ---
 <Layout
-  title="Capoeira Abadas and Pants Online | Abada Joggers for Capoeira Training and performance"
-  description="Shop high-quality Capoeira Abadas and pants online - high quality Abadas with a 4-way stretch, tapered fit, and zippered pocket. Fast shipping & beloved comfort"
-  socialImage="/img/dende-arts-logo2.png"
+  title="Capoeira Abada Joggers — Premium Training"
+  description="Shop premium Capoeira abadas online — 4-way stretch fabric, tapered jogger fit, elastic waistband, and zippered pocket. Fast shipping and lasting comfort."
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: 'Abada Joggers',
+      description: 'Premium Capoeira abada joggers with 4-way stretch fabric, tapered fit, elastic waistband, and zippered pocket.',
+      brand: {
+        '@type': 'Brand',
+        name: 'Dendê Arts',
+      },
+      url: 'https://dendearts.com/abada-joggers-landing/',
+      image: 'https://dendearts.com/img/dende%20arts%20intro.webp',
+      ...(allReviews.length > 0 && {
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: (allReviews.reduce((s: number, r: any) => s + r.review_score, 0) / allReviews.length).toFixed(1),
+          reviewCount: allReviews.length,
+          bestRating: 5,
+          worstRating: 1,
+        },
+      }),
+    })} />
+  </Fragment>
   <section class="product-hero main-grid">
     <Nav />
     <div class="left-half-content align-content-top">

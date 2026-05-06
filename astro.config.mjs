@@ -6,7 +6,10 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://dendearts.com',
   integrations: [
-    sitemap(),
+    sitemap({
+      filter: (page) =>
+        !/\/(checkout|thank-you|search)\/?$/.test(page),
+    }),
     mdx(),
   ],
   output: 'static',

@@ -15,9 +15,29 @@ const reviews = (abadaReviewsData['abada-reviews'] || [])
   .slice(0, 12);
 ---
 <Layout
-  title="Bulk Order Abadas for Capoeira Groups | Wholesale Capoeira Pants – Dende Arts"
-  description="Bulk order Abadas for Capoeira groups | Wholesale Capoeira pants for Batizados, events, and groups"
+  title="Bulk Order Capoeira Abadas & Wholesale Pants"
+  description="Bulk order high-quality Capoeira abadas for schools, batizados, and events. No minimums, fast delivery, group discounts, and 4-way stretch comfort."
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      serviceType: 'Wholesale Capoeira Uniform Supply',
+      name: 'Bulk Order Capoeira Abadas',
+      url: 'https://dendearts.com/bulk-orders/',
+      description: 'Wholesale Capoeira abadas for schools, batizados, and group events. No minimums and clear pricing.',
+      provider: {
+        '@type': 'Organization',
+        name: 'Dendê Arts',
+        url: 'https://dendearts.com/',
+      },
+      areaServed: 'Worldwide',
+      audience: {
+        '@type': 'Audience',
+        audienceType: 'Capoeira schools, instructors, and groups',
+      },
+    })} />
+  </Fragment>
   <section class="main-grid">
     <Nav />
     <div class="bulk-page-content">

@@ -28,8 +28,45 @@ const visibleTags = song.data.tags
 const pageUrl = Astro.url.href;
 const encodedUrl = encodeURIComponent(pageUrl);
 const encodedTitle = encodeURIComponent(song.data.title);
+
+const songDescription = song.data.description ?? `${song.data.title} — Capoeira song with Portuguese lyrics and English translation from the Dendê Arts Songbook.`;
+
+const songSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: song.data.title,
+  description: songDescription,
+  url: pageUrl,
+  author: {
+    '@type': 'Person',
+    name: song.data.author ?? 'Chris "Calado" Rodriguez',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Dendê Arts',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://dendearts.com/img/dende-flavicon.png',
+    },
+  },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://dendearts.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Songbook', item: 'https://dendearts.com/songbook/' },
+    { '@type': 'ListItem', position: 3, name: song.data.title, item: pageUrl },
+  ],
+};
 ---
-<Layout title={song.data.title} description={song.data.description}>
+<Layout title={song.data.title} description={songDescription}>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(songSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
   <div class="song-page">
     <div class="song-page-nav main-grid">
       <Nav />

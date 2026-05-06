@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /checkout
+Disallow: /thank-you
+Disallow: /search
+
+Sitemap: https://dendearts.com/sitemap-index.xml

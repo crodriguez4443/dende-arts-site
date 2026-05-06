@@ -35,11 +35,36 @@ const latestPosts = allBlogPosts
 const topReviews = reviewsData.reviews.slice(0, 4);
 ---
 <Layout
-  title="The hub of Capoeira education, uniforms, and quality products"
-  description="Training resources and high-quality Capoeira equipment like abadas and bulk order uniforms."
-  socialImage="/img/dende-arts-logo2.png"
+  title="Capoeira Education, Uniforms & Quality Gear"
+  description="Dendê Arts is your home for Capoeira training resources, expert-led education, and premium gear — including 4-way stretch abadas, joggers, and bulk uniforms."
 >
-  <link rel="preload" href="/img/hero-bg.jpg" as="image" slot="head" />
+  <Fragment slot="head">
+    <link rel="preload" href="/img/hero-bg.jpg" as="image" />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Dendê Arts',
+      url: 'https://dendearts.com/',
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: 'https://dendearts.com/search?q={search_term_string}',
+        'query-input': 'required name=search_term_string',
+      },
+    })} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Store',
+      name: 'Dendê Arts',
+      url: 'https://dendearts.com/',
+      image: 'https://dendearts.com/img/dende%20arts%20intro.webp',
+      description: 'Capoeira training resources, premium abadas, joggers, and bulk uniforms for schools and groups.',
+      email: 'dendearts@gmail.com',
+      sameAs: [
+        'https://www.instagram.com/dende_arts/',
+        'https://www.youtube.com/@Dendearts',
+      ],
+    })} />
+  </Fragment>
   <section class="hero">
     <Image src={heroBg} alt="hero background" class="hero-background" />
     <div class="main-grid">

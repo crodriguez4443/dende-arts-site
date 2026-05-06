@@ -34,7 +34,23 @@ const pageUrl = (p: number) => (p === 1 ? BASE_URL : `${BASE_URL}page-${p}/`);
 
 const categories = ['Latest', 'Music', 'Movements', 'Culture', 'Gear'];
 ---
-<Layout title={`The number 1 Capoeira blog online – Page ${currentPage}`}>
+<Layout
+  title={`Capoeira Blog – Page ${currentPage}`}
+  description={`Page ${currentPage} of the Dendê Arts Capoeira blog — articles on movement, music, culture, history, gear, and training tips.`}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: `Dendê Arts Capoeira Blog – Page ${currentPage}`,
+      url: `https://dendearts.com/blog/page-${currentPage}/`,
+      isPartOf: {
+        '@type': 'WebSite',
+        name: 'Dendê Arts',
+        url: 'https://dendearts.com/',
+      },
+    })} />
+  </Fragment>
   <div class="blog-index-page">
     <div class="blog-index-nav main-grid">
       <Nav />

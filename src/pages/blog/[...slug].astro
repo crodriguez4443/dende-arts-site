@@ -36,12 +36,55 @@ const category = post.data.categories && post.data.categories.length > 0
 const pageUrl = Astro.url.href;
 const encodedUrl = encodeURIComponent(pageUrl);
 const encodedTitle = encodeURIComponent(post.data.title);
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: post.data.title,
+  description: post.data.description ?? post.data.excerpt ?? `${post.data.title} — from the Dendê Arts Capoeira blog.`,
+  url: pageUrl,
+  ...(isoDate && { datePublished: isoDate, dateModified: isoDate }),
+  author: {
+    '@type': 'Person',
+    name: post.data.author ?? 'Chris "Calado" Rodriguez',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Dendê Arts',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://dendearts.com/img/dende-flavicon.png',
+    },
+  },
+  ...(post.data.coverImage && {
+    image: new URL(typeof post.data.coverImage === 'string' ? post.data.coverImage : post.data.coverImage.src, Astro.site).href,
+  }),
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': pageUrl,
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://dendearts.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://dendearts.com/blog/' },
+    { '@type': 'ListItem', position: 3, name: post.data.title, item: pageUrl },
+  ],
+};
 ---
 <Layout
   title={post.data.title}
-  description={post.data.description ?? undefined}
-  socialImage={post.data.socialImage ?? undefined}
+  description={post.data.description ?? post.data.excerpt ?? `${post.data.title} — from the Dendê Arts Capoeira blog.`}
+  ogType="article"
+  ogImage={post.data.socialImage ?? (post.data.coverImage ? (typeof post.data.coverImage === 'string' ? post.data.coverImage : post.data.coverImage.src) : undefined)}
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
   <div class="blog-post-page">
     <div class="blog-post-nav main-grid">
       <Nav />
