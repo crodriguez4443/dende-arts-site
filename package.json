@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.4",
+    "@astrojs/partytown": "^2.1.7",
     "gray-matter": "^4.0.3",
     "lunr": "^2.3.9",
     "swell-js": "^4.2.5"

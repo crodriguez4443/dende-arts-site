@@ -104,11 +104,11 @@ const organizationSchema = {
   <!-- Organization JSON-LD (every page) -->
   <script type="application/ld+json" is:inline set:html={JSON.stringify(organizationSchema)} />
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7Q1NGPMNT"></script>
-  <script>
+  <!-- Google Analytics (runs in Partytown web worker, off main thread) -->
+  <script is:inline type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-V7Q1NGPMNT"></script>
+  <script is:inline type="text/partytown">
     window.dataLayer = window.dataLayer || [];
-    function gtag(...args: any[]) { window.dataLayer.push(args); }
+    function gtag() { window.dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-V7Q1NGPMNT');
   </script>
@@ -250,6 +250,16 @@ const organizationSchema = {
     }
   </script>
 
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7282401045549668" crossorigin="anonymous"></script>
+  <script is:inline>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        var s = document.createElement('script');
+        s.async = true;
+        s.crossOrigin = 'anonymous';
+        s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7282401045549668';
+        document.head.appendChild(s);
+      }, 4000);
+    });
+  </script>
 </body>
 </html>
