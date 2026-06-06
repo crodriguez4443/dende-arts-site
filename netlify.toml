@@ -7,6 +7,7 @@
 
 [functions]
   directory = "netlify/functions"
+  node_bundler = "esbuild"
 
 [build.processing]
   skip_processing = true
@@ -14,3 +15,14 @@
 [build.optimization]
   bundle = true
   minify = true
+
+# Shipping bridge webhook endpoints (publicly accessible)
+[[redirects]]
+  from = "/webhooks/swell"
+  to = "/.netlify/functions/swell-webhook"
+  status = 200
+
+[[redirects]]
+  from = "/webhooks/shippo"
+  to = "/.netlify/functions/shippo-webhook"
+  status = 200

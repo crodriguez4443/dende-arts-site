@@ -14,13 +14,18 @@
     "@astrojs/sitemap": "^3.7.2",
     "@tailwindcss/vite": "^4.0.0",
     "astro": "^6.1.1",
+    "netlify-cli": "^17.0.0",
     "tailwindcss": "^4.0.0"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.4",
     "@astrojs/partytown": "^2.1.7",
+    "@netlify/blobs": "^8.1.0",
+    "@netlify/functions": "^2.8.0",
     "gray-matter": "^4.0.3",
     "lunr": "^2.3.9",
+    "resend": "^4.0.0",
+    "shippo": "^2.6.0",
     "swell-js": "^4.2.5"
   },
   "repository": {
