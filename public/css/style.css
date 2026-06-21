@@ -1441,7 +1441,133 @@ strong {
   #cart-overlay.active {
     display: block;
   }
-  
+
+  /* ---- Slide-up "added to cart" bar ---- */
+  .cart-toast {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1500;
+    transform: translateY(120%);
+    transition: transform 0.35s ease-in-out;
+    pointer-events: none;
+    padding: 0 12px env(safe-area-inset-bottom, 0px);
+  }
+
+  .cart-toast.active {
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .cart-toast-inner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 760px;
+    margin: 0 auto 14px;
+    padding: 14px 16px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.18);
+  }
+
+  .cart-toast-msg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: var(--text-color);
+    white-space: nowrap;
+  }
+
+  .cart-toast-check {
+    flex-shrink: 0;
+  }
+
+  .cart-toast-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+  }
+
+  .cart-toast-view,
+  .cart-toast-checkout {
+    border-radius: 50px;
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .cart-toast-view {
+    background: transparent;
+    border: 2px solid var(--action-primary);
+    color: var(--action-primary);
+  }
+
+  .cart-toast-view:hover {
+    background: rgba(15, 128, 149, 0.08);
+  }
+
+  .cart-toast-checkout {
+    background: var(--action-primary);
+    border: 2px solid var(--action-primary);
+    color: #fff;
+  }
+
+  .cart-toast-checkout:hover {
+    background: #0a6b7d;
+    border-color: #0a6b7d;
+  }
+
+  .cart-toast-checkout:disabled {
+    opacity: 0.7;
+    cursor: default;
+  }
+
+  .cart-toast-close {
+    background: none;
+    border: none;
+    font-size: 26px;
+    line-height: 1;
+    color: #999;
+    cursor: pointer;
+    padding: 0 2px;
+    flex-shrink: 0;
+  }
+
+  .cart-toast-close:hover {
+    color: var(--text-color);
+  }
+
+  @media (max-width: 560px) {
+    .cart-toast-inner {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .cart-toast-actions {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .cart-toast-view,
+    .cart-toast-checkout {
+      flex: 1;
+      text-align: center;
+    }
+
+    .cart-toast-close {
+      position: absolute;
+      top: 8px;
+      right: 16px;
+    }
+  }
+
   .cart-header {
     display: flex;
     justify-content: space-between;

@@ -241,7 +241,6 @@ async function updateCartDisplay() {
     });    
   }
 
-  // Add the checkout button handler
   document.addEventListener('DOMContentLoaded', () => {
     updateCartDisplay();
 
@@ -251,27 +250,8 @@ async function updateCartDisplay() {
         setTimeout(updateCartDisplay, 100);
       });
     }
-
-    const checkoutButton = document.getElementById('checkout-button');
-    if (checkoutButton) {
-      checkoutButton.addEventListener('click', async (e) => {
-        e.preventDefault();
-        checkoutButton.textContent = 'Processing...';
-        checkoutButton.disabled = true;
-
-        try {
-          await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulate checkout process
-          console.log('Redirecting to checkout...');
-          // window.location.href = '/checkout'; // Uncomment to redirect
-        } catch (error) {
-          console.error('Error during checkout:', error);
-          alert('There was an error during checkout. Please try again.');
-        } finally {
-          checkoutButton.textContent = 'Proceed to Checkout';
-          checkoutButton.disabled = false;
-        }
-      });
-    }
+    // NOTE: the real checkout redirect handler lives in nav.js
+    // (reads cart.checkoutUrl). No duplicate handler here.
   });
   
   window.updateCartDisplay = updateCartDisplay;

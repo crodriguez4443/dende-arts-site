@@ -1041,6 +1041,18 @@ const productSchema = {
     checkStock(el);
   }
 
+  // Default to the first available size so the cart always receives a valid
+  // variant (prevents adding a base product with no size selected).
+  function selectDefaultSizes() {
+    document.querySelectorAll('.option-group').forEach(group => {
+      const firstBox = group.querySelector('.size-box') as HTMLElement | null;
+      if (firstBox && !group.querySelector('.size-box.selected')) {
+        selectSize(firstBox);
+      }
+    });
+  }
+  selectDefaultSizes();
+
   function checkStock(el: HTMLElement) {
     const alert = document.getElementById('stockAlert');
     const count = document.getElementById('stockCount');
@@ -1087,28 +1099,42 @@ const productSchema = {
   async function addToCart(productId: string) {
     const btn = document.getElementById('addToCart') as HTMLButtonElement | null;
     if (!btn) return;
+    const w = window as any;
     const orig = btn.innerHTML;
     btn.textContent = '... adding to cart';
     btn.disabled = true;
 
     try {
-      const swellModule = await import('swell-js');
-      const swell = swellModule.default || swellModule;
-      await swell.init('dendearts', 'pk_kWLyA4guBdwbH1pwBV32Dp7smCsqlIgK', { useCamelCase: true });
+      // Reuse the shared Swell instance set up in Layout.astro instead of
+      // spinning up a separate module instance. This keeps the nav cart
+      // count and the cart sidebar in sync with this add.
+      let swell = w.swell;
+      if (typeof w.initializeSwell === 'function') {
+        swell = (await w.initializeSwell()) || w.swell;
+      }
 
       const options: Record<string, string> = {};
-      document.querySelectorAll('.size-box.selected').forEach((btn: Element) => {
-        const el = btn as HTMLElement;
+      document.querySelectorAll('.size-box.selected').forEach((box: Element) => {
+        const el = box as HTMLElement;
         if (el.dataset.optionName && el.dataset.optionId) {
           options[el.dataset.optionName] = el.dataset.optionId;
         }
       });
 
-      await swell.cart.addItem({
-        product_id: productId,
-        quantity: qty,
-        options,
-      });
+      const payload = { product_id: productId, quantity: qty, options };
+      // Add through the cached-cart layer so the data the sidebar reads is
+      // refreshed too; fall back to the raw cart API if it's unavailable.
+      const cart = swell?.cachedCart
+        ? await swell.cachedCart.addItem(payload)
+        : await swell.cart.addItem(payload);
+
+      // Refresh the header count badge immediately.
+      w.swellCartCount = cart?.itemQuantity ?? w.swellCartCount ?? 0;
+      if (typeof w.updateCartCount === 'function') w.updateCartCount();
+      if (typeof w.updateCartDisplay === 'function') w.updateCartDisplay();
+
+      // Slide up the checkout confirmation bar.
+      if (typeof w.showCartToast === 'function') w.showCartToast();
 
       btn.textContent = 'Added!';
       setTimeout(() => { btn.innerHTML = orig; btn.disabled = false; }, 2000);

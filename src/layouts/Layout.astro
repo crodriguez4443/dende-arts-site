@@ -3,6 +3,7 @@ import '../styles/global.css';
 import { Image } from 'astro:assets';
 import Nav from '../components/Nav.astro';
 import CartSidebar from '../components/CartSidebar.astro';
+import CartToast from '../components/CartToast.astro';
 import logoWhite from '../assets/img/dende-logo-white.png';
 import instagramWhite from '../assets/img/homepage/instagram-icon-white.png';
 import youtubeWhite from '../assets/img/homepage/youtube-icon-white.png';
@@ -115,6 +116,7 @@ const organizationSchema = {
 </head>
 <body>
   <CartSidebar />
+  <CartToast />
   <main>
     <slot />
   </main>
@@ -164,6 +166,7 @@ const organizationSchema = {
   <script src="/js/product-quantity.js" defer></script>
   <script src="/js/cart-utils.js" defer></script>
   <script src="/js/cart-display.js" defer></script>
+  <script src="/js/cart-toast.js" defer></script>
 
   <!-- Swell SDK -->
   <script src="https://cdn.jsdelivr.net/npm/swell-js@4.2.5/dist/swell.umd.min.js" defer></script>
