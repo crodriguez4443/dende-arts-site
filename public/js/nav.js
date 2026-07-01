@@ -62,6 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
           try {
               const cart = await swell.cart.get(); // Make sure swell.cart exists
               if (cart?.checkoutUrl) {
+                  // Tag the cart with the GA client id so the purchase event
+                  // attributes to this session. Best-effort; never blocks checkout.
+                  if (typeof window.attachGaClientIdToCart === 'function') {
+                      await window.attachGaClientIdToCart();
+                  }
                   window.location.href = cart.checkoutUrl;
               } else {
                   console.warn("Checkout URL not found. Cart may be empty or improperly configured.");

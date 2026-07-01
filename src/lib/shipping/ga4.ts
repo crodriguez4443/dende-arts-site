@@ -48,7 +48,10 @@ export async function sendPurchaseToGa4(order: SwellOrder): Promise<void> {
   }));
 
   const body = {
-    client_id: clientIdFor(order),
+    // Prefer the real _ga client id captured at checkout so GA4 stitches this
+    // purchase to the visitor's session (attribution). Fall back to a derived
+    // id if it wasn't captured — revenue still counts, just unattributed.
+    client_id: order.metadata?.ga_client_id ?? clientIdFor(order),
     events: [
       {
         name: "purchase",

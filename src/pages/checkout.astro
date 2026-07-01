@@ -14,6 +14,11 @@ import Layout from '../layouts/Layout.astro';
       return;
     }
     try {
+      // Tag the cart with the GA client id so the server-side purchase event
+      // attributes to this session. Best-effort; never blocks checkout.
+      if (typeof window.attachGaClientIdToCart === 'function') {
+        await window.attachGaClientIdToCart();
+      }
       await swell.cart.redirect({
         success_url: window.location.origin + '/thank-you',
       });
