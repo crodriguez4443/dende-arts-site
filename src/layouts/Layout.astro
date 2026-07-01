@@ -113,14 +113,10 @@ const organizationSchema = {
     gtag('js', new Date());
     gtag('config', 'G-V7Q1NGPMNT');
   </script>
-  <!-- Main-thread gtag shim. GA runs in the Partytown worker, so window.gtag
-       doesn't exist out here. This pushes to dataLayer, which Partytown
-       forwards into the worker (forward:['dataLayer.push'] in astro.config.mjs),
-       letting us fire ecommerce events next to Swell cart calls. -->
-  <script is:inline>
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
-  </script>
+  <!-- No main-thread gtag shim here: Partytown creates window.gtag itself
+       because 'gtag' is in the forward config (astro.config.mjs). That proxy
+       forwards ecommerce events (add_to_cart, etc.) into the worker correctly,
+       which a hand-rolled dataLayer.push(arguments) shim does not. -->
 </head>
 <body>
   <CartSidebar />

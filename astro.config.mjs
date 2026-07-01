@@ -14,7 +14,12 @@ export default defineConfig({
     mdx(),
     partytown({
       config: {
-        forward: ['dataLayer.push'],
+        // Forward `gtag` (not just dataLayer.push) so gtag('event', …) calls
+        // from the main thread are serialized as a clean array and replayed as
+        // real gtag calls inside the worker. Forwarding only dataLayer.push
+        // loses custom events (e.g. add_to_cart) because the pushed `arguments`
+        // object doesn't survive serialization into a form gtag.js recognizes.
+        forward: ['dataLayer.push', 'gtag'],
       },
     }),
   ],
