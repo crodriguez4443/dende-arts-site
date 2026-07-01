@@ -1133,6 +1133,25 @@ const productSchema = {
       if (typeof w.updateCartCount === 'function') w.updateCartCount();
       if (typeof w.updateCartDisplay === 'function') w.updateCartDisplay();
 
+      // GA4 add_to_cart — forwarded into the Partytown worker via dataLayer.
+      // Never let analytics break the actual add-to-cart.
+      try {
+        const added = cart?.items?.[cart.items.length - 1];
+        const price = typeof added?.price === 'number' ? added.price : undefined;
+        w.gtag?.('event', 'add_to_cart', {
+          currency: 'USD',
+          value: price != null ? price * qty : undefined,
+          items: [{
+            item_id: productId,
+            item_name: document.querySelector('.product-name')?.textContent?.trim(),
+            price,
+            quantity: qty,
+          }],
+        });
+      } catch (err) {
+        console.error('GA4 add_to_cart failed:', err);
+      }
+
       // Slide up the checkout confirmation bar.
       if (typeof w.showCartToast === 'function') w.showCartToast();
 

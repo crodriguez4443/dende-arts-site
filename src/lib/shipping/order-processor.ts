@@ -14,6 +14,7 @@ import { buyInstalabel, pushOrderForReview } from "./shippo.js";
 import { pushFulfillment } from "./swell.js";
 import { sendErrorEmail, sendLabelEmail, sendReviewEmail } from "./email.js";
 import { lookup, save } from "./idempotency.js";
+import { sendPurchaseToGa4 } from "./ga4.js";
 
 export async function processOrder(
   order: SwellOrder
@@ -25,6 +26,17 @@ export async function processOrder(
       `Order ${order.id} already processed at ${existing.processedAt}`
     );
     return { ...existing.result, status: "duplicate" };
+  }
+
+  // ─── GA4 purchase (fire-and-forget) ───────────────────────────────────
+  // The idempotency check above guarantees we only reach here once per order,
+  // so this fires exactly once. A paid order counts as revenue regardless of
+  // whether it later ships, so this runs before the country/SKU gates below.
+  // Analytics must never block fulfillment.
+  try {
+    await sendPurchaseToGa4(order);
+  } catch (err) {
+    console.error("GA4 purchase event failed (non-fatal):", err);
   }
 
   // ─── Country gate ─────────────────────────────────────────────────────

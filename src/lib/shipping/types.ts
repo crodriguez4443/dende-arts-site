@@ -26,6 +26,8 @@ export interface SwellOrder {
     id: string;
     product_id: string;
     quantity: number;
+    // Per-unit price Swell resolved; used for the GA4 items array.
+    price?: number;
     // Swell exposes the SKU on the variant if present, else on the product.
     variant?: { sku?: string; name?: string } | null;
     product?: { sku?: string; name?: string } | null;
@@ -35,6 +37,10 @@ export interface SwellOrder {
   // Pre-tax total of items. Useful if you later want a $-based auto-buy rule.
   sub_total?: number;
   grand_total?: number;
+  // Used by the GA4 purchase event (Measurement Protocol).
+  currency?: string;
+  tax_total?: number;
+  shipping_total?: number;
 }
 
 export interface ProcessResult {
