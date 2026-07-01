@@ -105,18 +105,41 @@ const organizationSchema = {
   <!-- Organization JSON-LD (every page) -->
   <script type="application/ld+json" is:inline set:html={JSON.stringify(organizationSchema)} />
 
-  <!-- Google Analytics (runs in Partytown web worker, off main thread) -->
-  <script is:inline type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-V7Q1NGPMNT"></script>
-  <script is:inline type="text/partytown">
+  <!-- Google Analytics 4 (gtag.js) on the main thread.
+       The stub + config run immediately so window.gtag exists and events queue
+       right away; the heavy library is loaded lazily (on first interaction, or
+       when the browser is idle after load — whichever comes first) to keep it
+       off the critical path for PageSpeed. Queued events (page_view,
+       add_to_cart, purchase, …) flush automatically once the library loads.
+       Not run through Partytown: its worker sandbox silently dropped forwarded
+       ecommerce events and made them impossible to verify. -->
+  <script is:inline>
     window.dataLayer = window.dataLayer || [];
     function gtag() { window.dataLayer.push(arguments); }
+    window.gtag = gtag;
     gtag('js', new Date());
     gtag('config', 'G-V7Q1NGPMNT');
+
+    (function () {
+      var loaded = false;
+      function load() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-V7Q1NGPMNT';
+        document.head.appendChild(s);
+      }
+      ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'].forEach(function (e) {
+        window.addEventListener(e, load, { once: true, passive: true });
+      });
+      window.addEventListener('load', function () {
+        'requestIdleCallback' in window
+          ? requestIdleCallback(load, { timeout: 3000 })
+          : setTimeout(load, 2000);
+      });
+    })();
   </script>
-  <!-- No main-thread gtag shim here: Partytown creates window.gtag itself
-       because 'gtag' is in the forward config (astro.config.mjs). That proxy
-       forwards ecommerce events (add_to_cart, etc.) into the worker correctly,
-       which a hand-rolled dataLayer.push(arguments) shim does not. -->
 </head>
 <body>
   <CartSidebar />

@@ -2,7 +2,6 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 import tailwindcss from '@tailwindcss/vite';
-import partytown from '@astrojs/partytown';
 
 export default defineConfig({
   site: 'https://dendearts.com',
@@ -12,16 +11,6 @@ export default defineConfig({
         !/\/(checkout|thank-you|search)\/?$/.test(page),
     }),
     mdx(),
-    partytown({
-      config: {
-        // Forward `gtag` (not just dataLayer.push) so gtag('event', …) calls
-        // from the main thread are serialized as a clean array and replayed as
-        // real gtag calls inside the worker. Forwarding only dataLayer.push
-        // loses custom events (e.g. add_to_cart) because the pushed `arguments`
-        // object doesn't survive serialization into a form gtag.js recognizes.
-        forward: ['dataLayer.push', 'gtag'],
-      },
-    }),
   ],
   output: 'static',
   image: {

@@ -19,7 +19,6 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.4",
-    "@astrojs/partytown": "^2.1.7",
     "@netlify/blobs": "^8.1.0",
     "@netlify/functions": "^2.8.0",
     "gray-matter": "^4.0.3",

@@ -1133,7 +1133,8 @@ const productSchema = {
       if (typeof w.updateCartCount === 'function') w.updateCartCount();
       if (typeof w.updateCartDisplay === 'function') w.updateCartDisplay();
 
-      // GA4 add_to_cart — forwarded into the Partytown worker via dataLayer.
+      // GA4 add_to_cart. window.gtag is defined synchronously in Layout.astro,
+      // so this queues immediately and flushes when gtag.js loads.
       // Never let analytics break the actual add-to-cart.
       try {
         const added = cart?.items?.[cart.items.length - 1];
