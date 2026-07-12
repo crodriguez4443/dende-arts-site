@@ -13,11 +13,19 @@
  *           charge captures)
  */
 import type { Handler } from "@netlify/functions";
+import { connectLambda } from "@netlify/blobs";
 import { processOrder } from "../../src/lib/shipping/order-processor.js";
 import { sendErrorEmail } from "../../src/lib/shipping/email.js";
 import type { SwellOrder } from "../../src/lib/shipping/types.js";
 
 export const handler: Handler = async (event) => {
+  // Legacy Lambda-style handlers don't get Netlify Blobs' ambient context
+  // auto-injected — connectLambda() hydrates it from the event object so
+  // idempotency.ts's getStore() calls can find siteID/token.
+  // `event` has a `blobs` field at runtime that HandlerEvent's type doesn't
+  // declare (it predates @netlify/blobs' LambdaEvent, which isn't exported).
+  connectLambda(event as unknown as Parameters<typeof connectLambda>[0]);
+
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method not allowed" };
   }
