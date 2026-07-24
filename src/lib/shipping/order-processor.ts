@@ -11,7 +11,7 @@
 import { POLICY, SKU_CATALOG, pickParcelTier } from "./config.js";
 import type { SwellOrder, ProcessResult } from "./types.js";
 import { buyInstalabel, pushOrderForReview } from "./shippo.js";
-import { pushFulfillment } from "./swell.js";
+import { getOrder, pushFulfillment } from "./swell.js";
 import { sendErrorEmail, sendLabelEmail, sendReviewEmail } from "./email.js";
 import { lookup, save } from "./idempotency.js";
 import { sendPurchaseToGa4 } from "./ga4.js";
@@ -27,6 +27,12 @@ export async function processOrder(
     );
     return { ...existing.result, status: "duplicate" };
   }
+
+  // ─── Hydrate ──────────────────────────────────────────────────────────
+  // The webhook body is a thin stub ({ id, payment_id }) — re-read the full
+  // order so shipping/items/number are populated. Done after the idempotency
+  // check so retries short-circuit without an API round-trip.
+  order = await getOrder(order.id);
 
   // ─── GA4 purchase (fire-and-forget) ───────────────────────────────────
   // The idempotency check above guarantees we only reach here once per order,

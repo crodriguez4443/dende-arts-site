@@ -1,8 +1,10 @@
 /**
- * Subset of the Swell order webhook payload that we actually use.
+ * Subset of the Swell order fields that we actually use.
  * Full schema: https://developers.swell.is/backend-api/orders/the-order-model
  *
- * Swell sends the full Order object as the webhook body.
+ * NOTE: The webhook body is only a thin stub ({ id, payment_id }); the
+ * processor re-fetches the full order via swell.ts getOrder(). This shape
+ * describes that fetched order, not the webhook payload.
  */
 export interface SwellOrder {
   id: string;

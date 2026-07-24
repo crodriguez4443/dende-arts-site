@@ -6,6 +6,8 @@
  * password.
  */
 
+import type { SwellOrder } from "./types.js";
+
 const SWELL_BASE = "https://api.swell.store";
 
 function authHeader(): string {
@@ -14,6 +16,26 @@ function authHeader(): string {
   if (!id || !key) throw new Error("SWELL_STORE_ID / SWELL_SECRET_KEY not set");
   const token = Buffer.from(`${id}:${key}`).toString("base64");
   return `Basic ${token}`;
+}
+
+/**
+ * Fetch the full order from Swell. The webhook body is only a thin stub
+ * ({ id, payment_id }), so we re-read the order here to get the shipping
+ * address, line items, and SKUs the processor needs. Variant/product are
+ * expanded so item.variant.sku / item.product.sku resolve.
+ *
+ * Endpoint: GET /orders/{id}
+ */
+export async function getOrder(id: string): Promise<SwellOrder> {
+  const res = await fetch(
+    `${SWELL_BASE}/orders/${id}?expand=items.variant,items.product`,
+    { headers: { Authorization: authHeader() } }
+  );
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`Swell getOrder ${res.status}: ${text}`);
+  }
+  return (await res.json()) as SwellOrder;
 }
 
 /**
