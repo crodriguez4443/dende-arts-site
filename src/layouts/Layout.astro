@@ -140,6 +140,41 @@ const organizationSchema = {
       });
     })();
   </script>
+
+  <!-- Meta Pixel: same lazy pattern as GA4 above — stub queues fbq() calls
+       immediately, fbevents.js loads on first interaction or idle-after-load. -->
+  <script is:inline>
+    !function(f,b){
+      if(f.fbq)return;
+      var n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];
+    }(window, document);
+    fbq('init', '346623565952074');
+    fbq('track', 'PageView');
+
+    (function () {
+      var loaded = false;
+      function load() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://connect.facebook.net/en_US/fbevents.js';
+        document.head.appendChild(s);
+      }
+      ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'].forEach(function (e) {
+        window.addEventListener(e, load, { once: true, passive: true });
+      });
+      window.addEventListener('load', function () {
+        'requestIdleCallback' in window
+          ? requestIdleCallback(load, { timeout: 3000 })
+          : setTimeout(load, 2000);
+      });
+    })();
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=346623565952074&ev=PageView&noscript=1"
+  /></noscript>
 </head>
 <body>
   <CartSidebar />
