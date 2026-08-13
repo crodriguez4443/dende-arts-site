@@ -24,7 +24,7 @@ export const SKU_CATALOG: Record<
   { size: string; weightOz: number }
 > = {
   "1102": { size: "XS", weightOz: 12 },
-  "11105": { size: "S", weightOz: 12 },
+  "1105": { size: "S", weightOz: 12 },
   "1104": { size: "M", weightOz: 12 },
   "1103": { size: "L", weightOz: 12 },
   "1101": { size: "XL", weightOz: 14 },
