@@ -39,7 +39,8 @@
     }
   }
 
-  // Same path the sidebar's checkout button uses: Swell-hosted checkout URL.
+  // Routed through the shared helper so the affiliate/GA metadata attach can
+  // never be skipped on this path again.
   async function goToCheckout(button) {
     const orig = button ? button.textContent : '';
     if (button) {
@@ -47,15 +48,7 @@
       button.disabled = true;
     }
     try {
-      if (typeof window.initializeSwell === 'function') {
-        await window.initializeSwell();
-      }
-      const cart = await window.swell.cart.get();
-      if (cart && cart.checkoutUrl) {
-        window.location.href = cart.checkoutUrl;
-        return;
-      }
-      console.warn('Checkout URL not found. Cart may be empty.');
+      if (await window.goToSwellCheckout()) return;
     } catch (error) {
       console.error('Error redirecting to checkout:', error);
     } finally {

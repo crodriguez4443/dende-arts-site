@@ -60,21 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
       checkoutButton.addEventListener('click', async (e) => {
           e.preventDefault();
           try {
-              const cart = await swell.cart.get(); // Make sure swell.cart exists
-              if (cart?.checkoutUrl) {
-                  // Tag the cart with the GA client id so the purchase event
-                  // attributes to this session. Best-effort; never blocks checkout.
-                  if (typeof window.attachCheckoutMetadata === 'function') {
-                      await window.attachCheckoutMetadata();
-                  }
-                  window.location.href = cart.checkoutUrl;
-              } else {
-                  console.warn("Checkout URL not found. Cart may be empty or improperly configured.");
-                  // You might want to display a message to the user here
-              }
+              await window.goToSwellCheckout();
           } catch (error) {
               console.error("Error getting cart or redirecting to checkout:", error);
-              // Handle errors, like displaying an error message to the user
           }
       });
   };

@@ -77,11 +77,36 @@ async function attachCheckoutMetadata() {
     const metadata = {};
     const clientId = getGaClientId();
     if (clientId) metadata.ga_client_id = clientId;
+    // Cookie first (set by Partnero's universal.js); fall back to the ?aff=
+    // URL param for same-pageview checkouts where the async script hasn't set
+    // the cookie yet — land on /product/?aff=X, add to cart, toast checkout.
     const partner = document.cookie.match(/(?:^|;\s*)partnero_partner=([^;]+)/);
-    if (partner) metadata.partnero_partner = decodeURIComponent(partner[1]);
+    const partnerKey = partner
+      ? decodeURIComponent(partner[1])
+      : new URLSearchParams(location.search).get('aff');
+    if (partnerKey) metadata.partnero_partner = partnerKey;
     if (Object.keys(metadata).length) await window.swell.cart.update({ metadata });
   } catch (err) {
     console.error('Could not attach checkout metadata to cart:', err);
   }
 }
 window.attachCheckoutMetadata = attachCheckoutMetadata;
+
+// The one way to leave the site for Swell's hosted checkout. Every checkout
+// button must go through here: the metadata attach above has to happen before
+// the redirect, and a button that rolls its own `location.href = checkoutUrl`
+// silently drops the affiliate attribution (which is exactly what the toast's
+// checkout button did). Returns false if there was nothing to check out.
+async function goToSwellCheckout() {
+  if (typeof window.initializeSwell === 'function') await window.initializeSwell();
+  if (!window.swell?.cart) return false;
+  await attachCheckoutMetadata();
+  const cart = await window.swell.cart.get();
+  if (!cart?.checkoutUrl) {
+    console.warn('Checkout URL not found. Cart may be empty.');
+    return false;
+  }
+  window.location.href = cart.checkoutUrl;
+  return true;
+}
+window.goToSwellCheckout = goToSwellCheckout;
