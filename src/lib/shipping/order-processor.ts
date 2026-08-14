@@ -164,7 +164,7 @@ async function autoBuy(
 
   // Push tracking back to Swell so the customer gets the shipped email
   await pushFulfillment({
-    swellOrderId: order.id,
+    order,
     trackingNumber: txn.tracking_number,
     carrier: "USPS",
     service: tier.label,

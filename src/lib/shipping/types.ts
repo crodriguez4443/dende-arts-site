@@ -27,6 +27,7 @@ export interface SwellOrder {
   items: Array<{
     id: string;
     product_id: string;
+    variant_id?: string;
     quantity: number;
     // Per-unit price Swell resolved; used for the GA4 items array.
     price?: number;

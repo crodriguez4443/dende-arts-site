@@ -25,10 +25,14 @@ function authHeader(): string {
  * expanded so item.variant.sku / item.product.sku resolve.
  *
  * Endpoint: GET /orders/{id}
+ *
+ * `account` must be expanded too: checkout is guest, so the order carries only
+ * account_id — order.account.email is null without it, and that email is what
+ * Partnero attributes the sale to.
  */
 export async function getOrder(id: string): Promise<SwellOrder> {
   const res = await fetch(
-    `${SWELL_BASE}/orders/${id}?expand=items.variant,items.product`,
+    `${SWELL_BASE}/orders/${id}?expand=items.variant,items.product,account`,
     { headers: { Authorization: authHeader() } }
   );
   if (!res.ok) {
@@ -42,10 +46,15 @@ export async function getOrder(id: string): Promise<SwellOrder> {
  * Create a shipment record on the order with the carrier + tracking number.
  * This is what triggers Swell's default "Your order has shipped" email.
  *
+ * `items` is REQUIRED by Swell's shipment model (GET /:models/shipments) —
+ * omitting it makes the POST fail, which is why every shipment on this store
+ * before now had to be created by hand in the admin. We ship the whole order
+ * in one parcel, so every order item goes on the shipment at full quantity.
+ *
  * Endpoint: POST /orders/{id}/shipments
  */
 export async function pushFulfillment(opts: {
-  swellOrderId: string;
+  order: SwellOrder;
   trackingNumber: string;
   carrier?: string; // e.g. "USPS"
   service?: string; // e.g. "USPS Ground Advantage"
@@ -54,10 +63,16 @@ export async function pushFulfillment(opts: {
     carrier: opts.carrier ?? "USPS",
     service: opts.service,
     tracking_code: opts.trackingNumber,
+    items: opts.order.items.map((item) => ({
+      order_item_id: item.id,
+      product_id: item.product_id,
+      variant_id: item.variant_id,
+      quantity: item.quantity,
+    })),
   };
 
   const res = await fetch(
-    `${SWELL_BASE}/orders/${opts.swellOrderId}/shipments`,
+    `${SWELL_BASE}/orders/${opts.order.id}/shipments`,
     {
       method: "POST",
       headers: {

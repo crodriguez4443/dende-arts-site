@@ -16,7 +16,7 @@
  */
 import type { Handler } from "@netlify/functions";
 import { getTransaction } from "../../src/lib/shipping/shippo.js";
-import { pushFulfillment } from "../../src/lib/shipping/swell.js";
+import { getOrder, pushFulfillment } from "../../src/lib/shipping/swell.js";
 import { sendErrorEmail } from "../../src/lib/shipping/email.js";
 
 interface ShippoTransactionWebhook {
@@ -84,8 +84,10 @@ export const handler: Handler = async (event) => {
   const swellOrderId = match[1];
 
   try {
+    // Re-read the order: the shipment needs its line items (Swell requires
+    // them), and the webhook only gives us the Swell order id.
     await pushFulfillment({
-      swellOrderId,
+      order: await getOrder(swellOrderId),
       trackingNumber: data.tracking_number!,
       carrier: "USPS",
     });
