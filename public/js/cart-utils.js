@@ -65,16 +65,23 @@ function getGaClientId() {
 }
 window.getGaClientId = getGaClientId;
 
-// Attach the GA client id to the Swell cart so it carries into the order the
-// webhook receives. No-op if there's no client id or Swell isn't ready.
-async function attachGaClientIdToCart() {
+// Attach the ids the order webhook needs onto the Swell cart, so they survive
+// the redirect to Swell's hosted checkout and land on the order:
+//   ga_client_id     — stitches the server-side GA4 purchase to this session
+//   partnero_partner — the affiliate whose link brought this visitor, set as a
+//                      first-party cookie by Partnero's script (Layout.astro)
+// Best-effort: a missing id just means that order goes unattributed.
+async function attachCheckoutMetadata() {
   try {
+    if (!window.swell?.cart) return;
+    const metadata = {};
     const clientId = getGaClientId();
-    if (clientId && window.swell?.cart) {
-      await window.swell.cart.update({ metadata: { ga_client_id: clientId } });
-    }
+    if (clientId) metadata.ga_client_id = clientId;
+    const partner = document.cookie.match(/(?:^|;\s*)partnero_partner=([^;]+)/);
+    if (partner) metadata.partnero_partner = decodeURIComponent(partner[1]);
+    if (Object.keys(metadata).length) await window.swell.cart.update({ metadata });
   } catch (err) {
-    console.error('Could not attach GA client id to cart:', err);
+    console.error('Could not attach checkout metadata to cart:', err);
   }
 }
-window.attachGaClientIdToCart = attachGaClientIdToCart;
+window.attachCheckoutMetadata = attachCheckoutMetadata;

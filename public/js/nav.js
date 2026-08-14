@@ -64,8 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
               if (cart?.checkoutUrl) {
                   // Tag the cart with the GA client id so the purchase event
                   // attributes to this session. Best-effort; never blocks checkout.
-                  if (typeof window.attachGaClientIdToCart === 'function') {
-                      await window.attachGaClientIdToCart();
+                  if (typeof window.attachCheckoutMetadata === 'function') {
+                      await window.attachCheckoutMetadata();
                   }
                   window.location.href = cart.checkoutUrl;
               } else {

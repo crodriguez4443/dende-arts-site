@@ -1,35 +1,21 @@
 // affiliate-coupon.js — free shipping for Partnero affiliate traffic.
-// Landing on any URL carrying a Partnero referral param flags the visitor in
-// localStorage; from then on the AFFILIATE coupon (configured in Swell) is
-// applied to their cart automatically.
+// The AFFILIATE coupon (configured in Swell) is applied automatically for any
+// visitor Partnero currently attributes to a partner.
 
 (function () {
   const CODE = 'AFFILIATE';
-  const KEY = 'affiliate_referral_until';
-  const PARAM = 'aff'; // Partnero referral links: /abada-joggers/?aff=<partner id>
-  const TTL_MS = 30 * 24 * 60 * 60 * 1000; // 30 days, same window Partnero attributes
 
-  try {
-    const q = new URLSearchParams(location.search);
-    if (q.get(PARAM)) {
-      localStorage.setItem(KEY, String(Date.now() + TTL_MS));
-    }
-  } catch (e) {
-    // Private mode / storage disabled — no affiliate tracking, carry on.
-  }
-
+  // Source of truth is Partnero's own partnero_partner cookie (set by the
+  // script in Layout.astro, expiry = the program's cookie duration). Reading
+  // it instead of tracking our own window means the free-shipping window can
+  // never drift from the window Partnero pays commission on — change the
+  // duration in Partnero and this follows.
+  //
+  // The ?aff= fallback covers the first pageview, where the visitor could add
+  // to cart before universal.js has loaded and set the cookie.
   function isAffiliateVisitor() {
-    try {
-      const until = Number(localStorage.getItem(KEY));
-      if (!until) return false;
-      if (Date.now() > until) {
-        localStorage.removeItem(KEY);
-        return false;
-      }
-      return true;
-    } catch (e) {
-      return false;
-    }
+    return /(?:^|;\s*)partnero_partner=/.test(document.cookie) ||
+      new URLSearchParams(location.search).has('aff');
   }
 
   // Best-effort and safe to call repeatedly: no-ops on an empty cart (Swell

@@ -15,6 +15,7 @@ import { getOrder, pushFulfillment } from "./swell.js";
 import { sendErrorEmail, sendLabelEmail, sendReviewEmail } from "./email.js";
 import { lookup, save } from "./idempotency.js";
 import { sendPurchaseToGa4 } from "./ga4.js";
+import { sendSaleToPartnero } from "./partnero.js";
 
 export async function processOrder(
   order: SwellOrder
@@ -43,6 +44,15 @@ export async function processOrder(
     await sendPurchaseToGa4(order);
   } catch (err) {
     console.error("GA4 purchase event failed (non-fatal):", err);
+  }
+
+  // ─── Partnero affiliate sale (fire-and-forget) ────────────────────────
+  // No-ops unless the cart carried a partner key. Same reasoning as GA4:
+  // once per order, before the gates, never blocks fulfillment.
+  try {
+    await sendSaleToPartnero(order);
+  } catch (err) {
+    console.error("Partnero transaction failed (non-fatal):", err);
   }
 
   // ─── Country gate ─────────────────────────────────────────────────────
