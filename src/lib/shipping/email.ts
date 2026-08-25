@@ -24,6 +24,20 @@ function to(): string {
   return process.env.EMAIL_TO ?? POLICY.notificationEmail;
 }
 
+/** "2x Berimbau Shirt (M)" per line, plus the customer's email. */
+function orderDetails(order: SwellOrder): string[] {
+  const lines = order.items.map((i) => {
+    const name = i.product?.name ?? i.sku ?? i.product_id;
+    const size = i.variant?.name;
+    return `  ${i.quantity}x ${name}${size ? ` (${size})` : ""}`;
+  });
+  return [
+    "Items:",
+    ...lines,
+    `Customer email: ${order.account?.email ?? "(none on order)"}`,
+  ];
+}
+
 async function fetchLabelPdf(labelUrl: string): Promise<Buffer> {
   const res = await fetch(labelUrl);
   if (!res.ok) throw new Error(`Label PDF fetch ${res.status}`);
@@ -43,6 +57,7 @@ export async function sendLabelEmail(opts: {
   const text = [
     `Order #${opts.order.number}`,
     `Ship to: ${opts.order.shipping.name}, ${opts.order.shipping.city}, ${opts.order.shipping.state}`,
+    ...orderDetails(opts.order),
     `Service: ${opts.tierLabel}`,
     `Tracking: ${opts.trackingNumber}`,
     opts.rate ? `Cost: ${opts.rate}` : "",
@@ -79,6 +94,7 @@ export async function sendReviewEmail(opts: {
     `Order #${opts.order.number} has ${opts.itemCount} items, above the auto-buy threshold.`,
     "",
     `Ship to: ${opts.order.shipping.name}, ${opts.order.shipping.city}, ${opts.order.shipping.state}`,
+    ...orderDetails(opts.order),
     `Suggested packaging: ${opts.tierLabel}`,
     "",
     `It's been pushed to your Shippo dashboard for review.`,
