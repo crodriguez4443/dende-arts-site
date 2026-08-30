@@ -5,7 +5,14 @@ dist/
 # Local Netlify folder
 .netlify
 
+# Local-only analytics scratchpad page (never deployed)
+src/pages/ltv.astro
+
 # Local env (real secrets — keep .env.example tracked)
 .env
 .env.*
 !.env.example
+
+# LTV analytics — local only
+scripts/ltv-sync.mjs
+src/pages/_ltv-data.json
