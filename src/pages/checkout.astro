@@ -7,13 +7,51 @@ import Layout from '../layouts/Layout.astro';
   </div>
 </Layout>
 
-<script>
+<script is:inline>
+  // Meta Shops appends ?products=<content_id>:<qty>,... to the checkout URL set
+  // in Commerce Manager. Content ids are assigned by Meta's catalog and can't be
+  // derived from Swell, so the size each one means has to be stated here.
+  const PRODUCT_ID = '6796e8f527aea3001290a682';
+  const META_SIZES = { '1': 'XS', '2': 'S', '3': 'M', '4': 'L', '5': 'XL' };
+
   document.addEventListener('DOMContentLoaded', async () => {
-    if (!window.swell) {
+    const w = window;
+    if (typeof w.initializeSwell === 'function') await w.initializeSwell();
+    if (!w.swell) {
       console.error('Swell not initialized');
       return;
     }
     try {
+      const products = new URLSearchParams(location.search).get('products');
+      if (products) {
+        const items = [];
+        for (const entry of products.split(',')) {
+          const [contentId, qty] = entry.split(':');
+          const size = META_SIZES[contentId];
+          if (!size) {
+            console.error('Unknown Meta content id:', contentId);
+            continue;
+          }
+          items.push({
+            product_id: PRODUCT_ID,
+            quantity: Math.max(1, parseInt(qty, 10) || 1),
+            options: { Size: size },
+          });
+        }
+        // Every id was unknown, so checkout would be empty. Send them somewhere
+        // they can still buy rather than to a dead checkout.
+        if (!items.length) {
+          window.location.replace('/abada-joggers');
+          return;
+        }
+        // setItems, not repeated addItem: one request instead of one per size,
+        // and it's idempotent, so reloading the link can't double the cart.
+        await swell.cart.setItems(items);
+        if (swell.cachedCart) swell.cachedCart.lastFetched = 0;
+        // The cart was empty until now, which is the first point a coupon sticks.
+        if (typeof w.applyAffiliateCoupon === 'function') await w.applyAffiliateCoupon();
+      }
+
       // Tag the cart with the GA client id so the server-side purchase event
       // attributes to this session. Best-effort; never blocks checkout.
       if (typeof window.attachCheckoutMetadata === 'function') {

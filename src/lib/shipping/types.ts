@@ -46,7 +46,11 @@ export interface SwellOrder {
   shipping_total?: number;
   // Custom fields; ga_client_id is set on the cart at checkout (cart-utils.js)
   // and carries into the order so the purchase event can attribute the session.
-  metadata?: { ga_client_id?: string; partnero_partner?: string } | null;
+  metadata?: {
+    ga_client_id?: string;
+    partnero_partner?: string;
+    cart_origin?: string;
+  } | null;
 }
 
 export interface ProcessResult {

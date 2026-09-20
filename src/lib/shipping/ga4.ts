@@ -62,6 +62,11 @@ export async function sendPurchaseToGa4(order: SwellOrder): Promise<void> {
           tax: order.tax_total,
           shipping: order.shipping_total,
           items,
+          // Where the cart came from. Meta Shops sets ?cart_origin=meta_shops on
+          // its checkout handoff; anything else is a normal storefront cart.
+          // Defaulted rather than left absent so the GA4 dimension is never
+          // "(not set)" and the two can be compared directly.
+          cart_origin: order.metadata?.cart_origin ?? "storefront",
           // GA4 sometimes drops MP events without an engagement signal.
           engagement_time_msec: 1,
         },

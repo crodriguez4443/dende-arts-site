@@ -85,6 +85,10 @@ async function attachCheckoutMetadata() {
       ? decodeURIComponent(partner[1])
       : new URLSearchParams(location.search).get('aff');
     if (partnerKey) metadata.partnero_partner = partnerKey;
+    // Set by Meta Shops on the checkout handoff (?cart_origin=meta_shops), so
+    // the GA4 purchase event can tell shop orders from storefront orders.
+    const cartOrigin = new URLSearchParams(location.search).get('cart_origin');
+    if (cartOrigin) metadata.cart_origin = cartOrigin;
     if (Object.keys(metadata).length) await window.swell.cart.update({ metadata });
   } catch (err) {
     console.error('Could not attach checkout metadata to cart:', err);
