@@ -52,14 +52,10 @@ import Layout from '../layouts/Layout.astro';
         if (typeof w.applyAffiliateCoupon === 'function') await w.applyAffiliateCoupon();
       }
 
-      // Tag the cart with the GA client id so the server-side purchase event
-      // attributes to this session. Best-effort; never blocks checkout.
-      if (typeof window.attachCheckoutMetadata === 'function') {
-        await window.attachCheckoutMetadata();
-      }
-      await swell.cart.redirect({
-        success_url: window.location.origin + '/thank-you',
-      });
+      // The site's one exit to Swell's hosted checkout: it attaches the GA and
+      // affiliate metadata, then navigates to cart.checkoutUrl. (swell.cart
+      // .redirect(), which this page used to call, doesn't exist in swell-js.)
+      if (!(await w.goToSwellCheckout())) window.location.replace('/abada-joggers');
     } catch (error) {
       console.error('Error redirecting to checkout:', error);
       alert('Error starting checkout. Please try again.');
