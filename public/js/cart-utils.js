@@ -71,24 +71,34 @@ window.getGaClientId = getGaClientId;
 //   partnero_partner — the affiliate whose link brought this visitor, set as a
 //                      first-party cookie by Partnero's script (Layout.astro)
 // Best-effort: a missing id just means that order goes unattributed.
+//
+// Reading them touches no network, so a caller that is already writing to the
+// cart can fold these into that same request instead of paying for a second
+// round trip (Swell cart writes run 2s+).
+function getCheckoutMetadata() {
+  const metadata = {};
+  const clientId = getGaClientId();
+  if (clientId) metadata.ga_client_id = clientId;
+  // Cookie first (set by Partnero's universal.js); fall back to the ?aff=
+  // URL param for same-pageview checkouts where the async script hasn't set
+  // the cookie yet — land on /product/?aff=X, add to cart, toast checkout.
+  const partner = document.cookie.match(/(?:^|;\s*)partnero_partner=([^;]+)/);
+  const partnerKey = partner
+    ? decodeURIComponent(partner[1])
+    : new URLSearchParams(location.search).get('aff');
+  if (partnerKey) metadata.partnero_partner = partnerKey;
+  // Set by Meta Shops on the checkout handoff (?cart_origin=meta_shops), so
+  // the GA4 purchase event can tell shop orders from storefront orders.
+  const cartOrigin = new URLSearchParams(location.search).get('cart_origin');
+  if (cartOrigin) metadata.cart_origin = cartOrigin;
+  return metadata;
+}
+window.getCheckoutMetadata = getCheckoutMetadata;
+
 async function attachCheckoutMetadata() {
   try {
     if (!window.swell?.cart) return;
-    const metadata = {};
-    const clientId = getGaClientId();
-    if (clientId) metadata.ga_client_id = clientId;
-    // Cookie first (set by Partnero's universal.js); fall back to the ?aff=
-    // URL param for same-pageview checkouts where the async script hasn't set
-    // the cookie yet — land on /product/?aff=X, add to cart, toast checkout.
-    const partner = document.cookie.match(/(?:^|;\s*)partnero_partner=([^;]+)/);
-    const partnerKey = partner
-      ? decodeURIComponent(partner[1])
-      : new URLSearchParams(location.search).get('aff');
-    if (partnerKey) metadata.partnero_partner = partnerKey;
-    // Set by Meta Shops on the checkout handoff (?cart_origin=meta_shops), so
-    // the GA4 purchase event can tell shop orders from storefront orders.
-    const cartOrigin = new URLSearchParams(location.search).get('cart_origin');
-    if (cartOrigin) metadata.cart_origin = cartOrigin;
+    const metadata = getCheckoutMetadata();
     if (Object.keys(metadata).length) await window.swell.cart.update({ metadata });
   } catch (err) {
     console.error('Could not attach checkout metadata to cart:', err);

@@ -44,17 +44,28 @@ import Layout from '../layouts/Layout.astro';
           window.location.replace('/abada-joggers');
           return;
         }
-        // setItems, not repeated addItem: one request instead of one per size,
-        // and it's idempotent, so reloading the link can't double the cart.
-        await swell.cart.setItems(items);
+        // One write does the lot: sets the items, attaches the attribution
+        // metadata, and returns the checkoutUrl to leave on. Swell cart writes
+        // cost ~2s each, so doing this as setItems + update + get would put
+        // three of them in the buyer's path instead of one. `items` replaces
+        // rather than appends, so reloading the link can't double the cart.
+        const cart = await swell.cart.update({
+          items,
+          metadata: w.getCheckoutMetadata(),
+        });
         if (swell.cachedCart) swell.cachedCart.lastFetched = 0;
-        // The cart was empty until now, which is the first point a coupon sticks.
+        // The cart was empty until now, which is the first point a coupon
+        // sticks. No-ops without an affiliate cookie, so most buyers pay nothing
+        // for it. The coupon doesn't change checkoutUrl, so it's safe after.
         if (typeof w.applyAffiliateCoupon === 'function') await w.applyAffiliateCoupon();
+        if (cart?.checkoutUrl) {
+          window.location.href = cart.checkoutUrl;
+          return;
+        }
       }
 
-      // The site's one exit to Swell's hosted checkout: it attaches the GA and
-      // affiliate metadata, then navigates to cart.checkoutUrl. (swell.cart
-      // .redirect(), which this page used to call, doesn't exist in swell-js.)
+      // No Meta params (or no checkoutUrl came back): fall back to the site's
+      // normal exit, which re-reads the cart and attaches the metadata itself.
       if (!(await w.goToSwellCheckout())) window.location.replace('/abada-joggers');
     } catch (error) {
       console.error('Error redirecting to checkout:', error);
