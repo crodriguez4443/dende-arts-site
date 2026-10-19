@@ -67,6 +67,9 @@ export async function sendPurchaseToGa4(order: SwellOrder): Promise<void> {
           // Defaulted rather than left absent so the GA4 dimension is never
           // "(not set)" and the two can be compared directly.
           cart_origin: order.metadata?.cart_origin ?? "storefront",
+          // MP events carry no URL, and GA4 derives hostName from this —
+          // without it the purchase reports as hostName "(not set)".
+          page_location: "https://dendearts.com/",
           // GA4 sometimes drops MP events without an engagement signal.
           engagement_time_msec: 1,
         },
