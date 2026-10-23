@@ -94,6 +94,25 @@ const productSchema = {
   <Fragment slot="head">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(productSchema)} />
   </Fragment>
+  <script
+    is:inline
+    define:vars={{ id: product?.id, name: product?.name, price: product?.price }}
+  >
+    // GA4 view_item + Meta ViewContent. Both stubs are defined in Layout.astro
+    // and queue until their libraries lazy-load.
+    gtag('event', 'view_item', {
+      currency: 'USD',
+      value: price,
+      items: [{ item_id: id, item_name: name, price }],
+    });
+    fbq('track', 'ViewContent', {
+      content_type: 'product',
+      content_ids: [id],
+      content_name: name,
+      value: price,
+      currency: 'USD',
+    });
+  </script>
   <section class="product-sale-page">
     <div class="product-page-nav main-grid">
       <Nav />
@@ -1148,6 +1167,12 @@ const productSchema = {
             price,
             quantity: qty,
           }],
+        });
+        w.fbq?.('track', 'AddToCart', {
+          content_type: 'product',
+          content_ids: [productId],
+          value: price != null ? price * qty : undefined,
+          currency: 'USD',
         });
       } catch (err) {
         console.error('GA4 add_to_cart failed:', err);

@@ -48,6 +48,10 @@ export interface SwellOrder {
   // and carries into the order so the purchase event can attribute the session.
   metadata?: {
     ga_client_id?: string;
+    ga_session_id?: string;
+    fbp?: string;
+    fbc?: string;
+    user_agent?: string;
     partnero_partner?: string;
     cart_origin?: string;
   } | null;

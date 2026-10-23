@@ -65,9 +65,64 @@ function getGaClientId() {
 }
 window.getGaClientId = getGaClientId;
 
+function getCookie(name) {
+  const m = document.cookie.match(new RegExp('(?:^|;\\s*)' + name + '=([^;]+)'));
+  return m ? decodeURIComponent(m[1]) : null;
+}
+
+// GA4 session id, from _ga_<container> ("GS1.1.<id>.…" or "GS2.1.s<id>$o…").
+function getGaSessionId() {
+  const m = (getCookie('_ga_V7Q1NGPMNT') || '').match(/^GS1\.\d\.(\d+)|^GS2\.\d\.s(\d+)/);
+  return m ? m[1] || m[2] : null;
+}
+
+// Meta click id: the _fbc cookie, or built from ?fbclid= when the lazy Pixel
+// hasn't set the cookie yet (format fb.1.<ms>.<fbclid>).
+function getFbc() {
+  const cookie = getCookie('_fbc');
+  if (cookie) return cookie;
+  const fbclid = new URLSearchParams(location.search).get('fbclid');
+  return fbclid ? 'fb.1.' + Date.now() + '.' + fbclid : null;
+}
+
+// Fire begin_checkout / InitiateCheckout for a Swell cart. Resolves once GA4
+// confirms the hit (800ms cap) so the caller can redirect without dropping it.
+function trackBeginCheckout(cart) {
+  try {
+    const value = cart?.grandTotal ?? cart?.subTotal;
+    const items = (cart?.items || []).map((i) => ({
+      item_id: i.productId,
+      item_name: i.product?.name,
+      price: i.price,
+      quantity: i.quantity,
+    }));
+    window.fbq?.('track', 'InitiateCheckout', {
+      currency: 'USD',
+      value,
+      content_type: 'product',
+      contents: items.map((i) => ({ id: i.item_id, quantity: i.quantity })),
+    });
+    return new Promise((resolve) => {
+      setTimeout(resolve, 800);
+      window.gtag?.('event', 'begin_checkout', {
+        currency: 'USD',
+        value,
+        items,
+        event_callback: resolve,
+      });
+    });
+  } catch (err) {
+    console.error('begin_checkout tracking failed:', err);
+    return Promise.resolve();
+  }
+}
+window.trackBeginCheckout = trackBeginCheckout;
+
 // Attach the ids the order webhook needs onto the Swell cart, so they survive
 // the redirect to Swell's hosted checkout and land on the order:
 //   ga_client_id     — stitches the server-side GA4 purchase to this session
+//   ga_session_id    — ties the purchase to this session's traffic source
+//   fbp / fbc / user_agent — Meta Conversions API matching for the purchase
 //   partnero_partner — the affiliate whose link brought this visitor, set as a
 //                      first-party cookie by Partnero's script (Layout.astro)
 // Best-effort: a missing id just means that order goes unattributed.
@@ -79,6 +134,13 @@ function getCheckoutMetadata() {
   const metadata = {};
   const clientId = getGaClientId();
   if (clientId) metadata.ga_client_id = clientId;
+  const sessionId = getGaSessionId();
+  if (sessionId) metadata.ga_session_id = sessionId;
+  const fbp = getCookie('_fbp');
+  if (fbp) metadata.fbp = fbp;
+  const fbc = getFbc();
+  if (fbc) metadata.fbc = fbc;
+  metadata.user_agent = navigator.userAgent;
   // Cookie first (set by Partnero's universal.js); fall back to the ?aff=
   // URL param for same-pageview checkouts where the async script hasn't set
   // the cookie yet — land on /product/?aff=X, add to cart, toast checkout.
@@ -120,6 +182,7 @@ async function goToSwellCheckout() {
     console.warn('Checkout URL not found. Cart may be empty.');
     return false;
   }
+  await trackBeginCheckout(cart);
   window.location.href = cart.checkoutUrl;
   return true;
 }

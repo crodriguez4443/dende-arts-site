@@ -15,6 +15,7 @@ import { getOrder, pushFulfillment } from "./swell.js";
 import { sendErrorEmail, sendLabelEmail, sendReviewEmail } from "./email.js";
 import { lookup, save } from "./idempotency.js";
 import { sendPurchaseToGa4 } from "./ga4.js";
+import { sendPurchaseToMeta } from "./meta-capi.js";
 import { sendSaleToPartnero } from "./partnero.js";
 
 export async function processOrder(
@@ -44,6 +45,14 @@ export async function processOrder(
     await sendPurchaseToGa4(order);
   } catch (err) {
     console.error("GA4 purchase event failed (non-fatal):", err);
+  }
+
+  // ─── Meta purchase (fire-and-forget) ──────────────────────────────────
+  // Same once-per-order, never-blocks-fulfillment reasoning as GA4.
+  try {
+    await sendPurchaseToMeta(order);
+  } catch (err) {
+    console.error("Meta purchase event failed (non-fatal):", err);
   }
 
   // ─── Partnero affiliate sale (fire-and-forget) ────────────────────────

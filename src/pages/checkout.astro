@@ -59,6 +59,7 @@ import Layout from '../layouts/Layout.astro';
         // for it. The coupon doesn't change checkoutUrl, so it's safe after.
         if (typeof w.applyAffiliateCoupon === 'function') await w.applyAffiliateCoupon();
         if (cart?.checkoutUrl) {
+          await w.trackBeginCheckout(cart);
           window.location.href = cart.checkoutUrl;
           return;
         }
