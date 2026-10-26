@@ -193,32 +193,19 @@ const organizationSchema = {
     src="https://www.facebook.com/tr?id=346623565952074&ev=PageView&noscript=1"
   /></noscript>
 
-  <!-- Form leads, per the GA4 tracking standard §6.2 (redirect-form half).
-       After both stubs above so gtag and fbq exist when /thank-you fires.
-       Forms opt in with data-ga-event. Submit only remembers which form it
-       was; the event fires on /thank-you, which Netlify only reaches on a
-       successful submission. Cleared after firing, so a reload or a direct
-       visit never counts. -->
+  <!-- Form leads (GA4 tracking standard §6.2). Forms opt in with
+       data-ga-event. `submit` only fires once browser validation passes, and
+       GA4 sends with sendBeacon, so the hit survives the redirect to
+       /thank-you. Skipped if page code cancelled the submit. -->
   <script is:inline>
-    (function () {
-      document.addEventListener('submit', function (e) {
-        var f = e.target;
-        if (!f.dataset.gaEvent) return;
-        sessionStorage.setItem('pending_lead', JSON.stringify({
-          event: f.dataset.gaEvent,
-          form_name: f.getAttribute('name'), // not f.name: that returns an <input name="name">
-          offer: f.dataset.offer,
-        }));
-      });
-      if (location.pathname.toLowerCase().indexOf('/thank-you') === 0) {
-        var lead = JSON.parse(sessionStorage.getItem('pending_lead'));
-        sessionStorage.removeItem('pending_lead');
-        if (!lead) return;
-        gtag('event', lead.event, { form_name: lead.form_name, offer: lead.offer });
-        // Meta mirror (standard §6.7), like ViewContent / AddToCart / InitiateCheckout.
-        if (lead.event === 'generate_lead') fbq('track', 'Lead');
-      }
-    })();
+    document.addEventListener('submit', function (e) {
+      var f = e.target;
+      if (e.defaultPrevented || !f.dataset.gaEvent) return;
+      // getAttribute, not f.name: that returns an <input name="name">.
+      gtag('event', f.dataset.gaEvent, { form_name: f.getAttribute('name'), offer: f.dataset.offer });
+      // Meta mirror (standard §6.7), like ViewContent / AddToCart / InitiateCheckout.
+      if (f.dataset.gaEvent === 'generate_lead') fbq('track', 'Lead');
+    });
   </script>
 </head>
 <body>
