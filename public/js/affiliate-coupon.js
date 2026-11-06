@@ -2,8 +2,8 @@
 // The AFFILIATE coupon (configured in Swell) is applied automatically for any
 // visitor Partnero currently attributes to a partner.
 
-(function () {
-  const CODE = 'AFFILIATE';
+//(function () {
+//  const CODE = 'AFFILIATE';
 
   // Source of truth is Partnero's own partnero_partner cookie (set by the
   // script in Layout.astro, expiry = the program's cookie duration). Reading
@@ -13,14 +13,17 @@
   //
   // The ?aff= fallback covers the first pageview, where the visitor could add
   // to cart before universal.js has loaded and set the cookie.
+  /*
   function isAffiliateVisitor() {
     return /(?:^|;\s*)partnero_partner=/.test(document.cookie) ||
       new URLSearchParams(location.search).has('aff');
   }
+    */
 
   // Best-effort and safe to call repeatedly: no-ops on an empty cart (Swell
   // rejects coupons there) and when the code is already applied.
-  async function applyAffiliateCoupon() {
+
+ /* async function applyAffiliateCoupon() {
     if (!isAffiliateVisitor() || !window.swell?.cart) return;
     try {
       const cart = await swell.cart.get();
@@ -37,3 +40,5 @@
 
   window.applyAffiliateCoupon = applyAffiliateCoupon;
 })();
+
+*/
